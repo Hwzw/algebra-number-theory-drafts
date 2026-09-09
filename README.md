@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 26 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 27 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New classification of conductor ideals
+
+[**P27: Conductor ideals of C-monoids with prescribed Krull closure**](papers/P27-conductor-ideals/README.md), by **Henry Zweiman**, gives an internally checked proposed answer to Geroldinger--Kim--Loper, arXiv:2502.21020v3, Problem 19. The six-page [PDF](papers/P27-conductor-ideals/manuscript.pdf), [complete Markdown](papers/P27-conductor-ideals/manuscript.md), and [LaTeX](papers/P27-conductor-ideals/manuscript.tex) characterize realizable ideals by finiteness of their prime colon profiles, equivalently by finitely many truncated valuation sums. The proof covers infinite divisor rank and arbitrary unit groups, constructs a realization, and bounds its reduced class semigroup.
+
+The [source assessment](papers/P27-conductor-ideals/ASSESSMENT.md) and [internal proof review](papers/P27-conductor-ideals/REVIEW.md) state the classical dependencies and scope. Thirty exact monomial-ideal identities and twelve complete finite quotient checks accompany the universal hand proofs. This is one paper; ring conductors and general recognition of intermediate Mori monoids remain outside its claims. Historical priority and significance are provisional.
 
 ## New conductor reconstruction theorem
 

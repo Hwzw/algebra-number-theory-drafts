@@ -1,0 +1,146 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 3,
+    "proof": 7,
+    "proposition": 2,
+    "corollary": 1,
+    "example": 3
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:profiles"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:upward"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3.1",
+      "id": "proposition-1",
+      "source_label": "prop:necessary"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "4.1",
+      "id": "lemma-3",
+      "source_label": "lem:contraction"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "4.2",
+      "id": "proposition-2",
+      "source_label": "prop:construction"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "5.1",
+      "id": "corollary-1",
+      "source_label": "cor:finite"
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "5.2",
+      "id": "example-1",
+      "source_label": "ex:degree"
+    },
+    {
+      "environment": "example",
+      "ordinal": 2,
+      "number": "5.3",
+      "id": "example-2",
+      "source_label": "ex:matching"
+    },
+    {
+      "environment": "example",
+      "ordinal": 3,
+      "number": "5.4",
+      "id": "example-3",
+      "source_label": "ex:units"
+    }
+  ],
+  "references": 13,
+  "citations": 5,
+  "cited_keys": [
+    "GHK",
+    "GKL",
+    "GZ",
+    "Reinhart"
+  ],
+  "bibliography_keys": [
+    "GHK",
+    "GKL",
+    "GZ",
+    "Reinhart"
+  ],
+  "equation_labels": [
+    "eq:saturated",
+    "eq:threshold",
+    "eq:exchange",
+    "eq:bound"
+  ],
+  "label_numbers": {
+    "eq:saturated": "1",
+    "thm:main": "1.1",
+    "eq:threshold": "2",
+    "lem:profiles": "2.1",
+    "eq:exchange": "3",
+    "lem:upward": "2.2",
+    "prop:necessary": "3.1",
+    "lem:contraction": "4.1",
+    "prop:construction": "4.2",
+    "eq:bound": "4",
+    "cor:finite": "5.1",
+    "ex:degree": "5.2",
+    "ex:matching": "5.3",
+    "ex:units": "5.4"
+  },
+  "bibliography_numbers": {
+    "GHK": "1",
+    "GKL": "2",
+    "GZ": "3",
+    "Reinhart": "4"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "9a9b96fa8a9f8e5f418b325de3685b7ea8c3dacc6195630f484825b465f98283",
+  "source_pdf_sha256": "30833600a7923cff1ecc6c5fe18747c923a7d4374ebfa797a491c4c019feb6da",
+  "markdown_sha256": "7e104d799cde6420b7933937946315211a6acb64dc28e03c411d8dc9f8c8cb4f",
+  "markdown_bytes": 19736,
+  "source_math_expressions_verified": 284,
+  "markdown_math_expressions": 291,
+  "custom_macros_expanded": [
+    "q",
+    "F",
+    "C",
+    "ff"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 52,
+  "semantic_roundtrip_sha256": "e60cd8d99d2d392e3a75e7695b7319e7691773f4e21e5f66bc307d822635a878",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 35,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

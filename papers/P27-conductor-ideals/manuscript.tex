@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\q}{\mathsf q}
+\newcommand{\F}{\mathcal F}
+\newcommand{\C}{\mathcal C}
+\newcommand{\ff}{\mathfrak f}
+\title{Conductor ideals of C-monoids with prescribed Krull closure}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let $H$ be a commutative Krull monoid with finite divisor class group. We characterize the ideals of $H$ that occur as conductors of C-monoids with complete integral closure $H$. For a nonempty proper ideal $\ff$, extend its image under a divisor theory to a monomial ideal $J$ in the free divisor monoid. Apart from one elementary unit obstruction, the required condition is finiteness of the family $(J:p)$ as $p$ ranges over the prime divisors. Equivalently, membership in $J$ is determined by finitely many truncated sums of prime valuations. Whenever the condition holds, $\ff\cup\{1\}$ is already a realization. More generally, its unit group can be prescribed as any subgroup of $H^\times$ compatible with properness. We give an explicit bound for the reduced class semigroup and examples separating the criterion from finite generation. This answers Problem 19 of Geroldinger, Kim, and Loper.
+\end{abstract}
+
+\section{Introduction and main result}
+
+All monoids are commutative and cancellative, with identity. An ideal of $H$ means an $s$-ideal: a subset $I\subseteq H$ satisfying $IH=I$. For a submonoid $M\subseteq H$ with the same quotient group, its conductor is
+\[
+ (M:H)=\{x\in\q(H):xH\subseteq M\}.
+\]
+Since $1\in H$, this set is contained in $M$. Its complete integral closure is
+\[
+ \widehat M=\{x\in\q(M):\text{some }c\in M\text{ satisfies }cx^n\in M
+                         \text{ for every }n\ge1\}.
+\]
+The notation $H^\times$ denotes the unit group.
+
+Geroldinger, Kim, and Loper ask which ideals of a Krull monoid with finite class group can occur as conductors of C-monoids having that complete integral closure \cite[Problem 19]{GKL}. Their formulation is purely multiplicative. It differs from the ring-conductor problem with a prescribed subring, studied by Reinhart \cite{Reinhart}: the monoids constructed below need not be closed under addition.
+
+Fix a divisor theory $\varphi:H\to D=\F(P)$. Thus $D$ is free abelian on its prime set $P$, the map $\varphi$ reflects divisibility, and every prime of $D$ is the gcd of a finite subset of $\varphi(H)$. The image $K=\varphi(H)$ is isomorphic to $H/H^\times$ and satisfies
+\begin{equation}\label{eq:saturated}
+ K=\q(K)\cap D.
+\end{equation}
+The divisor class group is $G=\q(D)/\q(K)$. For an ideal $\ff\subseteq H$, put
+\[
+ J=\varphi(\ff)D,\qquad (J:p)=\{x\in D:xp\in J\}\quad(p\in P).
+\]
+The criterion below is independent of the chosen divisor theory, since divisor theories are unique up to an isomorphism of their free monoids.
+
+\newpage
+\begin{theorem}\label{thm:main}
+Let $H$ be a Krull monoid with finite divisor class group, and let $\ff$ be a nonempty proper ideal of $H$. The following are equivalent.
+\begin{enumerate}
+\item There is a C-monoid $M\subseteq H$ such that $\widehat M=H$ and $(M:H)=\ff$.
+\item The family $\{(J:p):p\in P\}$ is finite and $\ff\cup\{1\}\ne H$.
+\item There are a finite partition $P=P_1\sqcup\cdots\sqcup P_r$, an integer $N\ge1$, and an upward-closed set $W\subseteq\{0,\ldots,N\}^r$ such that
+\begin{equation}\label{eq:threshold}
+ J=\{a\in D:\tau(a)\in W\},\qquad
+ \tau_i(a)=\min\left\{N,\sum_{p\in P_i}v_p(a)\right\},
+\end{equation}
+and $\ff\cup\{1\}\ne H$.
+\end{enumerate}
+Whenever these conditions hold, $M=\ff\cup\{1\}$ is a realization in (1).
+\end{theorem}
+
+Every sum in \eqref{eq:threshold} is finite, even when $P_i$ is infinite. The unit obstruction is exactly the case where $H$ is reduced and $\ff=H\setminus\{1\}$. The whole ideal $H$ is realized by $H$ itself, and the empty ideal cannot be the conductor of a C-monoid. These statements also cover groups, whose only nonempty ideal is the whole group.
+
+The criterion involves colon ideals for individual primes, not residuals for all monomials. It allows infinite divisor rank and ideals that are not finitely generated. The proof combines the classical dense embedding theorem for C-monoids with an exchange argument on prime factors and Dickson's lemma. The dense embedding theorem, rather than any seminormality assumption, is the structural input.
+
+\section{Finite prime profiles of a monomial ideal}
+
+For a subset $X\subseteq D$, call $X$ recognizable if there is a homomorphism $\eta:D\to S$ to a finite monoid such that membership in $X$ depends only on $\eta(a)$. We use this terminology only to connect the ideal criterion with the finite class semigroups below; the proofs are given directly.
+
+\begin{lemma}\label{lem:profiles}
+Let $J$ be a nonempty proper ideal of $D=\F(P)$. The following are equivalent:
+\begin{enumerate}
+\item the family $\{(J:p):p\in P\}$ is finite;
+\item $J$ has a presentation \eqref{eq:threshold};
+\item $J$ is recognizable.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+Suppose (1) holds. Define $p\sim q$ when $(J:p)=(J:q)$, and let $P_1,\ldots,P_r$ be the equivalence classes. For every $x\in D$,
+\begin{equation}\label{eq:exchange}
+ xp\in J\quad\Longleftrightarrow\quad xq\in J\qquad(p\sim q).
+\end{equation}
+Two monomials with the same number of factors from each $P_i$, counted with multiplicity, can be connected by finitely many such replacements. Membership in $J$ therefore depends only on the vector
+\[
+ \lambda(a)=\left(\sum_{p\in P_i}v_p(a)\right)_{i=1}^r\in\mathbb N_0^r.
+\]
+This map is surjective. The set $V=\lambda(J)$ is upward closed because $J$ is an ideal. By Dickson's lemma, its set $B$ of coordinatewise minimal elements is finite. Choose $N\ge1$ at least as large as every coordinate of every member of $B$. A vector dominates a member of $B$ exactly when its coordinatewise truncation at $N$ does. Taking $W=V\cap\{0,\ldots,N\}^r$ proves (2).
+
+For (2) implies (3), give $\{0,\ldots,N\}^r$ coordinatewise truncated addition, $s\oplus t=(\min\{N,s_i+t_i\})_i$. The map $\tau$ is a monoid homomorphism and recognizes $J$.
+
+Finally, if $\eta:D\to S$ recognizes $J$, then $\eta(p)=\eta(q)$ implies $xp\in J$ exactly when $xq\in J$. There are at most $|S|$ prime colon ideals, proving (1).
+\end{proof}
+
+The upward-closed hypothesis is essential to the truncation conclusion. Arbitrary recognizable subsets of a free monoid can have periodic conditions. For ideals, increasing exponents cannot destroy membership, and finite prime profiles yield the finite threshold description.
+
+\begin{lemma}\label{lem:upward}
+Let $X\subseteq D$ be recognized by a finite congruence $\sim$, and put $J=XD$. If primes $p,q$ satisfy $p\sim q$, then $(J:p)=(J:q)$. In particular, $J$ has finitely many prime profiles.
+\end{lemma}
+\begin{proof}
+Suppose $xp\in J$, and choose $a\in X$ dividing $xp$. If $a$ divides $x$, then $a$ also divides $xq$, so $xq\in J$. Otherwise the distinguished extra occurrence of $p$ in $xp$ belongs to $a$. Write $a=pb$ with $b\mid_D x$. The monomial $qb$ is congruent to $pb$, hence lies in $X$, and divides $xq$. This proves $xp\in J\Rightarrow xq\in J$. Interchanging $p$ and $q$ proves the reverse implication.
+\end{proof}
+
+\section{Necessity from an arbitrary realization}
+
+Let $M\subseteq F=F^\times\times\F(P)$ be a submonoid with $M^\times=M\cap F^\times$. For $a,b\in F$, write $a\sim_M b$ if
+\[
+ ax\in M\quad\Longleftrightarrow\quad bx\in M\qquad\text{for every }x\in F.
+\]
+This is a congruence. Its classes represented by $(F\setminus F^\times)\cup\{1\}$ form the reduced class semigroup $\C^*(M,F)$. By definition, $M$ is a C-monoid if such an embedding exists with $\C^*(M,F)$ finite. The full class semigroup may be infinite because of units.
+
+We use the following classical dense embedding theorem. A C-monoid has a factorial embedding in which it remains a C-monoid and the projection of $\widehat M$ to the free factor is a divisor theory. It also has nonempty conductor, and $\widehat M$ is Krull with finite class group. These facts are summarized in \cite[Section 2, equation (2.4)]{GZ}, from \cite[Theorems 2.9.11--2.9.12]{GHK}. They apply to arbitrary C-monoids; seminormality is not a hypothesis.
+
+\begin{proposition}\label{prop:necessary}
+Suppose $M$ is a C-monoid with $\widehat M=H$, and put $\ff=(M:H)$. For every divisor theory $\varphi:H\to D$, the set $\varphi(\ff)$ is recognizable in $D$. Consequently $J=\varphi(\ff)D$ has finitely many prime profiles.
+\end{proposition}
+\begin{proof}
+Choose a dense factorial embedding $M\subseteq F=E\times\F(P')$ as above. Its extension to the complete integral closure identifies $H$ with a submonoid of $F$. The projection $\partial:H\to\F(P')$ is a divisor theory. Uniqueness of divisor theories permits us to identify $\F(P')$ with $D$ and $\partial$ with $\varphi$.
+
+Regard elements of $D$ as pure monomials in $F$. The restriction of $\sim_M$ to $D$ has finitely many classes: a pure monomial is either $1$ or a nonunit of $F$, and hence its class lies in $\C^*(M,F)$.
+
+Suppose $a,b\in D$ are equivalent under this restriction. For each $\varepsilon\in E$ and every $h\in H$, equivalence in $F$ gives
+\[
+ \varepsilon ah\in M\quad\Longleftrightarrow\quad\varepsilon bh\in M.
+\]
+It follows that $\varepsilon a\in\ff$ if and only if $\varepsilon b\in\ff$. Indeed, the condition for all $h$, including $h=1$, both places the element in $M\subseteq\q(M)$ and is precisely the conductor condition. Taking the existence of such an $\varepsilon$ shows
+\[
+ a\in\varphi(\ff)\quad\Longleftrightarrow\quad b\in\varphi(\ff).
+\]
+Thus the finite restricted congruence recognizes $\varphi(\ff)$. Lemma~\ref{lem:upward} proves the last assertion.
+\end{proof}
+
+This proof never requires $E/M^\times$ to be finite. Keeping the finite congruence on pure monomials separate from the full class semigroup is necessary when the normalization has many units.
+
+\section{Construction, units, and the class bound}
+
+We first record the contraction identity used in the construction.
+
+\begin{lemma}\label{lem:contraction}
+For every ideal $\ff$ of $H$, with $K=\varphi(H)$ and $J=\varphi(\ff)D$, one has
+\[
+ \varphi(\ff)=J\cap K,\qquad \ff=\varphi^{-1}(J).
+\]
+\end{lemma}
+\begin{proof}
+Only $J\cap K\subseteq\varphi(\ff)$ needs proof. If $\varphi(h)=\varphi(a)d$ with $a\in\ff$ and $d\in D$, divisor reflection gives $a\mid_H h$. The ideal property implies $h\in\ff$. The second equality also uses invariance of every ideal under multiplication by $H^\times$.
+\end{proof}
+
+\begin{proposition}\label{prop:construction}
+Suppose $\ff$ is a nonempty proper ideal of $H$ and $J$ has a presentation \eqref{eq:threshold}. Let $U=H^\times$, and let $V\le U$ be any subgroup such that $M_V=\ff\cup V\ne H$. Then $M_V$ is a C-monoid with
+\[
+ M_V^\times=V,\qquad \widehat{M_V}=H,\qquad (M_V:H)=\ff.
+\]
+In a factorial embedding whose free part is the chosen divisor theory,
+\begin{equation}\label{eq:bound}
+ |\C^*(M_V,F)|\le 1+|G|(N+1)^r.
+\end{equation}
+There is no restriction on the index $(U:V)$.
+\end{proposition}
+\begin{proof}
+A proper ideal contains no unit of $H$. Its ideal property shows that $M_V$ is a monoid with unit group $V$. Fix $c\in\ff$. For every $h\in H$, both $c$ and $ch$ lie in $M_V$. Hence $\q(M_V)=\q(H)$. Also $ch^n\in\ff$ for all $n\ge1$, so $H\subseteq\widehat{M_V}$. The reverse inclusion follows from $M_V\subseteq H=\widehat H$.
+
+Every element of $\ff$ belongs to $(M_V:H)$. Conversely a conductor element lies in $M_V$. If it were a unit $v\in V$, then $vH=H\subseteq M_V$, contradicting properness. Thus the conductor is exactly $\ff$.
+
+We may identify $H$ with $U\times K$, and embed it in $F=U\times D$. For completeness, the splitting follows because $\q(K)$ is a subgroup of the free abelian group $\q(D)$ and is therefore free abelian. The quotient-group map $\q(H)\to\q(K)$ has kernel $U$ and splits. The section sends $K$ into $H$: any lift of a member of $K$ differs from a representative in $H$ by a unit. This gives the stated product decomposition.
+
+Let $x=(\varepsilon,a)\in F\setminus F^\times$, so $a\ne1$. For every $y=(\eta,b)\in F$, the product $xy$ is a nonunit of $F$ and cannot belong to $V$. By Lemma~\ref{lem:contraction} and \eqref{eq:saturated},
+\begin{align*}
+ xy\in M_V
+ &\Longleftrightarrow ab\in K\cap J\\
+ &\Longleftrightarrow [a]+[b]=0\text{ in }G
+       \quad\text{and}\quad \tau(a)\oplus\tau(b)\in W.
+\end{align*}
+Consequently the pair $([a],\tau(a))$ determines the class of every nonunit $x$. It takes at most $|G|(N+1)^r$ values, independently of $\varepsilon$. Including the class represented by $1$ proves \eqref{eq:bound}. Finally, $M_V\cap F^\times=V=M_V^\times$, so the finite reduced class semigroup proves that $M_V$ is C.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+If (1) holds, Proposition~\ref{prop:necessary} proves the finiteness assertion in (2). Every realization contains $\ff$ and $1$. If $\ff\cup\{1\}=H$, the realization must be $H$, whose conductor in itself is $H$, a contradiction. This proves (2). The equivalence of (2) and (3) follows from Lemma~\ref{lem:profiles}. Proposition~\ref{prop:construction}, with $V=\{1\}$, proves (3) implies (1).
+
+For the boundary cases, the classical C-monoid theorem gives a nonempty conductor, and a Krull monoid with finite class group is C. Hence the empty ideal is excluded and the whole ideal is realized by $H$. If a proper ideal satisfies $\ff\cup\{1\}=H$, it must contain every element other than $1$. It cannot contain a unit, so $H^\times=\{1\}$ and $\ff=H\setminus\{1\}$. The converse is immediate.
+\end{proof}
+
+In particular, allowing a more complicated intermediate monoid cannot rescue a proper ideal with infinitely many prime profiles. When a realization exists at all, the smallest possible submonoid containing its conductor, $\ff\cup\{1\}$, is already C.
+
+\section{Consequences and examples}
+
+\begin{corollary}\label{cor:finite}
+Every nonempty finitely generated ideal of $H$ is realizable unless it is the excluded proper ideal $H\setminus\{1\}$ in a reduced monoid. The same conclusion holds for every nonempty ideal if the divisor monoid has finite rank.
+\end{corollary}
+\begin{proof}
+If $\ff=a_1H\cup\cdots\cup a_tH$, then $J=\varphi(a_1)D\cup\cdots\cup\varphi(a_t)D$. Only finitely many primes occur in these generators. Membership in $J$ is determined by their individual exponents truncated above the largest required exponent; all other primes may be placed in a single irrelevant part of the partition. If $P$ is finite, any monomial ideal has finitely many prime profiles, simply because there are finitely many primes. Apply Theorem~\ref{thm:main}, treating the whole ideal separately.
+\end{proof}
+
+\begin{example}\label{ex:degree}
+Let $P$ be infinite, let $H=D=\F(P)$, and fix $d\ge2$. The ideal
+\[
+ \ff_d=\{a\in D:|a|\ge d\},\qquad |a|=\sum_{p\in P}v_p(a),
+\]
+has a single prime profile and is described by one threshold $d$. It is not finitely generated: every monomial of degree $d$ is divisibility-minimal, and there are infinitely many of them. Nevertheless $M_d=\{1\}\cup\ff_d$ realizes it.
+
+In fact $|\C^*(M_d,D)|=d+1$. For a monomial of degree $k$ with $1\le k<d$, its residual is the set of monomials of degree at least $d-k$; for $k\ge d$ its residual is all of $D$. The residual at $1$ is $M_d$. These $d+1$ residuals are distinct. This also shows that a bound independent of the threshold is impossible.
+\end{example}
+
+\begin{example}\label{ex:matching}
+Let $H=D=\F(\{p_i,q_i:i\ge1\})$, with all displayed primes distinct, and set
+\[
+ \ff=\bigcup_{i\ge1}p_iq_iD.
+\]
+For $i\ne j$, the monomial $q_i$ belongs to $(\ff:p_i)$ but not to $(\ff:p_j)$. Thus $\ff$ has infinitely many prime profiles. It is not the conductor of any C-monoid with complete integral closure $D$, even though $D$ has trivial class group.
+
+The monoid $\{1\}\cup\ff$ does have conductor $\ff$ and complete integral closure $D$, by the conductor and closure argument in Proposition~\ref{prop:construction}, which does not use finiteness. The obstruction is specifically the C-monoid requirement, not existence of an unrestricted monoid realization.
+\end{example}
+
+\begin{example}\label{ex:units}
+Let $U$ be any nontrivial abelian group and $D=\F(P)$ with $P\ne\emptyset$. Put $H=U\times D$ and $\ff=H\setminus H^\times$. This is a proper ideal with one prime profile. Although $\ff\cup H^\times=H$, the monoid $\ff\cup\{1\}$ is proper and realizes $\ff$. The quotient $H^\times/M^\times\cong U$ can be infinite, while the reduced class semigroup of $M$ has two elements: the class of $1$ and the common class of all ambient nonunits. This explains why replacing ``reduced class semigroup'' by ``full class semigroup'' would give a false necessity condition.
+\end{example}
+
+The theorem characterizes possible conductors with a prescribed Krull closure. It does not characterize every intermediate Mori monoid having such a conductor, which is the different recognition problem in \cite[Problem 18]{GKL}. Nor does it characterize conductors of subrings or orders: the minimal monoid construction imposes no additive closure.
+
+\newpage
+\begin{thebibliography}{9}
+\bibitem{GHK} A. Geroldinger and F. Halter-Koch,
+\emph{Non-Unique Factorizations: Algebraic, Combinatorial and Analytic Theory},
+Pure and Applied Mathematics 278, Chapman \& Hall/CRC, Boca Raton, 2006.
+\bibitem{GKL} A. Geroldinger, H. Kim, and K. A. Loper,
+On long-term problems in multiplicative ideal theory and factorization theory,
+\href{https://arxiv.org/abs/2502.21020v3}{arXiv:2502.21020v3}, 2026.
+\bibitem{GZ} A. Geroldinger and Q. Zhong,
+A characterization of seminormal C-monoids,
+\emph{Boll. Unione Mat. Ital.} \textbf{12} (2019), 583--597.
+\href{https://doi.org/10.1007/s40574-019-00194-9}{doi:10.1007/s40574-019-00194-9}.
+\bibitem{Reinhart} A. Reinhart, A note on conductor ideals,
+\href{https://arxiv.org/abs/1508.04260}{arXiv:1508.04260}, 2015.
+\end{thebibliography}
+\end{document}

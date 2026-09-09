@@ -1,0 +1,54 @@
+{
+  "paper_id": "P27",
+  "title": "Conductor ideals of C-monoids with prescribed Krull closure",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "Internally checked proposed full characterization answering Geroldinger-Kim-Loper Problem 19; historical priority and significance provisional",
+  "files": {
+    "README.md": {
+      "sha256": "bb3d93d838e510efc7cebe31126164081d7673bc915e765f520add601372db7f",
+      "bytes": 1707
+    },
+    "ASSESSMENT.md": {
+      "sha256": "d4d1f493bf4eaa039b18e55c3fe4c6c21adfda351bfb339dc92e5d471ebe8491",
+      "bytes": 3625
+    },
+    "REVIEW.md": {
+      "sha256": "1f847221b18a44175e1b1424cae8f0a6bb210b92583292d080cc42eb2743c7b7",
+      "bytes": 4519
+    },
+    "manuscript.tex": {
+      "sha256": "9a9b96fa8a9f8e5f418b325de3685b7ea8c3dacc6195630f484825b465f98283",
+      "bytes": 18272
+    },
+    "manuscript.md": {
+      "sha256": "7e104d799cde6420b7933937946315211a6acb64dc28e03c411d8dc9f8c8cb4f",
+      "bytes": 19736
+    },
+    "manuscript.pdf": {
+      "sha256": "30833600a7923cff1ecc6c5fe18747c923a7d4374ebfa797a491c4c019feb6da",
+      "bytes": 83433
+    },
+    "check.py": {
+      "sha256": "b1eed24775a30597e3674a5751edd8abb70bc3757c9e44a840473a895e34ed18",
+      "bytes": 5653
+    },
+    "check-results.json": {
+      "sha256": "75412a87893c37d95b0e72aacced4995026cea79e4eb9defc407a85c586830bc",
+      "bytes": 5200
+    },
+    "markdown-conversion.json": {
+      "sha256": "7fc0ff2a857c3e9cca8852d2ff721ac9e61441c81fc2f47cab49d9a536a9e346",
+      "bytes": 3286
+    },
+    "markdown-math-check.json": {
+      "sha256": "051cc55f8786906ecb3622256286a6b74a3b9c8aaaab40cb68b83c2ed3a02d39",
+      "bytes": 433
+    },
+    "artifact-qa.json": {
+      "sha256": "2fc47ba4fcf8f7a7dc0d9972eb38c204a2640f552823e8f7be7328e1e1fbfc4f",
+      "bytes": 896
+    }
+  }
+}

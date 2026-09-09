@@ -1,0 +1,256 @@
+{
+  "status": "pass",
+  "exact_monomial_ideal_identities": 30,
+  "ideal_cases": [
+    {
+      "kind": "total_degree",
+      "rank": 2,
+      "degree": 1
+    },
+    {
+      "kind": "total_degree",
+      "rank": 2,
+      "degree": 2
+    },
+    {
+      "kind": "total_degree",
+      "rank": 2,
+      "degree": 3
+    },
+    {
+      "kind": "total_degree",
+      "rank": 2,
+      "degree": 4
+    },
+    {
+      "kind": "total_degree",
+      "rank": 2,
+      "degree": 5
+    },
+    {
+      "kind": "total_degree",
+      "rank": 3,
+      "degree": 1
+    },
+    {
+      "kind": "total_degree",
+      "rank": 3,
+      "degree": 2
+    },
+    {
+      "kind": "total_degree",
+      "rank": 3,
+      "degree": 3
+    },
+    {
+      "kind": "total_degree",
+      "rank": 3,
+      "degree": 4
+    },
+    {
+      "kind": "total_degree",
+      "rank": 3,
+      "degree": 5
+    },
+    {
+      "kind": "total_degree",
+      "rank": 4,
+      "degree": 1
+    },
+    {
+      "kind": "total_degree",
+      "rank": 4,
+      "degree": 2
+    },
+    {
+      "kind": "total_degree",
+      "rank": 4,
+      "degree": 3
+    },
+    {
+      "kind": "total_degree",
+      "rank": 4,
+      "degree": 4
+    },
+    {
+      "kind": "total_degree",
+      "rank": 4,
+      "degree": 5
+    },
+    {
+      "kind": "matching",
+      "pairs": 1,
+      "prime_profiles": 2
+    },
+    {
+      "kind": "matching",
+      "pairs": 2,
+      "prime_profiles": 4
+    },
+    {
+      "kind": "matching",
+      "pairs": 3,
+      "prime_profiles": 6
+    },
+    {
+      "kind": "matching",
+      "pairs": 4,
+      "prime_profiles": 8
+    },
+    {
+      "kind": "matching",
+      "pairs": 5,
+      "prime_profiles": 10
+    },
+    {
+      "kind": "matching",
+      "pairs": 6,
+      "prime_profiles": 12
+    },
+    {
+      "kind": "two_colors",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "kind": "two_colors",
+      "left": 1,
+      "right": 2
+    },
+    {
+      "kind": "two_colors",
+      "left": 1,
+      "right": 3
+    },
+    {
+      "kind": "two_colors",
+      "left": 2,
+      "right": 1
+    },
+    {
+      "kind": "two_colors",
+      "left": 2,
+      "right": 2
+    },
+    {
+      "kind": "two_colors",
+      "left": 2,
+      "right": 3
+    },
+    {
+      "kind": "two_colors",
+      "left": 3,
+      "right": 1
+    },
+    {
+      "kind": "two_colors",
+      "left": 3,
+      "right": 2
+    },
+    {
+      "kind": "two_colors",
+      "left": 3,
+      "right": 3
+    }
+  ],
+  "complete_finite_quotient_cases": [
+    {
+      "name": "degree_2",
+      "finite_quotient_states": 3,
+      "full_context_comparisons": 9,
+      "reduced_class_count": 3,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "degree_3",
+      "finite_quotient_states": 4,
+      "full_context_comparisons": 16,
+      "reduced_class_count": 4,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "degree_4",
+      "finite_quotient_states": 5,
+      "full_context_comparisons": 25,
+      "reduced_class_count": 5,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "degree_5",
+      "finite_quotient_states": 6,
+      "full_context_comparisons": 36,
+      "reduced_class_count": 6,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "degree_6",
+      "finite_quotient_states": 7,
+      "full_context_comparisons": 49,
+      "reduced_class_count": 7,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "reduced_maximal_exception",
+      "finite_quotient_states": 2,
+      "full_context_comparisons": 4,
+      "reduced_class_count": 1,
+      "proper": false,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "units_repair_maximal",
+      "finite_quotient_states": 6,
+      "full_context_comparisons": 36,
+      "reduced_class_count": 2,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "all_units_maximal_exception",
+      "finite_quotient_states": 6,
+      "full_context_comparisons": 36,
+      "reduced_class_count": 1,
+      "proper": false,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "parity_mixed_ideal",
+      "finite_quotient_states": 28,
+      "full_context_comparisons": 784,
+      "reduced_class_count": 7,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "class_three_degree",
+      "finite_quotient_states": 12,
+      "full_context_comparisons": 144,
+      "reduced_class_count": 4,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "opposite_classes",
+      "finite_quotient_states": 10,
+      "full_context_comparisons": 100,
+      "reduced_class_count": 10,
+      "proper": true,
+      "exact_conductor_verified": true
+    },
+    {
+      "name": "finite_matching",
+      "finite_quotient_states": 16,
+      "full_context_comparisons": 256,
+      "reduced_class_count": 10,
+      "proper": true,
+      "exact_conductor_verified": true
+    }
+  ],
+  "total_context_comparisons": 1495,
+  "scope": "Full finite quotients and exact finite monomial ideals; infinite-rank necessity and the general theorem have hand proofs."
+}
