@@ -1,0 +1,65 @@
+{
+  "symbolic": {
+    "generic_matrix_identities": 3,
+    "coefficient_ring": "Z[a,b,c,d,e,f]",
+    "all_pass": true
+  },
+  "fields": [
+    {
+      "q": 3,
+      "field": "F_3",
+      "input_mode": "all",
+      "pairs": 729,
+      "direct_nested_bracket_basis_checks": 2187,
+      "exact_fibers_checked": 26,
+      "indicator_values_checked": 24,
+      "complete_subset_images_checked": 8,
+      "all_pass": true
+    },
+    {
+      "q": 5,
+      "field": "F_5",
+      "input_mode": "all",
+      "pairs": 15625,
+      "direct_nested_bracket_basis_checks": 78125,
+      "exact_fibers_checked": 124,
+      "indicator_values_checked": 160,
+      "complete_subset_images_checked": 32,
+      "all_pass": true
+    },
+    {
+      "q": 7,
+      "field": "F_7",
+      "input_mode": "canonical",
+      "pairs": 2401,
+      "direct_nested_bracket_basis_checks": 16807,
+      "exact_fibers_checked": 7,
+      "indicator_values_checked": 896,
+      "complete_subset_images_checked": 0,
+      "all_pass": true
+    },
+    {
+      "q": 9,
+      "field": "F_3[u]/(u^2-2)",
+      "input_mode": "canonical",
+      "pairs": 6561,
+      "direct_nested_bracket_basis_checks": 59049,
+      "exact_fibers_checked": 9,
+      "indicator_values_checked": 4608,
+      "complete_subset_images_checked": 0,
+      "all_pass": true
+    },
+    {
+      "q": 25,
+      "field": "F_5[u]/(u^2-2)",
+      "input_mode": "sample",
+      "pairs": 256,
+      "direct_nested_bracket_basis_checks": 6400,
+      "exact_fibers_checked": 0,
+      "indicator_values_checked": 100,
+      "complete_subset_images_checked": 0,
+      "all_pass": true
+    }
+  ],
+  "role": "Exact consistency checks; universal statements proved in manuscript."
+}

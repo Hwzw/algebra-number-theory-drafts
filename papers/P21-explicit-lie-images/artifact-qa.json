@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-09",
+  "pdf_pages": 5,
+  "pdf_sha256": "cb0b0a6b518e1d198a13af778f6cd4b91af78d43b900a06f2b3fdef515adafeb",
+  "tex_sha256": "e85236ac888c1233156cb69a5ccd15c97acaa9884c885bde74a194aa776d53b8",
+  "markdown_sha256": "1e08580145af0b4f6624e30a54dbfdd02fd00294b981b2bf0fe4adeb30f3559d",
+  "all_final_pdf_pages_rendered": true,
+  "all_final_pdf_pages_visually_inspected": true,
+  "render_dpi": 100,
+  "layout_findings": "All five final pages inspected. Main theorem kept on one page; no clipping, overlap, unreadable equations, or missing glyphs.",
+  "latex_warnings": [],
+  "markdown_source_math_expressions_verified": 183,
+  "markdown_rendered_expressions": 189,
+  "markdown_math_errors": 0,
+  "markdown_semantic_roundtrip_verified": true,
+  "github_live_render_inspected": false,
+  "review_kind": "originating agent, no human peer review"
+}

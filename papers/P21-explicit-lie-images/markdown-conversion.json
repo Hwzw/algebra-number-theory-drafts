@@ -1,0 +1,131 @@
+{
+  "environments": {
+    "theorem": 2,
+    "lemma": 2,
+    "proof": 6,
+    "proposition": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2",
+      "id": "lemma-1",
+      "source_label": "lem:identities"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3",
+      "id": "proposition-1",
+      "source_label": "prop:lift"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "4",
+      "id": "lemma-2",
+      "source_label": "lem:companion"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "5",
+      "id": "theorem-2",
+      "source_label": "thm:fibers"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "6",
+      "id": "proposition-2",
+      "source_label": "prop:lower"
+    }
+  ],
+  "references": 30,
+  "citations": 3,
+  "cited_keys": [
+    "KS",
+    "Lubotzky"
+  ],
+  "bibliography_keys": [
+    "KS",
+    "Lubotzky"
+  ],
+  "equation_labels": [
+    "eq:word",
+    "eq:evaluation",
+    "eq:indicator",
+    "eq:image",
+    "eq:CH",
+    "eq:double",
+    "eq:orth",
+    "eq:transfer",
+    "eq:recurrence",
+    "eq:monomial",
+    "eq:companion",
+    "eq:selection",
+    "eq:fibers",
+    "eq:zero",
+    "eq:binary",
+    "eq:classsizes"
+  ],
+  "label_numbers": {
+    "eq:word": "1",
+    "thm:main": "1",
+    "eq:evaluation": "2",
+    "eq:indicator": "3",
+    "eq:image": "4",
+    "lem:identities": "2",
+    "eq:CH": "5",
+    "eq:double": "6",
+    "eq:orth": "7",
+    "eq:transfer": "8",
+    "eq:recurrence": "9",
+    "prop:lift": "3",
+    "eq:monomial": "10",
+    "lem:companion": "4",
+    "eq:companion": "11",
+    "eq:selection": "12",
+    "thm:fibers": "5",
+    "eq:fibers": "13",
+    "eq:zero": "14",
+    "eq:binary": "15",
+    "eq:classsizes": "16",
+    "prop:lower": "6"
+  },
+  "bibliography_numbers": {
+    "KS": "1",
+    "Lubotzky": "2"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "e85236ac888c1233156cb69a5ccd15c97acaa9884c885bde74a194aa776d53b8",
+  "source_pdf_sha256": "cb0b0a6b518e1d198a13af778f6cd4b91af78d43b900a06f2b3fdef515adafeb",
+  "markdown_sha256": "1e08580145af0b4f6624e30a54dbfdd02fd00294b981b2bf0fe4adeb30f3559d",
+  "markdown_bytes": 16563,
+  "source_math_expressions_verified": 183,
+  "markdown_math_expressions": 189,
+  "custom_macros_expanded": [
+    "F",
+    "ad",
+    "tr",
+    "GL",
+    "slie"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 48,
+  "semantic_roundtrip_sha256": "0d9f842443de4f8d4a46472279c98641cdbb014da09b3e04066ae3cfffb3db81",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 36,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

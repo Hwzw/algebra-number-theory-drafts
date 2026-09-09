@@ -1,0 +1,54 @@
+{
+  "paper_id": "P21",
+  "title": "Explicit Lie polynomials with prescribed images over finite fields",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 5,
+  "status": "Complete internally checked proposed rank-one solution; priority and significance provisional",
+  "files": {
+    "manuscript.tex": {
+      "sha256": "e85236ac888c1233156cb69a5ccd15c97acaa9884c885bde74a194aa776d53b8",
+      "bytes": 15403
+    },
+    "manuscript.md": {
+      "sha256": "1e08580145af0b4f6624e30a54dbfdd02fd00294b981b2bf0fe4adeb30f3559d",
+      "bytes": 16563
+    },
+    "manuscript.pdf": {
+      "sha256": "cb0b0a6b518e1d198a13af778f6cd4b91af78d43b900a06f2b3fdef515adafeb",
+      "bytes": 83500
+    },
+    "README.md": {
+      "sha256": "9bd226e3dd2c40937cec04d7d290e56d74ca8450677a5128238c710a23a47c58",
+      "bytes": 1758
+    },
+    "ASSESSMENT.md": {
+      "sha256": "b003c0d1d2c13cedb23026720b7926f2893188bbd7a5f0aeb7010eab1f518030",
+      "bytes": 2724
+    },
+    "REVIEW.md": {
+      "sha256": "8d565191d4d64e1df9e362a7f14e1851bd9afab95a17fdb9db81b7dc115f7afd",
+      "bytes": 3949
+    },
+    "check.py": {
+      "sha256": "fefa532fae8a28a69885220665dee02f08ab551592c3e07709447f1708519b51",
+      "bytes": 5612
+    },
+    "check-results.json": {
+      "sha256": "bfe680c536edc3a98c5ea33eeff0d9b9119d9e4f49c7857abe2865119c7576eb",
+      "bytes": 1692
+    },
+    "markdown-conversion.json": {
+      "sha256": "14a91f0ad5d028388ab97321713ecedaef40a7eb1ab50a937f4853fc5d96ba37",
+      "bytes": 2939
+    },
+    "markdown-math-check.json": {
+      "sha256": "19e4f424c4b4ea07ecda5d29634bf5a7867b7d81a4d26fc8a024cafc5ddafb37",
+      "bytes": 436
+    },
+    "artifact-qa.json": {
+      "sha256": "ecf8f123094a5c587bbedf2712361646a5eb71e148de5504d4bf2aa633fa9010",
+      "bytes": 857
+    }
+  }
+}

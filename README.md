@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 20 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 21 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New explicit Lie-polynomial image construction
+
+[**P21: Explicit Lie polynomials with prescribed images over finite fields**](papers/P21-explicit-lie-images/README.md), by **Henry Zweiman**, gives a proposed complete answer in rank one to Kishnani–Singh Question 1.2. Its five-page [PDF](papers/P21-explicit-lie-images/manuscript.pdf), [complete Markdown](papers/P21-explicit-lie-images/manuscript.md), and [LaTeX](papers/P21-explicit-lie-images/manuscript.tex) give a two-variable formula of degree at most 6q-5 for every conjugation-invariant zero-containing subset of sl_2(F_q), for every odd prime power q.
+
+The paper proves exact fiber counts and a linear degree lower bound. The general existence classification is prior work; the contribution is explicit realization with quantitative control. [Assessment](papers/P21-explicit-lie-images/ASSESSMENT.md) and [proof review](papers/P21-explicit-lie-images/REVIEW.md) record the comparison, generic identities, and 162,568 exact bracket evaluations. Higher rank remains outside scope, and priority and significance remain provisional.
 
 ## New average unit-circle zero theorem
 
