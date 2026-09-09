@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-09",
+  "pages": 9,
+  "pdf_sha256": "55fd2116bdaa660400d73e66b24b96f070b58263de340950b08df49278fb3ca6",
+  "all_pages_rendered": true,
+  "all_pages_visually_inspected": true,
+  "render_dpi": 100,
+  "layout_findings": "Legible math and prose on all nine pages; no clipping, overlap, or missing content observed. Ordinary proof continuations across pages remain.",
+  "latex_warnings": [],
+  "author_verified": "Henry Zweiman",
+  "full_markdown": true,
+  "source_math_expressions_verified": 393,
+  "markdown_math_expressions_checked": 406,
+  "markdown_math_errors": [],
+  "semantic_roundtrip_equal": true,
+  "github_live_markdown_render_inspected": false,
+  "external_human_review": false,
+  "separate_agent_review": false
+}

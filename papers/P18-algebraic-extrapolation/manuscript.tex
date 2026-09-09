@@ -1,0 +1,402 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Oa}{\mathcal O}
+\newcommand{\Tr}{\operatorname{Tr}}
+\title{Integer-polynomial lifting and the classification of algebraic extrapolation sets}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For a complex parameter $\lambda$, let $Q_\lambda$ be the closure of $\{0,1\}$ under the operation $(a,b)\mapsto(1-\lambda)a+\lambda b$, without taking topological closure. We characterize $Q_\lambda$ for every algebraic integer $\lambda\ne0,1$ by inequalities at its conjugates in $(0,1)$ and two endpoint congruences. The proof lifts polynomial residue classes to integer polynomials strictly between zero and one on $(0,1)$, using classical integer-coefficient approximation with control at the endpoints. Together with the algebraic-integrality theorem of Fenner, Green, and Homer, the characterization proves that $Q_\lambda$ is discrete exactly when $\lambda$ is a strong PV number. Every nondegenerate discrete $Q_\lambda$ is a Meyer set, and equality with the unrestricted internal-cube model set is determined by the two integers $|m_\lambda(0)|$ and $|m_\lambda(1)|$. We also prove finite generation of the entire cube model set, with a seed of size at most $|m_\lambda(0)m_\lambda(1)|+2$. These results resolve the corresponding extrapolation questions in all degrees.
+\end{abstract}
+
+\section{Introduction and results}
+For $\lambda\in\C$ and $S\subseteq\C$, let $Q_\lambda(S)$ be the least superset of $S$ closed under
+\[
+ a\star_\lambda b=(1-\lambda)a+\lambda b,
+ \qquad Q_\lambda=Q_\lambda(\{0,1\}).
+\]
+Only finite expressions are allowed in $Q_\lambda(S)$. Its topological closure is a different object.
+
+A \emph{strong PV number} is an algebraic integer whose conjugates other than itself and its complex conjugate all belong to $(0,1)$. This includes every rational integer and every nonreal quadratic integer. Fenner, Green, and Homer \cite{FGH2026} relate extrapolation sets to aperiodic order and prove discreteness for strong PV parameters. Their Section~11 asks for the converse, relative density, equality with the natural model set, and finite generation of that model set. Earlier versions of these questions appear in \cite{FGH2018,FGH2020}.
+
+Our main tool is an exact lifting result for integer polynomials modulo a prescribed polynomial. Its arithmetic consequence is the following theorem.
+
+\begin{theorem}\label{thm:arithmetic}
+Let $\lambda\ne0,1$ be an algebraic integer, let $m\in\Z[X]$ be its monic minimal polynomial, and put $\Oa=\Z[\lambda]$. Let $\mu_1,\ldots,\mu_k$ be all the conjugates of $\lambda$ in $(0,1)$, and let $\sigma_i:\Q(\lambda)\to\R$ send $\lambda$ to $\mu_i$. Then
+\begin{equation}\label{eq:criterion}
+\begin{split}
+ Q_\lambda=\{0,1\}\ \cup\ \{a\in\Oa:\;&0<\sigma_i(a)<1\quad(1\le i\le k),\\
+ &a\bmod\lambda\Oa\in\{0,1\},\\
+ &a\bmod(1-\lambda)\Oa\in\{0,1\}\}.
+\end{split}
+\end{equation}
+Here $\{0,1\}$ in a quotient means the images of those integers, which may coincide. If $k=0$, the inequalities impose no restriction. If $\lambda\in(0,1)$, its identity embedding is among the $\sigma_i$.
+\end{theorem}
+
+The two quotient rings are particularly simple:
+\begin{equation}\label{eq:endpoints}
+ \Oa/\lambda\Oa\cong\Z/m(0)\Z,\qquad
+ \Oa/(1-\lambda)\Oa\cong\Z/m(1)\Z.
+\end{equation}
+They record evaluation at $0$ and $1$ of a polynomial representative. No maximal-order hypothesis is imposed on $\Oa$.
+
+\begin{theorem}\label{thm:discrete}
+For every $\lambda\in\C$, the set $Q_\lambda$ is discrete if and only if $\lambda$ is a strong PV number.
+\end{theorem}
+
+For the remaining results, take a strong PV number $\lambda\ne0,1$ and retain the notation of Theorem~\ref{thm:arithmetic}. Put
+\[
+ a^*=(\sigma_1(a),\ldots,\sigma_k(a)),\qquad
+ M_\lambda=\{a\in\Oa:a^*\in[0,1]^k\},\qquad
+ I=\lambda(1-\lambda)\Oa.
+\]
+When $k=0$, set $M_\lambda=\Oa$. The physical space $F$ is $\R$ for real $\lambda$ and $\C\cong\R^2$ for nonreal $\lambda$. A set is \emph{relatively dense} if every point of the physical space is within a fixed distance of it. It is a \emph{Meyer set} if it is relatively dense and its difference set is uniformly discrete.
+
+\begin{theorem}\label{thm:model}
+For every strong PV number $\lambda\ne0,1$, the set $Q_\lambda$ is a model set with internal group
+\[
+ \R^k\times(\Oa/I),
+\]
+and it is a Meyer set in $F$. Moreover,
+\begin{equation}\label{eq:equality}
+ Q_\lambda=M_\lambda
+ \quad\Longleftrightarrow\quad
+ |m(0)|\le2\ \hbox{ and }\ |m(1)|\le2.
+\end{equation}
+For a nonreal quadratic integer $\lambda$, the set $Q_\lambda$ is a finite union of cosets of the lattice $I$ and is therefore periodic.
+\end{theorem}
+
+\begin{theorem}\label{thm:finite}
+For every strong PV number $\lambda\ne0,1$, there is a finite set $Y\subseteq M_\lambda$ such that
+\[
+ Q_\lambda(Y)=M_\lambda,\qquad
+ |Y|\le |m(0)m(1)|+2.
+\]
+One may take representatives in $M_\lambda$ of all residue classes modulo $I$, together with $0$ and $1$.
+\end{theorem}
+
+\begin{corollary}\label{cor:relative}
+The set $Q_\lambda$ is relatively dense in $\R$ for every $\lambda\in\R\setminus[0,1]$, and in $\C$ for every $\lambda\in\C\setminus\R$.
+\end{corollary}
+
+Theorem~\ref{thm:discrete} proves \cite[Conjecture~11.1]{FGH2026}. Theorem~\ref{thm:model} answers Question~11.2 and the quadratic Question~11.6; Corollary~\ref{cor:relative} answers Question~11.3. Theorem~\ref{thm:finite} proves the finite-generation assertions of Conjectures~11.4--11.5 for nondegenerate parameters. If the phrase ``any strong PV number'' in Conjecture~11.5 is read literally to include $0$ and $1$, these are exceptions: $Q_0(Y)=Q_1(Y)=Y$, whereas $M_0=M_1=\Z$ under the empty-window convention. Throughout our finite-generation statements they are explicitly excluded.
+
+The quadratic cases of \eqref{eq:equality} recover the four families already classified in \cite[Theorem~6.9]{FGH2026}. The contribution is the exact arithmetic description and its consequences in arbitrary degree. These consequences use one common argument, rather than separate classifications by dimension.
+
+\section{Integer approximation and finite extrapolation trees}
+We first record two classical approximation facts in a form that makes integrality explicit. The first is the integer-approximation theorem of Chlodovsky and Kantorovich; see \cite{GL} for its history and quantitative refinements.
+
+\begin{lemma}\label{lem:approx}
+If $h:[0,1]\to\R$ is continuous and $h(0),h(1)\in\Z$, then for every $\varepsilon>0$ there is $H\in\Z[X]$ with $\|H-h\|_\infty<\varepsilon$.
+\end{lemma}
+\begin{proof}
+The ordinary Bernstein polynomial is
+\[
+ B_nh(X)=\sum_{j=0}^n\binom nj h(j/n)X^j(1-X)^{n-j}.
+\]
+Round each coefficient $\binom njh(j/n)$ to the nearest integer. The coefficients for $j=0,n$ are already integral. Since $\binom nj\ge n$ for $1\le j\le n-1$, the resulting integer polynomial $H_n$ satisfies
+\[
+ |H_n(t)-B_nh(t)|
+ \le\frac12\sum_{j=1}^{n-1}t^j(1-t)^{n-j}
+ \le\frac1{2n}\qquad(0\le t\le1).
+\]
+Bernstein's uniform approximation theorem now gives $H_n\to h$ uniformly.
+\end{proof}
+
+\begin{lemma}\label{lem:positive}
+Let $p\in\R[X]$ be strictly positive on $(0,1)$ and nonnegative at both endpoints. For every sufficiently large $n$, its coefficients in the basis
+\[
+ X^j(1-X)^{n-j},\qquad 0\le j\le n,
+\]
+are nonnegative. If $p\in\Z[X]$, those coefficients are integers.
+\end{lemma}
+\begin{proof}
+Factor $p=X^a(1-X)^b h$, where $a,b\ge0$ and $h>0$ on $[0,1]$. For a fixed polynomial $h(X)=\sum_{s=0}^d h_sX^s$, its normalized Bernstein coefficients of degree $n\ge d$ are
+\[
+ \beta_{j,n}=\sum_{s=0}^d h_s\frac{(j)_s}{(n)_s},
+\]
+where $(j)_s=j(j-1)\cdots(j-s+1)$ and $(j)_0=1$. For each fixed $s$, the quotient $(j)_s/(n)_s$ differs from $(j/n)^s$ by $O_s(1/n)$ uniformly in $0\le j\le n$. Thus $\beta_{j,n}-h(j/n)\to0$ uniformly. The positive minimum of $h$ gives positivity of all $\beta_{j,n}$ for large $n$. Multiplication by $X^a(1-X)^b$ preserves nonnegativity in the unnormalized basis.
+
+For integrality, use
+\[
+ X^s=\sum_{j=s}^n\binom{n-s}{j-s}X^j(1-X)^{n-j}.
+\]
+Every integer polynomial of degree at most $n$ consequently has integer coefficients in this basis.
+\end{proof}
+
+\begin{lemma}\label{lem:tree}
+Suppose $p_1,\ldots,p_l\in\Z[X]$ sum to $1$, and each is either zero or strictly positive on $(0,1)$ and nonnegative at the endpoints. For arbitrary $y_1,\ldots,y_l\in\C$ and $\lambda\in\C$,
+\[
+ \sum_{i=1}^l p_i(\lambda)y_i\in Q_\lambda(\{y_1,\ldots,y_l\}).
+\]
+\end{lemma}
+\begin{proof}
+Choose one large degree $n$ for all the polynomials in Lemma~\ref{lem:positive}. Write their unnormalized coefficients as $c_{i,j}\in\Z_{\ge0}$. The partition identity gives
+\[
+ \sum_{i=1}^l c_{i,j}=\binom nj.
+\]
+A complete binary extrapolation tree of depth $n$ has exactly $\binom nj$ leaves with $j$ right branches. Each such leaf has weight $\lambda^j(1-\lambda)^{n-j}$. Label exactly $c_{i,j}$ of them by $y_i$. The tree evaluates to the desired sum.
+\end{proof}
+
+\begin{corollary}\label{cor:polynomials}
+An integer polynomial is generated from $0,1$ by $(p,q)\mapsto(1-X)p+Xq$ if and only if it is $0$, $1$, or strictly between $0$ and $1$ on $(0,1)$.
+\end{corollary}
+\begin{proof}
+Finite trees give the necessity: at an interior argument all leaf weights are positive, so a tree using both labels has value strictly between zero and one. Conversely, a polynomial $p$ strictly between zero and one has endpoint values in $\{0,1\}$, and Lemma~\ref{lem:tree} applied to $1-p,p$ constructs the required tree.
+\end{proof}
+
+This is the characterization of \cite[Theorem~3.6]{FGH2026}. We have included a proof to make the finite-tree step, also needed with more than two leaf labels, self-contained.
+
+\section{Lifting with endpoint control}
+\begin{lemma}\label{lem:weighted}
+Let $m,R,w\in\Z[X]$ satisfy $m(0)m(1)\ne0$ and $w(t)>0$ on $(0,1)$. Suppose there are integers $h_0,h_1$ such that, on putting
+\[
+ H_0=(1-X)h_0+Xh_1,\qquad F_0=R+mX(1-X)H_0,
+\]
+the following conditions hold:
+
+\begin{enumerate}
+\item $0<R(\mu)<w(\mu)$ at every real zero $\mu$ of $m$ in $(0,1)$;
+\item near each endpoint, $0<F_0(t)<w(t)$ and both $F_0(t)$ and $w(t)-F_0(t)$ are at least a positive constant times $t(1-t)$.
+\end{enumerate}
+Then some $H\in\Z[X]$ makes
+\[
+ P=R+mX(1-X)H
+\]
+satisfy $0<P(t)<w(t)$ for every $0<t<1$.
+\end{lemma}
+\begin{proof}
+Let $W=mX(1-X)$. By the first condition and continuity, $0<F_0<w$ also holds in neighborhoods of the interior real zeros of $m$. Choose a continuous function $\chi:[0,1]\to[0,1]$ that vanishes on smaller neighborhoods of all these zeros and the endpoints, equals one outside slightly larger neighborhoods, and transitions only where $0<F_0<w$. Such a function can be chosen piecewise linear. Define
+\[
+ h=H_0+\chi\frac{w/2-F_0}{W},
+\]
+where the second term is extended by zero near the zeros of $W$. Then $h$ is continuous and its endpoint values are the integers $h_0,h_1$. Also
+\[
+ F:=R+Wh=(1-\chi)F_0+\chi w/2
+\]
+lies strictly between zero and $w$ throughout $(0,1)$. It agrees with $F_0$ near the endpoints. The endpoint lower bounds and compactness of the remaining interval give $\eta>0$ such that
+\[
+ \min(F(t),w(t)-F(t))\ge\eta t(1-t)\qquad(0\le t\le1).
+\]
+By Lemma~\ref{lem:approx}, choose $H\in\Z[X]$ with
+\[
+ \|H-h\|_\infty<\frac{\eta}{\max_{[0,1]}|m|}.
+\]
+Then $|P(t)-F(t)|<\eta t(1-t)$ on $(0,1)$, proving the assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:lift}
+Let $m,p\in\Z[X]$ with $m(0)m(1)\ne0$. There is $P\in p+m\Z[X]$ satisfying $0<P(t)<1$ for all $0<t<1$ if and only if
+\begin{equation}\label{eq:liftconditions}
+\begin{gathered}
+ 0<p(\mu)<1\quad\hbox{at every real zero $\mu$ of $m$ in $(0,1)$},\\
+ p(0)\bmod m(0)\in\{0,1\},\qquad
+ p(1)\bmod m(1)\in\{0,1\}.
+\end{gathered}
+\end{equation}
+\end{theorem}
+\begin{proof}
+Necessity follows by evaluation, including continuity and integrality at the endpoints. Conversely, choose $e_0,e_1\in\{0,1\}$ in the specified residue classes. There is an integer linear polynomial $q_0$ with
+\[
+ q_0(0)=\frac{e_0-p(0)}{m(0)},\qquad
+ q_0(1)=\frac{e_1-p(1)}{m(1)}.
+\]
+Set $R=p+mq_0$, so $R(0)=e_0$ and $R(1)=e_1$. Adding $mX(1-X)H_0$ changes its endpoint derivatives to
+\[
+ R'(0)+m(0)h_0,\qquad R'(1)-m(1)h_1.
+\]
+Choose integers $h_0,h_1$ to make these derivatives strictly inward: at zero the sign is positive if $e_0=0$ and negative if $e_0=1$; at one the sign is negative if $e_1=0$ and positive if $e_1=1$. This is possible because $m(0),m(1)$ are nonzero. The resulting function and its complement have the required positive linear lower bounds near the endpoints. Apply Lemma~\ref{lem:weighted} with $w=1$. The resulting $P$ still belongs to $p+m\Z[X]$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:arithmetic}]
+Every element of $Q_\lambda$ is $p(\lambda)$ for a polynomial generated by a finite tree. Corollary~\ref{cor:polynomials} gives its strict inequalities at the internal conjugates, unless it is $0$ or $1$, and its endpoint values give the two congruences.
+
+Conversely, take $a=p(\lambda)$ satisfying \eqref{eq:criterion}. The kernel of evaluation $\Z[X]\to\Oa$ is $m\Z[X]$, since $m$ is monic. Reducing further modulo $\lambda$ or $1-\lambda$ gives \eqref{eq:endpoints}. Thus $p$ satisfies \eqref{eq:liftconditions}. Theorem~\ref{thm:lift} gives a representative $P$ strictly between zero and one, and Corollary~\ref{cor:polynomials} yields $a=P(\lambda)\in Q_\lambda$.
+\end{proof}
+
+\section{Discreteness}
+We use the full Minkowski embedding of the number field $K=\Q(\lambda)$ into $\R^r\times\C^s$, treated as a real space of dimension $[K:\Q]$. The image of a nonzero ideal of the order $\Oa$ is a full lattice.
+
+\begin{proof}[Proof of Theorem~\ref{thm:discrete}]
+If $Q_\lambda$ is discrete, then $\lambda$ is an algebraic integer by \cite[Theorem~8.2]{FGH2020}; this theorem applies to arbitrary complex parameters. The values $0,1$ are strong PV and have $Q_\lambda=\{0,1\}$. For $0<\lambda<1$, iterated subdivision of $[0,1]$ at ratio $\lambda$ gives points in $Q_\lambda$ with largest gap at most $\max(\lambda,1-\lambda)^n$. Hence $Q_\lambda$ is dense in $[0,1]$, so this case is not discrete.
+
+Suppose now that $\lambda\notin[0,1]$ is an algebraic integer that is not strong PV. In the Minkowski embedding distinguish the physical coordinate of $\lambda$ (a real coordinate or a complete complex pair) and the $k$ real internal coordinates in $(0,1)$. Since $\lambda$ is not strong PV, at least one real dimension is left over.
+
+Put $a_0=\lambda(1-\lambda)$. Every internal value $\mu_i(1-\mu_i)$ lies strictly between zero and one. Fix $\eta>0$ smaller than its distance to each boundary; if $k=0$, choose any $\eta>0$. For each $\varepsilon>0$, consider the symmetric box in the Minkowski space that bounds each physical real coordinate by $\varepsilon$, each internal coordinate by $\eta$, and all remaining coordinates by $T$. Its volume tends to infinity with $T$. Minkowski's convex body theorem therefore gives a nonzero $\delta\in I$ satisfying the physical and internal bounds for sufficiently large $T$.
+
+Both $a_0$ and $\delta$ lie in $I$, and every internal value of $a_0+\delta$ lies in $(0,1)$. Theorem~\ref{thm:arithmetic} implies $a_0+\delta\in Q_\lambda$. Letting $\varepsilon\to0$ gives nonzero physical values $\delta\to0$, because an embedding of a field is injective. Thus $a_0$ is an accumulation point of $Q_\lambda$, contradicting discreteness.
+
+For the converse, let $\lambda$ be strong PV. It cannot belong to $(0,1)$, since then the product of all its conjugates would be a nonzero integer of absolute value less than one. The exceptional parameters $0,1$ were handled above. Otherwise the full Minkowski space consists exactly of the physical and internal coordinates. Formula~\eqref{eq:criterion} places $Q_\lambda$ inside $M_\lambda$. Differences of its points have internal coordinates in $[-1,1]^k$. A compact physical neighborhood times this internal cube meets the order lattice in finitely many points. The nonzero physical norms among them have a positive minimum, so $Q_\lambda$ is uniformly discrete.
+\end{proof}
+
+\section{Arithmetic model sets}
+We give the needed density statement with proof to avoid assumptions about the order or its ideals.
+
+\begin{lemma}\label{lem:projection}
+Let $J$ be a full $\Z$-lattice in a number field $K$. Its projection onto any proper collection of real embeddings and complete complex pairs is dense in the corresponding real vector space.
+\end{lemma}
+\begin{proof}
+On the full Minkowski space use the nondegenerate real bilinear form
+\[
+ B(v,w)=\sum_{i=1}^r v_iw_i+2\operatorname{Re}\sum_{j=1}^s v_jw_j.
+\]
+For field elements this is $\Tr_{K/\Q}(ab)$. The lattice dual to the image of $J$ for $B$ is the image of
+\[
+ J^\vee=\{b\in K:\Tr_{K/\Q}(bJ)\subseteq\Z\}.
+\]
+Indeed the trace-dual basis of a $\Z$-basis of $J$ lies in $K$, by nondegeneracy of the rational trace pairing.
+
+If the projected subgroup were not dense, its closure would be a proper closed subgroup of a real vector space. The decomposition of such a subgroup into a vector space and a lattice gives a nonzero real linear functional taking integer values on it. Extend this functional by zero on the omitted coordinates. Its representing vector for $B$ belongs to the dual lattice and has zero in every omitted coordinate. Thus it is the image of some $b\in K$ with one embedding equal to zero. This forces $b=0$, contrary to the choice of the functional.
+\end{proof}
+
+Let $C=\Oa/I$. The two endpoint ideals are comaximal since $\lambda+(1-\lambda)=1$, so
+\begin{equation}\label{eq:crt}
+ C\cong\Z/m(0)\Z\times\Z/m(1)\Z,
+ \qquad |C|=|m(0)m(1)|.
+\end{equation}
+Write $E\subseteq C$ for the pairs with each coordinate in $\{0,1\}$. For a strong PV parameter $\lambda\ne0,1$, define
+\[
+ \mathcal L=\{(a,a^*,a\bmod I):a\in\Oa\}
+ \subseteq F\times\R^k\times C.
+\]
+This is a discrete cocompact subgroup. Discreteness follows from the Minkowski lattice; cocompactness follows by reducing the Minkowski coordinate into a compact fundamental region, leaving only the finite coordinate in $C$. Projection to the physical space is injective. Projection to the internal group $\R^k\times C$ is dense: in each residue class the real internal values are a translate of $I^*$, which is dense by Lemma~\ref{lem:projection}. When $k=0$, this says simply that the projection onto $C$ is surjective.
+
+A \emph{model set} for this scheme is obtained by retaining the physical coordinates of lattice points whose internal coordinates lie in a relatively compact window with nonempty interior. Set
+\[
+ W=[0,1]^k\times E.
+\]
+Any internal value of a field element equal to $0$ or $1$ forces the element itself to be $0$ or $1$. Thus Theorem~\ref{thm:arithmetic} gives exactly
+\begin{equation}\label{eq:model}
+ Q_\lambda=\{a\in\Oa:(a^*,a\bmod I)\in W\}.
+\end{equation}
+The closed window makes no extraneous boundary points.
+
+\begin{lemma}\label{lem:meyer}
+The set in \eqref{eq:model} is relatively dense and its difference set is uniformly discrete.
+\end{lemma}
+\begin{proof}
+Choose a compact set $K_0$ with $\mathcal L+K_0=F\times\R^k\times C$. For a physical point $x$, write $(x,0)=l+u$ with $l\in\mathcal L$ and $u\in K_0$. The internal coordinate of $l$ belongs to a fixed compact set. For each possible internal value $t$, density of the internal projection gives $l'\in\mathcal L$ with $t+l'_{\rm int}\in W^\circ$. The same $l'$ works in a neighborhood of $t$, and compactness leaves only finitely many necessary choices of $l'$. Consequently $l+l'$ is a selected lattice point at uniformly bounded physical distance from $x$. This proves relative density.
+
+A difference of two selected points has internal coordinate in $W-W$. A difference of two such differences has internal coordinate in $W-W-W+W$, a compact set. Discreteness of $\mathcal L$ implies that only finitely many lattice points have this internal constraint and physical norm at most one. Every nonzero such point has a nonzero physical coordinate by injectivity. Taking the minimum of their nonzero norms and one gives a positive separation bound for the difference set.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:model}]
+The model-set and Meyer assertions follow from \eqref{eq:model} and Lemma~\ref{lem:meyer}. Every class modulo $I$ meets $M_\lambda$: for $k>0$ apply Lemma~\ref{lem:projection} to $I$ and the open cube; for $k=0$ there is no internal restriction. Hence $Q_\lambda=M_\lambda$ holds exactly when $E=C$. By \eqref{eq:crt}, this is equivalent to each endpoint quotient having at most two elements, which is \eqref{eq:equality}. For a nonreal quadratic integer, $k=0$ and $\Oa$ is a lattice in $\C$; \eqref{eq:model} is precisely a union of the cosets of $I$ indexed by $E$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:relative}]
+Strong PV parameters in the indicated ranges are covered by Theorem~\ref{thm:model}. For every other parameter in these ranges, Theorem~\ref{thm:discrete} gives nondiscreteness. By \cite[Corollary~3.5 and Theorem~2.19]{FGH2020}, the topological closure is then $\R$ or $\C$, respectively. A dense subset of either space is relatively dense.
+\end{proof}
+
+\section{Finite generation of the full cube}
+\begin{proof}[Proof of Theorem~\ref{thm:finite}]
+By Lemma~\ref{lem:projection}, every class in $C$ has a representative in $M_\lambda$. Choose such representatives and add $0,1$, obtaining $Y$ with the stated size bound. The set $M_\lambda$ is $\lambda$-convex because each internal operation is interpolation with parameter $\mu_i\in(0,1)$. Thus $Q_\lambda(Y)\subseteq M_\lambda$.
+
+For the reverse inclusion, fix $a\in M_\lambda\setminus\{0,1\}$. Every internal coordinate of $a$ is strictly between zero and one. Choose $y_L,y_R\in Y$ such that
+\[
+ a\equiv y_L\pmod{\lambda\Oa},\qquad
+ a\equiv y_R\pmod{(1-\lambda)\Oa}.
+\]
+Let $r,u,v\in\Z[X]$ represent $a,y_L,y_R$, respectively. For an integer $N\ge2$, put
+\[
+ b_L=(1-X)^N,\qquad b_R=X^N,\qquad
+ w=1-b_L-b_R,\qquad f=r-u b_L-v b_R.
+\]
+As $N\to\infty$, the values $b_L(\mu_i),b_R(\mu_i)$ tend to zero. Choose $N$ large enough that
+\begin{equation}\label{eq:finiteconditions}
+ 0<f(\mu_i)<w(\mu_i)\quad(1\le i\le k),\qquad
+ N>\max(|m(0)|,|m(1)|).
+\end{equation}
+This is possible since $0<\sigma_i(a)<1$ and the internal seed values lie in $[0,1]$. If $k=0$, only the last inequality is needed.
+
+The chosen residues give $m(0)\mid f(0)$ and $m(1)\mid f(1)$. Choose an integer linear polynomial $q_0$ so that $R=f+mq_0$ has both endpoint values zero. The derivatives after adding $mX(1-X)H_0$ are
+\[
+ R'(0)+m(0)h_0,\qquad R'(1)-m(1)h_1.
+\]
+Each runs through an integer residue class with modulus $|m(0)|$ or $|m(1)|$. An open interval of length $N$ larger than that modulus contains a member of every such class. Choose integers $h_0,h_1$ so that
+\[
+ 0<R'(0)+m(0)h_0<N,\qquad
+ -N<R'(1)-m(1)h_1<0.
+\]
+Since $w'(0)=N$ and $w'(1)=-N$, these inequalities ensure that both $F_0$ and $w-F_0$ have positive linear lower bounds near the endpoints. The internal inequalities in \eqref{eq:finiteconditions} supply the other hypothesis of Lemma~\ref{lem:weighted}. We obtain an integer polynomial
+\[
+ p_1\in f+m\Z[X],\qquad 0<p_1(t)<w(t)\quad(0<t<1),
+\]
+with $p_1(0)=p_1(1)=0$. Set $p_0=w-p_1$. Then $p_0,p_1,b_L,b_R$ are integer polynomials, each positive on $(0,1)$ and nonnegative at both endpoints, and
+\[
+ p_0+p_1+b_L+b_R=1.
+\]
+Evaluation at $\lambda$ gives
+\[
+ p_0(\lambda)\,0+p_1(\lambda)\,1+b_L(\lambda)y_L+b_R(\lambda)y_R=a.
+\]
+By Lemma~\ref{lem:tree}, the right-hand side belongs to $Q_\lambda(Y)$. The elements $0,1$ were already in $Y$, completing the proof.
+\end{proof}
+
+The degree of the tree in this proof depends on the target point, including how close its internal coordinates are to the cube boundary. The theorem bounds the size of the seed, not the degree or the number of extrapolation steps uniformly over all points.
+
+\section{Examples and further directions}
+For an integer parameter $q\ne0,1$, the criterion reduces to
+\[
+ Q_q=\{a\in\Z:a\bmod q\in\{0,1\},\quad
+ a\bmod(1-q)\in\{0,1\}\}.
+\]
+This recovers the integer classification in \cite{FGH2020}; it is not a new special case. For $\lambda=2i$, the order is $\Z[2i]$ and the minimal polynomial is $X^2+4$. Writing an element as $a+2bi$ gives the explicit periodic description
+\[
+ Q_{2i}=\{a+2bi:a,b\in\Z,\quad
+ a\bmod4\in\{0,1\},\quad(a+b)\bmod5\in\{0,1\}\}.
+\]
+It consists of four cosets of the index-twenty lattice $(4+2i)\Z[2i]$.
+
+As a higher-degree example, let $\lambda$ be the largest root of
+\[
+ m(X)=X^3-6X^2+5X-1.
+\]
+There is one root in each of $(0,1/3)$, $(1/3,1)$, and $(5,6)$, by sign changes; the rational-root test proves irreducibility. Thus $\lambda$ is strong PV. Since $m(0)=m(1)=-1$, Theorem~\ref{thm:model} gives $Q_\lambda=M_\lambda$. By contrast, a strong PV minimal polynomial with $|m(0)|>2$ or $|m(1)|>2$ has a proper congruence restriction even though its extrapolation set is still Meyer and its full cube is finitely generated.
+
+The lifting proof suggests quantitative questions about the smallest possible seed and the shortest extrapolation trees. Explicit degree bounds in terms of the internal distance to the boundary, the coefficients of $m$, and the chosen residue representatives would make the construction more effective. The present results establish exact membership, discreteness, and finite generation; they do not claim optimal seed size or optimal computational complexity.
+
+\section*{Preparation and verification}
+This manuscript was prepared with OpenAI Codex assistance in problem selection, proof development, literature checking, and writing. The originating agent performed the internal proof audit; no separate-agent or human referee review is claimed. The accompanying source assessment records the literature-search scope and the exact statements used from the extended source. Historical priority remains subject to scholarly review. The proofs above are general arguments; optional finite consistency checks supplied with the manuscript do not replace them.
+
+\begin{thebibliography}{9}
+\bibitem{FGH2026}
+S. Fenner, F. Green, and S. Homer,
+\emph{Fixed-Parameter Extrapolation and Aperiodic Order},
+Discrete \& Computational Geometry \textbf{76} (2026), 1--74.
+\href{https://doi.org/10.1007/s00454-025-00816-4}{doi:10.1007/s00454-025-00816-4}.
+
+\bibitem{FGH2020}
+S. Fenner, F. Green, and S. Homer,
+\emph{Fixed-Parameter Extrapolation and Aperiodic Order},
+extended version, arXiv:1212.2889v6 (2020).
+\href{https://arxiv.org/abs/1212.2889v6}{arXiv:1212.2889v6}.
+
+\bibitem{FGH2018}
+S. Fenner, F. Green, and S. Homer,
+\emph{Fixed-Parameter Extrapolation and Aperiodic Order: Open Problems},
+ACM SIGACT News \textbf{49}(3) (2018), 35--47.
+\href{https://doi.org/10.1145/3289137.3289145}{doi:10.1145/3289137.3289145}.
+
+\bibitem{GL}
+C. S. G\"unt\"urk and W. Li,
+\emph{Uniform Approximation by Polynomials with Integer Coefficients via the Bernstein Lattice},
+arXiv:2311.10901v1 (2023).
+\href{https://arxiv.org/abs/2311.10901v1}{arXiv:2311.10901v1}.
+\end{thebibliography}
+\end{document}

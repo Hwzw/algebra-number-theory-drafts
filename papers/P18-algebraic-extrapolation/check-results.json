@@ -1,0 +1,84 @@
+{
+  "meaning": "Finite exact consistency checks only; no universal claim is inferred from bounded reachability.",
+  "bernstein_evaluation_checks": 1008,
+  "rounding_bound_checks": 1599,
+  "endpoint_derivative_checks": 1464,
+  "quadratic_equality_pairs_m_n": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "cubic_sign_values": [
+    "-1",
+    "1/27",
+    "-1",
+    "-1",
+    "29"
+  ],
+  "bounded_complex_closures": [
+    {
+      "q": 1,
+      "intermediate_coordinate_bound": 12,
+      "discovered": 625,
+      "round_sizes": [
+        4,
+        12,
+        56,
+        322,
+        625,
+        625
+      ],
+      "target_coordinate_bound": 4,
+      "predicted_target_count": 81,
+      "target_reached": 81,
+      "target_missing": []
+    },
+    {
+      "q": 2,
+      "intermediate_coordinate_bound": 12,
+      "discovered": 130,
+      "round_sizes": [
+        4,
+        12,
+        46,
+        97,
+        128,
+        130,
+        130
+      ],
+      "target_coordinate_bound": 4,
+      "predicted_target_count": 17,
+      "target_reached": 17,
+      "target_missing": []
+    },
+    {
+      "q": 3,
+      "intermediate_coordinate_bound": 12,
+      "discovered": 22,
+      "round_sizes": [
+        4,
+        10,
+        22,
+        22
+      ],
+      "target_coordinate_bound": 4,
+      "predicted_target_count": 4,
+      "target_reached": 4,
+      "target_missing": []
+    }
+  ],
+  "script_sha256": "f681a02ccb18591f5d764400f942ff54332474e03787eb7ce99e93a49ab4fda1"
+}

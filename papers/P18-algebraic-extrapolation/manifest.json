@@ -1,0 +1,66 @@
+{
+  "paper": "P18-algebraic-extrapolation",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 9,
+  "status": "complete internally checked proposed resolution of published extrapolation questions; historical priority and significance provisional",
+  "external_human_review": false,
+  "separate_agent_review": false,
+  "files": [
+    {
+      "path": "manuscript.md",
+      "bytes": 29703,
+      "sha256": "6963c670a39c10bb6b5c35f14cfbfaf816301403b645978a4e9c13e46f93e188"
+    },
+    {
+      "path": "manuscript.tex",
+      "bytes": 27437,
+      "sha256": "36c1fc40fa7a9d9b1e8775d10242fb28f22d96d7165ad0afb1abcc4dd1bf616b"
+    },
+    {
+      "path": "manuscript.pdf",
+      "bytes": 104079,
+      "sha256": "55fd2116bdaa660400d73e66b24b96f070b58263de340950b08df49278fb3ca6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2104,
+      "sha256": "ead835faae2f9e036fd6fa59ffbda975e6c03744eaded9edd6e080e3053496be"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 4995,
+      "sha256": "6a08995177cd60f2436670fede71143ca3e662430dd18828c86f492ca428b135"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 6426,
+      "sha256": "2e401b359dda7716f29a5f0538ef982e6430322c376d6b14c56f89d538283f88"
+    },
+    {
+      "path": "check.py",
+      "bytes": 3559,
+      "sha256": "f681a02ccb18591f5d764400f942ff54332474e03787eb7ce99e93a49ab4fda1"
+    },
+    {
+      "path": "check-results.json",
+      "bytes": 1552,
+      "sha256": "b10ab33f1b35b2e75ea1e732b184abe89c5ecbec1ef7c800905e12a6eec40a01"
+    },
+    {
+      "path": "markdown-conversion.json",
+      "bytes": 3888,
+      "sha256": "2309a022fd7544e5cca1210f13f6977b563f8239214bd4d24aace51ab698fa26"
+    },
+    {
+      "path": "markdown-math-check.json",
+      "bytes": 440,
+      "sha256": "281bcddccf2d566e772d3d82ea501047cb813182d44c8e44fcd27e40fa309c03"
+    },
+    {
+      "path": "artifact-qa.json",
+      "bytes": 741,
+      "sha256": "a250c55470356cb70661305fe8f627820404c2c613b65546f4148e8f51e06c40"
+    }
+  ]
+}

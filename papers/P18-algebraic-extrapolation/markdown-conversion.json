@@ -1,0 +1,176 @@
+{
+  "environments": {
+    "theorem": 5,
+    "corollary": 2,
+    "lemma": 6,
+    "proof": 13
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:arithmetic"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:discrete"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "3",
+      "id": "theorem-3",
+      "source_label": "thm:model"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 4,
+      "number": "4",
+      "id": "theorem-4",
+      "source_label": "thm:finite"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "5",
+      "id": "corollary-1",
+      "source_label": "cor:relative"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "6",
+      "id": "lemma-1",
+      "source_label": "lem:approx"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "7",
+      "id": "lemma-2",
+      "source_label": "lem:positive"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "8",
+      "id": "lemma-3",
+      "source_label": "lem:tree"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 2,
+      "number": "9",
+      "id": "corollary-2",
+      "source_label": "cor:polynomials"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "10",
+      "id": "lemma-4",
+      "source_label": "lem:weighted"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 5,
+      "number": "11",
+      "id": "theorem-5",
+      "source_label": "thm:lift"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 5,
+      "number": "12",
+      "id": "lemma-5",
+      "source_label": "lem:projection"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 6,
+      "number": "13",
+      "id": "lemma-6",
+      "source_label": "lem:meyer"
+    }
+  ],
+  "references": 39,
+  "citations": 10,
+  "cited_keys": [
+    "FGH2018",
+    "FGH2020",
+    "FGH2026",
+    "GL"
+  ],
+  "bibliography_keys": [
+    "FGH2026",
+    "FGH2020",
+    "FGH2018",
+    "GL"
+  ],
+  "equation_labels": [
+    "eq:criterion",
+    "eq:endpoints",
+    "eq:equality",
+    "eq:liftconditions",
+    "eq:crt",
+    "eq:model",
+    "eq:finiteconditions"
+  ],
+  "label_numbers": {
+    "thm:arithmetic": "1",
+    "eq:criterion": "1",
+    "eq:endpoints": "2",
+    "thm:discrete": "2",
+    "thm:model": "3",
+    "eq:equality": "3",
+    "thm:finite": "4",
+    "cor:relative": "5",
+    "lem:approx": "6",
+    "lem:positive": "7",
+    "lem:tree": "8",
+    "cor:polynomials": "9",
+    "lem:weighted": "10",
+    "thm:lift": "11",
+    "eq:liftconditions": "4",
+    "lem:projection": "12",
+    "eq:crt": "5",
+    "eq:model": "6",
+    "lem:meyer": "13",
+    "eq:finiteconditions": "7"
+  },
+  "bibliography_numbers": {
+    "FGH2026": "1",
+    "FGH2020": "2",
+    "FGH2018": "3",
+    "GL": "4"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "36c1fc40fa7a9d9b1e8775d10242fb28f22d96d7165ad0afb1abcc4dd1bf616b",
+  "source_pdf_sha256": "55fd2116bdaa660400d73e66b24b96f070b58263de340950b08df49278fb3ca6",
+  "markdown_sha256": "6963c670a39c10bb6b5c35f14cfbfaf816301403b645978a4e9c13e46f93e188",
+  "markdown_bytes": 29703,
+  "source_math_expressions_verified": 393,
+  "markdown_math_expressions": 406,
+  "custom_macros_expanded": [
+    "Z",
+    "Q",
+    "R",
+    "C",
+    "Oa",
+    "Tr"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 76,
+  "semantic_roundtrip_sha256": "39c3873d1272a65a4daed0461d1055668bcc5f80bd91426b4cc17b4b8e2e7ff2",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 50,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}
