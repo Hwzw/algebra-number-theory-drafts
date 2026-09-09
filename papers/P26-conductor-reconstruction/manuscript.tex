@@ -1,0 +1,187 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\q}{\mathsf q}
+\newcommand{\A}{\mathcal A}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\title{Reconstruction of Krull monoids from conductor submonoids}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let $\varphi:H\to F$ be a divisor theory of a commutative Krull monoid, and let $M_\varphi=\{1\}\cup\varphi(H\setminus H^\times)F$. We show that $M_\varphi$ determines the reduced monoid of $H$, together with its divisor theory. The reconstruction takes the complete integral closure and then generates a submonoid from its divisibility-minimal nonunits. Consequently two such conductor monoids are isomorphic exactly when the original reduced Krull monoids are isomorphic, answering an isomorphism question of Geroldinger, Yan, and Zhong. We also describe the automorphism group in terms of the characteristic and give an intrinsic recognition criterion for conductor monoids that arise in this way.
+\end{abstract}
+
+\section{The isomorphism question}
+
+All monoids in this note are commutative and cancellative, with identity. Write $H^\times$ for the group of units, $H_{\mathrm{red}}=H/H^\times$, and $\q(H)$ for the quotient group. A reduced free abelian monoid $F=\mathcal F(P)$ consists of the finite products of primes from $P$. A homomorphism $\varphi:H\to F$ is a divisor homomorphism if divisibility of $\varphi(a)$ by $\varphi(b)$ implies divisibility of $a$ by $b$. It is a divisor theory if, in addition, every element of $F$ is the gcd of a finite nonempty subset of $\varphi(H)$. It suffices to impose this condition on the primes of $F$. A monoid is Krull precisely when it admits a divisor theory.
+
+Geroldinger, Yan, and Zhong associate to a divisor theory the conductor submonoid
+\begin{equation}\label{eq:construction}
+ M_\varphi=\{1\}\cup\varphi(H\setminus H^\times)F.
+\end{equation}
+Immediately after Proposition 4.3 of \cite{GYZ}, they ask when the monoids associated to two Krull monoids are isomorphic. Their notation is $F_\varphi$. We use $M_\varphi$ to distinguish it from the ambient free monoid.
+
+\begin{theorem}\label{thm:main}
+For $i=1,2$, let $\varphi_i:H_i\to F_i$ be divisor theories of Krull monoids. There is a natural bijection
+\[
+ \operatorname{Iso}(M_{\varphi_1},M_{\varphi_2})
+ \longleftrightarrow
+ \operatorname{Iso}((H_1)_{\mathrm{red}},(H_2)_{\mathrm{red}}).
+\]
+It respects identities and composition. In particular, the two conductor monoids are isomorphic if and only if the two reduced Krull monoids are isomorphic.
+\end{theorem}
+
+The complete integral closure of a conductor monoid is already identified in \cite[Lemmas 3.1--3.2]{GYZ}. The additional observation needed here is that minimal nonunits in that closure recover the atoms of the original Krull monoid. Thus the proof uses standard divisor theory and is short. The automorphism and recognition statements below are consequences of the same reconstruction, rather than separate isomorphism problems.
+
+\section{Intrinsic recovery of the original monoid}
+
+For a monoid $M$, its complete integral closure is
+\[
+ \widehat M=\{x\in\q(M):\text{some }c\in M\text{ satisfies }cx^n\in M
+                 \text{ for every }n\ge1\}.
+\]
+An isomorphism extends uniquely to quotient groups and carries complete integral closures onto one another.
+
+\begin{lemma}\label{lem:closure}
+Let $F$ be free abelian, and let $I\subset F$ be a nonempty ideal with $1\notin I$. For $M=\{1\}\cup I$, one has $\q(M)=\q(F)$ and $\widehat M=F$.
+\end{lemma}
+\begin{proof}
+Fix $c\in I$. For every $f\in F$, both $c$ and $cf$ belong to $M$, so $f=(cf)/c\in\q(M)$. This proves equality of quotient groups. Also $cf^n\in I$ for all $n\ge1$, proving $F\subset\widehat M$. If $x\in\q(F)\setminus F$, some prime valuation $v_p(x)$ is negative. For every fixed $b\in M$, the integer $v_p(bx^n)$ is eventually negative. Hence $bx^n$ cannot belong to $M\subset F$ for all $n$, and $x\notin\widehat M$.
+\end{proof}
+
+Whenever $\widehat M$ is free abelian and $M$ is reduced, define
+\[
+ B(M)=\{a\in M\setminus\{1\}: b\in M\setminus\{1\},\ b\mid_{\widehat M}a
+                       \ \Longrightarrow\ b=a\}.
+\]
+This definition is intrinsic to $M$. It uses divisibility in the recovered closure, not divisibility inside $M$.
+
+\begin{lemma}\label{lem:atoms}
+Let $\varphi:H\to F$ be a divisor theory of a nontrivial reduced Krull monoid. Then
+\[
+ B(M_\varphi)=\varphi(\A(H)),\qquad
+ \langle B(M_\varphi)\rangle=\varphi(H).
+\]
+\end{lemma}
+\begin{proof}
+The divisor homomorphism $\varphi$ is injective because $H$ is reduced. The nonunits of $M_\varphi$ form the nonempty ideal $\varphi(H\setminus\{1\})F$, and Lemma~\ref{lem:closure} identifies the closure with $F$.
+
+Take $a\in B(M_\varphi)$. Some $h\in H\setminus\{1\}$ satisfies $\varphi(h)\mid_F a$. The Krull monoid $H$ is atomic, so an atom $u$ divides $h$. Since $\varphi(u)$ is a nonunit of $M_\varphi$ dividing $a$ in $F$, minimality gives $a=\varphi(u)$.
+
+Conversely, let $u\in\A(H)$ and suppose that $b\in M_\varphi\setminus\{1\}$ divides $\varphi(u)$ in $F$. Choose $h\ne1$ such that $\varphi(h)\mid_F b$. The divisor homomorphism property gives $h\mid_H u$. Thus $h=u$, and
+\[
+ \varphi(u)=\varphi(h)\mid_F b\mid_F\varphi(u)
+\]
+forces $b=\varphi(u)$. This proves the first equality. Atomicity proves the second.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+A divisor theory factors through $H_{\mathrm{red}}$, so we may suppose both original monoids reduced. If $H_i=\{1\}$, the gcd condition forces $F_i=\{1\}$; this case is immediate.
+
+An isomorphism $f:M_{\varphi_1}\to M_{\varphi_2}$ extends uniquely to quotient groups. By Lemma~\ref{lem:closure} it restricts to an isomorphism $\widehat f:F_1\to F_2$. This extension preserves divisibility and maps $B(M_{\varphi_1})$ onto $B(M_{\varphi_2})$. Lemma~\ref{lem:atoms} therefore gives a restricted isomorphism of $\varphi_1(H_1)$ with $\varphi_2(H_2)$, and hence one of $H_1$ with $H_2$.
+
+Conversely, an isomorphism $h:H_1\to H_2$ identifies two divisor theories of $H_1$. The uniqueness theorem for divisor theories \cite[Theorem 2.4.7]{GHK} supplies a unique isomorphism $\widetilde h:F_1\to F_2$ with $\widetilde h\varphi_1=\varphi_2h$. Equation~\eqref{eq:construction} shows that its restriction maps $M_{\varphi_1}$ onto $M_{\varphi_2}$. Uniqueness makes the two constructions inverse and ensures compatibility with composition.
+\end{proof}
+
+\section{Characteristic and automorphisms}
+
+Identify a reduced Krull monoid $H$ with its image in a divisor theory $H\subset F=\mathcal F(P)$. Set
+\[
+ G=\q(F)/\q(H),\qquad P_g=\{p\in P:[p]=g\},\qquad m(g)=|P_g|.
+\]
+The group and prime multiplicities are the characteristic. The familiar classification of reduced Krull monoids by this data is \cite[Theorem 2.5.4]{GHK}. We record explicitly how it answers the conductor question.
+
+\begin{corollary}\label{cor:characteristic}
+Two conductor monoids in Theorem~\ref{thm:main} are isomorphic exactly when there is a group isomorphism $\alpha:G_1\to G_2$ with $m_1(g)=m_2(\alpha(g))$ for every $g\in G_1$.
+\end{corollary}
+\begin{proof}
+An isomorphism of conductor monoids extends to the free monoids and preserves the recovered submonoids, so it induces the required isomorphism on quotient groups and bijections of prime fibers. Conversely, choose such fiber bijections. The resulting isomorphism of free monoids carries $\q(H_1)$ onto $\q(H_2)$. Since a divisor homomorphism identifies
+\begin{equation}\label{eq:saturation}
+ H_i=\q(H_i)\cap F_i,
+\end{equation}
+it carries $H_1$ onto $H_2$, and therefore also the conductor monoids.
+\end{proof}
+
+\begin{corollary}\label{cor:automorphisms}
+Let $\Gamma=\{\alpha\in\Aut(G):m(\alpha(g))=m(g)\text{ for all }g\in G\}$. There is a split exact sequence
+\[
+ 1\longrightarrow\prod_{g\in G}\Sym(P_g)
+ \longrightarrow\Aut(M_\varphi)\longrightarrow\Gamma\longrightarrow1.
+\]
+Thus, after choices of labels on the prime fibers,
+\[
+ \Aut(M_\varphi)\cong
+ \left(\prod_{g\in G}\Sym(P_g)\right)\rtimes\Gamma.
+\]
+The product is unrestricted, including when $P$ is infinite.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:main} identifies automorphisms with prime permutations preserving $H$, equivalently its quotient-group kernel. The kernel of their action on $G$ consists exactly of the independent permutations within the fibers $P_g$. Every member of $\Gamma$ lifts by choosing fiber bijections, as in Corollary~\ref{cor:characteristic}.
+
+For a splitting, choose, for each cardinal $\kappa$ occurring among the multiplicities, a fixed set $X_\kappa$ and bijections $P_g\to\{g\}\times X_{m(g)}$. Lift $\alpha\in\Gamma$ by $(g,x)\mapsto(\alpha(g),x)$. These lifts compose and preserve the quotient-group kernel. Every permutation of an infinite prime set still acts on its free abelian monoid, since each monomial has finite support.
+\end{proof}
+
+For a Dedekind domain, the associated conductor monoid can be described as the unit ideal together with the nonzero ideals contained in a proper principal ideal \cite[Example 4.4]{GYZ}. The reconstruction recovers the monoid of nonzero principal ideals and its divisor theory. It recovers the multiplicative monoid modulo units, not the addition law or the unit group of the domain.
+
+\section{Recognition and examples}
+
+The construction does not exhaust all conductor submonoids. The following criterion gives an intrinsic test.
+
+\begin{proposition}\label{prop:recognition}
+Let $M=\{1\}\cup I\subset F$, where $F$ is free abelian and $I$ is a nonempty proper ideal. Put $K=\langle B(M)\rangle\subset\widehat M=F$. Then $M$ is isomorphic to the conductor monoid of a divisor theory of a Krull monoid if and only if
+\begin{enumerate}
+\item $K=\q(K)\cap F$;
+\item every prime of $F$ is the gcd of a finite nonempty subset of $K$.
+\end{enumerate}
+When these conditions hold, the inclusion $K\subset F$ is the recovered divisor theory and $M=\{1\}\cup(K\setminus\{1\})F$.
+\end{proposition}
+\begin{proof}
+For every $x\in I$, choose a divisor of $x$ in $I$ of least free-monoid length. It lies in $B(M)$. Hence $I=B(M)F$. The two stated conditions say respectively that the inclusion $K\subset F$ is a divisor homomorphism and that it satisfies the gcd condition. Thus they make it a divisor theory, with $K$ Krull. Since $B(M)\subset K\setminus\{1\}\subset I$, its associated conductor monoid is exactly $M$.
+
+Conversely, any isomorphism with a conductor monoid of a divisor theory extends to the free closures. Lemma~\ref{lem:atoms} identifies $K$ with the image of that Krull monoid, proving both conditions.
+\end{proof}
+
+If $F$ has finite rank, $B(M)$ is a finite antichain of exponent vectors. To check condition (2), it suffices, for each prime $p$, to take the gcd of
+\[
+ B_p=\{a\in B(M):p\mid_F a\}
+\]
+and require it to be $p$. Indeed, if $p$ divides a product of elements of $B(M)$, it divides at least one factor. The gcd of all $p$-divisible elements of $K$ therefore equals the gcd of $B_p$. Condition (1) is the equality of the affine monoid generated by these vectors with the intersection of their integer span and the nonnegative orthant. This formulation separates saturation from the indispensable gcd condition.
+
+\begin{example}\label{ex:threshold}
+In additive notation, let $r\ge2$, $d\ge1$, and
+\[
+ M_{r,d}=\{0\}\cup\{a\in\mathbb N_0^r:a_1+\cdots+a_r\ge d\}.
+\]
+The minimal elements are exactly the vectors of coordinate sum $d$. Their generated monoid is
+\[
+ K_{r,d}=\{a\in\mathbb N_0^r:a_1+\cdots+a_r\equiv0\pmod d\}.
+\]
+To see the equality, repeatedly remove a nonnegative subvector of sum $d$. Its quotient group consists of the integer vectors whose coordinate sum is divisible by $d$: differences of degree-$d$ vectors include $e_i-e_j$, and $de_i$ is present. Thus condition (1) holds. For $d>1$, the coordinatewise minimum of $de_i$ and $e_i+(d-1)e_j$, with $j\ne i$, is $e_i$. For $d=1$, $e_i$ itself is present. This verifies condition (2).
+
+The recovered class group is $\mathbb Z/d\mathbb Z$, with all $r$ primes in the class of $1$. Its only automorphism preserving the occupied class fixes $1$ and is the identity. Consequently $\Aut(M_{r,d})\cong\Sym(r)$. The class group recovered from the conductor monoid distinguishes the parameter $d$, even though this automorphism group does not.
+\end{example}
+
+\begin{example}\label{ex:rankone}
+For $d>1$, the rank-one conductor monoid $M=\{0\}\cup\{d,d+1,\ldots\}\subset\mathbb N_0$ has $B(M)=\{d\}$ and $K=d\mathbb N_0$. It satisfies $K=\q(K)\cap\mathbb N_0$, but no gcd of nonzero elements of $K$ is $1$. Proposition~\ref{prop:recognition} shows that $M$ is not isomorphic to the conductor monoid of any divisor theory of a Krull monoid. An arbitrary divisor homomorphism cannot replace a divisor theory in Theorem~\ref{thm:main}.
+\end{example}
+
+\begin{thebibliography}{9}
+\bibitem{GHK} A. Geroldinger and F. Halter-Koch,
+\emph{Non-Unique Factorizations: Algebraic, Combinatorial and Analytic Theory},
+Pure and Applied Mathematics 278, Chapman \& Hall/CRC, Boca Raton, 2006.
+\bibitem{GYZ} A. Geroldinger, W. Yan, and Q. Zhong,
+On conductor submonoids of factorial monoids,
+\emph{Semigroup Forum} \textbf{112} (2026), 792--819.
+\href{https://doi.org/10.1007/s00233-025-10583-6}{doi:10.1007/s00233-025-10583-6}.
+\end{thebibliography}
+\end{document}

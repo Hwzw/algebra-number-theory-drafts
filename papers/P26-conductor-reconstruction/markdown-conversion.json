@@ -1,0 +1,120 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 2,
+    "proof": 6,
+    "corollary": 2,
+    "proposition": 1,
+    "example": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:closure"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:atoms"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3.1",
+      "id": "corollary-1",
+      "source_label": "cor:characteristic"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 2,
+      "number": "3.2",
+      "id": "corollary-2",
+      "source_label": "cor:automorphisms"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "4.1",
+      "id": "proposition-1",
+      "source_label": "prop:recognition"
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "4.2",
+      "id": "example-1",
+      "source_label": "ex:threshold"
+    },
+    {
+      "environment": "example",
+      "ordinal": 2,
+      "number": "4.3",
+      "id": "example-2",
+      "source_label": "ex:rankone"
+    }
+  ],
+  "references": 11,
+  "citations": 5,
+  "cited_keys": [
+    "GHK",
+    "GYZ"
+  ],
+  "bibliography_keys": [
+    "GHK",
+    "GYZ"
+  ],
+  "equation_labels": [
+    "eq:construction",
+    "eq:saturation"
+  ],
+  "label_numbers": {
+    "eq:construction": "1",
+    "thm:main": "1.1",
+    "lem:closure": "2.1",
+    "lem:atoms": "2.2",
+    "cor:characteristic": "3.1",
+    "eq:saturation": "2",
+    "cor:automorphisms": "3.2",
+    "prop:recognition": "4.1",
+    "ex:threshold": "4.2",
+    "ex:rankone": "4.3"
+  },
+  "bibliography_numbers": {
+    "GHK": "1",
+    "GYZ": "2"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "017b8037e6d5b431936a67a91a3b5622f1c53d7ca6dc0ec5f27f0e1927446f02",
+  "source_pdf_sha256": "47d69d9597fa8f46a7134cf878034c099a85874fe9adf152627318f9de5793f3",
+  "markdown_sha256": "1eddc94d92a0fba1aa863b0391e47761cc5cbdebc8f05b5a37915b6b9fa468fc",
+  "markdown_bytes": 14375,
+  "source_math_expressions_verified": 183,
+  "markdown_math_expressions": 189,
+  "custom_macros_expanded": [
+    "q",
+    "A",
+    "Aut",
+    "Sym"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 40,
+  "semantic_roundtrip_sha256": "2098ce3f737c59ec8b78dd84e74f5505ab3b83d733ef9d56e6193009a8a9bb44",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 26,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

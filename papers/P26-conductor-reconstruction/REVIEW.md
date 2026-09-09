@@ -1,0 +1,14 @@
+# Internal mathematical review
+
+Reviewer: originating agent. Date: September 9, 2026. This is not independent-agent or human peer review.
+
+1. **Closure and ambient recovery.** A fixed ideal element c gives both c and cf in M for every f in F. This proves quotient-group equality before complete closure is used. Negative prime valuations exclude all other elements from the closure, even in infinite rank.
+2. **Minimal elements.** The minimum is taken in F, not using divisibility in M. Atomicity of the original Krull monoid proves one inclusion; divisor reflection, reduction and the trivial unit group of F prove the reverse. No assertion that every atom of M is minimal is used.
+3. **Isomorphisms.** Any isomorphism extends to quotient groups and preserves complete closure. It therefore preserves the recovered minimal elements and their generated monoid. The converse uses the classical uniqueness theorem for divisor theories. Both compositions are identities by that uniqueness; no noncanonical choice enters the main bijection.
+4. **Units and groups.** A divisor theory factors through H_red. If the reduced monoid is trivial, its free divisor monoid is trivial by the gcd condition. Unit groups cannot be recovered and are not claimed to be.
+5. **Characteristic.** A prime permutation inducing a class-group isomorphism preserves the kernel q(H); saturation recovers H inside F. Thus the criterion is sufficient as well as necessary.
+6. **Automorphisms.** The kernel consists of all independent permutations within prime fibers. Multiplicity-preserving group automorphisms lift; coherent labels supply a noncanonical splitting. Arbitrary prime permutations act on finite-support monomials, so the kernel is a full product in infinite rank.
+7. **Recognition.** Every ideal element has an ideal divisor of minimal free length. Hence I=B(M)F. Saturation and the finite gcd condition are exactly what make the recovered inclusion a divisor theory. The converse follows under an abstract isomorphism by intrinsic closure recovery, rather than assuming the ambient embeddings agree.
+8. **Examples and assumptions.** In rank at least two, all vectors of degree d generate the nonnegative vectors with degree divisible by d, and their integer span has the same congruence description. The two displayed vectors verify the prime gcd condition. In rank one the gcd condition fails for d>1, despite saturation. This checks the need for a divisor theory rather than an arbitrary divisor homomorphism.
+
+Finite calculations compare generation from minimal vectors against modular membership and enumerate prime permutations against the predicted group action. They are consistency checks of illustrative examples, not finite substitutes for the hand proofs. No unresolved mathematical step was identified in the stated theorems. Historical novelty and significance remain provisional.

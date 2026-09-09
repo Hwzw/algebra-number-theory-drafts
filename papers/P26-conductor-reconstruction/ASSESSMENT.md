@@ -1,0 +1,13 @@
+# Source and contribution assessment
+
+The version of record of [Geroldinger--Yan--Zhong](https://doi.org/10.1007/s00233-025-10583-6), published online September 30, 2025 and assigned to Semigroup Forum 112 (2026), explicitly poses the isomorphism question immediately after Proposition 4.3. Its Definition 4.2, Lemmas 3.1--3.2, Definition 3.6, Proposition 4.3 and the surrounding text were read directly on September 9, 2026. The arXiv identifier is 2502.12712. The open statement is present in the final journal text, not merely an earlier preprint.
+
+Targeted searches on the exact title with 'isomorphism', 'isomorphism problem', 'minimal', and 'reconstruction', and on Krull conductor reconstruction located the original paper but no later resolution of this precise question. This records the search performed; it cannot establish exhaustive historical priority.
+
+The closure equality is already in the source, and divisibility-minimal nonunits are already defined there. Uniqueness of divisor theories and classification by characteristic are classical results of Geroldinger--Halter-Koch, Theorems 2.4.7 and 2.5.4; the source's proof of Proposition 4.3 and ensuing paragraph explicitly invoke these results. The book's theorem references are corroborated through that primary article; this audit does not claim a new direct reading of the full book.
+
+The proposed additional observation identifies the minimal nonunits of the conductor monoid, under divisibility in its recovered closure, with the atoms of the original reduced Krull monoid. It supplies the missing reverse reconstruction, including all isomorphisms. The automorphism description and recognition criterion are consequences of this single observation and appear in the same paper. Finite-rank coordinate-permutation rigidity by itself is not claimed as new.
+
+Potential value: the conductor construction retains the entire reduced divisor-theoretic object despite simplifying factorization invariants. This supplies a precise reconstruction tool and answers a literature-posed question without rank or class-group restrictions. However, the proof is short and elementary. It would be misleading to certify this as a hard breakthrough or to predict citations. Its suitability as a significant contribution requires outside assessment. It is published as one proposed research note; the global count of qualifying significant open-problem solutions remains uncertified.
+
+The unrelated length-system realization problem is left unresolved. Units and addition of an original domain are not reconstructed. No noncommutative extension is asserted.

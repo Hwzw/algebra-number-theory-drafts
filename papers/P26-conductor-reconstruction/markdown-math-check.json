@@ -1,0 +1,11 @@
+{
+  "file": "continuation/papers/P26-conductor-reconstruction/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "1eddc94d92a0fba1aa863b0391e47761cc5cbdebc8f05b5a37915b6b9fa468fc",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 189,
+  "errors": [],
+  "local_svg_preview_created": false,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}

@@ -1,0 +1,55 @@
+{
+  "paper_id": "P26",
+  "title": "Reconstruction of Krull monoids from conductor submonoids",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 4,
+  "status": "Internally checked proposed answer to the isomorphism question following Geroldinger-Yan-Zhong Proposition 4.3; short proof; priority and significance provisional",
+  "qualifying_significant_solution_certified": false,
+  "files": {
+    "README.md": {
+      "sha256": "ef7e41857eb816eb5f52c626321ce77434df6a12cf48690c66a621442ad1a5ce",
+      "bytes": 1609
+    },
+    "ASSESSMENT.md": {
+      "sha256": "ff3add10f6a76e0b0cb9a94a109caa1d38610aea825ef788bcd27a3d3bd5712f",
+      "bytes": 2613
+    },
+    "REVIEW.md": {
+      "sha256": "68468cc09c387a2d248da81eb1a108742141a87a30d6d6a0cd3682dcb3fcc269",
+      "bytes": 2881
+    },
+    "manuscript.tex": {
+      "sha256": "017b8037e6d5b431936a67a91a3b5622f1c53d7ca6dc0ec5f27f0e1927446f02",
+      "bytes": 13684
+    },
+    "manuscript.md": {
+      "sha256": "1eddc94d92a0fba1aa863b0391e47761cc5cbdebc8f05b5a37915b6b9fa468fc",
+      "bytes": 14375
+    },
+    "manuscript.pdf": {
+      "sha256": "47d69d9597fa8f46a7134cf878034c099a85874fe9adf152627318f9de5793f3",
+      "bytes": 73309
+    },
+    "check.py": {
+      "sha256": "d591c654ef3c850e29706cc4f29b42545f98def80539cd642a928dcc38b942af",
+      "bytes": 3731
+    },
+    "check-results.json": {
+      "sha256": "fcd477ed3c445b3b9b1825579b3d314c1570b68cae928f96781f3505d3462ef0",
+      "bytes": 2912
+    },
+    "markdown-conversion.json": {
+      "sha256": "e8974b8ae07192f53eb7d494036faf760399f88228593f1ed7e9cfa96729efb1",
+      "bytes": 2797
+    },
+    "markdown-math-check.json": {
+      "sha256": "602651028d6212841045966f10e151701eefe7ef9f608f7ffeec55657e277593",
+      "bytes": 441
+    },
+    "artifact-qa.json": {
+      "sha256": "8bff2cf952f3c3c999e716e3ea2e0f08e72e6c3e7a38219423a015708b01d212",
+      "bytes": 872
+    }
+  }
+}
