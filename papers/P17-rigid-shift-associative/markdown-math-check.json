@@ -1,0 +1,11 @@
+{
+  "file": "continuation/papers/P17-rigid-shift-associative/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "a4ee810adf702fc315590f357b1a935bdd762e5a2eb467e3a48e506ac0f4f531",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 201,
+  "errors": [],
+  "local_svg_preview_created": false,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}

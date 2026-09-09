@@ -1,0 +1,76 @@
+{
+  "paper": "P17-rigid-shift-associative",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "complete internally checked proposed solution to a published open question; historical priority and significance provisional",
+  "external_human_review": false,
+  "separate_agent_review": false,
+  "files": [
+    {
+      "path": "manuscript.md",
+      "bytes": 18417,
+      "sha256": "a4ee810adf702fc315590f357b1a935bdd762e5a2eb467e3a48e506ac0f4f531"
+    },
+    {
+      "path": "manuscript.tex",
+      "bytes": 17646,
+      "sha256": "50654f2dcfaecb135b60c2aa7ddf9d88ef6fb1a8a099cea415d51db47b7e7d5e"
+    },
+    {
+      "path": "manuscript.pdf",
+      "bytes": 80362,
+      "sha256": "f0428b0cb29b7765405d8dc14d7982c32c885be23f1bd61104dfec8da553b281"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2181,
+      "sha256": "ff936144cfb3efcd34785f6fde59d5675b4f73fc98fca4fb434d916d0d267674"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 4303,
+      "sha256": "2744fc1a81f6446145efbd7e0641a189c447f8eb3f35e879d1aa8170ce1aaff5"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 4381,
+      "sha256": "6f6168c4a996c458b4a9d99dcf5d2298953bca1ea7688370849410557110dc30"
+    },
+    {
+      "path": "check.py",
+      "bytes": 3798,
+      "sha256": "dbcbcc47db2289a79b4e502cd418279a71a8a7ad0eab1c671a2f5d71088ae384"
+    },
+    {
+      "path": "check-results.json",
+      "bytes": 3625,
+      "sha256": "601c6e869e51fe323eef229c36b267b2560573c4937c85450d55162cfe72bdbb"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 2661,
+      "sha256": "88e7de5174fc3cd7a3f1eaf35671dafd84f10e87af254da0710c14862d488be2"
+    },
+    {
+      "path": "independent-results.json",
+      "bytes": 505,
+      "sha256": "f4b5f93343cf6e91a96c762748087597517ffaddb024359c360ceae7eeceb6af"
+    },
+    {
+      "path": "markdown-conversion.json",
+      "bytes": 2820,
+      "sha256": "8170a9b21c38e1725b6003a977d5ff22c1fbb6628871d5fd8a68892923ec7e75"
+    },
+    {
+      "path": "markdown-math-check.json",
+      "bytes": 440,
+      "sha256": "24443a8c7a5727f3662b6938c350d8eb7d821d1dde95ffaa66683fd6ded1ded3"
+    },
+    {
+      "path": "artifact-qa.json",
+      "bytes": 1331,
+      "sha256": "88836ede163dfb422a1e6ddf749e55461bb08af4f022048efad5a0a045b8994f"
+    }
+  ]
+}

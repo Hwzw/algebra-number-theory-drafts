@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "construction": "Symbolic dual-number expansion of both nested products and an independent basis-change expansion.",
+  "sympy_version": "1.14.0",
+  "jacobian_rank_exact": 105,
+  "orbit_rank_exact": 20,
+  "jacobian_minor_exact": 2,
+  "orbit_minor_exact": 3,
+  "derivation_formula_verified": true,
+  "primary_result_sha256": "601c6e869e51fe323eef229c36b267b2560573c4937c85450d55162cfe72bdbb",
+  "script_sha256": "88e7de5174fc3cd7a3f1eaf35671dafd84f10e87af254da0710c14862d488be2"
+}

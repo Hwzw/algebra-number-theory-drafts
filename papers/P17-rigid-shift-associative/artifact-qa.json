@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-09",
+  "pdf_pages": 6,
+  "pdf_sha256": "f0428b0cb29b7765405d8dc14d7982c32c885be23f1bd61104dfec8da553b281",
+  "visual_review": "All six rendered pages inspected; appendix pages 5 and 6 re-inspected after page-break correction. No clipping, overlap, missing symbols, or orphaned link remains.",
+  "tex_warnings": [],
+  "markdown_author_verified": "Henry Zweiman",
+  "markdown_complete_conversion": true,
+  "markdown_math_expressions": 201,
+  "markdown_math_errors": 0,
+  "appendix_indices_match_exact_certificate": true,
+  "github_live_render_inspected": false,
+  "pdf_renderer": "pdftoppm, 110 dpi",
+  "rendered_page_hashes": [
+    {
+      "page": 1,
+      "sha256": "32638bc2c6116c412e9e2c9ac9cf90a6fde9916bd59bb9e333f6e81edf6cffb8"
+    },
+    {
+      "page": 2,
+      "sha256": "17f06750a611a13d8eaf13cc78e411e9089741714537d33767ae982359e6fabf"
+    },
+    {
+      "page": 3,
+      "sha256": "fa1f6ccdc2e5edf0f8f2d30763f6e9e137b087148895002cb3b79f3481b51d8c"
+    },
+    {
+      "page": 4,
+      "sha256": "cd3d3a328e6bb280eae6086caca4fbaa5a1990a5581b641b98f472430e5c622c"
+    },
+    {
+      "page": 5,
+      "sha256": "27f992959430083909e10df3010d126ca278a9df2c00d4c9c4338be7123431cf"
+    },
+    {
+      "page": 6,
+      "sha256": "414a8e71f0bcb756f89eabb8c003b0bae051c918fc6e95d2cc5f1c56f09c4254"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "environments": {
+    "theorem": 2,
+    "lemma": 4,
+    "proof": 8,
+    "proposition": 1,
+    "corollary": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:extension"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "3",
+      "id": "lemma-1",
+      "source_label": "lem:der"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "4",
+      "id": "lemma-2",
+      "source_label": "lem:criterion"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "5",
+      "id": "proposition-1",
+      "source_label": "prop:rank"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "6",
+      "id": "corollary-1",
+      "source_label": "cor:nil"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "7",
+      "id": "lemma-3",
+      "source_label": "lem:idem"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "8",
+      "id": "lemma-4",
+      "source_label": "lem:lift"
+    }
+  ],
+  "references": 20,
+  "citations": 4,
+  "cited_keys": [
+    "AKS",
+    "BBR"
+  ],
+  "bibliography_keys": [
+    "AKS",
+    "BBR"
+  ],
+  "equation_labels": [
+    "eq:shift",
+    "eq:table",
+    "eq:der",
+    "eq:J",
+    "eq:delta",
+    "eq:row"
+  ],
+  "label_numbers": {
+    "eq:shift": "1",
+    "thm:main": "1",
+    "eq:table": "2",
+    "thm:extension": "2",
+    "lem:der": "3",
+    "eq:der": "3",
+    "eq:J": "4",
+    "eq:delta": "5",
+    "lem:criterion": "4",
+    "prop:rank": "5",
+    "cor:nil": "6",
+    "lem:idem": "7",
+    "lem:lift": "8",
+    "app:cert": "A",
+    "eq:row": "6"
+  },
+  "bibliography_numbers": {
+    "AKS": "1",
+    "BBR": "2"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "50654f2dcfaecb135b60c2aa7ddf9d88ef6fb1a8a099cea415d51db47b7e7d5e",
+  "source_pdf_sha256": "f0428b0cb29b7765405d8dc14d7982c32c885be23f1bd61104dfec8da553b281",
+  "markdown_sha256": "a4ee810adf702fc315590f357b1a935bdd762e5a2eb467e3a48e506ac0f4f531",
+  "markdown_bytes": 18417,
+  "source_math_expressions_verified": 193,
+  "markdown_math_expressions": 201,
+  "custom_macros_expanded": [
+    "C",
+    "SAs",
+    "Der",
+    "End",
+    "GL"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 49,
+  "semantic_roundtrip_sha256": "216df07aee4c1c55dc895872ed9f33554689405dc1b6a38401f1984a0cff2c25",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 33,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

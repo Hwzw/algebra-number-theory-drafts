@@ -1,0 +1,226 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\C}{\mathbb C}
+\newcommand{\SAs}{\mathcal S}
+\newcommand{\Der}{\operatorname{Der}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\GL}{\operatorname{GL}}
+\title{A rigid nonassociative shift-associative algebra in dimension five}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We construct a five-dimensional complex nilpotent algebra satisfying $(ab)c=b(ca)$ whose orbit is open in the variety of all five-dimensional algebras satisfying this identity. It is nonassociative and has a five-dimensional derivation algebra. Its space of infinitesimal deformations has dimension twenty and consists entirely of infinitesimal changes of basis. An explicit integer minor of determinant two certifies the tangent calculation. This answers the rigid nonassociative existence question of Abdelwahab, Kaygorodov, and Sartayev in the smallest possible dimension. The orbit closure is a twenty-dimensional irreducible component consisting of nilpotent algebras. An idempotent-splitting argument further gives rigid nonassociative examples in every dimension at least five.
+\end{abstract}
+
+\section{Introduction and the main result}
+An algebra is \emph{shift-associative} if its bilinear product satisfies
+\begin{equation}\label{eq:shift}
+ (ab)c=b(ca).
+\end{equation}
+The same identity has also been studied under the name nearly associative; see \cite{BBR}. Throughout this paper algebras are finite-dimensional over $\C$ and need not have a unit. Let $\SAs_n$ denote the affine variety of shift-associative products on $\C^n$. The group $\GL_n(\C)$ acts by
+\[
+ (g\cdot\mu)(a,b)=g\mu(g^{-1}a,g^{-1}b).
+\]
+We call a product \emph{rigid} when its orbit is Zariski open in $\SAs_n$.
+
+Abdelwahab, Kaygorodov, and Sartayev \cite{AKS} classify the complex algebras of dimension four and prove that five is the smallest dimension in which nonassociativity occurs. Their Proposition~59 supplies a five-dimensional nonassociative example. After Proposition~64 they ask whether a rigid nonassociative shift-associative algebra exists. We answer that question by the following six-product table. The new point is rigidity, rather than the existence of nonassociativity in dimension five.
+
+\begin{theorem}\label{thm:main}
+Let $A$ have ordered basis $(x,y,u,v,z)$ and nonzero products
+\begin{equation}\label{eq:table}
+ xy=u,\qquad yx=v,\qquad xu=z,\qquad yv=z,\qquad uy=z,\qquad vx=z.
+\end{equation}
+All products omitted from this table are zero. Then $A$ is shift-associative, nonassociative, and nilpotent. It is rigid in $\SAs_5$. Its orbit and its space of infinitesimal deformations both have dimension $20$, and $\dim\Der(A)=5$.
+
+The orbit closure of $A$ is a $20$-dimensional irreducible component of $\SAs_5$, all of whose algebras have every fourfold product equal to zero. Five is the minimum dimension of a rigid nonassociative shift-associative algebra.
+\end{theorem}
+
+The infinitesimal calculation allows all $125$ structure constants to vary. In particular, the rigidity assertion is in the entire variety $\SAs_5$, not only a subvariety with a fixed grading, annihilator, or nilpotency bound. We give a fully specified exact minor in the appendix, together with reproducible arithmetic. A second symbolic implementation independently verifies the linearization and its rank.
+
+\begin{theorem}\label{thm:extension}
+For every $r\ge0$, the direct-product algebra $A\oplus\C^r$ is a rigid nonassociative point of $\SAs_{5+r}$. Its orbit has dimension $(5+r)^2-5$, and every infinitesimal deformation is induced by a change of basis.
+\end{theorem}
+
+The higher-dimensional statement follows from splitting lifted scalar idempotents over the dual numbers. It does not require a separate classification or a new rank computation in each dimension.
+
+\section{The algebra and its derivations}
+The grading with degrees $1,1,2,2,3$ on $(x,y,u,v,z)$ is compatible with every product in \eqref{eq:table}. Consequently every product of four elements, with any bracketing, vanishes. The only basis triples $(a,b,c)$ for which $(ab)c$ is nonzero are $(x,y,y)$ and $(y,x,x)$, and the value is $z$ in both cases. The same statement holds for $b(ca)$, proving \eqref{eq:shift} by trilinearity. On the other hand,
+\[
+ (xx)y=0,\qquad x(xy)=z,
+\]
+so $A$ is nonassociative. Its square is $\langle u,v,z\rangle$, the span of all triple products is $\langle z\rangle$, and its two-sided annihilator is $\langle z\rangle$.
+
+\begin{lemma}\label{lem:der}
+Relative to the ordered basis $(x,y,u,v,z)$, the derivations of $A$ are precisely the matrices
+\begin{equation}\label{eq:der}
+ \begin{pmatrix}
+ a&0&0&0&0\\
+ 0&a&0&0&0\\
+ c&h&2a&0&0\\
+ -c&-h&0&2a&0\\
+ e&j&c+h&-c-h&3a
+ \end{pmatrix},\qquad a,c,e,h,j\in\C.
+\end{equation}
+Matrix columns are images of basis vectors.
+\end{lemma}
+\begin{proof}
+Write $D(x)=a x+b y+c u+d v+e z$ and $D(y)=f x+g y+h u+i v+j z$. Applying $D$ to $xx=yy=0$ gives $b=f=0$, $d=-c$, and $i=-h$. Applying $D$ to $u=xy$ and $v=yx$ then gives
+\[
+ D(u)=(a+g)u+(c+h)z,\qquad
+ D(v)=(a+g)v-(c+h)z.
+\]
+Finally, $z=xu=yv$ gives $D(z)=(2a+g)z=(a+2g)z$, hence $g=a$. These necessary conditions yield \eqref{eq:der}. Conversely, substitution in all products in \eqref{eq:table} and all zero products verifies the derivation rule for every matrix in \eqref{eq:der}.
+\end{proof}
+
+\section{Infinitesimal deformations and rigidity}
+For a fixed product $\mu$, write $Z_\mu$ for the space of bilinear maps $\theta$ for which $\mu+\varepsilon\theta$ satisfies \eqref{eq:shift} over $\C[\varepsilon]/(\varepsilon^2)$. Expanding the identity gives
+\begin{equation}\label{eq:J}
+\begin{split}
+ (J_\mu\theta)(a,b,c)={}&\theta(\mu(a,b),c)+\mu(\theta(a,b),c)\\
+ &-\theta(b,\mu(c,a))-\mu(b,\theta(c,a)).
+\end{split}
+\end{equation}
+Thus $Z_\mu=\ker J_\mu$. Define $B_\mu$ as the image of
+\begin{equation}\label{eq:delta}
+ (\delta_\mu g)(a,b)=g\mu(a,b)-\mu(ga,b)-\mu(a,gb),
+ \qquad g\in\End(\C^n).
+\end{equation}
+It is the tangent space to the orbit; in characteristic zero the orbit map is separable. Differentiating the change-of-basis action also gives $J_\mu\delta_\mu=0$, so $B_\mu\subseteq Z_\mu$. The kernel of $\delta_\mu$ is $\Der(\mu)$.
+
+\begin{lemma}\label{lem:criterion}
+If $Z_\mu=B_\mu$, then $\mu$ is rigid, and its orbit closure is an irreducible component of $\SAs_n$.
+\end{lemma}
+\begin{proof}
+Let $d=\dim B_\mu$, the orbit dimension. The Zariski tangent space of the reduced variety $\SAs_n$ is contained in $Z_\mu$, since its defining ideal contains the shift equations. On the other hand, the orbit tangent space is contained in that Zariski tangent space. The hypothesis therefore makes both tangent spaces $d$-dimensional. The local dimension at $\mu$ is at least $d$ because of the orbit and is at most the tangent dimension. Equality implies that $\mu$ is a smooth point, on a unique irreducible component of dimension $d$.
+
+The orbit is locally closed, irreducible, and $d$-dimensional, so its closure is that component and the orbit is open in it. The same uniqueness of a component holds at every point of the orbit, by the group action. Removing the other components and the boundary of the orbit in its component therefore exhibits the orbit as open in $\SAs_n$.
+\end{proof}
+
+\begin{proposition}\label{prop:rank}
+For the table \eqref{eq:table}, $\operatorname{rank}J_\mu=105$ and $Z_\mu=B_\mu$ has dimension $20$.
+\end{proposition}
+\begin{proof}
+There are $125$ bilinear coordinates and $625$ scalar linearized shift equations. Lemma~\ref{lem:der} gives $\dim B_\mu=25-5=20$, so $\dim Z_\mu\ge20$ and $\operatorname{rank}J_\mu\le105$. The appendix specifies a $105\times105$ submatrix of $J_\mu$ with integer determinant $2$. This proves the opposite rank inequality over $\C$, hence $\dim Z_\mu=20$. The inclusion $B_\mu\subseteq Z_\mu$ is consequently equality.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Section~2 establishes the algebraic assertions. Proposition~\ref{prop:rank} and Lemma~\ref{lem:criterion} prove rigidity and the component assertion. The vanishing of every fourfold product is a set of polynomial identities, so it persists on the orbit closure. Finally, \cite[Corollary~58 and Proposition~59]{AKS} show that every complex shift-associative algebra of dimension at most four is associative. This proves minimality.
+\end{proof}
+
+\begin{corollary}\label{cor:nil}
+The variety $\SAs_5$ contains a nilpotent rigid algebra and has an irreducible component containing no nonnilpotent algebra. No nonnilpotent five-dimensional shift-associative algebra degenerates to $A$.
+\end{corollary}
+\begin{proof}
+Only the last statement remains. If $A$ belonged to the closure of another orbit, its open orbit would meet that other orbit. Distinct orbits are disjoint, so the two orbits would coincide, contrary to nonnilpotency.
+\end{proof}
+
+In the terminology of \cite{AKS}, $\SAs_5$ thus fails the Vergne property, the Grunewald--O'Halloran property, and the Vergne--Grunewald--O'Halloran property. These assertions concern shift-associative algebras; they make no claim about the corresponding Lie-algebra conjectures.
+
+\section{Adjoining scalar factors}
+We give the splitting argument over a commutative ring so that it also applies to infinitesimal deformations.
+
+\begin{lemma}\label{lem:idem}
+Let $M$ be a shift-associative algebra over a commutative ring and let $e^2=e$. Left and right multiplication by $e$ coincide with an idempotent operator $E$. There is a direct-product decomposition
+\[
+ M=EM\oplus\ker E,
+\]
+and $EM$ is a commutative associative algebra with identity $e$.
+\end{lemma}
+\begin{proof}
+Put $L(a)=ea$ and $R(a)=ae$. Substitution of two copies of $e$ into the shift identity gives
+\[
+ LR=L,\qquad RL=R,\qquad R^2=L^2.
+\]
+The first two relations imply $L^2=L$ and $R^2=R$, so $L=R=E$ and $E^2=E$.
+For $a\in EM$ and $b\in\ker E$, the shift identity gives
+\[
+ ab=(ea)b=a(be)=0,\qquad ba=(eb)a=b(ae)=0.
+\]
+If $a,b\in\ker E$, then $E(ab)=(be)a=0$, so $\ker E$ is closed. For $a,b\in EM$, the same formula gives $E(ab)=ba$ and $E(ba)=ab$. Applying $E^2=E$ shows $ab=ba=E(ab)$, so $EM$ is closed and commutative. It has identity $e$; commutativity and the shift identity give associativity. This proves all assertions.
+\end{proof}
+
+\begin{lemma}\label{lem:lift}
+Let $B$ be a complex shift-associative algebra and let $\widetilde B$ be a deformation over $R=\C[\varepsilon]/(\varepsilon^2)$, free as an $R$-module with reduction $B$. Every idempotent of $B$ lifts to an idempotent of $\widetilde B$. If the corresponding factor of $B$ is one-dimensional, its lift splits off an $R$-algebra factor isomorphic to $R$.
+\end{lemma}
+\begin{proof}
+Choose any lift $\widehat e$ of the idempotent and put $w=\widehat e*\widehat e-\widehat e\in\varepsilon\widetilde B$. On $\varepsilon\widetilde B$, multiplication by $\widehat e$ is multiplication by the original $e$, whose left and right operators equal the idempotent $E$ of Lemma~\ref{lem:idem}. For $s\in\varepsilon\widetilde B$,
+\[
+ (\widehat e+s)*(\widehat e+s)-(\widehat e+s)=w+(2E-I)s.
+\]
+Since $(2E-I)^2=I$, choose $s=-(2E-I)w$. The resulting lift is idempotent, so Lemma~\ref{lem:idem} splits the deformed algebra. Its image and kernel are direct summands of a finite free module over the local ring $R$, hence free with their original ranks. If the image has rank one, the lifted idempotent is a basis for it by reduction modulo $\varepsilon$, and the factor is $R$ with its usual multiplication.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:extension}]
+Take any infinitesimal deformation of $B=A\oplus\C^r$. Lift the idempotent of the first scalar factor and split it by Lemma~\ref{lem:lift}. In the complementary factor repeat with the remaining scalar idempotents. Induction decomposes the deformation as $r$ copies of $R$ and an infinitesimal deformation of $A$. Choosing bases in these free summands that reduce to the original bases gives an isomorphism reducing to the identity on $B$.
+
+Proposition~\ref{prop:rank} says that every infinitesimal deformation of $A$ is trivial by such a basis change. Hence every infinitesimal deformation of $B$ is trivial, so $Z_B=B_B$. Lemma~\ref{lem:criterion} proves rigidity. The original nonassociativity witness remains in its $A$-factor.
+
+For the dimension, a derivation annihilates every scalar idempotent $e$: the derivation rule gives $D(e)=2E D(e)$, and $I-2E$ is invertible. From $eb=0$ for $b$ in the complementary factor it follows that $E D(b)=0$. Thus derivations preserve the factors, vanish on the scalar factors, and restrict arbitrarily to $\Der(A)$. Therefore $\dim\Der(B)=5$ and the orbit dimension is $(5+r)^2-5$.
+\end{proof}
+
+\section{Further questions}
+The component supplied here does not classify $\SAs_5$. Determining its orbit boundary, identifying the other components, and deciding which contain nonassociative rigid points remain natural next problems. The scalar-factor construction gives examples in every higher dimension, but it does not give nilpotent rigid examples in every such dimension. The existence and minimum dimensions of further indecomposable nilpotent rigid shift-associative algebras are separate questions.
+
+\appendix
+\section{An exact tangent-rank certificate}\label{app:cert}
+For this appendix only, number $(x,y,u,v,z)$ by $0,1,2,3,4$. Write $c_{ij}^k$ for the constants in \eqref{eq:table}. Flatten a bilinear coordinate $\theta_{ij}^k$ to column $25i+5j+k$ and a scalar equation indexed by $(a,b,d,k)$ to row $125a+25b+5d+k$. All indices range from $0$ to $4$. The row is the coefficient vector of
+\begin{equation}\label{eq:row}
+ \sum_{s=0}^4\left(c_{ab}^s\theta_{sd}^k+\theta_{ab}^s c_{sd}^k
+ -c_{da}^s\theta_{bs}^k-\theta_{da}^s c_{bs}^k\right).
+\end{equation}
+Select all columns in increasing order except the following twenty:
+\begin{verbatim}
+4,9,28,29,33,34,39,44,54,59,
+69,79,82,84,89,94,104,109,114,119.
+\end{verbatim}
+Select the following $105$ rows, in exactly the displayed order:
+\begin{verbatim}
+7,2,4,9,32,28,34,29,57,53,59,54,129,5,6,14,8,154,15,16,
+109,18,19,33,84,134,157,132,159,150,151,152,153,30,31,39,
+127,40,41,42,43,44,38,64,79,128,163,137,139,164,35,36,37,
+89,204,55,56,125,58,65,66,67,68,69,94,126,279,144,130,131,
+133,135,136,189,138,80,81,82,83,90,91,92,93,12,50,22,24,17,
+160,147,149,174,210,61,62,63,105,106,107,108,115,116,117,
+118,119.
+\end{verbatim}
+The resulting integer matrix has determinant $2$. This value can be reproduced from \eqref{eq:row} by fraction-free elimination: starting with previous pivot $q=1$, swap a nonzero pivot into position $(k,k)$ when needed, and replace each entry southeast of that pivot by
+\[
+ M_{ij}\longleftarrow\frac{M_{kk}M_{ij}-M_{ik}M_{kj}}q\quad(i,j>k).
+\]
+Then zero the entries below the pivot and set $q$ to that pivot. Track the sign of row swaps; the signed final entry is the determinant. Every division in this computation is exact.
+
+The supplementary file \texttt{check.py} constructs \eqref{eq:row}, verifies the shift identity, and evaluates this certificate using integer arithmetic and the stated elimination. Modular arithmetic is used only to select the minor, not to infer a characteristic-zero rank from an upper bound. The stored file \texttt{check-results.json} fixes all selected indices. The script also verifies $J_\mu\delta_\mu=0$ entry by entry and gives a $20\times20$ orbit-differential minor of determinant $3$. Together the two nonzero minors and the chain identity independently force ranks $105$ and $20$.
+
+\newpage
+The second implementation, \texttt{independent\_check.py}, instead constructs the nested products with symbolic dual-number coefficients and expands the change-of-basis action. SymPy~1.14.0 gives exact ranks $105$ and $20$, re-evaluates the two determinants as $2$ and $3$, and verifies the five-parameter derivation formula. It does not import the first implementation. Both scripts and their result records are supplied with the manuscript at
+\href{https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P17-rigid-shift-associative}{\texttt{github.com/Hwzw/algebra-number-theory-drafts}, paper P17}.
+The finite matrix certificate is the computational part of the proof. The geometric criterion and the extension to all higher dimensions are proved in the text.
+
+\section*{Preparation and verification}
+This manuscript was prepared with OpenAI Codex assistance in problem selection, proof development, computation, literature checking, and writing. The originating agent performed the internal proof audit and both computational implementations; no separate-agent or human referee review is claimed. The accompanying source assessment records the literature-search scope. Historical priority remains subject to further scholarly review.
+
+\begin{thebibliography}{9}
+\bibitem{AKS}
+H. Abdelwahab, I. Kaygorodov, and B. Sartayev,
+\emph{Shift associative algebras},
+Rendiconti del Circolo Matematico di Palermo Series~2 \textbf{74} (2025), article~145.
+\href{https://doi.org/10.1007/s12215-025-01261-1}{doi:10.1007/s12215-025-01261-1}.
+
+\bibitem{BBR}
+E. Barreiro, S. Benayadi, and C. Rizzo,
+\emph{Nearly associative algebras},
+Journal of Algebra \textbf{658} (2024), 821--868.
+\href{https://doi.org/10.1016/j.jalgebra.2024.06.016}{doi:10.1016/j.jalgebra.2024.06.016}.
+\end{thebibliography}
+\end{document}

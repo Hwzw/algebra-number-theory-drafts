@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 16 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 17 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New rigid nonassociative algebra
+
+[**P17: A rigid nonassociative shift-associative algebra in dimension five**](papers/P17-rigid-shift-associative/README.md), by **Henry Zweiman**, gives a proposed affirmative answer to the explicit rigidity question in Abdelwahab–Kaygorodov–Sartayev (2025). Its six-page [PDF](papers/P17-rigid-shift-associative/manuscript.pdf), [full Markdown](papers/P17-rigid-shift-associative/manuscript.md), and [LaTeX](papers/P17-rigid-shift-associative/manuscript.tex) give a nilpotent example in the smallest possible dimension and extend rigidity to all higher dimensions by adjoining scalar factors.
+
+An explicit integer minor certifies the full tangent calculation; an independent symbolic implementation confirms it. The [source assessment](papers/P17-rigid-shift-associative/ASSESSMENT.md) and [proof audit](papers/P17-rigid-shift-associative/REVIEW.md) record scope and limits. This is one consolidated paper, with no full five-dimensional classification claimed. Historical priority and significance remain provisional.
 
 ## New restricted-sumset density theorem
 
