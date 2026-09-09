@@ -1,0 +1,33 @@
+{
+  "exact_parameter_triples_checked": 1848,
+  "all_passed": true,
+  "witness": {
+    "k": 1,
+    "N": 20,
+    "U": 14,
+    "B_degrees": [
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "restricted_size": 31,
+    "conjectured_lower_bound": 32
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-08",
+  "compile": "Tectonic: passed, no warnings",
+  "pages": 5,
+  "visually_reviewed": true,
+  "visual_notes": "All five pages inspected individually. After correcting an adjugate spacing typo, recompiled and re-rendered all pages; corrected page 3 reinspected, pagination unchanged.",
+  "exact_checks": "check_examples.py: 8 extremal complete/star pairs n=2..9 and nonunit star-center scaling passed",
+  "independent_review": "../../reviews/C19-review.md",
+  "final_transfer": "passed; exact frozen TeX SHA256 recorded in ../../reviews/C19-review.md",
+  "hashes": {
+    "manuscript.tex": "956d39e4188eecd3e479fd4ede0a585467151c775d5310b798f089a87815a8e8",
+    "manuscript.pdf": "9a2be7506566bebd5393c10eda29a49b691535e7e72a4b2b6b9d0778672c87bb",
+    "proof.md": "1cb5859f5969e13a230099ee2f7bb84adbb7bad6d2bd1f18fd4a7e90bb4a1f49",
+    "exact_checks.json": "104d51b493aafb268ea10c368f2f202054537428975e3f865e7b202685696a5c"
+  }
+}

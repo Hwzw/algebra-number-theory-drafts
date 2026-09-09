@@ -1,0 +1,125 @@
+{
+  "prepared": "2026-09-08",
+  "count": 13,
+  "total_pages": 74,
+  "status": "AI-generated drafts; not peer reviewed; no human expert verification claimed",
+  "papers": [
+    {
+      "id": "P01",
+      "folder": "papers/P01-lefschetz-classification",
+      "pages": 5,
+      "tex_sha256": "e87454ba80b976b38e6c53dc4e5a3bb97ef5d724e6abda3f1465b94491699f3c",
+      "pdf_sha256": "93f954b84082fb95f70bc8888a58640850794659377d3bbe423d874f1100694c",
+      "title": "Lefschetz properties of fully whiskered simplicial complexes",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P02",
+      "folder": "papers/P02-recurrence-repair",
+      "pages": 7,
+      "tex_sha256": "9e369aa13d644fa96c3c61920bf8532a1c3d53fd906fa2e8874791c838fe2b6a",
+      "pdf_sha256": "d1755eb5836b581c02bd21c50d31c5b8937e7745f364ce5c83ab128aaf0d2535",
+      "title": "Squarefree repair factors and optimal exponents for linear recurrences",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P03",
+      "folder": "papers/P03-local-permutation-polynomials",
+      "pages": 6,
+      "tex_sha256": "b4f419676cfefe2fa48bb0a771b4de1005b722cec5c5ce7573f37d7aa807d57f",
+      "pdf_sha256": "e261b301bd350c1117a1d47a649ac3d594bca4892964918e0311ad8a348cdb3d",
+      "title": "Maximum-degree local permutation polynomials over the prime field",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P04",
+      "folder": "papers/P04-carlitz-factorization",
+      "pages": 6,
+      "tex_sha256": "a74eba0f334bff2fedba3639cf6090cd705a5344923d0d146d2f04b2a386b5e2",
+      "pdf_sha256": "2f162727197c3d43e689b22c1623b5709fa9a82687e8a1acdfaeb2fe60de6ddf",
+      "title": "Divisors and unique factorizations of Carlitz binomial polynomials",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P05",
+      "folder": "papers/P05-symbolic-defect",
+      "pages": 8,
+      "tex_sha256": "c7a1129e70538e0d38cee0b72bc14ca9afa7e8783fa31b1e2ffae33fc86faeb9",
+      "pdf_sha256": "7d3fef294fa549b82d4b55bc325de1e0eb960b8d0f4200f90dcc1112994eda5c",
+      "title": "Symbolic defect and normalization of whiskered cover ideals",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P06",
+      "folder": "papers/P06-stirling-repair",
+      "pages": 7,
+      "tex_sha256": "342863fbc8b75f0099606d96f1b913500f6e5fa39b59490df3025356e50f59fb",
+      "pdf_sha256": "7e3a8687594114e2399dde4823aa97ac7f170da70727e9951096cc9d003371d7",
+      "title": "Prime support and growth of Stirling repair factors",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P07",
+      "folder": "papers/P07-irreducible-compositions",
+      "pages": 5,
+      "tex_sha256": "cdbebfa19fe806d0e7fffd08157a0b19ee72fd48ec37ce1b35fd566db2a0f7d0",
+      "pdf_sha256": "ea5bc029bb4d14070bcd0524851d9fd4a07d0d09b3691ece59e0921a9834a3df",
+      "title": "Irreducible compositions in an exceptional unicritical family",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P08",
+      "folder": "papers/P08-homological-shift-counterexamples",
+      "pages": 3,
+      "tex_sha256": "08a5a5df22074c7459607f760996a54a466fe3ad002778b6e998f916d3f497fd",
+      "pdf_sha256": "68ea26bd4e309999e112b53913cf838a08278373243ef55ca4d42538d73d1c4d",
+      "title": "Componentwise polymatroidality is not preserved by homological shifts",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P09",
+      "folder": "papers/P09-unique-addition",
+      "pages": 6,
+      "tex_sha256": "cb1d0e82004dfa70becc367dba38b2d585bc9c7ce06cb542f3c9b075a716cd77",
+      "pdf_sha256": "0b20039e85c952c7478df79c5f13ca1698f6acae4ec2c2424e16dd8f5c8bdbfe",
+      "title": "Unique addition in centerless metabelian Lie algebras",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P10",
+      "folder": "papers/P10-restricted-sumsets",
+      "pages": 5,
+      "tex_sha256": "56a2b5a6a855d4e2464f73caf7eea33ca375bf64ee5be90714215b26c02226ea",
+      "pdf_sha256": "9eda2b2bfce77ced540e049e84faf600ea9b992f4f2e742316eb5040e4df720c",
+      "title": "Counterexamples to a conjecture on one-sided restricted sumsets",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P11",
+      "folder": "papers/P11-partition-congruences",
+      "pages": 6,
+      "tex_sha256": "8c4a6ddac01d3a8d39aca835909b2568ef84fce49a402ce1ee093905435ac06b",
+      "pdf_sha256": "3faeb5fd06788f3cc8ed086adce89a6a2ccb88e94d1edcbd39f9be43913a2b80",
+      "title": "Finite parameter tests for partition congruences and the surviving classes of an elongated partition conjecture",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P12",
+      "folder": "papers/P12-arithmetical-critical-groups",
+      "pages": 5,
+      "tex_sha256": "956d39e4188eecd3e479fd4ede0a585467151c775d5310b798f089a87815a8e8",
+      "pdf_sha256": "3e8bc5f26874ac920b2bad9b05ba04959a59b7f2e17da29f43cda0453b446a89",
+      "title": "Sharp orders of arithmetical critical groups via canonical lattice simplices",
+      "status": "AI-generated draft; no human expert verification claimed"
+    },
+    {
+      "id": "P13",
+      "folder": "papers/P13-nilperiod-rings",
+      "pages": 5,
+      "tex_sha256": "ec153cc90dbfa1778ea3b449356f9addee126289f0629e3b0bfdf0416d1fd466",
+      "pdf_sha256": "4aa2f4a8f4c94bef72a1900e2bc80c2a1adbb9b418baa28501864856954786b4",
+      "title": "Nilperiod rings and additive periods of power maps",
+      "status": "AI-generated draft; no human expert verification claimed"
+    }
+  ]
+}

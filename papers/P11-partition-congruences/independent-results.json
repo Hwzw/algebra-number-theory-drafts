@@ -1,0 +1,226 @@
+[
+  {
+    "k": 58,
+    "modulus": 125,
+    "through": 4141,
+    "tested": 166,
+    "seconds": 0.018,
+    "status": "PASS"
+  },
+  {
+    "k": 183,
+    "modulus": 125,
+    "through": 10616,
+    "tested": 425,
+    "seconds": 0.017,
+    "status": "PASS"
+  },
+  {
+    "k": 308,
+    "modulus": 125,
+    "through": 17091,
+    "tested": 684,
+    "seconds": 0.016,
+    "status": "PASS"
+  },
+  {
+    "k": 83,
+    "modulus": 125,
+    "through": 95466,
+    "tested": 1528,
+    "seconds": 0.056,
+    "status": "PASS"
+  },
+  {
+    "k": 208,
+    "modulus": 125,
+    "through": 238466,
+    "tested": 3816,
+    "seconds": 0.151,
+    "status": "PASS"
+  },
+  {
+    "k": 333,
+    "modulus": 125,
+    "through": 381466,
+    "tested": 6104,
+    "seconds": 0.24,
+    "status": "PASS"
+  },
+  {
+    "k": 100,
+    "modulus": 125,
+    "through": 120374,
+    "tested": 963,
+    "seconds": 0.086,
+    "status": "PASS"
+  },
+  {
+    "k": 225,
+    "modulus": 125,
+    "through": 263374,
+    "tested": 2107,
+    "seconds": 0.312,
+    "status": "PASS"
+  },
+  {
+    "k": 350,
+    "modulus": 125,
+    "through": 406374,
+    "tested": 3251,
+    "seconds": 0.438,
+    "status": "PASS"
+  },
+  {
+    "k": 5,
+    "modulus": 125,
+    "through": 14369,
+    "tested": 230,
+    "seconds": 0.013,
+    "status": "PASS"
+  },
+  {
+    "k": 130,
+    "modulus": 125,
+    "through": 157369,
+    "tested": 2518,
+    "seconds": 0.127,
+    "status": "PASS"
+  },
+  {
+    "k": 255,
+    "modulus": 125,
+    "through": 300369,
+    "tested": 4806,
+    "seconds": 0.298,
+    "status": "PASS"
+  },
+  {
+    "k": 30,
+    "modulus": 125,
+    "through": 37194,
+    "tested": 298,
+    "seconds": 0.025,
+    "status": "PASS"
+  },
+  {
+    "k": 155,
+    "modulus": 125,
+    "through": 180319,
+    "tested": 1443,
+    "seconds": 0.123,
+    "status": "PASS"
+  },
+  {
+    "k": 280,
+    "modulus": 125,
+    "through": 323319,
+    "tested": 2587,
+    "seconds": 0.243,
+    "status": "PASS"
+  },
+  {
+    "k": 60,
+    "modulus": 125,
+    "through": 74239,
+    "tested": 2376,
+    "seconds": 0.051,
+    "status": "PASS"
+  },
+  {
+    "k": 185,
+    "modulus": 125,
+    "through": 217364,
+    "tested": 6956,
+    "seconds": 0.171,
+    "status": "PASS"
+  },
+  {
+    "k": 310,
+    "modulus": 125,
+    "through": 360314,
+    "tested": 11530,
+    "seconds": 0.272,
+    "status": "PASS"
+  },
+  {
+    "k": 58,
+    "modulus": 625,
+    "through": 100491,
+    "tested": 2412,
+    "seconds": 0.075,
+    "status": "PASS"
+  },
+  {
+    "k": 183,
+    "modulus": 625,
+    "through": 215491,
+    "tested": 5172,
+    "seconds": 0.17,
+    "status": "PASS"
+  },
+  {
+    "k": 308,
+    "modulus": 625,
+    "through": 377241,
+    "tested": 9054,
+    "seconds": 0.303,
+    "status": "PASS"
+  },
+  {
+    "k": 433,
+    "modulus": 625,
+    "through": 539116,
+    "tested": 12938,
+    "seconds": 0.564,
+    "status": "PASS"
+  },
+  {
+    "k": 58,
+    "modulus": 3125,
+    "through": 287991,
+    "tested": 4608,
+    "seconds": 0.261,
+    "status": "PASS"
+  },
+  {
+    "k": 683,
+    "modulus": 3125,
+    "through": 862616,
+    "tested": 13802,
+    "seconds": 0.815,
+    "status": "PASS"
+  },
+  {
+    "k": 1308,
+    "modulus": 3125,
+    "through": 1671491,
+    "tested": 26744,
+    "seconds": 1.688,
+    "status": "PASS"
+  },
+  {
+    "k": 308,
+    "modulus": 3125,
+    "through": 517866,
+    "tested": 8286,
+    "seconds": 0.427,
+    "status": "PASS"
+  },
+  {
+    "k": 933,
+    "modulus": 3125,
+    "through": 1092491,
+    "tested": 17480,
+    "seconds": 1.105,
+    "status": "PASS"
+  },
+  {
+    "k": 1558,
+    "modulus": 3125,
+    "through": 1901366,
+    "tested": 30422,
+    "seconds": 1.907,
+    "status": "PASS"
+  }
+]

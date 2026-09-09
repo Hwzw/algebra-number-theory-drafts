@@ -1,0 +1,600 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\kk}{\Bbbk}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\sdef}{\operatorname{sdef}}
+\newcommand{\isdef}{\operatorname{isdef}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\FRAC}{\operatorname{FRAC}}
+\newcommand{\STAB}{\operatorname{STAB}}
+\newcommand{\Hilb}{\operatorname{Hilb}}
+\title{Symbolic defect and normalization of whiskered cover ideals}
+\author{}
+\date{September 8, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let $J$ be the cover ideal of the full whiskering of a graph $G$ on $n$
+vertices. We express its symbolic defect and integral symbolic defect as
+differences between the Ehrhart functions of the fractional and ordinary
+stable-set polytopes and the Hilbert function of the stable-set semigroup.
+For every nonbipartite core graph the two defects are asymptotic, with common
+leading term $(\vol(\FRAC(G))-\vol(\STAB(G)))m^n$ and positive coefficient.
+Their difference is eventually polynomial of degree at most $n-1$, without
+any normality hypothesis. This bound is sharp: when the complement of $G$
+is a disjoint union of two odd cycles of lengths at least five, we determine
+the difference in every degree by a single binomial coefficient, and give a
+composition formula for any number of odd-cycle components. We also
+give closed formulas for the full symbolic defect of whiskered complete
+graphs.
+\end{abstract}
+
+\section{Introduction and statements}
+
+For a homogeneous ideal $I$ in a polynomial ring, the symbolic defect
+$\sdef(I,m)=\mu(I^{(m)}/I^m)$ measures the number of generators needed to
+account for the difference between symbolic and ordinary powers. The
+integral symbolic defect introduced by Oltsik \cite[Definition~4.1]{Oltsik}
+is
+\[
+\isdef(I,m)=\mu\bigl(\overline{I^{(m)}}/\overline{I^m}\bigr).
+\]
+Here a bar denotes integral closure and $\mu$ the minimal number of module
+generators. These two counts need not agree. Oltsik asks about their growth
+comparison and the degrees and coefficients of their eventual
+quasipolynomials \cite[Section~7]{Oltsik}. We obtain an exact description
+for cover ideals of fully whiskered graphs, including graphs whose
+stable-set semigroup rings are not normal.
+
+We write $\NN=\ZZ_{\geq0}$. Throughout, $G$ is a finite simple graph with specified vertex set $[n]$,
+where $n\geq1$. Isolated vertices are allowed. Its full whiskering $w(G)$
+has vertices $x_1,\ldots,x_n,y_1,\ldots,y_n$, the core edges $x_ix_j$ for
+$ij\in E(G)$, and the pendant edges $x_iy_i$. Over an arbitrary field
+$\kk$, put
+\[
+R=\kk[x_1,\ldots,x_n,y_1,\ldots,y_n],\qquad
+J=J(w(G))=\bigcap_{uv\in E(w(G))}(u,v).
+\]
+Write $s_m=\sdef(J,m)$ and $i_m=\isdef(J,m)$.
+
+Let $\mathcal I(G)$ be the independent sets of $G$, including the empty
+set. We use the polytopes and finite sets
+\begin{align*}
+P=\FRAC(G)&=\{b\in[0,1]^n:b_i+b_j\leq1\text{ for }ij\in E(G)\},\\
+Q=\STAB(G)&=\conv\{\one_A:A\in\mathcal I(G)\},\\
+B_m&=\{\one_{A_1}+\cdots+\one_{A_m}:A_j\in\mathcal I(G)\}.
+\end{align*}
+The upper coordinate bounds in $P$ include isolated vertices. Define
+\[
+E_P(m)=|mP\cap\ZZ^n|,\quad E_Q(m)=|mQ\cap\ZZ^n|,
+\quad H_G(m)=|B_m|.
+\]
+All volumes below are Euclidean $n$-dimensional volumes, with unit cube
+volume one. Thus the Ehrhart leading coefficient is $\vol(P)$, rather
+than $n!\vol(P)$.
+
+\begin{theorem}\label{thm:main}
+For every graph $G$ as above and every $m\geq1$,
+\begin{equation}\label{eq:dictionary}
+s_m=E_P(m)-H_G(m),\qquad i_m=E_P(m)-E_Q(m).
+\end{equation}
+The difference $s_m-i_m$ is nonnegative, eventually polynomial, and
+$O(m^{n-1})$. It vanishes for every $m$ if and only if $Q$ has the integer
+decomposition property.
+
+Both defects are eventually quasipolynomial with period dividing two.
+If $G$ is bipartite, both vanish identically. If $G$ is nonbipartite, then
+\begin{equation}\label{eq:asymptotic}
+s_m=c_Gm^n+O(m^{n-1}),\qquad
+i_m=c_Gm^n+O(m^{n-1}),\qquad
+c_G=\vol(P)-\vol(Q)>0.
+\end{equation}
+In particular both parity branches have degree $n$ and leading coefficient
+$c_G$, and $s_m/i_m\longrightarrow1$.
+\end{theorem}
+
+The next result gives an exact correction in a nonnormal family. For a
+graph $G$, its complement is denoted by $\overline G$; this notation is
+distinct from integral closure of ideals.
+
+\begin{theorem}\label{thm:correction}
+Suppose $\overline G=C_r\sqcup C_s$, where $r,s\geq5$ are odd, and put
+$n=r+s$. Then
+\begin{equation}\label{eq:correction}
+s_m-i_m=
+\begin{cases}
+0,&m<n/2,\\[2pt]
+\displaystyle\binom{m+n/2-1}{n-1},&m\geq n/2.
+\end{cases}
+\end{equation}
+Consequently the exponent $n-1$ in Theorem~\ref{thm:main} is sharp. The
+correction first occurs in degree $n/2$ and has leading coefficient
+$1/(n-1)!$.
+\end{theorem}
+
+For complete cores, the normalization correction is zero and the full
+defect has a direct closed form.
+
+\begin{theorem}\label{thm:complete}
+For $G=K_n$ one has $s_m=i_m$ for all $m$. For $q\geq0$,
+\begin{align}
+s_{2q}&=(q+1)^n+n\sum_{k=1}^q k^{n-1}-\binom{2q+n}{n},\label{eq:even}\\
+s_{2q+1}&=(q+1)^n+n\sum_{k=1}^{q+1}k^{n-1}
+-\binom{2q+1+n}{n}.\label{eq:odd}
+\end{align}
+In \eqref{eq:even}, $s_0$ is interpreted as zero. For $n\geq3$, the
+leading coefficient as a function of $m$ is $2^{1-n}-1/n!>0$. For
+$n=1,2$, all defects are zero.
+\end{theorem}
+
+\subsection*{Relation to previous work}
+The ordinary generators of whiskered cover ideals, their independent-set
+parametrization, and their analytic spread $n+1$ occur in
+Drabkin--Guerrieri \cite[Proposition~5.7 and Theorem~5.8]{DGFreiman}.
+The additional observation used here is that every symbolic power is
+also generated in a single degree, and that ordinary products and integral
+closure can be compared inside the same affine slice.
+
+Eventual quasipolynomiality with period dividing two for graph cover
+ideals is already known \cite[Corollary~4.3]{DG}. The conditional recursion
+in \cite[Theorem~5.5]{DG} does not apply to all whiskered graphs:
+\cite[Remark~5.3]{DG} exhibits the whiskered triangle as a failure of its
+indecomposability hypothesis. Theorem~\ref{thm:complete} includes that
+example and concerns whiskered complete graphs, whereas
+\cite[Theorem~5.7]{DG} treats unwhiskered complete graphs.
+
+The polyhedral facts about fractional stable-set polytopes used below
+are established \cite{HHO}. Conditional comparisons with integral closure
+appear in \cite[Proposition~4.5]{Oltsik} and, more recently,
+\cite[Theorem~4.1]{BHL}; the latter paper also gives coefficient constancy
+results under filtration and module hypotheses
+\cite[Theorem~4.2]{BHL}. Our conclusions are the explicit volume difference,
+unconditional ratio one for this whiskered class, and exact correction
+\eqref{eq:correction}. They do not resolve the unrestricted growth
+questions for monomial ideals.
+
+Nonnormality in Theorem~\ref{thm:correction} is already implied by
+\cite[Theorem~1]{MOS}. Preservation of multiplicity under semigroup
+normalization is standard; see also \cite[Proposition~3.1]{Higashitani}.
+Moreover, \cite[Proposition~4.2]{Higashitani} computes a translated free-face
+hole monoid and its Hilbert-series correction for a different connected
+edge-ring family built around two triangles. Our exact correction is a
+specific stable-set and symbolic-defect calculation with that conceptual
+precedent. We give elementary proofs, including the exclusion of holes
+away from the relevant facet.
+
+\section{The common degree slice}
+
+Since $J$ is squarefree with minimal primes indexed by the edges,
+\[
+J^{(m)}=\bigcap_{uv\in E(w(G))}(u,v)^m.
+\]
+Thus $x^ay^b\in J^{(m)}$ if and only if
+\begin{equation}\label{eq:covers}
+a_i+b_i\geq m\quad(1\leq i\leq n),\qquad
+a_i+a_j\geq m\quad(ij\in E(G)).
+\end{equation}
+
+\begin{lemma}\label{lem:generators}
+The minimal monomial generators of $J^{(m)}$ are precisely
+\[
+u_b=\prod_{i=1}^n x_i^{m-b_i}y_i^{b_i},
+\qquad b\in mP\cap\ZZ^n.
+\]
+In particular, every such generator has degree $nm$.
+\end{lemma}
+\begin{proof}
+In a minimal generator, no $a_i$ can exceed $m$, because replacing it by
+$m$ preserves every inequality in \eqref{eq:covers}. Once $a_i\leq m$,
+a strict inequality $a_i+b_i>m$ permits decreasing the positive exponent
+$b_i$. Hence minimality requires $a_i+b_i=m$ for every $i$.
+Conversely, these equalities prevent decreasing any positive exponent:
+its pendant inequality would fail. Substituting $a_i=m-b_i$ in the core
+inequalities gives $b_i+b_j\leq m$, exactly the asserted lattice set.
+\end{proof}
+
+\begin{proposition}\label{prop:dictionary}
+The identities \eqref{eq:dictionary} hold for every $m\geq1$.
+\end{proposition}
+\begin{proof}
+At $m=1$, the lattice vectors in Lemma~\ref{lem:generators} are precisely
+the independent-set indicators. A product of $m$ such generators is
+$u_b$ with $b\in B_m$, and every element of $B_m$ occurs. These products
+all have degree $nm$, so distinct products are identified only when their
+exponent vectors are equal.
+
+Let $\mathfrak m$ be the homogeneous maximal ideal of $R$. If a monomial
+ideal $A$ is generated in one degree $d$ and $D\subseteq A$ is a monomial
+ideal, the minimal generators of $A/D$ are exactly the degree-$d$
+generators of $A$ absent from $D$. Their nonzero classes form a basis
+modulo $\mathfrak m(A/D)$: the latter has no degree-$d$ part, and the
+monomials present in the quotient are linearly independent. Applying this
+to $A=J^{(m)}$, $D=J^m$ gives $s_m=E_P(m)-H_G(m)$.
+
+For a monomial ideal, a monomial belongs to its integral closure precisely
+when its exponent lies in its Newton polyhedron. This criterion can also
+be expressed by requiring a positive power of the monomial to belong to
+the same power of the ideal; see \cite[Proposition~2.13]{Oltsik}.
+The Newton polyhedron of $J^m$ is the convex hull of its generating
+exponent vectors plus $\RR_{\geq0}^{2n}$. Its intersection with the
+total-degree hyperplane $nm$ is exactly the affine image of $mQ$ under
+\begin{equation}\label{eq:affine}
+b\longmapsto(m\one-b,b).
+\end{equation}
+Indeed the convex hull of all sums of $m$ independent-set indicators is
+$mQ$. All these exponent vectors already have total degree $nm$, and a
+nonzero nonnegative addition would increase that degree. It follows that
+\[
+u_b\in\overline{J^m}\quad\Longleftrightarrow\quad b\in mQ.
+\]
+Each coordinate-prime power $(u,v)^m$ is integrally closed, as is their
+intersection. Thus $J^{(m)}$ is integrally closed and
+$\overline{J^m}\subseteq J^{(m)}$. Applying the same degree-$nm$ quotient
+argument gives $i_m=E_P(m)-E_Q(m)$. This argument does not assume that the
+entire ideal $\overline{J^m}$ is generated in degree $nm$.
+\end{proof}
+
+\section{Normalization and asymptotic comparison}
+
+We include the semigroup estimate to make clear that no normality
+assumption on the stable-set ring is needed.
+
+\begin{lemma}\label{lem:conductor}
+Let $S\subseteq\ZZ^{n+1}$ be generated by $(\one_A,1)$ for
+$A\in\mathcal I(G)$, and let
+$\overline S=\RR_{\geq0}S\cap\ZZ^{n+1}$. Then
+\[
+0\leq E_Q(m)-H_G(m)=O(m^{n-1}).
+\]
+The difference is eventually a polynomial.
+\end{lemma}
+\begin{proof}
+The group generated by $S$ is all of $\ZZ^{n+1}$: it contains
+$(0,1)$ and $(e_i,1)$, and their differences give $(e_i,0)$.
+The degree-$m$ elements of $\overline S$ are exactly
+$\{(b,m):b\in mQ\cap\ZZ^n\}$.
+
+There exists a conductor element $c\in S$ with $c+\overline S\subseteq S$.
+Here is a direct construction. If $a_1,\ldots,a_t$ generate $S$, subtract
+the floors of the coefficients in a nonnegative real expression
+$u=\sum_j\lambda_ja_j$ for $u\in\overline S$. The remainder is a lattice
+point in the bounded set $\{\sum_j\theta_ja_j:0\leq\theta_j<1\}$.
+Its finitely many possible values $r_1,\ldots,r_v$ belong to
+$\overline S$, and $\overline S\subseteq\bigcup_j(r_j+S)$.
+Fullness of the generated group allows us to write
+$r_j=p_j-q_j$ with $p_j,q_j\in S$. Taking $c=\sum_jq_j$ ensures
+$c+r_j\in S$ for every $j$, as required.
+
+Write $c=(c',d)$. Translation by $c$ injects
+$\overline S_{m-d}$ into $S_m$ for $m\geq d$, and hence
+\[
+0\leq E_Q(m)-H_G(m)\leq E_Q(m)-E_Q(m-d)=O(m^{n-1}).
+\]
+The last assertion uses Ehrhart's theorem: $Q$ is an integral,
+full-dimensional polytope, containing $0,e_1,\ldots,e_n$, so $E_Q$ is
+a polynomial of degree $n$. Finally $H_G$ is the Hilbert function of the
+standard graded affine semigroup algebra $\kk[S]$, and is therefore
+eventually polynomial by the Hilbert--Serre theorem. Their difference is
+eventually polynomial as well.
+\end{proof}
+
+\begin{lemma}\label{lem:half}
+Every vertex of $P$ has coordinates in $\{0,1/2,1\}$.
+\end{lemma}
+\begin{proof}
+Let $b$ be a vertex. Consider the graph on coordinates with
+$0<b_i<1$, retaining the edges on which $b_i+b_j=1$. A tight edge cannot
+join a fractional coordinate to a coordinate equal to zero or one.
+If a connected component of this tight graph is bipartite, add
+$\varepsilon$ on one side and subtract it on the other. For sufficiently
+small positive and negative $\varepsilon$, every nontight inequality and
+every coordinate bound remains satisfied. This contradicts extremality.
+Every component therefore has an odd cycle. The tight equations around
+that cycle force all its coordinates to be $1/2$, and the same equations
+propagate this value throughout the component.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Proposition~\ref{prop:dictionary} and Lemma~\ref{lem:conductor} give the
+identities and correction estimate. Since $Q\subseteq[0,1]^n$ satisfies
+the edge inequalities, its lattice points are exactly the independent-set
+indicators. Thus $E_Q(m)=H_G(m)$ for every $m$ is precisely the integer
+decomposition property of $Q$.
+
+By Lemma~\ref{lem:half} and Ehrhart's theorem, $E_P$ is a
+quasipolynomial of period dividing two, with both branches having leading
+term $\vol(P)m^n$. Also
+\[
+E_Q(m)=\vol(Q)m^n+O(m^{n-1}),\qquad
+H_G(m)=\vol(Q)m^n+O(m^{n-1}).
+\]
+The asserted eventual quasipolynomiality and asymptotic expansions follow.
+
+Suppose first that $G$ is bipartite with parts $U,V$. For
+$b\in mP\cap\ZZ^n$, assign vertex $i\in U$ the first $b_i$ colors from
+$[m]$, and vertex $j\in V$ the last $b_j$ colors. Adjacent vertices
+receive disjoint color sets because $b_i+b_j\leq m$. Each color class is
+therefore independent, giving a representation of $b$ in $B_m$.
+Isolated vertices can be placed in either part. Hence $B_m=mP\cap\ZZ^n$
+and both defects vanish.
+
+If $G$ is not bipartite, choose an odd cycle with $2r+1$ vertices. On its
+vertex set the coordinate sum of any point of $Q$ is at most $r$. The
+point $(1/2,\ldots,1/2)$ belongs to $P$ and violates that inequality, so
+$Q\subsetneq P$. Both polytopes are full-dimensional. Their strict
+containment gives $\vol(Q)<\vol(P)$: moving a point of $P\setminus Q$
+slightly toward an interior point of $P$ produces a small open ball in
+$P$ disjoint from the closed set $Q$. Thus $c_G>0$. It follows that both
+parity branches have degree exactly $n$, and that $i_m>0$ eventually.
+Dividing the two asymptotic expansions proves the ratio limit.
+\end{proof}
+
+\section{An exact correction from two odd cycles}
+
+Let $C$ be an odd cycle and $b$ a nonnegative integral demand vector on
+its vertices. Put $T=\sum_i b_i$ and define
+\begin{align*}
+\nu^*(b)&=\max\left\{\sum_{e\in E(C)}\lambda_e:
+\lambda_e\geq0,\ \sum_{e\ni i}\lambda_e\leq b_i\right\},\\
+\nu(b)&=\max\left\{\sum_{e\in E(C)}\lambda_e:
+\lambda_e\in\NN,\ \sum_{e\ni i}\lambda_e\leq b_i\right\}.
+\end{align*}
+Repeated use of an edge is allowed in this capacitated matching problem.
+
+\begin{lemma}\label{lem:cycle}
+One has $\nu(b)=\lfloor\nu^*(b)\rfloor$. A noninteger value of
+$\nu^*(b)$ occurs exactly when the full saturation equations
+$\lambda_{i-1}+\lambda_i=b_i$ have a nonnegative, nonintegral solution.
+In that case the solution is unique, every edge weight is a positive
+halfinteger, $T$ is odd, and $\nu^*(b)=T/2$.
+\end{lemma}
+\begin{proof}
+Choose an optimal vertex of the bounded fractional matching polytope.
+If an edge coordinate is zero, its positive support is a disjoint union
+of paths. The vertex-edge incidence matrix of a bipartite graph is
+totally unimodular: changing signs on the rows of one bipartition gives
+an oriented incidence matrix, whose square subdeterminants are
+$0,1,-1$. Thus the resulting active system with integral right-hand
+side has an integral vertex.
+
+If every edge coordinate is positive, extremality requires every vertex
+inequality to be tight; otherwise there are fewer active constraints
+than edge variables. The incidence matrix of an odd cycle is
+nonsingular, as its homogeneous equations alternate signs and the odd
+closing condition forces zero. Solving successively shows that its
+saturated solution is either integral or has every coordinate in
+$\ZZ+1/2$. In the latter case all coordinates are at least $1/2$,
+and $T$ is odd. Round consecutive edge coordinates alternately down,
+up, down, up, ending down. All vertex sums remain unchanged except
+the one between the first and last edges, where the sum decreases by
+one. The resulting integral matching has weight $(T-1)/2$.
+
+This proves the floor identity. Conversely, any feasible nonintegral
+saturated solution attains the universal upper bound $T/2$, and its
+uniform halfintegrality on an odd number of edges makes $T$ odd.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:correction}]
+Set $F=\overline G=C_r\sqcup C_s$. Because both cycles have length at
+least five, the independent sets of $G$ are exactly the empty set,
+singletons, and edges of $F$. For $b\in\NN^n$, put $T=\sum_i b_i$,
+and let $\nu_j^*,\nu_j$ be the two matching numbers on component $j$.
+Then
+\begin{align}
+b\in mQ&\quad\Longleftrightarrow\quad
+T-\nu_1^*(b)-\nu_2^*(b)\leq m,\label{eq:fractional-test}\\
+b\in B_m&\quad\Longleftrightarrow\quad
+T-\nu_1(b)-\nu_2(b)\leq m.\label{eq:integer-test}
+\end{align}
+Indeed a choice of edge weights leaves nonnegative residual demands
+filled by singleton weights. The total coefficient mass is
+$T-\sum_e\lambda_e$; empty-set weights fill any remaining mass up to
+$m$. This argument works over the nonnegative reals for
+\eqref{eq:fractional-test} and over the nonnegative integers for
+\eqref{eq:integer-test}.
+
+If both fractional optima are integral, the two tests coincide. If just
+one is a halfinteger, rounding the fractional threshold up to the
+integer $m$ again gives the ordinary threshold. Thus a hole
+$b\in(mQ\cap\ZZ^n)\setminus B_m$ can occur only when both fractional
+optima are halfintegers. By Lemma~\ref{lem:cycle}, each component is then
+fully saturated by its unique positive halfintegral edge vector, and
+its demand total is odd. The fractional threshold is $T/2$, an integer,
+whereas the ordinary threshold is $T/2+1$. Consequently a hole occurs
+exactly when $T=2m$ and both saturation solutions are positive
+halfintegral. This also excludes holes away from the face
+$\sum_i b_i=2m$.
+
+Write these edge weights as $\lambda_e=k_e+1/2$, with $k_e\in\NN$.
+The block incidence matrix of the two odd cycles is nonsingular, so
+edge weights determine demands injectively. Conversely every such
+edge vector gives integral nonnegative demands, odd component totals,
+and the hole condition at degree $m=\sum_e\lambda_e$. We have obtained
+a bijection between degree-$m$ holes and
+\[
+\left\{(k_e)_{e\in E(F)}\in\NN^n:
+\sum_e k_e=m-\frac n2\right\}.
+\]
+Stars and bars gives \eqref{eq:correction}, by
+Theorem~\ref{thm:main}. Its first degree and leading coefficient follow
+immediately.
+\end{proof}
+
+\begin{remark}
+Equivalently, the Hilbert-series correction for this family is
+\[
+\sum_{m\geq0}(s_m-i_m)t^m=\frac{t^{n/2}}{(1-t)^n}.
+\]
+The correction consists of a translate of the free monoid on the $n$
+edge vectors of $C_r\sqcup C_s$. For $r=s=5$, its first values are
+$0,0,0,0,1,10,55$ in degrees $1$ through $7$.
+\end{remark}
+
+The same threshold argument gives a composition formula with any number
+of odd-cycle components. The factors below are the Hilbert series of
+single-component stable-set rings, so the formula uses ordinary Hilbert
+data to recover the entire normalization correction of their graph join.
+
+\begin{proposition}\label{prop:composition}
+Suppose $\overline G=\bigsqcup_{a=1}^t C_{r_a}$, with every $r_a\geq5$
+odd. Let
+\begin{align*}
+\mathcal H_a(z)&=\sum_{m\geq0}H_{\overline{C_{r_a}}}(m)z^m,
+&V_a(z)&=\frac{z^{(r_a+1)/2}}{(1-z)^{r_a}},\\
+U_a(z)&=(1-z)\mathcal H_a(z)-V_a(z).
+\end{align*}
+Then
+\begin{equation}\label{eq:composition}
+\sum_{m\geq0}(s_m-i_m)z^m
+=\sum_{\substack{F\subseteq[t]\\ |F|\geq2}}
+\left(\sum_{j=1}^{\lfloor|F|/2\rfloor}z^{-j}\right)
+\prod_{a\in F}V_a(z)\prod_{a\notin F}U_a(z).
+\end{equation}
+The right-hand side is a formal power series with nonnegative exponents.
+For $t=2$ it equals
+\[
+\frac{z^{(r_1+r_2)/2}}{(1-z)^{r_1+r_2}}.
+\]
+\end{proposition}
+\begin{proof}
+For a demand vector on component $a$, let
+$c_a=T_a-\nu_a$ be its minimum ordinary coefficient mass, and mark the
+component if $\nu_a^*$ is a halfinteger. By Lemma~\ref{lem:cycle}, the
+minimum fractional mass is $c_a$ on an unmarked component and
+$c_a-1/2$ on a marked one. In particular the single-component polytope
+has the integer decomposition property: for an integer degree, its
+fractional and ordinary feasibility thresholds agree.
+
+The series counting all component demands by their minimum ordinary
+mass is $(1-z)\mathcal H_a(z)$, since the Hilbert function counts
+demands whose minimum mass is at most the given degree. A marked
+component has unique edge weights $k_e+1/2$ and
+\[
+c_a=\sum_e k_e+\frac{r_a+1}{2}.
+\]
+Thus $V_a$ counts the marked demands by $c_a$, and $U_a$ counts the
+unmarked demands. All coefficients are nonnegative and each
+coefficient is finite, because total demand is at most twice the
+minimum mass.
+
+For a demand on all components, put $C=\sum_a c_a$ and let $F$ be the
+set of marked components. Independent sets of $G$ lie within a single
+component of its complement, so the ordinary minimum mass is $C$ and
+the fractional minimum mass is $C-|F|/2$. Its missing degrees are
+exactly $C-j$, for $1\leq j\leq\lfloor|F|/2\rfloor$. Multiplying the
+component demand series and recording those degrees gives
+\eqref{eq:composition}. Each factor $V_a$ starts in degree at least
+three, so the displayed negative powers cannot create negative
+exponents. The specialization $t=2$ follows directly.
+\end{proof}
+
+\section{Complete cores}
+
+\begin{proof}[Proof of Theorem~\ref{thm:complete}]
+For $K_n$, independent sets are empty or singletons. Hence
+\[
+B_m=\{b\in\NN^n:\textstyle\sum_i b_i\leq m\},\qquad
+H_G(m)=E_Q(m)=\binom{m+n}{n}.
+\]
+It remains to count integral $b$ with $0\leq b_i\leq m$ and
+$b_i+b_j\leq m$ for distinct $i,j$. Put $q=\lfloor m/2\rfloor$.
+If every coordinate is at most $q$, there are $(q+1)^n$ choices.
+Otherwise exactly one coordinate exceeds $q$. If that coordinate is
+$a$, every other coordinate ranges independently from $0$ to $m-a$;
+their mutual pair constraints are automatic. The additional count is
+\[
+n\sum_{a=q+1}^m(m-a+1)^{n-1}.
+\]
+Separating even and odd $m$ and subtracting $\binom{m+n}{n}$ proves
+\eqref{eq:even}--\eqref{eq:odd}. The same partition works for $n=1$,
+where the coordinate bound is retained even though there are no edges.
+For $n=1,2$ the graph is bipartite, so the defect vanishes.
+Finally, for $n\geq3$ the power-sum estimate
+$\sum_{k=1}^q k^{n-1}=q^n/n+O(q^{n-1})$ gives leading coefficient
+$2^{1-n}-1/n!$. It is positive because $n!>2^{n-1}$ for $n\geq3$.
+\end{proof}
+
+In particular the whiskered triangle has $s_2=1$ and $s_3=3$. The
+calculation includes the obstruction in \cite[Remark~5.3]{DG} without
+using the indecomposability recursion.
+
+\subsection*{Verification and scope}
+The proofs above are independent of computation. Ancillary scripts
+check direct minimality of symbolic exponent vectors on all core graphs
+with at most three vertices and powers at most three; ordinary and
+symbolic counting on all $1099$ labeled graphs with at most five
+vertices in powers one through three; and the complete-core formulas
+for $n,m\leq6$. A separate check compares fractional matching vertex
+enumeration with exact integer matching dynamic programming on $11628$
+demand vectors on $C_5$, and verifies the two-component correction
+through degree seven. All checks pass. The fractional vertex calculation
+uses numerical linear algebra with a checked halfinteger tolerance;
+Lemma~\ref{lem:cycle} supplies the exact argument.
+
+The results concern the fully whiskered cover-ideal class. They neither
+classify normal stable-set polytopes nor determine the minimal
+quasiperiod for arbitrary cores. The complete-core formula and the
+nonnormal correction family are parts of the same comparison theorem.
+
+\begin{thebibliography}{9}
+
+\bibitem{BHL}
+A.~Banerjee, T.~H.~H\`a, and V.~B.~Lama,
+\emph{Defect Functions Between Filtrations of Ideals},
+preprint (2025),
+\href{https://arxiv.org/abs/2512.14573}{arXiv:2512.14573}.
+
+\bibitem{DG}
+B.~Drabkin and L.~Guerrieri,
+\emph{Asymptotic invariants of ideals with Noetherian symbolic Rees
+algebra and applications to cover ideals},
+J. Pure Appl. Algebra \textbf{224} (2020), 300--319.
+\href{https://doi.org/10.1016/j.jpaa.2019.05.008}{doi:10.1016/j.jpaa.2019.05.008}.
+
+\bibitem{DGFreiman}
+B.~Drabkin and L.~Guerrieri,
+\emph{On quasi-equigenerated and Freiman cover ideals of graphs},
+Comm. Algebra \textbf{48} (2020), no.~10, 4413--4435.
+\href{https://doi.org/10.1080/00927872.2020.1762890}{doi:10.1080/00927872.2020.1762890}.
+
+\bibitem{HHO}
+G.~Hamano, T.~Hibi, and H.~Ohsugi,
+\emph{Ehrhart series of fractional stable set polytopes of finite graphs},
+Ann. Comb. \textbf{22} (2018), 563--573.
+\href{https://doi.org/10.1007/s00026-018-0392-2}{doi:10.1007/s00026-018-0392-2}.
+
+\bibitem{Higashitani}
+A.~Higashitani,
+\emph{Difference of Hilbert series of homogeneous monoid algebras and
+their normalizations},
+Semigroup Forum \textbf{108} (2024), 101--114.
+\href{https://doi.org/10.1007/s00233-024-10414-0}{doi:10.1007/s00233-024-10414-0}.
+
+\bibitem{MOS}
+K.~Matsuda, H.~Ohsugi, and K.~Shibata,
+\emph{Toric Rings and Ideals of Stable Set Polytopes},
+Mathematics \textbf{7} (2019), no.~7, article 613.
+\href{https://doi.org/10.3390/math7070613}{doi:10.3390/math7070613}.
+
+\bibitem{Oltsik}
+B.~R.~Oltsik,
+\emph{Symbolic Defect of Monomial Ideals},
+Comm. Algebra \textbf{52} (2024), no.~9, 3996--4012;
+\href{https://arxiv.org/abs/2310.12280}{arXiv:2310.12280}.
+
+\end{thebibliography}
+\end{document}

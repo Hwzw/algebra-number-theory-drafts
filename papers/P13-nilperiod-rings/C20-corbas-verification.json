@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "rings": 13,
+  "results": [
+    {
+      "p": 2,
+      "f": 1,
+      "s": 0,
+      "size": 4,
+      "first_repeat": 4,
+      "periodic_exponents": [
+        2
+      ],
+      "periodic_map_count": 1
+    },
+    {
+      "p": 3,
+      "f": 1,
+      "s": 0,
+      "size": 9,
+      "first_repeat": 8,
+      "periodic_exponents": [
+        3,
+        6
+      ],
+      "periodic_map_count": 2
+    },
+    {
+      "p": 2,
+      "f": 2,
+      "s": 0,
+      "size": 16,
+      "first_repeat": 8,
+      "periodic_exponents": [
+        2,
+        4,
+        6
+      ],
+      "periodic_map_count": 3
+    },
+    {
+      "p": 2,
+      "f": 2,
+      "s": 1,
+      "size": 16,
+      "first_repeat": 8,
+      "periodic_exponents": [
+        6
+      ],
+      "periodic_map_count": 1
+    },
+    {
+      "p": 2,
+      "f": 3,
+      "s": 0,
+      "size": 64,
+      "first_repeat": 16,
+      "periodic_exponents": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "periodic_map_count": 7
+    },
+    {
+      "p": 2,
+      "f": 3,
+      "s": 1,
+      "size": 64,
+      "first_repeat": 16,
+      "periodic_exponents": [
+        14
+      ],
+      "periodic_map_count": 1
+    },
+    {
+      "p": 2,
+      "f": 3,
+      "s": 2,
+      "size": 64,
+      "first_repeat": 16,
+      "periodic_exponents": [
+        14
+      ],
+      "periodic_map_count": 1
+    },
+    {
+      "p": 3,
+      "f": 2,
+      "s": 0,
+      "size": 81,
+      "first_repeat": 26,
+      "periodic_exponents": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24
+      ],
+      "periodic_map_count": 8
+    },
+    {
+      "p": 3,
+      "f": 2,
+      "s": 1,
+      "size": 81,
+      "first_repeat": 26,
+      "periodic_exponents": [
+        12,
+        24
+      ],
+      "periodic_map_count": 2
+    },
+    {
+      "p": 2,
+      "f": 4,
+      "s": 0,
+      "size": 256,
+      "first_repeat": 32,
+      "periodic_exponents": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30
+      ],
+      "periodic_map_count": 15
+    },
+    {
+      "p": 2,
+      "f": 4,
+      "s": 1,
+      "size": 256,
+      "first_repeat": 32,
+      "periodic_exponents": [
+        30
+      ],
+      "periodic_map_count": 1
+    },
+    {
+      "p": 2,
+      "f": 4,
+      "s": 2,
+      "size": 256,
+      "first_repeat": 32,
+      "periodic_exponents": [
+        10,
+        20,
+        30
+      ],
+      "periodic_map_count": 3
+    },
+    {
+      "p": 2,
+      "f": 4,
+      "s": 3,
+      "size": 256,
+      "first_repeat": 32,
+      "periodic_exponents": [
+        30
+      ],
+      "periodic_map_count": 1
+    }
+  ]
+}

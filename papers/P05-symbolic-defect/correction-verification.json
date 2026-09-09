@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "cycle_lp_and_exact_dp_checks": 11628,
+  "correction_counts": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1,
+    "6": 10,
+    "7": 55
+  },
+  "method": "Independent exhaustive LP-vertex enumeration and exact integer matching dynamic programming; complete two-cycle demands total <=14 relevant to m<=7"
+}

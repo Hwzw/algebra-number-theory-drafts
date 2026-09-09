@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-08",
+  "manuscript": "manuscript.pdf",
+  "page_count": 5,
+  "compiler": "research_program/tools/tectonic/tectonic",
+  "compiler_exit_code": 0,
+  "tex_log_warnings": [],
+  "visual_review": {
+    "all_pages_rendered": true,
+    "all_pages_inspected": true,
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "defects_found": []
+  },
+  "mathematical_review": "research_program/reviews/C15-proof-review.md",
+  "transfer_review": "Passed by independent reviewer review_groups after reading complete manuscript.tex",
+  "proof_computation_dependency": false,
+  "sha256": {
+    "manuscript.tex": "cdbebfa19fe806d0e7fffd08157a0b19ee72fd48ec37ce1b35fd566db2a0f7d0",
+    "manuscript.pdf": "ea5bc029bb4d14070bcd0524851d9fd4a07d0d09b3691ece59e0921a9834a3df",
+    "proof.md": "da6a24b92587769069300d4943717040d69d10e6c1a9fcbf4e0736542bfbd4a7",
+    "check_prefix.py": "88f680d1bff4d4d8b92bc43fb63baed76f4f48cc4e156d876fa0c00f2babf2f2",
+    "prefix_checks.json": "7efb44d46837949d78ee223a3c8fc00b482a6ad81e1543fecd5e5471973d82be"
+  }
+}

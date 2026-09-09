@@ -1,0 +1,9 @@
+{
+  "bilinear_tables": 256,
+  "associative_tables": 28,
+  "nilperiod_tables": 22,
+  "nilperiod_nonunital_tables": 10,
+  "nilperiod_noncommutative_tables": 0,
+  "nilpotent_principal_ideals_checked": 46,
+  "status": "PASS"
+}

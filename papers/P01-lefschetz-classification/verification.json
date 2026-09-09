@@ -1,0 +1,49 @@
+{
+  "seed": 20260908,
+  "witness_graphs": 231,
+  "exact_rational_rank_graphs": 77,
+  "all_labeled_graphs_through_n": 4,
+  "dense_alpha_three_boundary": [
+    {
+      "n": 5,
+      "hilbert": [
+        1,
+        10,
+        33,
+        50,
+        36,
+        10
+      ],
+      "ranks": [
+        1,
+        10,
+        33,
+        35,
+        10
+      ],
+      "failing_degree": 3
+    },
+    {
+      "n": 6,
+      "hilbert": [
+        1,
+        12,
+        48,
+        93,
+        96,
+        51,
+        11
+      ],
+      "ranks": [
+        1,
+        12,
+        48,
+        88,
+        51,
+        11
+      ],
+      "failing_degree": 3
+    }
+  ],
+  "result": "All assertions passed. Finite checks support but do not replace proof."
+}
