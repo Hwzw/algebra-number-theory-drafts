@@ -1,0 +1,163 @@
+{
+  "paper": "P37-uniform-short-gorenstein",
+  "environments": {
+    "theorem": 2,
+    "corollary": 1,
+    "lemma": 5,
+    "proof": 8,
+    "remark": 1,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:arbitrary"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:layers"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:omega"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "2.3",
+      "id": "lemma-3",
+      "source_label": "lem:growth"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "3.1",
+      "id": "lemma-4",
+      "source_label": "lem:reflection"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "3.2",
+      "id": "theorem-2",
+      "source_label": "thm:ringel"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 5,
+      "number": "3.3",
+      "id": "lemma-5",
+      "source_label": "lem:bristlequotient"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "4.1",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "5.1",
+      "id": "proposition-1",
+      "source_label": "prop:transfer"
+    }
+  ],
+  "references": 28,
+  "citations": 13,
+  "cited_keys": [
+    "K",
+    "KT",
+    "RB",
+    "RP",
+    "T",
+    "Z"
+  ],
+  "bibliography_keys": [
+    "K",
+    "KT",
+    "RB",
+    "RP",
+    "T",
+    "Z"
+  ],
+  "equation_labels": [
+    "eq:ring",
+    "eq:omegamaps",
+    "eq:recurrence",
+    "eq:reflection",
+    "eq:bristlepresentation",
+    "eq:cone",
+    "eq:dimensioncontradiction"
+  ],
+  "label_numbers": {
+    "thm:main": "1.1",
+    "cor:arbitrary": "1.2",
+    "eq:ring": "1",
+    "lem:layers": "2.1",
+    "lem:omega": "2.2",
+    "eq:omegamaps": "2",
+    "eq:recurrence": "3",
+    "lem:growth": "2.3",
+    "lem:reflection": "3.1",
+    "eq:reflection": "4",
+    "thm:ringel": "3.2",
+    "lem:bristlequotient": "3.3",
+    "eq:bristlepresentation": "5",
+    "eq:cone": "6",
+    "eq:dimensioncontradiction": "7",
+    "sec:transfer": "5",
+    "prop:transfer": "5.1"
+  },
+  "bibliography_numbers": {
+    "K": "1",
+    "KT": "2",
+    "RB": "3",
+    "RP": "4",
+    "T": "5",
+    "Z": "6"
+  },
+  "tables": [],
+  "source_tex_sha256": "72b4f810b111c47d7f1f956f150bfbf5e59ed76711cacac275162928c2327c43",
+  "source_pdf_sha256": "94778d45876aa24cc9bebe5c60c6593c4ab8497d4d7466fc9bfb2338594e900f",
+  "markdown_sha256": "507273c2c40346ece828e4ab3998753b8e391b4523103406e9274a727e572409",
+  "markdown_bytes": 22920,
+  "source_math_expressions_verified": 270,
+  "markdown_math_expressions": 278,
+  "custom_macros_expanded": [
+    "m",
+    "n",
+    "dx",
+    "Soc",
+    "gr",
+    "edim",
+    "Om",
+    "C"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 59,
+  "semantic_roundtrip_sha256": "b92c3bd65e7e4a06809b7f45199372d8f0a94690cee4082ba9215eb90672603a",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 41,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {},
+  "postprocessing": "Restored Henry Zweiman author byline omitted by converter"
+}

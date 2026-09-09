@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "reflection_identity_checks": 288,
+  "additional_characteristic_two_alternating_checks": 24,
+  "explicit_one_cone_witness": {
+    "field": 2,
+    "pairing": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "M": [
+      1,
+      1
+    ],
+    "X=Omega^2M": [
+      5,
+      2
+    ],
+    "Y=Omega^-2M": [
+      2,
+      5
+    ],
+    "source_copies": 5,
+    "kernel": [
+      5,
+      23
+    ],
+    "kernel_radical_dimension": 15,
+    "displayed_simple_summands": 8,
+    "bristle_eigenvectors": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "epimorphism_top_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "epimorphism_radical_matrix": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "scope": "Finite matrix identities and a concrete one-cone module witness",
+  "not_verified_by_this_script": [
+    "Ringel theorem",
+    "general proof",
+    "historical novelty",
+    "significance"
+  ]
+}

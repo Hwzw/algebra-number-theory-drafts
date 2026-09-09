@@ -1,0 +1,244 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\m}{\mathfrak m}
+\newcommand{\n}{\mathfrak n}
+\newcommand{\dx}{\operatorname{dx}}
+\newcommand{\Soc}{\operatorname{Soc}}
+\newcommand{\gr}{\operatorname{gr}}
+\newcommand{\edim}{\operatorname{edim}}
+\newcommand{\Om}{\overline\Omega}
+\newcommand{\C}{\mathcal C}
+\title{Uniform dominance of short Gorenstein algebras}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let $R$ be a commutative graded Artinian Gorenstein algebra over an arbitrary field, with Hilbert function $(1,e,1)$ and $e\ge3$. We prove that its dominant index is exactly one: the residue field belongs to level two from every nonzero object of the stable module category. The proof combines Ringel's eventual bristle-generation theorem for Kronecker representations with an explicit identity between normalized syzygies and kernel reflections. Distant cosyzygies map onto every bristle, producing a single exact sequence between sums of shifts of the original module whose kernel has a simple summand after a shift. Every nonzero stable object consequently has generation time at most three. The common deformation of a short local ring and its associated graded ring also gives dominant index at most seven without a coefficient-field assumption. These results establish uniform dominance for this class; they do not decide whether every dominant local ring is uniformly dominant.
+\end{abstract}
+
+\section{Introduction and statements}
+Let $(R,\m,k)$ be an Artinian Gorenstein local ring. Its stable category $\C=\underline{\mathrm{mod}}\,R$ has finitely generated modules as objects and homomorphisms modulo those factoring through free modules as morphisms. It is triangulated, with suspension $\Omega^{-1}$, and agrees with the singularity category. For an object $M$, let $\langle M\rangle_1$ consist of finite direct sums and direct summands of shifts of $M$. Inductively, $\langle M\rangle_{r+1}$ is obtained by taking summands of extensions of objects in $\langle M\rangle_r$ by objects in $\langle M\rangle_1$.
+
+Following Takahashi \cite{T}, the dominant index $\dx(R)$ is the least integer $r$ such that $k\in\langle M\rangle_{r+1}$ for every nonzero $M\in\C$. Finiteness of this invariant is \emph{uniform dominance}. Dominance alone asks only that $k$ belong to the thick closure of each nonzero object, with no uniform bound on the number of extensions.
+
+Kobayashi and Takahashi study uniform dominance for several classes of local rings and ask about dominance of non-complete-intersection short Gorenstein rings \cite[Question 7.1]{KT}. Kimura proves dominance in the coefficient-field case through a classification of thick subcategories over weakly symmetric algebras \cite[Theorem 7.3]{K}. That qualitative result is already known and is not claimed as new here. The present paper establishes a sharp uniform bound for the commutative short graded case.
+
+\begin{theorem}\label{thm:main}
+Let $k$ be any field and let $R=R_0\oplus R_1\oplus R_2$ be a commutative graded Artinian Gorenstein $k$-algebra, generated in degree one, with
+\[
+ R_0=k,\qquad \dim_kR_1=e\ge3,\qquad \dim_kR_2=1.
+\]
+Then $\dx(R)=1$. More precisely, for every nonzero $M\in\underline{\mathrm{mod}}\,R$,
+\[
+ k\in\langle M\rangle_2,
+ \qquad \underline{\mathrm{mod}}\,R=\langle M\rangle_4.
+\]
+The first bound is sharp for every such algebra.
+\end{theorem}
+
+The essential existing input is Ringel's theorem that sufficiently high kernel reflections of a matrix pencil have enough eigenvectors to span the source space \cite[Section 5, Theorem 2]{RP}. This is the matrix formulation of his eventual bristle-generation theorem \cite[Main Theorem 1.3]{RB}. We show that even normalized syzygies realize these reflections. We then use bristles only as intermediate factors of a map between shifts of the original module. They need not themselves have been constructed in its thick closure.
+
+\begin{corollary}\label{cor:arbitrary}
+Let $(R,\m,k)$ be an Artinian Gorenstein local ring with $\m^3=0$ and $\edim R\ge3$. If $R$ contains a field, then $\dx(R)=1$. In general, $R$ is uniformly dominant and $\dx(R)\le7$.
+\end{corollary}
+
+The second assertion uses the common-deformation construction in \cite{Z}; its role and proof are recalled in Section~\ref{sec:transfer}. Theorem~\ref{thm:main} is independent of that construction. The global question whether a dominant local ring can fail to be uniformly dominant \cite[Question 6.12]{T} remains open beyond the classes treated here.
+
+\section{Two-layer modules and normalized syzygies}
+Throughout Sections 2--5 let $R$ satisfy Theorem~\ref{thm:main}. Choose $z\ne0$ in $R_2$ and a basis $x_1,\ldots,x_e$ of $R_1$. There is an invertible symmetric matrix $Q=(Q_{ij})$ with
+\begin{equation}\label{eq:ring}
+ x_ix_j=Q_{ij}z,\qquad x_iz=z^2=0.
+\end{equation}
+Indeed the multiplication pairing on $R_1$ is nondegenerate because the socle of $R$ is $R_2$. Symmetry follows from commutativity. No diagonalization of this pairing will be used.
+
+\begin{lemma}\label{lem:layers}
+Every finite $R$-module with no free summand is annihilated by $\m^2$ and admits a grading concentrated in degrees zero and one. If it also has no simple summand, then its radical and socle coincide.
+\end{lemma}
+\begin{proof}
+If $zv\ne0$, the map $R\to M$ sending $r$ to $rv$ is injective: every nonzero ideal contains the one-dimensional socle, whereas its kernel does not. Since $R$ is self-injective, this injection splits. This contradicts the absence of free summands. Thus $\m^2M=0$. Choose a $k$-linear complement $M_0$ to $M_1=\m M$. Multiplication by $R_1$ sends $M_0$ into $M_1$ and kills $M_1$, giving the grading.
+
+Finally, any vector-space complement to $\m M$ in $\Soc M$ splits off as a semisimple module: choose the complement to $\m M$ in $M$ to contain it, and split the corresponding top vector subspace. Thus absence of simple summands implies $\Soc M=\m M$.
+\end{proof}
+
+Call a nonzero module with no free summands \emph{persistent} if none of its minimal syzygies or cosyzygies, indexed by all integers, has a simple summand. This terminology is used only within this paper. If $M$ is not persistent, then $k\in\langle M\rangle_1$, so such modules already satisfy the theorem.
+
+A two-layer module is specified by vector spaces $A=M_0$, $B=M_1$ and arrows $T_i:A\to B$, giving an $e$-Kronecker representation. For a persistent module the arrows jointly span $B$ and their kernels have zero intersection. Normalize every syzygy to degrees zero and one, and denote the resulting operation by $\Om$.
+
+\begin{lemma}\label{lem:omega}
+Let $M$ be persistent, with $\dim_kM_0=a$ and $\dim_kM_1=b$. Put
+\[
+ K=\ker\bigl([T_1\ \cdots\ T_e]:A^e\longrightarrow B\bigr).
+\]
+Then $\Om M$ has degree-zero space $K$, degree-one space $A$, and arrows
+\begin{equation}\label{eq:omegamaps}
+ U_i=\left.\sum_{j=1}^eQ_{ij}\pi_j\right|_K,
+\end{equation}
+where $\pi_j:A^e\to A$ is the $j$th projection. In particular,
+\begin{equation}\label{eq:recurrence}
+ \dim\Om M=(ea-b,a),\qquad
+ \dim\Om^{-1}M=(b,eb-a).
+\end{equation}
+Moreover, normalized syzygy is exact on any short exact sequence of persistent two-layer modules, and on all its iterates.
+\end{lemma}
+\begin{proof}
+The natural minimal cover $R\otimes_k A\to M$ is an isomorphism in degree zero. Its kernel has degree-one part $K$ and degree-two part $kz\otimes_kA\cong A$. Multiplication in the cover gives \eqref{eq:omegamaps}. After shifting degrees, persistence and Lemma~\ref{lem:layers} ensure that the degree-one component is the radical. This proves the first dimension formula. A graded injective envelope embeds $M$ into $R(1)^b$, since the socle of $M$ is $B$; the quotient, after normalization, has dimensions $(b,eb-a)$.
+
+For exactness, take degree-zero components of a graded short exact sequence and tensor them over $k$ with $R$. These give an exact sequence of the natural covers. The snake lemma gives an exact sequence of their kernels. Normalize the degrees. Persistence supplies the same hypotheses at the next step, so the argument iterates. This is also the exactness construction appearing in \cite[Lemma 3.11]{K}; the local argument given here requires no ambient proper thick subcategory.
+\end{proof}
+
+\begin{lemma}\label{lem:growth}
+Put $\lambda=(e+\sqrt{e^2-4})/2$. For a persistent module $M$, write $\dim\Om^{-n}M=(u_n,v_n)$. Then
+\[
+ u_n\longrightarrow\infty,\qquad v_n/u_n\longrightarrow\lambda>e-1.
+\]
+Also $\dim_k\Om^nM\to\infty$ as $n\to\infty$.
+\end{lemma}
+\begin{proof}
+The matrix for cosyzygy in \eqref{eq:recurrence} has eigenvectors $(1,\lambda)$ and $(1,\lambda^{-1})$, with eigenvalues $\lambda$ and $\lambda^{-1}$ respectively. Write the initial vector as their linear combination. Since the dimension vector remains strictly positive for all positive and negative iterates, both coefficients are nonnegative. Neither coefficient can be zero, because $u_0,v_0$ are positive integers and the slopes are irrational. Irrationality follows from $(e-1)^2<e^2-4<e^2$ for $e\ge3$. Both coefficients are therefore positive. The conclusions follow by taking positive and negative iterates. Finally, $\lambda+\lambda^{-1}=e$ and $\lambda>1$, so $\lambda>e-1$.
+\end{proof}
+
+\section{Kernel reflections and bristles}
+For a pencil $P=(A,B;T_1,\ldots,T_e)$, let $\sigma P$ have source $K=\ker[T_1\ \cdots\ T_e]$, target $A$, and arrows $\pi_j|_K$. This is precisely the kernel reflection used in \cite[Section 5]{RP}. For $g\in\mathrm{GL}_e(k)$ let $\mathcal T_g$ replace the column of arrows by $g$ times that column.
+
+\begin{lemma}\label{lem:reflection}
+On persistent modules there are natural identifications
+\begin{equation}\label{eq:reflection}
+ \Om=\mathcal T_Q\sigma,
+ \qquad \Om^2\cong\sigma^2.
+\end{equation}
+Consequently $\Om^{2t}M\cong\sigma^{2t}M$ for every nonnegative integer $t$.
+\end{lemma}
+\begin{proof}
+The first identity is \eqref{eq:omegamaps}. The row map of the changed pencil $\mathcal T_gP$ is $[T_1\ \cdots\ T_e](g^{\mathsf T}\otimes1_A)$. Its kernel is $(g^{-\mathsf T}\otimes1_A)K$. Under this identification, its projection arrows are $g^{-\mathsf T}$ times the old projections. Hence
+\[
+ \sigma\mathcal T_g\cong\mathcal T_{g^{-\mathsf T}}\sigma.
+\]
+It follows that $\Om^2\cong\mathcal T_{Q Q^{-\mathsf T}}\sigma^2=\sigma^2$, since $Q$ is symmetric. These are identifications of the arrow maps, not just the dimensions. Iteration is legitimate by persistence.
+\end{proof}
+
+A \emph{bristle} is the pencil $B(c)=(k,k;c_1,\ldots,c_e)$, where $c\ne0$. It is also a cyclic $R$-module of length two. We use the following consequence of Ringel's theorem.
+
+\begin{theorem}[Ringel]\label{thm:ringel}
+For $e\ge3$ and any pencil $P$, the source of $\sigma^tP$ is spanned by vectors whose arrow images span a one-dimensional space, for all sufficiently large $t$.
+\end{theorem}
+
+This is \cite[Section 5, Theorem 2]{RP}, deduced there from \cite{RB}. It applies over an arbitrary field. In particular, if $\sigma^tP$ is generated by its source space, a basis chosen from these vectors gives a surjection from a direct sum of bristles onto $\sigma^tP$.
+
+\begin{lemma}\label{lem:bristlequotient}
+For every persistent $M$, there is an integer $n_0$ such that $\Om^{-n}M$ maps onto every bristle whenever $n\ge n_0$.
+\end{lemma}
+\begin{proof}
+Let $Y=(U,W;T_i)$ be generated in degree zero, with dimensions $(u,v)$. A map $Y\to B(c)$ is a pair of functionals $f_0:U\to k$ and $f_1:W\to k$ satisfying
+\[
+ f_1T_i=c_i f_0\qquad(1\le i\le e).
+\]
+These are at most $eu$ linear equations on $u+v$ unknowns. Thus the space of maps has dimension at least $v-(e-1)u$. If a map is nonzero, then $f_0\ne0$, since $W=\sum_iT_i(U)$. Its top map is consequently surjective, and the images of the arrows then give surjectivity on the target degree as well. Lemma~\ref{lem:growth} makes the displayed lower bound positive for $Y=\Om^{-n}M$ and all sufficiently large $n$, independently of $c$.
+\end{proof}
+
+\section{The uniform bound and its sharpness}
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Remove free summands from a representative of $M$. If it is not persistent, then $k\in\langle M\rangle_1$. Otherwise choose $t$ large enough that Theorem~\ref{thm:ringel} applies to the even reflection $\sigma^{2t}M$. By Lemma~\ref{lem:reflection}, the normalized module
+\[
+ X=\Om^{2t}M
+\]
+is generated by bristles. Put $h=\dim_kX_0$. A basis of eigenvectors in $X_0$ gives a fixed epimorphism
+\begin{equation}\label{eq:bristlepresentation}
+ B_1\oplus\cdots\oplus B_h\longrightarrow X.
+\end{equation}
+For every sufficiently large $n$, Lemma~\ref{lem:bristlequotient} supplies epimorphisms $Y_n=\Om^{-n}M\to B_j$ for all $j$. Compose their direct sum with \eqref{eq:bristlepresentation} to obtain
+\begin{equation}\label{eq:cone}
+ 0\longrightarrow K_n\longrightarrow Y_n^{\oplus h}\longrightarrow X\longrightarrow0.
+\end{equation}
+Both the middle and right modules belong to $\langle M\rangle_1$, so $K_n\in\langle M\rangle_2$. Choose $n$ still larger, if necessary, so that
+\begin{equation}\label{eq:dimensioncontradiction}
+ \dim_k\Om^nX>h\dim_kM.
+\end{equation}
+Here $h$ and $X$ have already been fixed, and Lemma~\ref{lem:growth} guarantees such $n$.
+
+The kernel has no free summand, since it is annihilated by $\m^2$. If it were persistent, applying normalized syzygy $n$ times to \eqref{eq:cone}, using Lemma~\ref{lem:omega}, would give an epimorphism
+\[
+ M^{\oplus h}\longrightarrow\Om^nX.
+\]
+This contradicts \eqref{eq:dimensioncontradiction}. A zero kernel gives the same contradiction. Thus some stable shift of $K_n$ has $k$ as a summand. Consequently $k\in\langle M\rangle_2$.
+
+To prove sharpness, take a bristle $B(c)$ as an $R$-module. It is indecomposable and nonprojective. Minimal stable syzygies and cosyzygies preserve nonprojective indecomposability, since $R$ is self-injective and its stable category is Krull--Schmidt. The two dimension transformations in \eqref{eq:recurrence} preserve
+\[
+ q(a,b)=a^2+b^2-eab.
+\]
+Starting from $(1,1)$ gives $q=2-e<0$. Suppose a simple module first occurs in either direction. Up to that step the preceding modules are nonsimple indecomposables, so the minimal-cover or injective-envelope calculation in Lemma~\ref{lem:omega} gives the same dimension transformation at that step. A one-dimensional graded module has vector $(1,0)$ or $(0,1)$ and hence $q=1$, a contradiction. Thus every shift of $B(c)$ is nonsimple. Krull--Schmidt and cancellation of free summands imply that $k$ is not a summand of a finite sum of those shifts. Hence $k\notin\langle B(c)\rangle_1$, proving $\dx(R)=1$.
+
+Finally Lemma~\ref{lem:layers} shows that every nonfree module is an extension of two semisimple modules. Therefore $\C=\langle k\rangle_2$. The usual composition rule for levels gives $\C=\langle M\rangle_4$ for every nonzero $M$.
+\end{proof}
+
+\begin{remark}
+The proof does not bound the shift $t$ in Ringel's theorem or the number $h$ of bristle generators. Such bounds are unnecessary: shifts and finite sums are level-one operations. The crucial order is to fix $X$ and $h$ first, and only then choose $n$ in \eqref{eq:dimensioncontradiction}. Allowing $h$ to grow with $n$ would not give the stated contradiction.
+\end{remark}
+
+\section{Consequences, transfer, and an example}\label{sec:transfer}
+The generation time of an object is the least $r$ for which the whole category is its level $r+1$. Thus Theorem~\ref{thm:main} gives an upper bound of three for the generation time of every nonzero object, and in particular for the ultimate dimension of $\C$. This does not assert that every integer up to three occurs in its Orlov spectrum.
+
+For completeness, we recall the specific deformation input used to remove the coefficient-field assumption. The construction below is the short Gorenstein case of \cite[Theorems 1.1 and 1.2]{Z}.
+
+\begin{proposition}\label{prop:transfer}
+If $(R,\m,k)$ is an Artinian Gorenstein local ring with $\m^3=0$ and $e=\edim R\ge3$, and $G=\gr_{\m}R$, then
+\[
+ \dx(R)\le4\dx(G)+3.
+\]
+\end{proposition}
+\begin{proof}
+The socle is $\m^2\cong k$, and the multiplication pairing on $\m/\m^2$ is nondegenerate. If $R$ has a coefficient field, a complement to $\m^2$ in $\m$ identifies $R$ with $G$.
+
+Otherwise its residue characteristic $p$ is nonzero in $R$. Choose a complete Cohen discrete valuation ring $V$, with uniformizer $p$ and residue field $k$, mapping to $R$. Such a map need not be injective. Choose lifts $x_i$ of a basis of $\m/\m^2$ and a socle generator $z$. Lift their symmetric multiplication coefficients arbitrarily to $V$, and define
+\[
+ T=V\,1\oplus\bigoplus_{i=1}^eV X_i\oplus V Z,
+ \quad X_iX_j=\widetilde Q_{ij}Z,\quad X_iZ=Z^2=0.
+\]
+This associative commutative ring is finite free over $V$, complete local of dimension one, and Cohen--Macaulay. The assignment $X_i\mapsto x_i$, $Z\mapsto z$ is a surjection $T\to R$, as can be checked on the three layers of the maximal-ideal filtration.
+
+If $p\notin\m^2$, choose $x_1=p$ and set $a=X_1$. If $0\ne p\in\m^2$, choose $z=p$ and set $a=Z$. Then $a^3=0$ and $p-a$ lies in the kernel. Multiplication by $p-a$ on the free $V$-module $T$ has determinant $p^{e+2}$, so it is injective and its cokernel has $V$-length $e+2$. The surjection $T/(p-a)\to R$ is therefore an isomorphism, since $R$ has the same length. Also $T/pT\cong G$.
+
+If $\n$ is the maximal ideal of $T$, the augmentation $T\to V$ sends $\n^2$ into $p^2V$, whereas it sends $p$ and $p-a$ to $p$. Thus both regular elements belong to $\n\setminus\n^2$. Takahashi's regular-element inequalities \cite[Theorem 6.2]{T} give
+\[
+ \dx(T)\le2\dx(G)+1,
+ \qquad \dx(R)\le2\dx(T)+1.
+\]
+Combining them proves the result.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:arbitrary}]
+The associated graded ring satisfies Theorem~\ref{thm:main}. If $R$ contains a field, its completeness supplies a coefficient field and $R\cong G$. Otherwise apply Proposition~\ref{prop:transfer} and $\dx(G)=1$.
+\end{proof}
+
+Here is an explicit instance of \eqref{eq:cone}. Over $k=\mathbb F_2$, take $e=3$, $Q=I_3$, and $M=B(1,0,0)$. Then
+\[
+ \dim X=\dim\Om^2M=(5,2),\qquad
+ \dim Y=\dim\Om^{-2}M=(2,5).
+\]
+The accompanying exact computation selects five bristle generators of $X$, factors each through $Y$, and obtains an epimorphism $Y^5\to X$. Its kernel has graded dimensions $(5,23)$ and radical dimension $15$. A complement to its radical in the degree-one space therefore gives eight simple direct summands. This is a concrete one-cone witness for $k\in\langle M\rangle_2$.
+
+The file \texttt{check.py} also verifies the reflection identity on 288 finite-field matrix examples and on 24 additional alternating pairings in characteristic two. These computations check the matrix identifications and the displayed example; the general theorem rests on the proof and Ringel's cited result, not on finite verification.
+
+\section{Further questions}
+The exact Orlov spectrum of the stable category in Theorem~\ref{thm:main} is not determined here. The bound seven in Proposition~\ref{prop:transfer} is likewise not asserted to be sharp. A direct mixed-characteristic construction could improve it. More generally, the one-cone argument suggests looking for generation theorems by uniformly small intermediate modules over other algebras. Such a theorem would have to be established for the relevant module category; the present Kronecker result cannot simply be assumed outside the short case.
+
+\begin{thebibliography}{99}
+\raggedright
+\small
+\setlength{\itemsep}{3pt}
+\bibitem{K} K. Kimura, \emph{Thick subcategories over weakly symmetric algebras with radical cube zero}, preprint, 2026, \href{https://arxiv.org/abs/2609.05781v1}{arXiv:2609.05781v1}.
+\bibitem{KT} T. Kobayashi and R. Takahashi, \emph{On the ubiquity of uniformly dominant local rings}, preprint, 2026, \href{https://arxiv.org/abs/2603.10810v1}{arXiv:2603.10810v1}.
+\bibitem{RB} C. M. Ringel, \emph{Kronecker modules generated by modules of length 2}, Representations of Algebras, Contemporary Mathematics \textbf{705} (2018), 189--214; \href{https://arxiv.org/abs/1612.07679}{arXiv:1612.07679}; \href{https://doi.org/10.1090/conm/705/14194}{doi:10.1090/conm/705/14194}.
+\bibitem{RP} C. M. Ringel, \emph{The eigenvector variety of a matrix pencil}, 2017, \href{https://arxiv.org/abs/1703.04097v2}{arXiv:1703.04097v2}, especially Section 5, Theorem 2.
+\bibitem{T} R. Takahashi, \emph{Uniformly dominant local rings and Orlov spectra of singularity categories}, \href{https://arxiv.org/abs/2412.00669}{arXiv:2412.00669}; author version \href{https://www.math.nagoya-u.ac.jp/~takahashi/udim8.pdf}{udim8.pdf}, Theorem 6.2 and Question 6.12.
+\bibitem{Z} H. Zweiman, \emph{Dominance and common deformations of short local rings}, 2026, \href{https://github.com/Hwzw/algebra-number-theory-drafts/tree/96274cfe30f7844b4dfd4917cb6b8dd1106bb954/papers/P36-short-ring-dominance}{public manuscript P36}, Theorems 1.1 and 1.2.
+\end{thebibliography}
+\end{document}
