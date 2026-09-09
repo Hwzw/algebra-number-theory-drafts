@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-09",
+  "candidate": "Q43",
+  "proof_notes": [
+    "notes/0127-chain-ring-word-fibres.md",
+    "notes/0128-cyclic-extension-transfer.md"
+  ],
+  "audit_note": "notes/0129-chain-ring-and-transfer-audit.md",
+  "open_problem": "Amit--Ashurst all-fibre conjecture; proposed solution for all metacyclic p-groups and elementary-abelian-by-cyclic p-groups",
+  "novelty_certified": false,
+  "publication_admissible": true,
+  "primary_sources": [
+    {
+      "url": "https://link.springer.com/article/10.1007/s40879-023-00644-x",
+      "local_file": "cct23-final.pdf",
+      "version": "published final",
+      "read_scope": "Theorem A and conjecture; relevant statements and proofs in Sections 2--4; full-page visual inspection of PDF pages 2--3",
+      "comparison": "Cyclic maximal subgroup assumption; broader metacyclic setting in preliminary lemmas. Conditional linearization and polynomial methods are prior work."
+    },
+    {
+      "url": "https://arxiv.org/abs/1101.4286",
+      "local_file": "levy-v1.pdf",
+      "version": "arXiv v1",
+      "read_scope": "Definitions, Theorem 1.1, complete Proposition 1.3 and its proof; PDF page 2 visually checked",
+      "comparison": "Abelian split extension transfer for identity fibres, not arbitrary attained values."
+    },
+    {
+      "url": "https://arxiv.org/html/2607.11605v1",
+      "local_file": "engel-v1.html",
+      "version": "arXiv v1, July 2026",
+      "read_scope": "Introduction, Theorem A, Proposition B, Corollaries C--E and Corollary C proof",
+      "comparison": "Selected Engel words and finer estimates. Separate profinite-section question not solved here."
+    },
+    {
+      "url": "https://arxiv.org/abs/1912.08448",
+      "version": "arXiv v1",
+      "read_scope": "Introduction, Definition 2.1, Lemma 2.2, Lemma 3.1",
+      "comparison": "Functional degree and difference calculus are established; no claim that the framework is new."
+    },
+    {
+      "url": "https://lucablanchi.it/presentation-theory/relative-linear-word-observables-semidirect-products",
+      "local_file": "relative-observables.html",
+      "version": "author preliminary June 2026 note, current page",
+      "read_scope": "Sections 2--3, 6, 9, section structure and scope remarks",
+      "comparison": "Relative observables and rank profiles; linearization overlaps, no displayed all-word lower bound."
+    },
+    {
+      "url": "https://ijgt.ui.ac.ir/article_27996_bc71bfef6ef95f19a0ff7d04f082cbc5.pdf",
+      "version": "published final, 2024",
+      "read_scope": "Introduction and complete Section 4.1 in web-extracted PDF text; Question 4.2 and preceding scope discussion",
+      "comparison": "Cyclic-maximal and certain class-two cases are recorded; Question 4.3 asks for recursive arity control. No all-metacyclic theorem in inspected section.",
+      "retrieval_limit": "Web text succeeded; direct local download and web screenshot timed out. No local PDF or visual source check claimed."
+    }
+  ],
+  "limited_citation_search": {
+    "source": "cct23-citing-works.json",
+    "count": 1,
+    "result": "Kishnani--Kulshrestha 2024",
+    "scope_limit": "Citation index is not complete; final corrected body remains unread."
+  },
+  "other_sources": {
+    "ashurst": "Conjecture 6.2.1 located in thesis PDF text; contents and relevant searches inspected, not full thesis. Screenshot request timed out; do not claim visual inspection.",
+    "nikolov_segal": "DOI 10.1112/blms/bdl028 publisher abstract inspected; full route redirected to abstract. Full body not read."
+  },
+  "remaining": "External correctness and historical-priority review remain; no unresolved step identified in the internal proof",
+  "structural_witness": "notes/q43-outside-prior-classes.json",
+  "admission_scope": "One internally checked proposed preprint; no external novelty or significance certification",
+  "proof_status": "Complete self-contained manuscript; no gap identified in same-agent review",
+  "manuscript_directory": "papers/P38-chain-ring-word-fibres",
+  "latest_search": {
+    "date": "2026-09-09",
+    "queries": [
+      "Amit Ashurst metacyclic conjecture",
+      "word maps elementary abelian cyclic Amit",
+      "Amit-Ashurst chain ring",
+      "Amit-Ashurst 2025",
+      "Amit-Ashurst 2026",
+      "metacyclic word Cocke 2024 conjecture",
+      "Amit-Ashurst abelian-by-cyclic",
+      "Amit-Ashurst elementary abelian"
+    ],
+    "author_pages": [
+      "https://www.maths.cam.ac.uk/person/rdc26",
+      "https://sites.google.com/view/turboho/research"
+    ],
+    "additional_lead": "Kent State Spring 2024 seminar title, no theorem statement",
+    "result": "No inspected source states both full main theorems; not an exhaustive novelty certificate"
+  },
+  "local_evidence_note": "Paths in this audit identify private working notes and downloaded source copies; they are not part of the public manuscript bundle. Public source URLs and read scopes are supplied above."
+}

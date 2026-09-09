@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 37 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 38 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## Word fibres and all metacyclic p-groups
+
+[**P38: Word fibres over finite chain rings and the Amit--Ashurst conjecture for metacyclic groups**](papers/P38-chain-ring-word-fibres/README.md), by **Henry Zweiman**, proposes the conjectured lower bound for every word on every finite metacyclic p-group, including nonsplit extensions, and every elementary-abelian-by-cyclic p-group. The proof combines finite-difference support with coefficient ideals over chain rings, then descends a stronger estimate through a central cyclic cover. It permits unbounded rank and nilpotency class. The eight-page [PDF](papers/P38-chain-ring-word-fibres/manuscript.pdf), [complete Markdown](papers/P38-chain-ring-word-fibres/manuscript.md), and [LaTeX](papers/P38-chain-ring-word-fibres/manuscript.tex) contain the proofs.
+
+The [assessment](papers/P38-chain-ring-word-fibres/ASSESSMENT.md) compares the cyclic-maximal-subgroup predecessor and later work. The [internal review](papers/P38-chain-ring-word-fibres/REVIEW.md) records the proof audit and 745 exact word-distribution checks. The general nilpotent-group conjecture remains unresolved. This is one proposed manuscript; independent correctness, historical priority, and significance remain provisional.
 
 ## Sharp uniform dominance for short Gorenstein algebras
 

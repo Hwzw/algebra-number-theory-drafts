@@ -1,0 +1,62 @@
+{
+  "README.md": {
+    "bytes": 1540,
+    "sha256": "f887e54db8fb5a525d8ac922c4848f5f5300a3e3e4a1ba9ac6c5d93bc240aa37"
+  },
+  "ASSESSMENT.md": {
+    "bytes": 6494,
+    "sha256": "d3e48c585c43848df2dcb0509f3e3e71d31a3edcb4986a795fe9282d32c83f19"
+  },
+  "REVIEW.md": {
+    "bytes": 6308,
+    "sha256": "28c4353fad4c7b18baaea5e0cea1837fe79e964e15c753127e7d20cfd867bfe7"
+  },
+  "manuscript.tex": {
+    "bytes": 22076,
+    "sha256": "97500c0146d7c89bc92debf0610a735dc57d8bc15c3b1b6bbfd0b93547defc4c"
+  },
+  "manuscript.md": {
+    "bytes": 23443,
+    "sha256": "c09d63e14c7c5d324da2b15b9337e252f9a14e9b2eaac3caf0d867678363199a"
+  },
+  "manuscript.pdf": {
+    "bytes": 102289,
+    "sha256": "e9bc51c954b2ab4b763a54002a481452b0ac3357ccce8e9cf03937a1d8ae6f61"
+  },
+  "q43-chain-ring-check.py": {
+    "bytes": 11955,
+    "sha256": "db6593cb912a7d30678f98ab9a2c971588e00792a8c919c3a126753d2eb75915"
+  },
+  "q43-chain-ring-check.json": {
+    "bytes": 346991,
+    "sha256": "99cfcb90daa026c8ec15d9bc788af7a6069492367457978b8839cea2f46fbf00"
+  },
+  "q43-cyclic-extension-check.py": {
+    "bytes": 6044,
+    "sha256": "c7b3715cffd6dbe936aeb7cfe7e3dec4e43bb41326bf6e422058ff5b34c097f6"
+  },
+  "q43-cyclic-extension-check.json": {
+    "bytes": 179417,
+    "sha256": "ec4f1073f71fae73c55e319bd8fbd78be0c8919040b46ccae6f8e7f60097e607"
+  },
+  "q43-outside-prior-classes.json": {
+    "bytes": 955,
+    "sha256": "c573148cb372d6f2fb4d2c4594f9bc7bec7492bc1d2d5bf320b4b6472ff829ba"
+  },
+  "source-audit.json": {
+    "bytes": 4936,
+    "sha256": "1918dc1bebd93eed9c560e79e1d266d4aa7bec425c4c6fb68cd120f6af027102"
+  },
+  "markdown-conversion.json": {
+    "bytes": 3533,
+    "sha256": "375dc05a3c9b5a5464e5b92dee1cf5ab466f7fde633d69a3b464a5d1dcdb37d8"
+  },
+  "markdown-math-check.json": {
+    "bytes": 439,
+    "sha256": "3a9d99cb241a87155c7d5aaecb64dc7c7fdc5c55282bba77eda68af3acdcd7dd"
+  },
+  "artifact-qa.json": {
+    "bytes": 682,
+    "sha256": "eab18ff0257fdf24ff09d7b54bb4bf1610577094926dda3e2e62ff62da307240"
+  }
+}

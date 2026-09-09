@@ -1,0 +1,314 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Ann}{\operatorname{Ann}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Z}{\mathbb Z}
+\title{Word fibres over finite chain rings\\and the Amit--Ashurst conjecture for metacyclic groups}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove the Amit--Ashurst conjecture for every finite metacyclic $p$-group, including nonsplit extensions. The proof applies more generally to cyclic extensions of finite modules over commutative chain rings, when conjugation acts as multiplication by a principal unit. In particular, it also proves the conjecture for every finite $p$-group with an elementary abelian normal subgroup and cyclic quotient. The main estimate concerns split extensions by abelian $p$-groups. After fixing the quotient coordinates of a word, its base coordinate is linear in the module variables. Finite differences control the support of a coefficient of least valuation, and the module filtration compensates for the resulting loss of support. A stronger word-dependent estimate then descends through a central cyclic kernel, removing the splitting hypothesis for cyclic quotients. All bounds hold for every word and every attained value, without a bound on the number of variables or the nilpotency class.
+\end{abstract}
+
+\section{Introduction and principal results}
+For a finite group $G$, a word $w\in F_k=\langle x_1,\ldots,x_k\rangle$ induces a map $w:G^k\to G$. Write $w(G)$ for its image and
+\[
+ P_{w,G}(g)=\frac{|\{(g_1,\ldots,g_k)\in G^k:w(g_1,\ldots,g_k)=g\}|}{|G|^k}.
+\]
+The Amit--Ashurst conjecture asserts that, for every finite nilpotent group $G$,
+\begin{equation}\label{eq:aa}
+ P_{w,G}(g)\ge |G|^{-1}\qquad(w\in F_k,\ g\in w(G)).
+\end{equation}
+The formulation appears in Ashurst's thesis \cite[Conjecture 6.2.1]{A} and is discussed under this name by Camina, Cocke and Thillaisundaram \cite{CCT}. It strengthens the Amit conjecture, which concerns only the identity fibre. We always permit arbitrary $k\ge1$, including words with zero exponent sums. The identity word causes no exception to \eqref{eq:aa}.
+
+A group is metacyclic if it has a cyclic normal subgroup with cyclic quotient. Our first main conclusion is the following.
+\begin{theorem}\label{thm:metacyclic}
+Every finite nilpotent metacyclic group satisfies the Amit--Ashurst conjecture. In particular, for every finite metacyclic $p$-group $G$, every $w\in F_k$, and every $g\in w(G)$,
+\[
+ |w^{-1}(g)|\ge |G|^{k-1}.
+\]
+No splitting hypothesis is required.
+\end{theorem}
+
+Camina, Cocke and Thillaisundaram prove \eqref{eq:aa} for finite $p$-groups with a cyclic maximal subgroup \cite[Theorem A]{CCT}. Their Sections 2--3 already use linearization after fixing cyclic coordinates and polynomial arguments. Theorem~\ref{thm:metacyclic} removes the cyclic-maximal-subgroup restriction. For example, $C_{16}\rtimes_3 C_4$ has class four and no cyclic maximal subgroup; a direct verification is given in Section~\ref{sec:examples}. Levy's split-extension result \cite[Proposition 1.3]{L} supplies the identity-fibre bound for split metacyclic groups. Controlling every attained value requires an additional argument.
+
+The second main conclusion concerns modules of arbitrary rank.
+\begin{theorem}\label{thm:elementary}
+Let $G$ be a finite $p$-group with an elementary abelian normal subgroup $V$ such that $G/V$ is cyclic. Then $G$ satisfies the Amit--Ashurst conjecture.
+\end{theorem}
+In particular, this applies to $(C_p)^d\wr C_{p^e}$ for all $d\ge1$ and $e\ge0$. Recent work of de las Heras, Toti and Vannacci \cite{HTV} gives finer fibre estimates for selected Engel words in cyclic wreath products. Theorem~\ref{thm:elementary} treats every word; it does not provide their finer estimates or settle their separate question about profinite sections.
+
+Both results follow from a theorem about modules over finite chain rings. A finite commutative chain ring $R$ is a finite commutative ring with identity whose ideals form a chain. We write its ideals as
+\[
+ R\supsetneq \pi R\supsetneq\cdots\supsetneq\pi^{\ell-1}R
+ \supsetneq\pi^\ell R=0,
+ \qquad |R/\pi R|=Q=p^f.
+\]
+The field case has $\ell=1$ and $\pi=0$. Modules are unital and finite. A principal unit is an element of $1+\pi R$.
+
+\begin{theorem}\label{thm:extension}
+Suppose a finite group $G$ contains the additive group of a finite $R$-module $M$ as a normal subgroup, where $R$ is a finite commutative chain ring of residue characteristic $p$. Suppose $G/M$ is cyclic of $p$-power order and a lift of its generator acts on $M$ by multiplication by a principal unit of $R$. Then $G$ satisfies \eqref{eq:aa}.
+\end{theorem}
+
+The proof first establishes a sharper estimate for $M\rtimes T$, where $T$ is any finite abelian $p$-group acting by principal units. It then constructs a split cover of a cyclic extension. The extra strength in the split estimate is essential: no general assertion that \eqref{eq:aa} descends to arbitrary quotients is used.
+
+The finite-difference language is the established functional-degree framework; see Aichinger and Moosbauer \cite{AM}. We give the elementary support estimate needed here in full. The contribution is its use with a common coefficient ideal on each quotient fibre, followed by the cyclic-cover transfer. The argument does not require polynomial coordinates on a finite abelian group or a choice of digits in a chain ring.
+
+\section{Finite differences and word coefficients}
+For finite abelian groups $H,A$, a function $f:H\to A$, and $h\in H$, set
+\[
+ \Delta_h f(x)=f(x+h)-f(x).
+\]
+Say that $f$ has degree at most $d$ if every composition of $d+1$ difference operators annihilates it. This condition is meaningful without a field structure on either group.
+
+\begin{lemma}\label{lem:support}
+If $f:H\to A$ is nonzero and has degree at most $d\ge0$, then
+\[
+ |\supp f|\ge 2^{-d}|H|,
+ \qquad \supp f=\{x\in H:f(x)\ne0\}.
+\]
+\end{lemma}
+\begin{proof}
+For $d=0$ the function is a nonzero constant. More generally a nonzero constant satisfies the assertion for every $d$. Otherwise choose $h\in H$ such that $\Delta_h f\ne0$. Since difference operators commute, $\Delta_h f$ has degree at most $d-1$. Induction and the containment
+\[
+ \supp(\Delta_h f)\subseteq\supp f\ \cup\ (\supp f-h)
+\]
+give $2^{-(d-1)}|H|\le2|\supp f|$.
+\end{proof}
+
+Now let $R$ be a finite commutative chain ring, let $M$ be a finite $R$-module, and let $T$ be a finite abelian $p$-group. Fix a homomorphism
+\[
+ \rho:T\longrightarrow 1+\pi R.
+\]
+Use additive notation for $M,T$, and form $S=M\rtimes_\rho T$ with multiplication
+\begin{equation}\label{eq:product}
+ (m,t)(n,u)=(m+\rho(t)n,t+u).
+\end{equation}
+For a word $w$, let $a_i$ be the exponent sum of $x_i$, and put
+\begin{equation}\label{eq:alpha}
+ \alpha:T^k\to T,\qquad
+ \alpha(t_1,\ldots,t_k)=\sum_{i=1}^k a_i t_i,
+ \qquad D=|\im\alpha|.
+\end{equation}
+
+\begin{lemma}\label{lem:coefficients}
+There are functions $c_i:T^k\to R$ such that
+\begin{equation}\label{eq:word}
+ w((m_1,t_1),\ldots,(m_k,t_k))
+ =\left(\sum_{i=1}^k c_i(\mathbf t)m_i,\alpha(\mathbf t)\right).
+\end{equation}
+Each $c_i$ is a finite signed sum of homomorphisms from the additive group $T^k$ to the multiplicative group $1+\pi R$.
+\end{lemma}
+\begin{proof}
+Write $w=x_{i_1}^{\epsilon_1}\cdots x_{i_n}^{\epsilon_n}$, with $\epsilon_j\in\{1,-1\}$, and set
+\[
+ L_j(\mathbf t)=\sum_{h<j}\epsilon_h t_{i_h}.
+\]
+The inverse of $(m,t)$ is $(-\rho(-t)m,-t)$. Reading the product in \eqref{eq:product} gives
+\begin{equation}\label{eq:coefficient}
+ c_i(\mathbf t)=
+ \sum_{\substack{j:i_j=i\\\epsilon_j=1}}\rho(L_j(\mathbf t))
+ -\sum_{\substack{j:i_j=i\\\epsilon_j=-1}}\rho(L_j(\mathbf t)-t_i).
+\end{equation}
+Both $L_j$ and $L_j-t_i$ are additive homomorphisms. Formula \eqref{eq:coefficient} also covers the empty word, with all sums zero.
+\end{proof}
+
+For a fixed $\mathbf t$, the first coordinate of \eqref{eq:word} is a homomorphism $M^k\to M$. Uniform inputs therefore give a uniform distribution on its image. The difficulty is to control how often a sufficiently large common image occurs as $\mathbf t$ varies in a prescribed fibre of $\alpha$.
+
+\section{The chain-ring estimate}\label{sec:split}
+The ideal valuation on $R$ is defined by $\nu(0)=\ell$ and
+\[
+ \nu(c)=j\quad\text{if }c\in\pi^jR\setminus\pi^{j+1}R.
+\]
+In the following refined statement we assume $M\ne0$ is faithful. This entails no restriction on the ensuing bound \eqref{eq:strong}: for a nonzero module one may replace $R$ by $R/\Ann_R(M)$, again a chain ring with the same residue field. The action and group are unchanged.
+
+\begin{theorem}\label{thm:split}
+With the preceding notation, let $M$ be faithful. For $r\in\im\alpha$ define
+\begin{equation}\label{eq:s}
+ s_r=\min_{\substack{\mathbf t\in\alpha^{-1}(r)\\1\le i\le k}}
+       \nu(c_i(\mathbf t)).
+\end{equation}
+Then the word image above $r$ is exactly $\pi^{s_r}M\times\{r\}$.
+If $s_r<\ell$, then for every $b\in\pi^{s_r}M$,
+\begin{equation}\label{eq:refined}
+ P_{w,S}(b,r)\ge\frac{1}{D\,2^{s_r}|\pi^{s_r}M|}
+ \ge\frac{(Q/2)^{s_r}}{D|M|}.
+\end{equation}
+If $s_r=\ell$, the only value above $r$ is $(0,r)$, with probability $1/D$.
+Consequently, for arbitrary finite $M$, every attained $y\in S$ satisfies
+\begin{equation}\label{eq:strong}
+ P_{w,S}(y)\ge\frac1{D|M|}\ge\frac1{|S|}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Fix $r\in\im\alpha$, choose $\mathbf t^0\in\alpha^{-1}(r)$, and write $H=\ker\alpha$. The fibre of $r$ is $\mathbf t^0+H$, and its probability in $T^k$ is $1/D$. Put $s=s_r$. If $s=\ell$, all coefficients vanish on this fibre, which proves the asserted exceptional case.
+
+Suppose $s<\ell$. Choose an index $i$ for which the minimum in \eqref{eq:s} is attained. The function
+\[
+ f:H\longrightarrow R/\pi^{s+1}R,
+ \qquad f(h)=c_i(\mathbf t^0+h)\pmod{\pi^{s+1}R}
+\]
+is nonzero and has degree at most $s$. To see this, a summand of \eqref{eq:coefficient} restricted to the fibre has the form $\chi(h)=\rho(L(\mathbf t^0+h))$, with $L:T^k\to T$ additive. For $u\in H$,
+\[
+ \Delta_u\chi(h)=\chi(h)(\rho(L(u))-1).
+\]
+Thus
+\[
+ \Delta_{u_1}\cdots\Delta_{u_{s+1}}\chi(h)
+ =\chi(h)\prod_{j=1}^{s+1}(\rho(L(u_j))-1)
+ \in\pi^{s+1}R.
+\]
+The same assertion holds for the signed sum defining $c_i$. Lemma~\ref{lem:support} shows that at least $|H|/2^s$ tuples in $\alpha^{-1}(r)$ have $c_i(\mathbf t)$ nonzero modulo $\pi^{s+1}R$. By minimality of $s$, this means $\nu(c_i(\mathbf t))=s$.
+
+For every $\mathbf t\in\alpha^{-1}(r)$, all the coefficients in \eqref{eq:word} lie in $\pi^sR$. Its base image is therefore contained in $\pi^sM$. At each of the tuples just counted, $c_i(\mathbf t)=\pi^s v$ for a unit $v\in R$, so $c_i(\mathbf t)M=\pi^sM$. The base map is then onto $\pi^sM$. In particular, the entire image above $r$ is exactly $\pi^sM\times\{r\}$.
+
+At each such tuple the conditional probability of any prescribed $b\in\pi^sM$ is $1/|\pi^sM|$. Multiplying by the fraction of these tuples and by the top-fibre probability gives
+\[
+ P_{w,S}(b,r)\ge\frac1D\frac1{2^s}\frac1{|\pi^sM|}.
+\]
+It remains to compare the module sizes. For $0\le j<\ell$,
+$\pi^jM/\pi^{j+1}M$ is a nonzero vector space over $R/\pi R$.
+Indeed, equality $\pi^jM=\pi^{j+1}M$ would iterate to $\pi^jM=0$,
+contradicting $\pi^{\ell-1}M\ne0$, which follows from faithfulness.
+Consequently,
+\begin{equation}\label{eq:length}
+ \frac{|M|}{|\pi^sM|}
+ =\prod_{j=0}^{s-1}|\pi^jM/\pi^{j+1}M|\ge Q^s\ge2^s.
+\end{equation}
+This proves \eqref{eq:refined} and \eqref{eq:strong} for nonzero $M$, including after the faithful reduction. For $M=0$, the group is $T$, the word map is $\alpha$, and its attained values all have probability $1/D$.
+\end{proof}
+
+\begin{remark}
+The coefficient itself, with values in $R/\pi^{s+1}R$, is the function to which the difference lemma is applied. No assertion is needed about the functional degree of a separately chosen $\pi$-adic digit. Also, $H$ may have mixed cyclic exponents: the proof works on its actual additive group.
+\end{remark}
+
+The lower bound $1/|S|$ is sharp uniformly over words, since $w=x_1$ is uniformly distributed. Estimate \eqref{eq:refined} records additional information when the coefficient ideal is deep. More importantly for nonsplit groups, \eqref{eq:strong} retains the image size $D$ instead of replacing it by $|T|$.
+
+\section{Cyclic extensions and attained lifts}\label{sec:transfer}
+We prove Theorem~\ref{thm:extension}. The case $M=0$ is abelian, so suppose $M\ne0$ and replace $R$ by $R/\Ann_R(M)$. Let $G/M$ have order $q=p^e$, and let $b\in G$ lift a generator. Write $u\in1+\pi R$ for its scalar action. Since $b^q\in M$ and $M$ is abelian, $u^q=1$ on $M$, hence in $R$ by faithfulness.
+
+Regard
+\[
+ c=b^q\in M
+\]
+as an element of the additive module, and write $|\langle c\rangle|=p^h$. We have $uc=c$. The order of $b$ is $qp^h$: an exponent killing $b$ must be divisible by $q$, and $b^{qj}=1$ precisely when $p^h$ divides $j$. Form
+\[
+ L=M\rtimes_u C_{p^{e+h}}.
+\]
+The map
+\begin{equation}\label{eq:cover}
+ \varphi:L\longrightarrow G,\qquad \varphi(m,j)=m b^j
+\end{equation}
+is a well-defined surjective homomorphism, where $M$ is identified with its normal subgroup in the displayed product. Its kernel is
+\begin{equation}\label{eq:kernel}
+ K=\{(-tc,tq):t\in\Z/p^h\Z\}=\langle(-c,q)\rangle.
+\end{equation}
+This subgroup is central: $u^q=1$ and $uc=c$ show that $(-c,q)$ commutes with $M$ and with the cyclic complement. Thus $K$ is central cyclic of order $p^h$, and $|G|=|M|p^e$.
+
+Fix a word $w$ with exponent sums $a_1,\ldots,a_k$. Put
+\[
+ t=\min_i\nu_p(a_i),\qquad \nu_p(0)=\infty.
+\]
+For $t=\infty$, expressions of the form $p^{\max(v-t,0)}$ below mean $1$. The image size of the exponent-sum map on the complement of $L$ is
+\[
+ D=p^{\max(e+h-t,0)}.
+\]
+By Theorem~\ref{thm:split}, every attained $y\in L$ satisfies
+\begin{equation}\label{eq:coverbound}
+ P_{w,L}(y)\ge\frac1{|M|D}.
+\end{equation}
+
+For central elements $z_i\in K$ and arbitrary $x_i\in L$, direct collection gives
+\begin{equation}\label{eq:centralvariation}
+ w(x_1z_1,\ldots,x_kz_k)=w(x_1,\ldots,x_k)\prod_{i=1}^kz_i^{a_i}.
+\end{equation}
+Let $a=\gcd(a_1,\ldots,a_k)$, with $a=0$ if all $a_i=0$, and set $K^a=\{z^a:z\in K\}$. The products on the right of \eqref{eq:centralvariation} range over $K^a$. Hence, if $y$ is attained, every element of $yK^a$ is attained and projects to $\varphi(y)$. Since $K$ is cyclic,
+\begin{equation}\label{eq:powerimage}
+ |K^a|=p^{\max(h-t,0)}.
+\end{equation}
+
+Now take $g\in w(G)$. Lifting any input tuple attaining $g$ gives an attained $y\in\varphi^{-1}(g)$. Uniform inputs in $L$ project to uniform inputs in $G$, so
+\begin{align}
+ P_{w,G}(g)
+ &=\sum_{z\in\varphi^{-1}(g)}P_{w,L}(z)\notag\\
+ &\ge\frac{|K^a|}{|M|D}
+ =\frac{1}{|M|p^{\max(e+h-t,0)-\max(h-t,0)}}.
+ \label{eq:pushforward}
+\end{align}
+For finite $t\le h$ the exponent difference is $e$; for $t>h$ it is at most $e$. It is zero when $t=\infty$. Thus \eqref{eq:pushforward} is at least $1/(|M|p^e)=1/|G|$, proving Theorem~\ref{thm:extension}.
+
+\begin{remark}
+The proof gives the stronger bound displayed in \eqref{eq:pushforward}. In particular, if every exponent sum is divisible by $p^{e+h}$, every attained value has probability at least $1/|M|$. The order $p^{e+h}$ here is the order of the chosen lift $b$. The ordinary bound $1/|L|$ would lose a factor $|K|$ and would not suffice for the argument.
+\end{remark}
+
+\section{Consequences and examples}\label{sec:examples}
+\begin{proof}[Proof of Theorem~\ref{thm:metacyclic}]
+First let $G$ be a finite metacyclic $p$-group, with normal cyclic subgroup $M=C_{p^a}$ and cyclic quotient. If $M=1$, the group is cyclic. Otherwise take $R=\Z/p^a\Z$ and identify $M$ with its additive module. Conjugation by a lift of a quotient generator is multiplication by a unit $u$. This automorphism has $p$-power order. Its reduction in $\F_p^\times$ is therefore trivial, since that group has order $p-1$. Hence $u\in1+pR$, including for $p=2$, and Theorem~\ref{thm:extension} applies.
+
+For a finite nilpotent metacyclic group $G$, choose a cyclic normal subgroup $C$ with cyclic quotient. Every Sylow subgroup $P$ is metacyclic: $P\cap C$ is cyclic and normal in $P$, and $P/(P\cap C)$ embeds in $G/C$. Finally, $G$ is the direct product of its Sylow subgroups, and word probabilities multiply across direct products. Multiplying the bounds for the Sylow components proves \eqref{eq:aa}.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:elementary}]
+Suppose $|G/V|=p^e$ and let $A$ be the linear automorphism of the $\F_p$-space $V$ induced by a lift. Since $V$ is abelian, $A^{p^e}=I$. Thus $N=A-I$ satisfies $N^{p^e}=0$. Give $V$ its module structure over
+\[
+ R=\F_p[z]/(z^{p^e}),\qquad zv=Nv.
+\]
+The lift acts by the principal unit $1+z$. Apply Theorem~\ref{thm:extension}. This also covers $e=0$; if $V=0$ the assertion is immediate.
+\end{proof}
+
+\begin{corollary}
+For every $d\ge1$ and $e\ge0$, the regular wreath product $(C_p)^d\wr C_{p^e}$ satisfies \eqref{eq:aa} for every word. If its exponent sums are all divisible by $p^e$, every attained value has probability at least the reciprocal of the order of the base group.
+\end{corollary}
+\begin{proof}
+The base is elementary abelian and the complement cyclic, so Theorem~\ref{thm:elementary} proves the first assertion. For the second, use the split realization and \eqref{eq:strong}, with $D=1$.
+\end{proof}
+
+The absence of a nilpotency-class bound is substantive. In $C_p\wr C_{p^e}$, with $e\ge1$, the regular base module is
+\[
+ M=\F_p[C_{p^e}]\cong\F_p[z]/(z^{p^e}),
+\]
+where the complement generator acts as $1+z$. Its commutator with $M$ has image $zM$, and successive lower-central terms are $\gamma_j(G)=z^{j-1}M$ for $j\ge2$. Thus the class is $p^e$.
+
+For a small example outside the cyclic-maximal-subgroup case, consider
+\[
+ G=(\Z/16\Z)\rtimes_3(\Z/4\Z).
+\]
+This is defined since $3^4\equiv1\pmod{16}$. Its lower-central terms have orders
+\[
+ 64,\quad 8,\quad 4,\quad 2,\quad 1,
+\]
+because $\gamma_j(G)=2^{j-1}(\Z/16\Z)$ for $j\ge2$. Every element has order dividing $16$. Indeed, for $(m,t)\in G$,
+\[
+ (m,t)^{16}=\left(m\sum_{j=0}^{15}3^{tj},0\right)=(0,0).
+\]
+For $t=0,2$, the sums modulo $16$ are respectively $16$ and $8(1+9)$; for $t=1,3$, they consist of four periods with sum $1+3+9+11=24$. All are divisible by $16$. A cyclic maximal subgroup would have order $32$, impossible by the exponent bound. Thus this class-four example is covered by Theorem~\ref{thm:metacyclic} but not by the cyclic-maximal-subgroup hypothesis.
+
+The split theorem also permits mixed-length modules over $\Z/p^a\Z$ and abelian complements of arbitrary rank, provided their actions are scalar principal units. Freeness of the module is not required. All these conclusions belong to the same chain-ring argument.
+
+\section{Scope and further questions}
+The proof singles out two properties. First, after fixing the quotient coordinates, a word is linear in the base variables. Second, all coefficient ideals are comparable, so a coefficient of least valuation supplies an image containing every other conditional image. Finite differences then ensure that this largest image occurs sufficiently often.
+
+These properties suggest the next question: does every finite $p$-group with an abelian normal subgroup and cyclic quotient satisfy \eqref{eq:aa}? Theorem~\ref{thm:extension} answers it when the action is represented by a principal unit over a chain ring. An arbitrary action on an abelian $p$-group can instead generate a commutative ring with incomparable ideals. The common-image argument then does not follow from the present proof. Nor do we treat arbitrary nonsplit extensions by noncyclic abelian quotients. The general Amit--Ashurst conjecture remains unresolved here.
+
+\paragraph{Computational checks.}
+The proofs above do not depend on computation. Accompanying scripts compare complete word distributions from literal multiplication with coefficient calculations and with pushforward through the split cover. The recorded checks comprise 22 models, 745 word distributions, 110,451,815 literal word evaluations, and 20,302 attained fibres. They include residue characteristics two and three, mixed module lengths, abelian complements of rank two, and nonsplit quaternion and module extensions. These finite checks test the implementations and small instances; they are not a substitute for the universal arguments.
+
+\begin{thebibliography}{9}
+\bibitem{AM} E. Aichinger and J. Moosbauer, \emph{Chevalley--Warning type results on abelian groups}, J. Algebra \textbf{569} (2021), 30--66. \href{https://doi.org/10.1016/j.jalgebra.2020.10.033}{doi:10.1016/j.jalgebra.2020.10.033}; preprint \href{https://arxiv.org/abs/1912.08448}{arXiv:1912.08448}.
+\bibitem{A} C. Ashurst, \emph{Fibres of words in finite groups, a probabilistic approach}, Ph.D. thesis, University of Bath, 2012. \href{https://researchportal.bath.ac.uk/en/studentTheses/fibres-of-words-in-finite-groups-a-probabilistic-approach/}{University of Bath repository}.
+\bibitem{CCT} R. D. Camina, W. L. Cocke and A. Thillaisundaram, \emph{The Amit--Ashurst conjecture for finite metacyclic $p$-groups}, Eur. J. Math. \textbf{9} (2023), article 46. \href{https://doi.org/10.1007/s40879-023-00644-x}{doi:10.1007/s40879-023-00644-x}.
+\bibitem{HTV} I. de las Heras, T. Toti and M. Vannacci, \emph{Engel probability in wreath products of $p$-groups}, preprint, July 2026. \href{https://arxiv.org/abs/2607.11605}{arXiv:2607.11605v1}.
+\bibitem{L} M. Levy, \emph{On the probability of satisfying a word in nilpotent groups of class 2}, preprint, 2011. \href{https://arxiv.org/abs/1101.4286}{arXiv:1101.4286v1}.
+\end{thebibliography}
+\end{document}

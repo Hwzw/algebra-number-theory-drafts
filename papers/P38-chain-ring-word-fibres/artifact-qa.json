@@ -1,0 +1,22 @@
+{
+  "pdf_sha256": "e9bc51c954b2ab4b763a54002a481452b0ac3357ccce8e9cf03937a1d8ae6f61",
+  "tex_sha256": "97500c0146d7c89bc92debf0610a735dc57d8bc15c3b1b6bbfd0b93547defc4c",
+  "pages": 8,
+  "rendered": true,
+  "visually_reviewed": true,
+  "note": "All eight full-page renders inspected in the active task; no clipping, overlap, unreadable formula, or unresolved reference seen. Same-agent internal artifact QA.",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "markdown_sha256": "c09d63e14c7c5d324da2b15b9337e252f9a14e9b2eaac3caf0d867678363199a",
+  "source_math_expressions": 312,
+  "markdown_render_expressions": 318,
+  "markdown_math_errors": 0
+}

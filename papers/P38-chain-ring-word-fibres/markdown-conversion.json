@@ -1,0 +1,163 @@
+{
+  "environments": {
+    "theorem": 4,
+    "lemma": 2,
+    "proof": 6,
+    "remark": 2,
+    "corollary": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:metacyclic"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "1.2",
+      "id": "theorem-2",
+      "source_label": "thm:elementary"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "1.3",
+      "id": "theorem-3",
+      "source_label": "thm:extension"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:support"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:coefficients"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 4,
+      "number": "3.1",
+      "id": "theorem-4",
+      "source_label": "thm:split"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "3.2",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "remark",
+      "ordinal": 2,
+      "number": "4.1",
+      "id": "remark-2",
+      "source_label": null
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "5.1",
+      "id": "corollary-1",
+      "source_label": null
+    }
+  ],
+  "references": 36,
+  "citations": 6,
+  "cited_keys": [
+    "A",
+    "AM",
+    "CCT",
+    "HTV",
+    "L"
+  ],
+  "bibliography_keys": [
+    "AM",
+    "A",
+    "CCT",
+    "HTV",
+    "L"
+  ],
+  "equation_labels": [
+    "eq:aa",
+    "eq:product",
+    "eq:alpha",
+    "eq:word",
+    "eq:coefficient",
+    "eq:s",
+    "eq:refined",
+    "eq:strong",
+    "eq:length",
+    "eq:cover",
+    "eq:kernel",
+    "eq:coverbound",
+    "eq:centralvariation",
+    "eq:powerimage",
+    "eq:pushforward"
+  ],
+  "label_numbers": {
+    "eq:aa": "1",
+    "thm:metacyclic": "1.1",
+    "thm:elementary": "1.2",
+    "thm:extension": "1.3",
+    "lem:support": "2.1",
+    "eq:product": "2",
+    "eq:alpha": "3",
+    "lem:coefficients": "2.2",
+    "eq:word": "4",
+    "eq:coefficient": "5",
+    "sec:split": "3",
+    "thm:split": "3.1",
+    "eq:s": "6",
+    "eq:refined": "7",
+    "eq:strong": "8",
+    "eq:length": "9",
+    "sec:transfer": "4",
+    "eq:cover": "10",
+    "eq:kernel": "11",
+    "eq:coverbound": "12",
+    "eq:centralvariation": "13",
+    "eq:powerimage": "14",
+    "eq:pushforward": "15",
+    "sec:examples": "5"
+  },
+  "bibliography_numbers": {
+    "AM": "1",
+    "A": "2",
+    "CCT": "3",
+    "HTV": "4",
+    "L": "5"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "97500c0146d7c89bc92debf0610a735dc57d8bc15c3b1b6bbfd0b93547defc4c",
+  "source_pdf_sha256": "e9bc51c954b2ab4b763a54002a481452b0ac3357ccce8e9cf03937a1d8ae6f61",
+  "markdown_sha256": "c09d63e14c7c5d324da2b15b9337e252f9a14e9b2eaac3caf0d867678363199a",
+  "markdown_bytes": 23443,
+  "source_math_expressions_verified": 312,
+  "markdown_math_expressions": 318,
+  "custom_macros_expanded": [
+    "im",
+    "Ann",
+    "supp",
+    "F",
+    "Z"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 59,
+  "semantic_roundtrip_sha256": "25fe3f3791c0b60e36b12b03736151bf3f4dcfa764b4becc684c004395f6f881",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 44,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}
