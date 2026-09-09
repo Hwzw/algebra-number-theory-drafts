@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 14 distinct manuscripts (83 pages in the original editions plus P14), each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 15 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New countable semiring partition theorem
+
+[**P15: Countable semiring partitions of real function fields**](papers/P15-countable-semiring-partitions/README.md), by **Henry Zweiman**, gives a proposed complete affirmative answer to the countable-decomposition question in Kiss–Somlai–Terpai, *Journal of Algebra* 664 (2025), Section 7. Its five-page [PDF](papers/P15-countable-semiring-partitions/manuscript.pdf), [full Markdown](papers/P15-countable-semiring-partitions/manuscript.md), and [LaTeX](papers/P15-countable-semiring-partitions/manuscript.tex) include a direct endpoint construction and an extension to all finitely generated transcendental subfields of the real numbers.
+
+The [source assessment](papers/P15-countable-semiring-partitions/ASSESSMENT.md) and [internal proof audit](papers/P15-countable-semiring-partitions/REVIEW.md) accompany exact rational-function checks. This is one consolidated paper. The finite-partition conjecture remains unresolved here. The originating agent performed the review; historical priority and scholarly significance are not independently certified.
 
 ## New scalar recurrence classification
 

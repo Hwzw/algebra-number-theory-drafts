@@ -1,0 +1,14 @@
+{
+  "input_functions": 180,
+  "nonempty_left_label_groups": 11,
+  "same_label_pairs": 275,
+  "sum_and_product_sturm_certificates": 550,
+  "explicit_edge_cases": 6,
+  "status": "passed",
+  "scope": "exact rational-function examples; not a proof or a test of the curve theorem",
+  "proof": "manuscript.tex",
+  "sha256": {
+    "manuscript.tex": "f87c4bb468c784aa4d6108efb2fd4e6bca1ec423008763e3e8eff85370ab45da",
+    "check.py": "19162578bdbf0e57df119ff823746decca5cf85958f6b143a165f592677b63ec"
+  }
+}

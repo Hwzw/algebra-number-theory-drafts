@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\ord}{\operatorname{ord}}
+\title{Countable semiring partitions of real function fields}
+\author{Henry Zweiman}
+\date{September 8, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For every real transcendental number $\alpha$, we construct a partition of $\Q(\alpha)_{>0}$ into countably infinitely many nonempty sets closed under addition and multiplication. The construction answers the countable-decomposition question of Kiss, Somlai, and Terpai. A rational function is assigned the nearest zero or pole to the left of $\alpha$, together with the distinction between a zero and a pole. Positivity on the intervening interval makes these labels stable under addition and multiplication within a class. A version using both endpoints separates all the positive affine functions proposed in that question. The same endpoint argument on smooth real curves proves that the positive elements of every finitely generated subfield of $\R$ of positive transcendence degree admit such a partition.
+\end{abstract}
+
+\section{Introduction}
+Call a nonempty subset of an ordered field \emph{invariant} if it is closed under addition and multiplication. We use ``semiring partition'' for a partition into invariant sets; the pieces are not required to contain zero or a multiplicative identity.
+
+Kiss, Somlai, and Terpai study finite invariant partitions of positive elements of real fields \cite{KST}. For a real transcendental $\alpha$, their two-class classification is controlled by the sign of the derivation on $\Q(\alpha)$ induced by formal differentiation. In Section~7, pp.~530--531, they ask whether $\Q(\alpha)_{>0}$, or even $\Q[\alpha]_{>0}$, admits a partition into countably infinitely many invariant sets. They also ask whether such a partition can separate the positive affine functions associated with distinct rational roots. We give an explicit construction with these properties.
+
+\begin{theorem}\label{thm:main}
+Let $F$ be a countable subfield of $\R$, and let $\alpha\in\R$ be transcendental over $F$. Both $F(\alpha)_{>0}$ and $F[\alpha]_{>0}$ have partitions into countably infinitely many invariant sets. The partitions can be chosen so that the elements
+\[
+ \ell_r(\alpha),\qquad
+ \ell_r(t)=\begin{cases}t-r,&r<\alpha,\\r-t,&r>\alpha,\end{cases}
+ \qquad r\in F,
+\]
+lie in distinct pieces for distinct $r$.
+\end{theorem}
+
+The argument requires only finitely many real zeros and poles and elementary one-sided limits. Its extension to curves gives the following further result.
+
+\begin{theorem}\label{thm:fields}
+Let $K\subset\R$ be a finitely generated field extension of $\Q$ with positive transcendence degree. Then $K_{>0}$ has a partition into countably infinitely many invariant sets.
+\end{theorem}
+
+In particular, the conclusion holds for every finite real algebraic extension of $\Q(\alpha)$, with no restriction on the genus of its function field. Theorem~\ref{thm:main} has a direct proof independent of the curve argument. Neither theorem classifies finite partitions, and the finite-class conjecture in \cite[Section~7]{KST} is not addressed here.
+
+\section{The nearest endpoint construction}
+Evaluation at $\alpha$ identifies $F(t)$ with $F(\alpha)$ injectively. Every nonzero rational function in $F(t)$ is finite and nonzero at $\alpha$: a nonzero numerator or denominator over $F$ cannot vanish there. Write
+\[
+ \mathcal P_\alpha=\{f\in F(t): f(\alpha)>0\}.
+\]
+Zeros and poles always refer to the rational function after cancellation, not to a chosen unreduced expression.
+
+For $f\in\mathcal P_\alpha$, let $a(f)$ be its largest real zero or pole strictly below $\alpha$, if one exists. Put $a(f)=-\infty$ otherwise. There are finitely many such points. The function $f$ is finite, continuous, and positive throughout $(a(f),\alpha]$, since it has no zero or pole there and is positive at $\alpha$.
+
+If $a(f)$ is finite, label it $Z$ when it is a zero and $P$ when it is a pole. Equivalently, the right-hand limit of $f$ there is respectively $0$ or $+\infty$. Define
+\begin{equation}\label{eq:leftlabel}
+ L(f)=\begin{cases}
+ * ,&a(f)=-\infty,\\
+ (a(f),Z),&a(f)\text{ is a zero},\\
+ (a(f),P),&a(f)\text{ is a pole}.
+ \end{cases}
+\end{equation}
+
+\begin{lemma}\label{lem:left}
+If $L(f)=L(g)$ for $f,g\in\mathcal P_\alpha$, then
+\[
+ L(f+g)=L(fg)=L(f).
+\]
+\end{lemma}
+\begin{proof}
+Suppose first that the common endpoint is a finite real number $a$. Both $f$ and $g$ are finite and strictly positive on $(a,\alpha]$. Their sum and product therefore have the same property. Consequently neither has a zero or a pole in that interval.
+
+If the common type is $Z$, then both functions tend to zero as $t\downarrow a$. Their sum and product also tend to zero. A nonzero rational function with this limit has a zero at $a$ after cancellation. If the common type is $P$, both functions tend to $+\infty$ as $t\downarrow a$. The same holds for their sum and product, which therefore have poles at $a$. Thus $a$ remains the nearest zero or pole to the left, with its type unchanged.
+
+If the label is $*$, both functions are finite and strictly positive on $(-\infty,\alpha]$. Their sum and product are finite and strictly positive there too, so both labels remain $*$.
+\end{proof}
+
+\begin{corollary}\label{cor:left}
+The nonempty fibres of $L$ form a countably infinite invariant partition of $\mathcal P_\alpha$. Its restriction to positive polynomials is also countably infinite.
+\end{corollary}
+\begin{proof}
+The fibres of a function are pairwise disjoint and cover its domain. Lemma~\ref{lem:left} gives invariance. Since $F$ is countable, $F(t)$ is countable, so there are at most countably many nonempty fibres. For every $r\in F$ with $r<\alpha$, the polynomial $t-r$ has label $(r,Z)$. There are infinitely many such $r$, already among the rationals. These are distinct nonempty fibres, both for rational functions and for polynomials.
+\end{proof}
+
+\begin{remark}\label{rem:types}
+The distinction between zeros and poles is necessary. For $r<\alpha$, the functions $t-r$ and $(t-r)^{-1}$ have the same nearest endpoint but their product is $1$, which has no endpoint. Exact vanishing orders should not be part of the label either: multiplication adds the orders. Their signs suffice, because positive one-sided values prevent cancellation of the leading terms in a sum of two poles.
+\end{remark}
+
+\section{Both endpoints and affine generators}
+For $f\in\mathcal P_\alpha$, let $I(f)$ be the connected component containing $\alpha$ of the set of real points where $f$ is finite and strictly positive. It is an open interval $(a,b)$, allowing infinite endpoints. Every finite endpoint is a zero or a pole. Label $f$ by this interval and the zero or pole type at each finite endpoint. Write $T(f)$ for this label.
+
+\begin{proposition}\label{prop:both}
+The nonempty fibres of $T$ are invariant. They give the partitions in Theorem~\ref{thm:main}.
+\end{proposition}
+\begin{proof}
+If $T(f)=T(g)$, both functions are finite and strictly positive throughout the same interval $I=(a,b)$. Their sum and product are finite and strictly positive on $I$. At each finite endpoint the limits taken from within $I$ are either both zero or both $+\infty$. The argument of Lemma~\ref{lem:left}, applied separately at each endpoint, shows that the same endpoint and type persist for both operations. The positive component containing $\alpha$ cannot pass such an endpoint. Thus its interval is exactly $I$ and its types are unchanged. An infinite endpoint requires no additional condition.
+
+There are at most countably many nonempty fibres. For $r<\alpha$, the function $\ell_r=t-r$ has interval $(r,\infty)$, with a zero at its finite endpoint. For $r>\alpha$, the function $\ell_r=r-t$ has interval $(-\infty,r)$, again with a zero at its finite endpoint. These labels are pairwise distinct as $r$ varies. They prove infinitude, the claimed separation, and the polynomial assertion. Evaluation at $\alpha$ transfers the partitions to the numerical fields and rings in the theorem.
+\end{proof}
+
+The construction also contains the invariant sets suggested by affine generators. For any $r\in F$ and any nonzero polynomial
+\[
+ A(X)=\sum_{j=1}^m c_jX^j,\qquad c_j\in F_{\geq0},
+\]
+the function $A(\ell_r(t))$ is positive exactly throughout the indicated half-line adjoining the root $r$, up to possible further positive components on its other side. Its component containing $\alpha$ is that half-line, and its limit at $r$ is zero. Hence all these functions lie in the fibre of $\ell_r$. Allowing a positive constant term would remove the zero at $r$ and is not part of this assertion.
+
+The two endpoint labels refine the left endpoint labels, but do not refine the derivative-sign partition. For example, $t^2+1$ and $(t^2+1)^{-1}$ are positive and finite on all of $\R$, so have the same label $T$. Their derivatives at a transcendental $\alpha$ have opposite signs. All positive constants belong to the same fibre as these functions.
+
+\section{The construction on real curves}
+We first state the geometric version. A point $p\in C(\R)$ on a curve defined over $F\subset\R$ is \emph{generic over $F$} here if its morphism $\operatorname{Spec}\R\to C$ has image the generic point of $C$. Equivalently, evaluation at $p$ embeds the function field $F(C)$ into $\R$; every nonzero $F$-rational function is finite and nonzero there.
+
+\begin{proposition}\label{prop:curve}
+Let $F\subset\R$ be countable. Let $C$ be a smooth projective integral curve over $F$, and let $p\in C(\R)$ be generic over $F$. Ordered by evaluation at $p$, the positive elements of $F(C)$ admit a countably infinite invariant partition.
+\end{proposition}
+\begin{proof}
+The real points of a smooth projective curve form a compact smooth one-dimensional manifold, by the implicit function theorem in affine charts and compactness of real projective space. Let $M$ be the connected component containing $p$; it is a circle. This remains true if the base change of $C$ to $\R$ is disconnected. We use only its component through $p$.
+
+For a nonzero $f\in F(C)$, the restriction to $M$ is real meromorphic and has only finitely many zeros and poles. Locally it has the form $u^m h(u)$, where $u$ is a real analytic parameter, $m\in\mathbb Z$, and $h$ is analytic and nonzero. The divisor of $f$ has finite support; this remains a finite set after base change. No such point is $p$ by genericity.
+
+If $f(p)>0$, let $U(f)$ be the connected component containing $p$ of the set where $f$ is finite and positive on $M$. Either $U(f)=M$, or $U(f)$ is an open arc. Its boundary consists of at most two points, each a zero or a pole. The two ends of an arc may correspond to the same point of the circle; the arc itself, not just an unordered pair of points, is retained in the label. Label $f$ by $U(f)$ and the zero or pole type at each boundary point, or by $M$ if there is no boundary.
+
+If two functions have the same label, their sum and product are finite and strictly positive on the common component. At every end they have the same limiting behaviour, either zero or $+\infty$, from within that component. These limits persist for both operations. The component cannot enlarge past a boundary point and cannot acquire a new boundary inside. Thus the label is unchanged. This proves invariance, including the case $U(f)=M$.
+
+The field $F(C)$ is countable, so the number of nonempty fibres is at most countable. To prove infinitude, choose a function $t\in F(C)$ transcendental over $F$. It gives a nonconstant finite morphism $C\to\mathbb P^1_F$. In characteristic zero this morphism is generically unramified. Its poles and ramification points form a finite set defined over $F$, and genericity excludes $p$ from that set. Thus $t$ is a real local coordinate near $p$.
+
+Choose a small arc about $p$ on which $t$ is strictly monotone. For every rational $r<t(p)$ sufficiently close to $t(p)$, there is a unique point $x_r$ on this arc with $t(x_r)=r$. The function $t-r$ is positive on the subarc between $x_r$ and $p$, and has a zero at $x_r$. Therefore $x_r$ is a boundary point of $U(t-r)$. These points are distinct for distinct $r$. Each labelled arc has at most two boundary points, so infinitely many distinct labels occur. This proves countable infinitude.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:fields}]
+Choose a transcendence basis $t_1,\ldots,t_d$ for $K/\Q$, with $d\geq1$, and put $F=\Q(t_2,\ldots,t_d)$, taking $F=\Q$ when $d=1$. Then $F$ is countable and $K/F$ is a finitely generated extension of transcendence degree one. It has a nonsingular projective integral curve model over $F$, which is smooth because $F$ has characteristic zero; see \cite[Theorem~53.2.6 and Lemma~53.2.8]{Stacks}. Identify its function field with $K$.
+
+The given embedding $K\subset\R$ defines a morphism $\operatorname{Spec}\R\to\operatorname{Spec}K\to C$, and hence a real point $p$ generic over $F$. Evaluation at this point is the original embedding of $K$, so the order in Proposition~\ref{prop:curve} is the prescribed order. That proposition gives the required partition of $K_{>0}$.
+\end{proof}
+
+\section{Scope and further questions}
+The construction proves countable infinitude directly; it does not arise by repeatedly splitting one of the finite derivative-sign partitions. Indeed, its whole-line class can contain elements of opposite derivative signs. This explains why it places no constraint on the finite-class classification problem.
+
+The endpoint method is stable under passage to smooth projective models and hence permits finite algebraic extensions of a rational function field. It does not, by itself, provide compatible partitions along an infinite algebraic tower. Determining whether every countable transcendental subfield of $\R$ admits a countably infinite invariant partition is a further question. Nor do we claim that the endpoint partitions classify all countable invariant partitions. The result proved here is the existence statement and its extension to finitely generated real fields.
+
+\Needspace{5\baselineskip}
+\paragraph{Preparation note.}
+This manuscript was prepared with OpenAI Codex assistance in problem selection, proof development, source comparison, and writing. The accompanying repository records internal checks. No independent human review or journal acceptance is claimed.
+
+\begin{thebibliography}{9}
+\bibitem{KST}
+G. Kiss, G. Somlai, and T. Terpai,
+\emph{Decompositions of the positive real numbers into disjoint sets closed under addition and multiplication},
+Journal of Algebra \textbf{664} (2025), 511--533.
+\href{https://doi.org/10.1016/j.jalgebra.2024.10.044}{doi:10.1016/j.jalgebra.2024.10.044}.
+\bibitem{Stacks}
+The Stacks Project Authors,
+\emph{The Stacks Project}, Section 53.2, Curves and function fields,
+Theorem 53.2.6 (Tag 0BY1) and Lemma 53.2.8.
+\url{https://stacks.math.columbia.edu/tag/0BXX}.
+Accessed September 8, 2026.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,62 @@
+{
+  "paper": "P15-countable-semiring-partitions",
+  "author": "Henry Zweiman",
+  "pages": 5,
+  "status": "complete internally checked proposed solution; no independent human review",
+  "literature_target": "Kiss-Somlai-Terpai, Journal of Algebra 664 (2025), Section 7, countable-decomposition question",
+  "finite_partition_conjecture_solved": false,
+  "visual_review": "All five pages inspected; final contact sheet and relocated preparation paragraph rechecked. No clipped text, broken mathematics, or overlapping elements found.",
+  "markdown_conversion": "complete; semantic roundtrip equal; 188 source math expressions verified",
+  "math_syntax": "193 expressions; zero errors",
+  "exact_checks": {
+    "functions": 180,
+    "pairs": 275,
+    "operation_certificates": 550
+  },
+  "files": {
+    "manuscript.tex": {
+      "bytes": 15378,
+      "sha256": "f87c4bb468c784aa4d6108efb2fd4e6bca1ec423008763e3e8eff85370ab45da"
+    },
+    "manuscript.md": {
+      "bytes": 15872,
+      "sha256": "c2faa19b19f6934c7af317f16e724adb9bb86ce735702a043545da7c8a9715f5"
+    },
+    "manuscript.pdf": {
+      "bytes": 71554,
+      "sha256": "f14db9a8c967f27d43513b5b6e9995ab738163a0ff786a759555cfb5b394639c"
+    },
+    "README.md": {
+      "bytes": 1899,
+      "sha256": "8c86583c1ec0401641b5933696227b6bc4294192dbca4964019a6987bb514a0f"
+    },
+    "ASSESSMENT.md": {
+      "bytes": 2923,
+      "sha256": "2aebce030ae42739f3d51a966eade677e9f35aa33cd14a79af074726c926b46d"
+    },
+    "REVIEW.md": {
+      "bytes": 4747,
+      "sha256": "06b6c9332e17266495305b66f321115453dd80dfe1ccccb833e92b5350224504"
+    },
+    "check.py": {
+      "bytes": 3023,
+      "sha256": "19162578bdbf0e57df119ff823746decca5cf85958f6b143a165f592677b63ec"
+    },
+    "check-results.json": {
+      "bytes": 499,
+      "sha256": "85125eaa97184738d07f0cf799e157116040c2c8a4702e37419d856b1802cd2a"
+    },
+    "markdown-conversion.json": {
+      "bytes": 2449,
+      "sha256": "463d928166299626efa9a4db5d30969262ecd563c5be7ae8381a694277d23547"
+    },
+    "conversion-manifest.json": {
+      "bytes": 3230,
+      "sha256": "c51557d98ef7ccdae6873ab3b1ac03d19bc8426fdb1cc6ae6180f9f5f188c7ed"
+    },
+    "markdown-math-check.json": {
+      "bytes": 446,
+      "sha256": "b9b3868c3feff8ee8f330a53b1b989c37d2fbc88bb53ef69712be59baad90764"
+    }
+  }
+}

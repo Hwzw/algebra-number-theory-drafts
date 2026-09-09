@@ -1,0 +1,118 @@
+{
+  "converter": "tools/convert_manuscripts.py",
+  "converter_sha256": "eded03caa2764d4aa05bc15598e9a1b89fb1961dcf6051082116fa9676751097",
+  "pandoc_version": "pandoc 3.9.0.2",
+  "numbering_source": "Tectonic AUX-only compilation in temporary directories",
+  "paper_count": 1,
+  "papers": [
+    {
+      "paper": "P15-countable-semiring-partitions",
+      "environments": {
+        "theorem": 2,
+        "lemma": 1,
+        "proof": 5,
+        "corollary": 1,
+        "remark": 1,
+        "proposition": 2
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1",
+          "id": "theorem-1",
+          "source_label": "thm:main"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "2",
+          "id": "theorem-2",
+          "source_label": "thm:fields"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "3",
+          "id": "lemma-1",
+          "source_label": "lem:left"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "4",
+          "id": "corollary-1",
+          "source_label": "cor:left"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "5",
+          "id": "remark-1",
+          "source_label": "rem:types"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 1,
+          "number": "6",
+          "id": "proposition-1",
+          "source_label": "prop:both"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 2,
+          "number": "7",
+          "id": "proposition-2",
+          "source_label": "prop:curve"
+        }
+      ],
+      "references": 6,
+      "citations": 3,
+      "cited_keys": [
+        "KST",
+        "Stacks"
+      ],
+      "bibliography_keys": [
+        "KST",
+        "Stacks"
+      ],
+      "equation_labels": [
+        "eq:leftlabel"
+      ],
+      "label_numbers": {
+        "thm:main": "1",
+        "thm:fields": "2",
+        "eq:leftlabel": "1",
+        "lem:left": "3",
+        "cor:left": "4",
+        "rem:types": "5",
+        "prop:both": "6",
+        "prop:curve": "7"
+      },
+      "bibliography_numbers": {
+        "KST": "1",
+        "Stacks": "2"
+      },
+      "tables": [],
+      "source_tex_sha256": "f87c4bb468c784aa4d6108efb2fd4e6bca1ec423008763e3e8eff85370ab45da",
+      "source_pdf_sha256": "f14db9a8c967f27d43513b5b6e9995ab738163a0ff786a759555cfb5b394639c",
+      "markdown_sha256": "c2faa19b19f6934c7af317f16e724adb9bb86ce735702a043545da7c8a9715f5",
+      "markdown_bytes": 15872,
+      "source_math_expressions_verified": 188,
+      "markdown_math_expressions": 193,
+      "custom_macros_expanded": [
+        "Q",
+        "R",
+        "ord"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 34,
+      "semantic_roundtrip_sha256": "b37375c5529f444a5801301bde251449d4ef2ee50041bc99b59074d84815a778",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 22,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    }
+  ]
+}
