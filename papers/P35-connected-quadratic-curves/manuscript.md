@@ -1,0 +1,318 @@
+# Rational points on connected curves cut out by quadrics
+
+September 9, 2026
+
+## Abstract
+
+Let $`C`$ be a reduced, geometrically connected projective curve over $`\mathbb F_q`$, set-theoretically defined by quadrics. We prove that $`\#C(\mathbb F_q)\le Dq+1`$ when $`q\ge3`$ and $`D=\deg C\le q+5`$, with no restriction on the ambient dimension. Consequently, every scheme-theoretic complete intersection of three quadrics in $`\mathbb P^4`$ has at most $`8q+1`$ rational points for $`q\ge3`$, and this bound is attained. Reducible and nonreduced intersections are included. The proof combines the known bound for curves without rational line components with the geometry of the components of degrees two, three, and four. A rational conic forces rational attachment points for the line components, which resolves the case where a direct sum of component bounds is insufficient.
+
+## 1. Introduction
+
+For a projective scheme $`X`$ over $`\mathbb F_q`$, write $`N_q(X)=\#X(\mathbb F_q)`$. Bounds in terms of dimension and degree apply broadly, but the equations defining $`X`$ can impose additional restrictions. For a projective complete intersection of $`r`$ hypersurfaces of degree $`d`$ in $`\mathbb P^m`$, of dimension $`k=m-r\ge1`$, a natural proposed bound is
+
+<a id="label-eq-conjectural"></a>
+
+```math
+\tag{1}
+ N_q(X)\le d^r q^k+\pi_{k-1}(q),
+ \qquad \pi_j(q)=1+q+\cdots+q^j.
+```
+
+Lachaud and Rolland construct complete intersections attaining this value [\[4\]](#ref-LR); Couvreur discusses the corresponding upper-bound question [\[2, Section 5.3\]](#ref-Couvreur). Lin places it within a dimension-constrained largest-intersection conjecture and proves the codimension-two case [\[5, Conjecture 1.5 and Theorem 1.8\]](#ref-Lin).
+
+We establish the quadratic curve case in codimension three. Our main result is a statement about connected quadratic base loci, not limited to complete intersections. A curve means a projective reduced scheme of pure dimension one unless a nonreduced scheme is explicitly allowed. To be *set-theoretically defined by quadrics over $`\mathbb F_q`$* means that there are homogeneous quadratic polynomials over $`\mathbb F_q`$ whose common zero set over $`\overline{\mathbb F}_q`$ is precisely the geometric support of the curve. Equality merely of sets of rational points is not sufficient.
+
+<a id="theorem-1"></a>
+
+**Theorem 1.1.**
+
+<a id="label-thm-main"></a>
+
+Let $`q\ge3`$, and let $`C\subseteq\mathbb P^n`$ be a reduced, geometrically connected curve over $`\mathbb F_q`$, set-theoretically defined by quadrics over $`\mathbb F_q`$. If $`D=\deg C\le q+5`$, then
+
+<a id="label-eq-main"></a>
+
+```math
+\tag{2}
+ N_q(C)\le Dq+1.
+```
+
+<!-- end theorem-1 -->
+
+<a id="corollary-1"></a>
+
+**Corollary 1.2.**
+
+<a id="label-cor-ci"></a>
+
+Let $`q\ge3`$. If $`X\subseteq\mathbb P^4`$ is the scheme-theoretic complete intersection of three quadrics over $`\mathbb F_q`$, then
+
+<a id="label-eq-ci"></a>
+
+```math
+\tag{3}
+ N_q(X)\le8q+1.
+```
+
+The bound is sharp for every such $`q`$. No smoothness, reducedness, or irreducibility assumption is required.
+
+<!-- end corollary-1 -->
+
+In Lin’s notation, Corollary [1.2](#label-cor-ci) gives the case $`(d,m,k,r)=(2,4,1,3)`$ of Conjecture 1.5. It does not establish that conjecture in arbitrary degree, codimension, or dimension. The threshold $`D\le q+5`$ in Theorem [1.1](#label-thm-main) is sufficient; its optimality is not asserted.
+
+The general degree bound for a projective curve is $`D(q+1)`$; compare [\[2\]](#ref-Couvreur). If no rational line component occurs, Homma’s bound is stronger than [(2)](#label-eq-main), apart from one explicitly known plane quartic [\[3\]](#ref-Homma). Thus the issue is to control mixtures of rational lines and nonlinear components. The quadratic equations exclude plane components of degree greater than two and force rational attachments to a conic. Together with small-degree curve bounds, these facts remove the excess contributed by the rational lines.
+
+## 2. Geometric and point-counting preliminaries
+
+All linear spans in this section are geometric spans. The span of an $`\mathbb F_q`$-defined curve descends to $`\mathbb F_q`$, since its space of linear equations is Frobenius invariant. Over the perfect field $`\mathbb F_q`$, a reduced curve is geometrically reduced. Degrees therefore add over geometric components without multiplicities.
+
+<a id="lemma-1"></a>
+
+**Lemma 2.1.**
+
+<a id="label-lem-plane"></a>
+
+Let $`C`$ satisfy the quadratic base-locus hypothesis of Theorem [1.1](#label-thm-main). No $`\mathbb F_q`$-irreducible component of $`C`$ is a plane curve of degree greater than two. If an absolutely irreducible conic $`E`$ is a component, no line component of $`C`$ lies in its plane.
+
+<!-- end lemma-1 -->
+
+<a id="proof-1"></a>
+
+**Proof.**
+
+Let $`E`$ be an $`\mathbb F_q`$-irreducible component spanning a rational plane $`\Pi`$. Its homogeneous ideal in $`\Pi`$ is generated by an irreducible equation of degree $`\deg E`$. If this degree exceeds two, each defining quadric of $`C`$ restricts to zero on $`\Pi`$. Their geometric common zero set would contain $`\Pi`$, contrary to the pure dimension of $`C`$.
+
+If $`E`$ is an absolutely irreducible conic, some defining quadric restricts nontrivially to $`\Pi`$, for the same reason. Its restriction is a nonzero scalar multiple of the equation of $`E`$. A line in $`\Pi`$ cannot be contained in its zero set, proving the second assertion. $`\square`$
+
+<!-- end proof-1 -->
+
+We use the following precise version of the known line-free curve bound [\[3, Corollary 1.2\]](#ref-Homma). Here and below, a rational line is a line defined over $`\mathbb F_q`$.
+
+<a id="proposition-1"></a>
+
+**Proposition 2.2 (Homma).**
+
+<a id="label-prop-homma"></a>
+
+Let $`Y`$ be a curve of degree $`b`$ over $`\mathbb F_q`$ with no rational line components. Then
+
+<a id="label-eq-homma"></a>
+
+```math
+\tag{4}
+ N_q(Y)\le(b-1)q+1,
+```
+
+unless $`q=b=4`$ and $`Y`$ is the exceptional plane quartic, up to projective equivalence over $`\mathbb F_4`$. The curve $`Y`$ need not be irreducible or connected.
+
+<!-- end proposition-1 -->
+
+The exception cannot occur as the nonlinear part of a curve in Theorem [1.1](#label-thm-main), by Lemma [2.1](#label-lem-plane). We also recall why the very small degrees have stronger bounds.
+
+<a id="lemma-2"></a>
+
+**Lemma 2.3.**
+
+<a id="label-lem-minimal"></a>
+
+An absolutely irreducible nondegenerate curve of degree $`e`$ in $`\mathbb P^s`$ has $`s\le e`$. If $`s=e`$, it is a smooth rational normal curve. Over $`\mathbb F_q`$ such a curve has $`q+1`$ rational points.
+
+<!-- end lemma-2 -->
+
+<a id="proof-2"></a>
+
+**Proof.**
+
+Work first over an algebraic closure. On the smooth normalization, the pullback $`M`$ of $`\mathcal O(1)`$ has degree $`e`$ and at least $`s+1`$ independent sections. A line bundle of degree $`e\ge0`$ has at most $`e+1`$ independent sections: evaluation at $`e+1`$ distinct points is injective. Hence $`s\le e`$.
+
+If $`s=e`$, subtract $`e-1`$ distinct points from $`M`$. The resulting degree-one line bundle has at least two sections. It has no base point, since a degree-zero line bundle cannot have two independent sections. It gives a morphism of degree one to $`\mathbb P^1`$, so the normalization is $`\mathbb P^1`$. The original $`e+1`$ coordinate sections form the complete linear series of $`\mathcal O_{\mathbb P^1}(e)`$, which is an embedding. The image is therefore a smooth rational normal curve. Over a finite field, a smooth geometrically rational projective curve has $`q+1`$ rational points. $`\square`$
+
+<!-- end proof-2 -->
+
+For completeness we give the degree-four space-curve estimate directly. This is also a special case of the space-curve bound in [\[1, Theorem 3.11\]](#ref-BM); that general theorem is not needed here.
+
+<a id="lemma-3"></a>
+
+**Lemma 2.4.**
+
+<a id="label-lem-quartic"></a>
+
+Let $`q\ge3`$, and let $`E\subseteq\mathbb P^3`$ be an absolutely irreducible nondegenerate curve of degree four over $`\mathbb F_q`$. Then $`N_q(E)\le2q+1`$.
+
+<!-- end lemma-3 -->
+
+<a id="proof-3"></a>
+
+**Proof.**
+
+If $`E(\mathbb F_q)`$ is empty there is nothing to prove. Choose $`P\in E(\mathbb F_q)`$ and project from $`P`$ to a rational plane. Let $`\Gamma`$ be the image curve, $`e=\deg\Gamma`$, and $`\delta`$ the degree of the induced extension of geometric function fields. Nondegeneracy gives $`e\ge2`$. Intersecting with a general plane through $`P`$ gives
+
+<a id="label-eq-projection"></a>
+
+```math
+\tag{5}
+ \delta e\le4-\operatorname{mult}_P(E).
+```
+
+Indeed, the moving intersection away from $`P`$ has degree $`\delta e`$, and the contribution at $`P`$ is at least its multiplicity. Since the right side is at most three, $`\delta=1`$.
+
+Suppose first that $`P`$ is singular. Then $`e=2`$, and the normalization $`\widetilde E`$ maps isomorphically to the smooth conic $`\Gamma`$. Every rational point of $`E`$ other than $`P`$ lifts to a unique rational point of $`\widetilde E`$: projection is defined there, and the map $`\widetilde E\to\Gamma`$ is an isomorphism. Thus $`N_q(E)\le q+2\le2q+1`$.
+
+Suppose now that $`P`$ is smooth. Projection extends at $`P`$, by canceling the common local parameter from its coordinate functions. This gives a finite birational morphism $`\phi:E\to\Gamma`$, with $`e\le3`$. The injection $`\mathcal O_\Gamma\to\phi_*\mathcal O_E`$ has a cokernel of finite length. Taking Euler characteristics gives
+```math
+p_a(E)\le p_a(\Gamma)\le1.
+```
+Let $`g`$ be the genus of $`\widetilde E`$. If $`g=1`$, then $`\Gamma`$ is a smooth plane cubic and the finite birational morphism $`\phi`$ is an isomorphism. Proposition [2.2](#label-prop-homma), applied to this cubic, gives $`N_q(E)\le2q+1`$.
+
+If $`g=0`$, normalization has total delta invariant $`p_a(E)-g\le1`$. For any integral curve,
+```math
+N_q(E)\le N_q(\widetilde E)+\sum_{Q\in E_{\overline{\mathbb F}_q}}\delta_Q(E).
+```
+To see this, assign distinct rational preimages to rational points that have one. Every remaining rational point is singular and has positive local delta invariant. Here $`N_q(\widetilde E)=q+1`$, so $`N_q(E)\le q+2\le2q+1`$, as required. $`\square`$
+
+<!-- end proof-3 -->
+
+<a id="lemma-4"></a>
+
+**Lemma 2.5.**
+
+<a id="label-lem-small"></a>
+
+Let $`Y`$ be the union of the components other than the rational lines in a curve satisfying the quadratic base-locus hypothesis. Put $`b=\deg Y`$. For $`q\ge3`$ the following bounds hold:
+```math
+\begin{array}{c|c}
+b&N_q(Y)\text{ is at most}\\ \hline
+2&q+1\\
+3&q+1\\
+4&2q+2.
+\end{array}
+```
+If $`b=2`$ and $`Y`$ is not absolutely irreducible, the stronger bound $`N_q(Y)\le1`$ holds.
+
+<!-- end lemma-4 -->
+
+<a id="proof-4"></a>
+
+**Proof.**
+
+An $`\mathbb F_q`$-irreducible curve that is not absolutely irreducible splits into a transitive Frobenius orbit of geometric components of equal degree. A rational point belongs to every component of the orbit.
+
+For $`b=2`$, the curve is an absolutely irreducible conic or a conjugate pair of lines. The conic has $`q+1`$ points, and distinct conjugate lines have at most one common point.
+
+For $`b=3`$, there is only one $`\mathbb F_q`$-irreducible component, since no component can have degree one over $`\mathbb F_q`$. A geometrically irreducible component cannot be planar by Lemma [2.1](#label-lem-plane). Lemma [2.3](#label-lem-minimal) makes it a twisted cubic in its rational three-dimensional span. Otherwise it is three conjugate lines, whose common intersection contains at most one point.
+
+For $`b=4`$, two $`\mathbb F_q`$-irreducible degree-two components contribute at most $`2q+2`$ points in total. In the remaining case $`Y`$ is $`\mathbb F_q`$-irreducible. If absolutely irreducible, its span has dimension three or four. Lemma [2.4](#label-lem-quartic) gives $`2q+1`$ in dimension three; Lemma [2.3](#label-lem-minimal) gives $`q+1`$ in dimension four. If not absolutely irreducible, it is four conjugate lines or two conjugate conics. The former have at most one common point. The latter have at most four common points: in the same plane this is Bézout’s theorem, and in distinct planes the intersection lies on a line or a point, giving an even smaller bound. Since $`4\le2q+1`$, all cases satisfy the stated estimate. $`\square`$
+
+<!-- end proof-4 -->
+
+## 3. Proof of the connected-curve bound
+
+<a id="proof-5"></a>
+
+**Proof of Theorem [1.1](#label-thm-main).**
+
+Write $`C=L\cup Y`$, where $`L`$ is the union of the $`\ell`$ rational line components and $`Y`$ is the union of the other $`\mathbb F_q`$-irreducible components. Put $`b=\deg Y`$, so $`D=\ell+b`$. The value $`b=1`$ is impossible.
+
+If $`b=0`$, geometric connectedness says that the intersection graph of the rational lines is connected. Two intersecting rational lines meet at a rational point. Order the lines along a spanning tree of this graph. The first contributes $`q+1`$ points and each subsequent line contributes at most $`q`$ new points. Hence $`N_q(C)\le Dq+1`$.
+
+Suppose $`b\ge5`$. Proposition [2.2](#label-prop-homma) and Lemma [2.1](#label-lem-plane) give
+```math
+N_q(C)\le\ell(q+1)+(b-1)q+1
+             =(D-1)q+1+\ell.
+```
+Since $`\ell=D-b\le q`$, the right side is at most $`Dq+1`$.
+
+Suppose $`b=2`$. If $`Y`$ is not absolutely irreducible, Lemma [2.5](#label-lem-small) gives
+```math
+N_q(C)\le(D-2)(q+1)+1\le Dq+1,
+```
+since $`D-2\le q+3\le2q`$ for $`q\ge3`$.
+
+If $`Y`$ is an absolutely irreducible conic, let $`\Pi`$ be its rational plane. No line of $`L`$ lies in $`\Pi`$, by Lemma [2.1](#label-lem-plane). Every geometrically connected component of $`L`$ meets $`Y`$, since $`C`$ is geometrically connected. In each such component choose a line meeting $`Y`$. Its intersection with $`\Pi`$ is a single rational point: both linear spaces are rational, and the line is not contained in $`\Pi`$. This point belongs to $`Y`$. Starting from $`Y`$ and adding each component of $`L`$ along a spanning tree rooted at a line with such an attachment, every line contributes at most $`q`$ new rational points. Thus
+```math
+N_q(C)\le N_q(Y)+\ell q=(D-1)q+1\le Dq+1.
+```
+This includes $`L=\varnothing`$.
+
+Finally, if $`b=3`$, Lemma [2.5](#label-lem-small) gives
+```math
+N_q(C)\le(D-3)(q+1)+(q+1)=(D-2)(q+1).
+```
+If $`b=4`$, the same lemma gives the identical bound,
+```math
+N_q(C)\le(D-4)(q+1)+2q+2=(D-2)(q+1).
+```
+In both cases $`(D-2)(q+1)\le Dq+1`$ is equivalent to $`D\le2q+3`$. This follows from $`D\le q+5`$ and $`q\ge3`$. The cases exhaust all possibilities. $`\square`$
+
+<!-- end proof-5 -->
+
+## 4. Complete intersections and sharpness
+
+<a id="proof-6"></a>
+
+**Proof of Corollary [1.2](#label-cor-ci).**
+
+Let $`X`$ be the stated complete intersection, and put $`C=X_{\mathrm{red}}`$. Its homogeneous coordinate ring is Cohen–Macaulay and equidimensional, since its equations form a regular sequence. Thus $`C`$ is a pure curve. The Hilbert series of $`X`$ is
+```math
+\frac{(1-t^2)^3}{(1-t)^5}=\frac{(1+t)^3}{(1-t)^2},
+```
+so $`\deg X=8`$ and $`D=\deg C\le8`$.
+
+We include a connectedness argument that also applies to nonreduced $`X`$. Work over an algebraic closure. The Koszul resolution of its ideal sheaf is
+```math
+0\longrightarrow\mathcal O(-6)\longrightarrow\mathcal O(-4)^3
+  \longrightarrow\mathcal O(-2)^3\longrightarrow\mathcal I_X\longrightarrow0
+```
+on $`\mathbb P^4`$. Splitting it into two short exact sequences and using $`H^i(\mathbb P^4,\mathcal O(a))=0`$ for $`0<i<4`$ gives $`H^1(\mathcal I_X)=0`$. The sequence $`0\to\mathcal I_X\to\mathcal O\to\mathcal O_X\to0`$ now gives $`H^0(X,\mathcal O_X)=\overline{\mathbb F}_q`$. A disconnected scheme would give a nontrivial idempotent in this ring. Hence $`X`$, and therefore its reduction, is geometrically connected.
+
+The original three quadrics define $`C`$ set-theoretically. Since $`D\le8\le q+5`$, Theorem [1.1](#label-thm-main) yields
+```math
+N_q(X)=N_q(C)\le Dq+1\le8q+1.
+```
+
+For sharpness use coordinates $`[x_0:x_1:x_2:x_3:x_4]`$ and the equations
+
+<a id="label-eq-grid"></a>
+
+```math
+\tag{6}
+ x_i(x_i-x_0)=0\qquad(1\le i\le3).
+```
+
+These form a regular sequence: successively each equation is monic in a new variable. In the chart $`x_0=1`$, the coordinates $`x_1,x_2,x_3`$ independently lie in $`\{0,1\}`$ and $`x_4`$ is arbitrary, giving $`8q`$ points. At $`x_0=0`$ there is exactly the point $`[0:0:0:0:1]`$. Thus the intersection has $`8q+1`$ rational points. $`\square`$
+
+<!-- end proof-6 -->
+
+The construction [(6)](#label-eq-grid) is a cone over the binary affine grid, consisting of eight rational lines through one vertex. It is a special case of the known tubular-set constructions of Lachaud and Rolland [\[4\]](#ref-LR); no novelty is claimed for the construction. The new assertion here is the matching upper bound under the stated hypotheses.
+
+## 5. Scope and reproducible diagnostics
+
+Geometric connectedness is used only for the all-line case and for attachment to a conic. In the other cases, the estimates use the degree budget and the restrictions imposed by quadratic equations. The proof does not require a classification of nets of quadrics, smooth genus-five curves, or singular complete intersections.
+
+The degree threshold leaves a concrete further question: which additional restrictions on line components of a quadratic base locus allow $`D\le q+5`$ to be enlarged? More generally, the dimension-positive complete-intersection bound [(1)](#label-eq-conjectural) beyond this specialization remains a separate problem. No assertion about those cases follows just from the connectedness of the support.
+
+The accompanying standard-library Python script enumerates projective points over the fields of sizes $`3,4,5,7,8,9,11`$. Across these fields it evaluates $`32\,211`$ points of $`\mathbb P^4`$, checking the count in [(6)](#label-eq-grid), an invertible coordinate transform of that example, and the nonreduced intersection $`x_1^2=x_2^2=x_3^2=0`$, whose support is a line. It also checks $`632\,626`$ instances of the component inequalities for integers $`3\le q\le150`$ and $`1\le D\le q+5`$.
+
+As an additional diagnostic, the script examines a connected curve outside the hypotheses: a twisted cubic together with all rational secant lines through pairs of conjugate nonrational quadratic points. This emphasizes why connectedness alone is not the argument. None of these finite computations proves Theorem [1.1](#label-thm-main); its proof is the preceding geometric argument.
+
+## References
+
+<a id="ref-BM"></a>
+
+**\[1\]** P. Beelen and M. Montanucci, *A bound for the number of points of space curves over finite fields*, arXiv:2008.05748v1 (2020), <https://arxiv.org/abs/2008.05748v1>.
+
+<a id="ref-Couvreur"></a>
+
+**\[2\]** A. Couvreur, *An upper bound on the number of rational points of arbitrary projective varieties over finite fields*, arXiv:1409.7544v3 (2015), <https://arxiv.org/abs/1409.7544v3>.
+
+<a id="ref-Homma"></a>
+
+**\[3\]** M. Homma, *A bound on the number of points of a curve in projective space over a finite field*, arXiv:1108.4975v1 (2011), <https://arxiv.org/abs/1108.4975v1>.
+
+<a id="ref-LR"></a>
+
+**\[4\]** G. Lachaud and R. Rolland, *On the number of points of algebraic sets over finite fields*, arXiv:1405.3027 (2014), <https://arxiv.org/abs/1405.3027>.
+
+<a id="ref-Lin"></a>
+
+**\[5\]** Y. Lin, *A $`k`$-dimensional version of the largest intersection problem*, arXiv:2608.17771v1 (2026), <https://arxiv.org/abs/2608.17771v1>.

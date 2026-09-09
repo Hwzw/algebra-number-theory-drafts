@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 34 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 35 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## Connected quadratic curves and three-quadric intersections
+
+[**P35: Rational points on connected curves cut out by quadrics**](papers/P35-connected-quadratic-curves/README.md), by **Henry Zweiman**, proposes a bound of Dq+1 for geometrically connected quadratic base-locus curves of degree D <= q+5 over Fq, q >= 3. Its sharp corollary gives 8q+1 for all complete intersections of three quadrics in projective four-space, including reducible and nonreduced intersections. The six-page [PDF](papers/P35-connected-quadratic-curves/manuscript.pdf), [full Markdown](papers/P35-connected-quadratic-curves/manuscript.md), and [LaTeX](papers/P35-connected-quadratic-curves/manuscript.tex) include the complete proof.
+
+The [assessment](papers/P35-connected-quadratic-curves/ASSESSMENT.md) identifies the precise case of Lin's Conjecture 1.5 and credits the known curve bounds and extremal construction. The [internal review](papers/P35-connected-quadratic-curves/REVIEW.md) covers the geometric proof, source dependency repair, and exact diagnostics. The general largest-intersection conjecture remains unresolved. Outside correctness, priority, and significance remain provisional; this is one proposed manuscript.
 
 ## Fixed ordinarization and eventual growth
 

@@ -1,0 +1,74 @@
+{
+  "all_passed": true,
+  "projective_points_evaluated": 32211,
+  "field_and_grid_cases": [
+    {
+      "q": 3,
+      "grid_points": 25,
+      "transformed_grid_points": 25,
+      "nonreduced_line_support_points": 4
+    },
+    {
+      "q": 4,
+      "grid_points": 33,
+      "transformed_grid_points": 33,
+      "nonreduced_line_support_points": 5
+    },
+    {
+      "q": 5,
+      "grid_points": 41,
+      "transformed_grid_points": 41,
+      "nonreduced_line_support_points": 6
+    },
+    {
+      "q": 7,
+      "grid_points": 57,
+      "transformed_grid_points": 57,
+      "nonreduced_line_support_points": 8
+    },
+    {
+      "q": 8,
+      "grid_points": 65,
+      "transformed_grid_points": 65,
+      "nonreduced_line_support_points": 9
+    },
+    {
+      "q": 9,
+      "grid_points": 73,
+      "transformed_grid_points": 73,
+      "nonreduced_line_support_points": 10
+    },
+    {
+      "q": 11,
+      "grid_points": 89,
+      "transformed_grid_points": 89,
+      "nonreduced_line_support_points": 12
+    }
+  ],
+  "component_inequality_cases": 632626,
+  "connectedness_countermodels": [
+    {
+      "q": 7,
+      "lines": 21,
+      "degree": 24,
+      "points": 176,
+      "excess_over_Dq_plus_one": 7
+    },
+    {
+      "q": 11,
+      "lines": 55,
+      "degree": 58,
+      "points": 672,
+      "excess_over_Dq_plus_one": 33
+    },
+    {
+      "q": 13,
+      "lines": 78,
+      "degree": 81,
+      "points": 1106,
+      "excess_over_Dq_plus_one": 52
+    }
+  ],
+  "scope": "Finite diagnostics of examples and case arithmetic; not a proof of the general geometric theorem.",
+  "elapsed_seconds": 0.146
+}

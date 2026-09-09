@@ -1,0 +1,127 @@
+{
+  "environments": {
+    "theorem": 1,
+    "corollary": 1,
+    "lemma": 4,
+    "proof": 6,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:ci"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:plane"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "2.2",
+      "id": "proposition-1",
+      "source_label": "prop:homma"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.3",
+      "id": "lemma-2",
+      "source_label": "lem:minimal"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "2.4",
+      "id": "lemma-3",
+      "source_label": "lem:quartic"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "2.5",
+      "id": "lemma-4",
+      "source_label": "lem:small"
+    }
+  ],
+  "references": 23,
+  "citations": 8,
+  "cited_keys": [
+    "BM",
+    "Couvreur",
+    "Homma",
+    "LR",
+    "Lin"
+  ],
+  "bibliography_keys": [
+    "BM",
+    "Couvreur",
+    "Homma",
+    "LR",
+    "Lin"
+  ],
+  "equation_labels": [
+    "eq:conjectural",
+    "eq:main",
+    "eq:ci",
+    "eq:homma",
+    "eq:projection",
+    "eq:grid"
+  ],
+  "label_numbers": {
+    "eq:conjectural": "1",
+    "thm:main": "1.1",
+    "eq:main": "2",
+    "cor:ci": "1.2",
+    "eq:ci": "3",
+    "lem:plane": "2.1",
+    "prop:homma": "2.2",
+    "eq:homma": "4",
+    "lem:minimal": "2.3",
+    "lem:quartic": "2.4",
+    "eq:projection": "5",
+    "lem:small": "2.5",
+    "eq:grid": "6"
+  },
+  "bibliography_numbers": {
+    "BM": "1",
+    "Couvreur": "2",
+    "Homma": "3",
+    "LR": "4",
+    "Lin": "5"
+  },
+  "tables": [],
+  "source_tex_sha256": "3499ee433005a2cee0ae3c8ad9ca5b1f49b9f2b633d2fd1dbcc08047cb5e4642",
+  "source_pdf_sha256": "06fc11348f4ad7118ce0c4ee854817f830a4183b09f0d25235d1001041eead80",
+  "markdown_sha256": "d279e774378335c0a8d8e534d681133013f84d335561d5a9e16cefda4852d516",
+  "markdown_bytes": 19337,
+  "source_math_expressions_verified": 233,
+  "markdown_math_expressions": 239,
+  "custom_macros_expanded": [
+    "F",
+    "PP",
+    "OO",
+    "Nq"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 44,
+  "semantic_roundtrip_sha256": "f85d13225c07dc8e31e2c5006af9e3247549257662d5885e214f0f501a770b86",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 31,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}
