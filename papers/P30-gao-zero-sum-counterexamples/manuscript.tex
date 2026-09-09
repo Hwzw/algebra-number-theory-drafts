@@ -1,0 +1,190 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\D}{\mathsf D}
+\newcommand{\dd}{\mathsf d}
+\newcommand{\ord}{\operatorname{ord}}
+\title{Counterexamples to Gao's\protect\\zero-sum invariant conjecture}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For every odd integer $n\geq3$, we prove that $\nu(C_2^3\oplus C_{2n})=2n+2=\dd(C_2^3\oplus C_{2n})$. This disproves Gao's conjecture that $\nu(G)=\dd(G)-1$ for every nontrivial finite abelian group. The construction is a zero-sum-free sequence of length $2n+1$ with exactly six omitted nonzero subsequence sums. These sums form the product of the three nonzero elements of an elementary two-group of rank two with two adjacent cyclic residues. Their differences force every coset containing them to contain zero. We also give explicit extremal extensions and show that the index-two refinement and the associated local invariant attain their larger possible values.
+\end{abstract}
+
+\section{The conjecture and the counterexamples}
+
+Let $G$ be a nontrivial finite abelian group, written additively. A sequence over $G$ is a finite multiset of elements, written multiplicatively. Thus $g^k$ denotes $k$ occurrences of $g$. For a sequence $T=g_1\cdots g_\ell$, put
+\[
+ \Sigma(T)=\left\{\sum_{i\in I}g_i:\emptyset\neq I\subseteq[1,\ell]\right\},
+ \qquad \Sigma^*(T)=\Sigma(T)\cup\{0\}.
+\]
+The sequence is zero-sum free if $0\notin\Sigma(T)$. Its set of holes is
+\[
+ R(T)=G\setminus\Sigma^*(T).
+\]
+Write $\dd(G)$ for the greatest length of a zero-sum-free sequence and $\D(G)=\dd(G)+1$ for the Davenport constant.
+
+The invariant $\nu(G)$ is the least integer $\ell\geq0$ such that every zero-sum-free sequence $T$ of length at least $\ell$ satisfies
+\begin{equation}\label{eq:nu}
+ R(T)\subseteq\alpha+H
+ \quad\text{for some }H\subsetneq G\text{ and }\alpha\in G\setminus H.
+\end{equation}
+The exclusion of zero from the coset is part of the definition. Merely putting the holes in a proper subgroup does not establish \eqref{eq:nu}.
+
+Gao conjectured that $\nu(G)=\dd(G)-1$; equivalently, $\D(G)=\nu(G)+2$. The latter formulation appears in Gao and Thangadurai \cite[Definition 3 and Conjecture 4]{GT}. Geroldinger and Yang \cite[Introduction and Section 6]{GY} restate it as an open conjecture. Their recent results include the family $C_2^2\oplus C_{2n}$ and certain groups with four elementary two-group factors. We give counterexamples with three such factors.
+
+\begin{theorem}\label{thm:main}
+Let $n\geq3$ be odd, and let
+\[
+ G=\langle e_1\rangle\oplus\langle e_2\rangle\oplus\langle e_3\rangle
+       \oplus\langle f\rangle,
+ \qquad \ord(e_i)=2,\quad\ord(f)=2n.
+\]
+Set
+\[
+ q=\frac{n+1}{2},\qquad
+ C=\{e_1,e_2,e_3,e_1+e_2+e_3\},\qquad
+ W=\langle e_1+e_2,e_1+e_3\rangle.
+\]
+Then the sequence
+\begin{equation}\label{eq:construction}
+ T_n=f^{2n-3}\prod_{c\in C}(c+qf)
+\end{equation}
+is zero-sum free, has length $\dd(G)-1=2n+1$, and has exactly the six holes
+\begin{equation}\label{eq:holes}
+ R(T_n)=(W\setminus\{0\})+\{(n-1)f,nf\}.
+\end{equation}
+No coset excluding zero contains these holes. Consequently,
+\begin{equation}\label{eq:value}
+ \nu(C_2^3\oplus C_{2n})=\dd(C_2^3\oplus C_{2n})=2n+2.
+\end{equation}
+\end{theorem}
+
+The Davenport formula used here is classical. Baayen \cite[p.~1]{B} proves that every sequence of length $2n+3$ in this group has a nonempty zero-sum subsequence for odd $n$. On the other hand, $e_1e_2e_3f^{2n-1}$ is zero-sum free. Thus $\dd(G)=2n+2$. The same formula is recorded in \cite[Proposition 2.1]{GY}; it is not a new result of this paper.
+
+\section{A coset obstruction and the exact holes}
+
+We start with the obstruction that makes the construction effective.
+
+\begin{lemma}\label{lem:coset}
+Let $u,v$ be distinct nonzero elements of order two in an abelian group, let $f$ be any group element, and let $b\in\mathbb Z$. No coset $\alpha+H$ with $\alpha\notin H$ contains
+\[
+ \{u,v,u+v\}+\{bf,(b+1)f\}.
+\]
+\end{lemma}
+\begin{proof}
+Suppose all displayed elements lie in $\alpha+H$. The difference of $u+(b+1)f$ and $u+bf$ gives $f\in H$. The difference of $u+bf$ and $v+bf$ gives $u-v=u+v\in H$. Therefore $u+v+bf\in H$. This element also lies in $\alpha+H$, forcing $\alpha\in H$, a contradiction.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{thm:main}]
+Put $E=\langle e_1,e_2,e_3\rangle$. The four elements of $C$ form a circuit in $E$: their sum is zero, and no proper nonempty subset has sum zero. Also,
+\begin{equation}\label{eq:fourq}
+ 4q=2n+2\equiv2\pmod{2n}.
+\end{equation}
+Any zero-sum subsequence of $T_n$ must therefore use none or all four of the terms $c+qf$. In the former case it is $f^k$ with $1\leq k\leq2n-3$, and has nonzero sum. In the latter case its sum is $(k+4q)f=(k+2)f$ with $0\leq k\leq2n-3$, again nonzero. Thus $T_n$ is zero-sum free, and its length is $2n+1$.
+
+We determine all its holes, including those that will not be needed to disprove the conjecture. Enumerate $C=\{c_1,c_2,c_3,c_4\}$. The map
+\[
+ \{0,1\}^4\longrightarrow E,\qquad
+ (\epsilon_i)\longmapsto\sum_i\epsilon_i c_i
+\]
+is a surjective homomorphism of elementary two-groups with kernel consisting of the zero vector and the all-one vector. Hence each $w\in E$ is represented by precisely two subsets of $C$, which are complements. Let their sizes be $k$ and $4-k$.
+
+Selecting either subset and between zero and $2n-3$ copies of $f$ shows that the cyclic coordinates of $\Sigma^*(T_n)$ above $w$ are
+\[
+ \bigl(kq+[0,2n-3]\bigr)\ \cup\
+ \bigl((4-k)q+[0,2n-3]\bigr)
+ \quad\text{in }\mathbb Z/(2n)\mathbb Z.
+\]
+Consequently the omitted coordinates above $w$ form the intersection
+\begin{align}
+ &\{kq-2,kq-1\}\cap\{(4-k)q-2,(4-k)q-1\}\notag\\
+ &\hspace{35mm}=\{kq-2,kq-1\}\cap\{-kq,1-kq\},\label{eq:intersection}
+\end{align}
+where \eqref{eq:fourq} was used.
+
+Matching the first element of one pair with the second of the other would require $2kq\equiv1$ or $3\pmod{2n}$, which is impossible. The other two matches occur together, precisely when
+\[
+ 2kq\equiv2\pmod{2n}.
+\]
+Since $\gcd(q,n)=1$ and $2q\equiv1\pmod n$, this is equivalent to $k\equiv2\pmod n$. For odd $n\geq3$ and $0\leq k\leq4$, the only possibility is $k=2$. The sums of pairs from $C$ are exactly
+\[
+ e_1+e_2,\qquad e_1+e_3,\qquad e_2+e_3,
+\]
+each represented by complementary pairs. When $k=2$, the two omitted coordinates in \eqref{eq:intersection} are
+\[
+ 2q-2=n-1,\qquad 2q-1=n.
+\]
+This proves \eqref{eq:holes}. Its six elements are distinct and nonzero.
+
+Apply Lemma \ref{lem:coset} with $u=e_1+e_2$, $v=e_1+e_3$, and $b=n-1$. Thus $T_n$, of length $\dd(G)-1$, violates \eqref{eq:nu}, so $\nu(G)\geq\dd(G)$.
+For completeness, every zero-sum-free sequence $S$ of length $\dd(G)$ has $R(S)=\emptyset$: if $x\in R(S)$, then $(-x)S$ would be zero-sum free of greater length. The empty set satisfies \eqref{eq:nu}, so $\nu(G)\leq\dd(G)$. This proves \eqref{eq:value}.
+\end{proof}
+
+\section{Extremal extensions and the parity of the construction}
+
+Geroldinger and Yang define $\nu_p(G)$ by requiring the subgroup in \eqref{eq:nu} to have index $p$, for a prime divisor $p$ of $|G|$. They also define a local invariant $\nu(S)$ for a maximal zero-sum-free sequence $S$: it is the least threshold for which all subsequences of $S$ beyond that threshold have their holes in a coset excluding zero. Here maximal means that no additional term can be adjoined while retaining zero-sum freeness.
+
+\begin{corollary}\label{cor:local}
+For the group in Theorem \ref{thm:main}, we have $\nu_2(G)=\dd(G)$. Let $u\in W\setminus\{0\}$. Then
+\[
+ S_n=T_n(u+nf)
+\]
+is zero-sum free of length $\dd(G)$ and satisfies $\nu(S_n)=|S_n|$. Moreover,
+\[
+ U_n=T_n(u+nf)(u+(n+1)f)
+\]
+is a minimal zero-sum sequence of length $\D(G)$.
+\end{corollary}
+\begin{proof}
+The inequality $\nu_2(G)\geq\nu(G)=\dd(G)$ follows from the definitions, and the reverse inequality follows from the empty-hole property at length $\dd(G)$. Since $u+nf$ is a hole of $T_n$ and equals its negative, $S_n$ is zero-sum free. It has greatest possible length, hence is maximal and has no holes. Its subsequence $T_n$ violates the coset property, so the local threshold is exactly $|S_n|$.
+
+The sum of $T_n$ is $-f$, by \eqref{eq:fourq}. Therefore the sum of $S_n$ is $u+(n-1)f$, whose negative is $u+(n+1)f$. Adjoining this term gives a zero-sum sequence. A proper zero-sum subsequence either lies in $S_n$, or has a nonempty zero-sum complement in $S_n$; both are impossible. Thus $U_n$ is minimal.
+\end{proof}
+
+The parity restriction in the theorem is intrinsic to this particular sparse construction, rather than an omitted even case.
+
+\begin{proposition}\label{prop:parity}
+Let $n\geq2$, let $G=C_2^3\oplus\langle f\rangle$ with $\ord(f)=2n$, and use the same circuit $C\subseteq C_2^3$. For $t\in\mathbb Z$, the sequence
+\[
+ f^{2n-3}\prod_{c\in C}(c+tf)
+\]
+is zero-sum free if and only if $4t\equiv2\pmod{2n}$. Such a $t$ exists if and only if $n$ is odd.
+\end{proposition}
+\begin{proof}
+A zero-sum subsequence must use either none or all four circuit terms. The former possibility is excluded by the number of copies of $f$. In the latter case the available cyclic sums are $4t+[0,2n-3]$. This interval modulo $2n$ excludes zero exactly when $4t$ is congruent to one or two. The first possibility is impossible by parity, giving the stated criterion. The congruence is soluble exactly when $\gcd(4,2n)$ divides two, or equivalently when $n$ is odd.
+\end{proof}
+
+\section{The smallest example and remaining questions}
+
+For $n=3$, the counterexample lies in a group of order $48$ and has the particularly simple form
+\[
+ T_3=f^3(e_1+2f)(e_2+2f)(e_3+2f)(e_1+e_2+e_3+2f).
+\]
+Its $127$ nonempty subsequences have $41$ distinct sums, all nonzero. The six holes are
+\[
+ \{e_1+e_2,e_1+e_3,e_2+e_3\}+\{2f,3f\}.
+\]
+They lie in the proper subgroup $W\oplus\langle f\rangle$, but in no coset that excludes zero. This distinction explains why containment in a proper subgroup would not suffice in the conjecture.
+
+The proof above is uniform in $n$ and does not depend on finite computation. The accompanying verification checks the exact hole set, the difference-generated subgroup obstruction, the extremal extension, and the longest atom for every odd $n$ from three through $101$. It also separately enumerates all nonempty subsequences in the smallest example.
+
+The theorem disproves the universal conjecture, but it does not classify all finite abelian groups with $\nu(G)=\dd(G)$. In particular, Proposition \ref{prop:parity} only rules out this construction for even $n$; it does not determine $\nu(C_2^3\oplus C_{2n})$ in all those cases. A revised classification must distinguish the established positive families from the rank-four family exhibited here. The explicit six-hole configuration provides a local obstruction that such a classification must accommodate.
+
+\begin{thebibliography}{9}
+\bibitem{B} P. C. Baayen, \emph{$(C_2\oplus C_2\oplus C_2\oplus C_{2n})!$}, Report ZW 1969-006, Stichting Mathematisch Centrum, Amsterdam, 1969. \href{https://ir.cwi.nl/pub/7264}{Institutional full text}.
+\bibitem{G} W. Gao, \emph{On Davenport's constant of finite abelian groups with rank three}, Discrete Mathematics \textbf{222} (2000), 111--124. \href{https://doi.org/10.1016/S0012-365X(00)00010-8}{doi:10.1016/S0012-365X(00)00010-8}.
+\bibitem{GT} W. D. Gao and R. Thangadurai, \emph{Davenport constant and non-Abelian version of Erd\H{o}s--Ginzburg--Ziv theorem}, in The Riemann Zeta Function and Related Themes, Ramanujan Mathematical Society Lecture Notes Series, vol. 2, 2006, pp. 57--64. \href{https://www.hri.res.in/~thanga/papers/thanga.pdf}{Author-hosted version}.
+\bibitem{GY} A. Geroldinger and W. Yang, \emph{On a classical zero-sum invariant}, \href{https://arxiv.org/abs/2608.19090v1}{arXiv:2608.19090v1}, August 19, 2026.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,99 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 1,
+    "proof": 4,
+    "corollary": 1,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:coset"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3.1",
+      "id": "corollary-1",
+      "source_label": "cor:local"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3.2",
+      "id": "proposition-1",
+      "source_label": "prop:parity"
+    }
+  ],
+  "references": 13,
+  "citations": 4,
+  "cited_keys": [
+    "B",
+    "GT",
+    "GY"
+  ],
+  "bibliography_keys": [
+    "B",
+    "G",
+    "GT",
+    "GY"
+  ],
+  "equation_labels": [
+    "eq:nu",
+    "eq:construction",
+    "eq:holes",
+    "eq:value",
+    "eq:fourq",
+    "eq:intersection"
+  ],
+  "label_numbers": {
+    "eq:nu": "1",
+    "thm:main": "1.1",
+    "eq:construction": "2",
+    "eq:holes": "3",
+    "eq:value": "4",
+    "lem:coset": "2.1",
+    "eq:fourq": "5",
+    "eq:intersection": "6",
+    "cor:local": "3.1",
+    "prop:parity": "3.2"
+  },
+  "bibliography_numbers": {
+    "B": "1",
+    "G": "2",
+    "GT": "3",
+    "GY": "4"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "08e43068f5cff2b2c400bafbaa53a900ab672b93c998441e04ed2bac164f5fbd",
+  "source_pdf_sha256": "c28f97ce08a2fd1f17e054cb1bea77e7fd40bfad143b4706db3cfccac46d2b4e",
+  "markdown_sha256": "7c27a112c595ddcb1699238c465b23aa9bd193fef6bfac4a26daf3825e9d984b",
+  "markdown_bytes": 12647,
+  "source_math_expressions_verified": 158,
+  "markdown_math_expressions": 162,
+  "custom_macros_expanded": [
+    "D",
+    "dd",
+    "ord"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 30,
+  "semantic_roundtrip_sha256": "20441bbae7dcdba62efbb443606cd1f54503c2211a03b4561c939616f1205ece",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 22,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

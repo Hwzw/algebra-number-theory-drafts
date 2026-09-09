@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 29 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 30 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New counterexamples to Gao's zero-sum invariant conjecture
+
+[**P30: Counterexamples to Gao's zero-sum invariant conjecture**](papers/P30-gao-zero-sum-counterexamples/README.md), by **Henry Zweiman**, proposes an infinite counterexample family to the conjecture that nu(G)=d(G)-1. The four-page [PDF](papers/P30-gao-zero-sum-counterexamples/manuscript.pdf), [complete Markdown](papers/P30-gao-zero-sum-counterexamples/manuscript.md), and [LaTeX](papers/P30-gao-zero-sum-counterexamples/manuscript.tex) give the exact value nu(C2^3+C2n)=2n+2 for every odd n >= 3. A uniform six-hole configuration excludes every coset that does not contain zero.
+
+The [assessment](papers/P30-gao-zero-sum-counterexamples/ASSESSMENT.md) checks the definition and conjecture in two primary sources, including the August 2026 Geroldinger--Yang paper. The [internal review](papers/P30-gao-zero-sum-counterexamples/REVIEW.md) accompanies 50 exact family checks and a separate base-case enumeration. The Davenport formula is classical and credited; even n and the full classification remain outside scope. This is one internally checked proposed manuscript, with outside correctness and historical priority still provisional.
 
 ## New exponent-eight maximal-elasticity theorem
 

@@ -1,0 +1,11 @@
+{
+  "file": "continuation/papers/P30-gao-zero-sum-counterexamples/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "7c27a112c595ddcb1699238c465b23aa9bd193fef6bfac4a26daf3825e9d984b",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 162,
+  "errors": [],
+  "local_svg_preview_created": false,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}

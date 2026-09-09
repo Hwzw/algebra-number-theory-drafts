@@ -1,0 +1,54 @@
+{
+  "paper_id": "P30",
+  "title": "Counterexamples to Gao's zero-sum invariant conjecture",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 4,
+  "status": "Internally checked proposed infinite counterexample family to Gao nu-invariant conjecture; outside correctness, historical priority and significance provisional",
+  "files": {
+    "README.md": {
+      "sha256": "4871a3898c9ef94eab9e7692e9ec06ea0a5b4d26f2e64ad11e406d94cfb23cdf",
+      "bytes": 1775
+    },
+    "ASSESSMENT.md": {
+      "sha256": "0f343132f08daac7115e2912c249d32effc3705e8be1e7ddf8fd3baaad521d65",
+      "bytes": 4290
+    },
+    "REVIEW.md": {
+      "sha256": "13a2afb1524a7186476fb67bae9720b94bc94be557a5dd2fdb878f94c8a364cd",
+      "bytes": 3779
+    },
+    "manuscript.tex": {
+      "sha256": "08e43068f5cff2b2c400bafbaa53a900ab672b93c998441e04ed2bac164f5fbd",
+      "bytes": 12225
+    },
+    "manuscript.md": {
+      "sha256": "7c27a112c595ddcb1699238c465b23aa9bd193fef6bfac4a26daf3825e9d984b",
+      "bytes": 12647
+    },
+    "manuscript.pdf": {
+      "sha256": "fa13ed511a4ec253694dba99f86c7ec38701bf341c8b3876461a372eb1d1648d",
+      "bytes": 70552
+    },
+    "check.py": {
+      "sha256": "bba48d5e7ad66201715bae657288d116e60bcd2106711e6c87b0939c1b6f906d",
+      "bytes": 2463
+    },
+    "check-results.json": {
+      "sha256": "a89ceaa012db726d7646fb93dcf784acf427d3bdf3e6b85055bb803ef6dfba04",
+      "bytes": 29378
+    },
+    "markdown-conversion.json": {
+      "sha256": "019355f8ee29a26b484a1e6e46d4ba4ffa9931a9a79575795808f0ee3964032c",
+      "bytes": 2224
+    },
+    "markdown-math-check.json": {
+      "sha256": "c6f2690ce5cb86253ca1dfa9b4875c1baa00d04018447fb28d19a8d060536bd7",
+      "bytes": 445
+    },
+    "artifact-qa.json": {
+      "sha256": "8a158fd52abf04da02977dba2071aaf8a771ff8b17524ec2752ce69effda4688",
+      "bytes": 845
+    }
+  }
+}

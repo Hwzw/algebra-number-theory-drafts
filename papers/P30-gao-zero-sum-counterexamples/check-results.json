@@ -1,0 +1,1811 @@
+{
+  "status": "pass",
+  "universal_proof": "Hand proof in manuscript; finite checks are diagnostics only",
+  "parameters_checked": "Every odd n from 3 through 101 inclusive",
+  "cases": 50,
+  "base_case_nonempty_subsequences_enumerated": 127,
+  "base_case_zero_subsequences": 0,
+  "results": [
+    {
+      "n": 3,
+      "group_order": 48,
+      "T_length": 7,
+      "distinct_nonempty_sums": 41,
+      "missing_elements": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "difference_subgroup_order": 24,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 8,
+      "atom_length": 9
+    },
+    {
+      "n": 5,
+      "group_order": 80,
+      "T_length": 11,
+      "distinct_nonempty_sums": 73,
+      "missing_elements": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "difference_subgroup_order": 40,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 12,
+      "atom_length": 13
+    },
+    {
+      "n": 7,
+      "group_order": 112,
+      "T_length": 15,
+      "distinct_nonempty_sums": 105,
+      "missing_elements": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "difference_subgroup_order": 56,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 16,
+      "atom_length": 17
+    },
+    {
+      "n": 9,
+      "group_order": 144,
+      "T_length": 19,
+      "distinct_nonempty_sums": 137,
+      "missing_elements": [
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "difference_subgroup_order": 72,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 20,
+      "atom_length": 21
+    },
+    {
+      "n": 11,
+      "group_order": 176,
+      "T_length": 23,
+      "distinct_nonempty_sums": 169,
+      "missing_elements": [
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "difference_subgroup_order": 88,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 24,
+      "atom_length": 25
+    },
+    {
+      "n": 13,
+      "group_order": 208,
+      "T_length": 27,
+      "distinct_nonempty_sums": 201,
+      "missing_elements": [
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "difference_subgroup_order": 104,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 28,
+      "atom_length": 29
+    },
+    {
+      "n": 15,
+      "group_order": 240,
+      "T_length": 31,
+      "distinct_nonempty_sums": 233,
+      "missing_elements": [
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          15
+        ]
+      ],
+      "difference_subgroup_order": 120,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 32,
+      "atom_length": 33
+    },
+    {
+      "n": 17,
+      "group_order": 272,
+      "T_length": 35,
+      "distinct_nonempty_sums": 265,
+      "missing_elements": [
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ]
+      ],
+      "difference_subgroup_order": 136,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 36,
+      "atom_length": 37
+    },
+    {
+      "n": 19,
+      "group_order": 304,
+      "T_length": 39,
+      "distinct_nonempty_sums": 297,
+      "missing_elements": [
+        [
+          3,
+          18
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          6,
+          19
+        ]
+      ],
+      "difference_subgroup_order": 152,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 40,
+      "atom_length": 41
+    },
+    {
+      "n": 21,
+      "group_order": 336,
+      "T_length": 43,
+      "distinct_nonempty_sums": 329,
+      "missing_elements": [
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          6,
+          21
+        ]
+      ],
+      "difference_subgroup_order": 168,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 44,
+      "atom_length": 45
+    },
+    {
+      "n": 23,
+      "group_order": 368,
+      "T_length": 47,
+      "distinct_nonempty_sums": 361,
+      "missing_elements": [
+        [
+          3,
+          22
+        ],
+        [
+          3,
+          23
+        ],
+        [
+          5,
+          22
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          6,
+          22
+        ],
+        [
+          6,
+          23
+        ]
+      ],
+      "difference_subgroup_order": 184,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 48,
+      "atom_length": 49
+    },
+    {
+      "n": 25,
+      "group_order": 400,
+      "T_length": 51,
+      "distinct_nonempty_sums": 393,
+      "missing_elements": [
+        [
+          3,
+          24
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          5,
+          24
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          6,
+          25
+        ]
+      ],
+      "difference_subgroup_order": 200,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 52,
+      "atom_length": 53
+    },
+    {
+      "n": 27,
+      "group_order": 432,
+      "T_length": 55,
+      "distinct_nonempty_sums": 425,
+      "missing_elements": [
+        [
+          3,
+          26
+        ],
+        [
+          3,
+          27
+        ],
+        [
+          5,
+          26
+        ],
+        [
+          5,
+          27
+        ],
+        [
+          6,
+          26
+        ],
+        [
+          6,
+          27
+        ]
+      ],
+      "difference_subgroup_order": 216,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 56,
+      "atom_length": 57
+    },
+    {
+      "n": 29,
+      "group_order": 464,
+      "T_length": 59,
+      "distinct_nonempty_sums": 457,
+      "missing_elements": [
+        [
+          3,
+          28
+        ],
+        [
+          3,
+          29
+        ],
+        [
+          5,
+          28
+        ],
+        [
+          5,
+          29
+        ],
+        [
+          6,
+          28
+        ],
+        [
+          6,
+          29
+        ]
+      ],
+      "difference_subgroup_order": 232,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 60,
+      "atom_length": 61
+    },
+    {
+      "n": 31,
+      "group_order": 496,
+      "T_length": 63,
+      "distinct_nonempty_sums": 489,
+      "missing_elements": [
+        [
+          3,
+          30
+        ],
+        [
+          3,
+          31
+        ],
+        [
+          5,
+          30
+        ],
+        [
+          5,
+          31
+        ],
+        [
+          6,
+          30
+        ],
+        [
+          6,
+          31
+        ]
+      ],
+      "difference_subgroup_order": 248,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 64,
+      "atom_length": 65
+    },
+    {
+      "n": 33,
+      "group_order": 528,
+      "T_length": 67,
+      "distinct_nonempty_sums": 521,
+      "missing_elements": [
+        [
+          3,
+          32
+        ],
+        [
+          3,
+          33
+        ],
+        [
+          5,
+          32
+        ],
+        [
+          5,
+          33
+        ],
+        [
+          6,
+          32
+        ],
+        [
+          6,
+          33
+        ]
+      ],
+      "difference_subgroup_order": 264,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 68,
+      "atom_length": 69
+    },
+    {
+      "n": 35,
+      "group_order": 560,
+      "T_length": 71,
+      "distinct_nonempty_sums": 553,
+      "missing_elements": [
+        [
+          3,
+          34
+        ],
+        [
+          3,
+          35
+        ],
+        [
+          5,
+          34
+        ],
+        [
+          5,
+          35
+        ],
+        [
+          6,
+          34
+        ],
+        [
+          6,
+          35
+        ]
+      ],
+      "difference_subgroup_order": 280,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 72,
+      "atom_length": 73
+    },
+    {
+      "n": 37,
+      "group_order": 592,
+      "T_length": 75,
+      "distinct_nonempty_sums": 585,
+      "missing_elements": [
+        [
+          3,
+          36
+        ],
+        [
+          3,
+          37
+        ],
+        [
+          5,
+          36
+        ],
+        [
+          5,
+          37
+        ],
+        [
+          6,
+          36
+        ],
+        [
+          6,
+          37
+        ]
+      ],
+      "difference_subgroup_order": 296,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 76,
+      "atom_length": 77
+    },
+    {
+      "n": 39,
+      "group_order": 624,
+      "T_length": 79,
+      "distinct_nonempty_sums": 617,
+      "missing_elements": [
+        [
+          3,
+          38
+        ],
+        [
+          3,
+          39
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          5,
+          39
+        ],
+        [
+          6,
+          38
+        ],
+        [
+          6,
+          39
+        ]
+      ],
+      "difference_subgroup_order": 312,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 80,
+      "atom_length": 81
+    },
+    {
+      "n": 41,
+      "group_order": 656,
+      "T_length": 83,
+      "distinct_nonempty_sums": 649,
+      "missing_elements": [
+        [
+          3,
+          40
+        ],
+        [
+          3,
+          41
+        ],
+        [
+          5,
+          40
+        ],
+        [
+          5,
+          41
+        ],
+        [
+          6,
+          40
+        ],
+        [
+          6,
+          41
+        ]
+      ],
+      "difference_subgroup_order": 328,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 84,
+      "atom_length": 85
+    },
+    {
+      "n": 43,
+      "group_order": 688,
+      "T_length": 87,
+      "distinct_nonempty_sums": 681,
+      "missing_elements": [
+        [
+          3,
+          42
+        ],
+        [
+          3,
+          43
+        ],
+        [
+          5,
+          42
+        ],
+        [
+          5,
+          43
+        ],
+        [
+          6,
+          42
+        ],
+        [
+          6,
+          43
+        ]
+      ],
+      "difference_subgroup_order": 344,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 88,
+      "atom_length": 89
+    },
+    {
+      "n": 45,
+      "group_order": 720,
+      "T_length": 91,
+      "distinct_nonempty_sums": 713,
+      "missing_elements": [
+        [
+          3,
+          44
+        ],
+        [
+          3,
+          45
+        ],
+        [
+          5,
+          44
+        ],
+        [
+          5,
+          45
+        ],
+        [
+          6,
+          44
+        ],
+        [
+          6,
+          45
+        ]
+      ],
+      "difference_subgroup_order": 360,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 92,
+      "atom_length": 93
+    },
+    {
+      "n": 47,
+      "group_order": 752,
+      "T_length": 95,
+      "distinct_nonempty_sums": 745,
+      "missing_elements": [
+        [
+          3,
+          46
+        ],
+        [
+          3,
+          47
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          5,
+          47
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          6,
+          47
+        ]
+      ],
+      "difference_subgroup_order": 376,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 96,
+      "atom_length": 97
+    },
+    {
+      "n": 49,
+      "group_order": 784,
+      "T_length": 99,
+      "distinct_nonempty_sums": 777,
+      "missing_elements": [
+        [
+          3,
+          48
+        ],
+        [
+          3,
+          49
+        ],
+        [
+          5,
+          48
+        ],
+        [
+          5,
+          49
+        ],
+        [
+          6,
+          48
+        ],
+        [
+          6,
+          49
+        ]
+      ],
+      "difference_subgroup_order": 392,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 100,
+      "atom_length": 101
+    },
+    {
+      "n": 51,
+      "group_order": 816,
+      "T_length": 103,
+      "distinct_nonempty_sums": 809,
+      "missing_elements": [
+        [
+          3,
+          50
+        ],
+        [
+          3,
+          51
+        ],
+        [
+          5,
+          50
+        ],
+        [
+          5,
+          51
+        ],
+        [
+          6,
+          50
+        ],
+        [
+          6,
+          51
+        ]
+      ],
+      "difference_subgroup_order": 408,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 104,
+      "atom_length": 105
+    },
+    {
+      "n": 53,
+      "group_order": 848,
+      "T_length": 107,
+      "distinct_nonempty_sums": 841,
+      "missing_elements": [
+        [
+          3,
+          52
+        ],
+        [
+          3,
+          53
+        ],
+        [
+          5,
+          52
+        ],
+        [
+          5,
+          53
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          6,
+          53
+        ]
+      ],
+      "difference_subgroup_order": 424,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 108,
+      "atom_length": 109
+    },
+    {
+      "n": 55,
+      "group_order": 880,
+      "T_length": 111,
+      "distinct_nonempty_sums": 873,
+      "missing_elements": [
+        [
+          3,
+          54
+        ],
+        [
+          3,
+          55
+        ],
+        [
+          5,
+          54
+        ],
+        [
+          5,
+          55
+        ],
+        [
+          6,
+          54
+        ],
+        [
+          6,
+          55
+        ]
+      ],
+      "difference_subgroup_order": 440,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 112,
+      "atom_length": 113
+    },
+    {
+      "n": 57,
+      "group_order": 912,
+      "T_length": 115,
+      "distinct_nonempty_sums": 905,
+      "missing_elements": [
+        [
+          3,
+          56
+        ],
+        [
+          3,
+          57
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          5,
+          57
+        ],
+        [
+          6,
+          56
+        ],
+        [
+          6,
+          57
+        ]
+      ],
+      "difference_subgroup_order": 456,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 116,
+      "atom_length": 117
+    },
+    {
+      "n": 59,
+      "group_order": 944,
+      "T_length": 119,
+      "distinct_nonempty_sums": 937,
+      "missing_elements": [
+        [
+          3,
+          58
+        ],
+        [
+          3,
+          59
+        ],
+        [
+          5,
+          58
+        ],
+        [
+          5,
+          59
+        ],
+        [
+          6,
+          58
+        ],
+        [
+          6,
+          59
+        ]
+      ],
+      "difference_subgroup_order": 472,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 120,
+      "atom_length": 121
+    },
+    {
+      "n": 61,
+      "group_order": 976,
+      "T_length": 123,
+      "distinct_nonempty_sums": 969,
+      "missing_elements": [
+        [
+          3,
+          60
+        ],
+        [
+          3,
+          61
+        ],
+        [
+          5,
+          60
+        ],
+        [
+          5,
+          61
+        ],
+        [
+          6,
+          60
+        ],
+        [
+          6,
+          61
+        ]
+      ],
+      "difference_subgroup_order": 488,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 124,
+      "atom_length": 125
+    },
+    {
+      "n": 63,
+      "group_order": 1008,
+      "T_length": 127,
+      "distinct_nonempty_sums": 1001,
+      "missing_elements": [
+        [
+          3,
+          62
+        ],
+        [
+          3,
+          63
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          5,
+          63
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          6,
+          63
+        ]
+      ],
+      "difference_subgroup_order": 504,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 128,
+      "atom_length": 129
+    },
+    {
+      "n": 65,
+      "group_order": 1040,
+      "T_length": 131,
+      "distinct_nonempty_sums": 1033,
+      "missing_elements": [
+        [
+          3,
+          64
+        ],
+        [
+          3,
+          65
+        ],
+        [
+          5,
+          64
+        ],
+        [
+          5,
+          65
+        ],
+        [
+          6,
+          64
+        ],
+        [
+          6,
+          65
+        ]
+      ],
+      "difference_subgroup_order": 520,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 132,
+      "atom_length": 133
+    },
+    {
+      "n": 67,
+      "group_order": 1072,
+      "T_length": 135,
+      "distinct_nonempty_sums": 1065,
+      "missing_elements": [
+        [
+          3,
+          66
+        ],
+        [
+          3,
+          67
+        ],
+        [
+          5,
+          66
+        ],
+        [
+          5,
+          67
+        ],
+        [
+          6,
+          66
+        ],
+        [
+          6,
+          67
+        ]
+      ],
+      "difference_subgroup_order": 536,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 136,
+      "atom_length": 137
+    },
+    {
+      "n": 69,
+      "group_order": 1104,
+      "T_length": 139,
+      "distinct_nonempty_sums": 1097,
+      "missing_elements": [
+        [
+          3,
+          68
+        ],
+        [
+          3,
+          69
+        ],
+        [
+          5,
+          68
+        ],
+        [
+          5,
+          69
+        ],
+        [
+          6,
+          68
+        ],
+        [
+          6,
+          69
+        ]
+      ],
+      "difference_subgroup_order": 552,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 140,
+      "atom_length": 141
+    },
+    {
+      "n": 71,
+      "group_order": 1136,
+      "T_length": 143,
+      "distinct_nonempty_sums": 1129,
+      "missing_elements": [
+        [
+          3,
+          70
+        ],
+        [
+          3,
+          71
+        ],
+        [
+          5,
+          70
+        ],
+        [
+          5,
+          71
+        ],
+        [
+          6,
+          70
+        ],
+        [
+          6,
+          71
+        ]
+      ],
+      "difference_subgroup_order": 568,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 144,
+      "atom_length": 145
+    },
+    {
+      "n": 73,
+      "group_order": 1168,
+      "T_length": 147,
+      "distinct_nonempty_sums": 1161,
+      "missing_elements": [
+        [
+          3,
+          72
+        ],
+        [
+          3,
+          73
+        ],
+        [
+          5,
+          72
+        ],
+        [
+          5,
+          73
+        ],
+        [
+          6,
+          72
+        ],
+        [
+          6,
+          73
+        ]
+      ],
+      "difference_subgroup_order": 584,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 148,
+      "atom_length": 149
+    },
+    {
+      "n": 75,
+      "group_order": 1200,
+      "T_length": 151,
+      "distinct_nonempty_sums": 1193,
+      "missing_elements": [
+        [
+          3,
+          74
+        ],
+        [
+          3,
+          75
+        ],
+        [
+          5,
+          74
+        ],
+        [
+          5,
+          75
+        ],
+        [
+          6,
+          74
+        ],
+        [
+          6,
+          75
+        ]
+      ],
+      "difference_subgroup_order": 600,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 152,
+      "atom_length": 153
+    },
+    {
+      "n": 77,
+      "group_order": 1232,
+      "T_length": 155,
+      "distinct_nonempty_sums": 1225,
+      "missing_elements": [
+        [
+          3,
+          76
+        ],
+        [
+          3,
+          77
+        ],
+        [
+          5,
+          76
+        ],
+        [
+          5,
+          77
+        ],
+        [
+          6,
+          76
+        ],
+        [
+          6,
+          77
+        ]
+      ],
+      "difference_subgroup_order": 616,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 156,
+      "atom_length": 157
+    },
+    {
+      "n": 79,
+      "group_order": 1264,
+      "T_length": 159,
+      "distinct_nonempty_sums": 1257,
+      "missing_elements": [
+        [
+          3,
+          78
+        ],
+        [
+          3,
+          79
+        ],
+        [
+          5,
+          78
+        ],
+        [
+          5,
+          79
+        ],
+        [
+          6,
+          78
+        ],
+        [
+          6,
+          79
+        ]
+      ],
+      "difference_subgroup_order": 632,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 160,
+      "atom_length": 161
+    },
+    {
+      "n": 81,
+      "group_order": 1296,
+      "T_length": 163,
+      "distinct_nonempty_sums": 1289,
+      "missing_elements": [
+        [
+          3,
+          80
+        ],
+        [
+          3,
+          81
+        ],
+        [
+          5,
+          80
+        ],
+        [
+          5,
+          81
+        ],
+        [
+          6,
+          80
+        ],
+        [
+          6,
+          81
+        ]
+      ],
+      "difference_subgroup_order": 648,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 164,
+      "atom_length": 165
+    },
+    {
+      "n": 83,
+      "group_order": 1328,
+      "T_length": 167,
+      "distinct_nonempty_sums": 1321,
+      "missing_elements": [
+        [
+          3,
+          82
+        ],
+        [
+          3,
+          83
+        ],
+        [
+          5,
+          82
+        ],
+        [
+          5,
+          83
+        ],
+        [
+          6,
+          82
+        ],
+        [
+          6,
+          83
+        ]
+      ],
+      "difference_subgroup_order": 664,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 168,
+      "atom_length": 169
+    },
+    {
+      "n": 85,
+      "group_order": 1360,
+      "T_length": 171,
+      "distinct_nonempty_sums": 1353,
+      "missing_elements": [
+        [
+          3,
+          84
+        ],
+        [
+          3,
+          85
+        ],
+        [
+          5,
+          84
+        ],
+        [
+          5,
+          85
+        ],
+        [
+          6,
+          84
+        ],
+        [
+          6,
+          85
+        ]
+      ],
+      "difference_subgroup_order": 680,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 172,
+      "atom_length": 173
+    },
+    {
+      "n": 87,
+      "group_order": 1392,
+      "T_length": 175,
+      "distinct_nonempty_sums": 1385,
+      "missing_elements": [
+        [
+          3,
+          86
+        ],
+        [
+          3,
+          87
+        ],
+        [
+          5,
+          86
+        ],
+        [
+          5,
+          87
+        ],
+        [
+          6,
+          86
+        ],
+        [
+          6,
+          87
+        ]
+      ],
+      "difference_subgroup_order": 696,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 176,
+      "atom_length": 177
+    },
+    {
+      "n": 89,
+      "group_order": 1424,
+      "T_length": 179,
+      "distinct_nonempty_sums": 1417,
+      "missing_elements": [
+        [
+          3,
+          88
+        ],
+        [
+          3,
+          89
+        ],
+        [
+          5,
+          88
+        ],
+        [
+          5,
+          89
+        ],
+        [
+          6,
+          88
+        ],
+        [
+          6,
+          89
+        ]
+      ],
+      "difference_subgroup_order": 712,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 180,
+      "atom_length": 181
+    },
+    {
+      "n": 91,
+      "group_order": 1456,
+      "T_length": 183,
+      "distinct_nonempty_sums": 1449,
+      "missing_elements": [
+        [
+          3,
+          90
+        ],
+        [
+          3,
+          91
+        ],
+        [
+          5,
+          90
+        ],
+        [
+          5,
+          91
+        ],
+        [
+          6,
+          90
+        ],
+        [
+          6,
+          91
+        ]
+      ],
+      "difference_subgroup_order": 728,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 184,
+      "atom_length": 185
+    },
+    {
+      "n": 93,
+      "group_order": 1488,
+      "T_length": 187,
+      "distinct_nonempty_sums": 1481,
+      "missing_elements": [
+        [
+          3,
+          92
+        ],
+        [
+          3,
+          93
+        ],
+        [
+          5,
+          92
+        ],
+        [
+          5,
+          93
+        ],
+        [
+          6,
+          92
+        ],
+        [
+          6,
+          93
+        ]
+      ],
+      "difference_subgroup_order": 744,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 188,
+      "atom_length": 189
+    },
+    {
+      "n": 95,
+      "group_order": 1520,
+      "T_length": 191,
+      "distinct_nonempty_sums": 1513,
+      "missing_elements": [
+        [
+          3,
+          94
+        ],
+        [
+          3,
+          95
+        ],
+        [
+          5,
+          94
+        ],
+        [
+          5,
+          95
+        ],
+        [
+          6,
+          94
+        ],
+        [
+          6,
+          95
+        ]
+      ],
+      "difference_subgroup_order": 760,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 192,
+      "atom_length": 193
+    },
+    {
+      "n": 97,
+      "group_order": 1552,
+      "T_length": 195,
+      "distinct_nonempty_sums": 1545,
+      "missing_elements": [
+        [
+          3,
+          96
+        ],
+        [
+          3,
+          97
+        ],
+        [
+          5,
+          96
+        ],
+        [
+          5,
+          97
+        ],
+        [
+          6,
+          96
+        ],
+        [
+          6,
+          97
+        ]
+      ],
+      "difference_subgroup_order": 776,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 196,
+      "atom_length": 197
+    },
+    {
+      "n": 99,
+      "group_order": 1584,
+      "T_length": 199,
+      "distinct_nonempty_sums": 1577,
+      "missing_elements": [
+        [
+          3,
+          98
+        ],
+        [
+          3,
+          99
+        ],
+        [
+          5,
+          98
+        ],
+        [
+          5,
+          99
+        ],
+        [
+          6,
+          98
+        ],
+        [
+          6,
+          99
+        ]
+      ],
+      "difference_subgroup_order": 792,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 200,
+      "atom_length": 201
+    },
+    {
+      "n": 101,
+      "group_order": 1616,
+      "T_length": 203,
+      "distinct_nonempty_sums": 1609,
+      "missing_elements": [
+        [
+          3,
+          100
+        ],
+        [
+          3,
+          101
+        ],
+        [
+          5,
+          100
+        ],
+        [
+          5,
+          101
+        ],
+        [
+          6,
+          100
+        ],
+        [
+          6,
+          101
+        ]
+      ],
+      "difference_subgroup_order": 808,
+      "anchor_in_difference_subgroup": true,
+      "extremal_extension_length": 204,
+      "atom_length": 205
+    }
+  ],
+  "elapsed_seconds": 0.13823485374450684
+}
