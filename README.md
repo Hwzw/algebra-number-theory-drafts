@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 21 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 22 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New critical-scale congruence theorem
+
+[**P22: Critical-scale growth bounds for congruence-preserving functions over finite fields**](papers/P22-critical-scale-congruence/README.md), by **Henry Zweiman**, proposes a growth-scale improvement in the Bell–Nguyen problem. Its seven-page [PDF](papers/P22-critical-scale-congruence/manuscript.pdf), [complete Markdown](papers/P22-critical-scale-congruence/manuscript.md), and [LaTeX](papers/P22-critical-scale-congruence/manuscript.tex) replace the sufficient bound q^n/(27qn) by a fixed positive multiple of q^n for arbitrary functions preserving every prime congruence on F_q[t].
+
+The paper also gives the sharp threshold for F_q-linear maps and an explicit boundary example. These results are one manuscript. The full sharp arbitrary-function conjecture remains unresolved. [Assessment](papers/P22-critical-scale-congruence/ASSESSMENT.md) records classical dependencies and the unread final-journal-text limitation; [proof review](papers/P22-critical-scale-congruence/REVIEW.md) records the hand arguments and exact finite checks. Priority and significance remain provisional.
 
 ## New explicit Lie-polynomial image construction
 

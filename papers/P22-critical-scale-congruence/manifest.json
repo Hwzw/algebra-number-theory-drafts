@@ -1,0 +1,54 @@
+{
+  "paper_id": "P22",
+  "title": "Critical-scale growth bounds for congruence-preserving functions over finite fields",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 7,
+  "status": "Complete internally checked proposed growth-scale improvement; sharp general constant unresolved; priority and significance provisional",
+  "files": {
+    "manuscript.tex": {
+      "sha256": "b8fd4a4d073bf4ca3f762d52f3d62ffb236b01402823dd813921c980727bcd4c",
+      "bytes": 20683
+    },
+    "manuscript.md": {
+      "sha256": "2a74d44901daba16d20ceb82f0b24d8c727a7b728f57f39aa24dfcf1d112ab19",
+      "bytes": 22636
+    },
+    "manuscript.pdf": {
+      "sha256": "4360efdc1469d79f70cf763e1baa30b229a40b67c06a4fec2527b0c0976b944e",
+      "bytes": 102437
+    },
+    "README.md": {
+      "sha256": "fa39dbc0d9775835bc285f3b5fb46e8981faf86637aedb5bc01fcbd263d0abf9",
+      "bytes": 1951
+    },
+    "ASSESSMENT.md": {
+      "sha256": "60f0f735fd83a5079b4a6cc9a5096638dd4c26a8c21c4fc819aea50eac5f8735",
+      "bytes": 4365
+    },
+    "REVIEW.md": {
+      "sha256": "1e747f7c1512373ba2880e47db95e4eb27ab6d77620b4cf6f2ab50c92ab58d84",
+      "bytes": 4554
+    },
+    "check.py": {
+      "sha256": "6e1dbf13341651ef0b9146f524a7610bb4d9de889c0a444e9d42efff2e39f262",
+      "bytes": 10197
+    },
+    "check-results.json": {
+      "sha256": "8af5033ed7c541c48e262807e75dd56c12c1ac95f97c273bce1a007127d7dbb1",
+      "bytes": 8990
+    },
+    "markdown-conversion.json": {
+      "sha256": "8074049ce8d44470efd30591165c66d71f2eb0b2e5b7f6730ce61d45a1709906",
+      "bytes": 4295
+    },
+    "markdown-math-check.json": {
+      "sha256": "2e5e528073fb394fa1fff4b4e2f955208c39a6d0ccfc5b8f285ca4c0c7e8d1f6",
+      "bytes": 442
+    },
+    "artifact-qa.json": {
+      "sha256": "a894f42315d44329ade40434303bc87bb9ed000e655f67e21ccf67c73fc05314",
+      "bytes": 827
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "environments": {
+    "theorem": 2,
+    "corollary": 1,
+    "lemma": 5,
+    "proof": 11,
+    "proposition": 4
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:general"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:littleo"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "1.3",
+      "id": "theorem-2",
+      "source_label": "thm:additive"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:carlitz"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:primecount"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "2.3",
+      "id": "lemma-3",
+      "source_label": "lem:digit"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "3.1",
+      "id": "lemma-4",
+      "source_label": "lem:vanishing"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3.2",
+      "id": "proposition-1",
+      "source_label": "prop:curve"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "4.1",
+      "id": "proposition-2",
+      "source_label": "prop:linearcriterion"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 5,
+      "number": "4.2",
+      "id": "lemma-5",
+      "source_label": "lem:transform"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 3,
+      "number": "5.1",
+      "id": "proposition-3",
+      "source_label": "prop:newton"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 4,
+      "number": "5.2",
+      "id": "proposition-4",
+      "source_label": "prop:obstruction"
+    }
+  ],
+  "references": 44,
+  "citations": 11,
+  "cited_keys": [
+    "BN",
+    "LS",
+    "W74",
+    "W76"
+  ],
+  "bibliography_keys": [
+    "BN",
+    "LS",
+    "W74",
+    "W76"
+  ],
+  "equation_labels": [
+    "eq:cp",
+    "eq:growth",
+    "eq:primorial",
+    "eq:carlitz",
+    "eq:Hdegree",
+    "eq:Hvaluation",
+    "eq:triangular",
+    "eq:Edegree",
+    "eq:digit",
+    "eq:digitheight",
+    "eq:auxiliary",
+    "eq:ballheight",
+    "eq:outerheight",
+    "eq:linearseries",
+    "eq:transform",
+    "eq:limsup",
+    "eq:boundary",
+    "eq:newton",
+    "eq:newtoncriterion"
+  ],
+  "label_numbers": {
+    "eq:cp": "1",
+    "thm:general": "1.1",
+    "eq:growth": "2",
+    "cor:littleo": "1.2",
+    "eq:primorial": "3",
+    "thm:additive": "1.3",
+    "eq:carlitz": "4",
+    "lem:carlitz": "2.1",
+    "eq:Hdegree": "5",
+    "eq:Hvaluation": "6",
+    "eq:triangular": "7",
+    "eq:Edegree": "8",
+    "lem:primecount": "2.2",
+    "eq:digit": "9",
+    "lem:digit": "2.3",
+    "eq:digitheight": "10",
+    "lem:vanishing": "3.1",
+    "prop:curve": "3.2",
+    "eq:auxiliary": "11",
+    "eq:ballheight": "12",
+    "eq:outerheight": "13",
+    "eq:linearseries": "14",
+    "prop:linearcriterion": "4.1",
+    "lem:transform": "4.2",
+    "eq:transform": "15",
+    "eq:limsup": "16",
+    "eq:boundary": "17",
+    "eq:newton": "18",
+    "prop:newton": "5.1",
+    "eq:newtoncriterion": "19",
+    "prop:obstruction": "5.2"
+  },
+  "bibliography_numbers": {
+    "BN": "1",
+    "LS": "2",
+    "W74": "3",
+    "W76": "4"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "b8fd4a4d073bf4ca3f762d52f3d62ffb236b01402823dd813921c980727bcd4c",
+  "source_pdf_sha256": "4360efdc1469d79f70cf763e1baa30b229a40b67c06a4fec2527b0c0976b944e",
+  "markdown_sha256": "2a74d44901daba16d20ceb82f0b24d8c727a7b728f57f39aa24dfcf1d112ab19",
+  "markdown_bytes": 22636,
+  "source_math_expressions_verified": 333,
+  "markdown_math_expressions": 344,
+  "custom_macros_expanded": [
+    "F",
+    "PP"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 81,
+  "semantic_roundtrip_sha256": "582cc3fe360476fdc0a4bfe6eeb712e5bff54ce85c56a079b118e2f1a353c254",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 58,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

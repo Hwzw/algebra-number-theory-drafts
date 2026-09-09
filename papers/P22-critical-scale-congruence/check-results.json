@@ -1,0 +1,389 @@
+{
+  "purpose": "Exact consistency checks; no finite computation proves the infinite growth theorem.",
+  "parameter_checks": {
+    "integer_q_range": [
+      2,
+      257
+    ],
+    "height_and_propagation_cases": 56320,
+    "dimension_inequality_cases": 2816,
+    "all_pass": true
+  },
+  "digit_basis": [
+    {
+      "q": 2,
+      "s": 3,
+      "D": 4,
+      "basis_count": 8,
+      "input_count": 32,
+      "literal_basis_value_checks": 256,
+      "prime_count": 8,
+      "residue_buckets_checked": 576,
+      "max_value_degree": 22,
+      "strict_height_bound": "32",
+      "all_pass": true
+    },
+    {
+      "q": 3,
+      "s": 2,
+      "D": 3,
+      "basis_count": 9,
+      "input_count": 81,
+      "literal_basis_value_checks": 729,
+      "prime_count": 14,
+      "residue_buckets_checked": 2268,
+      "max_value_degree": 21,
+      "strict_height_bound": "27",
+      "all_pass": true
+    },
+    {
+      "q": 4,
+      "s": 2,
+      "D": 2,
+      "basis_count": 16,
+      "input_count": 64,
+      "literal_basis_value_checks": 1024,
+      "prime_count": 10,
+      "residue_buckets_checked": 1792,
+      "max_value_degree": 22,
+      "strict_height_bound": "80/3",
+      "all_pass": true
+    },
+    {
+      "q": 9,
+      "s": 1,
+      "D": 2,
+      "basis_count": 9,
+      "input_count": 729,
+      "literal_basis_value_checks": 6561,
+      "prime_count": 45,
+      "residue_buckets_checked": 26973,
+      "max_value_degree": 16,
+      "strict_height_bound": "81/4",
+      "all_pass": true
+    }
+  ],
+  "additive_and_Newton": [
+    {
+      "q": 2,
+      "field": "F_2",
+      "N": 4,
+      "input_count": 32,
+      "basis_values_checked": 160,
+      "triangular_degree_checks": 25,
+      "models": [
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        }
+      ],
+      "boundary_degrees": [
+        {
+          "n": 0,
+          "d_n": 0,
+          "degree_at_t_n": 0,
+          "max_degree_on_shell": 0
+        },
+        {
+          "n": 1,
+          "d_n": 2,
+          "degree_at_t_n": 2,
+          "max_degree_on_shell": 2
+        },
+        {
+          "n": 2,
+          "d_n": 4,
+          "degree_at_t_n": 1,
+          "max_degree_on_shell": 2
+        },
+        {
+          "n": 3,
+          "d_n": 10,
+          "degree_at_t_n": 10,
+          "max_degree_on_shell": 10
+        },
+        {
+          "n": 4,
+          "d_n": 22,
+          "degree_at_t_n": 22,
+          "max_degree_on_shell": 22
+        }
+      ],
+      "general_newton_obstruction": [
+        {
+          "m": 1,
+          "index": 2,
+          "coefficient_degree": 1,
+          "d_m": 2
+        },
+        {
+          "m": 2,
+          "index": 4,
+          "coefficient_degree": 4,
+          "d_m": 4
+        },
+        {
+          "m": 3,
+          "index": 8,
+          "coefficient_degree": 11,
+          "d_m": 10
+        },
+        {
+          "m": 4,
+          "index": 16,
+          "coefficient_degree": 26,
+          "d_m": 22
+        }
+      ],
+      "general_Newton_check": {
+        "domain_count": 8,
+        "prime_degree_limit": 2,
+        "Newton_basis_values": 36,
+        "positive_and_negative_congruence_models_pass": true,
+        "delta_coefficients_recovered_directly": true
+      },
+      "all_pass": true
+    },
+    {
+      "q": 3,
+      "field": "F_3",
+      "N": 3,
+      "input_count": 81,
+      "basis_values_checked": 324,
+      "triangular_degree_checks": 16,
+      "models": [
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        }
+      ],
+      "boundary_degrees": [
+        {
+          "n": 0,
+          "d_n": 0,
+          "degree_at_t_n": 0,
+          "max_degree_on_shell": 0
+        },
+        {
+          "n": 1,
+          "d_n": 3,
+          "degree_at_t_n": 3,
+          "max_degree_on_shell": 3
+        },
+        {
+          "n": 2,
+          "d_n": 9,
+          "degree_at_t_n": 9,
+          "max_degree_on_shell": 9
+        },
+        {
+          "n": 3,
+          "d_n": 33,
+          "degree_at_t_n": 33,
+          "max_degree_on_shell": 33
+        }
+      ],
+      "general_newton_obstruction": [
+        {
+          "m": 1,
+          "index": 3,
+          "coefficient_degree": 2,
+          "d_m": 3
+        },
+        {
+          "m": 2,
+          "index": 9,
+          "coefficient_degree": 10,
+          "d_m": 9
+        },
+        {
+          "m": 3,
+          "index": 27,
+          "coefficient_degree": 36,
+          "d_m": 33
+        }
+      ],
+      "general_Newton_check": {
+        "domain_count": 9,
+        "prime_degree_limit": 1,
+        "Newton_basis_values": 45,
+        "positive_and_negative_congruence_models_pass": true,
+        "delta_coefficients_recovered_directly": true
+      },
+      "all_pass": true
+    },
+    {
+      "q": 4,
+      "field": "F_2[u]/(u^2+u+1)",
+      "N": 2,
+      "input_count": 64,
+      "basis_values_checked": 192,
+      "triangular_degree_checks": 9,
+      "models": [
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        }
+      ],
+      "boundary_degrees": [
+        {
+          "n": 0,
+          "d_n": 0,
+          "degree_at_t_n": 0,
+          "max_degree_on_shell": 0
+        },
+        {
+          "n": 1,
+          "d_n": 4,
+          "degree_at_t_n": 4,
+          "max_degree_on_shell": 4
+        },
+        {
+          "n": 2,
+          "d_n": 16,
+          "degree_at_t_n": 16,
+          "max_degree_on_shell": 16
+        }
+      ],
+      "general_newton_obstruction": [
+        {
+          "m": 1,
+          "index": 4,
+          "coefficient_degree": 3,
+          "d_m": 4
+        },
+        {
+          "m": 2,
+          "index": 16,
+          "coefficient_degree": 18,
+          "d_m": 16
+        }
+      ],
+      "general_Newton_check": {
+        "domain_count": 16,
+        "prime_degree_limit": 1,
+        "Newton_basis_values": 136,
+        "positive_and_negative_congruence_models_pass": true,
+        "delta_coefficients_recovered_directly": true
+      },
+      "all_pass": true
+    },
+    {
+      "q": 9,
+      "field": "F_3[u]/(u^2-2)",
+      "N": 2,
+      "input_count": 729,
+      "basis_values_checked": 2187,
+      "triangular_degree_checks": 9,
+      "models": [
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": true,
+          "coefficient_criterion": true
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        },
+        {
+          "preserves_prime_congruences": false,
+          "coefficient_criterion": false
+        }
+      ],
+      "boundary_degrees": [
+        {
+          "n": 0,
+          "d_n": 0,
+          "degree_at_t_n": 0,
+          "max_degree_on_shell": 0
+        },
+        {
+          "n": 1,
+          "d_n": 9,
+          "degree_at_t_n": 9,
+          "max_degree_on_shell": 9
+        },
+        {
+          "n": 2,
+          "d_n": 81,
+          "degree_at_t_n": 81,
+          "max_degree_on_shell": 81
+        }
+      ],
+      "general_newton_obstruction": [
+        {
+          "m": 1,
+          "index": 9,
+          "coefficient_degree": 8,
+          "d_m": 9
+        },
+        {
+          "m": 2,
+          "index": 81,
+          "coefficient_degree": 88,
+          "d_m": 81
+        }
+      ],
+      "general_Newton_check": {
+        "domain_count": 81,
+        "prime_degree_limit": 1,
+        "Newton_basis_values": 3321,
+        "positive_and_negative_congruence_models_pass": true,
+        "delta_coefficients_recovered_directly": true
+      },
+      "all_pass": true
+    }
+  ],
+  "all_pass": true
+}
