@@ -1,0 +1,54 @@
+{
+  "paper_id": "P28",
+  "title": "Failure of the length-set structure theorem for weakly C-monoids",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "Internally checked proposed counterexample answering Geroldinger-Kim-Loper Problem 20; historical priority and significance provisional",
+  "files": {
+    "README.md": {
+      "sha256": "e8055c0606cf0cb0b7fcad0b8e2062c3af4c31dea5dc1c01b0ca8bbff8fac990",
+      "bytes": 1451
+    },
+    "ASSESSMENT.md": {
+      "sha256": "864ede0922276e6351c92b0c3c35f0b53468c0e532c78aa1a8b4128aee1ddb44",
+      "bytes": 4414
+    },
+    "REVIEW.md": {
+      "sha256": "6873eb20d827a58c6db81b2c53ea69782cac3040e79bd3254d5bf3d50b1544d5",
+      "bytes": 4063
+    },
+    "manuscript.tex": {
+      "sha256": "5570d26befae92298551dcbc647a553086b4a36ad1f95677e644c8ecb55dea98",
+      "bytes": 17294
+    },
+    "manuscript.md": {
+      "sha256": "9858b9643682c90ea2960ac641f0a48746cdcfa2923099ac998ce651afa74cba",
+      "bytes": 18069
+    },
+    "manuscript.pdf": {
+      "sha256": "f82cb8e6cf000030f8f148ce498d573e2cb3885892314c60b74d238c8ff91a87",
+      "bytes": 80321
+    },
+    "check.py": {
+      "sha256": "0be0697e04dcd1df17490c3c173ee12ac2dc8e4f3c05f31b7951973ccb0a900e",
+      "bytes": 4188
+    },
+    "check-results.json": {
+      "sha256": "467424551f6202c7f0d5401417a5a18408ad7ab45596516a156c6925db5e523e",
+      "bytes": 854
+    },
+    "markdown-conversion.json": {
+      "sha256": "3eee7b7212a1149777aab6d6e815d43f576ab8b9b99f27411b4dd2f7aaec2527",
+      "bytes": 2716
+    },
+    "markdown-math-check.json": {
+      "sha256": "bd32e590f9ad1f5bc842700b05ca39a27fd9e32b9cfc2cc0406d9e1cca045e6c",
+      "bytes": 442
+    },
+    "artifact-qa.json": {
+      "sha256": "b2934cc007bce1e78a63eaebce0f856652b8bd5fff0bd6a2620fcc014f7d81e0",
+      "bytes": 904
+    }
+  }
+}

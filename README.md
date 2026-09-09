@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 27 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 28 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New counterexample for weakly C-monoids
+
+[**P28: Failure of the length-set structure theorem for weakly C-monoids**](papers/P28-weak-c-length-obstruction/README.md), by **Henry Zweiman**, gives an internally checked proposed negative answer to Geroldinger-Kim-Loper, arXiv:2502.21020v3, Problem 20. Its six-page [PDF](papers/P28-weak-c-length-obstruction/manuscript.pdf), [complete Markdown](papers/P28-weak-c-length-obstruction/manuscript.md), and [LaTeX](papers/P28-weak-c-length-obstruction/manuscript.tex) construct a weakly C-monoid with factorial complete integral closure and distance set exactly `{1,2}` whose length sets fail the standard structure theorem. The proof gives all length sets and a quantitative obstruction for every bounded choice of differences.
+
+The [source assessment](papers/P28-weak-c-length-obstruction/ASSESSMENT.md) checks the exact weak-C definition and the global residue condition in an AAMP. The [internal review](papers/P28-weak-c-length-obstruction/REVIEW.md) records the hand proofs and independent finite checks. Stronger variants with additional hypotheses are not claimed. This is one paper; historical priority and significance remain provisional.
 
 ## New classification of conductor ideals
 

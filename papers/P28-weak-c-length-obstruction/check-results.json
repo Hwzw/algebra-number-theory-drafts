@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "independent_atom_points": 1575,
+  "independent_atoms_in_box": 140,
+  "full_factorization_length_sets": 1132,
+  "maximal_packing_formula_cases": 6150,
+  "explicit_ray_cases": 100,
+  "aamp_obstruction_cases": 1600,
+  "sample_ray_summaries": [
+    {
+      "N": 1,
+      "minimum": 4,
+      "maximum": 6,
+      "cardinality": 3
+    },
+    {
+      "N": 2,
+      "minimum": 6,
+      "maximum": 11,
+      "cardinality": 5
+    },
+    {
+      "N": 3,
+      "minimum": 8,
+      "maximum": 16,
+      "cardinality": 7
+    },
+    {
+      "N": 10,
+      "minimum": 22,
+      "maximum": 51,
+      "cardinality": 21
+    },
+    {
+      "N": 100,
+      "minimum": 202,
+      "maximum": 501,
+      "cardinality": 201
+    }
+  ],
+  "scope": "finite checks supplement, and do not replace, the hand proofs of Mori, weak C, and unbounded obstruction"
+}

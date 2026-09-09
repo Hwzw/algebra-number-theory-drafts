@@ -1,0 +1,122 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 3,
+    "proof": 6,
+    "proposition": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:mori"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "2.2",
+      "id": "proposition-1",
+      "source_label": "prop:weak-c"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "3.1",
+      "id": "lemma-2",
+      "source_label": "lem:atoms"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "3.2",
+      "id": "proposition-2",
+      "source_label": "prop:lengths"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "4.1",
+      "id": "lemma-3",
+      "source_label": "lem:obstruction"
+    }
+  ],
+  "references": 20,
+  "citations": 8,
+  "cited_keys": [
+    "GH",
+    "GK",
+    "GKL",
+    "K"
+  ],
+  "bibliography_keys": [
+    "GH",
+    "GK",
+    "GKL",
+    "K"
+  ],
+  "equation_labels": [
+    "eq:construction",
+    "eq:ray",
+    "eq:lower-bound",
+    "eq:boundary",
+    "eq:cutoffs",
+    "eq:f",
+    "eq:first-layer",
+    "eq:high-layers",
+    "eq:aamp"
+  ],
+  "label_numbers": {
+    "eq:construction": "1",
+    "thm:main": "1.1",
+    "eq:ray": "2",
+    "eq:lower-bound": "3",
+    "eq:boundary": "4",
+    "lem:mori": "2.1",
+    "prop:weak-c": "2.2",
+    "lem:atoms": "3.1",
+    "eq:cutoffs": "5",
+    "eq:f": "6",
+    "prop:lengths": "3.2",
+    "eq:first-layer": "7",
+    "eq:high-layers": "8",
+    "eq:aamp": "9",
+    "lem:obstruction": "4.1"
+  },
+  "bibliography_numbers": {
+    "GH": "1",
+    "GK": "2",
+    "GKL": "3",
+    "K": "4"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "5570d26befae92298551dcbc647a553086b4a36ad1f95677e644c8ecb55dea98",
+  "source_pdf_sha256": "f82cb8e6cf000030f8f148ce498d573e2cb3885892314c60b74d238c8ff91a87",
+  "markdown_sha256": "9858b9643682c90ea2960ac641f0a48746cdcfa2923099ac998ce651afa74cba",
+  "markdown_bytes": 18069,
+  "source_math_expressions_verified": 230,
+  "markdown_math_expressions": 236,
+  "custom_macros_expanded": [
+    "F",
+    "q",
+    "LL",
+    "NN"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 43,
+  "semantic_roundtrip_sha256": "1098714eba167e43a6e0abbf3c005b26ae21b24c0586c11c8974e3ea91cd81a4",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 31,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

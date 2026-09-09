@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-09",
+  "pdf_pages": 6,
+  "pdf_sha256": "f82cb8e6cf000030f8f148ce498d573e2cb3885892314c60b74d238c8ff91a87",
+  "tex_sha256": "5570d26befae92298551dcbc647a553086b4a36ad1f95677e644c8ecb55dea98",
+  "markdown_sha256": "9858b9643682c90ea2960ac641f0a48746cdcfa2923099ac998ce651afa74cba",
+  "all_final_pdf_pages_rendered": true,
+  "all_final_pdf_pages_visually_inspected": true,
+  "render_dpi": 110,
+  "layout_findings": "All six pages inspected; final text change affects only page 6, re-inspected. Pages 1-5 have unchanged rendered hashes. No clipping, overlap or missing glyphs.",
+  "latex_warnings": [],
+  "markdown_source_math_expressions_verified": 230,
+  "markdown_rendered_expressions": 236,
+  "markdown_math_errors": 0,
+  "markdown_semantic_roundtrip_verified": true,
+  "github_live_render_inspected": false,
+  "review_kind": "originating agent; no human or separate-agent review"
+}
