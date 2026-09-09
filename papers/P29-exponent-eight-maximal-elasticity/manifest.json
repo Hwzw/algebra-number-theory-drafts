@@ -1,0 +1,54 @@
+{
+  "paper_id": "P29",
+  "title": "Maximal-elasticity length sets for families of two-groups of exponent eight",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "Internally checked proposed theorem for two infinite families of a standing zero-sum conjecture; historical priority and significance provisional",
+  "files": {
+    "README.md": {
+      "sha256": "9b19355f0594ac90ee6b984bc235ff5ace93da7fda8d0e1a47037d7e3d81c8f7",
+      "bytes": 1575
+    },
+    "ASSESSMENT.md": {
+      "sha256": "b143aed73fd71503e00ef2a0cb776afb503e013d6bfec45e667cdff4134e673e",
+      "bytes": 4425
+    },
+    "REVIEW.md": {
+      "sha256": "189ed9ecb1dfd599bd90c7b25d1e2770740a58fe215d8586d40e13599c295108",
+      "bytes": 4168
+    },
+    "manuscript.tex": {
+      "sha256": "cbd05f4fb2cdd5953bf4a89faadc38d1e769d14319460a880c8931be9425bf77",
+      "bytes": 20018
+    },
+    "manuscript.md": {
+      "sha256": "62dc1e02ab96074921f93c4697431134913ef308006ef885eeb06a2be5971716",
+      "bytes": 21169
+    },
+    "manuscript.pdf": {
+      "sha256": "647ac676477bbc2ebfda11d70dea71e9280a1264ec9c3e0548a00bfebd49a8dc",
+      "bytes": 92598
+    },
+    "check.py": {
+      "sha256": "603529ff3ff3a699ef52e5cbea5ecef89757c12b4757238dd020faff31c35b6d",
+      "bytes": 2415
+    },
+    "check-results.json": {
+      "sha256": "44a8cb220b356ac92858aa1082fec2fc87f46d99c3ba9308e6a55d167677a7d3",
+      "bytes": 1771
+    },
+    "markdown-conversion.json": {
+      "sha256": "c022229ed44ba87f41c9f801a2883cc7c23694ec2d314121264cb1c9e9c5cbed",
+      "bytes": 2686
+    },
+    "markdown-math-check.json": {
+      "sha256": "37dbbbaa8c7aa13b57d9a16c859ea0ae7074ee82f5adc5f86b4ad94601354579",
+      "bytes": 450
+    },
+    "artifact-qa.json": {
+      "sha256": "8e272e54e4256a827c91aa7bc9e0666a83e8ecd115038bfe7e26b6c43f64718c",
+      "bytes": 872
+    }
+  }
+}

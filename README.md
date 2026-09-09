@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 28 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 29 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New exponent-eight maximal-elasticity theorem
+
+[**P29: Maximal-elasticity length sets for families of two-groups of exponent eight**](papers/P29-exponent-eight-maximal-elasticity/README.md), by **Henry Zweiman**, proposes a solution of the signed-support conjecture for two infinite families of finite abelian two-groups. The six-page [PDF](papers/P29-exponent-eight-maximal-elasticity/manuscript.pdf), [complete Markdown](papers/P29-exponent-eight-maximal-elasticity/manuscript.md), and [LaTeX](papers/P29-exponent-eight-maximal-elasticity/manuscript.tex) prove the result when the sum of the order-two and order-eight ranks is not 1 modulo 3, or when the order-eight rank is one. For arbitrary exponent-eight groups, the paper reduces the possible minimum distances to 1 and 3.
+
+The [source assessment](papers/P29-exponent-eight-maximal-elasticity/ASSESSMENT.md) checks the standing conjecture and distinguishes the new scope from known cases. The [internal review](papers/P29-exponent-eight-maximal-elasticity/REVIEW.md) records the universal hand arguments and 4,756 finite witness-atom checks. The general conjecture remains open; priority and outside mathematical verification are provisional. This is one consolidated manuscript.
 
 ## New counterexample for weakly C-monoids
 

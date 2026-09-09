@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "scope": "All order-eight elements in C4^b+C8 and all order-eight elements outside K in C2+C4^b+C8, b=0..3; every constructed atom independently checked for minimality, and a length not congruent to 2 mod 3 found for every forbidden element.",
+  "results": [
+    {
+      "b": 0,
+      "outside": false,
+      "elements": 2,
+      "witness_atoms": 4,
+      "all_constructed_atoms": 4,
+      "largest_witness_length": 6
+    },
+    {
+      "b": 0,
+      "outside": true,
+      "elements": 4,
+      "witness_atoms": 4,
+      "all_constructed_atoms": 8,
+      "largest_witness_length": 4
+    },
+    {
+      "b": 1,
+      "outside": false,
+      "elements": 12,
+      "witness_atoms": 34,
+      "all_constructed_atoms": 42,
+      "largest_witness_length": 10
+    },
+    {
+      "b": 1,
+      "outside": true,
+      "elements": 16,
+      "witness_atoms": 16,
+      "all_constructed_atoms": 40,
+      "largest_witness_length": 4
+    },
+    {
+      "b": 2,
+      "outside": false,
+      "elements": 58,
+      "witness_atoms": 256,
+      "all_constructed_atoms": 352,
+      "largest_witness_length": 12
+    },
+    {
+      "b": 2,
+      "outside": true,
+      "elements": 64,
+      "witness_atoms": 112,
+      "all_constructed_atoms": 256,
+      "largest_witness_length": 12
+    },
+    {
+      "b": 3,
+      "outside": false,
+      "elements": 248,
+      "witness_atoms": 1694,
+      "all_constructed_atoms": 2550,
+      "largest_witness_length": 16
+    },
+    {
+      "b": 3,
+      "outside": true,
+      "elements": 256,
+      "witness_atoms": 768,
+      "all_constructed_atoms": 1504,
+      "largest_witness_length": 12
+    }
+  ],
+  "elapsed_seconds": 0.6429781913757324,
+  "limitation": "Finite diagnostics only; not a proof of the universal theorem."
+}

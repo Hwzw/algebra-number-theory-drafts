@@ -1,0 +1,122 @@
+{
+  "environments": {
+    "theorem": 1,
+    "corollary": 1,
+    "lemma": 4,
+    "proof": 5,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:lengths"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:distance"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:gz"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "2.3",
+      "id": "lemma-3",
+      "source_label": "lem:extremal"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3.1",
+      "id": "proposition-1",
+      "source_label": "prop:three"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "4.1",
+      "id": "lemma-4",
+      "source_label": "lem:signed"
+    }
+  ],
+  "references": 20,
+  "citations": 7,
+  "cited_keys": [
+    "BGZ",
+    "GY",
+    "GZ",
+    "Y"
+  ],
+  "bibliography_keys": [
+    "BGZ",
+    "GZ",
+    "GY",
+    "Y"
+  ],
+  "equation_labels": [
+    "eq:atomcong",
+    "eq:word",
+    "eq:outside",
+    "eq:inside"
+  ],
+  "label_numbers": {
+    "thm:main": "1.1",
+    "cor:lengths": "1.2",
+    "lem:distance": "2.1",
+    "eq:atomcong": "1",
+    "lem:gz": "2.2",
+    "lem:extremal": "2.3",
+    "prop:three": "3.1",
+    "lem:signed": "4.1",
+    "eq:word": "2",
+    "eq:outside": "3",
+    "eq:inside": "4"
+  },
+  "bibliography_numbers": {
+    "BGZ": "1",
+    "GZ": "2",
+    "GY": "3",
+    "Y": "4"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "cbd05f4fb2cdd5953bf4a89faadc38d1e769d14319460a880c8931be9425bf77",
+  "source_pdf_sha256": "647ac676477bbc2ebfda11d70dea71e9280a1264ec9c3e0548a00bfebd49a8dc",
+  "markdown_sha256": "62dc1e02ab96074921f93c4697431134913ef308006ef885eeb06a2be5971716",
+  "markdown_bytes": 21169,
+  "source_math_expressions_verified": 292,
+  "markdown_math_expressions": 297,
+  "custom_macros_expanded": [
+    "D",
+    "LL",
+    "supp",
+    "ord",
+    "FF"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 39,
+  "semantic_roundtrip_sha256": "42d2121c8203bbcfccd2f8d31806461e8966b5eafbf3dc805932a3fa8e832563",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 27,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

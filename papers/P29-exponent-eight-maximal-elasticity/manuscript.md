@@ -1,0 +1,331 @@
+Maximal-elasticity length sets\
+for families of two-groups of exponent eight
+============================================
+
+Henry Zweiman
+
+September 9, 2026
+
+## Abstract
+
+Let $`G=C_2^a\oplus C_4^b\oplus C_8^c`$ be noncyclic, with $`c\geq1`$. We prove that the minimum distance of the signed support of any minimal zero-sum sequence of length $`\mathsf D(G)`$ divides three. This distance is one if $`a+c\not\equiv1\pmod3`$, and it is also one whenever $`c=1`$. Consequently, for either of these families, sets of lengths of maximal elasticity in transfer Krull monoids over $`G`$ are intervals apart from uniformly bounded end pieces. The proof combines relations along the order filtration with a classification of signed supports whose atom lengths are all two modulo three. A group-algebra argument excludes the order-two terms that could otherwise survive that classification. The result settles these families of the maximal-elasticity conjecture; the general exponent-eight case remains open.
+
+## 1. Introduction and main results
+
+A central problem in factorization theory asks whether the signed support of every longest minimal zero-sum sequence over a noncyclic finite abelian group, other than an elementary two-group, admits consecutive factorization lengths. Bashir, Geroldinger, and Zhong formulate this as Conjecture 1.1 in [\[1\]](#ref-BGZ). Their small-exponent theorem covers exponents from three through eleven except eight. The equivalent maximal-elasticity formulation remains Conjecture 2.3 in the February 2026 version of [\[4\]](#ref-Y).
+
+We establish two families within the exponent-eight case. All groups are finite and abelian, and are written additively. Sequences over a subset are written multiplicatively, so that $`g^m`$ means $`m`$ occurrences of $`g`$. An atom is a nonempty zero-sum sequence with no proper nonempty zero-sum subsequence. The Davenport constant $`\mathsf D(G)`$ is the greatest atom length. For a subset $`S\subseteq G`$, let $`\mathcal B(S)`$ be its monoid of zero-sum sequences and let $`\Delta(S)`$ be the union of the sets of successive differences in its factorization-length sets.
+
+<a id="theorem-1"></a>
+
+**Theorem 1.1.**
+
+<a id="label-thm-main"></a>
+
+Let
+```math
+G=C_2^a\oplus C_4^b\oplus C_8^c,\qquad a,b\geq0,\quad c\geq1,
+ \qquad a+b+c\geq2.
+```
+For every atom $`U`$ of length $`\mathsf D(G)`$, put $`S=\operatorname{supp}(U(-U))`$. Then $`\Delta(S)`$ is nonempty and
+```math
+\min\Delta(S)\mid3.
+```
+Moreover, $`\min\Delta(S)=1`$ if either
+```math
+a+c\not\equiv1\pmod3\qquad\text{or}\qquad c=1.
+```
+
+<!-- end theorem-1 -->
+
+The assertion with $`c=1`$ includes $`C_4^b\oplus C_8`$ for every $`b\geq1`$, as well as all groups obtained by adjoining elementary two-group factors. The cyclic group $`C_8`$ is excluded. The two conclusions are proved together: the filtration argument leaves only distance three, and a signed-residue argument eliminates this possibility when there is one order-eight factor.
+
+For an atomic monoid $`H`$, let $`\mathsf L_H(A)`$ denote the set of numbers of atoms in factorizations of $`A`$. Its elasticity is the supremum of $`\max L/\min L`$ over nontrivial length sets. For a transfer Krull monoid over $`G`$, its system of length sets agrees with that of $`\mathcal B(G)`$, and its elasticity is $`\mathsf D(G)/2`$.
+
+<a id="corollary-1"></a>
+
+**Corollary 1.2.**
+
+<a id="label-cor-lengths"></a>
+
+Let $`G`$ satisfy either of the two conditions in Theorem [1.1](#label-thm-main), and let $`H`$ be a transfer Krull monoid over $`G`$. Then $`\Delta_\rho(H)=\{1\}`$. There is an integer $`M\geq0`$, depending only on $`G`$, such that every length set $`L`$ of elasticity $`\mathsf D(G)/2`$ has the form
+```math
+L=y+\bigl(L'\cup[0,\ell]\cup L''\bigr),\qquad
+ L'\subseteq[-M,-1],\quad L''\subseteq\ell+[1,M].
+```
+Here $`y\in\mathbb Z`$, $`\ell\geq0`$, and all intervals contain integers only.
+
+<!-- end corollary-1 -->
+
+The invariant $`\Delta_\rho`$ records the differences of arbitrarily long almost arithmetical progressions among length sets of maximal elasticity. Geroldinger and Zhong [\[2, Corollary 3.3\]](#ref-GZ) show that it equals $`\{1\}`$ when every signed support in Theorem [1.1](#label-thm-main) has minimum distance one. The asserted uniform end bound then follows from [\[1, Corollary 2.3\]](#ref-BGZ).
+
+The previously known cases include rank two, homocyclic $`p`$-groups, the condition $`\gcd(\exp(G)-2,\mathsf D(G)-2)=1`$, and two-level groups $`C_{p^s}^u\oplus C_{p^t}^v`$ with $`s\mid t`$. Thus there is overlap with earlier theorems, but those statements do not cover the families established here in full. We do not assert a resolution for all groups of exponent eight, nor for arbitrary finite abelian groups.
+
+## 2. Distance relations and extremal sequences
+
+We first record the elementary tools and the one structural lemma used from the literature.
+
+<a id="lemma-1"></a>
+
+**Lemma 2.1.**
+
+<a id="label-lem-distance"></a>
+
+Let $`S=-S\subseteq G\setminus\{0\}`$ contain an element of order greater than two. Then $`\Delta(S)\neq\emptyset`$. If $`d=\min\Delta(S)`$, every atom $`V`$ over $`S`$ satisfies
+
+<a id="label-eq-atomcong"></a>
+
+```math
+\tag{1}
+ d\mid |V|-2.
+```
+
+In particular $`d\mid\operatorname{ord}(g)-2`$ for every $`g\in S`$.
+
+<!-- end lemma-1 -->
+
+<a id="proof-1"></a>
+
+**Proof.**
+
+Differences of lengths of two factorizations of the same element form a subgroup of $`\mathbb Z`$: products add such differences, and exchanging the factorizations changes their signs. Its positive generator, when nonzero, is the minimum successive distance, since every length difference is its multiple and the generator itself is realized. For an atom $`V=g_1\cdots g_m`$, the sequence $`V(-V)`$ has a factorization into two atoms and a factorization into the $`m`$ atoms $`g_i(-g_i)`$. This proves [(1)](#label-eq-atomcong). Apply it to $`V=g^{\operatorname{ord}(g)}`$; the two lengths are distinct if $`\operatorname{ord}(g)>2`$. $`\square`$
+
+<!-- end proof-1 -->
+
+<a id="lemma-2"></a>
+
+**Lemma 2.2 (Geroldinger–Zhong).**
+
+<a id="label-lem-gz"></a>
+
+Suppose $`G`$ has rank at least two and exponent at least three, and $`U`$ is an atom of length $`\mathsf D(G)`$. If independent elements $`e_1,\ldots,e_t`$ and an element $`g`$ lie in $`\operatorname{supp}(U)`$, where $`t\geq2`$, and
+```math
+qg=\sum_{i=1}^t k_i e_i,\qquad
+ 1\leq k_i<\operatorname{ord}(e_i),\quad
+ 1\leq q<\operatorname{ord}(g),\quad q\neq\operatorname{ord}(g)/2,
+```
+then $`\min\Delta(\operatorname{supp}(U(-U)))=1`$. The same conclusion holds if $`\operatorname{supp}(U)`$ contains a basis of $`G`$.
+
+<!-- end lemma-2 -->
+
+This is [\[2, Lemma 3.10\]](#ref-GZ), restated as [\[1, Lemma 3.1\]](#ref-BGZ). We will use its relation criterion only when $`q=2`$, $`\operatorname{ord}(g)=8`$, and two is the least positive multiple placing $`g`$ in the subgroup generated by the $`e_i`$.
+
+<a id="lemma-3"></a>
+
+**Lemma 2.3.**
+
+<a id="label-lem-extremal"></a>
+
+Let $`G=\bigoplus_{i=1}^r C_{n_i}`$, where every $`n_i`$ is a power of two, and put $`N=\sum_i(n_i-1)`$. Then $`\mathsf D(G)=N+1`$, and the support of every atom of length $`\mathsf D(G)`$ generates $`G`$. For a decomposition
+```math
+G=E\oplus C_4^b\oplus C_8^c,\qquad E=C_2^a,
+```
+the projections onto $`E`$ of the order-two terms of any zero-sum-free sequence of length $`N`$ are linearly independent over $`\mathbb F_2`$.
+
+<!-- end lemma-3 -->
+
+<a id="proof-2"></a>
+
+**Proof.**
+
+With basis $`x_1,\ldots,x_r`$, the group algebra has the presentation
+```math
+\mathbb F_2[G]\cong\mathbb F_2[z_1,\ldots,z_r]/(z_1^{n_1},\ldots,z_r^{n_r}),
+ \qquad X^{x_i}=1+z_i.
+```
+Its greatest nonzero total degree is $`N`$. For a zero-sum-free sequence $`T`$, the product
+```math
+P_T=\prod_{h\mid T}(1-X^h)
+```
+is nonzero: its coefficient at $`X^0`$ in the group basis is one, since no nonempty subsequence has sum zero. Each factor has positive augmentation degree, so $`|T|\leq N`$. Conversely, the sequence $`\prod_i x_i^{n_i-1}`$ is zero-sum free and adjoining $`\sum_i x_i`$ makes it an atom. This proves the Davenport formula.
+
+To prove generation, suppose an atom $`U`$ of greatest length has support in a proper subgroup $`K`$. Choose $`h\notin K`$ and a term $`g\mid U`$. Replace this term by $`h(g-h)`$. A zero-sum subsequence uses both new terms or neither, because their nonzero images in $`G/K`$ are opposites. Either possibility reduces to a zero-sum subsequence of $`U`$, so the new sequence is an atom longer than $`U`$, a contradiction.
+
+Finally, if $`|T|=N`$, all terms of $`P_T`$ beyond the product of its linear factors have degree greater than $`N`$ and vanish. The linear factor of an order-two term is precisely its $`E`$ projection: the coordinates in the factors of order four and eight are even. If these linear forms were dependent, their product would vanish in the algebra on the variables for $`E`$, whose squares are zero. Indeed, express one dependent form as a sum of the others and expand; every summand contains a square of a linear form, and that square is zero in characteristic two. Then $`P_T=0`$, a contradiction. $`\square`$
+
+<!-- end proof-2 -->
+
+The truncated group-algebra method and the extremal-degree identities are classical; see also [\[3, Lemma 3.4\]](#ref-GY) for these identities and their application to extremal sequences. The last assertion above is the specific consequence needed here.
+
+## 3. The order filtration leaves only distance three
+
+<a id="proposition-1"></a>
+
+**Proposition 3.1.**
+
+<a id="label-prop-three"></a>
+
+Under the hypotheses of Theorem [1.1](#label-thm-main), the minimum distance $`d`$ divides three.
+
+<!-- end proposition-1 -->
+
+<a id="proof-3"></a>
+
+**Proof.**
+
+By Lemma [2.3](#label-lem-extremal), $`\operatorname{supp}(U)`$ generates $`G`$. Select $`f_1,\ldots,f_c`$ from this support whose projections to $`C_8^c`$ form a basis. This is possible by choosing a basis modulo two and lifting it; the resulting matrix is invertible over $`\mathbb Z/8\mathbb Z`$. Their span $`K_8`$ is a direct summand, and
+```math
+G/K_8\cong C_2^a\oplus C_4^b.
+```
+The $`f_i`$ have order eight, so Lemma [2.1](#label-lem-distance) applies.
+
+Select $`h_1,\ldots,h_b`$ from $`\operatorname{supp}(U)`$ whose projections onto the order-four part of this quotient form a basis. Each $`h_j+K_8`$ has order four. Suppose first that some such $`h`$ has order eight. Then
+```math
+4h=4\sum_{i\in I}f_i
+```
+for a nonempty $`I\subseteq[1,c]`$. Put $`t=|I|`$. Both sequences
+```math
+V=h^4\prod_{i\in I}f_i^4,
+ \qquad W=(-h)^4\prod_{i\in I}f_i^4
+```
+are atoms. In fact a zero-sum subsequence must use either zero or four occurrences of $`h`$ (respectively $`-h`$), by the quotient, and independence forces all remaining terms in the latter case. The identities
+```math
+V^2=h^8\prod_{i\in I}f_i^8,
+ \qquad VW=(h(-h))^4\prod_{i\in I}f_i^8
+```
+give length differences $`t-1`$ and $`t+2`$. Hence $`d\mid3`$.
+
+It remains to consider the case where every selected $`h_j`$ has order four. Together with the $`f_i`$ they form an independent family spanning a direct summand
+```math
+K\cong C_4^b\oplus C_8^c,\qquad G/K\cong C_2^a.
+```
+Indeed, independence follows first in the quotient by $`K_8`$ and then in $`K_8`$; the same basis matrices exhibit a complement of type $`C_2^a`$. Select $`k_1,\ldots,k_a`$ from $`\operatorname{supp}(U)`$ with basis images in $`G/K`$. If all have order two, these elements together with the basis of $`K`$ form a basis of $`G`$ in $`\operatorname{supp}(U)`$, and Lemma [2.2](#label-lem-gz) gives $`d=1`$.
+
+Otherwise choose one such element $`k`$ of order four or eight. Two is the least positive multiple placing it in $`K`$. Write, with respect to the selected independent basis of $`K`$,
+```math
+2k=\sum_{i=1}^t q_i e_i,\qquad
+ 1\leq q_i<n_i=\operatorname{ord}(e_i).
+```
+Here $`t\geq1`$. If $`t=1`$, the atoms $`(-k)^2e_1^{q_1}`$ and $`k^2e_1^{n_1-q_1}`$ have product $`(k(-k))^2e_1^{n_1}`$, with lengths two and three. Thus $`d=1`$.
+
+If $`\operatorname{ord}(k)=4`$, all $`q_i=n_i/2`$. The atoms
+```math
+V=k^2\prod_i e_i^{n_i/2},\qquad
+ W=(-k)^2\prod_i e_i^{n_i/2}
+```
+satisfy
+```math
+V^2=k^4\prod_i e_i^{n_i},\qquad
+ VW=(k(-k))^2\prod_i e_i^{n_i}.
+```
+Their length differences are $`t-1`$ and $`t`$, so again $`d=1`$. Minimality follows from the least-multiple property and independence, as above. In the remaining case $`\operatorname{ord}(k)=8`$ and $`t\geq2`$, apply Lemma [2.2](#label-lem-gz) with multiplier two. This completes the proof. $`\square`$
+
+<!-- end proof-3 -->
+
+Since $`d\mid |U|-2=a+3b+7c-1`$, Proposition [3.1](#label-prop-three) immediately proves the first condition in Theorem [1.1](#label-thm-main). We now remove the remaining possibility when $`c=1`$.
+
+## 4. Signed supports with one order-eight factor
+
+For an integer $`r`$ and a group element $`x`$, let $`[x]_r`$ denote the sequence $`x^r`$ if $`r\geq0`$, and $`(-x)^{-r}`$ otherwise.
+
+<a id="lemma-4"></a>
+
+**Lemma 4.1.**
+
+<a id="label-lem-signed"></a>
+
+Let
+```math
+G=E\oplus\bigoplus_{i=1}^b\langle e_i\rangle\oplus\langle f\rangle,
+ \qquad E=C_2^a,\quad\operatorname{ord}(e_i)=4,\quad\operatorname{ord}(f)=8.
+```
+Put $`h_i=e_i+f`$, $`K=\langle e_1,\ldots,e_b,f\rangle`$, and $`A=\{f,h_1,\ldots,h_b\}`$. Suppose $`S=-S`$ contains $`A`$ and every atom over $`S`$ has length congruent to two modulo three. Then every order-eight element of $`S`$ belongs to $`A\cup(-A)`$.
+
+<!-- end lemma-4 -->
+
+<a id="proof-4"></a>
+
+**Proof.**
+
+Every word
+
+<a id="label-eq-word"></a>
+
+```math
+\tag{2}
+ Q=\prod_{i=1}^b[h_i]_{r_i}\,[f]_s,
+ \qquad |r_i|<4,\quad |s|<8,
+```
+
+is zero-sum free. Its $`e_i`$ coordinates force any zero-sum subsequence to omit each $`h_i`$, after which its $`f`$ coordinate forces it to be empty.
+
+First let $`g=u+\sum_i v_i e_i+t f\in S`$ have order eight and lie outside $`K`$. Then $`u\neq0`$ and $`t`$ is odd. For each $`i`$, represent $`2v_i`$ modulo four by $`r_i=0`$ if its residue is zero, or by either $`2`$ or $`-2`$ otherwise. Represent $`2t-\sum_i r_i`$ modulo eight by $`s=0`$ if its residue is zero, or by either $`j`$ or $`j-8`$ when its residue is $`j\in[1,7]`$. The sequence
+```math
+(-g)^2\prod_i[h_i]_{r_i}\,[f]_s
+```
+is an atom. A zero-sum subsequence uses zero or two copies of $`-g`$, by projection onto $`E`$. The zero-copy case is excluded by [(2)](#label-eq-word); a proper two-copy case leaves a nonempty zero-sum complement in that word, also impossible. Hence
+
+<a id="label-eq-outside"></a>
+
+```math
+\tag{3}
+ \sum_i|r_i|+|s|\equiv0\pmod3
+```
+
+for every representative choice. The residue of $`s`$ is even. If it is two or six, exchanging its two representatives changes the length by four, contradicting [(3)](#label-eq-outside). Thus the residue is zero or four. If any $`r_i`$ is nonzero, changing its sign preserves $`|r_i|`$ and interchanges these two residues, changing $`|s|`$ between zero and four. This again contradicts [(3)](#label-eq-outside). If all $`r_i=0`$, the residue is $`2t\equiv2`$ or $`6\pmod8`$, already excluded. Thus no such $`g`$ lies outside $`K`$.
+
+Now let $`g=\sum_i v_i e_i+t f\in S\cap K`$ have order eight, and suppose $`g\notin A\cup(-A)`$. Represent $`v_i`$ modulo four by zero, or by either $`j`$ or $`j-4`$ for $`j\in[1,3]`$. Represent $`t-\sum_i r_i`$ modulo eight by $`s`$ in the same fashion as above. The sequence
+```math
+(-g)\prod_i[h_i]_{r_i}\,[f]_s
+```
+is an atom: a proper zero-sum subsequence either lies in the zero-sum-free word or leaves a nonempty zero-sum complement in that word. Consequently
+
+<a id="label-eq-inside"></a>
+
+```math
+\tag{4}
+ \sum_i|r_i|+|s|\equiv1\pmod3
+```
+
+for every choice.
+
+If the residue of $`s`$ is $`j\neq0`$, exchanging its representatives changes length by $`8-2j`$. Thus the only permitted residues of $`s`$ are $`0,1,4,7`$. Changing the representative of any nonzero $`r_i`$ changes that residue by four. If some $`r_i`$ is nonzero, both residues must therefore be zero or four. Choose a configuration with $`s=0`$. Changing just one nonzero $`r_i`$ changes $`|s|`$ to four and changes the total length by $`8-2|r_i|`$. Divisibility by three forces $`|r_i|=1`$. If two $`r_i`$ are nonzero, changing both returns the residue of $`s`$ to zero and increases the sum of their absolute values by four, contradicting [(4)](#label-eq-inside). There is exactly one nonzero $`r_i=\pm1`$, and $`s=0`$ then gives $`g=\pm h_i`$, contrary to its choice. If all $`r_i=0`$, then $`g=t f`$; after excluding $`\pm f`$, we have $`g=3f`$ or $`5f`$, and the corresponding atom $`(-g)f^3`$ or $`(-g)(-f)^3`$ has length four. This is the final contradiction. $`\square`$
+
+<!-- end proof-4 -->
+
+<a id="proof-5"></a>
+
+**Proof of Theorem [1.1](#label-thm-main) when $`c=1`$.**
+
+By Proposition [3.1](#label-prop-three), only $`d=3`$ needs to be excluded. Assume this value. Lemma [2.1](#label-lem-distance) says that every atom over $`S`$ has length two modulo three. In particular, $`S`$ contains no element of order four.
+
+Choose an order-eight element $`f\in\operatorname{supp}(U)`$, and split off $`\langle f\rangle`$. Select $`h_1,\ldots,h_b\in\operatorname{supp}(U)`$ whose projections onto the order-four part of $`G/\langle f\rangle`$ form a basis. They have order eight, since order four is excluded. As there is only one order-eight factor, $`4h_i=4f`$. Therefore $`e_i=h_i-f`$ has order four, and
+```math
+G=E\oplus\bigoplus_{i=1}^b\langle e_i\rangle\oplus\langle f\rangle,
+ \qquad E\cong C_2^a.
+```
+To see the direct-summand assertion explicitly, the order-four projection matrix of the $`e_i`$ is invertible. Their lower and higher coordinates give a graph over that order-four summand; adjoining $`f`$ leaves the elementary two-summand as a complement.
+
+Lemma [4.1](#label-lem-signed) implies that every order-eight term of $`U`$ belongs to $`\pm A`$, where $`A=\{f,h_1,\ldots,h_b\}`$, and hence lies in $`K=\langle e_i,f\rangle`$. Remove one order-eight term from $`U`$ to obtain a zero-sum-free sequence of length $`\mathsf D(G)-1`$. By Lemma [2.3](#label-lem-extremal), the $`E`$ projections of all order-two terms of $`U`$ are independent. But their sum is zero, by projecting the sum of $`U`$ onto $`E`$, since its order-eight terms lie in $`K`$ and there are no order-four terms. Thus $`U`$ has no order-two terms at all, and it is an atom over $`\pm A`$.
+
+Every atom over $`\pm A`$ has length at most eight. To verify this, an atom containing opposite terms is their pair. Otherwise it uses at most one sign of each generator. A multiplicity at least eight contains a pure atom. All remaining nonzero $`h_i`$ multiplicities must be four, by the $`e_i`$ coordinates. Two such blocks already sum to zero, since $`4h_i=4f`$; one such block requires exactly four occurrences of one sign of $`f`$ to have sum zero. With no such block, the only possibility is $`f^8`$ or $`(-f)^8`$. Hence $`|U|\leq8`$. This contradicts
+```math
+|U|=\mathsf D(G)=a+3b+8>8,
+```
+since $`a+b\geq1`$. The theorem follows. $`\square`$
+
+<!-- end proof-5 -->
+
+## 5. Scope and further questions
+
+The proof isolates a precise residual obstruction for arbitrary exponent-eight groups: only minimum distance three can occur. The groups left outside the two sufficient conditions have $`c\geq2`$ and $`a+c\equiv1\pmod3`$, after removing separately known cases. When several order-eight basis elements are present, a relation $`4h=4\sum_{i\in I}f_i`$ can have $`|I|\equiv1\pmod3`$ without forcing distance one. The signed-support classification above uses essentially that there is one such coordinate. Extending that classification, or bounding the longest atom supported on these residual configurations, is a concrete remaining problem.
+
+The accompanying computation checks every constructed witness in Lemma [4.1](#label-lem-signed) for $`0\leq b\leq3`$, both inside $`K`$ and outside it in $`C_2\oplus K`$. It independently verifies zero sum and minimality for 4,756 sequences and finds a forbidden atom length for every element excluded by the lemma. These finite diagnostics are not used as a substitute for any universal step of the proof.
+
+## References
+
+<a id="ref-BGZ"></a>
+
+**\[1\]** A. Bashir, A. Geroldinger, and Q. Zhong, *On a zero-sum problem arising from factorization theory*, in Combinatorial and Additive Number Theory IV, Springer, 2021, pp. 11–24. [doi:10.1007/978-3-030-67996-5_2](https://doi.org/10.1007/978-3-030-67996-5_2). Preprint: [arXiv:2007.10094](https://arxiv.org/abs/2007.10094).
+
+<a id="ref-GZ"></a>
+
+**\[2\]** A. Geroldinger and Q. Zhong, *Long sets of lengths with maximal elasticity*, Canadian Journal of Mathematics **70** (2018), 1284–1318. [doi:10.4153/CJM-2017-043-4](https://doi.org/10.4153/CJM-2017-043-4). Preprint: [arXiv:1706.06907](https://arxiv.org/abs/1706.06907).
+
+<a id="ref-GY"></a>
+
+**\[3\]** A. Geroldinger and W. Yang, *On a classical zero-sum invariant*, [arXiv:2608.19090v1](https://arxiv.org/abs/2608.19090v1), August 2026.
+
+<a id="ref-Y"></a>
+
+**\[4\]** D. Yazdonov, *On the structure of length sets with maximal elasticity*, Communications in Algebra **54** (2026), 2145–2158. [doi:10.1080/00927872.2025.2578208](https://doi.org/10.1080/00927872.2025.2578208). Revised preprint: [arXiv:2508.21383v2](https://arxiv.org/abs/2508.21383v2), February 25, 2026.
