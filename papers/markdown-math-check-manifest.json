@@ -4,145 +4,171 @@
     {
       "file": "papers/P01-lefschetz-classification/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "a3930b3eb24859e2ce6f7cf87724b3611731c09d4e7db0b5a447807886454dc1",
+      "markdown_sha256": "f0c1f6693df7dc921dbd41fc962d38ee8619363dea0e2bdd5d3b86dc98f42e58",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 213,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "a3930b3eb24859e2ce6f7cf87724b3611731c09d4e7db0b5a447807886454dc1",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P02-recurrence-repair/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "9393f7a5c693ddeb548e1e1b8b3cf9c21db233074eaac4d64220d34ba286906a",
+      "markdown_sha256": "16181ef25c2b36b8a5b43449d8229ef6dd30b19a667b63ca2d003e06220e3460",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 337,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "9393f7a5c693ddeb548e1e1b8b3cf9c21db233074eaac4d64220d34ba286906a",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P03-local-permutation-polynomials/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "0a73ec91f85e140be5938c32fc2eab5d208b5509c3053bc6e62c3801be2fc188",
+      "markdown_sha256": "db135b2f1ca264c63df9c381314cd07403ddd32c692a2762c54c0bebca4d8d67",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 268,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "0a73ec91f85e140be5938c32fc2eab5d208b5509c3053bc6e62c3801be2fc188",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P04-carlitz-factorization/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "739a027f31810f25d9148234df59aa5311844257121e411eaa80ede50627e60a",
+      "markdown_sha256": "08fce42ccc9e07d544347d5ed72083aa3986adaacabf06280a3ab0ba0190043d",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 253,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "739a027f31810f25d9148234df59aa5311844257121e411eaa80ede50627e60a",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P05-symbolic-defect/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "c706b3b4e8a3e4c498e76be72799aec41cc56154e381c28c2b8f000fa2f7a1bd",
+      "markdown_sha256": "5c169dd6e4d99be48a7bea9bc9a52cb3c11c3bddf0d0a4b4a008449dd771bda6",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 308,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "c706b3b4e8a3e4c498e76be72799aec41cc56154e381c28c2b8f000fa2f7a1bd",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P06-stirling-repair/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "182451f51ea189e902b8c903cc46c091dbdfcdb9dc76dde1fbaee2afae15c30e",
+      "markdown_sha256": "e1badee04c7c830f54588713458c24e8dbf44847d1bd14dcd87a4a6e17fe546e",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 323,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "182451f51ea189e902b8c903cc46c091dbdfcdb9dc76dde1fbaee2afae15c30e",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P07-irreducible-compositions/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "98a8e71cc6b2dac0b63be9d3c9f215848bb13a3ae8789e4ccdfb45ea78709661",
+      "markdown_sha256": "37cb4b03e60fe103231f8d328f3c3d96996018d7e2113d3044c70681567835cb",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 238,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "98a8e71cc6b2dac0b63be9d3c9f215848bb13a3ae8789e4ccdfb45ea78709661",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P08-homological-shift-counterexamples/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
+      "markdown_sha256": "ef136a25fd73b7b94bc8c467636587fb6c0daed2bafd3a9f7656c3616f3776a2",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 127,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P09-unique-addition/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "e64d2754562b32d4089e664a5607314d31ce47db294e61b13007c9d71bfc8f82",
+      "markdown_sha256": "16a065fdf649c50be033dc152c5a985e0e6fcee77cc6da5f857a78db821a3eb2",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 234,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "e64d2754562b32d4089e664a5607314d31ce47db294e61b13007c9d71bfc8f82",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P10-restricted-sumsets/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "0485ebb8e6d6968c94601c3e4e5ccf74f3e65ce289623b35d284be8644cfd90b",
+      "markdown_sha256": "045976ef0a81fc87e3aaa6b3498afd076c5d55ff920bfe7acae2fff7a86db789",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 198,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "0485ebb8e6d6968c94601c3e4e5ccf74f3e65ce289623b35d284be8644cfd90b",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P11-partition-congruences/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "8fb305199dc868d37fdf0eb5f4938632eabd310133dc6a4be7b097b48375702b",
+      "markdown_sha256": "3b96e3b38342a272a1b5cc859ed4ed7e918b54852d90e06d42384174f6231bcd",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 270,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "8fb305199dc868d37fdf0eb5f4938632eabd310133dc6a4be7b097b48375702b",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P12-arithmetical-critical-groups/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "33be5c834a59646f979b89cb7eb3cfc165e7e0c4f959236b4714541d6850e49b",
+      "markdown_sha256": "8879c722404328eccf6a60d04ea651ae815f93f45da332faf11c69ab3010dcf3",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 163,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "33be5c834a59646f979b89cb7eb3cfc165e7e0c4f959236b4714541d6850e49b",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "papers/P13-nilperiod-rings/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "a32dcd7f3276c054975d9dca4d35ff94bbd98e7b274154c8afd89e69d43c68e8",
+      "markdown_sha256": "426848f7a58273acce7b8685ba835f1038044c9b610cc6f1c079e7ee411c4925",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 243,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "a32dcd7f3276c054975d9dca4d35ff94bbd98e7b274154c8afd89e69d43c68e8",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     }
   ]
 }

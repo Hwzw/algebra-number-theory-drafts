@@ -1,5 +1,7 @@
 # Irreducible compositions in an exceptional unicritical family
 
+Henry Zweiman
+
 ## Abstract
 
 We construct irreducible compositions in a positive-shift subfamily left exceptional by a recent theorem on unicritically generated semigroups. Let $`d\geq4`$ be even and let $`a\geq2`$ be an integer which is not a $`p`$th power for any odd prime $`p\mid d`$, nor a fourth power when $`4\mid d`$. Put $`f(x)=x^d+a-a^d`$ and $`g(x)=x^d+a`$. We prove that $`f\circ g\circ g\circ h`$ is irreducible over $`\mathbb{Q}`$ for every composition $`h`$ of integral unicritical polynomials whose degrees have prime divisors among those of $`d`$. For a finite equal-degree generating set containing $`f`$ and $`g`$, this gives an explicit positive lower density. Within the exceptional four-constant alphabet, the shorter prefix $`f\circ g`$ suffices. The result includes infinitely many pairs in every degree divisible by four for which $`g`$ is reducible and $`f`$ fixes a square. The proof combines one real embedding, a field norm, and gaps between consecutive prime powers.

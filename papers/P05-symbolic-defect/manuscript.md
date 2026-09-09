@@ -1,5 +1,7 @@
 # Symbolic defect and normalization of whiskered cover ideals
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

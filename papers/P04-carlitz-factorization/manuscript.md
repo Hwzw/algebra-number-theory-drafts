@@ -1,5 +1,7 @@
 # Divisors and unique factorizations of Carlitz binomial polynomials
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

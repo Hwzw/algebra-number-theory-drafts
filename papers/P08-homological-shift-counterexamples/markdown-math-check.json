@@ -1,11 +1,13 @@
 {
   "file": "papers/P08-homological-shift-counterexamples/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
+  "markdown_sha256": "ef136a25fd73b7b94bc8c467636587fb6c0daed2bafd3a9f7656c3616f3776a2",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
   "expressions": 127,
   "errors": [],
-  "local_svg_preview_created": true,
+  "local_svg_preview_created": false,
   "local_visual_inspection": false,
-  "github_live_render_inspected": false
+  "github_live_render_inspected": false,
+  "prior_markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
+  "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
 }

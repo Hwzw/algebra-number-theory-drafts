@@ -1,5 +1,7 @@
 # Prime support and growth of Stirling repair factors
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

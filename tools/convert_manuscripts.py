@@ -283,6 +283,13 @@ def convert(source, output_name="manuscript.md"):
     labels, cites = get_aux(source)
     prepared, markers, audit = prepare(text, labels, cites)
     ast = read_latex(prepared)
+    # Preserve an explicitly requested Markdown byline independently of the TeX.
+    previous_report = source.parent / "markdown-conversion.json"
+    if previous_report.exists():
+        author = json.loads(previous_report.read_text()).get("markdown_author")
+        if author:
+            ast["blocks"].insert(1, {"t": "Para", "c": [{"t": "Str", "c": author}]})
+            audit["markdown_author"] = author
     raw = [x for x in nodes(ast) if x["t"] in {"RawInline", "RawBlock"}]
     if raw:
         raise ValueError(f"{source.parent.name}: unconverted raw nodes {raw[:3]}")

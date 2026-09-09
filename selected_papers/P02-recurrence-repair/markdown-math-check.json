@@ -1,11 +1,13 @@
 {
   "file": "selected_papers/P02-recurrence-repair/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
+  "markdown_sha256": "35f4008b28e745833e02762a1d02dc777e89660c155e3202a8a7b70ee2161eaf",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
   "expressions": 451,
   "errors": [],
-  "local_svg_preview_created": true,
+  "local_svg_preview_created": false,
   "local_visual_inspection": false,
-  "github_live_render_inspected": false
+  "github_live_render_inspected": false,
+  "prior_markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
+  "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
 }

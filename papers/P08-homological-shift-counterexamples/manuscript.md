@@ -1,5 +1,7 @@
 # Componentwise polymatroidality is not preserved by homological shifts
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

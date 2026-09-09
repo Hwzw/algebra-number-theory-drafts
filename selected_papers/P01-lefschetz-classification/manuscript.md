@@ -1,5 +1,7 @@
 # Integral Lefschetz decompositions of fully whiskered simplicial complexes
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

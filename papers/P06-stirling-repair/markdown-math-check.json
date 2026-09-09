@@ -1,11 +1,13 @@
 {
   "file": "papers/P06-stirling-repair/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "182451f51ea189e902b8c903cc46c091dbdfcdb9dc76dde1fbaee2afae15c30e",
+  "markdown_sha256": "e1badee04c7c830f54588713458c24e8dbf44847d1bd14dcd87a4a6e17fe546e",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
   "expressions": 323,
   "errors": [],
-  "local_svg_preview_created": true,
+  "local_svg_preview_created": false,
   "local_visual_inspection": false,
-  "github_live_render_inspected": false
+  "github_live_render_inspected": false,
+  "prior_markdown_sha256": "182451f51ea189e902b8c903cc46c091dbdfcdb9dc76dde1fbaee2afae15c30e",
+  "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
 }

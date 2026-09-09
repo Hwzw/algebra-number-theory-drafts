@@ -1,6 +1,6 @@
 # Citing these drafts
 
-These are AI-generated mathematical drafts, not peer reviewed or independently verified by human experts. Hosting-account ownership does not establish mathematical authorship; this collection does not assign human authorship.
+These are AI-generated mathematical drafts, not peer reviewed or independently verified by human experts. The current Markdown editions carry the byline Henry Zweiman at his request. The immutable links below preserve the earlier PDF versions.
 
 The following links identify the exact initially published PDF bytes at commit `82b56ffca64adad52306f04d4b8c354143a26f85`. Later revisions do not change these links. Use the paper title, identifier, date, and permanent URL in a reference. [BibTeX entries](citations.bib) are also supplied without inventing author metadata.
 

@@ -1,11 +1,13 @@
 {
   "file": "papers/P10-restricted-sumsets/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "0485ebb8e6d6968c94601c3e4e5ccf74f3e65ce289623b35d284be8644cfd90b",
+  "markdown_sha256": "045976ef0a81fc87e3aaa6b3498afd076c5d55ff920bfe7acae2fff7a86db789",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
   "expressions": 198,
   "errors": [],
-  "local_svg_preview_created": true,
+  "local_svg_preview_created": false,
   "local_visual_inspection": false,
-  "github_live_render_inspected": false
+  "github_live_render_inspected": false,
+  "prior_markdown_sha256": "0485ebb8e6d6968c94601c3e4e5ccf74f3e65ce289623b35d284be8644cfd90b",
+  "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
 }

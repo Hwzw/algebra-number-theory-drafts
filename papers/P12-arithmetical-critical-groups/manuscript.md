@@ -1,5 +1,7 @@
 #  Sharp orders of arithmetical critical groups  via canonical lattice simplices
 
+Henry Zweiman
+
 September 2026
 
 ## Abstract

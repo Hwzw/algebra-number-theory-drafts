@@ -1,5 +1,7 @@
 # Additive periods of power maps lie in the prime radical
 
+Henry Zweiman
+
 ## Abstract
 
 We prove that every additive period of every power map on an associative ring belongs to its prime radical. No identity, characteristic, finiteness, or polynomial-identity assumption is required. The proof combines a substitution using the highest nonzero power of a nilpotent element with the classical bounded-index one-sided nil-ideal lemma. It follows that every nilperiod ring is 2-primal and that its nilpotents form a locally nilpotent ideal. This strengthens the NI conclusion conjectured by Burnette. We also characterize finite unital nilperiod rings as finite products of local rings, and determine the periodic power maps on Corbas rings, correcting the count for nonidentity twists.

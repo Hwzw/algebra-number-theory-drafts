@@ -1,6 +1,6 @@
 # Version-specific citations for the five revisions
 
-These links identify immutable manuscript bytes. No author is assigned by this repository. A GitHub commit is a version identifier, not a DOI or a peer-review record.
+These links identify immutable manuscript bytes. The current Markdown editions carry the byline Henry Zweiman at his request; the linked snapshot predates that byline. A GitHub commit is a version identifier, not a DOI or a peer-review record.
 
 | Paper | Exact Markdown version | Exact PDF version |
 |---|---|---|

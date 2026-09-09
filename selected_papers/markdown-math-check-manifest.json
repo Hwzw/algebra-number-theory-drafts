@@ -4,57 +4,67 @@
     {
       "file": "selected_papers/P01-lefschetz-classification/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "9a4b475a20594f2b867dc7aa4b528955b49fe8f59a7794e0eb41234efa864847",
+      "markdown_sha256": "ed62f22d50e0297cca7566f61de608b84923f727fac16434bde92b88e566ae82",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 280,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "9a4b475a20594f2b867dc7aa4b528955b49fe8f59a7794e0eb41234efa864847",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "selected_papers/P02-recurrence-repair/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
+      "markdown_sha256": "35f4008b28e745833e02762a1d02dc777e89660c155e3202a8a7b70ee2161eaf",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 451,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "selected_papers/P06-stirling-repair/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "89d7ff5fd3e0e84a7d211f43c8bace6afd812b57e1edff0ec00bcef8916daee7",
+      "markdown_sha256": "2d0c74c03c55c598a8272f87633d13b4e102c4cd83d34470811ea0f17c511f1a",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 323,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "89d7ff5fd3e0e84a7d211f43c8bace6afd812b57e1edff0ec00bcef8916daee7",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "selected_papers/P09-unique-addition/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "205744e234142021077ca1906d21e7e36ccc193274055ff2f7a9a0306ee7b833",
+      "markdown_sha256": "0ac5d95c608be3b169d214fbe05118553993e2f776c03955e30c04cacea6089a",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 293,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "205744e234142021077ca1906d21e7e36ccc193274055ff2f7a9a0306ee7b833",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     },
     {
       "file": "selected_papers/P13-nilperiod-rings/manuscript.md",
       "mathjax_version": "3.2.2",
-      "markdown_sha256": "fe64a83acc3046b1e815928b4891d4fe6b64647953ad8a22fa0545a47e43bfc1",
+      "markdown_sha256": "8af4d54ecaeb2e46c7fc1b8cfb49cb61f73472150ce8044dc5b56616187fdbe5",
       "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
       "expressions": 210,
       "errors": [],
-      "local_svg_preview_created": true,
+      "local_svg_preview_created": false,
       "local_visual_inspection": false,
-      "github_live_render_inspected": false
+      "github_live_render_inspected": false,
+      "prior_markdown_sha256": "fe64a83acc3046b1e815928b4891d4fe6b64647953ad8a22fa0545a47e43bfc1",
+      "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
     }
   ]
 }

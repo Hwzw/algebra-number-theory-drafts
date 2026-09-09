@@ -1,5 +1,7 @@
 # Squarefree repair factors and optimal exponents for linear recurrences
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

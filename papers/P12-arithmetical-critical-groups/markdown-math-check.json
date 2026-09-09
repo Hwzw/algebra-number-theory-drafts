@@ -1,11 +1,13 @@
 {
   "file": "papers/P12-arithmetical-critical-groups/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "33be5c834a59646f979b89cb7eb3cfc165e7e0c4f959236b4714541d6850e49b",
+  "markdown_sha256": "8879c722404328eccf6a60d04ea651ae815f93f45da332faf11c69ab3010dcf3",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
   "expressions": 163,
   "errors": [],
-  "local_svg_preview_created": true,
+  "local_svg_preview_created": false,
   "local_visual_inspection": false,
-  "github_live_render_inspected": false
+  "github_live_render_inspected": false,
+  "prior_markdown_sha256": "33be5c834a59646f979b89cb7eb3cfc165e7e0c4f959236b4714541d6850e49b",
+  "byline_update_verification": "Exact ordered math expressions unchanged; previous MathJax results retained."
 }

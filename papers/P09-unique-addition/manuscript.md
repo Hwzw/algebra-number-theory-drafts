@@ -1,5 +1,7 @@
 # Unique addition in centerless metabelian Lie algebras
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

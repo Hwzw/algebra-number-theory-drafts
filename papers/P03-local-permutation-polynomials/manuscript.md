@@ -1,5 +1,7 @@
 # Maximum-degree local permutation polynomials over the prime field
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

@@ -1,5 +1,7 @@
 # Nilperiod rings and additive periods of power maps
 
+Henry Zweiman
+
 ## Abstract
 
 A ring is nilperiod if every nilpotent element is an additive period of some power map. We prove that every nilperiod ring is an NI-ring, resolving a conjecture of Burnette without finiteness, polynomial-identity, characteristic, or identity assumptions. The proof shows that each nilpotent element generates a nil ideal, using a square-zero substitution and descent through nil ideals. We also prove that finite unital nilperiod rings are exactly the finite direct products of finite local rings. Finally, we determine the additive periods of all power maps on Corbas rings and obtain a corrected count for the cases with nontrivial field automorphism.

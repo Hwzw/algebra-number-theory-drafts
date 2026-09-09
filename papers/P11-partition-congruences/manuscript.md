@@ -1,5 +1,7 @@
 # Finite parameter tests for partition congruences and the surviving classes of an elongated partition conjecture
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

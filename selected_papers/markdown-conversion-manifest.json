@@ -1,6 +1,6 @@
 {
   "converter": "tools/convert_manuscripts.py",
-  "converter_sha256": "d1b794eea1fcbd240d597bc6accf2f80872a3ce6513d1d2a7371262eba3f72b6",
+  "converter_sha256": "eded03caa2764d4aa05bc15598e9a1b89fb1961dcf6051082116fa9676751097",
   "pandoc_version": "pandoc 3.9.0.2",
   "numbering_source": "Tectonic AUX-only compilation in temporary directories",
   "paper_count": 5,
@@ -182,8 +182,8 @@
       "tables": [],
       "source_tex_sha256": "6d797bebcb29dd4d3c017643b812e94b76260a43cb80aef2d94a8eff3ca05b50",
       "source_pdf_sha256": "6a59f570db68d464e12c675ab5e16332c059b06233891c4a7a7a0a9e8ca7d892",
-      "markdown_sha256": "9a4b475a20594f2b867dc7aa4b528955b49fe8f59a7794e0eb41234efa864847",
-      "markdown_bytes": 27057,
+      "markdown_sha256": "ed62f22d50e0297cca7566f61de608b84923f727fac16434bde92b88e566ae82",
+      "markdown_bytes": 27072,
       "source_math_expressions_verified": 270,
       "markdown_math_expressions": 280,
       "custom_macros_expanded": [
@@ -195,12 +195,14 @@
       ],
       "output_name": "manuscript.md",
       "source_environment_markers_verified": 78,
-      "semantic_roundtrip_sha256": "f17d6fb2f0aaf078bf641785e6f25c15e901a3d0cc28692a22c8a01cd11998c6",
+      "semantic_roundtrip_sha256": "2456c75b16d5a5f1ceca46c57619890d6000d3c2746bc2bf5727f9e07af9d98b",
       "roundtrip_content_equal": true,
       "standalone_anchor_targets": 54,
       "warnings": [],
       "github_live_render_inspected": false,
-      "math_layout_normalizations": {}
+      "math_layout_normalizations": {},
+      "markdown_author": "Henry Zweiman",
+      "byline_update": "Explicit user request; removing the byline reproduces the prior Markdown bytes exactly."
     },
     {
       "paper": "P02-recurrence-repair",
@@ -393,8 +395,8 @@
       "tables": [],
       "source_tex_sha256": "23937aeace58616f78c1cda05e3d79ce70e684a8e95bfe198e901d9db955ca7f",
       "source_pdf_sha256": "21995c4f5bb4add533f4fdbb454a9a95322361f45413f283b9080fbc0a4bf4bb",
-      "markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
-      "markdown_bytes": 30653,
+      "markdown_sha256": "35f4008b28e745833e02762a1d02dc777e89660c155e3202a8a7b70ee2161eaf",
+      "markdown_bytes": 30668,
       "source_math_expressions_verified": 438,
       "markdown_math_expressions": 451,
       "custom_macros_expanded": [
@@ -410,14 +412,16 @@
       ],
       "output_name": "manuscript.md",
       "source_environment_markers_verified": 87,
-      "semantic_roundtrip_sha256": "54e24b88edd741dc39be92cc15d6238a412d447d7873e20f56ed50481473ed84",
+      "semantic_roundtrip_sha256": "8722baf159b9bb0ed37ded7d04454137b26d5206f7cd783e2f51539f89c2b07c",
       "roundtrip_content_equal": true,
       "standalone_anchor_targets": 58,
       "warnings": [],
       "github_live_render_inspected": false,
       "math_layout_normalizations": {
         "accent_argument_groups_added": 3
-      }
+      },
+      "markdown_author": "Henry Zweiman",
+      "byline_update": "Explicit user request; removing the byline reproduces the prior Markdown bytes exactly."
     },
     {
       "paper": "P06-stirling-repair",
@@ -555,8 +559,8 @@
       "tables": [],
       "source_tex_sha256": "dd0edaaea0b37293073801784badc058ae2cac8257256fd3468860c0a6ad265b",
       "source_pdf_sha256": "0ff8cff50472802ba007cdaf9b5baab4b11bb545d0bf62bad00ee8c71eb7dcbf",
-      "markdown_sha256": "89d7ff5fd3e0e84a7d211f43c8bace6afd812b57e1edff0ec00bcef8916daee7",
-      "markdown_bytes": 19325,
+      "markdown_sha256": "2d0c74c03c55c598a8272f87633d13b4e102c4cd83d34470811ea0f17c511f1a",
+      "markdown_bytes": 19340,
       "source_math_expressions_verified": 312,
       "markdown_math_expressions": 323,
       "custom_macros_expanded": [
@@ -566,12 +570,14 @@
       ],
       "output_name": "manuscript.md",
       "source_environment_markers_verified": 65,
-      "semantic_roundtrip_sha256": "1ca0d15c7c8d1d61545b4a8a386dbeeb5d3c23464b919eff1bfd154f1b688599",
+      "semantic_roundtrip_sha256": "fe17fdf7c45ce185c29df47a8fa4e5aa4cac46f5f1a3ba7bb68874f428cee382",
       "roundtrip_content_equal": true,
       "standalone_anchor_targets": 44,
       "warnings": [],
       "github_live_render_inspected": false,
-      "math_layout_normalizations": {}
+      "math_layout_normalizations": {},
+      "markdown_author": "Henry Zweiman",
+      "byline_update": "Explicit user request; removing the byline reproduces the prior Markdown bytes exactly."
     },
     {
       "paper": "P09-unique-addition",
@@ -681,8 +687,8 @@
       "tables": [],
       "source_tex_sha256": "2c304a0ff786141c14f8355c7fe82c56c4b5cf8e4633ec76ddde922cbc6d3890",
       "source_pdf_sha256": "de865d11c74edaf1d50233a8d13228c9ecd64257f5efd2f4c5f83549117bb73d",
-      "markdown_sha256": "205744e234142021077ca1906d21e7e36ccc193274055ff2f7a9a0306ee7b833",
-      "markdown_bytes": 20355,
+      "markdown_sha256": "0ac5d95c608be3b169d214fbe05118553993e2f776c03955e30c04cacea6089a",
+      "markdown_bytes": 20370,
       "source_math_expressions_verified": 286,
       "markdown_math_expressions": 293,
       "custom_macros_expanded": [
@@ -694,12 +700,14 @@
       ],
       "output_name": "manuscript.md",
       "source_environment_markers_verified": 45,
-      "semantic_roundtrip_sha256": "93fd24736ddf5f19f2b3472539a6e866fc435c0962c8a4a9f296f5ee9756efda",
+      "semantic_roundtrip_sha256": "3eb3a9427ef7f30dc2be5b86091a7300f0244dbaf2c7aeafd0b2a1fbed26fcb2",
       "roundtrip_content_equal": true,
       "standalone_anchor_targets": 30,
       "warnings": [],
       "github_live_render_inspected": false,
-      "math_layout_normalizations": {}
+      "math_layout_normalizations": {},
+      "markdown_author": "Henry Zweiman",
+      "byline_update": "Explicit user request; removing the byline reproduces the prior Markdown bytes exactly."
     },
     {
       "paper": "P13-nilperiod-rings",
@@ -822,8 +830,8 @@
       "tables": [],
       "source_tex_sha256": "a2eed3bf0b458dd20c9e5b182d3db8d0016e17de4154a11fd9a8f3b182ecfe41",
       "source_pdf_sha256": "3ca14c1096e67407fd20f656024de51469220a64f60fbeed0335ebbd804b24b3",
-      "markdown_sha256": "fe64a83acc3046b1e815928b4891d4fe6b64647953ad8a22fa0545a47e43bfc1",
-      "markdown_bytes": 15399,
+      "markdown_sha256": "8af4d54ecaeb2e46c7fc1b8cfb49cb61f73472150ce8044dc5b56616187fdbe5",
+      "markdown_bytes": 15414,
       "source_math_expressions_verified": 204,
       "markdown_math_expressions": 210,
       "custom_macros_expanded": [
@@ -833,12 +841,14 @@
       ],
       "output_name": "manuscript.md",
       "source_environment_markers_verified": 45,
-      "semantic_roundtrip_sha256": "cce90f9f8cd39de1d2cf6a7437f7e85730e3ce98c6ac0d3de68621bdbede6f43",
+      "semantic_roundtrip_sha256": "42039e3e7c02c8e04bed6d5ad3c614cea749a17bf3c3fc02d8515d9b8879df37",
       "roundtrip_content_equal": true,
       "standalone_anchor_targets": 29,
       "warnings": [],
       "github_live_render_inspected": false,
-      "math_layout_normalizations": {}
+      "math_layout_normalizations": {},
+      "markdown_author": "Henry Zweiman",
+      "byline_update": "Explicit user request; removing the byline reproduces the prior Markdown bytes exactly."
     }
   ]
 }

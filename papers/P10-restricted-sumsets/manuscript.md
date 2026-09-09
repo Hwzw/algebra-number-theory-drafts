@@ -1,5 +1,7 @@
 # Counterexamples to a conjecture on one-sided restricted sumsets
 
+Henry Zweiman
+
 September 8, 2026
 
 ## Abstract

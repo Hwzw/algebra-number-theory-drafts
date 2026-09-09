@@ -1,5 +1,7 @@
 # Exact Dold repair for matrix powers and integral recurrences
 
+Henry Zweiman
+
 September 8, 2026\
 Research draft; AI-generated and not externally peer reviewed
 

@@ -50,8 +50,8 @@
   "tables": [],
   "source_tex_sha256": "08a5a5df22074c7459607f760996a54a466fe3ad002778b6e998f916d3f497fd",
   "source_pdf_sha256": "68ea26bd4e309999e112b53913cf838a08278373243ef55ca4d42538d73d1c4d",
-  "markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
-  "markdown_bytes": 8603,
+  "markdown_sha256": "ef136a25fd73b7b94bc8c467636587fb6c0daed2bafd3a9f7656c3616f3776a2",
+  "markdown_bytes": 8618,
   "source_math_expressions_verified": 126,
   "markdown_math_expressions": 127,
   "custom_macros_expanded": [
@@ -61,10 +61,12 @@
   ],
   "output_name": "manuscript.md",
   "source_environment_markers_verified": 13,
-  "semantic_roundtrip_sha256": "f756cdd0499418c92fdd6231905a2575e5504bf451c216e0fb1593bdf4fb27f4",
+  "semantic_roundtrip_sha256": "ac06d13cdf73d06d4051840e3581a9a11eecae084a73a8fa4a1fdddc47932a51",
   "roundtrip_content_equal": true,
   "standalone_anchor_targets": 10,
   "warnings": [],
   "github_live_render_inspected": false,
-  "math_layout_normalizations": {}
+  "math_layout_normalizations": {},
+  "markdown_author": "Henry Zweiman",
+  "byline_update": "Explicit user request; removing the byline reproduces the prior Markdown bytes exactly."
 }
