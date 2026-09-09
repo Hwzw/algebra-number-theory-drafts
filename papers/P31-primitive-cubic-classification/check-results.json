@@ -1,0 +1,2927 @@
+{
+  "finite_sieve": {
+    "rows": [
+      {
+        "omega": 1,
+        "core_size": 0,
+        "score": [
+          1,
+          1
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 2,
+        "core_size": 1,
+        "score": [
+          3,
+          1
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 3,
+        "core_size": 2,
+        "score": [
+          7,
+          1
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 4,
+        "core_size": 2,
+        "score": [
+          301,
+          23
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 5,
+        "core_size": 2,
+        "score": [
+          2303,
+          109
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 6,
+        "core_size": 2,
+        "score": [
+          77203,
+          2449
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 7,
+        "core_size": 2,
+        "score": [
+          404439,
+          9157
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 8,
+        "core_size": 2,
+        "score": [
+          36608229,
+          610847
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 9,
+        "core_size": 2,
+        "score": [
+          489700771,
+          6216433
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 10,
+        "core_size": 2,
+        "score": [
+          32455498523,
+          323370969
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 11,
+        "core_size": 2,
+        "score": [
+          566139736099,
+          4473108917
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 12,
+        "core_size": 2,
+        "score": [
+          46607511989381,
+          297583311503
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 13,
+        "core_size": 3,
+        "score": [
+          793518037065489,
+          4221160306679
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 14,
+        "core_size": 3,
+        "score": [
+          3745788681716443,
+          17136821773629
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 15,
+        "core_size": 3,
+        "score": [
+          1917949908431157571,
+          7618214189216629
+        ],
+        "T": 1511,
+        "proof": "1511-1/1511 > 6*score"
+      },
+      {
+        "omega": 16,
+        "core_size": 3,
+        "score": [
+          55017171258070558743,
+          191634512971099145
+        ],
+        "T": 1724,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 17,
+        "core_size": 3,
+        "score": [
+          6988467722588187613061,
+          21526567248016697619
+        ],
+        "T": 1949,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 18,
+        "core_size": 3,
+        "score": [
+          228306026299322098503029,
+          624514295228605733395
+        ],
+        "T": 2195,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 19,
+        "core_size": 3,
+        "score": [
+          32629915747050862262148675,
+          79775302848652935908821
+        ],
+        "T": 2456,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 20,
+        "core_size": 3,
+        "score": [
+          615394769658047702502315121,
+          1350525612637920720249247
+        ],
+        "T": 2736,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 21,
+        "core_size": 3,
+        "score": [
+          190277550484886319423691327229,
+          375755451219382884947199611
+        ],
+        "T": 3040,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 22,
+        "core_size": 3,
+        "score": [
+          1322466687719214513708560561427,
+          2360585385529690036595115985
+        ],
+        "T": 3363,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 23,
+        "core_size": 3,
+        "score": [
+          1386785202768474212894609848368971,
+          2243888218409548846185432702589
+        ],
+        "T": 3710,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 24,
+        "core_size": 3,
+        "score": [
+          8101792622556773785048912991012765,
+          11925243807217124099915586037333
+        ],
+        "T": 4078,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 25,
+        "core_size": 3,
+        "score": [
+          13176915902978745052278081599206267077,
+          17715686992256124910713971609895539
+        ],
+        "T": 4464,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 26,
+        "core_size": 3,
+        "score": [
+          695906176357239893653863287473817863447,
+          856216060376509000911837197177528785
+        ],
+        "T": 4878,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 27,
+        "core_size": 3,
+        "score": [
+          149636194088458896924967544664817495094203,
+          168618429625610942157836352055887350941
+        ],
+        "T": 5326,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 28,
+        "core_size": 3,
+        "score": [
+          2085430915049079900093300012800851452348351,
+          2155334731538691233974784035252942242185
+        ],
+        "T": 5807,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 29,
+        "core_size": 3,
+        "score": [
+          1891808569015428156154991455420557179870230765,
+          1793906015315238775543358418229229913572171
+        ],
+        "T": 6329,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 30,
+        "core_size": 3,
+        "score": [
+          111031924352222908127131809029665952042685913847,
+          96693439918346741881895147932083693288911041
+        ],
+        "T": 6891,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 31,
+        "core_size": 3,
+        "score": [
+          29256830941966552844155924543462992024034487506371,
+          23506465251246152178396527365031136012274248181
+        ],
+        "T": 7469,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 32,
+        "core_size": 3,
+        "score": [
+          496359584501081579420280588393347763669211397337263,
+          368191381241934757800016297273109664131632958765
+        ],
+        "T": 8090,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 33,
+        "core_size": 3,
+        "score": [
+          562959907741715097303755955300285058242974373342183349,
+          386007871206072903189772135242247794791582690558019
+        ],
+        "T": 8752,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 34,
+        "core_size": 3,
+        "score": [
+          20221493926860769385745425246770036723759358821036607295,
+          12813375044159283381797265564677107268445967642382741
+        ],
+        "T": 9470,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 35,
+        "core_size": 4,
+        "score": [
+          1737255971547024626947291237338460413459077551882786553881,
+          1029184300990496903963284647200434773423373071726219511
+        ],
+        "T": 10129,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 36,
+        "core_size": 4,
+        "score": [
+          541598231535726109615893470970637811286003265973528072153147,
+          303708028656562068234726840899217772676013030216904651701
+        ],
+        "T": 10701,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 37,
+        "core_size": 4,
+        "score": [
+          43846455857256245202354724795204899508215660879641016963764965,
+          23304605166226238600881080257662423723279677244973785291643
+        ],
+        "T": 11290,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 38,
+        "core_size": 4,
+        "score": [
+          14728048444431297765512013482216090786509126206570649967414053709,
+          7428848108029194284646109463579132304207948254966739826873571
+        ],
+        "T": 11897,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 39,
+        "core_size": 4,
+        "score": [
+          316512539856644107719040309371810139634829901934314473516637346013,
+          151644970790838030894949660031180973572623429336950892505119087
+        ],
+        "T": 12525,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 40,
+        "core_size": 4,
+        "score": [
+          450603769878521102265793987184496685315131246945992208429947477718211,
+          205291175666253244629767728455053827285480258913739020582246895021
+        ],
+        "T": 13171,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 41,
+        "core_size": 4,
+        "score": [
+          10363181492358988440879255256663285413663578188322694999440933415577619,
+          4494229398516151337054831676949153042506084775578913643833154226101
+        ],
+        "T": 13837,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 42,
+        "core_size": 4,
+        "score": [
+          15412711245263305399922585798244993857910916405444060691942155372465263397,
+          6365646108204095639535527442185181082363451177812159335763711407803019
+        ],
+        "T": 14529,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 43,
+        "core_size": 4,
+        "score": [
+          755393834027676152004313766610201915779512258990135041769720088783713241763,
+          297534189413405626570297370986159435008717272871049238454789229723091045
+        ],
+        "T": 15235,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 44,
+        "core_size": 4,
+        "score": [
+          199390299535609860014162707111137446251297334177353242195033823242795372483433,
+          74929126421865809795360395072127767035896222904055415179520100328868636327
+        ],
+        "T": 15968,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 45,
+        "core_size": 4,
+        "score": [
+          12079662691468098704789271228398144485067926769355292576907588767646247854197583,
+          4333567382774321272410363514693567625343974200904998342722874131295463116177
+        ],
+        "T": 16726,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 46,
+        "core_size": 4,
+        "score": [
+          24627022515232522746469264838607974028113536412164816294326990171024992714742572837,
+          8437153433867741601700614801123908263673848291533333614076594838940845218417291
+        ],
+        "T": 17515,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 47,
+        "core_size": 4,
+        "score": [
+          1330135841523076502132942495249276853099085890101488557039244200126848331284183722163,
+          435774222158328772402506003251750668198452644057069597017429624807857547728458885
+        ],
+        "T": 18316,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 48,
+        "core_size": 4,
+        "score": [
+          1214200867872692140576016848797820116797095989305206599522717949309442493596065543823723,
+          380873541637633025041437350084201640185490390295717274589953749841955332887448411749
+        ],
+        "T": 19129,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 49,
+        "core_size": 4,
+        "score": [
+          140958470037622515648688839649376493668745682707455591305858687979481239813614102937406277,
+          42355314281044367588714961697532751084053634743908358802580078090300053917698828859195
+        ],
+        "T": 19969,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 50,
+        "core_size": 4,
+        "score": [
+          66000263195090227336249325801786376061857152489021544261608170109644144997335506420243972269,
+          19002013897266871093547819855661042671538780564896407785607304442747532824584002710571619
+        ],
+        "T": 20841,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 51,
+        "core_size": 4,
+        "score": [
+          3928482417650646195866625839932878102541800260168738136060926016023953542470044036630944538815,
+          1084155087028199770944872540138692928763300825442885977254592725570627477490430170968499497
+        ],
+        "T": 21743,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 52,
+        "core_size": 4,
+        "score": [
+          3835918623896576807853141590274626459031582098644476554205851606114160916470400793476510063668931,
+          1015284471840520002746301763637869903909943100348507642783836114985023867988091239634304426445
+        ],
+        "T": 22671,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 53,
+        "core_size": 4,
+        "score": [
+          235951863506043990914745073317762030653308300174776287698779650035017928029958866928072767687837649,
+          59906113894724601213414147271282109685304665591697827227300742720883052016840086960224871405263
+        ],
+        "T": 23634,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 54,
+        "core_size": 4,
+        "score": [
+          241754356763670252816864261946908723863074968085541086158913895240040927634622898982064947298937873901,
+          58926494735848772908491089096032069971686176673119651582799876280252675092524963848522511533205539
+        ],
+        "T": 24617,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 55,
+        "core_size": 4,
+        "score": [
+          1584494467977531990982160183290543729037125960602024952179859022176399311439514167574702446423430562309,
+          370951974997124955833206362295802869412026520054364093786841019543373657663772809018123184131412919
+        ],
+        "T": 25630,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      },
+      {
+        "omega": 56,
+        "core_size": 4,
+        "score": [
+          16997401799841421465491150562885020255972391108504921436024271635922381111297336129297779856472841775196787,
+          3823765029132123479497764392048877494210251334047893283373944178067763142220293090345898865676696069789
+        ],
+        "T": 26673,
+        "proof": "primorial > T^6; T-1/T > 6*score"
+      }
+    ],
+    "tail_start": 57,
+    "tail_primorial": "1168489079156465704987173290774096471177444024124720198139827803196157871127649219224446996884272620699035170",
+    "tail_rhs": "417990122764190532991072108168805344960173969275919234801175565978266694167126356270760881304320406374580224",
+    "next_prime": 271,
+    "tail_induction": "Every following prime exceeds 64, so the primorial grows faster than (6*2^t)^6.",
+    "all_pass": true
+  },
+  "coverage_count": 261,
+  "coverage_complete": true,
+  "witnesses": [
+    {
+      "q": 2,
+      "base_field_order": 4,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "63",
+      "all_pass": true
+    },
+    {
+      "q": 4,
+      "base_field_order": 16,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4095",
+      "all_pass": true
+    },
+    {
+      "q": 8,
+      "base_field_order": 64,
+      "degree_over_prime_field": 6,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "262143",
+      "all_pass": true
+    },
+    {
+      "q": 16,
+      "base_field_order": 256,
+      "degree_over_prime_field": 8,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "16777215",
+      "all_pass": true
+    },
+    {
+      "q": 32,
+      "base_field_order": 1024,
+      "degree_over_prime_field": 10,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1073741823",
+      "all_pass": true
+    },
+    {
+      "q": 64,
+      "base_field_order": 4096,
+      "degree_over_prime_field": 12,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "68719476735",
+      "all_pass": true
+    },
+    {
+      "q": 128,
+      "base_field_order": 16384,
+      "degree_over_prime_field": 14,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4398046511103",
+      "all_pass": true
+    },
+    {
+      "q": 256,
+      "base_field_order": 65536,
+      "degree_over_prime_field": 16,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "281474976710655",
+      "all_pass": true
+    },
+    {
+      "q": 512,
+      "base_field_order": 262144,
+      "degree_over_prime_field": 18,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "18014398509481983",
+      "all_pass": true
+    },
+    {
+      "q": 1024,
+      "base_field_order": 1048576,
+      "degree_over_prime_field": 20,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1152921504606846975",
+      "all_pass": true
+    },
+    {
+      "q": 5,
+      "base_field_order": 25,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "15624",
+      "all_pass": true
+    },
+    {
+      "q": 25,
+      "base_field_order": 625,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "244140624",
+      "all_pass": true
+    },
+    {
+      "q": 125,
+      "base_field_order": 15625,
+      "degree_over_prime_field": 6,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3814697265624",
+      "all_pass": true
+    },
+    {
+      "q": 625,
+      "base_field_order": 390625,
+      "degree_over_prime_field": 8,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "59604644775390624",
+      "all_pass": true
+    },
+    {
+      "q": 7,
+      "base_field_order": 49,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "117648",
+      "all_pass": true
+    },
+    {
+      "q": 49,
+      "base_field_order": 2401,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "13841287200",
+      "all_pass": true
+    },
+    {
+      "q": 343,
+      "base_field_order": 117649,
+      "degree_over_prime_field": 6,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1628413597910448",
+      "all_pass": true
+    },
+    {
+      "q": 11,
+      "base_field_order": 121,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1771560",
+      "all_pass": true
+    },
+    {
+      "q": 121,
+      "base_field_order": 14641,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3138428376720",
+      "all_pass": true
+    },
+    {
+      "q": 1331,
+      "base_field_order": 1771561,
+      "degree_over_prime_field": 6,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5559917313492231480",
+      "all_pass": true
+    },
+    {
+      "q": 13,
+      "base_field_order": 169,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4826808",
+      "all_pass": true
+    },
+    {
+      "q": 169,
+      "base_field_order": 28561,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "23298085122480",
+      "all_pass": true
+    },
+    {
+      "q": 17,
+      "base_field_order": 289,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "24137568",
+      "all_pass": true
+    },
+    {
+      "q": 289,
+      "base_field_order": 83521,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "582622237229760",
+      "all_pass": true
+    },
+    {
+      "q": 19,
+      "base_field_order": 361,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "47045880",
+      "all_pass": true
+    },
+    {
+      "q": 361,
+      "base_field_order": 130321,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2213314919066160",
+      "all_pass": true
+    },
+    {
+      "q": 23,
+      "base_field_order": 529,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "148035888",
+      "all_pass": true
+    },
+    {
+      "q": 529,
+      "base_field_order": 279841,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "21914624432020320",
+      "all_pass": true
+    },
+    {
+      "q": 29,
+      "base_field_order": 841,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "594823320",
+      "all_pass": true
+    },
+    {
+      "q": 841,
+      "base_field_order": 707281,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "353814783205469040",
+      "all_pass": true
+    },
+    {
+      "q": 31,
+      "base_field_order": 961,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "887503680",
+      "all_pass": true
+    },
+    {
+      "q": 961,
+      "base_field_order": 923521,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "787662783788549760",
+      "all_pass": true
+    },
+    {
+      "q": 37,
+      "base_field_order": 1369,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2565726408",
+      "all_pass": true
+    },
+    {
+      "q": 1369,
+      "base_field_order": 1874161,
+      "degree_over_prime_field": 4,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6582952005840035280",
+      "all_pass": true
+    },
+    {
+      "q": 41,
+      "base_field_order": 1681,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4750104240",
+      "all_pass": true
+    },
+    {
+      "q": 43,
+      "base_field_order": 1849,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6321363048",
+      "all_pass": true
+    },
+    {
+      "q": 47,
+      "base_field_order": 2209,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10779215328",
+      "all_pass": true
+    },
+    {
+      "q": 53,
+      "base_field_order": 2809,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "22164361128",
+      "all_pass": true
+    },
+    {
+      "q": 59,
+      "base_field_order": 3481,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "42180533640",
+      "all_pass": true
+    },
+    {
+      "q": 61,
+      "base_field_order": 3721,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "51520374360",
+      "all_pass": true
+    },
+    {
+      "q": 67,
+      "base_field_order": 4489,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "90458382168",
+      "all_pass": true
+    },
+    {
+      "q": 71,
+      "base_field_order": 5041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "128100283920",
+      "all_pass": true
+    },
+    {
+      "q": 73,
+      "base_field_order": 5329,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "151334226288",
+      "all_pass": true
+    },
+    {
+      "q": 79,
+      "base_field_order": 6241,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "243087455520",
+      "all_pass": true
+    },
+    {
+      "q": 83,
+      "base_field_order": 6889,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "326940373368",
+      "all_pass": true
+    },
+    {
+      "q": 89,
+      "base_field_order": 7921,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "496981290960",
+      "all_pass": true
+    },
+    {
+      "q": 97,
+      "base_field_order": 9409,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "832972004928",
+      "all_pass": true
+    },
+    {
+      "q": 101,
+      "base_field_order": 10201,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1061520150600",
+      "all_pass": true
+    },
+    {
+      "q": 103,
+      "base_field_order": 10609,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1194052296528",
+      "all_pass": true
+    },
+    {
+      "q": 107,
+      "base_field_order": 11449,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1500730351848",
+      "all_pass": true
+    },
+    {
+      "q": 109,
+      "base_field_order": 11881,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1677100110840",
+      "all_pass": true
+    },
+    {
+      "q": 113,
+      "base_field_order": 12769,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2081951752608",
+      "all_pass": true
+    },
+    {
+      "q": 127,
+      "base_field_order": 16129,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4195872914688",
+      "all_pass": true
+    },
+    {
+      "q": 131,
+      "base_field_order": 17161,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5053913144280",
+      "all_pass": true
+    },
+    {
+      "q": 137,
+      "base_field_order": 18769,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6611856250608",
+      "all_pass": true
+    },
+    {
+      "q": 139,
+      "base_field_order": 19321,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "7212549413160",
+      "all_pass": true
+    },
+    {
+      "q": 149,
+      "base_field_order": 22201,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10942526586600",
+      "all_pass": true
+    },
+    {
+      "q": 151,
+      "base_field_order": 22801,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "11853911588400",
+      "all_pass": true
+    },
+    {
+      "q": 157,
+      "base_field_order": 24649,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "14976071831448",
+      "all_pass": true
+    },
+    {
+      "q": 163,
+      "base_field_order": 26569,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "18755369578008",
+      "all_pass": true
+    },
+    {
+      "q": 167,
+      "base_field_order": 27889,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "21691961596368",
+      "all_pass": true
+    },
+    {
+      "q": 173,
+      "base_field_order": 29929,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "26808753332088",
+      "all_pass": true
+    },
+    {
+      "q": 179,
+      "base_field_order": 32041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "32894113444920",
+      "all_pass": true
+    },
+    {
+      "q": 181,
+      "base_field_order": 32761,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "35161828327080",
+      "all_pass": true
+    },
+    {
+      "q": 191,
+      "base_field_order": 36481,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "48551226272640",
+      "all_pass": true
+    },
+    {
+      "q": 193,
+      "base_field_order": 37249,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "51682540549248",
+      "all_pass": true
+    },
+    {
+      "q": 197,
+      "base_field_order": 38809,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "58451728309128",
+      "all_pass": true
+    },
+    {
+      "q": 199,
+      "base_field_order": 39601,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "62103840598800",
+      "all_pass": true
+    },
+    {
+      "q": 211,
+      "base_field_order": 44521,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "88245939632760",
+      "all_pass": true
+    },
+    {
+      "q": 223,
+      "base_field_order": 49729,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "122978496247488",
+      "all_pass": true
+    },
+    {
+      "q": 227,
+      "base_field_order": 51529,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "136821750708888",
+      "all_pass": true
+    },
+    {
+      "q": 229,
+      "base_field_order": 52441,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "144215816802120",
+      "all_pass": true
+    },
+    {
+      "q": 233,
+      "base_field_order": 54289,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "160005726539568",
+      "all_pass": true
+    },
+    {
+      "q": 239,
+      "base_field_order": 57121,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "186374892382560",
+      "all_pass": true
+    },
+    {
+      "q": 241,
+      "base_field_order": 58081,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "195930594145440",
+      "all_pass": true
+    },
+    {
+      "q": 251,
+      "base_field_order": 63001,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "250058907189000",
+      "all_pass": true
+    },
+    {
+      "q": 257,
+      "base_field_order": 66049,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "288136807515648",
+      "all_pass": true
+    },
+    {
+      "q": 263,
+      "base_field_order": 69169,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "330928743953808",
+      "all_pass": true
+    },
+    {
+      "q": 269,
+      "base_field_order": 72361,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "378890468381880",
+      "all_pass": true
+    },
+    {
+      "q": 271,
+      "base_field_order": 73441,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "396109944105120",
+      "all_pass": true
+    },
+    {
+      "q": 277,
+      "base_field_order": 76729,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "451729667968488",
+      "all_pass": true
+    },
+    {
+      "q": 281,
+      "base_field_order": 78961,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "492309163417680",
+      "all_pass": true
+    },
+    {
+      "q": 283,
+      "base_field_order": 80089,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "513710701744968",
+      "all_pass": true
+    },
+    {
+      "q": 293,
+      "base_field_order": 85849,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "632711491215048",
+      "all_pass": true
+    },
+    {
+      "q": 307,
+      "base_field_order": 94249,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "837201991720248",
+      "all_pass": true
+    },
+    {
+      "q": 311,
+      "base_field_order": 96721,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "904820297013360",
+      "all_pass": true
+    },
+    {
+      "q": 313,
+      "base_field_order": 97969,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "940299110504208",
+      "all_pass": true
+    },
+    {
+      "q": 317,
+      "base_field_order": 100489,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1014741853230168",
+      "all_pass": true
+    },
+    {
+      "q": 331,
+      "base_field_order": 109561,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1315127813325480",
+      "all_pass": true
+    },
+    {
+      "q": 337,
+      "base_field_order": 113569,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1464803622199008",
+      "all_pass": true
+    },
+    {
+      "q": 347,
+      "base_field_order": 120409,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1745729089577928",
+      "all_pass": true
+    },
+    {
+      "q": 349,
+      "base_field_order": 121801,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1806976738085400",
+      "all_pass": true
+    },
+    {
+      "q": 353,
+      "base_field_order": 124609,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1934854145598528",
+      "all_pass": true
+    },
+    {
+      "q": 359,
+      "base_field_order": 128881,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2140753641621840",
+      "all_pass": true
+    },
+    {
+      "q": 367,
+      "base_field_order": 134689,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2443410216924768",
+      "all_pass": true
+    },
+    {
+      "q": 373,
+      "base_field_order": 139129,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2693103168443688",
+      "all_pass": true
+    },
+    {
+      "q": 379,
+      "base_field_order": 143641,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2963706958323720",
+      "all_pass": true
+    },
+    {
+      "q": 383,
+      "base_field_order": 146689,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3156404426880768",
+      "all_pass": true
+    },
+    {
+      "q": 389,
+      "base_field_order": 151321,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3464955073649160",
+      "all_pass": true
+    },
+    {
+      "q": 397,
+      "base_field_order": 157609,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3915101633817528",
+      "all_pass": true
+    },
+    {
+      "q": 401,
+      "base_field_order": 160801,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4157825282402400",
+      "all_pass": true
+    },
+    {
+      "q": 409,
+      "base_field_order": 167281,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4681013008649040",
+      "all_pass": true
+    },
+    {
+      "q": 419,
+      "base_field_order": 175561,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5411082280083480",
+      "all_pass": true
+    },
+    {
+      "q": 421,
+      "base_field_order": 177241,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5567914722008520",
+      "all_pass": true
+    },
+    {
+      "q": 431,
+      "base_field_order": 185761,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6410082527866080",
+      "all_pass": true
+    },
+    {
+      "q": 433,
+      "base_field_order": 187489,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6590636786811168",
+      "all_pass": true
+    },
+    {
+      "q": 439,
+      "base_field_order": 192721,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "7157924635221360",
+      "all_pass": true
+    },
+    {
+      "q": 443,
+      "base_field_order": 196249,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "7558269224026248",
+      "all_pass": true
+    },
+    {
+      "q": 449,
+      "base_field_order": 201601,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "8193662024284800",
+      "all_pass": true
+    },
+    {
+      "q": 457,
+      "base_field_order": 208849,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9109555799784048",
+      "all_pass": true
+    },
+    {
+      "q": 461,
+      "base_field_order": 212521,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9598548249896760",
+      "all_pass": true
+    },
+    {
+      "q": 463,
+      "base_field_order": 214369,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9851127637605408",
+      "all_pass": true
+    },
+    {
+      "q": 467,
+      "base_field_order": 218089,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10372926089038968",
+      "all_pass": true
+    },
+    {
+      "q": 479,
+      "base_field_order": 229441,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "12078502137213120",
+      "all_pass": true
+    },
+    {
+      "q": 487,
+      "base_field_order": 237169,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "13340550994697808",
+      "all_pass": true
+    },
+    {
+      "q": 491,
+      "base_field_order": 241081,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "14011639427134440",
+      "all_pass": true
+    },
+    {
+      "q": 499,
+      "base_field_order": 249001,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "15438435003747000",
+      "all_pass": true
+    },
+    {
+      "q": 503,
+      "base_field_order": 253009,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "16196005304479728",
+      "all_pass": true
+    },
+    {
+      "q": 509,
+      "base_field_order": 259081,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "17390284781428440",
+      "all_pass": true
+    },
+    {
+      "q": 521,
+      "base_field_order": 271441,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "19999831641819120",
+      "all_pass": true
+    },
+    {
+      "q": 523,
+      "base_field_order": 273529,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "20464923860814888",
+      "all_pass": true
+    },
+    {
+      "q": 541,
+      "base_field_order": 292681,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "25071688922457240",
+      "all_pass": true
+    },
+    {
+      "q": 547,
+      "base_field_order": 299209,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "26786992617986328",
+      "all_pass": true
+    },
+    {
+      "q": 557,
+      "base_field_order": 310249,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "29862844376368248",
+      "all_pass": true
+    },
+    {
+      "q": 563,
+      "base_field_order": 316969,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "31845668436881208",
+      "all_pass": true
+    },
+    {
+      "q": 569,
+      "base_field_order": 323761,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "33937011715960080",
+      "all_pass": true
+    },
+    {
+      "q": 571,
+      "base_field_order": 326041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "34659049592086920",
+      "all_pass": true
+    },
+    {
+      "q": 577,
+      "base_field_order": 332929,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "36902422678601088",
+      "all_pass": true
+    },
+    {
+      "q": 587,
+      "base_field_order": 344569,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "40909917857572008",
+      "all_pass": true
+    },
+    {
+      "q": 593,
+      "base_field_order": 351649,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "43483867145012448",
+      "all_pass": true
+    },
+    {
+      "q": 599,
+      "base_field_order": 358801,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "46191379685396400",
+      "all_pass": true
+    },
+    {
+      "q": 601,
+      "base_field_order": 361201,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "47124508325403600",
+      "all_pass": true
+    },
+    {
+      "q": 607,
+      "base_field_order": 368449,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "50018670786022848",
+      "all_pass": true
+    },
+    {
+      "q": 613,
+      "base_field_order": 375769,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "53059462610881608",
+      "all_pass": true
+    },
+    {
+      "q": 617,
+      "base_field_order": 380689,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "55171016309022768",
+      "all_pass": true
+    },
+    {
+      "q": 619,
+      "base_field_order": 383161,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "56252767574402280",
+      "all_pass": true
+    },
+    {
+      "q": 631,
+      "base_field_order": 398161,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "63121332085847280",
+      "all_pass": true
+    },
+    {
+      "q": 641,
+      "base_field_order": 410881,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "69366243661827840",
+      "all_pass": true
+    },
+    {
+      "q": 643,
+      "base_field_order": 413449,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "70675003317157848",
+      "all_pass": true
+    },
+    {
+      "q": 647,
+      "base_field_order": 418609,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "73354318058640528",
+      "all_pass": true
+    },
+    {
+      "q": 653,
+      "base_field_order": 426409,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "77531660905535928",
+      "all_pass": true
+    },
+    {
+      "q": 659,
+      "base_field_order": 434281,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "81905390937410040",
+      "all_pass": true
+    },
+    {
+      "q": 661,
+      "base_field_order": 436921,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "83408201528457960",
+      "all_pass": true
+    },
+    {
+      "q": 673,
+      "base_field_order": 452929,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "92915974333361088",
+      "all_pass": true
+    },
+    {
+      "q": 677,
+      "base_field_order": 458329,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "96279097826745288",
+      "all_pass": true
+    },
+    {
+      "q": 683,
+      "base_field_order": 466489,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "101513598260088168",
+      "all_pass": true
+    },
+    {
+      "q": 691,
+      "base_field_order": 477481,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "108859988535875640",
+      "all_pass": true
+    },
+    {
+      "q": 701,
+      "base_field_order": 491401,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "118661028367354200",
+      "all_pass": true
+    },
+    {
+      "q": 709,
+      "base_field_order": 502681,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "127021550911887240",
+      "all_pass": true
+    },
+    {
+      "q": 719,
+      "base_field_order": 516961,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "138157142546011680",
+      "all_pass": true
+    },
+    {
+      "q": 727,
+      "base_field_order": 528529,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "147640825624179888",
+      "all_pass": true
+    },
+    {
+      "q": 733,
+      "base_field_order": 537289,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "155104303499468568",
+      "all_pass": true
+    },
+    {
+      "q": 739,
+      "base_field_order": 546121,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "162879576091729560",
+      "all_pass": true
+    },
+    {
+      "q": 743,
+      "base_field_order": 552049,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "168241403464173648",
+      "all_pass": true
+    },
+    {
+      "q": 751,
+      "base_field_order": 564001,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "179407098289692000",
+      "all_pass": true
+    },
+    {
+      "q": 757,
+      "base_field_order": 573049,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "188180785490436648",
+      "all_pass": true
+    },
+    {
+      "q": 761,
+      "base_field_order": 579121,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "194226256916188560",
+      "all_pass": true
+    },
+    {
+      "q": 769,
+      "base_field_order": 591361,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "206803573429178880",
+      "all_pass": true
+    },
+    {
+      "q": 773,
+      "base_field_order": 597529,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "213342295426266888",
+      "all_pass": true
+    },
+    {
+      "q": 787,
+      "base_field_order": 619369,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "237601071128220408",
+      "all_pass": true
+    },
+    {
+      "q": 797,
+      "base_field_order": 635209,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "256300780296434328",
+      "all_pass": true
+    },
+    {
+      "q": 809,
+      "base_field_order": 654481,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "280343912229566640",
+      "all_pass": true
+    },
+    {
+      "q": 811,
+      "base_field_order": 657721,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "284528074768416360",
+      "all_pass": true
+    },
+    {
+      "q": 821,
+      "base_field_order": 674041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "306237903347050920",
+      "all_pass": true
+    },
+    {
+      "q": 823,
+      "base_field_order": 677329,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "310741323596082288",
+      "all_pass": true
+    },
+    {
+      "q": 827,
+      "base_field_order": 683929,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "319913861015774088",
+      "all_pass": true
+    },
+    {
+      "q": 829,
+      "base_field_order": 687241,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "324584056305938520",
+      "all_pass": true
+    },
+    {
+      "q": 839,
+      "base_field_order": 703921,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "348796216188498960",
+      "all_pass": true
+    },
+    {
+      "q": 853,
+      "base_field_order": 727609,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "385207014600327528",
+      "all_pass": true
+    },
+    {
+      "q": 857,
+      "base_field_order": 734449,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "396173052347920848",
+      "all_pass": true
+    },
+    {
+      "q": 859,
+      "base_field_order": 737881,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "401752865442768840",
+      "all_pass": true
+    },
+    {
+      "q": 863,
+      "base_field_order": 744769,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "413109111924508608",
+      "all_pass": true
+    },
+    {
+      "q": 877,
+      "base_field_order": 769129,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "454985504099933688",
+      "all_pass": true
+    },
+    {
+      "q": 881,
+      "base_field_order": 776161,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "467579487356261280",
+      "all_pass": true
+    },
+    {
+      "q": 883,
+      "base_field_order": 779689,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "473984589097059768",
+      "all_pass": true
+    },
+    {
+      "q": 887,
+      "base_field_order": 786769,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "487014306255994608",
+      "all_pass": true
+    },
+    {
+      "q": 907,
+      "base_field_order": 822649,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "556728843703025448",
+      "all_pass": true
+    },
+    {
+      "q": 911,
+      "base_field_order": 829921,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "571623746239596960",
+      "all_pass": true
+    },
+    {
+      "q": 919,
+      "base_field_order": 844561,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "602411242538130480",
+      "all_pass": true
+    },
+    {
+      "q": 929,
+      "base_field_order": 863041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "642827257939177920",
+      "all_pass": true
+    },
+    {
+      "q": 937,
+      "base_field_order": 877969,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "676764462319244208",
+      "all_pass": true
+    },
+    {
+      "q": 941,
+      "base_field_order": 885481,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "694284933049739640",
+      "all_pass": true
+    },
+    {
+      "q": 947,
+      "base_field_order": 896809,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "721273330206403128",
+      "all_pass": true
+    },
+    {
+      "q": 953,
+      "base_field_order": 908209,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "749130369924173328",
+      "all_pass": true
+    },
+    {
+      "q": 967,
+      "base_field_order": 935089,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "817633815294109968",
+      "all_pass": true
+    },
+    {
+      "q": 971,
+      "base_field_order": 942841,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "838137706742929320",
+      "all_pass": true
+    },
+    {
+      "q": 977,
+      "base_field_order": 954529,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "869695819144977888",
+      "all_pass": true
+    },
+    {
+      "q": 983,
+      "base_field_order": 966289,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "902237984319995568",
+      "all_pass": true
+    },
+    {
+      "q": 991,
+      "base_field_order": 982081,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "947200518061237440",
+      "all_pass": true
+    },
+    {
+      "q": 997,
+      "base_field_order": 994009,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "982134461213542728",
+      "all_pass": true
+    },
+    {
+      "q": 1009,
+      "base_field_order": 1018081,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1055229678769825440",
+      "all_pass": true
+    },
+    {
+      "q": 1013,
+      "base_field_order": 1026169,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1080579370647584808",
+      "all_pass": true
+    },
+    {
+      "q": 1019,
+      "base_field_order": 1038361,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1119554149718639880",
+      "all_pass": true
+    },
+    {
+      "q": 1021,
+      "base_field_order": 1042441,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1132803161805372120",
+      "all_pass": true
+    },
+    {
+      "q": 1031,
+      "base_field_order": 1062961,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1201024845477409680",
+      "all_pass": true
+    },
+    {
+      "q": 1033,
+      "base_field_order": 1067089,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1215071764918825968",
+      "all_pass": true
+    },
+    {
+      "q": 1039,
+      "base_field_order": 1079521,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1258036626478937760",
+      "all_pass": true
+    },
+    {
+      "q": 1049,
+      "base_field_order": 1100401,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1332456160707781200",
+      "all_pass": true
+    },
+    {
+      "q": 1051,
+      "base_field_order": 1104601,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1347771585762793800",
+      "all_pass": true
+    },
+    {
+      "q": 1061,
+      "base_field_order": 1125721,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1426567426713180360",
+      "all_pass": true
+    },
+    {
+      "q": 1063,
+      "base_field_order": 1129969,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1442778251557760208",
+      "all_pass": true
+    },
+    {
+      "q": 1069,
+      "base_field_order": 1142761,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1492334678921257080",
+      "all_pass": true
+    },
+    {
+      "q": 1087,
+      "base_field_order": 1181569,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1649594745296443008",
+      "all_pass": true
+    },
+    {
+      "q": 1091,
+      "base_field_order": 1190281,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1686353054212958040",
+      "all_pass": true
+    },
+    {
+      "q": 1093,
+      "base_field_order": 1194649,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1704986606307341448",
+      "all_pass": true
+    },
+    {
+      "q": 1097,
+      "base_field_order": 1203409,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1742768756228546928",
+      "all_pass": true
+    },
+    {
+      "q": 1103,
+      "base_field_order": 1216609,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1800748553711754528",
+      "all_pass": true
+    },
+    {
+      "q": 1109,
+      "base_field_order": 1229881,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1860326946952404840",
+      "all_pass": true
+    },
+    {
+      "q": 1117,
+      "base_field_order": 1247689,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "1942312202861343768",
+      "all_pass": true
+    },
+    {
+      "q": 1123,
+      "base_field_order": 1261129,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2005758020782049688",
+      "all_pass": true
+    },
+    {
+      "q": 1129,
+      "base_field_order": 1274641,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2070921569798556720",
+      "all_pass": true
+    },
+    {
+      "q": 1151,
+      "base_field_order": 1324801,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2325155174281094400",
+      "all_pass": true
+    },
+    {
+      "q": 1153,
+      "base_field_order": 1329409,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2349502133724764928",
+      "all_pass": true
+    },
+    {
+      "q": 1163,
+      "base_field_order": 1352569,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2474447753486836008",
+      "all_pass": true
+    },
+    {
+      "q": 1171,
+      "base_field_order": 1371241,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2578347030344150520",
+      "all_pass": true
+    },
+    {
+      "q": 1181,
+      "base_field_order": 1394761,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2713309814112733080",
+      "all_pass": true
+    },
+    {
+      "q": 1187,
+      "base_field_order": 1408969,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2797076301929117208",
+      "all_pass": true
+    },
+    {
+      "q": 1193,
+      "base_field_order": 1423249,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "2882986853660707248",
+      "all_pass": true
+    },
+    {
+      "q": 1201,
+      "base_field_order": 1442401,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3000945058581607200",
+      "all_pass": true
+    },
+    {
+      "q": 1213,
+      "base_field_order": 1471369,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3185406083915736408",
+      "all_pass": true
+    },
+    {
+      "q": 1217,
+      "base_field_order": 1481089,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3248953303580707968",
+      "all_pass": true
+    },
+    {
+      "q": 1223,
+      "base_field_order": 1495729,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3346252758575305488",
+      "all_pass": true
+    },
+    {
+      "q": 1229,
+      "base_field_order": 1510441,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3445968453384696120",
+      "all_pass": true
+    },
+    {
+      "q": 1231,
+      "base_field_order": 1515361,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3479752196030990880",
+      "all_pass": true
+    },
+    {
+      "q": 1237,
+      "base_field_order": 1530169,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3582763967399816808",
+      "all_pass": true
+    },
+    {
+      "q": 1249,
+      "base_field_order": 1560001,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3796423300804680000",
+      "all_pass": true
+    },
+    {
+      "q": 1259,
+      "base_field_order": 1585081,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "3982487126873086440",
+      "all_pass": true
+    },
+    {
+      "q": 1277,
+      "base_field_order": 1630729,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4336560239433910488",
+      "all_pass": true
+    },
+    {
+      "q": 1279,
+      "base_field_order": 1635841,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4377470891483128320",
+      "all_pass": true
+    },
+    {
+      "q": 1283,
+      "base_field_order": 1646089,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4460257562486602968",
+      "all_pass": true
+    },
+    {
+      "q": 1289,
+      "base_field_order": 1661521,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4586881327254923760",
+      "all_pass": true
+    },
+    {
+      "q": 1291,
+      "base_field_order": 1666681,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4629749075101299240",
+      "all_pass": true
+    },
+    {
+      "q": 1297,
+      "base_field_order": 1682209,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4760360649171455328",
+      "all_pass": true
+    },
+    {
+      "q": 1301,
+      "base_field_order": 1692601,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4849129465465357800",
+      "all_pass": true
+    },
+    {
+      "q": 1303,
+      "base_field_order": 1697809,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4894028501935246128",
+      "all_pass": true
+    },
+    {
+      "q": 1307,
+      "base_field_order": 1708249,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "4984866425916562248",
+      "all_pass": true
+    },
+    {
+      "q": 1319,
+      "base_field_order": 1739761,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5265853508957968080",
+      "all_pass": true
+    },
+    {
+      "q": 1321,
+      "base_field_order": 1745041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5313943171875103920",
+      "all_pass": true
+    },
+    {
+      "q": 1327,
+      "base_field_order": 1760929,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "5460413568858245088",
+      "all_pass": true
+    },
+    {
+      "q": 1361,
+      "base_field_order": 1852321,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6355485778080872160",
+      "all_pass": true
+    },
+    {
+      "q": 1367,
+      "base_field_order": 1868689,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6525459332071566768",
+      "all_pass": true
+    },
+    {
+      "q": 1373,
+      "base_field_order": 1885129,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6699204317182001688",
+      "all_pass": true
+    },
+    {
+      "q": 1381,
+      "base_field_order": 1907161,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "6936846292765214280",
+      "all_pass": true
+    },
+    {
+      "q": 1399,
+      "base_field_order": 1957201,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "7497324129149391600",
+      "all_pass": true
+    },
+    {
+      "q": 1409,
+      "base_field_order": 1985281,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "7824668704909943040",
+      "all_pass": true
+    },
+    {
+      "q": 1423,
+      "base_field_order": 2024929,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "8302892222498717088",
+      "all_pass": true
+    },
+    {
+      "q": 1427,
+      "base_field_order": 2036329,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "8443914724323639288",
+      "all_pass": true
+    },
+    {
+      "q": 1429,
+      "base_field_order": 2042041,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "8515170979269874920",
+      "all_pass": true
+    },
+    {
+      "q": 1433,
+      "base_field_order": 2053489,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "8659187474666169168",
+      "all_pass": true
+    },
+    {
+      "q": 1439,
+      "base_field_order": 2070721,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "8879014467287415360",
+      "all_pass": true
+    },
+    {
+      "q": 1447,
+      "base_field_order": 2093809,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9179334302138674128",
+      "all_pass": true
+    },
+    {
+      "q": 1451,
+      "base_field_order": 2105401,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9332639163597796200",
+      "all_pass": true
+    },
+    {
+      "q": 1453,
+      "base_field_order": 2111209,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9410088020907902328",
+      "all_pass": true
+    },
+    {
+      "q": 1459,
+      "base_field_order": 2128681,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "9645655601478045240",
+      "all_pass": true
+    },
+    {
+      "q": 1471,
+      "base_field_order": 2163841,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10131553366728232320",
+      "all_pass": true
+    },
+    {
+      "q": 1481,
+      "base_field_order": 2193361,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10551892331095904880",
+      "all_pass": true
+    },
+    {
+      "q": 1483,
+      "base_field_order": 2199289,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10637679616079174568",
+      "all_pass": true
+    },
+    {
+      "q": 1487,
+      "base_field_order": 2211169,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10810998600596939808",
+      "all_pass": true
+    },
+    {
+      "q": 1489,
+      "base_field_order": 2217121,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "10898536587686062560",
+      "all_pass": true
+    },
+    {
+      "q": 1493,
+      "base_field_order": 2229049,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "11075385365882604648",
+      "all_pass": true
+    },
+    {
+      "q": 1499,
+      "base_field_order": 2247001,
+      "degree_over_prime_field": 2,
+      "irreducible_cubic": true,
+      "primitive_constant": true,
+      "exact_root_order": "11345138370033741000",
+      "all_pass": true
+    }
+  ],
+  "all_pass": true,
+  "elapsed_seconds": 6.081712375
+}

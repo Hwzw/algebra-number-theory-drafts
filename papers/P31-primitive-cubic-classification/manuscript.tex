@@ -1,0 +1,294 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Nm}{\operatorname{N}}
+\newcommand{\rad}{\operatorname{rad}}
+\title{A complete classification of a primitive cubic family}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that a primitive polynomial $X^3+X^2+X+\lambda$ over $\F_{q^2}$, with $\lambda$ primitive in $\F_{q^2}$, exists if and only if the characteristic is not three. This determines all surviving cases of a conjecture of Awasthi and Sharma, whose case $q=3$ was recently disproved. A Kummer parametrization retains the coefficient conditions exactly and gives uniform character-sum estimates, with different main terms in odd and even characteristic. A sieve proves existence for every $q\ge1511$, and independently verified finite-field certificates cover the remaining 261 prime powers. The proof uses the incomplete-character-sum theorem of Fu and Wan and includes an explicit accounting of its geometric hypotheses.
+\end{abstract}
+
+\section{Introduction and statement}
+
+A monic polynomial of degree $m$ over $\F_Q$ is primitive if its roots generate the multiplicative group $\F_{Q^m}^*$. Awasthi and Sharma \cite[Conjecture 9.1]{AS} asked whether there always exists a primitive polynomial
+\begin{equation}\label{eq:family}
+ h_\lambda(X)=X^3+X^2+X+\lambda\in\F_{q^2}[X]
+\end{equation}
+with $\lambda$ primitive in $\F_{q^2}$. Their surrounding discussion takes $q$ prime. Sharma \cite[Section 4]{S} disproved the case $q=3$ and considered the broader prime-power setting. We give the complete classification in that setting.
+
+\begin{theorem}\label{thm:main}
+Let $q$ be any prime power. There exists a primitive element $\lambda\in\F_{q^2}$ for which \eqref{eq:family} is primitive if and only if $\operatorname{char}(\F_q)\ne3$.
+\end{theorem}
+
+The positive direction is partly computer assisted: a uniform argument reduces it to a specified finite interval, and 261 explicit certificates cover that entire interval. The files \texttt{witnesses.json} and \texttt{check.py} provide the certificates and a verifier using only exact integer and polynomial arithmetic. The proof does not infer the infinite conclusion from a sample.
+
+We also obtain a counting result. Write $P(q)$ for the number of constants in Theorem \ref{thm:main}, and put
+\[
+ Q=q^2,\qquad N=Q^3-1=q^6-1,\qquad
+ \theta(e)=\frac{\varphi(e)}e,\qquad W(e)=2^{\omega(e)},
+\]
+where $\omega(e)$ is the number of distinct prime divisors of $e$.
+
+\begin{theorem}\label{thm:count}
+If $q$ has odd characteristic different from three, then
+\[
+ \left|\frac{3P(q)}{\theta(N)}-(q^2-1)\right|
+ \le 6q\bigl(W(N)-1\bigr).
+\]
+If $q$ is even, then
+\[
+ \left|\frac{3P(q)}{\theta(N)}-2q^2\right|
+ \le 4q\bigl(W(N)-1\bigr).
+\]
+In characteristic three, $P(q)=0$.
+\end{theorem}
+
+Thus the even-characteristic family has twice the leading density. Since $W(n)=n^{o(1)}$, both estimates have a relative error tending to zero as $q$ tends to infinity in the respective regime.
+
+The character estimates come from Fu and Wan \cite[Proposition 2.1 and Theorem 4.2]{FW}. The Kummer parametrization below enforces both prescribed coefficients before applying those estimates. This is essential: multiplicative freeness in an extension field does not enforce membership in a smaller field. We discuss the distinction from the sufficient condition in \cite{S} at the end.
+
+\section{The obstruction and a parametrization}
+
+\begin{lemma}\label{lem:obstruction}
+In characteristic three, no polynomial \eqref{eq:family} can be both irreducible and have primitive constant term.
+\end{lemma}
+\begin{proof}
+The discriminant of $X^3+X^2+X+\lambda$ in characteristic three is $-\lambda$. An irreducible cubic over an odd finite field has nonzero square discriminant: Frobenius permutes its roots as a three-cycle and therefore fixes their Vandermonde product. Since $Q=q^2$ is an odd square, $-1$ is a square in $\F_Q$. Consequently $\lambda$ must be a square. A generator of the even-order cyclic group $\F_Q^*$ is not a square.
+\end{proof}
+
+From now on the characteristic $p$ differs from three. Then $Q\equiv1\pmod3$. Choose a noncube $a\in\F_Q^*$ and a root $\alpha$ of $X^3-a$. This cubic is irreducible, since a reducible cubic has a root. Hence
+\[
+ K=\F_Q(\alpha)=\F_{Q^3}.
+\]
+The element $\zeta=\alpha^{Q-1}$ is a primitive cube root of unity in $\F_Q$, and the three conjugates of $\alpha$ are $\alpha,\zeta\alpha,\zeta^2\alpha$.
+
+For $\beta\in K$, define its subtrace by
+\[
+ \operatorname{St}(\beta)=\beta^{1+Q}+\beta^{1+Q^2}+\beta^{Q+Q^2}.
+\]
+Every $\beta\in K$ has a unique expression $c+u\alpha+v\alpha^2$ with $c,u,v\in\F_Q$. Direct expansion of the three conjugates gives
+\begin{equation}\label{eq:trace}
+ \Tr_{K/\F_Q}(\beta)=3c,\qquad
+ \operatorname{St}(\beta)=3c^2-3auv.
+\end{equation}
+
+\begin{lemma}\label{lem:param}
+If $p\ge5$, the elements of $K$ having trace $-1$ and subtrace $1$ are exactly
+\begin{equation}\label{eq:oddparam}
+ b(t)=-\frac13+\alpha t-\frac{2\alpha^2}{9at},\qquad t\in\F_Q^*,
+\end{equation}
+each occurring once. If $p=2$, they form the union of the two lines
+\begin{equation}\label{eq:evenparam}
+ b_1(t)=1+\alpha t,\qquad b_2(t)=1+\alpha^2t,
+ \qquad t\in\F_Q,
+\end{equation}
+whose only common element is $1$.
+\end{lemma}
+\begin{proof}
+For $p\ge5$, equations \eqref{eq:trace} give $c=-1/3$ and $uv=-2/(9a)\ne0$. Take $u=t$ and solve for $v$. In characteristic two they give $c=1$ and $uv=0$. Uniqueness of the basis expansion proves both the parametrizations and the intersection assertion.
+\end{proof}
+
+A primitive $\beta\in K$ has degree three over $\F_Q$. Its minimal polynomial is
+\[
+ X^3-\Tr(\beta)X^2+\operatorname{St}(\beta)X-\Nm_{K/\F_Q}(\beta).
+\]
+Moreover, the norm of a generator of $K^*$ generates $\F_Q^*$. Negation preserves generators of $\F_Q^*$ when $Q$ is even or $Q\equiv1\pmod4$. In the latter case, if $z$ generates the group and $\gcd(j,Q-1)=1$, then $j+(Q-1)/2$ remains coprime to $Q-1$: it remains odd and is unchanged modulo every odd prime divisor. Since $Q=q^2$, one of these two cases always applies.
+
+It follows that every primitive element in Lemma \ref{lem:param} gives a polynomial counted by $P(q)$, and every such polynomial has exactly three counted roots. In characteristic two we may count the two lines with multiplicity at $1$, since $1$ is not primitive in $K$.
+
+\section{Incomplete character sums}
+
+We record the precise specialization of the external character-sum theorem that we use. Let $f\in K(t)^*$, and let $U$ be an open subset of $\mathbb P^1_{\F_Q}$ obtained by removing the zeros and poles of all three coefficient conjugates of $f$. For a nontrivial multiplicative character $\chi$ of $K^*$, the Kummer sheaf of $(\chi,f)$ has rank one, weight zero, and only tame ramification. Fu--Wan tensor induction produces a rank-one sheaf on $U$ whose trace at $t\in U(\F_Q)$ is $\chi(f(t))$. After base change, its three Kummer factors have character weights $1,Q,Q^2$ on the coefficient conjugates; see \cite[Proposition 2.1]{FW}.
+
+If some zero belongs to exactly one conjugate and is simple, its inertia exponent in this tensor product is one of $1,Q,Q^2$. These integers are coprime to the order of $\chi$, which divides $Q^3-1$. The induced sheaf is therefore geometrically nonconstant. If the removed set has $s$ geometric points, \cite[Theorem 4.2]{FW}, with genus zero and zero Swan conductors, gives
+\begin{equation}\label{eq:fw}
+ \left|\sum_{t\in U(\F_Q)}\chi(f(t))\right|\le(s-2)\sqrt Q.
+\end{equation}
+The puncture count in \eqref{eq:fw} is the actual union of the three supports. This is sharper here than counting their degrees separately. These observations check the geometric nonconstancy hypothesis; the mere nontriviality of $\chi$ would not suffice.
+
+\begin{lemma}\label{lem:chars}
+For every nontrivial multiplicative character $\chi$ of $K^*$, we have
+\[
+ \left|\sum_{t\in\F_Q^*}\chi(b(t))\right|\le6\sqrt Q\quad(p\ge5),
+\]
+and
+\[
+ \left|\sum_{t\in\F_Q}\chi(b_i(t))\right|\le2\sqrt Q
+ \quad(p=2,\ i=1,2).
+\]
+\end{lemma}
+\begin{proof}
+The two zeros of \eqref{eq:oddparam} are
+\[
+ \frac{2}{3\alpha},\qquad -\frac{1}{3\alpha}.
+\]
+Each has a Frobenius orbit of size three. The orbits could meet only if $-2$ were a cube root of unity. That would imply $-8=1$, impossible for $p\ge5$. Thus the three conjugate functions have six disjoint simple zeros. Their poles are $0$ and $\infty$, both simple, and there are eight punctures in total. No zero lies in $\F_Q$, so $U(\F_Q)=\F_Q^*$. Apply \eqref{eq:fw}.
+
+For either line in \eqref{eq:evenparam}, its zero and the two coefficient-conjugate zeros are distinct and lie outside $\F_Q$. The pole is $\infty$. Hence there are four punctures and $U(\F_Q)=\F_Q$. The same nonconstancy check and \eqref{eq:fw} prove the second bound.
+\end{proof}
+
+For a divisor $e\mid N$, call $x\in K^*$ \emph{$e$-free} if it is not an $\ell$-th power for any prime $\ell\mid e$. Let $A(e)$ count $e$-free values in the parameter multiset of Lemma \ref{lem:param}, counting the common point of the two lines twice in characteristic two. Every value is nonzero. The standard indicator is
+\begin{equation}\label{eq:indicator}
+ \rho_e(x)=\theta(e)\sum_{d\mid e}\frac{\mu(d)}{\varphi(d)}
+               \sum_{\operatorname{ord}(\chi)=d}\chi(x).
+\end{equation}
+This follows by multiplying the prime-divisor indicators in the cyclic group $K^*$.
+
+Set
+\begin{equation}\label{eq:CB}
+ (C,B)=
+ \begin{cases}
+ (Q-1,6\sqrt Q),&p\ge5,\\
+ (2Q,4\sqrt Q),&p=2.
+ \end{cases}
+\end{equation}
+The trivial character contributes $C$. Lemma \ref{lem:chars} and \eqref{eq:indicator} imply
+\begin{equation}\label{eq:freebound}
+ \left|\frac{A(e)}{\theta(e)}-C\right|\le\bigl(W(e)-1\bigr)B.
+\end{equation}
+Since $A(N)=3P(q)$, this proves Theorem \ref{thm:count}, including the obstruction from Lemma \ref{lem:obstruction}.
+
+\section{A sieve and a finite cutoff}
+
+\begin{lemma}\label{lem:sieve}
+Write $\rad(N)=k\ell_1\cdots\ell_s$, where $k$ is squarefree and the $\ell_i$ are distinct primes not dividing $k$. Suppose $s\ge1$ and
+\[
+ \delta=1-\sum_{i=1}^s\frac1{\ell_i}>0.
+\]
+Then $A(N)>0$ whenever
+\begin{equation}\label{eq:sievecondition}
+ \frac CB>W(k)\left(\frac{s-1}{\delta}+2\right)-1.
+\end{equation}
+For $s=0$, the sufficient condition is $C/B>W(N)-1$.
+\end{lemma}
+\begin{proof}
+Pointwise on any multiset of elements of $K^*$, the $e$-free indicators give
+\[
+ A(N)\ge\sum_{i=1}^s A(k\ell_i)-(s-1)A(k).
+\]
+Indeed, an element which is not $k$-free contributes zero on the right; a $k$-free element missing at least one further prime condition contributes at most zero, and an $N$-free element contributes one.
+
+Subtracting the character expansions for $A(k\ell_i)$ and $\theta(\ell_i)A(k)$ leaves the squarefree character orders divisible by $\ell_i$. There are $W(k)$ such orders, with normalized total weight one for each. Therefore
+\[
+ \left|A(k\ell_i)-\theta(\ell_i)A(k)\right|
+ \le\theta(k\ell_i)W(k)B.
+\]
+Since $\sum_i\theta(\ell_i)=s-1+\delta$, inequality \eqref{eq:freebound} yields
+\begin{align*}
+ A(N)&\ge\delta A(k)-\theta(k)W(k)B(s-1+\delta)\\
+ &\ge\theta(k)\bigl[\delta(C+B)-W(k)B(s-1+2\delta)\bigr].
+\end{align*}
+This is positive under \eqref{eq:sievecondition}. The case $s=0$ follows directly from \eqref{eq:freebound}.
+\end{proof}
+
+\begin{proposition}\label{prop:cutoff}
+If $q\ge1511$ and $p\ne3$, then $A(N)>0$.
+\end{proposition}
+\begin{proof}
+In both cases of \eqref{eq:CB},
+\begin{equation}\label{eq:uniform}
+ \frac CB\ge\frac{q-1/q}{6}.
+\end{equation}
+Let $t=\omega(N)$, and write $p_1<p_2<\cdots$ for the ordinary primes. Take $k$ to contain the $j$ smallest prime divisors of $N$. For $j<t$, put
+\[
+ d_{t,j}=1-\sum_{i=j+1}^t\frac1{p_i},\qquad
+ R_{t,j}=2^j\left(\frac{t-j-1}{d_{t,j}}+2\right)-1,
+\]
+using only choices with $d_{t,j}>0$. For $j=t$, put $R_{t,t}=2^t-1$. The actual $\delta$ is at least $d_{t,j}$, so Lemma \ref{lem:sieve} applies if $q-1/q>6R_{t,j}$.
+
+For $1\le t\le15$, choose respectively
+\[
+ j=0,1,2,2,2,2,2,2,2,2,2,2,3,3,3.
+\]
+Exact rational calculation gives $6R_{t,j}<1511-1/1511$ in every case. For $16\le t\le56$, Table \ref{tab:sieve} gives $j$ and an integer $T$ satisfying
+\begin{equation}\label{eq:finitecert}
+ \prod_{i=1}^t p_i>T^6,\qquad T-1/T>6R_{t,j}.
+\end{equation}
+Since $N=q^6-1$ has $t$ distinct prime factors, the first inequality implies $q>T$, and the second proves the desired sieve condition.
+
+For the infinite tail, the exact base inequality is
+\[
+ \prod_{i=1}^{57}p_i>(6\cdot2^{57})^6.
+\]
+The next prime is $271>64$, as are all subsequent primes. Induction therefore proves $\prod_{i=1}^t p_i>(6\cdot2^t)^6$ for every $t\ge57$. Hence $q>6\cdot2^t$, which implies $q-1/q>6(2^t-1)$. The direct case $j=t$ suffices.
+
+All finite rational inequalities, prime products, and the tail base inequality are checked by the supplied verifier. This completes the cutoff proof.
+\end{proof}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{rrr@{\qquad}rrr@{\qquad}rrr}
+\toprule
+$t$&$j$&$T$&$t$&$j$&$T$&$t$&$j$&$T$\\
+\midrule
+16&3&1724&30&3&6891&44&4&15968\\
+17&3&1949&31&3&7469&45&4&16726\\
+18&3&2195&32&3&8090&46&4&17515\\
+19&3&2456&33&3&8752&47&4&18316\\
+20&3&2736&34&3&9470&48&4&19129\\
+21&3&3040&35&4&10129&49&4&19969\\
+22&3&3363&36&4&10701&50&4&20841\\
+23&3&3710&37&4&11290&51&4&21743\\
+24&3&4078&38&4&11897&52&4&22671\\
+25&3&4464&39&4&12525&53&4&23634\\
+26&3&4878&40&4&13171&54&4&24617\\
+27&3&5326&41&4&13837&55&4&25630\\
+28&3&5807&42&4&14529&56&4&26673\\
+29&3&6329&43&4&15235&&&\\
+\bottomrule
+\end{tabular}
+\caption{Exact finite sieve certificates for \eqref{eq:finitecert}.}\label{tab:sieve}
+\end{table}
+
+\section{Finite certificates and completion of the proof}
+
+For each of the 261 prime powers $q=p^r<1511$ with $p\ne3$, the file \texttt{witnesses.json} supplies a monic polynomial $M(Z)$ of degree $2r$ over $\F_p$ and an exponent $v$. If $z$ denotes the residue class of $Z$, the certificate verifies that $z$ has exact order $Q-1$ in $\F_p[Z]/(M)$. This proves that the quotient is a field: the cyclic subgroup generated by $z$ already contains all $Q-1$ nonzero residue classes. It is therefore a specified model of $\F_Q$.
+
+The exponent satisfies $\gcd(v,Q-1)=1$, and $\lambda=z^v$. In the quotient by $h_\lambda$, the residue class $x$ of $X$ is checked to satisfy
+\begin{equation}\label{eq:ordercert}
+ x^N=1,\qquad x^{N/\ell}\ne1\quad\text{for every prime }\ell\mid N.
+\end{equation}
+Thus its order is exactly $N$. Independently, the verifier checks
+\[
+ \gcd(X^Q-X,h_\lambda)=1.
+\]
+A cubic with no root in $\F_Q$ is irreducible, so this also verifies the field property of the cubic quotient directly. Consequently each certificate gives a primitive polynomial of the required form.
+
+There is no unverified factorization in \eqref{eq:ordercert}. The full prime support of $N$ is obtained by factoring the four integers in
+\[
+ q^6-1=(q-1)(q+1)(q^2+q+1)(q^2-q+1).
+\]
+For this finite interval, each factor is less than $1511^2+1511+1$. Trial division is enough, and the verifier removes all resulting prime powers from $N$ and checks that the residual factor is one. It likewise verifies the complete set of prime powers below the cutoff, rather than merely reading a claimed count.
+
+The witness generator uses C++ integer encodings of finite-field elements. The separate Python verifier uses coefficient tuples and independent polynomial arithmetic. It verifies the base-field generator, the primitive constant, cubic irreducibility, all root-order tests, the 261-case coverage, and every finite inequality in Proposition \ref{prop:cutoff}. Neither implementation uses floating-point arithmetic for a mathematical decision.
+
+\begin{proof}[Proof of Theorem \ref{thm:main}]
+Lemma \ref{lem:obstruction} excludes characteristic three. In all other characteristics, Proposition \ref{prop:cutoff} proves existence when $q\ge1511$. The finite certificates prove existence for every remaining prime power $q$. The norm argument after Lemma \ref{lem:param} ensures that all counted constants are primitive. These cases exhaust the theorem.
+\end{proof}
+
+\section{Relation to earlier claims and further questions}
+
+The case $q=3$ was already disproved in \cite{S}; we do not claim priority for that counterexample. The new conclusion is the complete classification of the surviving cases, together with the two uniform counting estimates. The general degree-$m$ existence problem for polynomials $g(X)+\lambda$, with nonconstant coefficients in a subfield, remains outside the theorem.
+
+The sufficient-condition argument in \cite[Section 5]{S} counts pairs in which $-g(\beta)$ is $(q^n-1)$-free in $\F_{q^{mn}}^*$. That condition does not require $-g(\beta)$ to lie in $\F_{q^n}$, so it is not equivalent to the stated primitive-constant condition. Its general conclusion also conflicts with a norm obstruction: if $m$ is odd and $q^n\equiv3\pmod4$, the norm of a primitive root would be $-\lambda$, while a primitive $\lambda$ has nonprimitive negative. Taking $m=n=3$ and arbitrarily large $q=7^{2r+1}$ meets the characteristic hypothesis of its Theorem 5.1 and exhibits this incompatibility. Our proof for the cubic family uses no such equivalence.
+
+The parametrization gives a more general route for prescribed-coefficient questions: impose the trace equations first, then check that the induced multiplicative characters are geometrically nonconstant on the resulting curve. The characteristic-three obstruction here shows that this last condition cannot be omitted. Extending the classification to other pairs of prescribed cubic coefficients, or to higher-degree subfield families, requires a new analysis of those curves and their exceptional characters.
+
+\begin{thebibliography}{9}
+\bibitem{AS} A. Awasthi and R. K. Sharma, \emph{Primitive transformation shift registers over finite fields}, Journal of Algebra and Its Applications \textbf{18} (2019), 1950171. \href{https://doi.org/10.1142/S0219498819501718}{doi:10.1142/S0219498819501718}. Author revision dated August 18, 2018; earlier version \href{https://arxiv.org/abs/1612.05367}{arXiv:1612.05367}.
+\bibitem{FW} L. Fu and D. Wan, \emph{A class of incomplete character sums}, Quarterly Journal of Mathematics \textbf{65} (2014), 1195--1211. \href{https://doi.org/10.1093/qmath/hau012}{doi:10.1093/qmath/hau012}. We use the corrected \href{https://arxiv.org/abs/1303.3650v3}{arXiv:1303.3650v3}, January 6, 2025.
+\bibitem{S} A. K. Sharma, \emph{On the existence of primitive polynomials $f(x)=g(x)+\lambda$ over finite fields}, \href{https://arxiv.org/abs/2608.07262v1}{arXiv:2608.07262v1}, August 7, 2026.
+\end{thebibliography}
+\end{document}

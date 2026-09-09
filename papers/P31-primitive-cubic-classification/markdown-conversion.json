@@ -1,0 +1,140 @@
+{
+  "environments": {
+    "theorem": 2,
+    "lemma": 4,
+    "proof": 6,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "1.2",
+      "id": "theorem-2",
+      "source_label": "thm:count"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:obstruction"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:param"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "3.1",
+      "id": "lemma-3",
+      "source_label": "lem:chars"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "4.1",
+      "id": "lemma-4",
+      "source_label": "lem:sieve"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "4.2",
+      "id": "proposition-1",
+      "source_label": "prop:cutoff"
+    }
+  ],
+  "references": 28,
+  "citations": 8,
+  "cited_keys": [
+    "AS",
+    "FW",
+    "S"
+  ],
+  "bibliography_keys": [
+    "AS",
+    "FW",
+    "S"
+  ],
+  "equation_labels": [
+    "eq:family",
+    "eq:trace",
+    "eq:oddparam",
+    "eq:evenparam",
+    "eq:fw",
+    "eq:indicator",
+    "eq:CB",
+    "eq:freebound",
+    "eq:sievecondition",
+    "eq:uniform",
+    "eq:finitecert",
+    "eq:ordercert"
+  ],
+  "label_numbers": {
+    "eq:family": "1",
+    "thm:main": "1.1",
+    "thm:count": "1.2",
+    "lem:obstruction": "2.1",
+    "eq:trace": "2",
+    "lem:param": "2.2",
+    "eq:oddparam": "3",
+    "eq:evenparam": "4",
+    "eq:fw": "5",
+    "lem:chars": "3.1",
+    "eq:indicator": "6",
+    "eq:CB": "7",
+    "eq:freebound": "8",
+    "lem:sieve": "4.1",
+    "eq:sievecondition": "9",
+    "prop:cutoff": "4.2",
+    "eq:uniform": "10",
+    "eq:finitecert": "11",
+    "eq:ordercert": "12",
+    "tab:sieve": "1"
+  },
+  "bibliography_numbers": {
+    "AS": "1",
+    "FW": "2",
+    "S": "3"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [
+    {
+      "columns": 9,
+      "body_rows": 14,
+      "repeated_page_headers_removed": 0
+    }
+  ],
+  "source_tex_sha256": "701778a5c87764e85f76d303f855a040c2e4f668eac9303087b3fbf3ba86e971",
+  "source_pdf_sha256": "bcde486a7d712a7aefde4d6fd464529ad55b0db10a52d5d364fcd2ebe6806ffe",
+  "markdown_sha256": "aee613a9ce8c37decb67d46b47ac9ef1db3bd57b5bbc02bdf0b986a890d8e730",
+  "markdown_bytes": 20558,
+  "source_math_expressions_verified": 239,
+  "markdown_math_expressions": 245,
+  "custom_macros_expanded": [
+    "F",
+    "Tr",
+    "Nm",
+    "rad"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 49,
+  "semantic_roundtrip_sha256": "6cb4b7c7598c18c465117aa914a2e53d200554cd1e86cc4a76d311c34ff9f282",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 36,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

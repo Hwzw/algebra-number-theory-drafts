@@ -1,0 +1,62 @@
+{
+  "paper_id": "P31",
+  "title": "A complete classification of a primitive cubic family",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 7,
+  "status": "Complete internally checked proposed classification of all surviving prime-power cases of Awasthi-Sharma Conjecture 9.1; outside correctness, priority and significance provisional",
+  "files": {
+    "README.md": {
+      "sha256": "f1ea3d2578affe1430a421c48b3ae96d235a46f228e16840e6adc8abbc7704c4",
+      "bytes": 2001
+    },
+    "ASSESSMENT.md": {
+      "sha256": "8d86dec923c0e7eb2d8bb356dd494629b5e44fa0e62b36cfc450cf671953e702",
+      "bytes": 4426
+    },
+    "REVIEW.md": {
+      "sha256": "cb2422ed29f046702422e079e8860db07ba69687b16d8f0bdaecf8820e9a7168",
+      "bytes": 3892
+    },
+    "manuscript.tex": {
+      "sha256": "701778a5c87764e85f76d303f855a040c2e4f668eac9303087b3fbf3ba86e971",
+      "bytes": 19002
+    },
+    "manuscript.md": {
+      "sha256": "aee613a9ce8c37decb67d46b47ac9ef1db3bd57b5bbc02bdf0b986a890d8e730",
+      "bytes": 20558
+    },
+    "manuscript.pdf": {
+      "sha256": "bcde486a7d712a7aefde4d6fd464529ad55b0db10a52d5d364fcd2ebe6806ffe",
+      "bytes": 94827
+    },
+    "check.py": {
+      "sha256": "9a238052da1525ce792d9353d77d048c94527ceec537fd5481d9054fc8997a46",
+      "bytes": 5603
+    },
+    "check-results.json": {
+      "sha256": "e71ec001a843718157121bf49b6d93a49435833f264c2027e4c82d0fb5f4b79f",
+      "bytes": 77386
+    },
+    "search.cpp": {
+      "sha256": "33263347423655061042c848b7ae5331800c42872bf216eb81ae333d11ddf2ec",
+      "bytes": 3136
+    },
+    "witnesses.json": {
+      "sha256": "98c0983890fad1457ade15177ac341846b548d72bf3c7570620a6b19fd02938f",
+      "bytes": 62244
+    },
+    "markdown-conversion.json": {
+      "sha256": "d41aa2fe38cb05608dcf2e1f3aebb1b286eee3fdebf1efbdd83a67058baf560c",
+      "bytes": 3084
+    },
+    "markdown-math-check.json": {
+      "sha256": "96b336976817df662a732cc6f83cb1a2ae9b06c11eb17510806e57a728c63d89",
+      "bytes": 447
+    },
+    "artifact-qa.json": {
+      "sha256": "d138cc85b1454f51c340dd74ef32828e3a2bb545beae2754387886a57978c10b",
+      "bytes": 884
+    }
+  }
+}
