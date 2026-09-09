@@ -31,3 +31,5 @@ The selection does not count each corollary as another paper. P01 combines the c
 The concrete reasons for selecting these five, and the explicit remaining research frontiers, are in [DOWNSTREAM.md](DOWNSTREAM.md). Build and validation instructions are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md). The final [manifest](manifest.json) records exact artifact hashes and checks.
 
 These are substantive specialist research candidates. The length or technical complexity of a proof does not certify historical difficulty, and no document here claims five field-changing breakthroughs or guarantees future citations.
+
+[Version-specific citation links](CITATIONS.md) and [BibTeX](citations.bib) identify the exact revised manuscript snapshot.

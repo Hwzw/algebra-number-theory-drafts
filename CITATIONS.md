@@ -17,3 +17,7 @@ The following links identify the exact initially published PDF bytes at commit `
 - **P11**: *Finite parameter tests for partition congruences and the surviving classes of an elongated partition conjecture*. AI-generated research draft, September 8, 2026. [Permanent PDF link](https://github.com/Hwzw/algebra-number-theory-drafts/blob/82b56ffca64adad52306f04d4b8c354143a26f85/papers/P11-partition-congruences/manuscript.pdf).
 - **P12**: *Sharp orders of arithmetical critical groups via canonical lattice simplices*. AI-generated research draft, September 8, 2026. [Permanent PDF link](https://github.com/Hwzw/algebra-number-theory-drafts/blob/82b56ffca64adad52306f04d4b8c354143a26f85/papers/P12-arithmetical-critical-groups/manuscript.pdf).
 - **P13**: *Nilperiod rings and additive periods of power maps*. AI-generated research draft, September 8, 2026. [Permanent PDF link](https://github.com/Hwzw/algebra-number-theory-drafts/blob/82b56ffca64adad52306f04d4b8c354143a26f85/papers/P13-nilperiod-rings/manuscript.pdf).
+
+## Five stronger revisions
+
+The [selected revision citations](selected_papers/CITATIONS.md) and [BibTeX](selected_papers/citations.bib) identify the new manuscripts by their immutable content commit. The original citation links above remain valid.
