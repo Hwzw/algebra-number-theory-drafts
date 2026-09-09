@@ -1,0 +1,123 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 2,
+    "proof": 5,
+    "proposition": 1,
+    "corollary": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2",
+      "id": "lemma-1",
+      "source_label": "lem:ring"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3",
+      "id": "proposition-1",
+      "source_label": "prop:line"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "4",
+      "id": "lemma-2",
+      "source_label": "lem:automorphism"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "5",
+      "id": "corollary-1",
+      "source_label": "cor:jets"
+    }
+  ],
+  "references": 14,
+  "citations": 7,
+  "cited_keys": [
+    "Conca",
+    "Dramburg",
+    "KLM",
+    "MO",
+    "Petersson",
+    "deJong"
+  ],
+  "bibliography_keys": [
+    "Conca",
+    "deJong",
+    "Dramburg",
+    "MO",
+    "KLM",
+    "Petersson"
+  ],
+  "equation_labels": [
+    "eq:ring",
+    "eq:powers",
+    "eq:matrix",
+    "eq:standard",
+    "eq:auxiliary",
+    "eq:diagram",
+    "eq:T",
+    "eq:conjugate",
+    "eq:transition",
+    "eq:formal"
+  ],
+  "label_numbers": {
+    "eq:ring": "1",
+    "eq:powers": "2",
+    "eq:matrix": "3",
+    "thm:main": "1",
+    "lem:ring": "2",
+    "eq:standard": "4",
+    "eq:auxiliary": "5",
+    "eq:diagram": "6",
+    "eq:T": "7",
+    "eq:conjugate": "8",
+    "prop:line": "3",
+    "eq:transition": "9",
+    "lem:automorphism": "4",
+    "eq:formal": "10",
+    "cor:jets": "5"
+  },
+  "bibliography_numbers": {
+    "Conca": "1",
+    "deJong": "2",
+    "Dramburg": "3",
+    "MO": "4",
+    "KLM": "5",
+    "Petersson": "6"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "dbc1f43d1d45683fc8e268c40b85aa14d8efe39bfcff358693b77ad6a86fb3d7",
+  "source_pdf_sha256": "7b13cbe13cb42ff64349613be1c98821a5a22f7f1a39eb9fc9764e6c94f4252d",
+  "markdown_sha256": "f53102c7b9d2c6be724d21f75ce5994756876a00026aa02d05e9f7aaea3ef473",
+  "markdown_bytes": 17886,
+  "source_math_expressions_verified": 231,
+  "markdown_math_expressions": 236,
+  "custom_macros_expanded": [
+    "Mat",
+    "Pic",
+    "im",
+    "Spec"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 41,
+  "semantic_roundtrip_sha256": "a3be361e33c1834412d0a21f64d8462e77e3136059a8fab3182217911b03d81e",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 31,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

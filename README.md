@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 24 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 25 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New Koszul idempotent counterexample
+
+[**P25: Primitive idempotents that cannot be homogenized in Koszul algebras**](papers/P25-koszul-idempotents/README.md), by **Henry Zweiman**, gives a proposed negative answer to Dramburg's Question 6.2, including over the complex numbers. The six-page [PDF](papers/P25-koszul-idempotents/manuscript.pdf), [complete Markdown](papers/P25-koszul-idempotents/manuscript.md), and [LaTeX](papers/P25-koszul-idempotents/manuscript.tex) construct a Koszul matrix algebra over a two-dimensional quadratic complete-intersection domain.
+
+In that fixed algebra, primitive idempotents can agree with a homogeneous idempotent to arbitrarily high finite order while no algebra automorphism makes them homogeneous. They become conjugate after completion. The [assessment](papers/P25-koszul-idempotents/ASSESSMENT.md) credits the classical Picard method and prior quaternion and Laurent examples; the [review](papers/P25-koszul-idempotents/REVIEW.md) records the proof and exact integer checks. This is one proposed paper, with outside correctness, priority and significance assessment still outstanding.
 
 ## New unmixed height-three weighting theorem
 

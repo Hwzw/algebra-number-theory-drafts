@@ -1,0 +1,55 @@
+{
+  "paper_id": "P25",
+  "title": "Primitive idempotents that cannot be homogenized in Koszul algebras",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "Internally checked proposed answer to Dramburg Question 6.2; historical priority and significance provisional",
+  "files": {
+    "README.md": {
+      "sha256": "29b2f5c72ebb105b657c12312ea18fd84ff79400bfab6693a88b747d29a51dd7",
+      "bytes": 1558
+    },
+    "ASSESSMENT.md": {
+      "sha256": "2d4b4ef116e152554ecce111dd0ccbc0edd11ac3d062093b9eaf47251dec8ea9",
+      "bytes": 2770
+    },
+    "REVIEW.md": {
+      "sha256": "6ae8092520f81b847d0f1ce4d74ccb248e603cbb17dc0af04d7651a0d5050f06",
+      "bytes": 2818
+    },
+    "manuscript.tex": {
+      "sha256": "dbc1f43d1d45683fc8e268c40b85aa14d8efe39bfcff358693b77ad6a86fb3d7",
+      "bytes": 17267
+    },
+    "manuscript.md": {
+      "sha256": "f53102c7b9d2c6be724d21f75ce5994756876a00026aa02d05e9f7aaea3ef473",
+      "bytes": 17886
+    },
+    "manuscript.pdf": {
+      "sha256": "7b13cbe13cb42ff64349613be1c98821a5a22f7f1a39eb9fc9764e6c94f4252d",
+      "bytes": 77361
+    },
+    "check.py": {
+      "sha256": "d49cfc48936fddece7aa8d28ceec1fdb6b21c370aa809753e240d6b5f6ce820c",
+      "bytes": 5030
+    },
+    "check-results.json": {
+      "sha256": "3ad36bb06a9f3670a5144f29c984612dfb94b422142e9d2d1dd06164418b8f68",
+      "bytes": 8785
+    },
+    "markdown-conversion.json": {
+      "sha256": "da331d9d5aacb739fbcb0ec8cb66cec0dbc032420e824228edcbe27a6c18dc12",
+      "bytes": 2698
+    },
+    "markdown-math-check.json": {
+      "sha256": "5dce39dd5bcfab53f4429f7569b77d1ecd8c24f72e9ad981f6022528c9f2ac04",
+      "bytes": 435
+    },
+    "artifact-qa.json": {
+      "sha256": "2454387c38cba2fc2df4a21946bc1574a21a528fd142f4c5ae11e1690a5e6ad2",
+      "bytes": 887
+    }
+  },
+  "counts_as_distinct_manuscripts": 1
+}

@@ -1,0 +1,425 @@
+{
+  "all_passed": true,
+  "arithmetic": "integer polynomial quotient; no floating point",
+  "matrix_certificates": [
+    {
+      "r": 0,
+      "first_difference_degree": 2,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    },
+    {
+      "r": 1,
+      "first_difference_degree": 4,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    },
+    {
+      "r": 2,
+      "first_difference_degree": 6,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    },
+    {
+      "r": 3,
+      "first_difference_degree": 8,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    },
+    {
+      "r": 7,
+      "first_difference_degree": 16,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    },
+    {
+      "r": 10,
+      "first_difference_degree": 22,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    },
+    {
+      "r": 25,
+      "first_difference_degree": 52,
+      "idempotence_orthogonality_trace_determinant": true,
+      "formal_intertwiner": true,
+      "power_substitution_in_polynomial_ring": true
+    }
+  ],
+  "normal_monomial_checks": [
+    {
+      "degree": 0,
+      "dimension": 1
+    },
+    {
+      "degree": 1,
+      "dimension": 4
+    },
+    {
+      "degree": 2,
+      "dimension": 8
+    },
+    {
+      "degree": 3,
+      "dimension": 12
+    },
+    {
+      "degree": 4,
+      "dimension": 16
+    },
+    {
+      "degree": 5,
+      "dimension": 20
+    },
+    {
+      "degree": 6,
+      "dimension": 24
+    },
+    {
+      "degree": 7,
+      "dimension": 28
+    },
+    {
+      "degree": 8,
+      "dimension": 32
+    },
+    {
+      "degree": 9,
+      "dimension": 36
+    },
+    {
+      "degree": 10,
+      "dimension": 40
+    },
+    {
+      "degree": 11,
+      "dimension": 44
+    },
+    {
+      "degree": 12,
+      "dimension": 48
+    },
+    {
+      "degree": 13,
+      "dimension": 52
+    },
+    {
+      "degree": 14,
+      "dimension": 56
+    },
+    {
+      "degree": 15,
+      "dimension": 60
+    },
+    {
+      "degree": 16,
+      "dimension": 64
+    },
+    {
+      "degree": 17,
+      "dimension": 68
+    },
+    {
+      "degree": 18,
+      "dimension": 72
+    },
+    {
+      "degree": 19,
+      "dimension": 76
+    },
+    {
+      "degree": 20,
+      "dimension": 80
+    },
+    {
+      "degree": 21,
+      "dimension": 84
+    },
+    {
+      "degree": 22,
+      "dimension": 88
+    },
+    {
+      "degree": 23,
+      "dimension": 92
+    },
+    {
+      "degree": 24,
+      "dimension": 96
+    },
+    {
+      "degree": 25,
+      "dimension": 100
+    },
+    {
+      "degree": 26,
+      "dimension": 104
+    },
+    {
+      "degree": 27,
+      "dimension": 108
+    },
+    {
+      "degree": 28,
+      "dimension": 112
+    },
+    {
+      "degree": 29,
+      "dimension": 116
+    },
+    {
+      "degree": 30,
+      "dimension": 120
+    }
+  ],
+  "characteristic_boundary_checks": [
+    {
+      "characteristic": 0,
+      "matrix_size": 2,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 3,
+      "obstruction_coefficient": 3,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 4,
+      "obstruction_coefficient": 4,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 5,
+      "obstruction_coefficient": 5,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 6,
+      "obstruction_coefficient": 6,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 7,
+      "obstruction_coefficient": 7,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 8,
+      "obstruction_coefficient": 8,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 0,
+      "matrix_size": 9,
+      "obstruction_coefficient": 9,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 2,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 3,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 4,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 5,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 6,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 7,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 8,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 2,
+      "matrix_size": 9,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 2,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 3,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 4,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 5,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 6,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 7,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 8,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 3,
+      "matrix_size": 9,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 2,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 3,
+      "obstruction_coefficient": 3,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 4,
+      "obstruction_coefficient": 4,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 5,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 6,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 7,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 8,
+      "obstruction_coefficient": 3,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 5,
+      "matrix_size": 9,
+      "obstruction_coefficient": 4,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 2,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 3,
+      "obstruction_coefficient": 3,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 4,
+      "obstruction_coefficient": 4,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 5,
+      "obstruction_coefficient": 5,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 6,
+      "obstruction_coefficient": 6,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 7,
+      "obstruction_coefficient": 0,
+      "theorem_applies": false
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 8,
+      "obstruction_coefficient": 1,
+      "theorem_applies": true
+    },
+    {
+      "characteristic": 7,
+      "matrix_size": 9,
+      "obstruction_coefficient": 2,
+      "theorem_applies": true
+    }
+  ],
+  "limitations": "Finite certificate checks support the universal hand proof. No automated novelty or significance certification.",
+  "script_sha256": "d49cfc48936fddece7aa8d28ceec1fdb6b21c370aa809753e240d6b5f6ce820c"
+}

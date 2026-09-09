@@ -1,0 +1,11 @@
+{
+  "file": "continuation/papers/P25-koszul-idempotents/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "f53102c7b9d2c6be724d21f75ce5994756876a00026aa02d05e9f7aaea3ef473",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 236,
+  "errors": [],
+  "local_svg_preview_created": false,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}
