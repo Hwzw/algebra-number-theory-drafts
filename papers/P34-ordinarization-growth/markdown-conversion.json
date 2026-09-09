@@ -1,0 +1,149 @@
+{
+  "environments": {
+    "theorem": 1,
+    "corollary": 1,
+    "lemma": 4,
+    "proof": 6,
+    "proposition": 1,
+    "remark": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:growth"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:closure"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:ehrhart"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "2.3",
+      "id": "proposition-1",
+      "source_label": "prop:quasi"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "3.1",
+      "id": "lemma-3",
+      "source_label": "lem:bulk"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "3.2",
+      "id": "remark-1",
+      "source_label": "rem:constant"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "4.1",
+      "id": "lemma-4",
+      "source_label": "lem:asymp"
+    }
+  ],
+  "references": 40,
+  "citations": 6,
+  "cited_keys": [
+    "BR",
+    "CK"
+  ],
+  "bibliography_keys": [
+    "BR",
+    "CK"
+  ],
+  "equation_labels": [
+    "eq:constants",
+    "eq:main",
+    "eq:increment",
+    "eq:ambient",
+    "eq:S",
+    "eq:BB",
+    "eq:AB",
+    "eq:hyperasymp",
+    "eq:bulk",
+    "eq:M",
+    "eq:correction",
+    "eq:H1",
+    "eq:H2",
+    "eq:H3",
+    "eq:bulkexp",
+    "eq:summand",
+    "eq:EM"
+  ],
+  "label_numbers": {
+    "thm:main": "1.1",
+    "eq:constants": "1",
+    "eq:main": "2",
+    "cor:growth": "1.2",
+    "eq:increment": "3",
+    "eq:ambient": "4",
+    "eq:S": "5",
+    "lem:closure": "2.1",
+    "eq:BB": "6",
+    "eq:AB": "7",
+    "lem:ehrhart": "2.2",
+    "eq:hyperasymp": "8",
+    "prop:quasi": "2.3",
+    "eq:bulk": "9",
+    "lem:bulk": "3.1",
+    "eq:M": "10",
+    "eq:correction": "11",
+    "eq:H1": "12",
+    "eq:H2": "13",
+    "eq:H3": "14",
+    "rem:constant": "3.2",
+    "lem:asymp": "4.1",
+    "eq:bulkexp": "15",
+    "eq:summand": "16",
+    "eq:EM": "17"
+  },
+  "bibliography_numbers": {
+    "BR": "1",
+    "CK": "2"
+  },
+  "tables": [],
+  "source_tex_sha256": "2637a62898663364e79758b0d07491972f306b361c8e60fc2e1c19745d82e48e",
+  "source_pdf_sha256": "868b0d2594b049972d8282111ab51b175703c1aa50f0733e02a74b08cd458f8a",
+  "markdown_sha256": "404cc0a803cd00b32d220cd2d2ad65081bcf2df586ac2684ac2f7b7b218903d9",
+  "markdown_bytes": 19942,
+  "source_math_expressions_verified": 223,
+  "markdown_math_expressions": 229,
+  "custom_macros_expanded": [
+    "Z",
+    "Q",
+    "R",
+    "relint"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 55,
+  "semantic_roundtrip_sha256": "632e7d2892d78294c53119e5714a80935b2c1aae519a70a2d591aa2532631638",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 41,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

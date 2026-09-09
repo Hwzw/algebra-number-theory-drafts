@@ -1,0 +1,62 @@
+{
+  "paper": "P34",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1919,
+      "sha256": "d8fe94993324dccb36a1409ed1ed946b33ac5298edf19cd0d78806b90cedb442"
+    },
+    {
+      "file": "ASSESSMENT.md",
+      "bytes": 4412,
+      "sha256": "161cd007ad9547446ed0a2c67be14e135ae6c924dd4522fe6550ff313d251275"
+    },
+    {
+      "file": "REVIEW.md",
+      "bytes": 4622,
+      "sha256": "4bbb240fd31ea065d10f956962fb09d5facfada62f30b3f56f4c3fc6a3d38d4f"
+    },
+    {
+      "file": "manuscript.tex",
+      "bytes": 18923,
+      "sha256": "2637a62898663364e79758b0d07491972f306b361c8e60fc2e1c19745d82e48e"
+    },
+    {
+      "file": "manuscript.md",
+      "bytes": 19942,
+      "sha256": "404cc0a803cd00b32d220cd2d2ad65081bcf2df586ac2684ac2f7b7b218903d9"
+    },
+    {
+      "file": "manuscript.pdf",
+      "bytes": 84785,
+      "sha256": "868b0d2594b049972d8282111ab51b175703c1aa50f0733e02a74b08cd458f8a"
+    },
+    {
+      "file": "check.py",
+      "bytes": 5134,
+      "sha256": "47948adb155c3e7d3ac9a65b101853c4c7676679f64b29887c03fe58557d6627"
+    },
+    {
+      "file": "check-results.json",
+      "bytes": 5368,
+      "sha256": "aa420fcf4ca9a7d1bde406880c596e3e92be75ce6da531cb9fca606b97c66ae9"
+    },
+    {
+      "file": "markdown-conversion.json",
+      "bytes": 3226,
+      "sha256": "70d4b4743bb89cbeae6addd19248f0f79d45ead80794343ff2706293f900d0e7"
+    },
+    {
+      "file": "markdown-math-check.json",
+      "bytes": 438,
+      "sha256": "faf24f4bfdef5dbb1202fe58a4a18066604dd5922e9033acfc436913cf647f9a"
+    },
+    {
+      "file": "artifact-qa.json",
+      "bytes": 527,
+      "sha256": "50307970c1d16c7ca6290d70e61adc2b97092c76628dea04e0b8eaee01dbfe3f"
+    }
+  ]
+}
