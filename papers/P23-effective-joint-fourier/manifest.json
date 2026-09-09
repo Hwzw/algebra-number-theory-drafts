@@ -1,0 +1,54 @@
+{
+  "paper_id": "P23",
+  "title": "Effective joint Fourier decay at independent Pisot and Salem scales",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 5,
+  "status": "Complete internally checked proposed quantitative theorem; exact prior open status not established; priority and significance provisional",
+  "files": {
+    "manuscript.tex": {
+      "sha256": "f513f7e8bd3ee20d15cb4df71fe86fa0ec3fbd9ea58d7dc08e22342417009985",
+      "bytes": 16820
+    },
+    "manuscript.md": {
+      "sha256": "ae7db41f071a42dbf627042abba7c41a3893253aeb327d525fce3bcbf5ffe49b",
+      "bytes": 17558
+    },
+    "manuscript.pdf": {
+      "sha256": "3a8f3f1333f35c2ab8860ab86fb9d0694a965b57b9574fe9867f06544128b678",
+      "bytes": 87512
+    },
+    "README.md": {
+      "sha256": "3ae2e68302d7b3a271ebe3ac9523e78aaa7ac7b6c2f05d1507e09fccb5d3923f",
+      "bytes": 1453
+    },
+    "ASSESSMENT.md": {
+      "sha256": "dc695bd41734733738030cd7ad5967e47b17c3556515ffe6fe1420451ee86b5e",
+      "bytes": 5720
+    },
+    "REVIEW.md": {
+      "sha256": "eddb2134a0e1945b92ea2c8392d7c5090c015fc7f5ef7ae140b6520bd397b21e",
+      "bytes": 3668
+    },
+    "check.py": {
+      "sha256": "914cffc4a5999bb66c096decd827072c0bf1daec705a1b4af307930ebb96a13c",
+      "bytes": 2451
+    },
+    "check-results.json": {
+      "sha256": "410a2f2f29d774189964e87a331c796a38839e3c0b446bced9d1d0c5147d6ce1",
+      "bytes": 436
+    },
+    "markdown-conversion.json": {
+      "sha256": "a0726959d28e10f2e3a2493f9d8310f7badd867d7968373cd01e292f4639cc83",
+      "bytes": 2699
+    },
+    "markdown-math-check.json": {
+      "sha256": "933be71af08a6d0c3f34c3b7e575d31a4eb087d205a2ea8f63a898102e8cb30a",
+      "bytes": 440
+    },
+    "artifact-qa.json": {
+      "sha256": "7bcc3412a9f3fa449bcd4b1e2cba54f817aec239788d7aed9bc6217b63144f16",
+      "bytes": 839
+    }
+  }
+}

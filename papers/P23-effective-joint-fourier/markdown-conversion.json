@@ -1,0 +1,126 @@
+{
+  "environments": {
+    "theorem": 2,
+    "lemma": 3,
+    "proof": 6,
+    "corollary": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2",
+      "id": "lemma-1",
+      "source_label": "lem:height"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "3",
+      "id": "lemma-2",
+      "source_label": "lem:logs"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "4",
+      "id": "lemma-3",
+      "source_label": "lem:projection"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "5",
+      "id": "theorem-2",
+      "source_label": "thm:count"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "6",
+      "id": "corollary-1",
+      "source_label": "cor:measures"
+    }
+  ],
+  "references": 19,
+  "citations": 6,
+  "cited_keys": [
+    "BMS",
+    "MMS",
+    "Nguyen",
+    "SS",
+    "Stewart",
+    "VY"
+  ],
+  "bibliography_keys": [
+    "BMS",
+    "MMS",
+    "Nguyen",
+    "SS",
+    "Stewart",
+    "VY"
+  ],
+  "equation_labels": [
+    "eq:main",
+    "eq:height",
+    "eq:logs",
+    "eq:projection",
+    "eq:binet",
+    "eq:count",
+    "eq:compare",
+    "eq:Z"
+  ],
+  "label_numbers": {
+    "thm:main": "1",
+    "eq:main": "1",
+    "lem:height": "2",
+    "eq:height": "2",
+    "lem:logs": "3",
+    "eq:logs": "3",
+    "lem:projection": "4",
+    "eq:projection": "4",
+    "eq:binet": "5",
+    "thm:count": "5",
+    "eq:count": "6",
+    "eq:compare": "7",
+    "eq:Z": "8",
+    "cor:measures": "6"
+  },
+  "bibliography_numbers": {
+    "BMS": "1",
+    "MMS": "2",
+    "Nguyen": "3",
+    "SS": "4",
+    "Stewart": "5",
+    "VY": "6"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "f513f7e8bd3ee20d15cb4df71fe86fa0ec3fbd9ea58d7dc08e22342417009985",
+  "source_pdf_sha256": "3a8f3f1333f35c2ab8860ab86fb9d0694a965b57b9574fe9867f06544128b678",
+  "markdown_sha256": "ae7db41f071a42dbf627042abba7c41a3893253aeb327d525fce3bcbf5ffe49b",
+  "markdown_bytes": 17558,
+  "source_math_expressions_verified": 185,
+  "markdown_math_expressions": 191,
+  "custom_macros_expanded": [
+    "Q",
+    "Z",
+    "R",
+    "dist"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 44,
+  "semantic_roundtrip_sha256": "11262c8b445253eecc7ac09c7bbbb8b382533737e58ae214c8495f30c9b89495",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 32,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

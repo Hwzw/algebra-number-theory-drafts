@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 22 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 23 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New effective joint Fourier decay theorem
+
+[**P23: Effective joint Fourier decay at independent Pisot and Salem scales**](papers/P23-effective-joint-fourier/README.md), by **Henry Zweiman**, gives a proposed effective bound for products at independent algebraic parameters. The five-page [PDF](papers/P23-effective-joint-fourier/manuscript.pdf), [complete Markdown](papers/P23-effective-joint-fourier/manuscript.md), and [LaTeX](papers/P23-effective-joint-fourier/manuscript.tex) establish the rate `exp(-c log log u / log log log u)`, allow algebraic rescalings, and cover convolutions of homogeneous self-similar measures with algebraic translations.
+
+The qualitative Pisot result is classical. This quantitative target was formulated in the research program; the [assessment](papers/P23-effective-joint-fourier/ASSESSMENT.md) records that its exact prior open status has not been independently established. The [proof review](papers/P23-effective-joint-fourier/REVIEW.md) records the hand arguments, 5,120 exact projection identities, and interval checks. This is one proposed manuscript, not an addition to a certified count of solved significant open problems.
 
 ## New critical-scale congruence theorem
 

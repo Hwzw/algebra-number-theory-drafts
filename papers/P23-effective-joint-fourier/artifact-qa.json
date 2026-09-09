@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-09",
+  "pdf_pages": 5,
+  "pdf_sha256": "3a8f3f1333f35c2ab8860ab86fb9d0694a965b57b9574fe9867f06544128b678",
+  "tex_sha256": "f513f7e8bd3ee20d15cb4df71fe86fa0ec3fbd9ea58d7dc08e22342417009985",
+  "markdown_sha256": "ae7db41f071a42dbf627042abba7c41a3893253aeb327d525fce3bcbf5ffe49b",
+  "all_final_pdf_pages_rendered": true,
+  "all_final_pdf_pages_visually_inspected": true,
+  "render_dpi": 100,
+  "layout_findings": "All five final pages inspected; no clipping, overlap, unreadable equations, or missing glyphs.",
+  "latex_warnings": [],
+  "markdown_source_math_expressions_verified": 185,
+  "markdown_rendered_expressions": 191,
+  "markdown_math_errors": 0,
+  "markdown_semantic_roundtrip_verified": true,
+  "github_live_render_inspected": false,
+  "review_kind": "originating agent; no human or separate-agent review"
+}

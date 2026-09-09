@@ -1,0 +1,14 @@
+{
+  "projection_trace_identities": 5120,
+  "polynomials": [
+    "x - 3",
+    "x**2 - x - 1",
+    "x**3 - x - 1",
+    "x**4 - x**3 - x**2 - x + 1",
+    "x**4 - 3*x**3 + 3*x**2 - 3*x + 1"
+  ],
+  "paired_interval_parameter_cases": 1500,
+  "disjoint_intervals_checked": 18046,
+  "all_passed": true,
+  "scope": "Exact finite diagnostics of the projection identity and interval endpoints; not proof of the infinite theorem or its novelty."
+}
