@@ -1,0 +1,128 @@
+{
+  "converter": "tools/convert_manuscripts.py",
+  "converter_sha256": "eded03caa2764d4aa05bc15598e9a1b89fb1961dcf6051082116fa9676751097",
+  "pandoc_version": "pandoc 3.9.0.2",
+  "numbering_source": "Tectonic AUX-only compilation in temporary directories",
+  "paper_count": 1,
+  "papers": [
+    {
+      "paper": "P33-polynomial-matrix-completion",
+      "environments": {
+        "theorem": 2,
+        "lemma": 3,
+        "proof": 7,
+        "corollary": 1
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1.1",
+          "id": "theorem-1",
+          "source_label": "thm:main"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "1.2",
+          "id": "theorem-2",
+          "source_label": "thm:sum"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "2.1",
+          "id": "lemma-1",
+          "source_label": "lem:jordan"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "2.2",
+          "id": "lemma-2",
+          "source_label": "lem:exception"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 3,
+          "number": "3.1",
+          "id": "lemma-3",
+          "source_label": "lem:chains"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "5.1",
+          "id": "corollary-1",
+          "source_label": "cor:powers"
+        }
+      ],
+      "references": 19,
+      "citations": 8,
+      "cited_keys": [
+        "GMV",
+        "PSS",
+        "SS",
+        "V"
+      ],
+      "bibliography_keys": [
+        "PSS",
+        "SS",
+        "GMV",
+        "V"
+      ],
+      "equation_labels": [
+        "eq:ef",
+        "eq:main",
+        "eq:packet",
+        "eq:dimensions",
+        "eq:graded",
+        "eq:budget",
+        "eq:cost"
+      ],
+      "label_numbers": {
+        "eq:ef": "1",
+        "thm:main": "1.1",
+        "eq:main": "2",
+        "thm:sum": "1.2",
+        "lem:jordan": "2.1",
+        "eq:packet": "3",
+        "lem:exception": "2.2",
+        "lem:chains": "3.1",
+        "eq:dimensions": "4",
+        "eq:graded": "5",
+        "eq:budget": "6",
+        "eq:cost": "7",
+        "cor:powers": "5.1"
+      },
+      "bibliography_numbers": {
+        "PSS": "1",
+        "SS": "2",
+        "GMV": "3",
+        "V": "4"
+      },
+      "tables": [],
+      "source_tex_sha256": "083e7d9d6151d51e9d2b810d3bb67f7476732e8337d78c2f70e0ece2d80aa645",
+      "source_pdf_sha256": "2736dc98b62ed389d0300620b21277658284274a7f8aadae2435b7f2d86be6f6",
+      "markdown_sha256": "11a9b9f2231ab779832dcfefb834b28f0a5895d6cc73807959ad38d7daead566",
+      "markdown_bytes": 20001,
+      "source_math_expressions_verified": 262,
+      "markdown_math_expressions": 269,
+      "custom_macros_expanded": [
+        "F",
+        "im",
+        "rk",
+        "End",
+        "Hom"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 43,
+      "semantic_roundtrip_sha256": "5e73089644e8f77f7862622d97d9c8d3c924ddb64eb4bebc9efb5f8f61073315",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 30,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    }
+  ]
+}

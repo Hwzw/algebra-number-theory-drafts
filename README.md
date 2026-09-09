@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 32 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 33 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## Sharp polynomial matrix completion
+
+[**P33: Sharp completion bounds for polynomial values of matrices**](papers/P33-polynomial-matrix-completion/README.md), by **Henry Zweiman**, proposes a sharp all-dimension criterion for completing prescribed rows to a scalar polynomial value f(X). For a rank-r coefficient A, the image of Af(X) equals AM_n exactly when n > E(f)(r-1), where E(f) measures the minimum root multiplicity in an exceptional fiber. This gives a complete surjectivity and image-linearity classification when the coefficient column spaces form a direct sum. The six-page [PDF](papers/P33-polynomial-matrix-completion/manuscript.pdf), [complete Markdown](papers/P33-polynomial-matrix-completion/manuscript.md), and [LaTeX](papers/P33-polynomial-matrix-completion/manuscript.tex) include the proof.
+
+The [assessment](papers/P33-polynomial-matrix-completion/ASSESSMENT.md) distinguishes this regime from the unresolved overlapping-coefficient question and credits the known nilpotent obstruction and classical Kronecker decomposition. The [review](papers/P33-polynomial-matrix-completion/REVIEW.md) accompanies exact decomposition and completion checks, including all 19683 matrices over F3 of size three. This is one internally checked proposed manuscript; outside correctness, priority and significance remain provisional.
 
 ## New sharp arity theorem for mixed-exponent clonoids
 

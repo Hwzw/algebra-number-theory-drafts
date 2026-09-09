@@ -1,0 +1,12 @@
+{
+  "exhaustive_partial_decompositions_F3_n3_r2": 729,
+  "random_partial_decompositions_F7": 924,
+  "F3_matrices_classified_for_roots_over_algebraic_closure": 19683,
+  "reachable_prescribed_two_rows_over_F3": {
+    "2": 729,
+    "4": 721
+  },
+  "fourth_power_boundary_witness_missing": true,
+  "exact_padding_inequalities": 98800,
+  "balanced_Jordan_packet_identities": 406
+}
