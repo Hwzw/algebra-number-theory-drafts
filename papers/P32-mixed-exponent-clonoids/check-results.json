@@ -1,0 +1,54 @@
+{
+  "projector_definition_checks": 120,
+  "nonzero_sandwich_checks": 192,
+  "zero_character_quotient_checks": 180,
+  "lower_obstruction": [
+    {
+      "p": 2,
+      "target_prime": 3,
+      "s": 0,
+      "mode": "all_R",
+      "matrices": 256,
+      "singular_residue_matrices": 160,
+      "status": "PASS"
+    },
+    {
+      "p": 2,
+      "target_prime": 3,
+      "s": 1,
+      "mode": "all_R",
+      "matrices": 262144,
+      "singular_residue_matrices": 176128,
+      "status": "PASS"
+    },
+    {
+      "p": 3,
+      "target_prime": 7,
+      "s": 1,
+      "mode": "all_residues_one_lift",
+      "matrices": 19683,
+      "singular_residue_matrices": 8451,
+      "status": "PASS"
+    },
+    {
+      "p": 2,
+      "target_prime": 5,
+      "s": 2,
+      "mode": "targeted_and_random",
+      "matrices": 432,
+      "singular_residue_matrices": 287,
+      "status": "PASS"
+    },
+    {
+      "p": 5,
+      "target_prime": 11,
+      "s": 1,
+      "mode": "targeted_and_random",
+      "matrices": 1025,
+      "singular_residue_matrices": 231,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Exact finite diagnostics only; the universal proof uses character orthogonality and the cited Kovacs theorem. No floating point arithmetic."
+}

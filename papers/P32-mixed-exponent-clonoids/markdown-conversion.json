@@ -1,0 +1,150 @@
+{
+  "converter": "tools/convert_manuscripts.py",
+  "converter_sha256": "eded03caa2764d4aa05bc15598e9a1b89fb1961dcf6051082116fa9676751097",
+  "pandoc_version": "pandoc 3.9.0.2",
+  "numbering_source": "Tectonic AUX-only compilation in temporary directories",
+  "paper_count": 1,
+  "papers": [
+    {
+      "paper": "P32-mixed-exponent-clonoids",
+      "environments": {
+        "theorem": 1,
+        "corollary": 1,
+        "proof": 4,
+        "lemma": 3,
+        "remark": 1
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1.1",
+          "id": "theorem-1",
+          "source_label": "thm:main"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "1.2",
+          "id": "corollary-1",
+          "source_label": "cor:finite"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "2.1",
+          "id": "lemma-1",
+          "source_label": "lem:field"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "3.1",
+          "id": "lemma-2",
+          "source_label": "lem:rankone"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "4.1",
+          "id": "remark-1",
+          "source_label": null
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 3,
+          "number": "5.1",
+          "id": "lemma-3",
+          "source_label": "lem:lower"
+        }
+      ],
+      "references": 25,
+      "citations": 7,
+      "cited_keys": [
+        "FKR",
+        "Ko",
+        "Kuhn",
+        "MW"
+      ],
+      "bibliography_keys": [
+        "FKR",
+        "MW",
+        "Ko",
+        "Kuhn"
+      ],
+      "equation_labels": [
+        "eq:uniform",
+        "eq:rho",
+        "eq:projector",
+        "eq:orthogonal",
+        "eq:Ecv",
+        "eq:phase",
+        "eq:sandwich",
+        "eq:nonzero",
+        "eq:torsion",
+        "eq:zero-basis",
+        "eq:zero-action",
+        "eq:B-L-J",
+        "eq:correction",
+        "eq:lower-function",
+        "eq:functional",
+        "eq:fixed-columns"
+      ],
+      "label_numbers": {
+        "thm:main": "1.1",
+        "eq:uniform": "1",
+        "cor:finite": "1.2",
+        "lem:field": "2.1",
+        "eq:rho": "2",
+        "eq:projector": "3",
+        "eq:orthogonal": "4",
+        "lem:rankone": "3.1",
+        "eq:Ecv": "5",
+        "eq:phase": "6",
+        "eq:sandwich": "7",
+        "eq:nonzero": "8",
+        "eq:torsion": "9",
+        "eq:zero-basis": "10",
+        "eq:zero-action": "11",
+        "eq:B-L-J": "12",
+        "eq:correction": "13",
+        "eq:lower-function": "14",
+        "eq:functional": "15",
+        "lem:lower": "5.1",
+        "eq:fixed-columns": "16"
+      },
+      "bibliography_numbers": {
+        "FKR": "1",
+        "MW": "2",
+        "Ko": "3",
+        "Kuhn": "4"
+      },
+      "tables": [],
+      "source_tex_sha256": "fee6df6db3b34090e655bb78d6d9dcaf54e468adda27321644b002a7957fc1b4",
+      "source_pdf_sha256": "176d0b56f522866453359ad30ed1b1aa744029d163ad0a6985ded3c3f57f36eb",
+      "markdown_sha256": "fe753a4013e3156ab8a6dfdaa79b2caa515eb8cfe04d52c3c46d5f8acbf6999a",
+      "markdown_bytes": 20038,
+      "source_math_expressions_verified": 290,
+      "markdown_math_expressions": 294,
+      "custom_macros_expanded": [
+        "F",
+        "Z",
+        "Mat",
+        "GL",
+        "tr",
+        "im",
+        "rk",
+        "ir",
+        "Id"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 45,
+      "semantic_roundtrip_sha256": "10762b178f4993b65531742ed8ef5a2e0c19a278c117a373f4c1e206fffeb651",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 35,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "pdf_sha256": "176d0b56f522866453359ad30ed1b1aa744029d163ad0a6985ded3c3f57f36eb",
+  "tex_sha256": "fee6df6db3b34090e655bb78d6d9dcaf54e468adda27321644b002a7957fc1b4",
+  "pages": 6,
+  "rendered": true,
+  "visually_reviewed": true,
+  "note": "All six final pages individually inspected; no clipping, overlap or missing glyphs. No TeX warnings.",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "date": "2026-09-09",
+  "markdown_full": true,
+  "markdown_math_expressions": 294,
+  "markdown_math_errors": 0
+}
