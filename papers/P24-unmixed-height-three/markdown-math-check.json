@@ -1,0 +1,11 @@
+{
+  "file": "continuation/papers/P24-unmixed-height-three/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "bd9e25d637d3a80847c8678871d8e94c606ac250add72c08ff96231ea298ca5b",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 197,
+  "errors": [],
+  "local_svg_preview_created": false,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}

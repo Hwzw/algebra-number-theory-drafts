@@ -1,0 +1,54 @@
+{
+  "paper_id": "P24",
+  "title": "The Mendez–Pinto–Villarreal conjecture in unmixed height three",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 7,
+  "status": "Complete internally checked proposed unmixed height-three resolution; priority and significance provisional",
+  "files": {
+    "manuscript.tex": {
+      "sha256": "224b0e92bc78068215c5c40fdfe16ba995cd6e4f981b6077d5888c818622089b",
+      "bytes": 21139
+    },
+    "manuscript.md": {
+      "sha256": "bd9e25d637d3a80847c8678871d8e94c606ac250add72c08ff96231ea298ca5b",
+      "bytes": 21741
+    },
+    "manuscript.pdf": {
+      "sha256": "0b82dfb3b12c5c38790d43efc3674533ca2bcefc360a0cd2c43e7420c6e85128",
+      "bytes": 89927
+    },
+    "README.md": {
+      "sha256": "6e945c0d819fa91f256e1700de1c5a0d396bbf9a4f67c78153ab66ebe447521f",
+      "bytes": 1471
+    },
+    "ASSESSMENT.md": {
+      "sha256": "d0f74e194b58c402f7b4f421dc35826e3c33dcf087af996eac6b8fd4462fdd8c",
+      "bytes": 5453
+    },
+    "REVIEW.md": {
+      "sha256": "bab0cfbc3f39752c127c8ce8d5f9c276732f46c87998141d7b84408115c90654",
+      "bytes": 5310
+    },
+    "check.py": {
+      "sha256": "a7001e958396617e5cce9c0ab4cb9d2deb3fb0033df19a3a069af94468756526",
+      "bytes": 6688
+    },
+    "check-results.json": {
+      "sha256": "3eb864ebd54cc6259e1a49592aa14cc4643d9538fc9eb4c0d2d64c2eee6e70cc",
+      "bytes": 470
+    },
+    "markdown-conversion.json": {
+      "sha256": "8dafec69121956bd09b842405babb69477f258c1f6df9a75c31b742da5a81b11",
+      "bytes": 2710
+    },
+    "markdown-math-check.json": {
+      "sha256": "e069fddfa1991b32b385ff9e9282e8c54239473d74158381f9f6358c2450a0bc",
+      "bytes": 437
+    },
+    "artifact-qa.json": {
+      "sha256": "8d69d8900cbae9e8d2b9339790034db24fcda4211476c5cd203f5bff3f3a267c",
+      "bytes": 883
+    }
+  }
+}

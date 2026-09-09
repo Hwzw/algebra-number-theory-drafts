@@ -1,0 +1,21 @@
+{
+  "status": "Exact supplementary audit; hand proof is the theorem argument",
+  "support_audit": {
+    "families_checked": 1023,
+    "dimension_one_compatible_families": 252,
+    "marked_disagreement_pairs": 165,
+    "types": {
+      "zero": 15,
+      "one": 60,
+      "two_same": 30,
+      "two_cross": 60
+    }
+  },
+  "vertex_audit": {
+    "parameter_choices": 2943,
+    "r_gt_one": 2912,
+    "r_eq_one": 4,
+    "r_lt_one": 27
+  },
+  "two_component_witnesses": 792
+}

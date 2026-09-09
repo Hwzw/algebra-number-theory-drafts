@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 23 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 24 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New unmixed height-three weighting theorem
+
+[**P24: The Mendez–Pinto–Villarreal conjecture in unmixed height three**](papers/P24-unmixed-height-three/README.md), by **Henry Zweiman**, proposes a complete resolution of the named conjecture in the class with irreducible primary components all of height three. The seven-page [PDF](papers/P24-unmixed-height-three/manuscript.pdf), [complete Markdown](papers/P24-unmixed-height-three/manuscript.md), and [LaTeX](papers/P24-unmixed-height-three/manuscript.tex) prove uniform primary-component exponents for arbitrary positive exponents and any number of variables.
+
+The proof combines a classical dimension-one complete-intersection criterion with a five-variable support reduction and an explicit polyhedral obstruction. The [assessment](papers/P24-unmixed-height-three/ASSESSMENT.md) distinguishes the result from the prior height-two and generator-support-three cases; the [review](papers/P24-unmixed-height-three/REVIEW.md) records the hand proof and exact checks. Mixed heights, higher heights, and squarefree Simis classification remain unresolved here. This is one internally checked proposed manuscript; independent correctness, priority, and significance remain provisional.
 
 ## New effective joint Fourier decay theorem
 
