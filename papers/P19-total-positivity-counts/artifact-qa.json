@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-09",
+  "pages": 6,
+  "pdf_sha256": "a8165baa3baf569ed7648e1338f495acfd434e42b5c8450144795f61b0728fbc",
+  "all_pages_rendered": true,
+  "all_pages_visually_inspected": true,
+  "render_dpi": 100,
+  "layout_findings": "All six pages legible; no clipping, overlaps, or missing content observed. Last page contains closing discussion, preparation note, and bibliography.",
+  "latex_warnings": [],
+  "author_verified": "Henry Zweiman",
+  "full_markdown": true,
+  "source_math_expressions_verified": 187,
+  "markdown_math_expressions_checked": 194,
+  "markdown_math_errors": [],
+  "semantic_roundtrip_equal": true,
+  "github_live_markdown_render_inspected": false,
+  "external_human_review": false,
+  "separate_agent_review": false
+}

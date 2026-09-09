@@ -1,0 +1,129 @@
+{
+  "environments": {
+    "theorem": 3,
+    "corollary": 1,
+    "proposition": 1,
+    "proof": 7,
+    "lemma": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:count"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:towers"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3",
+      "id": "corollary-1",
+      "source_label": "cor:minimal"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "4",
+      "id": "theorem-3",
+      "source_label": "thm:recurrence"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "5",
+      "id": "proposition-1",
+      "source_label": "prop:normalization"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "6",
+      "id": "lemma-1",
+      "source_label": "lem:tournament"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "7",
+      "id": "lemma-2",
+      "source_label": "lem:nontorsion"
+    }
+  ],
+  "references": 27,
+  "citations": 9,
+  "cited_keys": [
+    "AP",
+    "DM"
+  ],
+  "bibliography_keys": [
+    "AP",
+    "DM"
+  ],
+  "equation_labels": [
+    "eq:conjecture",
+    "eq:count",
+    "eq:alpha",
+    "eq:recurrence",
+    "eq:tuple",
+    "eq:cliques",
+    "eq:even",
+    "eq:known",
+    "eq:exponential",
+    "eq:u",
+    "eq:bases"
+  ],
+  "label_numbers": {
+    "eq:conjecture": "1",
+    "thm:count": "1",
+    "eq:count": "2",
+    "thm:towers": "2",
+    "cor:minimal": "3",
+    "eq:alpha": "3",
+    "thm:recurrence": "4",
+    "eq:recurrence": "4",
+    "prop:normalization": "5",
+    "eq:tuple": "5",
+    "eq:cliques": "6",
+    "eq:even": "7",
+    "lem:tournament": "6",
+    "eq:known": "8",
+    "eq:exponential": "9",
+    "eq:u": "10",
+    "lem:nontorsion": "7",
+    "eq:bases": "11"
+  },
+  "bibliography_numbers": {
+    "AP": "1",
+    "DM": "2"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "a08213c35535c887e3d671bccd409e270da172f56fb67302341106359b564961",
+  "source_pdf_sha256": "a8165baa3baf569ed7648e1338f495acfd434e42b5c8450144795f61b0728fbc",
+  "markdown_sha256": "760c95a15e88d15e43ebc23c89a44d4b1775935ef211278c3efa582ba34685c9",
+  "markdown_bytes": 17416,
+  "source_math_expressions_verified": 187,
+  "markdown_math_expressions": 194,
+  "custom_macros_expanded": [
+    "F",
+    "Q",
+    "Z",
+    "TP"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 48,
+  "semantic_roundtrip_sha256": "e12c3dc67bb79286cf85d545d1833c1916ec9bc235d3268e138c2e057d598eff",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 34,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

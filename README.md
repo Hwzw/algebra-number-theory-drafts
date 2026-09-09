@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 18 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 19 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New finite-field positivity obstruction
+
+[**P19: Paley cliques and nonpolynomial counts of totally positive matrices**](papers/P19-total-positivity-counts/README.md), by **Henry Zweiman**, gives a proposed counterexample to Ayyer–Prasad's Conjecture 5.12 (2026). The six-page [PDF](papers/P19-total-positivity-counts/manuscript.pdf), [full Markdown](papers/P19-total-positivity-counts/manuscript.md), and [LaTeX](papers/P19-total-positivity-counts/manuscript.tex) determine the two-by-three count over every finite field and show that no polynomial branch exists in any characteristic congruent to one modulo four, even along an arbitrary progression of extension degrees.
+
+The proof uses the known Dawsey–McCarthy four-clique formula and identifies its surviving Gaussian terms. The [assessment](papers/P19-total-positivity-counts/ASSESSMENT.md) and [audit](papers/P19-total-positivity-counts/REVIEW.md) document the contribution and 29 finite-field checks. This is one paper, with six entries proved minimal; the separate semidefinite conjecture remains unaddressed. Historical priority and significance remain provisional.
 
 ## New algebraic extrapolation classification
 

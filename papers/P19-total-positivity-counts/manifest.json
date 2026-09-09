@@ -1,0 +1,66 @@
+{
+  "paper": "P19-total-positivity-counts",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "complete internally checked proposed counterexample to Ayyer-Prasad Conjecture 5.12; historical priority and significance provisional",
+  "external_human_review": false,
+  "separate_agent_review": false,
+  "files": [
+    {
+      "path": "manuscript.md",
+      "bytes": 17416,
+      "sha256": "760c95a15e88d15e43ebc23c89a44d4b1775935ef211278c3efa582ba34685c9"
+    },
+    {
+      "path": "manuscript.tex",
+      "bytes": 16591,
+      "sha256": "a08213c35535c887e3d671bccd409e270da172f56fb67302341106359b564961"
+    },
+    {
+      "path": "manuscript.pdf",
+      "bytes": 79975,
+      "sha256": "a8165baa3baf569ed7648e1338f495acfd434e42b5c8450144795f61b0728fbc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1966,
+      "sha256": "8824518357cd1544147fad60a35e23d2b2cc53353593bae19ee5a6e27cdab006"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 4045,
+      "sha256": "6335381d7e182259cf3ef0b11204bb245b2729664d8d1a5a275178f914c47071"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 4890,
+      "sha256": "201e852687b611479a69051941d7968c335c8929ee4c6a6e5fe15bd406b8caa9"
+    },
+    {
+      "path": "check.py",
+      "bytes": 5830,
+      "sha256": "30319ba4179a33838b0f9097ad06c7e95a01138f723e7207de7ae09b29a23137"
+    },
+    {
+      "path": "check-results.json",
+      "bytes": 11748,
+      "sha256": "ae8275365d3a25feaa1f7d6a948812fc1e6c19bd458f64e5c971154f7d1e8830"
+    },
+    {
+      "path": "markdown-conversion.json",
+      "bytes": 2900,
+      "sha256": "bfc8bf648c65597425904db36ffc4381509eef8ca6a34fe50f557dcddbdc24b4"
+    },
+    {
+      "path": "markdown-math-check.json",
+      "bytes": 440,
+      "sha256": "5f32ce121b216544d57afdfb9b1f794a9930e0bfe4214195017c39cbf320056c"
+    },
+    {
+      "path": "artifact-qa.json",
+      "bytes": 748,
+      "sha256": "4a75ced272aa8b276fbc45f15477f3bc77152454d706f8529b1e24797b5ef217"
+    }
+  ]
+}

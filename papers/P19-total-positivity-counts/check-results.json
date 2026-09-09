@@ -1,0 +1,500 @@
+{
+  "status": "all checks passed",
+  "finite_checks_only": true,
+  "script_sha256": "30319ba4179a33838b0f9097ad06c7e95a01138f723e7207de7ae09b29a23137",
+  "fields": [
+    {
+      "p": 2,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 2,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0,
+      "direct_original_matrix_count": 0,
+      "original_matrices_examined": 1
+    },
+    {
+      "p": 3,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 3,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0,
+      "direct_original_matrix_count": 0,
+      "original_matrices_examined": 1
+    },
+    {
+      "p": 5,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 5,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0,
+      "direct_original_matrix_count": 0,
+      "original_matrices_examined": 64
+    },
+    {
+      "p": 7,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 7,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0,
+      "direct_original_matrix_count": 0,
+      "original_matrices_examined": 729
+    },
+    {
+      "p": 11,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 11,
+      "elementary_matrices": 1,
+      "total_count": 625,
+      "independent_column_normalization_count": 5,
+      "direct_original_matrix_count": 625,
+      "original_matrices_examined": 15625
+    },
+    {
+      "p": 13,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 13,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0,
+      "direct_original_matrix_count": 0,
+      "original_matrices_examined": 46656
+    },
+    {
+      "p": 17,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 17,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0
+    },
+    {
+      "p": 19,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 19,
+      "elementary_matrices": 6,
+      "total_count": 39366,
+      "independent_column_normalization_count": 54
+    },
+    {
+      "p": 23,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 23,
+      "elementary_matrices": 10,
+      "total_count": 146410,
+      "independent_column_normalization_count": 110
+    },
+    {
+      "p": 29,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 29,
+      "elementary_matrices": 12,
+      "total_count": 460992,
+      "independent_column_normalization_count": 168
+    },
+    {
+      "p": 31,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 31,
+      "elementary_matrices": 21,
+      "total_count": 1063125,
+      "independent_column_normalization_count": 315
+    },
+    {
+      "p": 37,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 37,
+      "elementary_matrices": 20,
+      "total_count": 2099520,
+      "independent_column_normalization_count": 360
+    },
+    {
+      "p": 41,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 41,
+      "elementary_matrices": 30,
+      "total_count": 4800000,
+      "independent_column_normalization_count": 600
+    },
+    {
+      "p": 53,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 53,
+      "elementary_matrices": 60,
+      "total_count": 27418560
+    },
+    {
+      "p": 61,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 61,
+      "elementary_matrices": 80,
+      "total_count": 64800000
+    },
+    {
+      "p": 73,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 73,
+      "elementary_matrices": 120,
+      "total_count": 201553920
+    },
+    {
+      "p": 89,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 89,
+      "elementary_matrices": 192,
+      "total_count": 719634432
+    },
+    {
+      "p": 97,
+      "degree": 1,
+      "modulus": [
+        0,
+        1
+      ],
+      "q": 97,
+      "elementary_matrices": 240,
+      "total_count": 1274019840
+    },
+    {
+      "p": 2,
+      "degree": 2,
+      "modulus": [
+        1,
+        1,
+        1
+      ],
+      "q": 4,
+      "elementary_matrices": 2,
+      "total_count": 162,
+      "independent_column_normalization_count": 6,
+      "direct_original_matrix_count": 162,
+      "original_matrices_examined": 729
+    },
+    {
+      "p": 2,
+      "degree": 3,
+      "modulus": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "q": 8,
+      "elementary_matrices": 30,
+      "total_count": 72030,
+      "independent_column_normalization_count": 210,
+      "direct_original_matrix_count": 72030,
+      "original_matrices_examined": 117649
+    },
+    {
+      "p": 2,
+      "degree": 4,
+      "modulus": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "q": 16,
+      "elementary_matrices": 182,
+      "total_count": 9213750,
+      "independent_column_normalization_count": 2730
+    },
+    {
+      "p": 3,
+      "degree": 2,
+      "modulus": [
+        1,
+        0,
+        1
+      ],
+      "q": 9,
+      "elementary_matrices": 0,
+      "total_count": 0,
+      "independent_column_normalization_count": 0,
+      "direct_original_matrix_count": 0,
+      "original_matrices_examined": 4096
+    },
+    {
+      "p": 3,
+      "degree": 3,
+      "modulus": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "q": 27,
+      "elementary_matrices": 15,
+      "total_count": 428415,
+      "independent_column_normalization_count": 195
+    },
+    {
+      "p": 5,
+      "degree": 2,
+      "modulus": [
+        2,
+        0,
+        1
+      ],
+      "q": 25,
+      "elementary_matrices": 6,
+      "total_count": 124416,
+      "independent_column_normalization_count": 72
+    },
+    {
+      "p": 5,
+      "degree": 3,
+      "modulus": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "q": 125,
+      "elementary_matrices": 420,
+      "total_count": 6206061120
+    },
+    {
+      "p": 5,
+      "degree": 4,
+      "modulus": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "q": 625,
+      "elementary_matrices": 11786,
+      "total_count": 111682419204096
+    },
+    {
+      "p": 7,
+      "degree": 2,
+      "modulus": [
+        1,
+        0,
+        1
+      ],
+      "q": 49,
+      "elementary_matrices": 50,
+      "total_count": 16588800,
+      "independent_column_normalization_count": 1200
+    },
+    {
+      "p": 13,
+      "degree": 2,
+      "modulus": [
+        2,
+        0,
+        1
+      ],
+      "q": 169,
+      "elementary_matrices": 782,
+      "total_count": 38933540352
+    },
+    {
+      "p": 17,
+      "degree": 2,
+      "modulus": [
+        3,
+        0,
+        1
+      ],
+      "q": 289,
+      "elementary_matrices": 2442,
+      "total_count": 1050015301632
+    }
+  ],
+  "recurrences": [
+    {
+      "p": 5,
+      "minimality_is_proved_in_notes_not_by_this_check": true,
+      "recurrence_order": 17,
+      "recurrence_checks": 23,
+      "trace_recurrence_checks": 39,
+      "characteristic_polynomial_ascending": [
+        -444089209850062616169452667236328125,
+        421920276494347490370273590087890625,
+        25686415028758347034454345703125000,
+        105085759423673152923583984375000,
+        -3587238841175287961959838867187500,
+        -36686475542341470718383789062500,
+        1125642279489543914794921875000,
+        231807509075139019775390625000,
+        438085577231672277832031250,
+        -3504684617853378222656250,
+        -118685444646471178125000,
+        -36885046214313375000,
+        76937115556572500,
+        481471047055900,
+        -902679800,
+        -14121256,
+        -14845,
+        1
+      ]
+    },
+    {
+      "p": 13,
+      "minimality_is_proved_in_notes_not_by_this_check": true,
+      "recurrence_order": 17,
+      "recurrence_checks": 23,
+      "trace_recurrence_checks": 39,
+      "characteristic_polynomial_ascending": [
+        -647307989872865201422284359961937038113215496061434545237,
+        742744301345949237563130233718440086307382932245286760129,
+        -103258235545655546222337857408187572121020903915874842936,
+        8199880641254041970416164524860138211385514751854455512,
+        -381806074993250211682679078678198532350301079551125196,
+        3872391739336140207746509059015816103940536605707932,
+        -22965147628364402084229785939347320891435545604232,
+        79780992251542023196679808005568657394091059944,
+        -62009921882835346666647286326948475651687550,
+        28224816514717954786821705201159979814150,
+        -7523315287723203224963763502083867528,
+        448661658047900418294152390483176,
+        -15673604599812495928124863564,
+        320163870803842333237788,
+        -1424547400767925304,
+        3716498481368,
+        -5538453,
+        1
+      ]
+    },
+    {
+      "p": 17,
+      "minimality_is_proved_in_notes_not_by_this_check": true,
+      "recurrence_order": 17,
+      "recurrence_checks": 23,
+      "trace_recurrence_checks": 39,
+      "characteristic_polynomial_ascending": [
+        -566102392446495912472763130484190827147641176198176468019613233,
+        539046070610488484695020530318170047163377326537928797048505809,
+        28487614383471549540184208145666298902689026285631901051972536,
+        -1311608805247241739902416027984751321231992719644135322360728,
+        -119371809501254666964842498866556478171234461650310807901644,
+        -313005083649891159347593308936764267648420116270531943188,
+        1067399782924688400637423053652867884376288954745527272,
+        4967483767655712445445864923641501181543656233769144,
+        757997566830000616928354702987868788978005799850,
+        -154284055939344721540475209238320535106453450,
+        -41888630730152068602361061161665917552952,
+        -372900778018007127480282362244313704,
+        4530269539769794937330303818964,
+        71578220951347753366930828,
+        32582913696148933144,
+        -29318932134712,
+        -22983937,
+        1
+      ]
+    },
+    {
+      "p": 29,
+      "minimality_is_proved_in_notes_not_by_this_check": true,
+      "recurrence_order": 17,
+      "recurrence_checks": 23,
+      "trace_recurrence_checks": 39,
+      "characteristic_polynomial_ascending": [
+        -382206345311355160098826021591607537753401060733526544704274120065960129029,
+        415625864665838993719508661402396670852740223277874293643670050619207642817,
+        -34630908285497570189141511462447512243428032812833409156153566376261810104,
+        1230537376499238124394366680942370132594567223968975854683288220945391320,
+        -19199955750955558414824180744887014919106220156171645856003722942911500,
+        51571617119230128568045878813352214742310693674891788422578019040924,
+        -61384069162419417369286882677865228054137417889996683092465181192,
+        32406929525404201022529098585062357268342948607554654005386984,
+        -2994878019753720159250735605742140745218318789269984115870,
+        122796261419234907509563147555953124163283397813357830,
+        -2233859752932070217018074057566216149714996355336,
+        7113538822465185454773728795642230581426408,
+        -10047379210551525168480302592194729356,
+        6288604534738023940658514473500,
+        -677580468625932547933880,
+        32058408913280216,
+        -646833733,
+        1
+      ]
+    }
+  ],
+  "p5_initial_counts": [
+    0,
+    124416,
+    6206061120,
+    111682419204096,
+    1805138820832448640,
+    28380808880828784446976
+  ]
+}
