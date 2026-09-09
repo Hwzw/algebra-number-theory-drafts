@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "transfer_all_nonempty_set_pairs_moduli_2_through_8": 86367,
+  "transfer_degree_0_through_3_instances": 252967,
+  "interval_boundary_cases_moduli_2_through_13_up_to_four_holes": 74100,
+  "scope": "Auxiliary exact identities only. General proof and source hypotheses are audited in prose.",
+  "script_sha256": "08764e6b051479587930107b21d544f308ec65f109f9d0cfb7f31fa9a354bb16"
+}

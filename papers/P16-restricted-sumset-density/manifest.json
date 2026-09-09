@@ -1,0 +1,67 @@
+{
+  "paper": "P16-restricted-sumset-density",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 6,
+  "status": "complete internally checked proposed result; historical priority and significance provisional",
+  "full_conjecture_1_13_solved": false,
+  "external_human_review": false,
+  "visual_review": "All six rendered pages inspected; no defects identified",
+  "files": [
+    {
+      "path": "manuscript.md",
+      "bytes": 17515,
+      "sha256": "30541d2e2c281b6475a79ffdbdbcd6576fc3b5a064ffb7aba35bdf9bd93167d5"
+    },
+    {
+      "path": "manuscript.tex",
+      "bytes": 16632,
+      "sha256": "c22b1ca59940555d2f7141caeaea53483fb823b002dac9f0e4ae4674355fa5d2"
+    },
+    {
+      "path": "manuscript.pdf",
+      "bytes": 83523,
+      "sha256": "2e4576d9c496ddf9623bfbae7be8e6a6f098ad2b2ec93e5336fcce542990eb1a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1915,
+      "sha256": "22f4023647825319190a07e2cf926e41968e6e2ac433f386a41ed81af8200942"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 6161,
+      "sha256": "d193135a34f6863686b8724f2f609cb6a4479ca0b30560507abecf4cb8495ffd"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 6060,
+      "sha256": "91e0802ed2465c4089d227c7edbe7fa7614c154508419a9e5ce1640e60736b5f"
+    },
+    {
+      "path": "check.py",
+      "bytes": 2837,
+      "sha256": "08764e6b051479587930107b21d544f308ec65f109f9d0cfb7f31fa9a354bb16"
+    },
+    {
+      "path": "check-results.json",
+      "bytes": 404,
+      "sha256": "84dfc4f332cbbbecdc68ddc0c2ee030b3619e609c5b970a10023e0f748a6f5e0"
+    },
+    {
+      "path": "markdown-conversion.json",
+      "bytes": 2859,
+      "sha256": "034bef9d042f803d9129914d1dc74fed818f7563c8dd5c743b89c876e4f717cd"
+    },
+    {
+      "path": "markdown-conversion-manifest.json",
+      "bytes": 3720,
+      "sha256": "9d24dbaba2948a520c6d76d3af14718dfe397cce825a6ced45ab4c95bef03fa1"
+    },
+    {
+      "path": "markdown-math-check.json",
+      "bytes": 442,
+      "sha256": "19af5c1dd0f7c602dfdda14048939c651539033ae62e3134dec56f877ebc8f42"
+    }
+  ]
+}

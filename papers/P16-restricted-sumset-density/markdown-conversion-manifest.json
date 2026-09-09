@@ -1,0 +1,139 @@
+{
+  "converter": "tools/convert_manuscripts.py",
+  "converter_sha256": "eded03caa2764d4aa05bc15598e9a1b89fb1961dcf6051082116fa9676751097",
+  "pandoc_version": "pandoc 3.9.0.2",
+  "numbering_source": "Tectonic AUX-only compilation in temporary directories",
+  "paper_count": 1,
+  "papers": [
+    {
+      "paper": "P16-restricted-sumset-density",
+      "environments": {
+        "theorem": 2,
+        "corollary": 1,
+        "proof": 7,
+        "lemma": 3,
+        "proposition": 1
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1",
+          "id": "theorem-1",
+          "source_label": "thm:density"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "2",
+          "id": "corollary-1",
+          "source_label": "cor:linear"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "3",
+          "id": "theorem-2",
+          "source_label": "thm:log"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "4",
+          "id": "lemma-1",
+          "source_label": "lem:dual"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 1,
+          "number": "5",
+          "id": "proposition-1",
+          "source_label": "prop:qualitative"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "6",
+          "id": "lemma-2",
+          "source_label": "lem:unbalanced"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 3,
+          "number": "7",
+          "id": "lemma-3",
+          "source_label": "lem:doubling"
+        }
+      ],
+      "references": 17,
+      "citations": 12,
+      "cited_keys": [
+        "GR",
+        "Grynkiewicz",
+        "Lev2000",
+        "Lev2008",
+        "Ouyang",
+        "Pollard"
+      ],
+      "bibliography_keys": [
+        "GR",
+        "Grynkiewicz",
+        "Lev2000",
+        "Lev2008",
+        "Ouyang",
+        "Pollard"
+      ],
+      "equation_labels": [
+        "eq:normalization",
+        "eq:ordered",
+        "eq:zu",
+        "eq:excess",
+        "eq:holes",
+        "eq:boundary"
+      ],
+      "label_numbers": {
+        "thm:density": "1",
+        "cor:linear": "2",
+        "thm:log": "3",
+        "lem:dual": "4",
+        "eq:normalization": "1",
+        "eq:ordered": "2",
+        "prop:qualitative": "5",
+        "lem:unbalanced": "6",
+        "eq:zu": "3",
+        "eq:excess": "4",
+        "eq:holes": "5",
+        "eq:boundary": "6",
+        "lem:doubling": "7"
+      },
+      "bibliography_numbers": {
+        "GR": "1",
+        "Grynkiewicz": "2",
+        "Lev2000": "3",
+        "Lev2008": "4",
+        "Ouyang": "5",
+        "Pollard": "6"
+      },
+      "tables": [],
+      "source_tex_sha256": "c22b1ca59940555d2f7141caeaea53483fb823b002dac9f0e4ae4674355fa5d2",
+      "source_pdf_sha256": "2e4576d9c496ddf9623bfbae7be8e6a6f098ad2b2ec93e5336fcce542990eb1a",
+      "markdown_sha256": "30541d2e2c281b6475a79ffdbdbcd6576fc3b5a064ffb7aba35bdf9bd93167d5",
+      "markdown_bytes": 17515,
+      "source_math_expressions_verified": 223,
+      "markdown_math_expressions": 230,
+      "custom_macros_expanded": [
+        "F",
+        "Z",
+        "rs"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 47,
+      "semantic_roundtrip_sha256": "dc718232e95d9a83712365aa653b843e937e58c5e66def1aa5cb851e798c0728",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 33,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    }
+  ]
+}
