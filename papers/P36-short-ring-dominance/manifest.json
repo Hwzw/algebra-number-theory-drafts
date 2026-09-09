@@ -1,0 +1,46 @@
+{
+  "README.md": {
+    "bytes": 1764,
+    "sha256": "8468901421327e8e68ec0b909904bd584d622938188397874173fb4a831ef53d"
+  },
+  "ASSESSMENT.md": {
+    "bytes": 3508,
+    "sha256": "cb74dd8a2398df699cbe984edc0bb9f7e7697dd469e72a081e8cb87d43d95b0a"
+  },
+  "REVIEW.md": {
+    "bytes": 3899,
+    "sha256": "7f492fe8845cd45d9cbece629c1afbcc9f2e73a15e8d9f62babc00a41dcea43c"
+  },
+  "manuscript.tex": {
+    "bytes": 19225,
+    "sha256": "ff477b68fc2f726a4e53253f086a1092b159e3026b4ab38f7ab1a78107cab78f"
+  },
+  "manuscript.md": {
+    "bytes": 21059,
+    "sha256": "b8d9dee4e9ed1bc7c12b26d21e8f9ef590c1d933b1a425ce30831f2c3aede5b8"
+  },
+  "manuscript.pdf": {
+    "bytes": 93264,
+    "sha256": "38e08bb38e755a9d84371fb19e124f02ff1df8b4a6b12228282b528e0fce091e"
+  },
+  "check.py": {
+    "bytes": 5455,
+    "sha256": "90271d8451fafe9629ca63592fa75b7ae7662f67e3b50a65c9b64103610622a3"
+  },
+  "check-results.json": {
+    "bytes": 58346,
+    "sha256": "c4ed51c0f9ce3769181ce371a1f4f139b55c47bf474f7548e769b08eaac5cb96"
+  },
+  "markdown-conversion.json": {
+    "bytes": 2910,
+    "sha256": "abb15b2f76a7b3f8bdac6ce9e1f662423e550a110d1c097b02b9fe94dd88753f"
+  },
+  "markdown-math-check.json": {
+    "bytes": 437,
+    "sha256": "5fde2847502a3c63bbf08435040be4d39aeaf63218e29ec070937f77936a1f4f"
+  },
+  "artifact-qa.json": {
+    "bytes": 527,
+    "sha256": "ae246bb0ad23acc0646c1871f4d68d9249fb8c9d95041fbf4539fb37edcb3917"
+  }
+}

@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 35 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 36 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## Short local rings in arbitrary characteristic
+
+[**P36: Dominance and common deformations of short local rings**](papers/P36-short-ring-dominance/README.md), by **Henry Zweiman**, proposes a common-deformation theorem for every Artinian local ring with maximal-ideal cube zero and its associated graded ring. It transfers dominance and uniform dominance in both directions. Combined with Kimura's essential equicharacteristic theorem and known flat descent, it answers both clauses of Kobayashi–Takahashi Question 7.1 without characteristic or residue-field restrictions. The six-page [PDF](papers/P36-short-ring-dominance/manuscript.pdf), [full Markdown](papers/P36-short-ring-dominance/manuscript.md), and [LaTeX](papers/P36-short-ring-dominance/manuscript.tex) include the proof.
+
+The [assessment](papers/P36-short-ring-dominance/ASSESSMENT.md) distinguishes the contribution from Kimura's known theorem and records the priority limits. The [internal review](papers/P36-short-ring-dominance/REVIEW.md) covers the coefficient-ring construction, regular-parameter conditions, higher-dimensional reduction, and 258 exact finite quotient checks. Uniform dominance of all short Gorenstein rings remains unresolved. This is one proposed preprint; outside correctness, priority, and significance remain provisional.
 
 ## Connected quadratic curves and three-quadric intersections
 
