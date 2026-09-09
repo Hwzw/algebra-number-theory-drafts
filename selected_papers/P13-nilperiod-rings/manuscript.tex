@@ -1,0 +1,342 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\DeclareMathOperator{\Nil}{Nil}
+\DeclareMathOperator{\Per}{Per}
+\DeclareMathOperator{\rad}{rad}
+\title{Additive periods of power maps lie in the prime radical}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that every additive period of every power map on an associative ring
+belongs to its prime radical. No identity, characteristic, finiteness, or
+polynomial-identity assumption is required. The proof combines a substitution
+using the highest nonzero power of a nilpotent element with the classical
+bounded-index one-sided nil-ideal lemma. It follows that every nilperiod ring
+is 2-primal and that its nilpotents form a locally nilpotent ideal. This
+strengthens the NI conclusion conjectured by Burnette. We also characterize
+finite unital nilperiod rings as finite products of local rings, and determine
+the periodic power maps on Corbas rings, correcting the count for nonidentity
+twists.
+\end{abstract}
+
+\section{Introduction}
+All rings are associative and may lack an identity unless otherwise stated.
+For a ring $R$, let $\Nil(R)$ be its set of nilpotent elements, and let $P(R)$
+be its prime radical, also called the lower nilradical. Thus $P(R)$ is the
+intersection of the prime ideals, or equivalently the smallest ideal for which
+$R/P(R)$ is semiprime. The prime radical is locally nilpotent: every finite
+subset generates a nilpotent subring. In particular, $P(R)$ is a nil ideal;
+see, for example, \cite[Section~1]{Nielsen}.
+
+For an integer $n\geq1$, set $\alpha_n(x)=x^n$ and define its additive period
+group by
+\[
+ \Per(\alpha_n)=\{a\in R:(x+a)^n=x^n\text{ for every }x\in R\}.
+\]
+Evaluation at zero gives $\Per(\alpha_n)\subseteq\Nil(R)$. Our main result
+locates these periods more precisely.
+
+\begin{theorem}\label{thm:main}
+For every associative ring $R$ and every positive integer $n$,
+\[
+ \Per(\alpha_n)\subseteq P(R).
+\]
+Consequently, every power map on a semiprime ring has trivial additive period
+group.
+\end{theorem}
+
+Following Burnette \cite{Burnette}, a ring is \emph{nilperiod} if every
+nilpotent element belongs to $\Per(\alpha_n)$ for some $n$, which may depend
+on the element. A ring is \emph{NI} if its nilpotents form a two-sided ideal,
+and it is \emph{2-primal} if $\Nil(R)=P(R)$.
+
+\begin{corollary}\label{cor:nilperiod}
+Every nilperiod ring is 2-primal. Its nilpotent elements form a locally
+nilpotent two-sided ideal, which is both its prime radical and its largest nil
+ideal. In particular, every nilperiod ring is an NI-ring.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:main} gives $\Nil(R)\subseteq P(R)$, while the reverse
+containment holds in every ring. The other conclusions follow from the
+standard properties of the prime radical.
+\end{proof}
+
+Burnette's Conjecture~2.6 asks whether every nilperiod ring is NI, and his
+Theorem~2.9 establishes this for PI algebras. Corollary~\ref{cor:nilperiod}
+proves the conjecture and strengthens its conclusion. Theorem~\ref{thm:main}
+also treats individual periods in rings that need not be nilperiod. In
+particular, it extends the absence of nonzero periods in matrix rings over
+division rings used in \cite[Lemma~2.8]{Burnette} to all semiprime rings.
+
+The main proof uses the classical fact that a semiprime ring has no nonzero
+one-sided nil ideal of bounded index. The new reduction is short: given a
+period $a$ of nilpotency index $j$, evaluate its identity at
+$x=a^{j-1}r$ and multiply by $a^{j-2}r$. This produces the bounded-index
+right ideal to which the classical result applies.
+
+The remaining results concern finite rings and power-map counts. As usual,
+a unital ring is local if its nonunits form a proper ideal.
+\begin{theorem}\label{thm:finite}
+A nonzero finite unital ring is nilperiod if and only if it is a finite direct
+product of finite local rings.
+\end{theorem}
+The zero ring may be included as the empty product. The structural
+decomposition behind this result is standard; we explicitly credit it in
+Section~3. Section~4 gives an exact computation for the twisted rings in
+\cite[Example~2.2]{Burnette}.
+
+\section{Periods in semiprime rings}
+We use the following classical bounded-index lemma. Its left-ideal form is
+stated in \cite[p.~93, item~(V)]{BM}; the right-ideal form follows by passing
+to the opposite ring. The bounded nilradical discussion in
+\cite[Section~1]{Nielsen} also records the result in the nonunital setting.
+
+\begin{lemma}[Bounded-index one-sided nil ideals]\label{lem:levitzki}
+Let $S$ be an associative ring, not necessarily unital. If $S$ has a nonzero
+right ideal $I$ and a fixed positive integer $N$ such that $y^N=0$ for every
+$y\in I$, then $S$ has a nonzero nilpotent two-sided ideal. In particular,
+a semiprime ring has no nonzero nil right ideal of bounded index.
+\end{lemma}
+
+This lemma requires neither a chain condition on ideals nor a restriction on
+the characteristic. The uniform bound concerns the elements of $I$, not all
+nilpotents of $S$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+First let $S$ be semiprime and let $a\in\Per(\alpha_n)$. Since $a^n=0$,
+a nonzero $a$ has a minimal nilpotency index $j$ satisfying $2\leq j\leq n$.
+Suppose that this is the case, and put $b=a^{j-1}\ne0$.
+
+Let $S^1=\mathbb Z\oplus S$ be the standard unitization, with multiplication
+\[
+ (m,u)(k,v)=(mk,mv+ku+uv).
+\]
+If $S$ already has an identity, we may take $S^1=S$. For any $r\in S^1$,
+the element $x=br$ lies in $S$, so the period identity applies to $x$. Also
+$ax=a^jr=0$. In the word expansion of $(x+a)^n$, a word vanishes whenever
+an $a$ occurs before an $x$, since such a word contains adjacent factors $ax$.
+The remaining words have the form $x^{n-k}a^k$, and terms with $k\geq j$
+vanish. Hence
+\begin{equation}\label{eq:expansion}
+ 0=(x+a)^n-x^n=\sum_{k=1}^{j-1}x^{n-k}a^k.
+\end{equation}
+Right-multiply \eqref{eq:expansion} by $a^{j-2}r$, interpreting $a^0=1$
+in $S^1$ if $j=2$. The term with $k=1$ becomes
+\[
+ x^{n-1}a^{j-1}r=x^n,
+\]
+while all terms with $k\geq2$ vanish because $a^{k+j-2}=0$. Therefore
+\[
+ (br)^n=0\qquad(r\in S^1).
+\]
+The nonzero principal right ideal $bS^1=\mathbb Zb+bS$ of $S$ is thus nil
+of bounded index $n$. This contradicts Lemma~\ref{lem:levitzki}, so $a=0$.
+Notice that we have only evaluated the period identity at elements of $S$;
+no period property of $S^1$ is assumed.
+
+Now take an arbitrary ring $R$ and $a\in\Per(\alpha_n)$. Its period identity
+descends to the quotient $R/P(R)$. Since this quotient is semiprime, the
+first part of the proof shows that the image of $a$ is zero. Thus $a\in P(R)$.
+\end{proof}
+
+\begin{remark}
+Local nilpotence in Corollary~\ref{cor:nilperiod} does not supply a uniform
+nilpotency exponent for the entire ideal $\Nil(R)$. Nor does the proof
+assert that each nilpotent element generates a nilpotent two-sided ideal.
+It does imply that every such generated ideal is nil, since it lies in
+$P(R)$.
+\end{remark}
+
+\section{Idempotents and finite rings}
+\begin{proposition}\label{prop:central}
+Every idempotent in a nilperiod ring is central.
+\end{proposition}
+\begin{proof}
+Let $e^2=e$ and $r\in R$. The element $a=er-ere$ satisfies
+$a^2=0$, $ea=a$, and $ae=0$. Thus $e+a$ is idempotent.
+A period identity for $a$, evaluated at $e$, gives
+\[
+ e+a=(e+a)^n=e^n=e.
+\]
+Hence $er=ere$. Similarly, $b=re-ere$ is square-zero and $e+b$ is
+idempotent, so the same argument gives $re=ere$. Therefore $er=re$.
+\end{proof}
+
+\begin{lemma}\label{lem:idempotent-power}
+Every element of a finite ring has an idempotent positive power.
+\end{lemma}
+\begin{proof}
+For $x$ in a finite ring there exist positive integers $a,b$ such that
+$x^{a+b}=x^a$. Choose $n\geq a$ divisible by $b$. Eventual periodicity
+of the powers then gives $x^{2n}=x^n$.
+\end{proof}
+
+The forward structural implication is an instance of the standard fact that
+an Abelian semiperfect ring is a finite direct product of local rings
+\cite[Proposition~2.6]{HLP}. Finite rings are semiperfect. We include an
+elementary proof in this finite setting.
+
+\begin{proof}[Proof of Theorem~\ref{thm:finite}]
+Suppose first that $R$ is finite, unital, and nilperiod. By
+Proposition~\ref{prop:central}, its idempotents are central.
+Successively split the identity into orthogonal nonzero central idempotents
+until each component contains no idempotents except zero and its identity.
+The process terminates since $R$ is finite. It gives
+\[
+ R\cong R_1\times\cdots\times R_t.
+\]
+Each direct factor is nilperiod: a nilpotent in it lifts to a nilpotent
+with zero coordinates in the other factors, and the corresponding period
+identity restricts to that factor. Its nilpotents therefore form an ideal
+by Corollary~\ref{cor:nilperiod}.
+
+For $x\in R_i$, Lemma~\ref{lem:idempotent-power} gives $x^n=0$ or
+$x^n=1_{R_i}$. Thus $x$ is either nilpotent or a unit. The nonunits of
+$R_i$ are exactly its nilpotents, which form a proper ideal, so $R_i$ is
+local.
+
+Conversely, let $R$ be finite and local, with nonunit ideal $M$.
+Its only idempotents are zero and one: if $e^2=e$, one of $e,1-e$ is a
+unit, and $e(1-e)=0$ gives the conclusion.
+For $x\in M$, an idempotent power remains in $M$, so it must be zero.
+Thus $\Nil(R)=M$. Choose $n$ at least the maximum of the nilpotency
+indices of the elements of $M$, and divisible by the exponent of the
+finite group $R^\times$. Then
+\[
+ x^n=\begin{cases}0,&x\in M,\\1,&x\notin M.\end{cases}
+\]
+Translation by any element of $M$ preserves membership in $M$.
+Consequently every element of $\Nil(R)$ is a period of $\alpha_n$.
+For a finite direct product of finite local rings, choose one $n$
+satisfying these requirements in all factors.
+\end{proof}
+
+\begin{example}
+An NI-ring need not be nilperiod, even when finite. The upper triangular
+$2\times2$ matrices over $\mathbb F_2$ have nilpotents
+$\{0,E_{12}\}$, a square-zero ideal. But for $e=\operatorname{diag}(1,0)$
+and $a=E_{12}$, the distinct matrices $e$ and $e+a$ are both idempotent.
+Hence $(e+a)^n\ne e^n$ for every $n\geq1$.
+\end{example}
+
+\section{Power maps on Corbas rings}
+Let $q=p^f$, where $p$ is prime and $f\geq1$, and choose $0\leq s<f$.
+Let $\phi(a)=a^{p^s}$ be the corresponding automorphism of $\mathbb F_q$,
+and put $g=\gcd(f,s)$. We allow $s=0$, so the identity automorphism has
+$g=f$. Consider the Corbas ring
+\begin{equation}\label{eq:corbas}
+ R=\mathbb F_q\oplus\mathbb F_q,\qquad
+ (a,b)(c,d)=(ac,ad+b\phi(c)).
+\end{equation}
+This is an associative unital ring, with identity $(1,0)$ and square-zero
+ideal $N=\{0\}\oplus\mathbb F_q$. If $a\ne0$, the element $(a,b)$ has inverse
+\[
+ \bigl(a^{-1},-a^{-1}b\phi(a^{-1})\bigr).
+\]
+Thus $R$ is local and $\Nil(R)=N$.
+
+The following calculation corrects the assertion in
+\cite[Example~2.2 and Table~1]{Burnette} that nonidentity twists have no
+periodic power maps. It also determines exactly which exponents occur.
+
+\begin{theorem}\label{thm:corbas}
+For the ring \eqref{eq:corbas}, set
+\[
+ M=\frac{q-1}{p^g-1}.
+\]
+Then
+\[
+ \Per(\alpha_n)=
+ \begin{cases}
+ N,&pM\mid n,\\
+ \{0\},&pM\nmid n.
+ \end{cases}
+\]
+There are exactly $p^g-1$ distinct periodic power maps on $R$.
+\end{theorem}
+\begin{proof}
+Direct induction gives
+\[
+ (a,b)^n=\bigl(a^n,bC_n(a)\bigr),\qquad
+ C_n(a)=\sum_{j=0}^{n-1}a^j\phi(a)^{n-1-j}.
+\]
+Every additive period must lie in $N$, by evaluation at zero. For $y\ne0$,
+the element $(0,y)$ is a period exactly when $C_n(a)=0$ for all
+$a\in\mathbb F_q$. At $a=1$ this forces $p\mid n$, and hence $n\geq2$.
+The condition at $a=0$ then holds. If $a\ne0$ and $a=\phi(a)$, then
+$C_n(a)=na^{n-1}$, which also vanishes. For $a\ne\phi(a)$ the geometric
+sum gives
+\[
+ C_n(a)=\frac{a^n-\phi(a)^n}{a-\phi(a)}.
+\]
+Its vanishing is equivalent to $(a/\phi(a))^n=1$.
+The homomorphism $a\mapsto a/\phi(a)$ on the cyclic group
+$\mathbb F_q^\times$ has kernel $\mathbb F_{p^g}^\times$ and therefore
+image of order $M$. Consequently $C_n$ vanishes everywhere if and only
+if $p\mid n$ and $M\mid n$. Since $p\nmid M$, this is $pM\mid n$.
+The argument also determines the full period group as stated.
+
+For the count, the unit group of $R$ has exponent $E=p(q-1)$.
+The displayed power formula shows that every unit has $E$th power one.
+Elements $(a,0)$ realize order $q-1$, while $(1,b)$ with $b\ne0$ have
+order $p$, so the exponent is exactly $E$.
+All nonunits have square zero. Therefore, for $n,m\geq2$, the maps
+$\alpha_n$ and $\alpha_m$ agree exactly when $n\equiv m\pmod E$:
+sufficiency follows from the unit and nonunit cases, and necessity from
+the definition of the unit-group exponent.
+There are thus $E$ distinct maps with exponent at least two, and among
+their exponent classes exactly
+\[
+ \frac{E}{pM}=p^g-1
+\]
+are periodic. The identity map $\alpha_1$ is distinct from these maps on
+nonzero elements of $N$ and has no nonzero additive period.
+\end{proof}
+
+\begin{example}
+For $q=4$ and the nontrivial automorphism $\phi(a)=a^2$, one has
+$p=2$, $g=1$, $M=3$, and $E=6$. The power map $\alpha_6$ equals
+$(1,0)$ on all units and zero on $N$, so its period group is $N$.
+It is the unique distinct periodic power map on this noncommutative
+sixteen-element ring.
+\end{example}
+
+\begin{thebibliography}{9}
+\bibitem{BM}
+H.~E.~Bell and W.~S.~Martindale III,
+\emph{Centralizing mappings of semiprime rings},
+Canad. Math. Bull. \textbf{30} (1987), no.~1, 92--101.
+\href{https://doi.org/10.4153/CMB-1987-014-x}{doi:10.4153/CMB-1987-014-x}.
+
+\bibitem{Burnette}
+C.~Burnette,
+\emph{On power maps over periodic rings},
+Graduate J. Math. \textbf{10} (2025), no.~1, 5--16.
+\href{https://gradmath.org/wp-content/uploads/2025/07/GJM2025-Burnette.pdf}{Published article}.
+Earlier preprint: \emph{On power maps over weakly periodic rings},
+\href{https://arxiv.org/abs/2207.14283}{arXiv:2207.14283}.
+
+\bibitem{HLP}
+J.~Han, Y.~Lee, and S.~Park,
+\emph{Structure of Abelian rings},
+Front. Math. China \textbf{12} (2017), no.~1, 117--134.
+\href{https://doi.org/10.1007/s11464-016-0586-z}{doi:10.1007/s11464-016-0586-z}.
+
+\bibitem{Nielsen}
+P.~P.~Nielsen,
+\emph{Bootstrapping the bounded nilradical},
+J. Pure Appl. Algebra \textbf{217} (2013), no.~9, 1711--1715.
+\href{https://doi.org/10.1016/j.jpaa.2012.12.002}{doi:10.1016/j.jpaa.2012.12.002}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,138 @@
+{
+  "environments": {
+    "theorem": 3,
+    "corollary": 1,
+    "proof": 6,
+    "lemma": 2,
+    "remark": 1,
+    "proposition": 1,
+    "example": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "2",
+      "id": "corollary-1",
+      "source_label": "cor:nilperiod"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "3",
+      "id": "theorem-2",
+      "source_label": "thm:finite"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "4",
+      "id": "lemma-1",
+      "source_label": "lem:levitzki"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "5",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "6",
+      "id": "proposition-1",
+      "source_label": "prop:central"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "7",
+      "id": "lemma-2",
+      "source_label": "lem:idempotent-power"
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "8",
+      "id": "example-1",
+      "source_label": null
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "9",
+      "id": "theorem-3",
+      "source_label": "thm:corbas"
+    },
+    {
+      "environment": "example",
+      "ordinal": 2,
+      "number": "10",
+      "id": "example-2",
+      "source_label": null
+    }
+  ],
+  "references": 12,
+  "citations": 8,
+  "cited_keys": [
+    "BM",
+    "Burnette",
+    "HLP",
+    "Nielsen"
+  ],
+  "bibliography_keys": [
+    "BM",
+    "Burnette",
+    "HLP",
+    "Nielsen"
+  ],
+  "equation_labels": [
+    "eq:expansion",
+    "eq:corbas"
+  ],
+  "label_numbers": {
+    "thm:main": "1",
+    "cor:nilperiod": "2",
+    "thm:finite": "3",
+    "lem:levitzki": "4",
+    "eq:expansion": "1",
+    "prop:central": "6",
+    "lem:idempotent-power": "7",
+    "eq:corbas": "2",
+    "thm:corbas": "9"
+  },
+  "bibliography_numbers": {
+    "BM": "1",
+    "Burnette": "2",
+    "HLP": "3",
+    "Nielsen": "4"
+  },
+  "tables": [],
+  "source_tex_sha256": "a2eed3bf0b458dd20c9e5b182d3db8d0016e17de4154a11fd9a8f3b182ecfe41",
+  "source_pdf_sha256": "3ca14c1096e67407fd20f656024de51469220a64f60fbeed0335ebbd804b24b3",
+  "markdown_sha256": "fe64a83acc3046b1e815928b4891d4fe6b64647953ad8a22fa0545a47e43bfc1",
+  "markdown_bytes": 15399,
+  "source_math_expressions_verified": 204,
+  "markdown_math_expressions": 210,
+  "custom_macros_expanded": [
+    "Nil",
+    "Per",
+    "rad"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 45,
+  "semantic_roundtrip_sha256": "cce90f9f8cd39de1d2cf6a7437f7e85730e3ce98c6ac0d3de68621bdbede6f43",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 29,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

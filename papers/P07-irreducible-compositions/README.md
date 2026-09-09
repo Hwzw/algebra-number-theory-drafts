@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research draft. Not peer reviewed or independently verified by human experts.**
 
-[Read the PDF](manuscript.pdf) · [LaTeX source](manuscript.tex) · [Collection](../../README.md) · [How to cite](../../CITATIONS.md)
+[Full Markdown](manuscript.md) · [Read the PDF](manuscript.pdf) · [LaTeX source](manuscript.tex) · [Collection](../../README.md) · [How to cite](../../CITATIONS.md)
 
 ## Claimed contribution
 

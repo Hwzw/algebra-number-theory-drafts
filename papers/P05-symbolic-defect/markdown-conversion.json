@@ -1,0 +1,172 @@
+{
+  "environments": {
+    "theorem": 3,
+    "lemma": 4,
+    "proof": 9,
+    "proposition": 2,
+    "remark": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "1.2",
+      "id": "theorem-2",
+      "source_label": "thm:correction"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "1.3",
+      "id": "theorem-3",
+      "source_label": "thm:complete"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:generators"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "2.2",
+      "id": "proposition-1",
+      "source_label": "prop:dictionary"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "3.1",
+      "id": "lemma-2",
+      "source_label": "lem:conductor"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "3.2",
+      "id": "lemma-3",
+      "source_label": "lem:half"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "4.1",
+      "id": "lemma-4",
+      "source_label": "lem:cycle"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "4.2",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "4.3",
+      "id": "proposition-2",
+      "source_label": "prop:composition"
+    }
+  ],
+  "references": 24,
+  "citations": 16,
+  "cited_keys": [
+    "BHL",
+    "DG",
+    "DGFreiman",
+    "HHO",
+    "Higashitani",
+    "MOS",
+    "Oltsik"
+  ],
+  "bibliography_keys": [
+    "BHL",
+    "DG",
+    "DGFreiman",
+    "HHO",
+    "Higashitani",
+    "MOS",
+    "Oltsik"
+  ],
+  "equation_labels": [
+    "eq:dictionary",
+    "eq:asymptotic",
+    "eq:correction",
+    "eq:even",
+    "eq:odd",
+    "eq:covers",
+    "eq:affine",
+    "eq:fractional-test",
+    "eq:integer-test",
+    "eq:composition"
+  ],
+  "label_numbers": {
+    "thm:main": "1.1",
+    "eq:dictionary": "1",
+    "eq:asymptotic": "2",
+    "thm:correction": "1.2",
+    "eq:correction": "3",
+    "thm:complete": "1.3",
+    "eq:even": "4",
+    "eq:odd": "5",
+    "eq:covers": "6",
+    "lem:generators": "2.1",
+    "prop:dictionary": "2.2",
+    "eq:affine": "7",
+    "lem:conductor": "3.1",
+    "lem:half": "3.2",
+    "lem:cycle": "4.1",
+    "eq:fractional-test": "8",
+    "eq:integer-test": "9",
+    "prop:composition": "4.3",
+    "eq:composition": "10"
+  },
+  "bibliography_numbers": {
+    "BHL": "1",
+    "DG": "2",
+    "DGFreiman": "3",
+    "HHO": "4",
+    "Higashitani": "5",
+    "MOS": "6",
+    "Oltsik": "7"
+  },
+  "tables": [],
+  "source_tex_sha256": "c7a1129e70538e0d38cee0b72bc14ca9afa7e8783fa31b1e2ffae33fc86faeb9",
+  "source_pdf_sha256": "7d3fef294fa549b82d4b55bc325de1e0eb960b8d0f4200f90dcc1112994eda5c",
+  "markdown_sha256": "c706b3b4e8a3e4c498e76be72799aec41cc56154e381c28c2b8f000fa2f7a1bd",
+  "markdown_bytes": 28131,
+  "source_math_expressions_verified": 299,
+  "markdown_math_expressions": 308,
+  "custom_macros_expanded": [
+    "NN",
+    "ZZ",
+    "RR",
+    "kk",
+    "one",
+    "sdef",
+    "isdef",
+    "conv",
+    "vol",
+    "FRAC",
+    "STAB",
+    "Hilb"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 64,
+  "semantic_roundtrip_sha256": "2eaddb905ec90b05ddfd738560565eabdfe96d5315dd5b0c759e4680d4dc543c",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 45,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

@@ -1,0 +1,143 @@
+{
+  "environments": {
+    "theorem": 1,
+    "corollary": 1,
+    "lemma": 4,
+    "proof": 8,
+    "proposition": 2,
+    "remark": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:density"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:capelli"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:norm"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "3.1",
+      "id": "lemma-3",
+      "source_label": "lem:gap"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "3.2",
+      "id": "proposition-1",
+      "source_label": "prop:first"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "4.1",
+      "id": "proposition-2",
+      "source_label": "prop:short"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "5.1",
+      "id": "lemma-4",
+      "source_label": "lem:free"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "5.2",
+      "id": "remark-1",
+      "source_label": null
+    }
+  ],
+  "references": 32,
+  "citations": 8,
+  "cited_keys": [
+    "BBHQS",
+    "HJK",
+    "HJY",
+    "Lang"
+  ],
+  "bibliography_keys": [
+    "BBHQS",
+    "HJK",
+    "HJY",
+    "Lang"
+  ],
+  "equation_labels": [
+    "eq:exception",
+    "eq:alphabet",
+    "eq:sophie",
+    "eq:binomial",
+    "eq:norma",
+    "eq:valuegap",
+    "eq:allvalues"
+  ],
+  "label_numbers": {
+    "eq:exception": "1",
+    "thm:main": "1.1",
+    "cor:density": "1.2",
+    "eq:alphabet": "2",
+    "eq:sophie": "3",
+    "eq:binomial": "4",
+    "lem:capelli": "2.1",
+    "lem:norm": "2.2",
+    "lem:gap": "3.1",
+    "prop:first": "3.2",
+    "eq:norma": "5",
+    "eq:valuegap": "6",
+    "eq:allvalues": "7",
+    "prop:short": "4.1",
+    "lem:free": "5.1"
+  },
+  "bibliography_numbers": {
+    "BBHQS": "1",
+    "HJK": "2",
+    "HJY": "3",
+    "Lang": "4"
+  },
+  "tables": [],
+  "source_tex_sha256": "cdbebfa19fe806d0e7fffd08157a0b19ee72fd48ec37ce1b35fd566db2a0f7d0",
+  "source_pdf_sha256": "ea5bc029bb4d14070bcd0524851d9fd4a07d0d09b3691ece59e0921a9834a3df",
+  "markdown_sha256": "98a8e71cc6b2dac0b63be9d3c9f215848bb13a3ae8789e4ccdfb45ea78709661",
+  "markdown_bytes": 15641,
+  "source_math_expressions_verified": 230,
+  "markdown_math_expressions": 238,
+  "custom_macros_expanded": [
+    "Q",
+    "Z",
+    "N",
+    "Irr",
+    "rad"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 53,
+  "semantic_roundtrip_sha256": "869d8deb477fb8b8e8ffcde457c91cfc0857c424e27cfef6c1b0e2d09e379ec3",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 36,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

@@ -1,0 +1,216 @@
+{
+  "environments": {
+    "theorem": 2,
+    "lemma": 4,
+    "proof": 13,
+    "proposition": 1,
+    "remark": 3,
+    "example": 3,
+    "corollary": 3
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:matrix"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:recurrence"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "3",
+      "id": "lemma-1",
+      "source_label": "lem:local"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "4",
+      "id": "lemma-2",
+      "source_label": "lem:lifting"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "5",
+      "id": "proposition-1",
+      "source_label": "prop:localexact"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "6",
+      "id": "lemma-3",
+      "source_label": "lem:residue"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 4,
+      "number": "7",
+      "id": "lemma-4",
+      "source_label": "lem:stability"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "8",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "9",
+      "id": "example-1",
+      "source_label": "ex:higher"
+    },
+    {
+      "environment": "example",
+      "ordinal": 2,
+      "number": "10",
+      "id": "example-2",
+      "source_label": "ex:initialization"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 2,
+      "number": "11",
+      "id": "remark-2",
+      "source_label": "rem:LW"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "12",
+      "id": "corollary-1",
+      "source_label": "cor:squarefree"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 2,
+      "number": "13",
+      "id": "corollary-2",
+      "source_label": "cor:universal"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 3,
+      "number": "14",
+      "id": "corollary-3",
+      "source_label": "cor:lucas"
+    },
+    {
+      "environment": "example",
+      "ordinal": 3,
+      "number": "15",
+      "id": "example-3",
+      "source_label": null
+    },
+    {
+      "environment": "remark",
+      "ordinal": 3,
+      "number": "16",
+      "id": "remark-3",
+      "source_label": null
+    }
+  ],
+  "references": 39,
+  "citations": 15,
+  "cited_keys": [
+    "BGW",
+    "LW",
+    "MW",
+    "Milne",
+    "Minton",
+    "Rajs"
+  ],
+  "bibliography_keys": [
+    "BGW",
+    "LW",
+    "Milne",
+    "Minton",
+    "MW",
+    "Rajs"
+  ],
+  "equation_labels": [
+    "eq:threshold",
+    "eq:matrixfactor",
+    "eq:recurrence",
+    "eq:recfactor",
+    "eq:frobenius",
+    "eq:localbound",
+    "eq:primeobstruction",
+    "eq:observation",
+    "eq:cyclicrow",
+    "eq:criticalpolynomial"
+  ],
+  "label_numbers": {
+    "eq:threshold": "1",
+    "thm:matrix": "1",
+    "eq:matrixfactor": "2",
+    "eq:recurrence": "3",
+    "thm:recurrence": "2",
+    "eq:recfactor": "4",
+    "lem:local": "3",
+    "lem:lifting": "4",
+    "prop:localexact": "5",
+    "eq:frobenius": "5",
+    "eq:localbound": "6",
+    "lem:residue": "6",
+    "lem:stability": "7",
+    "eq:primeobstruction": "7",
+    "eq:observation": "8",
+    "eq:cyclicrow": "9",
+    "eq:criticalpolynomial": "10",
+    "ex:higher": "9",
+    "ex:initialization": "10",
+    "rem:LW": "11",
+    "cor:squarefree": "12",
+    "cor:universal": "13",
+    "cor:lucas": "14"
+  },
+  "bibliography_numbers": {
+    "BGW": "1",
+    "LW": "2",
+    "Milne": "3",
+    "Minton": "4",
+    "MW": "5",
+    "Rajs": "6"
+  },
+  "tables": [],
+  "source_tex_sha256": "23937aeace58616f78c1cda05e3d79ce70e684a8e95bfe198e901d9db955ca7f",
+  "source_pdf_sha256": "21995c4f5bb4add533f4fdbb454a9a95322361f45413f283b9080fbc0a4bf4bb",
+  "markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
+  "markdown_bytes": 30653,
+  "source_math_expressions_verified": 438,
+  "markdown_math_expressions": 451,
+  "custom_macros_expanded": [
+    "rad",
+    "disc",
+    "Fail",
+    "lcm",
+    "Mat",
+    "Gal",
+    "F",
+    "Z",
+    "Q"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 87,
+  "semantic_roundtrip_sha256": "54e24b88edd741dc39be92cc15d6238a412d447d7873e20f56ed50481473ed84",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 58,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {
+    "accent_argument_groups_added": 3
+  }
+}

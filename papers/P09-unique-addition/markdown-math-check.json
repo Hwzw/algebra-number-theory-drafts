@@ -1,0 +1,11 @@
+{
+  "file": "papers/P09-unique-addition/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "e64d2754562b32d4089e664a5607314d31ce47db294e61b13007c9d71bfc8f82",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 234,
+  "errors": [],
+  "local_svg_preview_created": true,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}

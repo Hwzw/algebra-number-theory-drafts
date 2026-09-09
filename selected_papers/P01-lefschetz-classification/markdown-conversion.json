@@ -1,0 +1,196 @@
+{
+  "environments": {
+    "theorem": 6,
+    "proof": 10,
+    "remark": 1,
+    "corollary": 4,
+    "lemma": 1,
+    "proposition": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "theorem-1",
+      "source_label": "thm:splitting"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "2.2",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "3.1",
+      "id": "theorem-2",
+      "source_label": "thm:wilson"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "3.2",
+      "id": "theorem-3",
+      "source_label": "thm:diagonal"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3.3",
+      "id": "corollary-1",
+      "source_label": "cor:ranks"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 4,
+      "number": "4.1",
+      "id": "theorem-4",
+      "source_label": "thm:locus"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 2,
+      "number": "4.2",
+      "id": "corollary-2",
+      "source_label": "cor:degrees"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "5.1",
+      "id": "lemma-1",
+      "source_label": "lem:generic"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 5,
+      "number": "5.2",
+      "id": "theorem-5",
+      "source_label": "thm:classification"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 3,
+      "number": "5.3",
+      "id": "corollary-3",
+      "source_label": "cor:graph"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "6.1",
+      "id": "proposition-1",
+      "source_label": "prop:jordan"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 6,
+      "number": "6.2",
+      "id": "theorem-6",
+      "source_label": "thm:charzerojordan"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 4,
+      "number": "6.3",
+      "id": "corollary-4",
+      "source_label": "cor:recover"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "7.1",
+      "id": "proposition-2",
+      "source_label": "prop:idealization"
+    }
+  ],
+  "references": 27,
+  "citations": 17,
+  "cited_keys": [
+    "CFHNV",
+    "DV",
+    "GKKM",
+    "HN",
+    "Wilson",
+    "Zeng"
+  ],
+  "bibliography_keys": [
+    "CFHNV",
+    "DV",
+    "GKKM",
+    "HN",
+    "Wilson",
+    "Zeng"
+  ],
+  "equation_labels": [
+    "eq:algebra",
+    "eq:main-splitting",
+    "eq:locus-intro",
+    "eq:hilbert",
+    "eq:diagentries",
+    "eq:rho",
+    "eq:rankformula",
+    "eq:wlpcondition",
+    "eq:gradedjordan",
+    "eq:strings"
+  ],
+  "label_numbers": {
+    "eq:algebra": "1",
+    "eq:main-splitting": "2",
+    "eq:locus-intro": "3",
+    "thm:splitting": "2.1",
+    "eq:hilbert": "4",
+    "thm:wilson": "3.1",
+    "thm:diagonal": "3.2",
+    "eq:diagentries": "5",
+    "eq:rho": "6",
+    "cor:ranks": "3.3",
+    "eq:rankformula": "7",
+    "thm:locus": "4.1",
+    "cor:degrees": "4.2",
+    "lem:generic": "5.1",
+    "thm:classification": "5.2",
+    "eq:wlpcondition": "8",
+    "cor:graph": "5.3",
+    "prop:jordan": "6.1",
+    "eq:gradedjordan": "9",
+    "thm:charzerojordan": "6.2",
+    "eq:strings": "10",
+    "cor:recover": "6.3",
+    "sec:idealization": "7",
+    "prop:idealization": "7.1"
+  },
+  "bibliography_numbers": {
+    "CFHNV": "1",
+    "DV": "2",
+    "GKKM": "3",
+    "HN": "4",
+    "Wilson": "5",
+    "Zeng": "6"
+  },
+  "tables": [],
+  "source_tex_sha256": "6d797bebcb29dd4d3c017643b812e94b76260a43cb80aef2d94a8eff3ca05b50",
+  "source_pdf_sha256": "6a59f570db68d464e12c675ab5e16332c059b06233891c4a7a7a0a9e8ca7d892",
+  "markdown_sha256": "9a4b475a20594f2b867dc7aa4b528955b49fe8f59a7794e0eb41234efa864847",
+  "markdown_bytes": 27057,
+  "source_math_expressions_verified": 270,
+  "markdown_math_expressions": 280,
+  "custom_macros_expanded": [
+    "kk",
+    "ZZ",
+    "rk",
+    "Ind",
+    "Ann"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 78,
+  "semantic_roundtrip_sha256": "f17d6fb2f0aaf078bf641785e6f25c15e901a3d0cc28692a22c8a01cd11998c6",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 54,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

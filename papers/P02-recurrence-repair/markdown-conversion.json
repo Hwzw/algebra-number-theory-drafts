@@ -1,0 +1,147 @@
+{
+  "environments": {
+    "theorem": 4,
+    "lemma": 2,
+    "proof": 6,
+    "example": 2,
+    "remark": 3
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:recurrence"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:lucas"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "3",
+      "id": "theorem-3",
+      "source_label": "thm:optimal-exponent"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 4,
+      "number": "4",
+      "id": "theorem-4",
+      "source_label": "thm:matrix"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "5",
+      "id": "lemma-1",
+      "source_label": "lem:local"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "6",
+      "id": "lemma-2",
+      "source_label": "lem:lifting"
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "7",
+      "id": "example-1",
+      "source_label": "ex:initialization"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "8",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "remark",
+      "ordinal": 2,
+      "number": "9",
+      "id": "remark-2",
+      "source_label": null
+    },
+    {
+      "environment": "example",
+      "ordinal": 2,
+      "number": "10",
+      "id": "example-2",
+      "source_label": null
+    },
+    {
+      "environment": "remark",
+      "ordinal": 3,
+      "number": "11",
+      "id": "remark-3",
+      "source_label": null
+    }
+  ],
+  "references": 15,
+  "citations": 10,
+  "cited_keys": [
+    "LW",
+    "MW",
+    "Milne",
+    "Rajs"
+  ],
+  "bibliography_keys": [
+    "BGW",
+    "LW",
+    "Milne",
+    "MW",
+    "Rajs"
+  ],
+  "equation_labels": [
+    "eq:frobenius",
+    "eq:localbound"
+  ],
+  "label_numbers": {
+    "thm:recurrence": "1",
+    "thm:lucas": "2",
+    "thm:optimal-exponent": "3",
+    "thm:matrix": "4",
+    "lem:local": "5",
+    "lem:lifting": "6",
+    "eq:frobenius": "1",
+    "eq:localbound": "2",
+    "ex:initialization": "7"
+  },
+  "bibliography_numbers": {
+    "BGW": "1",
+    "LW": "2",
+    "Milne": "3",
+    "MW": "4",
+    "Rajs": "5"
+  },
+  "tables": [],
+  "source_tex_sha256": "9e369aa13d644fa96c3c61920bf8532a1c3d53fd906fa2e8874791c838fe2b6a",
+  "source_pdf_sha256": "d1755eb5836b581c02bd21c50d31c5b8937e7745f364ce5c83ab128aaf0d2535",
+  "markdown_sha256": "9393f7a5c693ddeb548e1e1b8b3cf9c21db233074eaac4d64220d34ba286906a",
+  "markdown_bytes": 21772,
+  "source_math_expressions_verified": 331,
+  "markdown_math_expressions": 337,
+  "custom_macros_expanded": [
+    "rad",
+    "disc",
+    "Fail",
+    "lcm",
+    "Mat"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 48,
+  "semantic_roundtrip_sha256": "6b8987dfde832f19a4fd595d1df069a92e9280e893e8df8c81937a3ed5007a6f",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 31,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

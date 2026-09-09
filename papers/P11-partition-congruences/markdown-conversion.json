@@ -1,0 +1,121 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 1,
+    "proof": 3,
+    "corollary": 1,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2",
+      "id": "lemma-1",
+      "source_label": "lem:parameter"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3",
+      "id": "corollary-1",
+      "source_label": "cor:transfer"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "4",
+      "id": "proposition-1",
+      "source_label": "prop:certificate"
+    }
+  ],
+  "references": 22,
+  "citations": 5,
+  "cited_keys": [
+    "Guadalupe",
+    "Patel",
+    "Tang",
+    "Wang"
+  ],
+  "bibliography_keys": [
+    "Guadalupe",
+    "Patel",
+    "Wang",
+    "Tang",
+    "Radu"
+  ],
+  "equation_labels": [
+    "eq:gf",
+    "eq:obstructions",
+    "eq:66",
+    "eq:116",
+    "eq:orbit",
+    "eq:nu",
+    "eq:params",
+    "eq:bound",
+    "eq:cusps",
+    "eq:recurrence"
+  ],
+  "label_numbers": {
+    "eq:gf": "1",
+    "eq:obstructions": "2",
+    "thm:main": "1",
+    "eq:66": "3",
+    "eq:116": "4",
+    "tab:results": "1",
+    "lem:parameter": "2",
+    "cor:transfer": "3",
+    "eq:orbit": "5",
+    "eq:nu": "6",
+    "prop:certificate": "4",
+    "eq:params": "7",
+    "eq:bound": "8",
+    "eq:cusps": "9",
+    "tab:certs": "2",
+    "eq:recurrence": "10"
+  },
+  "bibliography_numbers": {
+    "Guadalupe": "1",
+    "Patel": "2",
+    "Wang": "3",
+    "Tang": "4",
+    "Radu": "5"
+  },
+  "tables": [
+    {
+      "columns": 3,
+      "body_rows": 8,
+      "repeated_page_headers_removed": 0
+    },
+    {
+      "columns": 5,
+      "body_rows": 35,
+      "repeated_page_headers_removed": 1
+    }
+  ],
+  "source_tex_sha256": "8c4a6ddac01d3a8d39aca835909b2568ef84fce49a402ce1ee093905435ac06b",
+  "source_pdf_sha256": "3faeb5fd06788f3cc8ed086adce89a6a2ccb88e94d1edcbd39f9be43913a2b80",
+  "markdown_sha256": "8fb305199dc868d37fdf0eb5f4938632eabd310133dc6a4be7b097b48375702b",
+  "markdown_bytes": 18937,
+  "source_math_expressions_verified": 272,
+  "markdown_math_expressions": 270,
+  "custom_macros_expanded": [
+    "Z",
+    "dd"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 35,
+  "semantic_roundtrip_sha256": "43795d1589eeba51ff2ad30c832b1832b28a98df0ba95a489a47e5a8c625edae",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 28,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

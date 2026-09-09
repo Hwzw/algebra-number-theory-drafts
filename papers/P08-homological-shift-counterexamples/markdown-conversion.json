@@ -1,0 +1,70 @@
+{
+  "environments": {
+    "theorem": 1,
+    "proposition": 1,
+    "proof": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "main"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "2",
+      "id": "proposition-1",
+      "source_label": "shifts"
+    }
+  ],
+  "references": 8,
+  "citations": 5,
+  "cited_keys": [
+    "CMS",
+    "F",
+    "FL"
+  ],
+  "bibliography_keys": [
+    "CMS",
+    "F",
+    "FL"
+  ],
+  "equation_labels": [
+    "formula",
+    "invalid"
+  ],
+  "label_numbers": {
+    "main": "1",
+    "shifts": "2",
+    "formula": "1",
+    "invalid": "2"
+  },
+  "bibliography_numbers": {
+    "CMS": "1",
+    "F": "2",
+    "FL": "3"
+  },
+  "tables": [],
+  "source_tex_sha256": "08a5a5df22074c7459607f760996a54a466fe3ad002778b6e998f916d3f497fd",
+  "source_pdf_sha256": "68ea26bd4e309999e112b53913cf838a08278373243ef55ca4d42538d73d1c4d",
+  "markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
+  "markdown_bytes": 8603,
+  "source_math_expressions_verified": 126,
+  "markdown_math_expressions": 127,
+  "custom_macros_expanded": [
+    "HS",
+    "pd",
+    "G"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 13,
+  "semantic_roundtrip_sha256": "f756cdd0499418c92fdd6231905a2575e5504bf451c216e0fb1593bdf4fb27f4",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 10,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

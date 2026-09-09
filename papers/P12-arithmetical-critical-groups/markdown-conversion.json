@@ -1,0 +1,106 @@
+{
+  "environments": {
+    "theorem": 2,
+    "lemma": 1,
+    "proof": 2,
+    "corollary": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2",
+      "id": "lemma-1",
+      "source_label": "lem:bridge"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "3",
+      "id": "theorem-2",
+      "source_label": "thm:AKLN"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "4",
+      "id": "corollary-1",
+      "source_label": "cor:equality"
+    }
+  ],
+  "references": 17,
+  "citations": 8,
+  "cited_keys": [
+    "ADGL",
+    "AKLN",
+    "BHMT",
+    "BM"
+  ],
+  "bibliography_keys": [
+    "ADGL",
+    "AKLN",
+    "BHMT",
+    "BM"
+  ],
+  "equation_labels": [
+    "eq:bound",
+    "eq:adjugate",
+    "eq:unit",
+    "eq:order",
+    "eq:extremal",
+    "eq:starorder",
+    "eq:center"
+  ],
+  "label_numbers": {
+    "eq:bound": "1",
+    "thm:main": "1",
+    "lem:bridge": "2",
+    "thm:AKLN": "3",
+    "eq:adjugate": "2",
+    "eq:unit": "3",
+    "eq:order": "4",
+    "eq:extremal": "5",
+    "eq:starorder": "6",
+    "eq:center": "7",
+    "cor:equality": "4"
+  },
+  "bibliography_numbers": {
+    "ADGL": "1",
+    "AKLN": "2",
+    "BHMT": "3",
+    "BM": "4"
+  },
+  "tables": [],
+  "source_tex_sha256": "956d39e4188eecd3e479fd4ede0a585467151c775d5310b798f089a87815a8e8",
+  "source_pdf_sha256": "3e8bc5f26874ac920b2bad9b05ba04959a59b7f2e17da29f43cda0453b446a89",
+  "markdown_sha256": "33be5c834a59646f979b89cb7eb3cfc165e7e0c4f959236b4714541d6850e49b",
+  "markdown_bytes": 14174,
+  "source_math_expressions_verified": 161,
+  "markdown_math_expressions": 163,
+  "custom_macros_expanded": [
+    "diag",
+    "conv",
+    "lcm",
+    "Tor",
+    "adj",
+    "Z",
+    "R",
+    "K",
+    "one"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 27,
+  "semantic_roundtrip_sha256": "556dd18439343245de66e1617b20ce591276d95efb2f7865c484eb7670fcd1cd",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 21,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

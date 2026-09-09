@@ -1,0 +1,29 @@
+{
+  "local_instances": 378,
+  "matrix_repairs": {
+    "s=1": 4,
+    "s=2,3": 2
+  },
+  "uniform_recurrence_repairs": {
+    "s=1": 12,
+    "s=2,3": 6
+  },
+  "initial_vector_attaining_12_at_s1": [
+    0,
+    1,
+    1
+  ],
+  "witnesses": [
+    {
+      "prime": 2,
+      "level": 2,
+      "difference_mod_p": 1
+    },
+    {
+      "prime": 3,
+      "level": 1,
+      "difference_mod_p": 1
+    }
+  ],
+  "passed": true
+}

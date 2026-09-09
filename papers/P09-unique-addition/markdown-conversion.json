@@ -1,0 +1,119 @@
+{
+  "environments": {
+    "theorem": 2,
+    "proof": 5,
+    "corollary": 1,
+    "remark": 2,
+    "lemma": 1,
+    "proposition": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:affine"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3",
+      "id": "corollary-1",
+      "source_label": "cor:intrinsic"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "4",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "5",
+      "id": "lemma-1",
+      "source_label": "lem:commuting"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 2,
+      "number": "6",
+      "id": "remark-2",
+      "source_label": null
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "7",
+      "id": "proposition-1",
+      "source_label": "prop:centralizers"
+    }
+  ],
+  "references": 18,
+  "citations": 10,
+  "cited_keys": [
+    "Arz",
+    "FG",
+    "QH",
+    "Sos"
+  ],
+  "bibliography_keys": [
+    "Arz",
+    "FG",
+    "QH",
+    "Sos"
+  ],
+  "equation_labels": [
+    "eq:images",
+    "eq:mixed",
+    "eq:block"
+  ],
+  "label_numbers": {
+    "thm:main": "1",
+    "thm:affine": "2",
+    "eq:images": "1",
+    "eq:mixed": "2",
+    "cor:intrinsic": "3",
+    "lem:commuting": "5",
+    "eq:block": "3",
+    "prop:centralizers": "7",
+    "sec:comparison": "5"
+  },
+  "bibliography_numbers": {
+    "Arz": "1",
+    "FG": "2",
+    "QH": "3",
+    "Sos": "4"
+  },
+  "tables": [],
+  "source_tex_sha256": "cb1d0e82004dfa70becc367dba38b2d585bc9c7ce06cb542f3c9b075a716cd77",
+  "source_pdf_sha256": "0b20039e85c952c7478df79c5f13ca1698f6acae4ec2c2424e16dd8f5c8bdbfe",
+  "markdown_sha256": "e64d2754562b32d4089e664a5607314d31ce47db294e61b13007c9d71bfc8f82",
+  "markdown_bytes": 16917,
+  "source_math_expressions_verified": 229,
+  "markdown_math_expressions": 234,
+  "custom_macros_expanded": [
+    "End",
+    "Hom",
+    "im",
+    "ad",
+    "Tri"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 37,
+  "semantic_roundtrip_sha256": "ebd60518948215f7e8f8128aa3d6a08f3370e36ef86fb9c2fbf033a4ba8fb90f",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 25,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

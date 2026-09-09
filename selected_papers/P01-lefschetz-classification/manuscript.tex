@@ -1,0 +1,373 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\kk}{\mathbb K}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\Ind}{\operatorname{Ind}}
+\newcommand{\Ann}{\operatorname{Ann}}
+\title{Integral Lefschetz decompositions of fully whiskered simplicial complexes}
+\author{}
+\date{September 8, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The square-zero Artinian algebra of a fully whiskered simplicial complex admits an exact integral decomposition, as a module over its Lefschetz operator, into shifted squarefree complete intersections indexed by the faces. This gives an integral diagonal form for every multiplication power through Wilson's classical inclusion-matrix theorem. We obtain all multiplication ranks and graded Jordan types in every characteristic, and an exact description of every failing degree and power in characteristic zero. In particular, if the complex has $n$ vertices and maximum face cardinality $r$, the weak Lefschetz property holds precisely when $r\leq1$, or $n$ is odd and $r\leq2$, with the additional condition $p>\lceil n/2\rceil$ in positive characteristic. The strong Lefschetz property holds precisely when $r\leq1$, with $p>n$ additionally required. For independence complexes this settles the conjecture of Holleben and Nicklasson. The decomposition also produces a larger family of G-quadratic Gorenstein idealizations failing the weak Lefschetz property.
+\end{abstract}
+
+\section{Introduction}
+Let $\Delta$ be a simplicial complex with vertex set $[n]$, where $n\geq1$ and every singleton is a face. Let $I_\Delta$ be its Stanley--Reisner ideal. We study
+\begin{equation}\label{eq:algebra}
+ A_{\Delta,\kk}=
+ \frac{\kk[x_1,\ldots,x_n,y_1,\ldots,y_n]}
+ {I_\Delta(x)+(x_i^2,y_i^2,x_i y_i:1\leq i\leq n)}
+\end{equation}
+over an arbitrary field $\kk$. The corresponding integral algebra is denoted $A_{\Delta,\ZZ}$. Put
+\[
+ L=\sum_{i=1}^n(x_i+y_i),\qquad
+ f_s=|\{S\in\Delta:|S|=s\}|,\qquad
+ r=\max\{|S|:S\in\Delta\}.
+\]
+Our face numbers are indexed by cardinality: $f_0=1$ and $f_1=n$. Binomial coefficients with lower index outside $[0,a]$ are interpreted as zero.
+
+A standard graded Artinian algebra has the weak Lefschetz property (WLP) if multiplication by some linear form has maximal rank in every consecutive degree. It has the strong Lefschetz property (SLP) if all positive powers of the same form have maximal rank between every pair of degrees. For a monomial algebra, these properties can be tested using the sum of the variables.
+
+If $\Delta=\Ind(G)$ is the independence complex of a graph $G$, then \eqref{eq:algebra} is the square-zero Artinian algebra of the fully whiskered graph $w(G)$. Holleben and Nicklasson conjectured that this algebra fails WLP whenever $\alpha(G)\geq3$ \cite[Conjectures 1.3 and 3.15]{HN}. Positive cases for complete graphs and for odd-order graphs of independence number at most two were already known \cite[Propositions 3.2 and 3.5]{HN}. Earlier work gives endpoint ranks and lower-half injectivity \cite[Theorem 1.2]{CFHNV}. A recent preprint verifies the eight-vertex case by exact kernel certificates \cite{Zeng}.
+
+The main observation is an exact operator decomposition. For
+\[
+ B_{a,\ZZ}=\ZZ[z_1,\ldots,z_a]/(z_1^2,\ldots,z_a^2),
+ \qquad U=z_1+\cdots+z_a,
+\]
+with $B_{0,\ZZ}=\ZZ$, it takes the form
+\begin{equation}\label{eq:main-splitting}
+ (A_{\Delta,\ZZ},L)\cong
+ \bigoplus_{S\in\Delta}(B_{n-|S|,\ZZ},U)(-|S|).
+\end{equation}
+This is a graded $\ZZ[t]$-module isomorphism, with $t$ acting as the displayed operators. The shift $(-s)$ places degree zero in degree $s$. In particular, \eqref{eq:main-splitting} is simultaneous for every power and survives reduction modulo every prime.
+
+Combining this decomposition with Wilson's diagonal form for Boolean inclusion matrices \cite{Wilson,GKKM} gives every multiplication rank and its integral torsion data. In characteristic zero, we obtain the particularly simple criterion
+\begin{equation}\label{eq:locus-intro}
+ L^e:(A_\Delta)_i\longrightarrow(A_\Delta)_{i+e}
+ \text{ has maximal rank}
+ \quad\Longleftrightarrow\quad
+ 2i+e\leq n\ \text{or}\ 2i+e\geq n+r
+\end{equation}
+for $0\leq i<i+e\leq n$. All ranks depend only on the face numbers, while the maximal-rank locus in characteristic zero depends only on $n$ and $r$. We also prove sharp positive-characteristic WLP and SLP criteria and recover the face numbers from ordinary Jordan type in characteristic zero.
+
+The classical inclusion-matrix theorem is not a new ingredient. The contribution is the exact splitting \eqref{eq:main-splitting} and the operator description it gives for the whole whiskered family. The block-triangular argument in \cite[Lemma 3.1]{HN} treats complete graphs and more general monomial powers. Its square-zero specialization does not state the simultaneous splitting used here. The differentiation cokernel in \cite[Theorem 3.10]{HN} was a precursor to the classification, but the present proof determines all ranks directly. Section~\ref{sec:idealization} applies the resulting cokernel range to Gorenstein idealizations, extending \cite[Theorem 4.6]{HN}.
+
+\section{The integral splitting}
+\begin{theorem}\label{thm:splitting}
+There is an isomorphism \eqref{eq:main-splitting} of graded $\ZZ[t]$-modules. In particular, this is a direct sum decomposition over every field, and the summand associated with a face $S$ is a squarefree complete intersection on its complementary indices, shifted by $|S|$.
+\end{theorem}
+\begin{proof}
+Set $z_i=x_i+y_i$, so $y_i=z_i-x_i$. This is an invertible integral linear change of variables. The identities
+\begin{align*}
+ x_i z_i&=x_i^2+x_i y_i,&
+ z_i^2&=x_i^2+2x_i y_i+y_i^2,\\
+ x_i y_i&=x_i z_i-x_i^2,&
+ y_i^2&=z_i^2-2x_i z_i+x_i^2
+\end{align*}
+show equality of the local defining ideals after substitution. The ideal $I_\Delta(x)$ is unchanged. Thus
+\[
+ A_{\Delta,\ZZ}=
+ \frac{\ZZ[x_1,\ldots,x_n,z_1,\ldots,z_n]}
+ {I_\Delta(x)+(x_i^2,z_i^2,x_i z_i:1\leq i\leq n)},
+ \qquad L=\sum_i z_i.
+\]
+Its integral monomial basis is
+\[
+ \{x_S z_T:S\in\Delta,\ T\subseteq[n]\setminus S\}.
+\]
+For fixed $S$, the span of these monomials is stable under every $z_i$. It is $x_S$ times the squarefree complete intersection on $[n]\setminus S$. The basis is a disjoint union over $S$, proving the theorem.
+\end{proof}
+
+\begin{remark}
+The decomposition is a decomposition of modules with an operator, not an algebra direct product. It is also stronger than a Hilbert-series identity or a filtration: the multiplication matrices have no off-diagonal blocks in this basis.
+\end{remark}
+
+The decomposition immediately gives
+\begin{equation}\label{eq:hilbert}
+ h_i:=\dim_\kk(A_{\Delta,\kk})_i
+ =\sum_{s=0}^r f_s\binom{n-s}{i-s},\qquad
+ H_{A_\Delta}(t)=\sum_{s=0}^r f_s t^s(1+t)^{n-s}.
+\end{equation}
+The algebra is concentrated in degrees $0,\ldots,n$, with nonzero components in each of these degrees.
+
+\section{Integral diagonal forms and ranks in every characteristic}
+We recall precisely the classical matrix result used below. Let $W_{t,k}(a)$ be the matrix with rows indexed by $t$-subsets of $[a]$, columns indexed by $k$-subsets, and entry one exactly for containment.
+
+\begin{theorem}[Wilson]\label{thm:wilson}
+If $0\leq t\leq k\leq a-t$, then $W_{t,k}(a)$ is equivalent under unimodular integer row and column operations to a rectangular diagonal matrix with entries
+\[
+ \binom{k-j}{t-j}
+ \quad\text{with multiplicity}\quad
+ \binom aj-\binom a{j-1},\qquad 0\leq j\leq t.
+\]
+\end{theorem}
+This is Wilson's theorem \cite{Wilson}; an accessible primary proof, also crediting Bier's approach, is \cite[Corollary 3]{GKKM}. The entries need not occur in divisibility order, so this is a diagonal form rather than necessarily the Smith normal form in its standard order.
+
+\begin{theorem}\label{thm:diagonal}
+Fix $i\geq0$ and $e\geq1$. For each $s$ such that $f_s\ne0$ and
+\[
+ 0\leq q_s:=i-s\leq q_s+e\leq a_s:=n-s,
+ \qquad t_s=\min(q_s,a_s-q_s-e),
+\]
+the multiplication map
+\[
+ L^e:(A_{\Delta,\ZZ})_i\longrightarrow(A_{\Delta,\ZZ})_{i+e}
+\]
+has a nonzero integral diagonal entry
+\begin{equation}\label{eq:diagentries}
+ e!\binom{t_s+e-j}{e}
+ \quad\text{with multiplicity}\quad
+ f_s\left(\binom{a_s}{j}-\binom{a_s}{j-1}\right),
+ \qquad 0\leq j\leq t_s.
+\end{equation}
+Collecting these entries over $s$, together with the remaining zero rows and columns, gives a diagonal form of the entire map.
+\end{theorem}
+\begin{proof}
+In $B_a$, multiplication by $U^e$ takes a squarefree monomial $z_T$ of degree $q$ to
+\[
+ U^e z_T=e!\sum_{\substack{V\supseteq T\\|V|=q+e}}z_V.
+\]
+Each choice of $e$ new indices occurs in $e!$ orders; choices with a repeated index vanish. Thus the matrix is $e!W_{q,q+e}(a)^{\mathsf T}$.
+
+If $2q+e\leq a$, apply Theorem~\ref{thm:wilson} with $t=q$. Otherwise complementing subsets and transposing reduces the matrix to the inclusion matrix with $t=a-q-e$ and $k=a-q$. In both cases $k=t+e$ and $t\leq k\leq a-t$. Multiplying the matrix by $e!$ multiplies each diagonal entry by $e!$, using the same unimodular operations. Theorem~\ref{thm:splitting} supplies the direct sum and the factors $f_s$. Blocks with zero source or target contribute only zero columns or rows.
+\end{proof}
+
+For a prime $p$ define, when $0\leq q\leq q+e\leq a$ and $t=\min(q,a-q-e)$,
+\begin{equation}\label{eq:rho}
+ \rho_p(a,q,e)=
+ \sum_{j=0}^t\left(\binom aj-\binom a{j-1}\right)
+ \mathbf1_{\,p\nmid e!\binom{t+e-j}{e}}.
+\end{equation}
+In characteristic zero put
+\[
+ \rho_0(a,q,e)=\min\left\{\binom aq,\binom a{q+e}\right\}.
+\]
+For invalid Boolean degrees set $\rho_p(a,q,e)=0$, including $p=0$.
+
+\begin{corollary}\label{cor:ranks}
+Over a field of characteristic $p$, with $p=0$ allowed,
+\begin{equation}\label{eq:rankformula}
+ \rk\bigl(L^e:(A_\Delta)_i\to(A_\Delta)_{i+e}\bigr)
+ =\sum_{s=0}^r f_s\rho_p(n-s,i-s,e).
+\end{equation}
+In positive characteristic $L^e=0$ whenever $e\geq p$. Every rank depends only on the face numbers.
+\end{corollary}
+\begin{proof}
+Reduce the integral diagonal form modulo $p$. In characteristic zero all its displayed entries are nonzero, and the multiplicities telescope to $\binom at$, the smaller Boolean dimension. If $e\geq p$, every diagonal entry is divisible by $p$; equivalently $L^p=0$ by Frobenius.
+\end{proof}
+
+Theorem~\ref{thm:diagonal} also determines the abelian-group cokernel. Each positive diagonal entry $d$ contributes a cyclic group $\ZZ/d\ZZ$, and the excess target rank contributes a free summand. This integral statement distinguishes the primes causing rank failure without computing any minors of the full whiskered multiplication matrix.
+
+\section{Every maximal-rank degree and power in characteristic zero}
+\begin{theorem}\label{thm:locus}
+Suppose $\operatorname{char}\kk=0$ and $0\leq i<i+e\leq n$. Then $L^e:(A_\Delta)_i\to(A_\Delta)_{i+e}$ has maximal rank if and only if
+\[
+ 2i+e\leq n\qquad\text{or}\qquad 2i+e\geq n+r.
+\]
+It is injective in the first range and surjective in the second. In the intervening range $n<2i+e<n+r$, it has both a nonzero kernel and a nonzero cokernel. The last assertion holds over every field.
+\end{theorem}
+\begin{proof}
+A Boolean block shifted by $s$ has source and target dimensions
+\[
+ \binom{n-s}{i-s}\quad\text{and}\quad\binom{n-s}{i+e-s}.
+\]
+Its characteristic-zero rank is the smaller dimension. Comparison of symmetric binomial coefficients shows injectivity when $2i+e\leq n+s$ and surjectivity when $2i+e\geq n+s$. The same conclusions hold if one of the graded components is zero. If $2i+e\leq n$, all blocks are injective; if $2i+e\geq n+r$, all blocks are surjective.
+
+Suppose now that $n<2i+e<n+r$. The empty-face block has strictly larger source than target dimension, so it has a kernel over every field. Put $h=2i+e-n$, so $0<h<r$. Since $i+e\leq n$, we have $h\leq i$. Downward closure gives a face of cardinality $s=h+1\leq i+1$. If $s=i+1$, its block has zero source and nonzero target. Otherwise its source and target degrees are both valid, and $2i+e=n+h<n+s$ makes the target dimension strictly larger. Hence this block has a cokernel over every field. The direct sum gives both defects for the whole map.
+\end{proof}
+
+\begin{corollary}\label{cor:degrees}
+In characteristic zero, the consecutive maps that fail maximal rank are exactly
+\[
+ i\longrightarrow i+1,
+ \qquad \left\lceil\frac n2\right\rceil
+ \leq i\leq\left\lfloor\frac{n+r}{2}\right\rfloor-1.
+\]
+An empty interval means that the WLP holds.
+\end{corollary}
+
+\section{Weak and strong Lefschetz properties in every characteristic}
+We first record the usual reduction from arbitrary linear forms to $L$.
+\begin{lemma}\label{lem:generic}
+For an Artinian monomial quotient over any field, the sum of the variables tests WLP and SLP. Over an infinite field its ranks are the generic ranks for every multiplication power.
+\end{lemma}
+\begin{proof}
+Diagonal automorphisms preserve the monomial ideal, so forms with all coefficients nonzero have the same ranks as the sum of the variables. The maximal-rank conditions are Zariski open, with only finitely many relevant degrees and powers. Over an infinite field a nonempty such open set meets the coefficient torus. For a finite field extend scalars to its algebraic closure: ranks of the fixed sum are unchanged, a Lefschetz element would remain one after extension, and the sum itself is defined over the original field.
+\end{proof}
+
+\begin{theorem}\label{thm:classification}
+Over any field, $A_{\Delta,\kk}$ has WLP if and only if
+\begin{equation}\label{eq:wlpcondition}
+ r\leq1\quad\text{or}\quad(n\text{ odd and }r\leq2),
+\end{equation}
+and, in positive characteristic $p$, additionally $p>\lceil n/2\rceil$.
+It has SLP if and only if $r\leq1$ and, in positive characteristic, additionally $p>n$.
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:locus} and Lemma~\ref{lem:generic} prove the characteristic-zero assertions. They also exclude \eqref{eq:wlpcondition}'s negative cases over every field: use $i=\lceil n/2\rceil$, $e=1$ in the mixed range. For SLP this excludes $r\geq2$ when $n$ is even, and $r\geq3$ when $n$ is odd. If $n=2m+1$ and $r=2$, take $i=m,e=2$, again in the mixed range. Thus $r\geq2$ always excludes SLP.
+
+Suppose $p\leq\lceil n/2\rceil$ and put $i=p-1$. Frobenius gives $L^p=0$, but $L^{p-1}\ne0$: in the empty-face block its squarefree coefficients are $(p-1)!$, nonzero modulo $p$. Thus multiplication by $L$ has a nonzero kernel in degree $i$.
+
+In this degree $h_i<h_{i+1}$. Indeed $i\leq\lceil n/2\rceil-1$, so every difference
+\[
+ \binom{n-s}{i+1-s}-\binom{n-s}{i-s}
+\]
+is nonnegative. For even $n=2m$, the empty-face difference is strictly positive for $i\leq m-1$. For odd $n=2m+1$ it is strictly positive for $i\leq m-1$. In the remaining case $i=m$, the singleton difference is
+\[
+ \binom{2m}{m}-\binom{2m}{m-1}>0.
+\]
+Here $m\geq1$, because $p\geq2$, and $f_1=n>0$. Equation~\eqref{eq:hilbert} proves the strict inequality. The nonzero kernel therefore violates maximal rank, establishing necessity of the WLP characteristic condition.
+
+Conversely, suppose \eqref{eq:wlpcondition} holds and $p>\lceil n/2\rceil$. For $e=1$, every nonzero diagonal entry in a Boolean block is $t+1-j$. In $a\leq n$ variables, $t+1\leq\lceil a/2\rceil\leq\lceil n/2\rceil$. Every entry is consequently nonzero modulo $p$. All consecutive ranks equal their characteristic-zero ranks, and WLP follows.
+
+For SLP, if $p\leq n$, then $L^p:A_0\to A_p$ is zero with both spaces nonzero. If $p>n$, each diagonal entry in \eqref{eq:diagentries} is a product
+\[
+ e!\binom{t+e-j}{e}
+ =(t+e-j)(t+e-j-1)\cdots(t-j+1)
+\]
+of positive integers at most $n$. Thus all powers retain their characteristic-zero ranks. When $r\leq1$, this gives SLP.
+\end{proof}
+
+\begin{corollary}\label{cor:graph}
+For a graph $G$ on $n$ vertices, $A(w(G))$ has WLP precisely when $G$ is complete, or $n$ is odd and $\alpha(G)\leq2$, subject to $p>\lceil n/2\rceil$ in positive characteristic. It has SLP precisely when $G$ is complete, subject to $p>n$ in positive characteristic.
+\end{corollary}
+This proves the graph WLP conjecture of Holleben and Nicklasson. The positive graph cases in characteristic zero and the SLP sufficient condition $p>n$ for complete graphs were already established in \cite{HN}. Frobenius gives the necessity of the latter threshold. These known positive cases are recovered by the full operator formula.
+
+\section{Jordan type and recovery of face numbers}
+Write $R_e=\rk(L^e:A_\Delta\to A_\Delta)$, summing over degrees, with $R_0=\dim A_\Delta$. Put $R_e=0$ for $e>n$.
+\begin{proposition}\label{prop:jordan}
+Over every field, the number of Jordan blocks of length $\ell$ is
+\[
+ R_{\ell-1}-2R_\ell+R_{\ell+1}.
+\]
+For $0\leq a\leq b\leq n$, put
+\[
+ r_{a,b}=\rk(L^{b-a}:(A_\Delta)_a\to(A_\Delta)_b),
+ \qquad r_{a,a}=h_a,
+\]
+and interpret indices $a<0$ or $b>n$ as zero. The multiplicity of graded Jordan strings supported on $[a,b]$ is
+\begin{equation}\label{eq:gradedjordan}
+ r_{a,b}-r_{a-1,b}-r_{a,b+1}+r_{a-1,b+1}.
+\end{equation}
+Consequently \eqref{eq:rankformula} determines ordinary and graded Jordan type from the face numbers in every characteristic.
+\end{proposition}
+\begin{proof}
+The elementary structure theorem for finite graded torsion $\kk[t]$-modules gives a direct sum of shifted modules $\kk[t]/(t^\ell)$, or homogeneous Jordan strings. A length-$\ell$ string contributes $\max(\ell-e,0)$ to $R_e$; the second difference isolates its length. A string $[u,v]$ contributes one to $r_{a,b}$ exactly when $u\leq a$ and $v\geq b$. The two-variable difference in \eqref{eq:gradedjordan} isolates $u=a,v=b$.
+\end{proof}
+
+In characteristic zero the answer has a closed form.
+\begin{theorem}\label{thm:charzerojordan}
+If $\operatorname{char}\kk=0$, then as a graded $\kk[t]$-module,
+\begin{equation}\label{eq:strings}
+ A_\Delta\cong
+ \bigoplus_{s=0}^r\ \bigoplus_{b=0}^{\lfloor(n-s)/2\rfloor}
+ \left(\frac{\kk[t]}{(t^{n-s-2b+1})}(-s-b)\right)^%
+ {f_s\left(\binom{n-s}{b}-\binom{n-s}{b-1}\right)},
+\end{equation}
+where $t$ acts by $L$. The string indexed by $s,b$ is supported on $[s+b,n-b]$.
+\end{theorem}
+\begin{proof}
+The Boolean power ranks are the smaller binomial dimensions by Theorem~\ref{thm:wilson}. Applying \eqref{eq:gradedjordan} to these ranks yields strings $[b,a-b]$ with multiplicity $\binom ab-\binom a{b-1}$ in $B_a$. Theorem~\ref{thm:splitting} shifts these strings by $s$ and repeats them $f_s$ times.
+\end{proof}
+
+\begin{corollary}\label{cor:recover}
+In characteristic zero, the ordinary Jordan type of $L$ determines the face numbers of $\Delta$. Conversely, the face numbers determine the graded Jordan type in every characteristic.
+\end{corollary}
+\begin{proof}
+The largest block in \eqref{eq:strings} has length $n+1$ and multiplicity one, recovering $n$. Let $J_\ell$ denote the multiplicity of blocks of length $\ell$. For $0\leq s\leq n$,
+\[
+ J_{n-s+1}=f_s+
+ \sum_{\substack{0\leq h<s\\s-h\text{ even}}}
+ f_h\left(\binom{n-h}{(s-h)/2}-\binom{n-h}{(s-h)/2-1}\right).
+\]
+This triangular system has coefficient one on $f_s$ and recovers the face numbers successively. The converse follows from Proposition~\ref{prop:jordan} and Corollary~\ref{cor:ranks}.
+\end{proof}
+
+The characteristic-zero strings in \eqref{eq:strings} are not asserted to give an integral Jordan decomposition. Reduction modulo a prime can change the string structure, which is why the integral diagonal forms and rank differences are used for arbitrary characteristic.
+
+\section{A Gorenstein idealization application}\label{sec:idealization}
+Let $A^\vee$ be the graded $\kk$-dual of $A=A_{\Delta,\kk}$, and form
+\[
+ T=A\ltimes A^\vee(-n-1),\qquad
+ T_i=A_i\oplus(A_{n+1-i})^\vee.
+\]
+The product is $(a,\varphi)(b,\psi)=(ab,a\psi+b\varphi)$, with the natural dual module action. This is the standard canonical-module idealization of $A$ with socle degree $n+1$.
+
+\begin{proposition}\label{prop:idealization}
+In characteristic zero, $T$ is standard graded Artinian Gorenstein and fails WLP whenever $n$ is even and $r\geq2$, or $n$ is odd and $r\geq3$. For $\Delta=\Ind(G)$, these are G-quadratic Gorenstein algebras.
+\end{proposition}
+\begin{proof}
+Every maximal surviving monomial of $A$ has degree $n$: a monomial $x_Sy_T$ of smaller degree can be multiplied by $y_j$ for an index outside $S\cup T$. Thus $A$ is level of socle degree $n$, its shifted dual is generated in degree one, and $T$ is standard graded. Evaluation gives a perfect pairing between its complementary degrees and a one-dimensional degree-$(n+1)$ socle, proving the Gorenstein assertion.
+
+Put $d=\lceil n/2\rceil$. In the stated cases Theorem~\ref{thm:locus} gives a cokernel for $L:A_d\to A_{d+1}$. In fact every $u\in A_1$ is nonsurjective in this degree: if a surjective form existed, its nonempty rank-open set would meet the coefficient torus, contradicting Lemma~\ref{lem:generic}.
+
+Suppose $T$ had WLP with a linear form $\ell$. Its Hilbert function would be unimodal: once a multiplication map is surjective, the standard graded quotient by $\ell$ vanishes in that and all higher degrees, so all subsequent maps are surjective. Its Hilbert function is also symmetric about $(n+1)/2$. Therefore $\ell:T_d\to T_{d+1}$ must be surjective. For even $n$ the two middle dimensions are equal; for odd $n$ the source is the middle degree and is at least the next dimension. Surjectivity descends under the quotient $T\to A$ to multiplication by the image $u$ of $\ell$, a contradiction.
+
+For the graph assertion, $\Ind(w(G))$ is flag and shellable \cite[Theorem 2.1]{HN}. Its facets correspond to independent sets $S$ of $G$, with monomials $m_S=x_Sy_{[n]\setminus S}$. Since $r\geq2$, some $\{u,v\}$ is independent and
+\[
+ m_{\{u,v\}}m_{\varnothing}=m_{\{u\}}m_{\{v\}}.
+\]
+The distinct facet monomials are thus linearly independent and algebraically dependent, making the associated simplicial form a Perazzo form. By \cite[Lemma 4.5]{HN}, its apolar algebra is $T$. Shellability supplies a quadratic Gr\"obner basis by \cite[Theorem 4.4]{HN}, which invokes the results of D'Al\`i and Venturello \cite[Corollary 8.2 and Proposition 8.3]{DV}.
+\end{proof}
+
+The high-degree quotient obstruction for idealizations is already used in \cite[Theorem 4.6]{HN}. That theorem assumes $\alpha(G)\geq n/3+2$; Proposition~\ref{prop:idealization} applies throughout the broader parity-dependent ranges above. We do not claim a classification of WLP for these idealizations or for all Perazzo algebras.
+
+\section{Scope}
+The results concern the precise square-zero reductions \eqref{eq:algebra}. The integral coordinate change uses all three local quadratic relations and does not establish an analogous decomposition for arbitrary monomial powers. The class of very well-covered graphs is broader than fully whiskered graphs, and the present classification is not asserted for that broader class.
+
+All main formulas follow from the integral splitting and the classical inclusion-matrix theorem. Exact computations in the original $x/y$ monomial bases provide ancillary checks of the modular rank formulas and characteristic thresholds; they are not premises of the proofs.
+
+\begin{thebibliography}{9}
+\bibitem{CFHNV}
+S.~M.~Cooper, S.~Faridi, T.~Holleben, L.~Nicklasson and A.~Van Tuyl,
+\emph{The weak Lefschetz property of whiskered graphs},
+in \emph{Lefschetz Properties: Current and New Directions}, Springer INdAM Series \textbf{59} (2024), 97--110.
+\href{https://doi.org/10.1007/978-981-97-3886-1_5}{doi:10.1007/978-981-97-3886-1\_5};
+\href{https://arxiv.org/abs/2306.04393}{arXiv:2306.04393}.
+
+\bibitem{DV}
+A.~D'Al\`i and L.~Venturello,
+\emph{Koszul Gorenstein algebras from Cohen--Macaulay simplicial complexes},
+International Mathematics Research Notices \textbf{2023} (2023), no.~6, 4998--5045.
+\href{https://doi.org/10.1093/imrn/rnac003}{doi:10.1093/imrn/rnac003};
+\href{https://arxiv.org/abs/2106.05051v2}{arXiv:2106.05051v2}.
+
+\bibitem{GKKM}
+E.~Ghorbani, G.~B.~Khosrovshahi, Ch.~Maysoori and M.~Mohammad-Noori,
+\emph{Inclusion matrices and chains},
+Journal of Combinatorial Theory, Series A \textbf{115} (2008), no.~5, 878--887.
+\href{https://doi.org/10.1016/j.jcta.2007.09.002}{doi:10.1016/j.jcta.2007.09.002};
+\href{https://arxiv.org/abs/0709.3144}{arXiv:0709.3144}.
+
+\bibitem{HN}
+T.~Holleben and L.~Nicklasson,
+\emph{Roller Coaster Gorenstein algebras and Koszul algebras failing the weak Lefschetz property},
+Journal of Pure and Applied Algebra \textbf{230} (2026), no.~4, article 108238.
+\href{https://doi.org/10.1016/j.jpaa.2026.108238}{doi:10.1016/j.jpaa.2026.108238};
+\href{https://arxiv.org/abs/2502.00155v2}{arXiv:2502.00155v2}.
+
+\bibitem{Wilson}
+R.~M.~Wilson,
+\emph{A diagonal form for the incidence matrices of $t$-subsets vs.~$k$-subsets},
+European Journal of Combinatorics \textbf{11} (1990), no.~6, 609--615.
+\href{https://doi.org/10.1016/S0195-6698(13)80046-7}{doi:10.1016/S0195-6698(13)80046-7}.
+
+\bibitem{Zeng}
+Z.~Zeng,
+\emph{The Whiskered-Graph Weak Lefschetz Conjecture for Graphs on Eight Vertices},
+SSRN preprint, posted September 3, 2026.
+\href{https://doi.org/10.2139/ssrn.7385138}{doi:10.2139/ssrn.7385138}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,844 @@
+{
+  "converter": "tools/convert_manuscripts.py",
+  "converter_sha256": "d1b794eea1fcbd240d597bc6accf2f80872a3ce6513d1d2a7371262eba3f72b6",
+  "pandoc_version": "pandoc 3.9.0.2",
+  "numbering_source": "Tectonic AUX-only compilation in temporary directories",
+  "paper_count": 5,
+  "papers": [
+    {
+      "paper": "P01-lefschetz-classification",
+      "environments": {
+        "theorem": 6,
+        "proof": 10,
+        "remark": 1,
+        "corollary": 4,
+        "lemma": 1,
+        "proposition": 2
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "2.1",
+          "id": "theorem-1",
+          "source_label": "thm:splitting"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "2.2",
+          "id": "remark-1",
+          "source_label": null
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "3.1",
+          "id": "theorem-2",
+          "source_label": "thm:wilson"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 3,
+          "number": "3.2",
+          "id": "theorem-3",
+          "source_label": "thm:diagonal"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "3.3",
+          "id": "corollary-1",
+          "source_label": "cor:ranks"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 4,
+          "number": "4.1",
+          "id": "theorem-4",
+          "source_label": "thm:locus"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 2,
+          "number": "4.2",
+          "id": "corollary-2",
+          "source_label": "cor:degrees"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "5.1",
+          "id": "lemma-1",
+          "source_label": "lem:generic"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 5,
+          "number": "5.2",
+          "id": "theorem-5",
+          "source_label": "thm:classification"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 3,
+          "number": "5.3",
+          "id": "corollary-3",
+          "source_label": "cor:graph"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 1,
+          "number": "6.1",
+          "id": "proposition-1",
+          "source_label": "prop:jordan"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 6,
+          "number": "6.2",
+          "id": "theorem-6",
+          "source_label": "thm:charzerojordan"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 4,
+          "number": "6.3",
+          "id": "corollary-4",
+          "source_label": "cor:recover"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 2,
+          "number": "7.1",
+          "id": "proposition-2",
+          "source_label": "prop:idealization"
+        }
+      ],
+      "references": 27,
+      "citations": 17,
+      "cited_keys": [
+        "CFHNV",
+        "DV",
+        "GKKM",
+        "HN",
+        "Wilson",
+        "Zeng"
+      ],
+      "bibliography_keys": [
+        "CFHNV",
+        "DV",
+        "GKKM",
+        "HN",
+        "Wilson",
+        "Zeng"
+      ],
+      "equation_labels": [
+        "eq:algebra",
+        "eq:main-splitting",
+        "eq:locus-intro",
+        "eq:hilbert",
+        "eq:diagentries",
+        "eq:rho",
+        "eq:rankformula",
+        "eq:wlpcondition",
+        "eq:gradedjordan",
+        "eq:strings"
+      ],
+      "label_numbers": {
+        "eq:algebra": "1",
+        "eq:main-splitting": "2",
+        "eq:locus-intro": "3",
+        "thm:splitting": "2.1",
+        "eq:hilbert": "4",
+        "thm:wilson": "3.1",
+        "thm:diagonal": "3.2",
+        "eq:diagentries": "5",
+        "eq:rho": "6",
+        "cor:ranks": "3.3",
+        "eq:rankformula": "7",
+        "thm:locus": "4.1",
+        "cor:degrees": "4.2",
+        "lem:generic": "5.1",
+        "thm:classification": "5.2",
+        "eq:wlpcondition": "8",
+        "cor:graph": "5.3",
+        "prop:jordan": "6.1",
+        "eq:gradedjordan": "9",
+        "thm:charzerojordan": "6.2",
+        "eq:strings": "10",
+        "cor:recover": "6.3",
+        "sec:idealization": "7",
+        "prop:idealization": "7.1"
+      },
+      "bibliography_numbers": {
+        "CFHNV": "1",
+        "DV": "2",
+        "GKKM": "3",
+        "HN": "4",
+        "Wilson": "5",
+        "Zeng": "6"
+      },
+      "tables": [],
+      "source_tex_sha256": "6d797bebcb29dd4d3c017643b812e94b76260a43cb80aef2d94a8eff3ca05b50",
+      "source_pdf_sha256": "6a59f570db68d464e12c675ab5e16332c059b06233891c4a7a7a0a9e8ca7d892",
+      "markdown_sha256": "9a4b475a20594f2b867dc7aa4b528955b49fe8f59a7794e0eb41234efa864847",
+      "markdown_bytes": 27057,
+      "source_math_expressions_verified": 270,
+      "markdown_math_expressions": 280,
+      "custom_macros_expanded": [
+        "kk",
+        "ZZ",
+        "rk",
+        "Ind",
+        "Ann"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 78,
+      "semantic_roundtrip_sha256": "f17d6fb2f0aaf078bf641785e6f25c15e901a3d0cc28692a22c8a01cd11998c6",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 54,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    },
+    {
+      "paper": "P02-recurrence-repair",
+      "environments": {
+        "theorem": 2,
+        "lemma": 4,
+        "proof": 13,
+        "proposition": 1,
+        "remark": 3,
+        "example": 3,
+        "corollary": 3
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1",
+          "id": "theorem-1",
+          "source_label": "thm:matrix"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "2",
+          "id": "theorem-2",
+          "source_label": "thm:recurrence"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "3",
+          "id": "lemma-1",
+          "source_label": "lem:local"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "4",
+          "id": "lemma-2",
+          "source_label": "lem:lifting"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 1,
+          "number": "5",
+          "id": "proposition-1",
+          "source_label": "prop:localexact"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 3,
+          "number": "6",
+          "id": "lemma-3",
+          "source_label": "lem:residue"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 4,
+          "number": "7",
+          "id": "lemma-4",
+          "source_label": "lem:stability"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "8",
+          "id": "remark-1",
+          "source_label": null
+        },
+        {
+          "environment": "example",
+          "ordinal": 1,
+          "number": "9",
+          "id": "example-1",
+          "source_label": "ex:higher"
+        },
+        {
+          "environment": "example",
+          "ordinal": 2,
+          "number": "10",
+          "id": "example-2",
+          "source_label": "ex:initialization"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 2,
+          "number": "11",
+          "id": "remark-2",
+          "source_label": "rem:LW"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "12",
+          "id": "corollary-1",
+          "source_label": "cor:squarefree"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 2,
+          "number": "13",
+          "id": "corollary-2",
+          "source_label": "cor:universal"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 3,
+          "number": "14",
+          "id": "corollary-3",
+          "source_label": "cor:lucas"
+        },
+        {
+          "environment": "example",
+          "ordinal": 3,
+          "number": "15",
+          "id": "example-3",
+          "source_label": null
+        },
+        {
+          "environment": "remark",
+          "ordinal": 3,
+          "number": "16",
+          "id": "remark-3",
+          "source_label": null
+        }
+      ],
+      "references": 39,
+      "citations": 15,
+      "cited_keys": [
+        "BGW",
+        "LW",
+        "MW",
+        "Milne",
+        "Minton",
+        "Rajs"
+      ],
+      "bibliography_keys": [
+        "BGW",
+        "LW",
+        "Milne",
+        "Minton",
+        "MW",
+        "Rajs"
+      ],
+      "equation_labels": [
+        "eq:threshold",
+        "eq:matrixfactor",
+        "eq:recurrence",
+        "eq:recfactor",
+        "eq:frobenius",
+        "eq:localbound",
+        "eq:primeobstruction",
+        "eq:observation",
+        "eq:cyclicrow",
+        "eq:criticalpolynomial"
+      ],
+      "label_numbers": {
+        "eq:threshold": "1",
+        "thm:matrix": "1",
+        "eq:matrixfactor": "2",
+        "eq:recurrence": "3",
+        "thm:recurrence": "2",
+        "eq:recfactor": "4",
+        "lem:local": "3",
+        "lem:lifting": "4",
+        "prop:localexact": "5",
+        "eq:frobenius": "5",
+        "eq:localbound": "6",
+        "lem:residue": "6",
+        "lem:stability": "7",
+        "eq:primeobstruction": "7",
+        "eq:observation": "8",
+        "eq:cyclicrow": "9",
+        "eq:criticalpolynomial": "10",
+        "ex:higher": "9",
+        "ex:initialization": "10",
+        "rem:LW": "11",
+        "cor:squarefree": "12",
+        "cor:universal": "13",
+        "cor:lucas": "14"
+      },
+      "bibliography_numbers": {
+        "BGW": "1",
+        "LW": "2",
+        "Milne": "3",
+        "Minton": "4",
+        "MW": "5",
+        "Rajs": "6"
+      },
+      "tables": [],
+      "source_tex_sha256": "23937aeace58616f78c1cda05e3d79ce70e684a8e95bfe198e901d9db955ca7f",
+      "source_pdf_sha256": "21995c4f5bb4add533f4fdbb454a9a95322361f45413f283b9080fbc0a4bf4bb",
+      "markdown_sha256": "ab6cb45137a7dae3fbafac53058f1c3a702d95e22381000b3c587c185149e142",
+      "markdown_bytes": 30653,
+      "source_math_expressions_verified": 438,
+      "markdown_math_expressions": 451,
+      "custom_macros_expanded": [
+        "rad",
+        "disc",
+        "Fail",
+        "lcm",
+        "Mat",
+        "Gal",
+        "F",
+        "Z",
+        "Q"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 87,
+      "semantic_roundtrip_sha256": "54e24b88edd741dc39be92cc15d6238a412d447d7873e20f56ed50481473ed84",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 58,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {
+        "accent_argument_groups_added": 3
+      }
+    },
+    {
+      "paper": "P06-stirling-repair",
+      "environments": {
+        "theorem": 2,
+        "lemma": 6,
+        "proof": 11,
+        "corollary": 1,
+        "remark": 1
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1",
+          "id": "theorem-1",
+          "source_label": "thm:main"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "2",
+          "id": "theorem-2",
+          "source_label": "thm:growth"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "3",
+          "id": "lemma-1",
+          "source_label": "lem:local"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "4",
+          "id": "lemma-2",
+          "source_label": "lem:sign"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 3,
+          "number": "5",
+          "id": "lemma-3",
+          "source_label": "lem:companion"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 4,
+          "number": "6",
+          "id": "lemma-4",
+          "source_label": "lem:lift"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 5,
+          "number": "7",
+          "id": "lemma-5",
+          "source_label": "lem:frob"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 6,
+          "number": "8",
+          "id": "lemma-6",
+          "source_label": "lem:digits"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "9",
+          "id": "corollary-1",
+          "source_label": "cor:sharp-digits"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "10",
+          "id": "remark-1",
+          "source_label": null
+        }
+      ],
+      "references": 30,
+      "citations": 7,
+      "cited_keys": [
+        "BGW",
+        "Hadamard",
+        "MW"
+      ],
+      "bibliography_keys": [
+        "BGW",
+        "Hadamard",
+        "MW"
+      ],
+      "equation_labels": [
+        "eq:dold",
+        "eq:bounds",
+        "eq:theta-growth",
+        "eq:growth",
+        "eq:local",
+        "eq:gf",
+        "eq:h",
+        "eq:cartier",
+        "eq:digits",
+        "eq:binomial",
+        "eq:exception"
+      ],
+      "label_numbers": {
+        "eq:dold": "1",
+        "thm:main": "1",
+        "eq:bounds": "2",
+        "thm:growth": "2",
+        "eq:theta-growth": "3",
+        "eq:growth": "4",
+        "lem:local": "3",
+        "eq:local": "5",
+        "lem:sign": "4",
+        "eq:gf": "6",
+        "lem:companion": "5",
+        "lem:lift": "6",
+        "lem:frob": "7",
+        "eq:h": "7",
+        "eq:cartier": "8",
+        "lem:digits": "8",
+        "eq:digits": "9",
+        "eq:binomial": "10",
+        "cor:sharp-digits": "9",
+        "eq:exception": "11"
+      },
+      "bibliography_numbers": {
+        "BGW": "1",
+        "Hadamard": "2",
+        "MW": "3"
+      },
+      "tables": [],
+      "source_tex_sha256": "dd0edaaea0b37293073801784badc058ae2cac8257256fd3468860c0a6ad265b",
+      "source_pdf_sha256": "0ff8cff50472802ba007cdaf9b5baab4b11bb545d0bf62bad00ee8c71eb7dcbf",
+      "markdown_sha256": "89d7ff5fd3e0e84a7d211f43c8bace6afd812b57e1edff0ec00bcef8916daee7",
+      "markdown_bytes": 19325,
+      "source_math_expressions_verified": 312,
+      "markdown_math_expressions": 323,
+      "custom_macros_expanded": [
+        "Fail",
+        "rad",
+        "lcm"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 65,
+      "semantic_roundtrip_sha256": "1ca0d15c7c8d1d61545b4a8a386dbeeb5d3c23464b919eff1bfd154f1b688599",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 44,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    },
+    {
+      "paper": "P09-unique-addition",
+      "environments": {
+        "theorem": 2,
+        "corollary": 1,
+        "proof": 7,
+        "lemma": 2,
+        "remark": 1,
+        "proposition": 2
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1",
+          "id": "theorem-1",
+          "source_label": "thm:main"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "2",
+          "id": "corollary-1",
+          "source_label": "cor:fields"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "3",
+          "id": "lemma-1",
+          "source_label": "lem:fitting"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "4",
+          "id": "lemma-2",
+          "source_label": "lem:nilpotents"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "5",
+          "id": "remark-1",
+          "source_label": null
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 1,
+          "number": "6",
+          "id": "proposition-1",
+          "source_label": "prop:finite"
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 2,
+          "number": "7",
+          "id": "proposition-2",
+          "source_label": "prop:centralizers"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "8",
+          "id": "theorem-2",
+          "source_label": "thm:affine"
+        }
+      ],
+      "references": 16,
+      "citations": 6,
+      "cited_keys": [
+        "Arz",
+        "FG",
+        "QH",
+        "Sos"
+      ],
+      "bibliography_keys": [
+        "Arz",
+        "FG",
+        "QH",
+        "Sos"
+      ],
+      "equation_labels": [
+        "eq:joint",
+        "eq:mixed"
+      ],
+      "label_numbers": {
+        "thm:main": "1",
+        "cor:fields": "2",
+        "lem:fitting": "3",
+        "lem:nilpotents": "4",
+        "eq:joint": "1",
+        "sec:examples": "4",
+        "prop:finite": "6",
+        "prop:centralizers": "7",
+        "thm:affine": "8",
+        "eq:mixed": "2",
+        "sec:comparison": "6"
+      },
+      "bibliography_numbers": {
+        "Arz": "1",
+        "FG": "2",
+        "QH": "3",
+        "Sos": "4"
+      },
+      "tables": [],
+      "source_tex_sha256": "2c304a0ff786141c14f8355c7fe82c56c4b5cf8e4633ec76ddde922cbc6d3890",
+      "source_pdf_sha256": "de865d11c74edaf1d50233a8d13228c9ecd64257f5efd2f4c5f83549117bb73d",
+      "markdown_sha256": "205744e234142021077ca1906d21e7e36ccc193274055ff2f7a9a0306ee7b833",
+      "markdown_bytes": 20355,
+      "source_math_expressions_verified": 286,
+      "markdown_math_expressions": 293,
+      "custom_macros_expanded": [
+        "ad",
+        "im",
+        "End",
+        "Hom",
+        "Tri"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 45,
+      "semantic_roundtrip_sha256": "93fd24736ddf5f19f2b3472539a6e866fc435c0962c8a4a9f296f5ee9756efda",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 30,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    },
+    {
+      "paper": "P13-nilperiod-rings",
+      "environments": {
+        "theorem": 3,
+        "corollary": 1,
+        "proof": 6,
+        "lemma": 2,
+        "remark": 1,
+        "proposition": 1,
+        "example": 2
+      },
+      "environment_records": [
+        {
+          "environment": "theorem",
+          "ordinal": 1,
+          "number": "1",
+          "id": "theorem-1",
+          "source_label": "thm:main"
+        },
+        {
+          "environment": "corollary",
+          "ordinal": 1,
+          "number": "2",
+          "id": "corollary-1",
+          "source_label": "cor:nilperiod"
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 2,
+          "number": "3",
+          "id": "theorem-2",
+          "source_label": "thm:finite"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 1,
+          "number": "4",
+          "id": "lemma-1",
+          "source_label": "lem:levitzki"
+        },
+        {
+          "environment": "remark",
+          "ordinal": 1,
+          "number": "5",
+          "id": "remark-1",
+          "source_label": null
+        },
+        {
+          "environment": "proposition",
+          "ordinal": 1,
+          "number": "6",
+          "id": "proposition-1",
+          "source_label": "prop:central"
+        },
+        {
+          "environment": "lemma",
+          "ordinal": 2,
+          "number": "7",
+          "id": "lemma-2",
+          "source_label": "lem:idempotent-power"
+        },
+        {
+          "environment": "example",
+          "ordinal": 1,
+          "number": "8",
+          "id": "example-1",
+          "source_label": null
+        },
+        {
+          "environment": "theorem",
+          "ordinal": 3,
+          "number": "9",
+          "id": "theorem-3",
+          "source_label": "thm:corbas"
+        },
+        {
+          "environment": "example",
+          "ordinal": 2,
+          "number": "10",
+          "id": "example-2",
+          "source_label": null
+        }
+      ],
+      "references": 12,
+      "citations": 8,
+      "cited_keys": [
+        "BM",
+        "Burnette",
+        "HLP",
+        "Nielsen"
+      ],
+      "bibliography_keys": [
+        "BM",
+        "Burnette",
+        "HLP",
+        "Nielsen"
+      ],
+      "equation_labels": [
+        "eq:expansion",
+        "eq:corbas"
+      ],
+      "label_numbers": {
+        "thm:main": "1",
+        "cor:nilperiod": "2",
+        "thm:finite": "3",
+        "lem:levitzki": "4",
+        "eq:expansion": "1",
+        "prop:central": "6",
+        "lem:idempotent-power": "7",
+        "eq:corbas": "2",
+        "thm:corbas": "9"
+      },
+      "bibliography_numbers": {
+        "BM": "1",
+        "Burnette": "2",
+        "HLP": "3",
+        "Nielsen": "4"
+      },
+      "tables": [],
+      "source_tex_sha256": "a2eed3bf0b458dd20c9e5b182d3db8d0016e17de4154a11fd9a8f3b182ecfe41",
+      "source_pdf_sha256": "3ca14c1096e67407fd20f656024de51469220a64f60fbeed0335ebbd804b24b3",
+      "markdown_sha256": "fe64a83acc3046b1e815928b4891d4fe6b64647953ad8a22fa0545a47e43bfc1",
+      "markdown_bytes": 15399,
+      "source_math_expressions_verified": 204,
+      "markdown_math_expressions": 210,
+      "custom_macros_expanded": [
+        "Nil",
+        "Per",
+        "rad"
+      ],
+      "output_name": "manuscript.md",
+      "source_environment_markers_verified": 45,
+      "semantic_roundtrip_sha256": "cce90f9f8cd39de1d2cf6a7437f7e85730e3ce98c6ac0d3de68621bdbede6f43",
+      "roundtrip_content_equal": true,
+      "standalone_anchor_targets": 29,
+      "warnings": [],
+      "github_live_render_inspected": false,
+      "math_layout_normalizations": {}
+    }
+  ]
+}

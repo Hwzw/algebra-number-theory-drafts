@@ -1,0 +1,136 @@
+{
+  "environments": {
+    "theorem": 1,
+    "corollary": 3,
+    "lemma": 2,
+    "proof": 6,
+    "example": 1,
+    "remark": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "1.2",
+      "id": "corollary-1",
+      "source_label": "cor:question"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:min"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "corollary-2",
+      "source_label": "cor:criterion"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "3.1",
+      "id": "lemma-2",
+      "source_label": "lem:extract"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 3,
+      "number": "4.1",
+      "id": "corollary-3",
+      "source_label": "cor:monoid"
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "4.2",
+      "id": "example-1",
+      "source_label": null
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "4.3",
+      "id": "remark-1",
+      "source_label": null
+    }
+  ],
+  "references": 20,
+  "citations": 5,
+  "cited_keys": [
+    "RW",
+    "TW",
+    "Wagner"
+  ],
+  "bibliography_keys": [
+    "RW",
+    "TW",
+    "Wagner"
+  ],
+  "equation_labels": [
+    "eq:def",
+    "eq:beta",
+    "eq:divisor",
+    "eq:min",
+    "eq:fixed",
+    "eq:trunc",
+    "eq:simultaneous",
+    "eq:criterion",
+    "eq:outer",
+    "eq:bounds"
+  ],
+  "label_numbers": {
+    "eq:def": "1",
+    "eq:beta": "2",
+    "thm:main": "1.1",
+    "eq:divisor": "3",
+    "cor:question": "1.2",
+    "lem:min": "2.1",
+    "eq:min": "4",
+    "eq:fixed": "5",
+    "eq:trunc": "6",
+    "eq:simultaneous": "7",
+    "cor:criterion": "2.2",
+    "eq:criterion": "8",
+    "lem:extract": "3.1",
+    "eq:outer": "9",
+    "eq:bounds": "10",
+    "cor:monoid": "4.1"
+  },
+  "bibliography_numbers": {
+    "RW": "1",
+    "TW": "2",
+    "Wagner": "3"
+  },
+  "tables": [],
+  "source_tex_sha256": "a74eba0f334bff2fedba3639cf6090cd705a5344923d0d146d2f04b2a386b5e2",
+  "source_pdf_sha256": "2f162727197c3d43e689b22c1623b5709fa9a82687e8a1acdfaeb2fe60de6ddf",
+  "markdown_sha256": "739a027f31810f25d9148234df59aa5311844257121e411eaa80ede50627e60a",
+  "markdown_bytes": 16293,
+  "source_math_expressions_verified": 247,
+  "markdown_math_expressions": 253,
+  "custom_macros_expanded": [
+    "Int",
+    "F",
+    "N",
+    "Nzero"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 47,
+  "semantic_roundtrip_sha256": "da542db56e9ec5d5c7263c386ca3f41b56e4e69104287ec10f8a1abd315fcaf2",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 33,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

@@ -1,0 +1,148 @@
+{
+  "note": "Local MathJax syntax validation, not a live GitHub rendering test.",
+  "reports": [
+    {
+      "file": "papers/P01-lefschetz-classification/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "a3930b3eb24859e2ce6f7cf87724b3611731c09d4e7db0b5a447807886454dc1",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 213,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P02-recurrence-repair/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "9393f7a5c693ddeb548e1e1b8b3cf9c21db233074eaac4d64220d34ba286906a",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 337,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P03-local-permutation-polynomials/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "0a73ec91f85e140be5938c32fc2eab5d208b5509c3053bc6e62c3801be2fc188",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 268,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P04-carlitz-factorization/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "739a027f31810f25d9148234df59aa5311844257121e411eaa80ede50627e60a",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 253,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P05-symbolic-defect/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "c706b3b4e8a3e4c498e76be72799aec41cc56154e381c28c2b8f000fa2f7a1bd",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 308,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P06-stirling-repair/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "182451f51ea189e902b8c903cc46c091dbdfcdb9dc76dde1fbaee2afae15c30e",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 323,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P07-irreducible-compositions/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "98a8e71cc6b2dac0b63be9d3c9f215848bb13a3ae8789e4ccdfb45ea78709661",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 238,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P08-homological-shift-counterexamples/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "bf12146bcf782a726d1ae586e0ce1018c8b0913acc99a029686e66606cdc938c",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 127,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P09-unique-addition/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "e64d2754562b32d4089e664a5607314d31ce47db294e61b13007c9d71bfc8f82",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 234,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P10-restricted-sumsets/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "0485ebb8e6d6968c94601c3e4e5ccf74f3e65ce289623b35d284be8644cfd90b",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 198,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P11-partition-congruences/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "8fb305199dc868d37fdf0eb5f4938632eabd310133dc6a4be7b097b48375702b",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 270,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P12-arithmetical-critical-groups/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "33be5c834a59646f979b89cb7eb3cfc165e7e0c4f959236b4714541d6850e49b",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 163,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    },
+    {
+      "file": "papers/P13-nilperiod-rings/manuscript.md",
+      "mathjax_version": "3.2.2",
+      "markdown_sha256": "a32dcd7f3276c054975d9dca4d35ff94bbd98e7b274154c8afd89e69d43c68e8",
+      "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+      "expressions": 243,
+      "errors": [],
+      "local_svg_preview_created": true,
+      "local_visual_inspection": false,
+      "github_live_render_inspected": false
+    }
+  ]
+}

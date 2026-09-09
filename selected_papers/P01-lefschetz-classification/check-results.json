@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "complex_counts": {
+    "1": 1,
+    "2": 2,
+    "3": 9,
+    "4": 114,
+    "5": 5,
+    "6": 5
+  },
+  "exact_original_basis_power_rank_comparisons": 6905,
+  "primes": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "checks": "all powers and WLP/SLP criteria; all complexes n\u22644, selected n5,6"
+}

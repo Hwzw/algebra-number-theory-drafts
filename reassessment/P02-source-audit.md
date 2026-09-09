@@ -1,0 +1,24 @@
+# P02 enlarged classification: source and scope audit
+
+Date: 2026-09-08. Scope: the replacement manuscript in `research_program/selected_papers/P02-recurrence-repair/`. This is an internal AI research audit, not external peer review or proof of priority.
+
+## Primary texts checked
+
+- **Luca–Ward, final JIS article 23.4.6 (2023):** [official full PDF](https://cs.uwaterloo.ca/journals/JIS/VOL26/Ward/ward9.pdf), Theorem 1(i), its Binet/indexing setup and residue-degree proof; Theorem 5 for Lucas sequences. The Galois-group exponent already appears explicitly and must not be presented as a newly discovered sufficient condition. The manuscript credits it in the introduction and final comparison. The printed multiplier/indexing issue has a direct numerical counterexample, in the example labeled `ex:initialization` and the following remark. It is a limited mathematical correction, not the main significance claim.
+- **Rajs, arXiv:2509.09847:** [current abstract/version history](https://arxiv.org/abs/2509.09847) and [full v1 HTML](https://arxiv.org/html/2509.09847v1), Theorems 4, 8, 9 and relevant proofs. The current abstract lists only v1, submitted 2025-09-11. The comparison follows the actual displayed statement of Theorem 9; its preceding informal paragraph has a smaller multiplier than the theorem itself and is not used as its statement.
+- **Minton (2014):** [publisher DOI](https://doi.org/10.1090/S0002-9939-2014-12168-X), bibliographic metadata checked against the author page and Luca–Ward bibliography. The AMS full-PDF request returned 403. The precise scalar result was verified through **Byszewski–Graff–Ward**, [Theorem 2.4](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.12531), which explicitly attributes it to Minton Theorem 2.15 and Remark 2.16. An [institutional full PDF](https://ruj.uj.edu.pl/bitstreams/6598cdaa-dfc7-4353-95c5-cf348dcc4054/download) also states it. The manuscript acknowledges this established scalar trace classification and does not claim to supersede it.
+- **Milne:** [Algebraic Number Theory](https://www.jmilne.org/math/CourseNotes/ANT.pdf), Section 8 decomposition/inertia quotient and Chebotarev Theorem 8.31; Section 6 cyclotomic fields. These support the standard global inputs, not a novelty claim.
+
+## What the enlarged theorem adds to the checked statements
+
+The contribution to assess is the exact invariant for the simultaneous problem, not simply the existence of some recurrence repair along sufficiently high powers. For every integer matrix and every positive sampling exponent it gives an if-and-only-if spectral criterion, followed by the exact prime exponent read from the largest Jordan block at that prime. Rational nonsemisimplicity and a failed Galois exponent are excluded by infinitely many prime obstructions. The local multiplier is forced at an explicitly identified critical prime-power index.
+
+For a fixed recurrence module, the full condition includes separability and nonzero constant term, with the same necessary and sufficient exponent condition. Reduction of `xF`, rather than `F` alone, produces the exact uniform multiplier for indexing from 1. The companion-row argument and coordinatewise CRT show that a single initialization attains all its prime exponents. This is stronger than a family of separately attained prime obstructions. The cubic example requires a square in the multiplier, so the enlarged theorem is not confined to the earlier squarefree range.
+
+The inspected sources do not state these complete matrix and uniform-module classifications with these exact local exponents. Targeted searches for Dold repair with Jordan blocks, semisimplicity, and Galois exponents did not reveal a closer theorem, but this is only bounded search evidence. The elementary ingredients are standard; the significance claim rests on their complete classification and sharp invariant, not on a claim that finite-field Frobenius or commuting-power lifting is a new technique.
+
+## Recommendation and remaining limits
+
+**Recommend keeping P02 as one materially strengthened paper for the parent's five-paper assessment**, subject to the parent's independent transfer reading and final artifact checks. The 9-page replacement compiles cleanly and incorporates the proof-reviewed extension. The Lucas radical and universal `L_d` results remain consequences of the same theorem and should not be counted separately.
+
+No claim of external expert acceptance, independent human review, or complete literature coverage is justified. Minton's full original PDF was inaccessible in this pass; its relevant statement was checked in the cited published survey. No mathematically unresolved step remains in the internal proof audit. Whether the contribution meets a particular journal's significance threshold remains an editorial judgment.

@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research draft. Not peer reviewed or independently verified by human experts.**
 
-[Read the PDF](manuscript.pdf) · [LaTeX source](manuscript.tex) · [Collection](../../README.md) · [How to cite](../../CITATIONS.md)
+[Full Markdown](manuscript.md) · [Read the PDF](manuscript.pdf) · [LaTeX source](manuscript.tex) · [Collection](../../README.md) · [How to cite](../../CITATIONS.md)
 
 ## Claimed contribution
 
@@ -15,3 +15,7 @@ The manuscript contains the full hypotheses, arguments, and references. Its clai
 Prepared with OpenAI Codex and collaborating AI agents on September 8, 2026, including AI-assisted problem selection, proof construction, literature searches, verification scripts, and manuscript drafting. The GitHub account hosting this collection is not presented as evidence of mathematical authorship or validation.
 
 The PDF has 6 pages. The uploaded PDF and TeX are byte-identical to the corresponding local draft version; hashes are recorded in [the manifest](../../manifest.json). Supporting scripts and recorded results are included where available. Read [the reproduction instructions](../../REPRODUCIBILITY.md), especially the proof-dependent finite certificates in P11.
+
+## Stronger revised version
+
+A complete revised manuscript is available in [the selected collection](../../selected_papers/P09-unique-addition/manuscript.md), with matching PDF and source. This original version is preserved for stable citations.

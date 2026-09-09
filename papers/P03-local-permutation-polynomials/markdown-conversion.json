@@ -1,0 +1,137 @@
+{
+  "environments": {
+    "theorem": 2,
+    "corollary": 1,
+    "lemma": 3,
+    "proof": 3
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:exist"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "2",
+      "id": "theorem-2",
+      "source_label": "thm:recurrence"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "3",
+      "id": "corollary-1",
+      "source_label": "cor:failure"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "4",
+      "id": "lemma-1",
+      "source_label": "lem:coefficient"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "5",
+      "id": "lemma-2",
+      "source_label": "lem:patch"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "6",
+      "id": "lemma-3",
+      "source_label": "lem:T"
+    }
+  ],
+  "references": 34,
+  "citations": 8,
+  "cited_keys": [
+    "CF",
+    "GJU-afr",
+    "GJU-mal"
+  ],
+  "bibliography_keys": [
+    "CF",
+    "GJU-afr",
+    "GJU-mal"
+  ],
+  "equation_labels": [
+    "eq:family",
+    "eq:Ek",
+    "eq:Cn",
+    "eq:closed",
+    "eq:moment",
+    "eq:patch",
+    "eq:patchcoefficient",
+    "eq:explicitpatch",
+    "eq:T",
+    "eq:transfercoefficient",
+    "eq:Tend",
+    "eq:Tmiddle",
+    "eq:profile",
+    "eq:Deltaj",
+    "eq:Pupdate",
+    "eq:Deltaalternates",
+    "eq:aj",
+    "eq:Crec",
+    "eq:binary"
+  ],
+  "label_numbers": {
+    "thm:exist": "1",
+    "eq:family": "1",
+    "thm:recurrence": "2",
+    "eq:Ek": "2",
+    "eq:Cn": "3",
+    "eq:closed": "4",
+    "cor:failure": "3",
+    "lem:coefficient": "4",
+    "eq:moment": "5",
+    "lem:patch": "5",
+    "eq:patch": "6",
+    "eq:patchcoefficient": "7",
+    "eq:explicitpatch": "8",
+    "eq:T": "9",
+    "eq:transfercoefficient": "10",
+    "lem:T": "6",
+    "eq:Tend": "11",
+    "eq:Tmiddle": "12",
+    "eq:profile": "13",
+    "eq:Deltaj": "14",
+    "eq:Pupdate": "15",
+    "eq:Deltaalternates": "16",
+    "eq:aj": "17",
+    "eq:Crec": "18",
+    "eq:binary": "19"
+  },
+  "bibliography_numbers": {
+    "CF": "1",
+    "GJU-afr": "2",
+    "GJU-mal": "3"
+  },
+  "tables": [],
+  "source_tex_sha256": "b4f419676cfefe2fa48bb0a771b4de1005b722cec5c5ce7573f37d7aa807d57f",
+  "source_pdf_sha256": "e261b301bd350c1117a1d47a649ac3d594bca4892964918e0311ad8a348cdb3d",
+  "markdown_sha256": "0a73ec91f85e140be5938c32fc2eab5d208b5509c3053bc6e62c3801be2fc188",
+  "markdown_bytes": 18194,
+  "source_math_expressions_verified": 265,
+  "markdown_math_expressions": 268,
+  "custom_macros_expanded": [
+    "F",
+    "topc",
+    "red"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 46,
+  "semantic_roundtrip_sha256": "5dfb581a08c4ec23780ec4a419705c771ef9aa0cfc3320867efd00d87020f5cd",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 37,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

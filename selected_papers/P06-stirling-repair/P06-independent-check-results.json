@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "meaning": "Finite diagnostic only; the audit reconstructs the proof separately.",
+  "method": "Inclusion-exclusion modulo p*k!, followed by exact division by k!",
+  "k_range": [
+    1,
+    100
+  ],
+  "primes": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "r_range": [
+    0,
+    6
+  ],
+  "checks": 3500,
+  "rows_sha256": "de6ed54abe50f77a8321b25955c9bed1d10f679e3a8f598406bf607526ef8fbb"
+}

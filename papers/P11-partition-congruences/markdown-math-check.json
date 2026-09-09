@@ -1,0 +1,11 @@
+{
+  "file": "papers/P11-partition-congruences/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "8fb305199dc868d37fdf0eb5f4938632eabd310133dc6a4be7b097b48375702b",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 270,
+  "errors": [],
+  "local_svg_preview_created": true,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}
