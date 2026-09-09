@@ -1,0 +1,183 @@
+{
+  "environments": {
+    "theorem": 3,
+    "corollary": 1,
+    "lemma": 3,
+    "proof": 6,
+    "remark": 1,
+    "example": 4
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:general"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "2",
+      "id": "corollary-1",
+      "source_label": "cor:nondegenerate"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "3",
+      "id": "lemma-1",
+      "source_label": "lem:local"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "4",
+      "id": "lemma-2",
+      "source_label": "lem:identity"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 3,
+      "number": "5",
+      "id": "lemma-3",
+      "source_label": "lem:ramification"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "6",
+      "id": "theorem-2",
+      "source_label": "thm:spectrum"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "7",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "8",
+      "id": "theorem-3",
+      "source_label": "thm:exact"
+    },
+    {
+      "environment": "example",
+      "ordinal": 1,
+      "number": "9",
+      "id": "example-1",
+      "source_label": null
+    },
+    {
+      "environment": "example",
+      "ordinal": 2,
+      "number": "10",
+      "id": "example-2",
+      "source_label": "ex:symmetric"
+    },
+    {
+      "environment": "example",
+      "ordinal": 3,
+      "number": "11",
+      "id": "example-3",
+      "source_label": "ex:degenerate"
+    },
+    {
+      "environment": "example",
+      "ordinal": 4,
+      "number": "12",
+      "id": "example-4",
+      "source_label": null
+    }
+  ],
+  "references": 30,
+  "citations": 8,
+  "cited_keys": [
+    "BGW",
+    "Bilu",
+    "LW",
+    "Milne",
+    "Minton",
+    "Rajs"
+  ],
+  "bibliography_keys": [
+    "BGW",
+    "Bilu",
+    "LW",
+    "Milne",
+    "Minton",
+    "Rajs"
+  ],
+  "equation_labels": [
+    "eq:dold",
+    "eq:binet",
+    "eq:equivariance",
+    "eq:polynomial",
+    "eq:multiplier",
+    "eq:coefficientfield",
+    "eq:primeidentity",
+    "eq:exactidentity",
+    "eq:transientidentity",
+    "eq:lifting",
+    "eq:constantpart",
+    "eq:localroots",
+    "eq:exactfactor"
+  ],
+  "label_numbers": {
+    "eq:dold": "1",
+    "eq:binet": "2",
+    "eq:equivariance": "3",
+    "eq:polynomial": "4",
+    "thm:general": "1",
+    "eq:multiplier": "5",
+    "cor:nondegenerate": "2",
+    "eq:coefficientfield": "6",
+    "lem:local": "3",
+    "lem:identity": "4",
+    "eq:primeidentity": "7",
+    "eq:exactidentity": "8",
+    "eq:transientidentity": "9",
+    "lem:ramification": "5",
+    "eq:lifting": "10",
+    "eq:constantpart": "11",
+    "eq:localroots": "12",
+    "thm:spectrum": "6",
+    "thm:exact": "8",
+    "eq:exactfactor": "13",
+    "ex:symmetric": "10",
+    "ex:degenerate": "11"
+  },
+  "bibliography_numbers": {
+    "BGW": "1",
+    "Bilu": "2",
+    "LW": "3",
+    "Milne": "4",
+    "Minton": "5",
+    "Rajs": "6"
+  },
+  "tables": [],
+  "source_tex_sha256": "73eab6a05aeb5db49a430d96083db1467b2c321f1667bbd1f80204155ea933b1",
+  "source_pdf_sha256": "b3d22b7c1244490b6e6921af2fdde11e158cdda608e1ad834df8a245450145a8",
+  "markdown_sha256": "57725de9446e717d223984805398378454151b179df7d4987dc88f2c0fb1c233",
+  "markdown_bytes": 27914,
+  "source_math_expressions_verified": 286,
+  "markdown_math_expressions": 292,
+  "custom_macros_expanded": [
+    "Q",
+    "Z",
+    "Gal",
+    "lcm",
+    "Fail"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 64,
+  "semantic_roundtrip_sha256": "c2306a275bd699d7874299485634e45f03dc0921d89f389d7262e6deee9cac83",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 46,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

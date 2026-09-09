@@ -1,0 +1,9 @@
+{
+  "pdf_sha256": "b3d22b7c1244490b6e6921af2fdde11e158cdda608e1ad834df8a245450145a8",
+  "tex_sha256": "73eab6a05aeb5db49a430d96083db1467b2c321f1667bbd1f80204155ea933b1",
+  "pages": 9,
+  "rendered": true,
+  "visually_reviewed": true,
+  "note": "Rendering alone does not mark visual QA complete.",
+  "inspection": "All nine pages in contact sheets, plus pages 2, 5, 6 at full resolution; no clipping or overlap found."
+}

@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 13 drafts (74 pages), each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 14 distinct manuscripts (83 pages in the original editions plus P14), each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,14 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New scalar recurrence classification
+
+[**P14: Scalar recurrence sequences with finitely repairable power subsequences**](papers/P14-scalar-power-repair/README.md), by **Henry Zweiman**, is a new nine-page manuscript with [complete Markdown](papers/P14-scalar-power-repair/manuscript.md), [PDF](papers/P14-scalar-power-repair/manuscript.pdf), and [LaTeX](papers/P14-scalar-power-repair/manuscript.tex). It gives a finite scalar criterion, the exact coefficient-field exponent in the nondegenerate case, eventual periodicity of admissible exponents, and a terminating least-multiplier procedure for sampling powers greater than one.
+
+Its [source assessment](papers/P14-scalar-power-repair/ASSESSMENT.md), [internal proof audit](papers/P14-scalar-power-repair/REVIEW.md), and [artifact manifest](papers/P14-scalar-power-repair/manifest.json) state the evidence and limits. The originating agent performed the audit; no separate-agent or human review is claimed. Historical novelty and journal-level significance remain provisional. It is one consolidated contribution, not several papers counted by theorem. The original collection manifest continues to describe the earlier thirteen drafts; P14 has its own manifest.
+
+The active research target is 45 substantial distinct papers. This repository does not claim to contain 45 verified solutions, and the five stronger revisions do not increase its distinct-paper count.
 
 ## Original thirteen drafts
 

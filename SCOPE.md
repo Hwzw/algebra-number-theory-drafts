@@ -18,3 +18,8 @@ All entries describe claims in AI-generated drafts. They have not been independe
 | [P12](papers/P12-arithmetical-critical-groups/manuscript.pdf) | Sharp maximum critical-group order across all connected simple graphs; star/complete-graph conjecture and equality cases | AKLN's geometric multiplicity bound is the deep external input; simple graphs only, and stars indexed by leaves |
 
 | [P13](papers/P13-nilperiod-rings/manuscript.pdf) | Full nilperiod-implies-NI conjecture, finite unital classification, and exact Corbas power-period counts | Arbitrary associative rings for the main theorem; additive-closure precedent credited; no claim about the broader weakly-periodic-ring problem |
+
+
+## P14: scalar power-subsequence classification
+
+[P14](papers/P14-scalar-power-repair/manuscript.md) gives a finite iff criterion for scalar recurrence power subsequences, including degeneracy and transients; an exact coefficient-field exponent in the nondegenerate case; an ultimately periodic exponent spectrum; and a terminating least-multiplier computation for s>1. It concerns Dold divisibility, not positivity or journal certification. The [assessment](papers/P14-scalar-power-repair/ASSESSMENT.md) records the original Minton PDF access limitation and provisional priority.

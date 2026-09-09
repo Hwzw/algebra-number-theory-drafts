@@ -1,0 +1,23 @@
+{
+  "paper": "P14-scalar-power-repair",
+  "author": "Henry Zweiman",
+  "pages": 9,
+  "status": "complete internally checked research manuscript; priority provisional",
+  "proof_review": "same-agent audit; not external or separate-agent review",
+  "files": {
+    "manuscript.tex": "73eab6a05aeb5db49a430d96083db1467b2c321f1667bbd1f80204155ea933b1",
+    "manuscript.pdf": "b3d22b7c1244490b6e6921af2fdde11e158cdda608e1ad834df8a245450145a8",
+    "manuscript.md": "57725de9446e717d223984805398378454151b179df7d4987dc88f2c0fb1c233",
+    "ASSESSMENT.md": "4c8db4659a319237a904e50cc9cefb6af58a9a323cc4264c3ae1a7d5a96d8387",
+    "REVIEW.md": "8de8bcfd079049de95d3da4d7bde224a0ebdaf08c1606865f614ac4f5b662f52",
+    "README.md": "6bd5c467b9916fad03a9210f1f6c8814c27771953666d2bce9e9f18a94754489",
+    "check.py": "8bf76709264565b574ecadfe42a6eca644d39523433cf8a597fc4f6cba6fa2a2",
+    "check-results.json": "837a55ce47a1eb92e10efad0bf40e7460b1a43330d3853e5e7f6d6c5df6bbf1a",
+    "markdown-conversion.json": "ba65f6faa0d7d8d5da63fbfd84d72167bda9b6e7280e93ccc88b1f57d1bfbc1a",
+    "markdown-math-check.json": "ffa2dd35e4ba8473adca919c1a0d5a0dfc6e4a189662ff0f84eda76996053826",
+    "qa/report.json": "1fb48bf0d046fe66b1d1ce9455ed2340839b59add2a32e774390ff40e44b4c7b"
+  },
+  "markdown_math_expressions": 292,
+  "full_markdown": true,
+  "visual_qa": true
+}

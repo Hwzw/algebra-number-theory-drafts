@@ -1,0 +1,244 @@
+{
+  "status": "pass",
+  "kind": "finite consistency checks only",
+  "exact_factor_cases": [
+    {
+      "name": "Fibonacci squares",
+      "factor": 5,
+      "local_evidence": [
+        {
+          "p": 5,
+          "r": 1,
+          "preperiod_endpoint": 1,
+          "period": 20,
+          "tested_m": 16,
+          "exponent": 1,
+          "witness_m": 1
+        },
+        {
+          "p": 5,
+          "r": 2,
+          "preperiod_endpoint": 1,
+          "period": 100,
+          "tested_m": 80,
+          "exponent": 0,
+          "witness_m": null
+        }
+      ]
+    },
+    {
+      "name": "Fibonacci fourth powers",
+      "factor": 5,
+      "local_evidence": [
+        {
+          "p": 5,
+          "r": 1,
+          "preperiod_endpoint": 1,
+          "period": 20,
+          "tested_m": 16,
+          "exponent": 1,
+          "witness_m": 1
+        }
+      ]
+    },
+    {
+      "name": "Lucas squares",
+      "factor": 1,
+      "local_evidence": [
+        {
+          "p": 5,
+          "r": 1,
+          "preperiod_endpoint": 1,
+          "period": 4,
+          "tested_m": 16,
+          "exponent": 0,
+          "witness_m": null
+        }
+      ]
+    },
+    {
+      "name": "Rational weights denominator four",
+      "factor": 2,
+      "local_evidence": [
+        {
+          "p": 2,
+          "r": 1,
+          "preperiod_endpoint": 1,
+          "period": 2,
+          "tested_m": 1,
+          "exponent": 1,
+          "witness_m": 1
+        },
+        {
+          "p": 2,
+          "r": 2,
+          "preperiod_endpoint": 1,
+          "period": 4,
+          "tested_m": 2,
+          "exponent": 0,
+          "witness_m": null
+        }
+      ]
+    },
+    {
+      "name": "Rational weights denominator eight",
+      "factor": 2,
+      "local_evidence": [
+        {
+          "p": 2,
+          "r": 1,
+          "preperiod_endpoint": 1,
+          "period": 2,
+          "tested_m": 1,
+          "exponent": 1,
+          "witness_m": 1
+        },
+        {
+          "p": 2,
+          "r": 2,
+          "preperiod_endpoint": 1,
+          "period": 4,
+          "tested_m": 2,
+          "exponent": 0,
+          "witness_m": null
+        },
+        {
+          "p": 2,
+          "r": 3,
+          "preperiod_endpoint": 1,
+          "period": 8,
+          "tested_m": 4,
+          "exponent": 0,
+          "witness_m": null
+        }
+      ]
+    },
+    {
+      "name": "Index one initialization",
+      "factor": 6,
+      "local_evidence": [
+        {
+          "p": 2,
+          "r": 1,
+          "preperiod_endpoint": 2,
+          "period": 1,
+          "tested_m": 2,
+          "exponent": 1,
+          "witness_m": 1
+        },
+        {
+          "p": 3,
+          "r": 1,
+          "preperiod_endpoint": 2,
+          "period": 2,
+          "tested_m": 5,
+          "exponent": 1,
+          "witness_m": 1
+        }
+      ]
+    },
+    {
+      "name": "Periodic cubic residue selector",
+      "factor": 3,
+      "local_evidence": [
+        {
+          "p": 3,
+          "r": 1,
+          "preperiod_endpoint": 1,
+          "period": 3,
+          "tested_m": 2,
+          "exponent": 1,
+          "witness_m": 1
+        },
+        {
+          "p": 3,
+          "r": 2,
+          "preperiod_endpoint": 1,
+          "period": 3,
+          "tested_m": 2,
+          "exponent": 0,
+          "witness_m": null
+        }
+      ]
+    }
+  ],
+  "extended_local_instances": 5922,
+  "excluded_family_witnesses": [
+    {
+      "family": "Fibonacci odd",
+      "s": 1,
+      "p": 3,
+      "delta": 1
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 1,
+      "p": 7,
+      "delta": 5
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 1,
+      "p": 13,
+      "delta": 11
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 1,
+      "p": 17,
+      "delta": 15
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 3,
+      "p": 3,
+      "delta": 1
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 3,
+      "p": 7,
+      "delta": 5
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 3,
+      "p": 13,
+      "delta": 11
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 3,
+      "p": 17,
+      "delta": 15
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 5,
+      "p": 3,
+      "delta": 1
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 5,
+      "p": 7,
+      "delta": 5
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 5,
+      "p": 13,
+      "delta": 11
+    },
+    {
+      "family": "Fibonacci odd",
+      "s": 5,
+      "p": 17,
+      "delta": 15
+    }
+  ],
+  "lifting_inequality_instances": 20200,
+  "eventual_power_map_instances": 16200,
+  "manuscript_tex_sha256": "73eab6a05aeb5db49a430d96083db1467b2c321f1667bbd1f80204155ea933b1",
+  "check_script_sha256": "8bf76709264565b574ecadfe42a6eca644d39523433cf8a597fc4f6cba6fa2a2"
+}
