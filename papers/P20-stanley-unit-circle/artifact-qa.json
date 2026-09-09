@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-09",
+  "pages": 7,
+  "pdf_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "render_dpi": 100,
+  "visual_result": "all seven final pages inspected; readable equations, complete bibliography, no clipping or overlaps",
+  "tex_warnings": [],
+  "markdown_source_expressions": 264,
+  "markdown_rendered_expressions": 270,
+  "markdown_math_errors": 0,
+  "full_markdown": true,
+  "author_in_pdf_and_markdown": "Henry Zweiman",
+  "independent_human_review": false,
+  "pdf_sha256": "468701d8414f5103473abd146bb60c971e1e6d86b45e36fe00b261e35cfebbca"
+}

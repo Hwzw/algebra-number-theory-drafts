@@ -1,0 +1,98 @@
+{
+  "method": "exact rational polynomial identities and squarefree Sturm counts including multiplicity",
+  "laurent_identities": 63,
+  "cases": [
+    {
+      "b": 0,
+      "maximum_S": 1,
+      "degree": 2,
+      "polynomials": 1,
+      "unit_circle_zeros": 2,
+      "expected": 2,
+      "fraction": 1.0
+    },
+    {
+      "b": 1,
+      "maximum_S": 3,
+      "degree": 4,
+      "polynomials": 2,
+      "unit_circle_zeros": 8,
+      "expected": 8,
+      "fraction": 1.0
+    },
+    {
+      "b": 2,
+      "maximum_S": 5,
+      "degree": 6,
+      "polynomials": 4,
+      "unit_circle_zeros": 22,
+      "expected": 22,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "b": 3,
+      "maximum_S": 7,
+      "degree": 8,
+      "polynomials": 8,
+      "unit_circle_zeros": 54,
+      "expected": 54,
+      "fraction": 0.84375
+    },
+    {
+      "b": 4,
+      "maximum_S": 9,
+      "degree": 10,
+      "polynomials": 16,
+      "unit_circle_zeros": 126,
+      "expected": 126,
+      "fraction": 0.7875
+    },
+    {
+      "b": 5,
+      "maximum_S": 11,
+      "degree": 12,
+      "polynomials": 32,
+      "unit_circle_zeros": 308,
+      "expected": 308,
+      "fraction": 0.8020833333333334
+    },
+    {
+      "b": 6,
+      "maximum_S": 13,
+      "degree": 14,
+      "polynomials": 64,
+      "unit_circle_zeros": 660,
+      "expected": 660,
+      "fraction": 0.7366071428571429
+    },
+    {
+      "b": 7,
+      "maximum_S": 15,
+      "degree": 16,
+      "polynomials": 128,
+      "unit_circle_zeros": 1538,
+      "expected": 1538,
+      "fraction": 0.7509765625
+    },
+    {
+      "b": 8,
+      "maximum_S": 17,
+      "degree": 18,
+      "polynomials": 256,
+      "unit_circle_zeros": 3350,
+      "expected": 3350,
+      "fraction": 0.7269965277777778
+    },
+    {
+      "b": 9,
+      "maximum_S": 19,
+      "degree": 20,
+      "polynomials": 512,
+      "unit_circle_zeros": 7368,
+      "expected": 7368,
+      "fraction": 0.71953125
+    }
+  ],
+  "all_passed": true,
+  "elapsed_seconds": 3.348254919052124
+}

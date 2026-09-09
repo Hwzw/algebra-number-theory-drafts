@@ -1,0 +1,152 @@
+{
+  "environments": {
+    "theorem": 1,
+    "corollary": 1,
+    "lemma": 2,
+    "proof": 6,
+    "proposition": 2
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "2",
+      "id": "corollary-1",
+      "source_label": "cor:product"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "3",
+      "id": "lemma-1",
+      "source_label": "lem:symmetrize"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 1,
+      "number": "4",
+      "id": "proposition-1",
+      "source_label": "prop:universality"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "5",
+      "id": "proposition-2",
+      "source_label": "prop:gaussian"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "6",
+      "id": "lemma-2",
+      "source_label": "lem:endpoints"
+    }
+  ],
+  "references": 27,
+  "citations": 13,
+  "cited_keys": [
+    "CFI",
+    "EK",
+    "NV",
+    "Sound",
+    "StanleyECA",
+    "StanleyMO"
+  ],
+  "bibliography_keys": [
+    "CFI",
+    "EK",
+    "NV",
+    "Sound",
+    "StanleyECA",
+    "StanleyMO"
+  ],
+  "equation_labels": [
+    "eq:NS",
+    "eq:measure",
+    "eq:mean",
+    "eq:complement",
+    "eq:T",
+    "eq:RD",
+    "eq:change",
+    "eq:H",
+    "eq:G",
+    "eq:univ",
+    "eq:variance0",
+    "eq:delo",
+    "eq:smallball",
+    "eq:density",
+    "eq:bulk",
+    "eq:ABC",
+    "eq:ET",
+    "eq:tight",
+    "eq:fullt"
+  ],
+  "label_numbers": {
+    "eq:NS": "1",
+    "thm:main": "1",
+    "eq:measure": "2",
+    "eq:mean": "3",
+    "cor:product": "2",
+    "eq:complement": "4",
+    "eq:T": "5",
+    "eq:RD": "6",
+    "eq:change": "7",
+    "lem:symmetrize": "3",
+    "eq:H": "8",
+    "eq:G": "9",
+    "prop:universality": "4",
+    "eq:univ": "10",
+    "eq:variance0": "11",
+    "eq:delo": "12",
+    "eq:smallball": "13",
+    "prop:gaussian": "5",
+    "eq:density": "14",
+    "eq:bulk": "15",
+    "eq:ABC": "16",
+    "lem:endpoints": "6",
+    "eq:ET": "17",
+    "eq:tight": "18",
+    "eq:fullt": "19"
+  },
+  "bibliography_numbers": {
+    "CFI": "1",
+    "EK": "2",
+    "NV": "3",
+    "Sound": "4",
+    "StanleyECA": "5",
+    "StanleyMO": "6"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "c1acd802c0d7b899385da3983f782d533adff564b314460169517fd5a821bca0",
+  "source_pdf_sha256": "468701d8414f5103473abd146bb60c971e1e6d86b45e36fe00b261e35cfebbca",
+  "markdown_sha256": "26be6d54b02354ccd98bb0c754cceb486e5fb7db3018a42c60236132e9facbba",
+  "markdown_bytes": 22120,
+  "source_math_expressions_verified": 264,
+  "markdown_math_expressions": 270,
+  "custom_macros_expanded": [
+    "E",
+    "Prob",
+    "R",
+    "C",
+    "Z",
+    "Var",
+    "Cov"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 55,
+  "semantic_roundtrip_sha256": "5c379098781c73278c88dec109de41dc1939eabe69bea032bcdc7e95b46a7c35",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 43,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

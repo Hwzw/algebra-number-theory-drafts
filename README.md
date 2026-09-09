@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 19 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 20 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## New average unit-circle zero theorem
+
+[**P20: The average number of unit-circle zeros in Stanley's reciprocal polynomial family**](papers/P20-stanley-unit-circle/README.md), by **Henry Zweiman**, gives a proposed answer to Stanley's average-count question. Its seven-page [PDF](papers/P20-stanley-unit-circle/manuscript.pdf), [complete Markdown](papers/P20-stanley-unit-circle/manuscript.md), and [LaTeX](papers/P20-stanley-unit-circle/manuscript.tex) prove a limiting expected fraction of 1/sqrt(3) and convergence of the mean angular measure.
+
+The proof uses an exact sign representation, a zero-law symmetrization, Nguyen–Vu universality, and deterministic angular discrepancy. The [assessment](papers/P20-stanley-unit-circle/ASSESSMENT.md) and [proof review](papers/P20-stanley-unit-circle/REVIEW.md) document the existing inputs and 1,023 exact checks. The constant is classical; the contribution concerns this constrained integer family. The broader cyclotomic classification remains outside scope. Priority and significance are provisional.
 
 ## New finite-field positivity obstruction
 

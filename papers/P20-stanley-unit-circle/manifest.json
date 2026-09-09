@@ -1,0 +1,66 @@
+{
+  "paper": "P20-stanley-unit-circle",
+  "author": "Henry Zweiman",
+  "date": "2026-09-09",
+  "pages": 7,
+  "status": "complete internally checked proposed solution to Stanley average-count question; priority and significance provisional",
+  "external_human_review": false,
+  "separate_agent_review": false,
+  "files": [
+    {
+      "path": "manuscript.md",
+      "bytes": 22120,
+      "sha256": "26be6d54b02354ccd98bb0c754cceb486e5fb7db3018a42c60236132e9facbba"
+    },
+    {
+      "path": "manuscript.tex",
+      "bytes": 21172,
+      "sha256": "c1acd802c0d7b899385da3983f782d533adff564b314460169517fd5a821bca0"
+    },
+    {
+      "path": "manuscript.pdf",
+      "bytes": 104414,
+      "sha256": "468701d8414f5103473abd146bb60c971e1e6d86b45e36fe00b261e35cfebbca"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1843,
+      "sha256": "836a1769d6f4d7035980b9dbdabb5091eef121939dd64e9216baac446efa28ff"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 4522,
+      "sha256": "b5a3d6a797a2644b01a1783a7117073c3168577547cf4a6926fc8b27ca8cea54"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 6360,
+      "sha256": "ffd217220faafc313044340b9f9a388c2dc19d93369b589e23476eacaf946e19"
+    },
+    {
+      "path": "check.py",
+      "bytes": 1842,
+      "sha256": "d4dcc063c4c222bf37a1fa37592a8853a3fe4fdd5cf224a807386f75255a9e34"
+    },
+    {
+      "path": "check-results.json",
+      "bytes": 2000,
+      "sha256": "f459b235d33593a0a1d4d83c952c565eb5811b48b01ffa5f981f4b13f2454075"
+    },
+    {
+      "path": "markdown-conversion.json",
+      "bytes": 3222,
+      "sha256": "6406a1f034a52a82ea2be2329e6f68e19b5cdc219d6c5eb91cdde01e36451462"
+    },
+    {
+      "path": "markdown-math-check.json",
+      "bytes": 436,
+      "sha256": "20b82f480b47558527c93f6ed69a878233f39e62c3a6c3a492ac2660a86940c1"
+    },
+    {
+      "path": "artifact-qa.json",
+      "bytes": 597,
+      "sha256": "ff16fc4d3bed25d1f1a3a47e55bbf72419bfbb558df1ab9cd6e7575807b39b0a"
+    }
+  ]
+}

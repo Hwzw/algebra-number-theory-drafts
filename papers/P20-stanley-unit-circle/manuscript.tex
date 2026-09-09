@@ -1,0 +1,504 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\title{The average number of unit-circle zeros in Stanley's reciprocal polynomial family}
+\author{Henry Zweiman}
+\date{September 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For a finite set $S$ of positive integers, put
+$N_S(x)=1-(1-x)\sum_{j\in S}x^j$.
+We determine the asymptotic average number of unit-circle zeros when
+$S$ is chosen uniformly subject to $\max S=2b+1$ and reciprocity of $N_S$.
+The average is $(2b+2)/\sqrt3+o(b)$, with zeros counted with multiplicity.
+More generally, the mean unit-circle zero measure, normalized by the degree,
+converges to $1/\sqrt3$ times uniform angular measure.
+This answers the average-count question posed by Stanley.
+The proof parametrizes the family by independent signs, preserves its zero-set
+law while randomizing a fixed boundary term, and applies the general real
+universality theorem of Nguyen and Vu. A Gaussian density computation gives
+the bulk limit, and the Erd\H{o}s--Tur\'an discrepancy theorem controls the endpoints.
+\end{abstract}
+
+\section{Introduction and statement}
+For a nonempty finite set $S\subset\Z_{>0}$ define
+\begin{equation}\label{eq:NS}
+ N_S(x)=1-(1-x)\sum_{j\in S}x^j.
+\end{equation}
+If $d=\max S$, this is a monic integer polynomial of degree $d+1$ and
+constant coefficient one. Let
+\[
+ \mathcal S_b=\{S\subset\{1,\ldots,2b+1\}:\max S=2b+1,
+ \ x^{2b+2}N_S(1/x)=N_S(x)\}.
+\]
+There are $2^b$ such sets. Throughout the paper $S$ is uniform on
+$\mathcal S_b$, and every zero is counted with its algebraic multiplicity.
+Write $U_b(S)$ for the number of zeros of $N_S$ on the unit circle.
+
+Stanley introduced these polynomials in connection with enumerative
+identities and cyclotomic sets \cite{StanleyECA}. His question
+\cite[Addendum 2]{StanleyMO} asks for an analytic estimate of the number of
+unit-circle zeros of
+\[
+ F_{2b+1}(x)=\prod_{S\in\mathcal S_b}N_S(x),
+\]
+or, equivalently, for the average of $U_b(S)$.
+The same unit-circle phenomenon is noted in the aside on page 9 of
+\cite{StanleyECA}.
+
+\begin{theorem}\label{thm:main}
+For every continuous function $h$ on the unit circle,
+\begin{equation}\label{eq:measure}
+ \lim_{b\to\infty}\frac{1}{2b+2}
+ \E\sum_{\substack{N_S(\alpha)=0\\|\alpha|=1}}h(\alpha)
+ =\frac{1}{2\pi\sqrt3}\int_0^{2\pi}h(e^{i\theta})\,d\theta.
+\end{equation}
+In particular,
+\begin{equation}\label{eq:mean}
+ \E U_b=\frac{2b+2}{\sqrt3}+o(b).
+\end{equation}
+\end{theorem}
+
+\begin{corollary}\label{cor:product}
+If $g(2b+1)$ denotes the number of unit-circle zeros of $F_{2b+1}$, then
+\[
+ g(2b+1)=2^b\left(\frac{2b+2}{\sqrt3}+o(b)\right).
+\]
+For every fixed arc $I$ of angular length $|I|$, the average number of
+unit-circle zeros of $N_S$ on $I$ is
+\[
+ \frac{(2b+2)|I|}{2\pi\sqrt3}+o(b).
+\]
+\end{corollary}
+
+The constant $1/\sqrt3$ is classical for independent Gaussian cosine
+polynomials; see the discussion in \cite{CFI}. General Gaussian
+zero-density formulas are developed in \cite{EK}. The coefficients of
+\eqref{eq:NS}, however, are differences of constrained indicators and
+are not independent. We establish the exact reduction needed for this
+family, including its fixed endpoint coefficients. The probabilistic input
+is the existing general universality theorem \cite[Theorem 2.6]{NV},
+whose hypotheses we verify below. We do not assert a new universality
+theorem. Nor does the average-count result classify those $S$ for which
+all zeros are roots of unity, the broader problem in \cite{StanleyECA}.
+
+\section{Independent signs and exact preservation of zeros}
+Put $d=2b+1$ and $m=b+1$. Let $a_j$ be the indicator of $j\in S$ for
+$1\le j\le d$, and put $a_0=0$. Reciprocity of \eqref{eq:NS} is
+equivalent to
+\[
+ \sum_{j=0}^d a_jx^j+\sum_{j=0}^d a_jx^{d-j}
+ =1+x+\cdots+x^d.
+\]
+Indeed, multiplication of this identity by $1-x$ gives the reciprocity
+identity, and the implication reverses because $1-x$ is nonzero.
+Consequently
+\begin{equation}\label{eq:complement}
+ a_j+a_{d-j}=1\quad(0\le j\le d).
+\end{equation}
+The $b$ pairs besides $\{0,d\}$ may be chosen independently, proving
+$|\mathcal S_b|=2^b$.
+
+Set $\delta_j=2a_j-1$. Thus $\delta_0=-1$, $\delta_d=1$, and
+$\delta_{d-j}=-\delta_j$. Under uniform choice of $S$, the variables
+\[
+ \epsilon_k=\delta_{b+1+k},\qquad 0\le k<b,
+\]
+are independent Rademacher variables, each taking $-1$ and $1$ with
+probability $1/2$. Pairing the terms indexed by $j,d-j$ gives
+\begin{align}
+ T_b(\theta)&:=e^{-im\theta}N_S(e^{i\theta})\notag\\
+ &=\cos(m\theta)-2\sin(\theta/2)
+ \left(\sin((b+\tfrac12)\theta)
+   +\sum_{k=0}^{b-1}\epsilon_k\sin((k+\tfrac12)\theta)\right).
+ \label{eq:T}
+\end{align}
+For completeness, substituting $a_j=(1+\delta_j)/2$ first gives
+\[
+ N_S(x)=\tfrac12(1+x^{d+1})-\tfrac12(1-x)\sum_{j=0}^d\delta_jx^j.
+\]
+Using $1-e^{i\theta}=-2ie^{i\theta/2}\sin(\theta/2)$ in this last
+expression proves \eqref{eq:T}, including its sign.
+
+Make the change of variable $\theta=\pi-2t$. The signs
+$\eta_k=(-1)^k\epsilon_k$ are again independent Rademacher variables.
+Define, on $0<t<\pi/2$,
+\begin{equation}\label{eq:RD}
+ R_b(t)=\sum_{k=0}^{b-1}\eta_k\cos((2k+1)t),\qquad
+ D_b(t)=(-1)^b\left(\cos((2b+1)t)+\frac{\cos((2b+2)t)}{2\cos t}\right).
+\end{equation}
+Equation \eqref{eq:T} becomes
+\begin{equation}\label{eq:change}
+ T_b(\pi-2t)=-2\cos t\,(R_b(t)+D_b(t)).
+\end{equation}
+There are no missing endpoint zeros: $N_S(1)=1$ and
+$N_S(-1)=1-2\sum_{j\in S}(-1)^j$ is odd and nonzero.
+Complex conjugation pairs the zeros in the two open semicircles.
+The maps and nonvanishing factors in \eqref{eq:change} preserve
+multiplicity. Hence $U_b$ is twice the number of zeros of $R_b+D_b$
+in $(0,\pi/2)$.
+
+\begin{lemma}\label{lem:symmetrize}
+Let $R$ be a random analytic function with $R$ and $-R$ equal in law,
+and let $D$ be deterministic and analytic on the same domain.
+Assume $R+D$ is almost surely not identically zero.
+If $\eta_*$ is an independent Rademacher variable, then $R+D$ and
+$R+\eta_*D$ have the same zero-multiset distribution.
+\end{lemma}
+\begin{proof}
+The functions $R-D$ and $-R-D=-(R+D)$ have the same distribution of
+zeros, since $R$ and $-R$ have the same law and multiplication by $-1$
+does not change a zero or its multiplicity. The two choices of $\eta_*$
+therefore give identical zero-multiset laws.
+\end{proof}
+
+To work with entire functions, define
+\begin{equation}\label{eq:H}\begin{aligned}
+ H_b(t)&=\sum_{k=0}^{b-1}\eta_k\cos t\cos((2k+1)t)
+       +\eta_*\Psi_b(t),\\
+ \Psi_b(t)&=(-1)^b\left(\cos t\cos((2b+1)t)
+                    +\tfrac12\cos((2b+2)t)\right).
+\end{aligned}\end{equation}
+This is a real trigonometric polynomial of degree $2b+2$.
+By Lemma~\ref{lem:symmetrize}, its zeros in $(0,\pi/2)$ have the same
+law as the transformed zeros of $N_S$ in the upper semicircle.
+Let $\widetilde H_b$ be obtained by replacing all $b+1$ signs in
+\eqref{eq:H} by independent standard real Gaussians $Z_k,Z_*$.
+On this interval its zeros are those of
+\begin{equation}\label{eq:G}
+ G_b(t)=\sum_{k=0}^{b-1}Z_k\cos((2k+1)t)+Z_*D_b(t).
+\end{equation}
+
+\section{Universality on compact subintervals}
+For a real analytic function $f$, write
+$\mathcal Z_f(v)=\sum_{f(t)=0,\,t\in\R}v(t)$ when $v$ has compact
+support in a domain of analyticity. Multiplicities are included.
+
+\begin{proposition}\label{prop:universality}
+For every $v\in C_c^\infty((0,\pi/2))$ there is $c>0$ such that
+\begin{equation}\label{eq:univ}
+ \left|\E\mathcal Z_{H_b}(v)-\E\mathcal Z_{\widetilde H_b}(v)\right|
+ =O_v(b^{1-c}).
+\end{equation}
+\end{proposition}
+\begin{proof}
+We verify Conditions C1 and C2 of \cite{NV} for Theorem 2.6, using its
+case $k=1,l=0$. Fix $0<a<\pi/4$ such that the support of $v$ lies in
+the interior of $[a,\pi/2-a]$. Rescale by $z=bt$ and use the real
+center set
+\[
+ \mathcal D_b=[ab,(\pi/2-a)b],\qquad \delta=1/b.
+\]
+There are $n=b+1$ random terms. Their deterministic basis functions are
+\[
+ \phi_k(z)=\cos(z/b)\cos((2k+1)z/b)\quad(0\le k<b),
+ \qquad \phi_*(z)=\Psi_b(z/b).
+\]
+These are entire and real on the real axis. The random coefficients in
+both ensembles have mean zero, variance one, and uniformly bounded
+$5/2$ moments. Thus C1 holds with $\epsilon=1/2$ and matching moments.
+Take $C_1=2$ and $\alpha_1=1/2$ in C2. The remaining parameters
+$A,c_1>0$ are those prescribed by Theorem 2.6; the estimates below hold
+for every fixed $A,c_1>0$.
+
+\paragraph{Local zero counts.}
+Both ensembles are trigonometric polynomials of degree at most $2b+2$.
+Their coefficient of $\cos((2b+2)t)$ is $(-1)^b\eta_*$ or $(-1)^bZ_*$,
+respectively, and is nonzero surely or almost surely.
+For $w=e^{it}$, multiplying either polynomial by $w^{2b+2}$ produces
+an algebraic polynomial of degree at most $4b+4$.
+On any disk of radius $1/b$ in the $t$ plane the exponential map is
+injective for large $b$. The number $N$ of zeros in a unit disk in the
+$z$ plane is therefore at most $4b+4$, including multiplicity.
+In particular $N<b^2=\delta^{-C_1}$ for sufficiently large $b$.
+The truncated moment in C2(1) is then zero.
+
+\paragraph{Size, delocalization, and derivatives.}
+On complex distance two neighborhoods of $\mathcal D_b$ the basis
+functions and their first two $z$ derivatives are bounded by a constant
+independent of $b,k$. Indeed, the rescaled frequencies are at most
+$2+2/b$ and the imaginary parts of their arguments are bounded.
+For real $t$ in a compact subinterval of $(0,\pi/2)$, the geometric sum gives
+\begin{equation}\label{eq:variance0}
+ \sum_{k=0}^{b-1}\cos^2((2k+1)t)=\frac b2+O_a(1).
+\end{equation}
+To see uniformity, the oscillatory part is half the real part of
+$e^{2it}(1-e^{4ibt})/(1-e^{4it})$; its denominator is bounded away
+from zero on this subinterval.
+For $t=x+iy$, the identity
+\[
+ |\cos(jt)|^2=\cos^2(jx)+\sinh^2(jy)
+\]
+shows that the same lower bound applies to the sum of squared moduli.
+Also $|\cos t|$ is bounded below here. It follows, uniformly for
+$z\in\mathcal D_b+B(0,1)$, that
+\begin{equation}\label{eq:delo}
+ \sum_j|\phi_j(z)|^2\ge c_a b,\qquad
+ \frac{\max_j|\phi_j(z)|}{(\sum_j|\phi_j(z)|^2)^{1/2}}
+ \le C_a b^{-1/2}.
+\end{equation}
+This proves C2(4). The sums of squared first derivatives, and of the
+squared suprema of second derivatives on unit disks, are $O_a(b)$.
+Together with \eqref{eq:delo}, this proves C2(5), even without its
+allowed factor $\delta^{-c_1}$. Its mean-dependent term is zero.
+
+For the Rademacher ensemble the function itself is bounded by $C_a b$
+on the relevant disks. For the Gaussian ensemble the event that every
+coefficient has absolute value at most $b$ has complement of probability
+at most $C b e^{-b^2/2}$; on that event the function is bounded by
+$C_a b^2$. For any fixed $A,c_1>0$, these bounds imply C2(3), whose
+size threshold is $\exp(b^{c_1})$ and exceptional probability is
+$O(b^{-A})$.
+
+\paragraph{Anti-concentration.}
+Fix $z_0\in\mathcal D_b$ and put $t_0=z_0/b$. We use
+\cite[Lemma 9.2]{NV} for the index set
+\[
+ E_b=\{1,3,\ldots,2b-1\}
+\]
+of size $b$, with all deterministic coefficients equal to one.
+Choose a fixed parameter $L>\max\{2,2A\}$. In an interval of length
+$1/(200b)$ centered at $t_0$, the lemma supplies a deterministic point
+$x$ such that, for the appropriate Rademacher or Gaussian variables
+$\xi_k$,
+\begin{equation}\label{eq:smallball}
+ \sup_{u\in\R}\Prob\left\{
+ \left|\sum_{k=0}^{b-1}\xi_k\cos((2k+1)x)-u\right|
+ \le b^{-16L^2}\right\}=O_L(b^{-L/2}).
+\end{equation}
+The interval-length hypothesis holds for all sufficiently large $b$.
+The lemma explicitly permits arbitrary index sets of the given size;
+it does not require consecutive frequencies.
+Condition on the distinguished coefficient $\xi_*$. At $x$, division
+of the function in \eqref{eq:H} by $\cos x$ leaves the sum in
+\eqref{eq:smallball} plus $\xi_*D_b(x)$.
+The uniformity in $u$ makes the estimate independent of this conditioning.
+Since $|\cos x|\ge c_a>0$, eventually
+\[
+ \frac{\exp(-b^{c_1})}{|\cos x|}<b^{-16L^2}.
+\]
+Thus the probability that the rescaled function at $z'=bx$ is smaller
+than $\exp(-b^{c_1})$ is $O(b^{-A})$.
+Moreover $|z'-z_0|\le1/400<1/100$.
+This is precisely the nearby-point condition C2(2), for each ensemble.
+
+All constants can be chosen uniformly over $z_0\in\mathcal D_b$.
+Theorem 2.6 of \cite{NV} therefore compares smooth real-zero statistics
+on intervals of radius $1/100$ in the $z$ variable with error $O(b^{-c})$.
+Its tests have derivatives through order six bounded by one; by linearity
+the same conclusion holds with any fixed derivative bound.
+Take a smooth partition of unity in $z$ with mesh $1/400$, pieces supported
+in intervals of radius less than $1/100$, and uniformly bounded derivatives.
+Multiply the pieces by $v(z/b)$. Only $O_v(b)$ pieces occur, their derivatives
+through order six stay bounded independently of $b$, and their centers lie
+in $\mathcal D_b$ for large $b$. Summing the local estimates proves
+\eqref{eq:univ}.
+\end{proof}
+
+\section{The Gaussian density}
+\begin{proposition}\label{prop:gaussian}
+Uniformly on $[a,\pi/2-a]$, the mean real-zero density of $G_b$ is
+\begin{equation}\label{eq:density}
+ \rho_b(t)=\frac{2b}{\pi\sqrt3}+O_a(1).
+\end{equation}
+Consequently, for every $v\in C_c^\infty((0,\pi/2))$,
+\begin{equation}\label{eq:bulk}
+ \lim_{b\to\infty}\frac1b\E\mathcal Z_{H_b}(v)
+ =\frac{2}{\pi\sqrt3}\int_0^{\pi/2}v(t)\,dt.
+\end{equation}
+\end{proposition}
+\begin{proof}
+Write $q_k=2k+1$, and let
+\begin{align*}
+ A_b(t)&=\Var G_b(t)=\sum_{k=0}^{b-1}\cos^2(q_kt)+D_b(t)^2,\\
+ B_b(t)&=\Cov(G_b(t),G_b'(t))
+       =-\tfrac12\sum_{k=0}^{b-1}q_k\sin(2q_kt)+D_b(t)D_b'(t),\\
+ C_b(t)&=\Var G_b'(t)=\sum_{k=0}^{b-1}q_k^2\sin^2(q_kt)+D_b'(t)^2.
+\end{align*}
+On the chosen interval $D_b=O_a(1)$ and $D_b'=O_a(b)$.
+For $r=0,1,2$, summation by parts applied to the bounded partial sums
+of $e^{4ikt}$ gives
+\[
+ \sum_{k=0}^{b-1}q_k^r e^{2iq_kt}=O_a(b^r).
+\]
+The constants are uniform because $|1-e^{4it}|$ is bounded below.
+Using \eqref{eq:variance0} and
+$\sum_{k=0}^{b-1}q_k^2=b(4b^2-1)/3$ yields
+\begin{equation}\label{eq:ABC}
+ A_b=\frac b2+O_a(1),\qquad B_b=O_a(b),\qquad
+ C_b=\frac23b^3+O_a(b^2).
+\end{equation}
+In particular $A_bC_b-B_b^2>0$ for large $b$.
+The Gaussian real-zero formula \cite[Theorem 3.1]{EK} gives
+\[
+ \rho_b(t)=\frac1\pi
+ \sqrt{\frac{C_b(t)}{A_b(t)}-\left(\frac{B_b(t)}{A_b(t)}\right)^2}.
+\]
+Equivalently, this follows by conditioning $G_b'$ on $G_b=0$ in the
+Kac--Rice formula: the conditional derivative variance is
+$C_b-B_b^2/A_b$. The covariance determinant is positive, so the formula
+applies on the interval and multiple Gaussian zeros have probability zero.
+Substituting \eqref{eq:ABC} gives \eqref{eq:density}.
+On the support of $v$, the zeros of $G_b$ and $\widetilde H_b$ agree.
+Integrating their common density and applying Proposition~\ref{prop:universality}
+proves \eqref{eq:bulk}.
+\end{proof}
+
+\section{Endpoint control and completion of the proof}
+We need control near $t=0,\pi/2$ only for the original integer-polynomial
+ensemble. A deterministic estimate supplies it.
+
+\begin{lemma}\label{lem:endpoints}
+Let $J$ be an arc of angular length $|J|$. For every $S\in\mathcal S_b$,
+\begin{equation}\label{eq:ET}
+ \#\{\alpha:N_S(\alpha)=0,\ \arg\alpha\in J\}
+ \le\frac{(2b+2)|J|}{2\pi}
+       +\frac8\pi\sqrt{(2b+2)\log(2b+3)}.
+\end{equation}
+The same upper bound holds when only unit-circle zeros are counted.
+\end{lemma}
+\begin{proof}
+Every coefficient of $N_S$ lies in $\{-1,0,1\}$, and its leading and
+constant coefficients are one. Therefore
+$\max_{|z|=1}|N_S(z)|\le2b+3$.
+The Erd\H{o}s--Tur\'an discrepancy inequality in the form
+\cite[Theorem 2]{Sound} bounds the angular discrepancy by
+$(8/\pi)\sqrt{n h(P)}$ for a monic degree-$n$ polynomial $P$ with
+constant coefficient one, where
+\[
+ h(P)=\frac1{2\pi}\int_0^{2\pi}\log^+|P(e^{it})|\,dt.
+\]
+Here $h(N_S)\le\log(2b+3)$, giving \eqref{eq:ET}.
+Restricting to unit-circle zeros can only decrease the count.
+Endpoint conventions for arcs may be handled by enlarging the arc and
+taking a limit; multiplicities are included in the discrepancy theorem.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Let $\nu_b$ be $1/b$ times the expected zero-counting measure of $H_b$
+on $(0,\pi/2)$; we consider $b\ge1$. By the exact zero-law reduction,
+its total mass is at most $(b+1)/b$. Proposition~\ref{prop:gaussian}
+says that its integral against each smooth compactly supported test
+converges to the integral against
+\[
+ \frac{2}{\pi\sqrt3}\,dt.
+\]
+For $0<a<\pi/4$, the two $t$ intervals $(0,a)$ and
+$(\pi/2-a,\pi/2)$ correspond to two angular arcs, each of length $2a$,
+near $\theta=\pi$ and $\theta=0$ in the upper semicircle.
+Lemma~\ref{lem:endpoints} and the zero-law identity imply
+\begin{equation}\label{eq:tight}
+ \nu_b\big((0,a)\cup(\pi/2-a,\pi/2)\big)
+ =O(a)+O\left(\sqrt{\frac{\log b}{b}}\right),
+\end{equation}
+with absolute implied constants for large $b$.
+By first inserting a smooth interior cutoff, then approximating a
+continuous test uniformly on the interior, and finally letting $a$
+decrease to zero in \eqref{eq:tight}, we obtain, for every continuous
+$v$ on $[0,\pi/2]$,
+\begin{equation}\label{eq:fullt}
+ \lim_{b\to\infty}\int v\,d\nu_b
+ =\frac{2}{\pi\sqrt3}\int_0^{\pi/2}v(t)\,dt.
+\end{equation}
+All approximations are uniform in $b$ because the total masses are bounded.
+
+For a continuous $h$ on the unit circle put
+\[
+ v(t)=h(e^{i(\pi-2t)})+h(e^{-i(\pi-2t)}).
+\]
+Conjugation and the change of variables in \eqref{eq:change} identify the
+left side of \eqref{eq:measure} with
+$[b/(2b+2)]\int v\,d\nu_b$.
+Also
+\[
+ \int_0^{\pi/2}v(t)\,dt
+ =\frac12\int_0^{2\pi}h(e^{i\theta})\,d\theta.
+\]
+Taking limits proves \eqref{eq:measure}. Setting $h=1$ proves
+\eqref{eq:mean}.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:product}]
+Multiplicities add under products, so $g(2b+1)=2^b\E U_b$.
+For arcs, approximate their indicators from above and below by continuous
+functions. The limiting angular measure has no atoms, and
+Theorem~\ref{thm:main} then gives the asserted limit.
+\end{proof}
+
+\section{Exact checks and further questions}
+The accompanying script uses rational arithmetic to verify the reciprocity
+parametrization and to count unit-circle roots without a numerical tolerance.
+For each reciprocal degree-$2m$ polynomial it forms the integer polynomial
+$Q$ defined by
+\[
+ x^{-m}N_S(x)=Q(x+x^{-1}).
+\]
+The recurrence $C_0(y)=2$, $C_1(y)=y$,
+$C_{j+1}(y)=yC_j(y)-C_{j-1}(y)$ represents $x^j+x^{-j}$.
+Squarefree factorization of $Q$, followed by Sturm counts in $(-2,2)$
+weighted by the factor multiplicities, gives half the unit-circle count.
+There are no roots at $\pm2$, because $N_S(\pm1)\ne0$.
+For $0\le b\le9$, this checks all $1{,}023$ polynomials and reproduces
+\[
+ (g(1),g(3),\ldots,g(19))
+ =(2,8,22,54,126,308,660,1538,3350,7368).
+\]
+These are consistency checks against the initial data in \cite{StanleyMO};
+the asymptotic proof does not depend on finite computation.
+In converting counts to fractions, the degree is $2b+2$, one more than
+$\max S$.
+
+The theorem determines an average, with no claimed concentration rate or
+second-order expansion. Natural next questions are fluctuations of $U_b$,
+a quantitative error term uniform up to the endpoint regions, and the
+interaction between the noncyclotomic unit-circle zeros and irreducibility.
+The number of entirely cyclotomic members of $\mathcal S_b$ is a separate
+arithmetic enumeration problem. The reductions above identify a tractable
+random-function representation without settling that classification.
+
+\begin{thebibliography}{9}
+\bibitem{CFI}
+J. B. Conrey, D. W. Farmer, and \"O. \.{I}mamo\u glu,
+\emph{Palindromic random trigonometric polynomials},
+Proc. Amer. Math. Soc. 137 (2009), 1835--1839.
+\href{https://arxiv.org/abs/0812.1752}{arXiv:0812.1752}.
+\bibitem{EK}
+A. Edelman and E. Kostlan,
+\emph{How many zeros of a random polynomial are real?},
+Bull. Amer. Math. Soc. 32 (1995), 1--37.
+\href{https://arxiv.org/abs/math/9501224}{arXiv:math/9501224}.
+\bibitem{NV}
+O. Nguyen and V. Vu,
+\emph{Roots of random functions: A framework for local universality},
+Amer. J. Math. 144 (2022), 1--74.
+\href{https://arxiv.org/abs/1711.03615}{arXiv:1711.03615}.
+\bibitem{Sound}
+K. Soundararajan,
+\emph{Equidistribution of zeros of polynomials},
+Amer. Math. Monthly 126 (2019), 226--236.
+\href{https://doi.org/10.1080/00029890.2019.1546078}{doi:10.1080/00029890.2019.1546078}.
+\bibitem{StanleyECA}
+R. P. Stanley,
+\emph{Some enumerative applications of cyclotomic polynomials},
+Enumer. Comb. Appl. 6:1 (2026), Article S2R4.
+\href{https://doi.org/10.54550/ECA2026V6S1R4}{doi:10.54550/ECA2026V6S1R4}.
+\bibitem{StanleyMO}
+R. Stanley,
+\emph{Polynomials with many zeros of absolute value 1},
+MathOverflow question 461829, January 8, 2024; Addendum 2, January 29, 2024.
+\href{https://mathoverflow.net/questions/461829/}{mathoverflow.net/questions/461829}.
+\end{thebibliography}
+\end{document}
