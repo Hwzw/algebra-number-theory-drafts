@@ -1,0 +1,24 @@
+{
+  "status": "all exact auxiliary checks passed",
+  "author": "Henry Zweiman",
+  "sympy_version": "1.14.0",
+  "moments": [
+    {
+      "power": 1,
+      "triangle_moment": "0",
+      "zero_sum_ordered_tuples": 0
+    },
+    {
+      "power": 2,
+      "triangle_moment": "3/2",
+      "zero_sum_ordered_tuples": 6
+    },
+    {
+      "power": 3,
+      "triangle_moment": "3/2",
+      "zero_sum_ordered_tuples": 12
+    }
+  ],
+  "pde_and_three_neumann_conditions": true,
+  "limitations": "Does not verify the main asymptotic theorem, novelty or significance."
+}

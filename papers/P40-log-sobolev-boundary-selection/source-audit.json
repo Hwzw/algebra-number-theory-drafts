@@ -1,0 +1,111 @@
+{
+  "id": "Q46",
+  "date": "2026-09-15",
+  "status": "Complete internal proof and bounded source/significance assessment for P40",
+  "primary_source": "https://arxiv.org/html/2604.01785",
+  "version_history_url": "https://arxiv.org/abs/2604.01785",
+  "version_checked": "v1 only, April 2, 2026; abstract/version page re-opened September 15, 2026",
+  "read_scope": "Introduction and preliminaries; complete Section 4 sequentially read, including Steps 1-5; Theorem 3.12 statement and full proof; selected earlier Section 3 dependencies. No claim of independent verification of every auxiliary source proof.",
+  "explicit_frontier": "Remark 1.11: higher-dimensional low-temperature logarithmic Sobolev asymptotics",
+  "source_result_not_to_reclaim": "One-dimensional log-Sobolev asymptotic and higher-dimensional Poincare asymptotic, including the exact spectral boundary coefficient of Theorem 3.12",
+  "next_primary_source": "https://arxiv.org/abs/2411.11415",
+  "next_primary_source_read": true,
+  "searches": [
+    "Ben Nejma log-Sobolev asymptotics higher dimension",
+    "logarithmic Sobolev shape derivative domain",
+    "log-Sobolev low-temperature 2026 convex domain",
+    "Gross logarithmic Sobolev inequality Gaussian density pi a Euclidean logarithmic Sobolev inequality",
+    "logarithmic Sobolev domain perturbation",
+    "log-Sobolev shape extremizers",
+    "log-Sobolev squared distance asymptotic",
+    "log-Sobolev Ben Nejma 2026 higher dimension",
+    "log-Sobolev constant boundary asymptotic",
+    "logarithmic Sobolev perturbation optimal constant domain",
+    "2604.01785 exact identifier",
+    "log-Sobolev low temperature 2026",
+    "Existence of optimizers for the sharp stability constant in the logarithmic Sobolev inequality arxiv",
+    "Rapid mixing for Gibbs measures in Riemannian manifolds arxiv",
+    "logarithmic Sobolev equilateral triangle",
+    "log-Sobolev third moment eigenfunction",
+    "Neumann eigenvalues convex domains Hausdorff convergence uniform extension theorem",
+    "log-Sobolev boundary asymptotics 2026",
+    "Functional inequalities doubly weighted Brownian motion sticky reflecting",
+    "logarithmic Sobolev boundary first-order Gibbs",
+    "log-Sobolev flat asymptotics site:arxiv.org",
+    "log-Sobolev boundary extremizers site:arxiv.org",
+    "Diffusion on compact Riemannian manifolds Rothaus 102 109"
+  ],
+  "search_conclusion": "No prior resolution located in the dated bounded primary-source comparison; proceed as a preprint with priority uncertainty explicit.",
+  "latest_proof_note": "notes/0150-general-quadratic-confinement.md",
+  "full_solution_proved": true,
+  "additional_source": {
+    "url": "https://arxiv.org/html/2411.11415",
+    "version": "v1 only, November 18, 2024",
+    "read_scope": "Introduction, Theorem 2 and its proof excerpts, definitions and improved tightening Lemma 3; Theorem 12, its hypotheses and start of Gaussian-comparison proof; Section 4 Gaussian-comparison and scale-splitting calculations through Step 3 excerpts",
+    "normalization_caution": "Use the original source: its Poincare limit involves the smallest Hessian eigenvalue. Ben Nejma Theorem 1.1 renders an operator norm instead. No such formula is used in note 0146.",
+    "attribution_caution": "Chewi-Stromme distinguishes improved tightening (Wang) from standard Rothaus tightening. Verify constants and primary dependency before invoking it."
+  },
+  "archived_sources": "source-downloads.json (manifest only; third-party texts are kept in the local research archive)",
+  "proposed_theorem": "Complete proposed first-order nonlinear/spectral boundary selection theorem for convex quadratic confinement",
+  "full_solution_flag_explanation": "The complete written proof passed originating-assistant review; this flag is not independent certification. Publication receipt and revised-standard admission are recorded separately.",
+  "latest_status_audit": "ASSESSMENT.md",
+  "new_primary_candidates": [
+    {
+      "url": "https://arxiv.org/html/2606.23225v1",
+      "authors": "Simone Dovetta and Enrico Serra",
+      "scope_read": "v1-only version history checked; Introduction, Theorems 1.1-1.2, Proposition 3.1, Lemma 3.2 and substantial perturbation proof excerpts read",
+      "assessment": "Gaussian sharp stability quotient, different from Q46 boundary asymptotics; relevant entropy perturbation background"
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.13453",
+      "authors": "Capel et al.",
+      "scope_read": "v1-only version history checked; primary 168-page PDF accessed; introduction, main-result statements, Theorem 5.1 hypotheses and LSI bounds, Theorem 6.1 concentration statement screened",
+      "assessment": "Checked main results concern mixing bounds on compact manifolds and submersions, not a sharp flat-domain boundary correction; not a full 168-page proof audit"
+    },
+    {
+      "url": "https://www.numdam.org/item/AFST_2017_6_26_4_949_0/",
+      "authors": "Jean Dolbeault and Michal Kowalczyk",
+      "scope_read": "Published primary PDF archived; introductory nonlinear Neumann problems, Theorems 1.1-1.2 and Section 6.2 discussion screened",
+      "assessment": "Fixed-domain nonlinear rigidity and interpolation; cited as background, not a dependency of the low-temperature proof"
+    },
+    {
+      "url": "https://arxiv.org/abs/2409.19336",
+      "published_url": "https://link.springer.com/content/pdf/10.1007/s11118-026-10284-x.pdf",
+      "authors": "Marie Bormann",
+      "version_checked": "v2 April 23, 2026; v1 September 28, 2024",
+      "scope_read": "v2 introduction and model; published complete Section 3 including Propositions 3.1-3.2 and their proofs; both PDFs archived",
+      "assessment": "Weighted interior/boundary-mixture upper bounds; published Section 3 read. Earlier unweighted source comparison completed below."
+    },
+    {
+      "url": "https://arxiv.org/html/2401.00206v2",
+      "authors": "Marie Bormann, Max von Renesse, Feng-Yu Wang",
+      "version_checked": "v2 April 3, 2024; version page checked September 15, 2026",
+      "scope_read": "Introduction/model, Section 4 Propositions 4.1-4.2 and proofs plus endpoint discussion, Section 5 Proposition 5.1 and proof",
+      "assessment": "Mixture bounds do not identify the sharp Gibbs exterior derivative. The rendered HTML date differs from version metadata; version history is used."
+    }
+  ],
+  "latest_manuscript": "manuscript.md",
+  "classical_dependency_checks": [
+    {
+      "url": "https://arxiv.org/pdf/1412.3744v4",
+      "scope": "Section 5, (5.6)-(5.7), C2 domains and Neumann realization; p=2 and I-Delta used in manuscript",
+      "status": "Primary Neumann operator-domain statement checked. Classical Sobolev facts explicitly stated; McLean full chapters were not accessed and are not claimed newly primary-text verified."
+    },
+    {
+      "url": "https://ems.press/content/serial-article-files/26432",
+      "scope": "Section 3.1 equations (14)-(15)",
+      "status": "Triangle first Neumann eigenvalue and explicit eigenfunction checked"
+    },
+    {
+      "url": "https://www.numdam.org/item/AFST_2021_6_30_3_429_0.pdf",
+      "scope": "Definition 2.1, Remark 2.2, Proposition 2.10 including uniform extension norm statement",
+      "status": "Applicable to explicit convex symmetric smoothing family after centering"
+    }
+  ],
+  "classical_extremizer_attribution": {
+    "source": "Ben Nejma Remark 1.11 and bibliography",
+    "rothaus_full_text_accessed": false,
+    "dependency_resolution": "Section 5 supplies the needed compactness and Euler-equation proofs; historical result not reclaimed."
+  },
+  "admission_record": "ASSESSMENT.md; actual publication verified separately in the program ledger"
+}

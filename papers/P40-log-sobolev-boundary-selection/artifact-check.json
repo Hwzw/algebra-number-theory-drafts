@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-15",
+  "author": "Henry Zweiman",
+  "files": {
+    "manuscript.md": {
+      "sha256": "2e5283c60f9a8e5038a66b89102370768bbacc5dc4d5a7cfd443b57eb5021063",
+      "bytes": 39090
+    },
+    "manuscript.tex": {
+      "sha256": "f6751ccbfefe474429dfb4d13b3b9269bdf127a19e8b729d9c4d6161cc2fd29b",
+      "bytes": 41475
+    },
+    "manuscript.pdf": {
+      "sha256": "1a90c32a7e81e253f98acde76424917d1a9ab19298a6d8f7fa5bc7b43fcfeb93",
+      "bytes": 124980
+    },
+    "build.py": {
+      "sha256": "3621a4039582e030e800ef69afeed68859333e4da0970d06e84de5d32d373235",
+      "bytes": 1922
+    },
+    "check_triangle.py": {
+      "sha256": "46f5c69ef2db2afbcad7fd05f05ed8276931f5a64964732c3f03f186429ee526",
+      "bytes": 2238
+    },
+    "triangle-check.json": {
+      "sha256": "02100e967209c4c3159900e96aa471fdd10e9e7ee8e38ce3a52a3a380467bc67",
+      "bytes": 556
+    },
+    "markdown-math-check.json": {
+      "sha256": "b1a0fd0e4dbb0464649ffbe1e5e4df758c9e250d3fcc773f398cbd7213b7b66e",
+      "bytes": 447
+    }
+  },
+  "pdf_pages": 13,
+  "pdf_text_characters": 30442,
+  "pdf_text_replacement_characters": 0,
+  "visual_inspection": "All 13 exact final pages rendered and inspected by originating assistant; no clipping, overlap or missing glyphs",
+  "tex_log": "No missing glyphs or overfull boxes; two underfull bibliography paragraphs visually accepted",
+  "mathjax_expressions": 413,
+  "mathjax_errors": 0,
+  "display_formula_count": 56,
+  "display_tags_match": true,
+  "inline_semantic_review": "All converted inline formulas read; split norms, operators, roots and subscripts repaired before final build. Authoritative Markdown now contains explicit math; final builder has no heuristic math conversion.",
+  "independent_human_review": false,
+  "github_live_render_inspected": false,
+  "display_formulas_match_earlier_proof_draft_except_typography": true,
+  "last_rebuild_visual_check": "Only page 11 changed after explicit spacing correction, and was visually reinspected; other 12 final rendered PNGs are SHA-256-identical to the inspected images."
+}

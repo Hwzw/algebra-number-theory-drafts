@@ -1,10 +1,16 @@
-# Algebra and number theory research drafts
+# Mathematical research drafts
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 39 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 40 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Boundary selection for logarithmic Sobolev constants
+
+[**P40: Boundary selection for low-temperature logarithmic Sobolev constants**](papers/P40-log-sobolev-boundary-selection/README.md), by **Henry Zweiman**, gives a proposed first-order sharp-constant expansion in arbitrary finite dimension for convex potentials with a smooth bounded domain of minima and quadratic normal growth. The coefficient selects among nonlinear extremizers and, at equality of the limiting constants, the first Neumann eigenspace. A smooth strictly convex example establishes the nonlinear regime. The [13-page PDF](papers/P40-log-sobolev-boundary-selection/manuscript.pdf), [complete Markdown](papers/P40-log-sobolev-boundary-selection/manuscript.md) and [LaTeX](papers/P40-log-sobolev-boundary-selection/manuscript.tex) contain the full proof.
+
+The [assessment](papers/P40-log-sobolev-boundary-selection/ASSESSMENT.md) compares Ben Nejma's explicit 2026 higher-dimensional frontier and related boundary-diffusion literature. The [review](papers/P40-log-sobolev-boundary-selection/REVIEW.md) records the originating assistant's proof audit and artifact checks. The spectral coefficient and interval result are credited to prior work. This is the first manuscript internally assessed under the revised September 15 program standard; the earlier 39 remain pending reassessment. That internal admission does not certify journal-level significance, independent correctness or historical priority.
 
 ## Five stronger revisions and full Markdown editions
 

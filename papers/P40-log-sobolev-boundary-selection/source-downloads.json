@@ -1,0 +1,90 @@
+[
+  {
+    "file": "ben-nejma-v1.html",
+    "url": "https://arxiv.org/html/2604.01785v1",
+    "sha256": "2bb161d34d706ab47bf1da4fd588dbcc893d0dab7ee6d8135feb58355ba8790a",
+    "bytes": 1051878,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "chewi-stromme-v1.html",
+    "url": "https://arxiv.org/html/2411.11415v1",
+    "sha256": "41a6e4bc90c48fcbec200a50f66045ac9437640eaaaee9da5eb3f48b83b59f70",
+    "bytes": 525494,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "dovetta-serra-v1.html",
+    "url": "https://arxiv.org/html/2606.23225v1",
+    "sha256": "d5a95aa4af561ccd0d688004cfd0112543f35c909bb96271bf4cc7bad4837f80",
+    "bytes": 905759,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "capel-et-al-v1.pdf",
+    "url": "https://arxiv.org/pdf/2606.13453v1",
+    "sha256": "edad334abfd5cd8332431476f8c811ebd20b5f862dc027886786ea0b24dee70d",
+    "bytes": 1430613,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "grubb-v4.pdf",
+    "url": "https://arxiv.org/pdf/1412.3744v4",
+    "sha256": "8dec5ce7ffe30c5f43c68dd6b93a2cedf038d47cf42b54a621a65eb178350f36",
+    "bytes": 226442,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "berard-helffer-2018.pdf",
+    "url": "https://ems.press/content/serial-article-files/26432",
+    "sha256": "6990404904711f5d6cd7c0cedc11eabcdca669f7de7ed36bd115d31d63543ab6",
+    "bytes": 324242,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "berard-helffer-2021.pdf",
+    "url": "https://www.numdam.org/item/AFST_2021_6_30_3_429_0.pdf",
+    "sha256": "8641860fd46de93ea5a6c10b60c7ca18cbeb199a7464fde87f9b57a51991107b",
+    "bytes": 1227453,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "bormann-v2.pdf",
+    "url": "https://arxiv.org/pdf/2409.19336v2",
+    "sha256": "3ecc465023ea3bd9df4df4438cd20d7262995c3d2dd6bd2cc8506958b2ee59a3",
+    "bytes": 613692,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "bormann-published.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1007/s11118-026-10284-x.pdf",
+    "sha256": "292fdb4df95da477d09081542506146bbd9f1276a0bc5ff7a4d2a9da83f8d498",
+    "bytes": 481643,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "dolbeault-kowalczyk-2017.pdf",
+    "url": "https://afst.centre-mersenne.org/item/10.5802/afst.1557.pdf",
+    "sha256": "f82027b59d623ade23a574eed773c78ea1c59f635ce071662a41d0fe42eea991",
+    "bytes": 656360,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  },
+  {
+    "file": "bormann-renesse-wang-v2.html",
+    "url": "https://arxiv.org/html/2401.00206v2",
+    "sha256": "aa6346828a725e07f9343a00009856bc806b16cc73bd01e4997ebc676a9329cb",
+    "bytes": 981124,
+    "fetched": "2026-09-15",
+    "folder": "q46"
+  }
+]

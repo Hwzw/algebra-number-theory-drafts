@@ -1,0 +1,435 @@
+# Boundary selection for low-temperature logarithmic Sobolev constants
+
+Henry Zweiman
+
+September 15, 2026
+
+**Research preprint.** Prepared with OpenAI Codex. The accompanying assessment records the proof and primary-literature checks. No independent human verification or journal acceptance is claimed.
+
+## Abstract
+
+We consider Gibbs measures whose convex potential vanishes on a bounded smooth convex domain and grows quadratically in the exterior normal direction. We prove a first-order low-temperature expansion of the sharp logarithmic Sobolev constant. Its coefficient is a boundary functional evaluated on the limiting nonlinear extremizers. When the limiting logarithmic Sobolev and Poincaré constants coincide, the coefficient also involves the first Neumann eigenspace. The formula requires neither uniqueness nor nondegeneracy of extremizers. The main analytic estimate is a uniform exterior entropy expansion on bounded-energy families, including a version that remains uniform after division by a vanishing energy. The first-order coefficient depends on the exterior potential only through its quadratic normal boundary profile. An explicit family of smooth strictly convex planar domains exhibits the strict nonlinear regime.
+
+## 1. Introduction and main result
+
+For a probability measure $\mu$, use the normalization
+
+$$\operatorname{Ent}_\mu(f^2)
+=\int f^2\log f^2\,d\mu
+-\left(\int f^2\,d\mu\right)\log\left(\int f^2\,d\mu\right)
+\leq2C_{\mathrm{LS}}(\mu)\int|\nabla f|^2\,d\mu.\tag{1.1}$$
+
+The corresponding Poincaré constant is denoted $C_P(\mu )$. Linearization at constants gives $C_P(\mu )\leq C_{\mathrm{LS}}(\mu )$. For Gibbs measures proportional to $\exp (-U/t)$, sharp constants describe the temperature dependence of functional inequalities and the associated diffusion estimates.
+
+Chewi and Stromme [2] determine the ballistic log-Sobolev limit under a unique-minimizer assumption. Ben Nejma [1] treats potentials with a domain of minima, proves the higher-dimensional Poincaré asymptotic, and proves the log-Sobolev asymptotic in dimension one. His Remark 1.11 identifies a difficulty in higher dimensions: nonlinear extremizers can occur for the limiting domain. The spectral boundary coefficient below agrees with [1, Theorem 3.12]; it is not a new Poincaré formula. Our purpose is to obtain the log-Sobolev asymptotic while accounting for both nonlinear extremizers and sequences approaching constants.
+
+Functional inequalities for measures with both interior and boundary components provide related context. Bormann, von Renesse and Wang [10, Propositions 4.1–4.2 and 5.1] give bounds for sticky boundary diffusion, and Bormann [8, Propositions 3.1–3.2] treats weighted versions. Those bounds do not supply the sharp first variation considered here, which also requires control of the unbounded exterior of an absolutely continuous Gibbs measure. Nonlinear Neumann equations and rigidity thresholds for interpolation inequalities are studied by Dolbeault and Kowalczyk [9]. The present result accounts for the extremizer set without requiring its classification.
+
+Let $\Omega \subset \mathbb{R}^n$, $n\geq 2$, be a bounded convex domain with $C^{3}$ boundary, and let D be the complement of its closure. Suppose $U:\mathbb{R}^n\to [0,\infty )$ is convex and $C^{1}$, with zero set equal to the closure of $\Omega$, and U is $C^{2}$ on D. Assume that, for some $\alpha >0$ and finite $A,B\geq 0$,
+
+$$U(x)\geq\alpha\operatorname{dist}(x,\Omega)^2,
+\qquad\Delta U(x)\leq A+B|\nabla U(x)|^2\quad(x\in D).\tag{1.2}$$
+
+Let $\nu$ be the outward normal. We also assume
+
+$$U(s+r\nu(s))=a(s)r^2+o(r^2)\quad(r\downarrow0),\tag{1.3}$$
+
+uniformly in $s\in \partial \Omega$, where a is continuous. Necessarily $a\geq \alpha$. A continuous one-sided exterior Hessian implies (1.3), with $a=\partial ^{2}_{\nu \nu }U/2$; no globally continuous Hessian across the boundary is required.
+
+Put $\varepsilon =\sqrt{t}$ and define
+
+$$\rho_\varepsilon=e^{-U/\varepsilon^2},\qquad
+Z_\varepsilon=\int_{\mathbb R^n}\rho_\varepsilon\,dx,\qquad
+d\mu_\varepsilon=Z_\varepsilon^{-1}\rho_\varepsilon\,dx,
+\qquad\beta(s)=\frac{\sqrt\pi}{2\sqrt{a(s)}}.\tag{1.4}$$
+
+Let $\mu _0$ be uniform probability on $\Omega$, $V=|\Omega |$, $C_0=C_{\mathrm{LS}}(\mu _0)$, and $P_0=C_P(\mu _0)$. For $h\in H^{1}(\Omega )$, let $E(h)=\int _\Omega |\nabla h|^{2}$. Let $\mathcal{E}$ be the set of nonconstant real extremizers for $C_0$ normalized by $\int _\Omega h^{2}=V$. Let
+
+$$\mathcal F=\left\{u\in H^1(\Omega):
+\int_\Omega u=0,\quad E(u)=1,\quad\int_\Omega u^2=P_0\right\}.\tag{1.5}$$
+
+Thus $\mathcal{F}$ is the unit-energy sphere in the first positive Neumann eigenspace. Boundary values in the following expressions are traces:
+
+$$\mathcal B_U(h)=\frac1{2E(h)}
+\left[\int_{\partial\Omega}\beta(h^2\log h^2-h^2+1)\,d\sigma
+-2C_0\int_{\partial\Omega}\beta|\nabla_\tau h|^2\,d\sigma\right],\tag{1.6}$$
+
+$$\mathcal S_U(u)=\int_{\partial\Omega}\beta
+\left(u^2-P_0|\nabla_\tau u|^2\right)d\sigma.\tag{1.7}$$
+
+**Theorem 1.1.** Under (1.2)–(1.3), the constant $C_{\mathrm{LS}}(\mu _\varepsilon )$ is finite for sufficiently small $\varepsilon$ and
+
+$$C_{\mathrm{LS}}(\mu_\varepsilon)=C_0+\varepsilon\Lambda_{\Omega,U}+o(\varepsilon),\tag{1.8}$$
+
+where
+
+$$\Lambda_{\Omega,U}=
+\begin{cases}
+\displaystyle\max_{h\in\mathcal E}\mathcal B_U(h),&C_0>P_0,\\[3pt]
+\displaystyle\max\left\{\sup_{h\in\mathcal E}\mathcal B_U(h),
+\max_{u\in\mathcal F}\mathcal S_U(u)\right\},&C_0=P_0.
+\end{cases}\tag{1.9}$$
+
+Here $\sup\emptyset=-\infty$. Every member of $\mathcal{E}$ belongs to $H^{2}(\Omega )$, and $\mathcal{E}$ is nonempty if $C_0>P_0$. The coefficient is finite and is realized either by a member of $\mathcal{E}$ or, in the equality case, by a member of $\mathcal{F}$.
+
+Equality $C_0=P_0$ is not used to assert absence of nonlinear extremizers. The maximum in (1.9) includes every possible limiting regime. The result treats quadratic boundary growth; it does not assert the broader power-law Poincaré result of [1] for log-Sobolev constants.
+
+All functions are real and 0 log 0=0. Weighted $H^{1}$ spaces include the weighted $L^{2}$ norm of both the function and its gradient. We use standard extension, Sobolev, compactness and trace results on smooth bounded domains and the $H^{2}$ estimate for the Neumann Laplacian; see [4, 5]. In particular, a bounded $H^{1}$ family has a bounded trace in some $L^p(\partial \Omega )$, p>2, in every finite dimension considered.
+
+## 2. Exterior geometry and energy
+
+Convexity gives global exterior normal coordinates $x=s+r\nu (s)$, r>0. If S is the shape operator and $\kappa _i\geq 0$ its principal curvatures, then
+
+$$J(s,r)=\prod_{i=1}^{n-1}(1+r\kappa_i(s)),\qquad
+|\nabla f|^2=|\partial_r f|^2+
+|(I+rS)^{-1}\nabla_\tau f|^2.\tag{2.1}$$
+
+Let K bound the curvatures. For $\varepsilon \leq 1$, the rescaled density is dominated by $\exp (-\alpha u^{2})(1+Ku)^{n-1}$. Dominated convergence using (1.3), uniformly on compact u intervals and then uniformly in the tail, yields
+
+$$b_\varepsilon(s):=\frac1\varepsilon\int_0^\infty
+e^{-U(s+r\nu)/\varepsilon^2}J(s,r)\,dr\longrightarrow\beta(s)
+\quad\text{uniformly on }\partial\Omega.\tag{2.2}$$
+
+Write $\omega(\varepsilon)=\|b_\varepsilon-\beta\|_\infty$. Consequently
+
+$$Z_\varepsilon=V+\varepsilon\int_{\partial\Omega}\beta\,d\sigma+o(\varepsilon),
+\qquad W_\varepsilon:=\int_D\rho_\varepsilon=O(\varepsilon).\tag{2.3}$$
+
+**Lemma 2.1 (anchored collapse).** With $\pi$ the nearest-point projection onto the closure of $\Omega$,
+
+$$\int_D|f-f\circ\pi|^2\rho_\varepsilon
+\leq C\varepsilon^2\int_D|\partial_r f|^2\rho_\varepsilon.\tag{2.4}$$
+
+**Proof.** For a fixed s, put $U_s(r)=U(s+r\nu )$, $w(r)=\exp (-U_s(r)/\varepsilon ^{2})J(s,r)$ and $W(r)=\int _r^\infty w$. Since $U_s$ is convex and $U_s(0)=0$, its increasing derivative gives $U_s(r+v)-U_s(r)\geq U_s(v)\geq \alpha v^{2}$. Also $J(s,r+v)/J(s,r)\leq (1+Kv)^{n-1}$. Thus $W(r)/w(r)\leq C\varepsilon$. For $g(r)=f(s+r\nu )-f(s)$, integration by parts and Cauchy–Schwarz give
+
+$$\int_0^\infty g^2w=2\int_0^\infty gg'W
+\leq2C\varepsilon\left(\int g^2w\int(g')^2w\right)^{1/2}.\tag{2.5}$$
+
+Initially f is smooth and compactly supported, so the endpoint terms vanish. Squaring and integrating in s proves the assertion, which extends by weighted $H^{1}$ approximation. ∎
+
+**Lemma 2.2 (energy lower limit).** If $\varepsilon _j\downarrow 0$ and $f_j|_\Omega$ converges weakly in $H^{1}(\Omega )$ to h, then
+
+$$\liminf_j\frac1{\varepsilon_j}\int_D|\nabla f_j|^2\rho_{\varepsilon_j}
+\geq\int_{\partial\Omega}\beta|\nabla_\tau\operatorname{Tr}h|^2.\tag{2.6}$$
+
+The right side is infinite when $\operatorname{Tr}h\notin H^1(\partial\Omega)$.
+
+**Proof.** It suffices to consider a subsequence realizing a finite left side, with exterior energy $O(\varepsilon _j)$. Compactness of the trace gives strong $L^{2}$ convergence on $\partial \Omega$. Put $v_j(s,u)=f_j(s+\varepsilon _ju\nu )$. On any fixed strip $0\leq u\leq R$, (2.4) implies $\|v_j-\operatorname{Tr}f_j\|_{L^2}^2=O_R(\varepsilon_j^2)$; the rescaled weight is bounded above and below there. Hence $v_j$ converges strongly to $\operatorname{Tr}h$, independent of u. In the rescaled energy the tangential metric tends uniformly to the identity, and the weight tends uniformly to $\exp (-a(s)u^{2})$. Weak lower semicontinuity on each strip gives the bound with $\beta$ replaced by $\int_0^R\exp(-a(s)u^2)\,du$. Let $R\to \infty$. A finite bound also gives the asserted tangential Sobolev regularity. ∎
+
+## 3. Uniform entropy expansion
+
+Put $\Phi(z)=z^2\log z^2$ and $\log_+r=\max(\log r,0)$, with $\log _+0=0$. The next lemma controls the entire exterior, including its unbounded tail.
+
+**Lemma 3.1 (zero-trace entropy).** If $g\in H^1(D,\rho_\varepsilon\,dx)$ has zero trace, $m=\int _Dg^{2}\rho _\varepsilon$ and $k=8/\alpha$, then for sufficiently small $\varepsilon$,
+
+$$\int_D\Phi(g)\rho_\varepsilon-m\log m
+\leq k\varepsilon^2\int_D|\nabla g|^2\rho_\varepsilon
++\left[\frac{kA}{2}-n-\frac n2\log(\pi k\varepsilon^2)\right]m.\tag{3.1}$$
+
+**Proof.** Gross's Gaussian inequality [3], applied after division by the square root of the density $(\pi q)^{-n/2}\exp (-|x|^{2}/q)$, gives
+
+$$\int h^2\log h^2-m\log m
+\leq q\int|\nabla h|^2-\left[n+\frac n2\log(\pi q)\right]m,
+\qquad m=\int h^2.\tag{3.2}$$
+
+The cross term is $2\int hx\cdot \nabla h=-nm$, and the second moments cancel. Apply (3.2) to h=g $\exp (-U/(2\varepsilon ^{2}))$, with $q=k\varepsilon ^{2}$, first for smooth compactly supported g in D. Integration by parts yields (3.1) plus the integral of
+
+$$\left(\frac k2\Delta U-\frac{k}{4\varepsilon^2}|\nabla U|^2
++\frac{U}{\varepsilon^2}-\frac{kA}{2}\right)g^2\rho_\varepsilon.\tag{3.3}$$
+
+This integral is nonpositive. Indeed convexity gives $U(x)\leq |\nabla U(x)|\operatorname{dist}(x,\Omega )$, so (1.2) implies $|\nabla U|^{2}\geq \alpha U$. If $2B\varepsilon ^{2}\leq 1/2$, the coefficient in (3.3) is bounded by $-k|\nabla U|^{2}/(8\varepsilon ^{2})+U/\varepsilon ^{2}\leq 0$.
+
+For general zero-trace g, use compact weighted $H^{1}$ approximation. This density follows from cutoff at infinity and ordinary zero-trace density on bounded smooth portions, where the weight and its reciprocal are bounded. The negative part $\Phi_-$ is globally Lipschitz and is bounded by $C|g|$; weighted $L^{2}$ convergence implies weighted $L^{1}$ convergence because $W_\varepsilon <\infty$. Fatou applied to $\Phi _+$ therefore passes (3.1) to the limit. The potential terms have already been eliminated, so no unproved potential-moment integrability is needed. ∎
+
+If the energy of g is bounded, (2.4) gives $m=O(\varepsilon ^{2})$. Since $W_\varepsilon =O(\varepsilon )$, (3.1) then implies
+
+$$\int_D|g|\rho_\varepsilon=O(\varepsilon^{3/2}),\qquad
+\int_Dg^2\log_+(g^2)\rho_\varepsilon=O(\varepsilon^{3/2}).\tag{3.4}$$
+
+For the second bound, the signed entropy is at most $O(\varepsilon^2(1+|\log\varepsilon|))$; its negative part is $O(\varepsilon ^{3/2})$ by the first bound. This also proves absolute entropy integrability.
+
+**Proposition 3.2 (uniform exterior integrals).** Suppose
+
+$$\|f\|_{H^1(\Omega)}^2+\int_D|\nabla f|^2\rho_\varepsilon\leq M.\tag{3.5}$$
+
+For any family of $C^{1}$ functions $\Psi$ satisfying, with a common L,
+
+$$|\Psi(0)|\leq L,\qquad
+|\Psi'(z)|\leq L[1+|z|(1+\log_+|z|)],\tag{3.6}$$
+
+one has uniformly
+
+$$\int_D\Psi(f)\rho_\varepsilon
+=\varepsilon\int_{\partial\Omega}\beta\Psi(\operatorname{Tr}f)\,d\sigma
++O_{L,M}(\varepsilon^{3/2}+\varepsilon\omega(\varepsilon)).\tag{3.7}$$
+
+In particular it applies to $f^{2}$ and $\Phi (f)$, and
+
+$$\int_D\left[f^2+|\Phi(f)|\right]\rho_\varepsilon=O_M(\varepsilon).\tag{3.8}$$
+
+**Proof.** Extend $f|_\Omega$ by a fixed bounded $H^{1}$ extension u, supported in a fixed exterior collar $0\leq r\leq R$. The parallel surfaces in that collar have uniform trace bounds. For some p>2,
+
+$$\sup_{0\leq r\leq R}\|u(s+r\nu)\|_{L^p(\partial\Omega)}\leq C_M,
+\qquad\|u(s+r\nu)-\operatorname{Tr}f\|_{L^2(\partial\Omega)}\leq C_M\sqrt r.\tag{3.9}$$
+
+The second estimate follows by the fundamental theorem along normal rays and Cauchy–Schwarz. The first is the Sobolev trace theorem transported along a uniformly smooth family of surfaces. For $n\geq 3$ one may take $p=2(n-1)/(n-2)$; for n=2 take any fixed finite p>2.
+
+Choose $\eta >0$ with $2+2\eta \leq p$. Bound (3.6) gives a slice difference $O_{L,M}(\sqrt{r})$ by Cauchy–Schwarz and the growth bound $1+|z|^{1+\eta }$. Integration against $\exp (-\alpha r^{2}/\varepsilon ^{2})J$ yields $O(\varepsilon ^{3/2})$. The replacement $b_\varepsilon \to \beta$ costs at most $C_{L,M}\varepsilon \omega (\varepsilon )$. This proves (3.7) for u.
+
+Now $g=f-u$ has zero trace and bounded exterior energy. From (3.6),
+
+$$|\Psi(u+g)-\Psi(u)|
+\leq C_L|g|[1+|u|(1+\log_+|u|)]
++C_Lg^2(1+\log_+|g|).\tag{3.10}$$
+
+The weighted square integral of the factor multiplying |g| is $O_M(\varepsilon )$, by (3.9). Cauchy–Schwarz, $\int g^{2}\rho =O(\varepsilon ^{2})$, and (3.4) bound the integrated difference by $O_{L,M}(\varepsilon ^{3/2})$. The same estimates for $|\Phi (u)|$, followed by (3.10) with $\Psi =\Phi$, give (3.8). ∎
+
+## 4. Entropy near constants
+
+The absolute remainder in Proposition 3.2 is insufficient when the energy of a near-extremizer tends to zero. We record a uniform rescaled version.
+
+Put $F(y)=\Phi (y)-y^{2}+1$. Fix $Q<\infty$, and consider
+
+$$\Psi_{a,\delta}(z)=\delta^{-2}F(a+\delta z),\qquad
+ a^2=1-\delta^2q,\quad0\leq q\leq Q,\quad\tfrac12\leq a\leq1,\quad0<\delta\leq1.\tag{4.1}$$
+
+**Lemma 4.1.** The functions (4.1) satisfy (3.6) with a bound depending only on Q. If $\delta _j\to 0$ and $v_j$ is bounded in $H^{1}(\Omega )$, with traces converging in $L^{2}$ to b, then
+
+$$\int_{\partial\Omega}\beta\Psi_{a_j,\delta_j}(v_j)
+\longrightarrow2\int_{\partial\Omega}\beta b^2.\tag{4.2}$$
+
+**Proof.** Since $a-1=O_Q(\delta ^{2})$ and $F(1)=F'(1)=0$, the values $\Psi _{a,\delta }(0)$ are uniformly bounded. For $k(y)=F'(y)=2y\log y^2$, defined continuously at zero,
+
+$$|k(a+t)-k(a)|\leq C|t|(1+\log_+|t|)\qquad(1/2\leq a\leq1).\tag{4.3}$$
+
+Near t=0 this is ordinary smoothness away from zero. On other bounded t intervals, divide the continuous numerator by |t| bounded away from zero; at infinity use the logarithmic growth. Also $k(a)=O_Q(\delta ^{2})$. Dividing (4.3) by $\delta$ proves (3.6). For bounded z, Taylor expansion at 1 gives $\Psi _{a_j,\delta _j}(z)\to 2z^{2}$ uniformly. The uniform bound $C_Q[1+z^{2}(1+\log _+|z|)]$ and a trace exponent greater than two imply uniform integrability, which proves (4.2). ∎
+
+We also need a zeroth-order entropy linearization. If a stays in a compact subset of $(0,\infty )$, define
+
+$$R_a(z)=\Phi(a+z)-\Phi(a)-\Phi'(a)z-(\log a^2+3)z^2.\tag{4.4}$$
+
+Uniformly in a, $R_a(z)/z^{2}\to 0$ as $z\to 0$ and, for $0<\delta \leq 1$,
+
+$$\delta^{-2}|R_a(\delta v)|\leq Cv^2(1+\log_+|v|).\tag{4.5}$$
+
+To verify the global bound, use Taylor expansion near z=0, continuity on the remaining bounded interval, including $z=-a$, and logarithmic growth at infinity. Suppose $\mu _j$ is a sequence of probabilities, $\delta _j\to 0$, and the integrated left side of (4.5) tends to zero. If the first two moments of $v_j$ are bounded, expansion of m log m at $m=a_j^{2}$ gives
+
+$$\operatorname{Ent}_{\mu_j}((a_j+\delta_jv_j)^2)
+=2\delta_j^2\operatorname{Var}_{\mu_j}(v_j)+o(\delta_j^2).\tag{4.6}$$
+
+Indeed write $b_j=\int v_jd\mu _j$ and $q_j=\int v_j^{2}d\mu _j$. The mass is $a_j^{2}+2a_j\delta _jb_j+\delta _j^{2}q_j$. Its entropy expansion subtracts the constant and linear terms, together with $(\log a_j^2+1)\delta_j^2q_j+2\delta_j^2b_j^2$; the remaining quadratic term is $2\delta _j^{2}(q_j-b_j^{2})$. Negative $a_j$ is treated by a sign change. On $\Omega$ the remainder assumption follows from a bounded $H^{1}$ norm and Sobolev uniform integrability. For $\mu _{\varepsilon _j}$ it also holds for families with bounded interior $H^{1}$ norm and exterior energy: on D, (3.8) makes the integral of the right side of (4.5) $O(\varepsilon _j)$.
+
+## 5. Limiting extremizers
+
+Nonconstant log-Sobolev extremizers and their nonlinear Euler equations belong to the classical theory; see the account in [1, Remark 1.11], which attributes the strict-gap existence result to Rothaus [11]. We give the compactness and regularity arguments needed here, including the behavior of the boundary coefficient when extremizers approach constants. No classical existence theorem is claimed as new. A bounded $H^{1}(\Omega )$ sequence converging in $L^{2}$ has convergent integrals of $\Phi$: interpolate to an exponent strictly between two and an available Sobolev exponent, then use uniform integrability. The analogous statement holds for boundary traces, by compactness in $L^{2}$ and a bounded trace exponent above two.
+
+The constant $C_0$ is finite. To see this directly, normalize $\int _\Omega h^{2}=V$ and consider sequences of quotients. If $E(h)\to \infty$, put $w=h/\sqrt{E(h)}$. Then E(w)=1 and $\|w\|_2\to0$, so the entropy numerator of w tends to zero by Sobolev compactness, including its mass-log-mass term. The quotient tends to zero. If the energies stay in a compact subinterval of $(0,\infty )$, the numerators are bounded. If $E(h)\to 0$, let $a=V^{-1}\int h$ and $v=(h-a)/\sqrt{E(h)}$. Poincaré bounds v in $H^{1}$, normalization gives $|a|\to 1$, and (4.6) bounds the limiting quotient by $P_0$. These alternatives preclude arbitrarily large quotients. Linearization gives $C_0\geq P_0>0$.
+
+If $C_0>P_0$, a normalized maximizing sequence has energy bounded above and away from zero. Take a weak $H^{1}$ and strong $L^{2}$ limit h and an energy limit e>0. Entropy continuity and the sharp inequality imply
+
+$$C_0=\frac{\int_\Omega\Phi(h)}{2e}
+\leq C_0\frac{E(h)}e\leq C_0.\tag{5.1}$$
+
+Equality proves $h\in \mathcal{E}$, e=E(h)>0 and strong $H^{1}$ convergence. More generally, in either regime, every sequence in $\mathcal{E}$ has uniformly bounded $H^{1}$ norm; subsequences with energy bounded below have the same compactness conclusion.
+
+At $h\in \mathcal{E}$, differentiate the nonpositive functional
+
+$$N_0(f)-2C_0E(f),\qquad
+N_0(f)=\int_\Omega\Phi(f)-M_0(f)\log(M_0(f)/V),\quad M_0(f)=\int_\Omega f^2.\tag{5.2}$$
+
+Its value at h is zero. The subcritical growth of $z\log z^2$ justifies variations in $H^{1}$, and gives
+
+$$2C_0\int_\Omega\nabla h\cdot\nabla\varphi
+=\int_\Omega h\log h^2\,\varphi\qquad(\varphi\in H^1(\Omega)).\tag{5.3}$$
+
+Thus $-2C_0\Delta h=h\log h^2$ with homogeneous Neumann data. No multiplier is missing: the mass term was differentiated before using $M_0(h)=V$. The right side is in $L^{2}$, uniformly on $H^{1}$-bounded families, because $|z\log z^2|\leq C_\eta(1+|z|^{1+\eta})$ and one may choose $2+2\eta$ below a Sobolev exponent. For the regularity step, take the positive Neumann realization of $I-\Delta$. On a bounded $C^{2}$ domain its $L^{2}$ operator domain is $H^{2}$ with zero normal derivative, and its form domain is $H^{1}$; see [5, Section 5, (5.6)–(5.7)] with p=2. Equation (5.3) therefore places h in that operator domain. The graph-norm estimate gives a uniform $H^{2}$ bound on $\mathcal{E}$. Its elements therefore have $H^{1}$ boundary traces. Strong $H^{1}$ convergence together with this bound implies strong $H^s$ convergence for s<2, and hence strong $H^{1}$ convergence of the traces by choosing s>3/2.
+
+It remains to control sequences $h_j\in \mathcal{E}$ with $E(h_j)=\delta _j^{2}\to 0$. Write $h_j=a_j+\delta _jv_j$, with zero mean $v_j$ and $E(v_j)=1$, and change signs so $a_j>0$. Then (4.1) holds with $q_j=V^{-1}\int v_j^{2}$. Formula (4.6) and Poincaré show that this case forces $C_0=P_0$, and $v_j$ converges strongly in $H^{1}$ along a subsequence to $u\in \mathcal{F}$. Dividing (5.3) by $\delta _j$ gives
+
+$$-2C_0\Delta v_j=\delta_j^{-1}(a_j+\delta_jv_j)\log(a_j+\delta_jv_j)^2,
+\qquad\partial_\nu v_j=0.\tag{5.4}$$
+
+By (4.3), its right side is bounded in $L^{2}$, using the $H^{1}$ bound on $v_j$ and $a_j\log a_j^2=O(\delta_j^2)$. Hence $v_j$ is uniformly $H^{2}$ and its traces converge in $H^{1}$. Lemma 4.1 now yields
+
+$$\mathcal B_U(h_j)=\frac12\int_{\partial\Omega}\beta\Psi_{a_j,\delta_j}(v_j)
+-C_0\int_{\partial\Omega}\beta|\nabla_\tau v_j|^2
+\longrightarrow\mathcal S_U(u).\tag{5.5}$$
+
+These conclusions prove that the coefficient in (1.9) is finite and attained in the stated sense. A maximizing sequence with positive limiting energy gives a nonlinear extremizer; one with vanishing energy gives a member of the compact first eigensphere. In the strict-gap case the latter alternative is excluded.
+
+## 6. Compactness for the Gibbs measures
+
+For weighted $H^{1}$ functions write
+
+$$M_\varepsilon(f)=\int f^2\rho_\varepsilon,\quad
+N_\varepsilon(f)=\int\Phi(f)\rho_\varepsilon
+-M_\varepsilon(f)\log(M_\varepsilon(f)/Z_\varepsilon),\quad
+E_\varepsilon(f)=\int|\nabla f|^2\rho_\varepsilon.\tag{6.1}$$
+
+The quotient $Q_\varepsilon =N_\varepsilon /(2E_\varepsilon )$ is homogeneous and equals the probability-normalized quotient. Proposition 3.2 gives absolute entropy integrability for each weighted $H^{1}$ function. The supremum agrees with the smooth compactly supported definition: weighted $H^{1}$ approximation and lower semicontinuity extend any smooth-test inequality, while the reverse inclusion is immediate.
+
+Fixed smooth tests on $\Omega$, extended to a fixed collar, give $\liminf_{\varepsilon\downarrow0}C_{\mathrm{LS}}(\mu_\varepsilon)\geq C_0$. Consider $\varepsilon _j\downarrow 0$ and functions with $Q_{\varepsilon _j}(f_j)\geq C_0-o(1)$, normalized by $M_{\varepsilon _j}(f_j)=Z_{\varepsilon _j}$.
+
+Their energies cannot tend to infinity. Otherwise $w_j=f_j/\sqrt{E_{\varepsilon_j}(f_j)}$ has unit energy, vanishing interior $L^{2}$ norm and bounded interior $H^{1}$ norm. Interior entropy tends to zero; exterior absolute entropy is $O(\varepsilon _j)$ by (3.8). Its mass is $Z_{\varepsilon _j}/E_{\varepsilon _j}(f_j)\to 0$, so its mass-log-mass term also tends to zero. Thus $Q_{\varepsilon _j}(f_j)\to 0$, a contradiction.
+
+If the energies stay bounded away from zero, let h be a weak $H^{1}$ interior limit and e>0 an energy limit. Proposition 3.2 gives vanishing exterior mass and entropy, hence $\int _\Omega h^{2}=V$ and
+
+$$\lim Q_{\varepsilon_j}(f_j)=\frac{N_0(h)}{2e}
+\leq C_0\frac{E(h)}e\leq C_0.\tag{6.2}$$
+
+If energy tends to zero, put $\delta _j=\sqrt{E_{\varepsilon_j}(f_j)}$, $a_j=V^{-1}\int _\Omega f_j$ and $v_j=(f_j-a_j)/\delta _j$. The interior mean of $v_j$ is zero and its total weighted energy is one. Poincaré bounds its interior $H^{1}$ norm; (3.8) gives
+
+$$\int_D[v_j^2+|\Phi(v_j)|]\rho_{\varepsilon_j}=O(\varepsilon_j),
+\qquad\int_D|v_j|\rho_{\varepsilon_j}=O(\varepsilon_j).\tag{6.3}$$
+
+Consequently its first two $\mu _{\varepsilon _j}$ moments are bounded and $|a_j|\to 1$. The varying-measure version of (4.6) yields
+
+$$Q_{\varepsilon_j}(f_j)
+=Z_{\varepsilon_j}\operatorname{Var}_{\mu_{\varepsilon_j}}(v_j)+o(1)
+=\int_\Omega v_j^2+o(1)\leq P_0+o(1).\tag{6.4}$$
+
+The squared mean in the middle expression is $O(\varepsilon _j^{2})$, because the interior mean is zero and (6.3) controls the exterior mean.
+
+The preceding alternatives prove $C_{\mathrm{LS}}(\mu _\varepsilon )\to C_0$ and its finiteness for sufficiently small $\varepsilon$. There is no circular finiteness assumption: if infinite or unbounded constants occurred along $\varepsilon _j\downarrow 0$, select functions with diverging quotients; the same alternatives contradict their existence.
+
+For a near-optimal sequence $Q_\varepsilon (f_\varepsilon )=C_{\mathrm{LS}}(\mu _\varepsilon )+o(1)$, equality in (6.2), on the positive-energy branch, gives
+
+$$f_\varepsilon|_\Omega\to h\in\mathcal E\text{ strongly in }H^1,
+\quad E_\varepsilon(f_\varepsilon)\to E(h)>0,
+\quad\int_D|\nabla f_\varepsilon|^2\rho_\varepsilon\to0.\tag{6.5}$$
+
+On the vanishing-energy branch, (6.4) forces $C_0=P_0$. Since exterior mass vanishes, rescaling to $\int _\Omega f_\varepsilon ^{2}=V$ uses a scalar tending to one. Redefine $\delta _\varepsilon =\sqrt{E_\varepsilon(f_\varepsilon)}$, $a_\varepsilon =V^{-1}\int _\Omega f_\varepsilon$ and $v_\varepsilon =(f_\varepsilon -a_\varepsilon )/\delta _\varepsilon$. Then (4.1) holds, with $q_\varepsilon \leq P_0/V$. A weak limit u has $\int u^{2}=P_0$ and $E(u)\leq 1$; Poincaré forces equality. Therefore
+
+$$v_\varepsilon|_\Omega\to u\in\mathcal F\text{ strongly in }H^1,
+\qquad\int_D|\nabla v_\varepsilon|^2\rho_\varepsilon\to0.\tag{6.6}$$
+
+## 7. First-order selection
+
+For $h\in \mathcal{E}$, extend h constantly along exterior normals, with a fixed smooth cutoff at a positive distance. Its $H^{1}$ trace and interior $H^{2}$ regularity give an admissible global $H^{1}$ function. Normal integration, (2.2) and (2.1) give
+
+$$M_\varepsilon(h)=V+\varepsilon\int_{\partial\Omega}\beta h^2+o_h(\varepsilon),
+\quad E_\varepsilon(h)=E(h)+\varepsilon\int_{\partial\Omega}\beta|\nabla_\tau h|^2+o_h(\varepsilon).\tag{7.1}$$
+
+The analogous formula holds for $\int \Phi (h)\rho$. Since $M_0=Z_0=V$, the first variation of M log(M/Z) is $M'-Z'$. Therefore
+
+$$Q_\varepsilon(h)=C_0+\varepsilon\mathcal B_U(h)+o_h(\varepsilon).\tag{7.2}$$
+
+Only integrability of the boundary entropy and tangential energy is used; pointwise second derivatives of the extension are unnecessary. The fixed-distance cutoff contributes an exponentially small term.
+
+For $u\in \mathcal{F}$, the same extension gives a Poincaré quotient
+
+$$\frac{\int u^2\rho_\varepsilon-Z_\varepsilon^{-1}(\int u\rho_\varepsilon)^2}
+{E_\varepsilon(u)}
+=P_0+\varepsilon\mathcal S_U(u)+o_u(\varepsilon).\tag{7.3}$$
+
+Its interior mean is zero, so the squared-mean term is $O(\varepsilon ^{2})$. Since $C_{\mathrm{LS}}\geq C_P$, (7.2)–(7.3) prove the lower derivative bound in (1.9), and $C_{\mathrm{LS}}(\mu _\varepsilon )\geq C_0-K\varepsilon$ for small $\varepsilon$.
+
+Choose $Q_\varepsilon (f_\varepsilon )\geq C_{\mathrm{LS}}(\mu _\varepsilon )-\varepsilon ^{2}$. On a positive-energy subsequence use (6.5), and normalize $\int _\Omega f_\varepsilon ^{2}=V$ by a scalar tending to one. Write $I_\varepsilon =E(f_\varepsilon |_\Omega )$, $G_\varepsilon =\int _D|\nabla f_\varepsilon |^{2}\rho _\varepsilon$ and $d_\varepsilon =2C_0I_\varepsilon -N_0(f_\varepsilon )\geq 0$. Proposition 3.2 and the normalization calculation give
+
+$$Q_\varepsilon(f_\varepsilon)-C_0
+=\frac{-d_\varepsilon+\varepsilon\int_{\partial\Omega}\beta F(f_\varepsilon)
+-2C_0G_\varepsilon+o(\varepsilon)}{2(I_\varepsilon+G_\varepsilon)}.\tag{7.4}$$
+
+The remainder is uniform and the boundary entropy integral is bounded. The $O(\varepsilon )$ lower bound and $d_\varepsilon \geq 0$ imply $G_\varepsilon =O(\varepsilon )$. Strong interior $H^{1}$ convergence gives convergence of the boundary entropy. Drop $-d_\varepsilon$, divide by $\varepsilon$, and use Lemma 2.2 and $I_\varepsilon +G_\varepsilon \to E(h)>0$. The upper derivative is at most $\mathcal{B} _U(h)$.
+
+On a vanishing-energy subsequence use (6.6). For an interior-normalized f, let $b_\varepsilon =\int _D(f^{2}-1)\rho _\varepsilon$ and $H(z)=(1+z)\log (1+z)-z$. Direct algebra gives the exact identity
+
+$$N_\varepsilon(f)=N_0(f)+\int_DF(f)\rho_\varepsilon
+-Z_\varepsilon H(b_\varepsilon/Z_\varepsilon)
+\leq N_0(f)+\int_DF(f)\rho_\varepsilon,\tag{7.5}$$
+
+because $H\geq 0$ on $z>-1$. Put $f_\varepsilon =a_\varepsilon +\delta _\varepsilon v_\varepsilon$, with the vanishing-energy normalization in Section 6, and now let $G_\varepsilon =\int _D|\nabla v_\varepsilon |^{2}\rho _\varepsilon$. Divide (7.5) by $2\delta _\varepsilon ^{2}$. The sharp interior inequality, Proposition 3.2 and Lemma 4.1 give
+
+$$Q_\varepsilon(f_\varepsilon)-C_0
+\leq-C_0G_\varepsilon
++\frac\varepsilon2\int_{\partial\Omega}\beta\Psi_{a_\varepsilon,\delta_\varepsilon}(v_\varepsilon)
++o(\varepsilon).\tag{7.6}$$
+
+Crucially, the error is uniform in the vanishing $\delta _\varepsilon$. The boundary integral is bounded, so the lower bound again gives $G_\varepsilon =O(\varepsilon )$. Lemma 2.2 applied to $v_\varepsilon$, together with (4.2), bounds the upper derivative by $\mathcal{S} _U(u)$. Here $C_0=P_0$, as proved in Section 6.
+
+Every sequence $\varepsilon _j\downarrow 0$ has a subsequence in one of these two energy regimes. The lower bounds, upper bounds and coefficient compactness from Section 5 prove Theorem 1.1. ∎
+
+## 8. Consequences and examples
+
+**Boundary-profile invariance.** Two potentials satisfying the hypotheses with the same domain and the same a(s) have the same first-order coefficient. This follows directly from (1.6)–(1.9). In particular the potentials $\operatorname{dist}(\cdot ,\Omega )^{2}$ and $\operatorname{dist}(\cdot ,\Omega )^{2}+\operatorname{dist}(\cdot ,\Omega )^{4}$ give the same coefficient. The latter is convex; its gradient grows as $r^{3}$ and its Laplacian as $O(1+r^{2})$, so (1.2) holds, while a=1 in both cases.
+
+**The one-dimensional normalization.** Although the theorem was stated for $n\geq 2$, the argument also applies to an interval (a,b), with no tangential energy and counting measure on its two endpoints. The limiting log-Sobolev constant equals $P_0=(b-a)^{2}/\pi ^{2}$ and has no nonconstant extremizer, as recalled in [1]. A unit-energy first Neumann eigenfunction has squared endpoint values $2(b-a)/\pi ^{2}$. Thus the coefficient is
+
+$$\sqrt2\,(b-a)\pi^{-3/2}
+\left(U''(a^-)^{-1/2}+U''(b^+)^{-1/2}\right),\tag{8.1}$$
+
+agreeing with [1, Theorem 1.10]. This is a normalization check and a recovery of a known result.
+
+**A criterion for the nonlinear regime.** If a bounded first Neumann eigenfunction v has mean zero and $\int _\Omega v^{3}\neq 0$, then $C_0>P_0$. Indeed, writing expectations with respect to $\mu _0$ and using a small real $\delta$,
+
+$$\operatorname{Ent}_{\mu_0}((1+\delta v)^2)
+=2\delta^2\mathbb E_{\mu_0}v^2
++\frac23\delta^3\mathbb E_{\mu_0}v^3+O(\delta^4),\tag{8.2}$$
+
+so its quotient is
+
+$$P_0+\frac{\delta\,\mathbb E_{\mu_0}v^3}
+{3\mathbb E_{\mu_0}|\nabla v|^2}+O(\delta^2).\tag{8.3}$$
+
+Choose the sign of $\delta$. This elementary criterion explains why the nonlinear branch cannot be ignored; no classification of domains satisfying it is asserted here. Neumann eigenfunctions on the smooth bounded domains in the theorem are bounded by standard elliptic regularity.
+
+**Proposition 8.1 (smooth domains in the nonlinear regime).** There are bounded $C^{\infty}$ strictly convex planar domains $\Omega$ for which $C_{\mathrm{LS}}(\mu _0)>C_P(\mu _0)$. In particular the first case of (1.9) occurs within the hypotheses of Theorem 1.1, for $U=\operatorname{dist}(\cdot ,\Omega )^{2}$.
+
+**Proof.** Let T be the open equilateral triangle with vertices (0,0), (1,0) and $(1/2,\sqrt{3}/2)$. Its first positive Neumann eigenvalue is $\lambda =16\pi ^{2}/9$, and one associated eigenfunction is
+
+$$v(x,y)=\cos(4\pi x/3)+2\cos(2\pi x/3)\cos(2\pi y/\sqrt3).\tag{8.4}$$
+
+The spectrum and this eigenfunction are classical; see [6, Section 3.1, (14)–(15)]. Direct differentiation also verifies the equation and all three normal boundary conditions. With uniform expectation on T, its moments are
+
+$$\mathbb E_Tv=0,\qquad \mathbb E_Tv^2=\frac32,
+\qquad \mathbb E_Tv^3=\frac32.\tag{8.5}$$
+
+Here is a Fourier calculation of these integrals. The six rotations of T about the origin fill the regular hexagon with vertices $(\cos (k\pi /3),\sin (k\pi /3))$, $0\leq k\leq 5$. The function v is invariant under these rotations. This hexagon is a fundamental cell for the lattice generated by $(3/2,\sqrt{3}/2)$ and $(0,\sqrt{3})$, and v is periodic for that lattice. Its six exponential frequencies, each with coefficient 1/2, are
+
+$$\mathcal K=\left\{\pm(4\pi/3,0),\quad
+\pm(2\pi/3,2\pi/\sqrt3),\quad
+\pm(2\pi/3,-2\pi/\sqrt3)\right\}.\tag{8.6}$$
+
+Integration over a fundamental cell removes each nonzero dual-lattice frequency. There are six ordered pairs from $\mathcal{K}$ summing to zero. The zero-sum ordered triples are the permutations of two opposite triples of distinct frequencies, hence twelve in total. Their constant coefficients are 6/4 and 12/8, proving (8.5). The averages on the cell and on T agree by rotational invariance.
+
+Since $\mathbb E_T|\nabla v|^2=\lambda\mathbb E_Tv^2$, the test $h=1+\delta v$ has logarithmic Sobolev quotient
+
+$$Q_T(h)=\frac9{16\pi^2}+\frac{3\delta}{16\pi^2}+O(\delta^2).
+\tag{8.7}$$
+
+Fix a sufficiently small $\delta >0$ so $Q_T(h)>P_T=9/(16\pi ^{2})$. This one fixed, globally smooth function will persist under rounding; no selection of an eigenfunction from a split multiple eigenspace is needed.
+
+For an explicit rounding, define the three affine functions
+
+$$\ell_1(x,y)=-y,\qquad
+\ell_2(x,y)=\frac{y-\sqrt3x}{2},\qquad
+\ell_3(x,y)=\frac{y+\sqrt3x-\sqrt3}{2},
+\qquad \Omega_m=\left\{\sum_{i=1}^3e^{m\ell_i}<1\right\}.\tag{8.8}$$
+
+For $m>2\sqrt{3}\log3$ the centroid lies in $\Omega _m$. The Hessian of the defining sum is positive definite because the three normal vectors span $\mathbb{R}^{2}$. Its unique critical point is its minimum, below level one. Thus $\Omega _m$ is bounded, has $C^{\infty}$ boundary and positive curvature. Each $\Omega _m$ lies inside T; the domains increase to T as $m\to \infty$. After translating their common centroid to zero, all sufficiently large $\Omega _m$ contain a common ball and are contained in a common ball.
+
+For completeness, their first positive Neumann eigenvalues $\lambda _m$ converge to $\lambda$. Testing with v minus its $\Omega _m$ mean proves $\limsup_m\lambda_m\leq\lambda$. For the reverse bound, choose eigenfunctions $w_m$ with integral zero and squared $L^{2}$ norm one. Their energies $\lambda _m$ are bounded. The common inner and outer balls give uniformly bounded $H^{1}$ extension operators into a fixed ball; [7, Remark 2.2 and Proposition 2.10] applies to this convex, reflection-symmetric family. After extension and extraction, $w_m$ converges strongly in $L^{2}$ of that ball and weakly in $H^{1}$. Since the indicators of $\Omega _m$ converge almost everywhere to that of T, the limit w has $\int_Tw=0$ and $\int_Tw^2=1$. On every fixed compact subdomain of T, weak lower semicontinuity bounds the energy of w by $\liminf_m\lambda_m$. Exhausting T and applying its Poincaré inequality gives $\lambda\leq\int_T|\nabla w|^2\leq\liminf_m\lambda_m$. This proves the convergence.
+
+Dominated convergence for the fixed h gives $Q_{\Omega _m}(h)\to Q_T(h)$, while $P_{\Omega _m}=\lambda _m^{-1}\to P_T$. Hence $C_{\mathrm{LS}}(\mu _{\Omega _m})\geq Q_{\Omega _m}(h)>P_{\Omega _m}$ for every sufficiently large m. Finally, squared distance to the closure of $\Omega _m$ is convex and $C^{1}$ globally, is $C^{2}$ outside, has $a=\alpha =1$ and satisfies $\Delta U\leq 2n$, so it meets (1.2)–(1.3). ∎
+
+The example establishes that the nonlinear case is nonvacuous even for smooth strictly convex domains. The triangle spectrum and domain-extension machinery are existing results; this proposition is an application within the present paper, not a separate claimed research problem.
+
+The theorem leaves open other boundary exponents, degenerate normal stiffness, and geometric or analytic classification of the maximizing nonlinear extremizers. Its proof supplies uniform entropy estimates that may also be useful for further perturbations, but no such extension is claimed without its required tail and compactness estimates.
+
+## References
+
+1. Aziz Ben Nejma, *Low-Temperature Asymptotics of the Poincaré and the log-Sobolev Constants for Łojasiewicz Potentials*, arXiv:2604.01785v1 (2026). [Primary text](https://arxiv.org/html/2604.01785v1).
+2. Sinho Chewi and Austin J. Stromme, *The ballistic limit of the log-Sobolev constant equals the Polyak–Łojasiewicz constant*, arXiv:2411.11415v1 (2024). [Primary text](https://arxiv.org/html/2411.11415v1).
+3. Leonard Gross, *Logarithmic Sobolev inequalities*, American Journal of Mathematics 97 (1975), 1061–1083. [DOI](https://doi.org/10.2307/2373688).
+4. William McLean, *Strongly Elliptic Systems and Boundary Integral Equations*, Cambridge University Press, 2000. [Publisher front matter](https://assets.cambridge.org/97805216/63328/frontmatter/9780521663328_frontmatter.pdf). Used for classical Sobolev extension and trace facts; the Neumann operator-domain statement is specified in [5].
+
+5. Gerd Grubb, *Regularity of spectral fractional Dirichlet and Neumann problems*, arXiv:1412.3744v4 (2015), Section 5. [Primary text](https://arxiv.org/pdf/1412.3744v4).
+
+6. Pierre Bérard and Bernard Helffer, *On Courant’s nodal domain property for linear combinations of eigenfunctions. Part I*, Documenta Mathematica 23 (2018), 1561–1585. [Primary text](https://ems.press/content/serial-article-files/26432).
+7. Pierre Bérard and Bernard Helffer, *Level sets of certain Neumann eigenfunctions under deformation of Lipschitz domains: Application to the Extended Courant Property*, Annales de la Faculté des Sciences de Toulouse 30 (2021), 429–462. [Primary text](https://www.numdam.org/item/AFST_2021_6_30_3_429_0.pdf).
+
+8. Marie Bormann, *Functional inequalities for doubly weighted Brownian motion with sticky-reflecting boundary diffusion*, Potential Analysis 64 (2026), article 47. [Published text](https://link.springer.com/content/pdf/10.1007/s11118-026-10284-x.pdf); [arXiv:2409.19336v2](https://arxiv.org/abs/2409.19336v2).
+9. Jean Dolbeault and Michał Kowalczyk, *Uniqueness and rigidity in nonlinear elliptic equations, interpolation inequalities, and spectral estimates*, Annales de la Faculté des Sciences de Toulouse 26 (2017), 949–977. [Primary text](https://afst.centre-mersenne.org/item/10.5802/afst.1557.pdf).
+
+10. Marie Bormann, Max von Renesse and Feng-Yu Wang, *Functional Inequalities for Brownian motion on manifolds with sticky-reflecting boundary diffusion*, arXiv:2401.00206v2 (2024). [Primary text](https://arxiv.org/html/2401.00206v2).
+11. Oscar S. Rothaus, *Diffusion on compact Riemannian manifolds and logarithmic Sobolev inequalities*, Journal of Functional Analysis 42 (1981), 102–109. [DOI](https://doi.org/10.1016/0022-1236(81)90049-5). The historical attribution follows [1]; the arguments used here are supplied in Section 5.

@@ -23,3 +23,7 @@ All entries describe claims in AI-generated drafts. They have not been independe
 ## P14: scalar power-subsequence classification
 
 [P14](papers/P14-scalar-power-repair/manuscript.md) gives a finite iff criterion for scalar recurrence power subsequences, including degeneracy and transients; an exact coefficient-field exponent in the nondegenerate case; an ultimately periodic exponent spectrum; and a terminating least-multiplier computation for s>1. It concerns Dold divisibility, not positivity or journal certification. The [assessment](papers/P14-scalar-power-repair/ASSESSMENT.md) records the original Minton PDF access limitation and provisional priority.
+
+## P40: low-temperature logarithmic Sobolev boundary selection
+
+The claimed theorem gives the sharp first-order coefficient for convex quadratic confinement around smooth bounded convex domains in every finite dimension, incorporating nonlinear extremizers and spectral limits. The unbounded exterior entropy estimate and its vanishing-energy uniformity are the principal proposed advances. Convexity, nondegenerate quadratic growth and a Laplacian bound remain hypotheses. The known spectral formula and interval asymptotic are credited; other boundary exponents and general extremizer classification remain open. See [the full assessment](papers/P40-log-sobolev-boundary-selection/ASSESSMENT.md).
