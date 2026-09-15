@@ -1,0 +1,100 @@
+{
+  "environments": {
+    "theorem": 1,
+    "lemma": 2,
+    "proof": 4,
+    "remark": 1,
+    "corollary": 1
+  },
+  "environment_records": [
+    {
+      "environment": "theorem",
+      "ordinal": 1,
+      "number": "1.1",
+      "id": "theorem-1",
+      "source_label": "thm:main"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 1,
+      "number": "2.1",
+      "id": "lemma-1",
+      "source_label": "lem:rigid"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 2,
+      "number": "2.2",
+      "id": "lemma-2",
+      "source_label": "lem:chain"
+    },
+    {
+      "environment": "remark",
+      "ordinal": 1,
+      "number": "2.3",
+      "id": "remark-1",
+      "source_label": null
+    },
+    {
+      "environment": "corollary",
+      "ordinal": 1,
+      "number": "4.1",
+      "id": "corollary-1",
+      "source_label": "cor:image"
+    }
+  ],
+  "references": 13,
+  "citations": 4,
+  "cited_keys": [
+    "GMV",
+    "SS"
+  ],
+  "bibliography_keys": [
+    "SS",
+    "GMV"
+  ],
+  "equation_labels": [
+    "eq:criterion",
+    "eq:matrices",
+    "eq:impossible",
+    "eq:restriction",
+    "eq:transposed"
+  ],
+  "label_numbers": {
+    "eq:criterion": "1",
+    "thm:main": "1.1",
+    "eq:matrices": "2",
+    "eq:impossible": "3",
+    "lem:rigid": "2.1",
+    "lem:chain": "2.2",
+    "eq:restriction": "4",
+    "eq:transposed": "5",
+    "cor:image": "4.1"
+  },
+  "bibliography_numbers": {
+    "SS": "1",
+    "GMV": "2"
+  },
+  "markdown_author": "Henry Zweiman",
+  "tables": [],
+  "source_tex_sha256": "c1027fd2b88d56d0221c5a326556101c818f3bf1e8357f3bec4b5ad5c8b226e3",
+  "source_pdf_sha256": "3144dd960b8a724c7a86321a5e7e414db039017abc2413e75f5966df6148a8bc",
+  "markdown_sha256": "152afa9cb8c42c8d50b1a49fd95a925ee51d7a0b155185d76ae0fef3fc3941a0",
+  "markdown_bytes": 11691,
+  "source_math_expressions_verified": 166,
+  "markdown_math_expressions": 170,
+  "custom_macros_expanded": [
+    "F",
+    "im",
+    "rk",
+    "End"
+  ],
+  "output_name": "manuscript.md",
+  "source_environment_markers_verified": 29,
+  "semantic_roundtrip_sha256": "2fe09852847d39ea2e833b5ec818c9c95f8d74956f30d2722c54c3c1aa88ec03",
+  "roundtrip_content_equal": true,
+  "standalone_anchor_targets": 20,
+  "warnings": [],
+  "github_live_render_inspected": false,
+  "math_layout_normalizations": {}
+}

@@ -1,0 +1,18 @@
+{
+  "pages": 4,
+  "pdf_sha256": "3144dd960b8a724c7a86321a5e7e414db039017abc2413e75f5966df6148a8bc",
+  "tex_sha256": "c1027fd2b88d56d0221c5a326556101c818f3bf1e8357f3bec4b5ad5c8b226e3",
+  "text_characters_by_page": [
+    2134,
+    2364,
+    1685,
+    2688
+  ],
+  "all_final_pages_visually_reviewed": true,
+  "visual_result": "All four final pages inspected. Equations, matrices, theorem continuation, references and page numbers are legible without clipping or overlap.",
+  "undefined_references": false,
+  "tex_overfull_boxes": false,
+  "markdown_full_roundtrip_passed": true,
+  "markdown_math_errors": 0,
+  "review_type": "same-agent artifact inspection, not peer review"
+}

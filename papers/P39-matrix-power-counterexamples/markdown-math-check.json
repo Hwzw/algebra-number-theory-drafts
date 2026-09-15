@@ -1,0 +1,11 @@
+{
+  "file": "continuation/papers/P39-matrix-power-counterexamples/manuscript.md",
+  "mathjax_version": "3.2.2",
+  "markdown_sha256": "152afa9cb8c42c8d50b1a49fd95a925ee51d7a0b155185d76ae0fef3fc3941a0",
+  "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
+  "expressions": 170,
+  "errors": [],
+  "local_svg_preview_created": false,
+  "local_visual_inspection": false,
+  "github_live_render_inspected": false
+}

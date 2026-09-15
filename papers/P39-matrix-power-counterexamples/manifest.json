@@ -1,0 +1,20 @@
+{
+  "paper": "P39",
+  "author": "Henry Zweiman",
+  "files": {
+    "ASSESSMENT.md": "136cc2787077e247fef191bdbe2780b3d965cd5433b1759187c05b4422f36d55",
+    "README.md": "5675c072beb749a04f3bce61af1c73c8206ab8be359794d60789e0ec9ed130d6",
+    "REVIEW.md": "94982494ae6da380dccea5bd186902ede2da66db13b25c54fa4f4d722843197e",
+    "artifact-qa.json": "47c6eef368bba2121f4793c59f973a6d080375117b8899ca1b08edffa13000b5",
+    "manuscript.md": "152afa9cb8c42c8d50b1a49fd95a925ee51d7a0b155185d76ae0fef3fc3941a0",
+    "manuscript.pdf": "3144dd960b8a724c7a86321a5e7e414db039017abc2413e75f5966df6148a8bc",
+    "manuscript.tex": "c1027fd2b88d56d0221c5a326556101c818f3bf1e8357f3bec4b5ad5c8b226e3",
+    "markdown-conversion.json": "a64fa4ff92034839c716413996e0453e0ea0c6552e0c6a257f3cb2b6f8b495a9",
+    "markdown-math-check.json": "f481bd2809c2e8b9c139f90f48fe85ec9272810e1e3b21f885f92b7ff5f55c67",
+    "q37-counterexample-check.json": "11dd41561d812812daf4b18dd8058917ba5fc0d3ece81f19f1489c70e78f45a9",
+    "q37-counterexample-check.py": "dd3c8e7d35123fdd7459b2188dedf8814ef8bd6bd109632896f951b0cffe01cb",
+    "source-audit.json": "03ede7849289fe1658fb222d551a37af909b6d845442dbeaa0058563798993dd"
+  },
+  "pages": 4,
+  "scope": "Hashes identify reviewed artifacts; they do not certify theorem correctness or novelty."
+}

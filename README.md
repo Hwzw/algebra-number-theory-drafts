@@ -2,7 +2,7 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 38 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 39 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
 
@@ -11,6 +11,12 @@ The material was prepared with OpenAI Codex and collaborating AI agents, includi
 The [selected collection](selected_papers/README.md) contains five consolidated revisions (36 pages), each with complete Markdown, PDF, LaTeX, and an explicit source/significance assessment. Four contain broader structural theorems; P06 retains its Stirling conjecture resolutions and asymptotic. These are revised versions of existing papers, not five additional papers. The [research frontiers](selected_papers/DOWNSTREAM.md) state what remains unresolved.
 
 All thirteen original papers now also have [complete Markdown editions](papers/MARKDOWN.md). Their earlier PDFs and LaTeX files remain unchanged.
+
+## Counterexamples to the matrix-power nullity criterion
+
+[**P39: Counterexamples to a nullity criterion for matrix power maps**](papers/P39-matrix-power-counterexamples/README.md), by **Henry Zweiman**, gives a proposed negative answer to Saini--Singh Question 6.1. For every k>=5, a diagonal idempotent of nullity two in size k+1 has an explicit rank-three target omitted by X^k+B Y^k, despite satisfying the proposed dimension inequality. The proof works over every field. The four-page [PDF](papers/P39-matrix-power-counterexamples/manuscript.pdf), [complete Markdown](papers/P39-matrix-power-counterexamples/manuscript.md), and [LaTeX](papers/P39-matrix-power-counterexamples/manuscript.tex) contain the full argument.
+
+The [assessment](papers/P39-matrix-power-counterexamples/ASSESSMENT.md) compares the exact open question and distinguishes P33's complementary-coefficient result. The [internal review](papers/P39-matrix-power-counterexamples/REVIEW.md) records the universal proof audit and exact diagnostics. The image is also dense but not additive over algebraically closed characteristic-zero fields. No dimension-minimality or complete replacement criterion is claimed. This is one internally checked proposed manuscript; historical priority, independent correctness and significance remain provisional.
 
 ## Word fibres and all metacyclic p-groups
 

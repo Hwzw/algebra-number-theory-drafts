@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-15",
+  "paper": "P39",
+  "author": "Henry Zweiman",
+  "target": "Saini--Singh Question 6.1: sufficiency of n>k(nullity(B)-1)",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2604.27592v1",
+      "history_url": "https://arxiv.org/abs/2604.27592",
+      "current_history": "Only v1, April 30, 2026, listed when inspected September 15",
+      "read_scope": "Introduction, Theorems 1.2/1.3, reductions, Proposition 4.2, rank criterion, and Question 6.1",
+      "comparison": "The proposed counterexamples satisfy the conjectured inequality, have nullity two and size at least six, and do not contradict the established necessity or low-dimensional results."
+    },
+    {
+      "url": "https://arxiv.org/html/2607.27226v1",
+      "read_scope": "Introduction, Question 1.1, Theorems 1.3/1.4 and explicit size-two scope",
+      "comparison": "Related division-algebra and low-dimensional context, not the present higher-dimensional counterexample."
+    }
+  ],
+  "search_scope": "Exact identifier plus counterexample/surjectivity; authors plus matrix powers and nullity; rank-obstruction phrases. No matching primary counterexample found; irrelevant and secondary results not used as proof.",
+  "priority_status": "Bounded current source search supports a proposed new answer; exhaustive priority and expert significance unverified.",
+  "proof_dependency": "Self-contained cyclic-vector and kernel/image arguments; no dependence on P33 or unavailable group-theory sources.",
+  "publication_admission": "One complete internally audited proposed negative answer. No independent human review or journal acceptance.",
+  "main_proof_note": "0141-matrix-power-counterexample.md"
+}
