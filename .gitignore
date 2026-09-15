@@ -10,3 +10,7 @@ __pycache__/
 node_modules/
 tools/pandoc/pandoc
 tools/tectonic/
+
+# Research website build output and dependencies
+/website/node_modules/
+/_site/

@@ -1,5 +1,7 @@
 # Mathematical research drafts
 
+[**Read the research website**](https://hwzw.github.io/algebra-number-theory-drafts/) — full manuscripts, typeset mathematics, and direct PDFs. Automatically rebuilt from this repository after every update to `main`.
+
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
 This public collection contains 40 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
