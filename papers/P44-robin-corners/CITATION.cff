@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript if you use this work."
+title: "Corner singularities obstruct eventual log-concavity of Robin ground states"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+date-released: 2026-09-15
+type: manuscript
+version: "1.0"
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P44-robin-corners"

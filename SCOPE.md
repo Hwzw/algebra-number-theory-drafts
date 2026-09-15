@@ -39,3 +39,7 @@ The claimed theorem identifies the Euclidean norm as the unique optimizer on eve
 ## P43: genus obstruction for commuting boundary operators
 
 The claimed theorem excludes every positive genus for compact connected oriented smooth surfaces with nonempty boundary and exactly commuting Dirichlet-to-Neumann map and boundary Laplacian. It addresses both cases of Speciel's final Open Problem 1.6; the full classification corollary uses his existing genus-zero theorem. Finite-period Hilbert-transform theory and smooth conformal sewing are credited. The new argument combines Fourier-invariant holomorphic traces with degree one and a capping Schur complement. Quantitative stability, nonorientable surfaces and rough boundaries are outside the result. See [the assessment](papers/P43-commuting-genus/ASSESSMENT.md).
+
+## P44: corner obstruction to eventual Robin log-concavity
+
+The claimed theorem confines log-concave Robin ground states on every nontangential, nonrectangular convex polygon to a locally finite parameter set, disproving the general convex-domain eventual-concavity conjecture. The fixed-corner semiconcavity obstruction and dimensional products are consolidated in one paper. The first-variation rigidity and seed are credited to Andrews--Clutterbuck--Hauer; the regularity input is Dauge's theorem. Smooth uniformly convex eventual-concavity results are compatible. Exceptional parameters, tangential polygons, higher-dimensional quasiconcavity and the sharp fundamental gap remain open here. See [the assessment](papers/P44-robin-corners/ASSESSMENT.md).

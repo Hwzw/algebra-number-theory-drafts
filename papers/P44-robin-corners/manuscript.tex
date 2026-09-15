@@ -1,0 +1,656 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.88in]{geometry}
+\usepackage{amsmath,amssymb,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{Corner singularities obstruct eventual log-concavity of Robin ground states}
+\author{Henry Zweiman}
+\date{September 15, 2026}
+\begin{document}
+\maketitle
+\section{Abstract}\label{abstract}
+
+Let \(P\) be a bounded convex polygon that is neither tangential nor a
+rectangle. We prove that the positive Robin parameters for which the
+first eigenfunction is log-concave form a locally finite set. In fact,
+at one fixed obtuse vertex, the eigenfunction and its logarithm fail to
+be semiconcave on every corner neighborhood for every parameter outside
+the zero set of a nontrivial real-analytic function. The proof continues
+a corner singularity of the first variation at the Neumann limit. An
+explicit angular projection gives an analytic singular coefficient
+without requiring analytic dependence of a full corner expansion. This
+disproves the eventual log-concavity conjecture of Andrews, Clutterbuck
+and Hauer for general bounded convex domains. A single nonrhombic,
+nonrectangular parallelogram gives a counterexample, and products give
+examples in every dimension at least two. The result is compatible with
+eventual concavity on smooth uniformly convex domains.
+
+\textbf{Keywords:} Robin eigenfunction; log-concavity; polygonal domain;
+corner singularity; analytic perturbation.
+
+\textbf{2020 Mathematics Subject Classification:} 35J25, 35B65, 35P05,
+47A55.
+
+\section{1. Introduction}\label{introduction}
+
+For a bounded convex polygon \(P\subset\mathbb R^2\) with nonempty
+interior, let \(u_\alpha\) be the positive first Robin eigenfunction:
+
+\[
+-\Delta u_\alpha=\lambda_\alpha u_\alpha\quad\text{in }P,
+\qquad \partial_\nu u_\alpha+\alpha u_\alpha=0
+\quad\text{on }\partial P.
+\tag{1.1}
+\]
+
+The boundary condition is understood weakly; on the interior of an edge
+it is classical. We fix the normalization
+
+\[
+\int_P u_\alpha^2\,dx=|P|.
+\tag{1.2}
+\]
+
+In particular, \(u_0=1\) and \(\lambda_0=0\). Log-concavity means
+concavity of \(\log u_\alpha\) in the open convex set \(P\).
+
+Andrews, Clutterbuck and Hauer {[}ACH{]} proved failure of log-concavity
+for sufficiently small positive Robin parameters on convex polyhedra
+outside a geometrically distinguished class. Their final Section 10,
+Conjecture 1, asks whether every fixed bounded convex domain has a
+threshold above which its Robin ground state is log-concave. Crasta and
+Fragalà {[}CF{]} established eventual log-concavity on sufficiently
+smooth uniformly convex domains. Ye and Zhang {[}YZ{]} recently reduced
+the boundary assumption to \(C^{3,1}\) in every dimension. These
+theorems leave open the conjecture on convex domains with corners.
+
+A polygon is \emph{tangential} if it contains a disk tangent to every
+edge. This is the planar instance of a circumsolid in {[}ACH{]}. In
+dimension two, products of circumsolids are precisely tangential
+polygons and rectangles. We take polygonal descriptions with no
+redundant collinear vertices, so every interior angle belongs to
+\((0,\pi)\).
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.1.} Let \(P\) be a bounded convex polygon that is
+neither tangential nor a rectangle. There exist an obtuse vertex \(v_*\)
+and a real-analytic function \(c:\mathbb R\to\mathbb R\) with
+
+\[
+c(0)=0,\qquad c'(0)\ne0,
+\tag{1.3}
+\]
+
+such that, whenever \(\alpha>0\) and \(c(\alpha)\ne0\), neither
+\(u_\alpha\) nor \(\log u_\alpha\) is semiconcave on any sufficiently
+small neighborhood \(P\cap B_r(v_*)\). Consequently
+
+\[
+\{\alpha>0:u_\alpha\text{ is log-concave in }P\}
+\subseteq\{\alpha>0:c(\alpha)=0\}.
+\tag{1.4}
+\]
+
+The set on the left is locally finite, and it is empty for all
+sufficiently small positive parameters. In particular, for every \(A>0\)
+there is an \(\alpha>A\) for which \(u_\alpha\) is not log-concave.
+
+Here semiconcavity on a convex set means that \(f(x)-M|x|^2/2\) is
+concave for some finite constant \(M\). The assertion near \(v_*\)
+refers to each sufficiently small radius, with no uniformity in
+\(\alpha\) required. In fact, the exceptional zero set is finite on
+every bounded parameter interval, including intervals meeting zero.
+
+\Needspace{6\baselineskip}\textbf{Corollary 1.2.} The polygon with consecutive vertices
+
+\[
+(0,0),\quad(2,0),\quad(3,1),\quad(1,1)
+\tag{1.5}
+\]
+
+does not have an eventual log-concavity threshold. There are bounded
+convex polyhedral counterexamples in every dimension \(d\ge2\).
+
+The new point is the continuation of a regularity obstruction through
+the entire finite Robin parameter axis. The first-variation
+classification in {[}ACH{]} supplies the initial nonzero corner mode. We
+extract its continuation by a bounded functional on a fixed Sobolev
+space, then use the identity theorem for real-analytic functions. Thus
+the argument does not extrapolate a small-parameter asymptotic estimate
+to large parameters.
+
+We do not determine whether log-concavity occurs at any of the
+exceptional parameters. Nor do we prove a classification for tangential
+polygons. Our result concerns log-concavity and semiconcavity; it does
+not resolve the higher-dimensional quasiconcavity conjecture or the
+sharp Robin fundamental-gap problem in {[}ACH{]}.
+
+\section{2. Analytic dependence and local
+regularity}\label{analytic-dependence-and-local-regularity}
+
+We first record precisely the regularity needed for the coefficient
+construction. Write
+
+\[
+\Gamma_\omega=\{(r\cos\theta,r\sin\theta):r>0,\ 0<\theta<\omega\},
+\qquad S_R=\Gamma_\omega\cap B_R(0),
+\qquad \beta=\frac\pi\omega>1.
+\tag{2.1}
+\]
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.1 (sector regularity).} Suppose
+\(z\in H^1(\Gamma_\omega)\) is supported in a fixed closed ball, has
+homogeneous weak Neumann data on the rays, and
+\(\Delta z\in L^p(\Gamma_\omega)\), where \(2\le p<\infty\). If
+
+\[
+2-\frac2p<\beta,
+\tag{2.2}
+\]
+
+then \(z\in W^{2,p}(\Gamma_\omega)\). For a fixed support radius the
+inclusion is continuous for the graph norm
+\(\|z\|_{H^1}+\|\Delta z\|_{L^p}\).
+
+\emph{Proof.} This is a direct planar consequence of
+Dauge\textquotesingle s wedge theorem {[}D, Theorem 8.1{]}, which
+applies to compactly supported weak Neumann solutions on
+\(\mathbb R\times\Gamma_\omega\) when \(0<2-2/p<\pi/\omega\). To check
+the reduction, choose a nonzero \(\eta\in C_c^\infty(\mathbb R)\) and
+set \(Z(t,x)=\eta(t)z(x)\). Then \(Z\in H^1\) has compact support and
+
+\[
+\Delta_{t,x}Z=\eta\Delta_xz+\eta''z\in L^p.
+\tag{2.3}
+\]
+
+Here \(z\in L^p\) follows from the planar \(H^1\) embedding on a bounded
+sector containing its support. The boundary data of \(Z\) are
+homogeneous Neumann. The cited theorem gives \(Z\in W^{2,p}\), hence
+\(z\in W^{2,p}\), for example by integration against a smooth function
+\(\xi(t)\) with \(\int\xi\eta=1\).
+
+For continuity, consider the pairs \((z,f)\in H^1\times L^p\) with the
+fixed support restriction and
+
+\[
+\int_{\Gamma_\omega}\nabla z\cdot\nabla\varphi
+=-\int_{\Gamma_\omega}f\varphi
+\quad\text{for all }\varphi\in C_c^\infty(\overline{\Gamma_\omega}).
+\tag{2.4}
+\]
+
+They form a closed subspace of \(H^1\times L^p\). The map
+\((z,f)\mapsto z\) into \(W^{2,p}\) has closed graph, since both limits
+agree as distributions. The closed graph theorem proves the estimate. \(\square\)
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.2 (analytic eigenpair).} With normalization (1.2), the
+maps \(\alpha\mapsto\lambda_\alpha\) and \(\alpha\mapsto u_\alpha\) are
+real analytic on \(\mathbb R\), the latter with values in \(H^1(P)\).
+
+\emph{Proof.} The Robin form
+
+\[
+a_\alpha(f,g)=\int_P\nabla f\cdot\nabla g
++\alpha\int_{\partial P}fg
+\tag{2.5}
+\]
+
+has fixed domain \(H^1(P)\). The trace map is bounded, and a
+sufficiently large scalar shift makes the form coercive locally
+uniformly in \(\alpha\). The first eigenvalue is simple and its
+eigenfunction can be chosen positive; see {[}ACH, Proposition 3.1{]}.
+
+For completeness, analytic dependence follows from the analytic implicit
+function theorem applied to
+
+\[
+(\alpha,u,\lambda)\longmapsto
+\left(a_\alpha(u,\cdot)-\lambda(u,\cdot)_{L^2(P)},
+\ (u,u)_{L^2(P)}-|P|\right)
+\tag{2.6}
+\]
+
+with values in \((H^1(P))^*\times\mathbb R\). Its derivative in
+\((u,\lambda)\) sends \((h,s)\) to
+
+\[
+\left(B_\alpha h-s(u_\alpha,\cdot)_{L^2(P)},
+\ 2(u_\alpha,h)_{L^2(P)}\right),
+\quad B_\alpha=a_\alpha-\lambda_\alpha(\cdot,\cdot)_{L^2(P)}.
+\tag{2.7}
+\]
+
+The operator \(B_\alpha:H^1\to(H^1)^*\) is Fredholm of index zero, by a
+coercive shift and compactness of the \(L^2\) embedding. Its kernel is
+the span of \(u_\alpha\), and its range is the annihilator of
+\(u_\alpha\). Pairing the first component with \(u_\alpha\) determines
+\(s\), the second component determines the component of \(h\) along
+\(u_\alpha\), and \(B_\alpha\) is invertible on the complementary
+subspace. Thus (2.7) is an isomorphism. The local analytic branches
+remain the first eigenpair by the spectral gap. Positivity and (1.2)
+make them agree on overlaps, giving the asserted real-analytic maps. \(\square\)
+
+At a vertex translated to the origin, let \(\nu_1,\nu_2\) be the two
+outward unit normals. They are linearly independent. Let \(\gamma\) be
+the unique vector satisfying
+
+\[
+\nu_1\cdot\gamma=\nu_2\cdot\gamma=-1.
+\tag{2.8}
+\]
+
+Define the local gauge
+
+\[
+w_\alpha(x)=e^{-\alpha\gamma\cdot x}u_\alpha(x).
+\tag{2.9}
+\]
+
+It satisfies homogeneous Neumann conditions on both rays and
+
+\[
+\Delta w_\alpha=F_\alpha,
+\qquad
+F_\alpha=-2\alpha\gamma\cdot\nabla w_\alpha
+-(\lambda_\alpha+\alpha^2|\gamma|^2)w_\alpha.
+\tag{2.10}
+\]
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.3 (regularity of the gauge).} On a sufficiently small
+fixed sector, \(w_\alpha\) depends real analytically on \(\alpha\) in
+\(H^2\). Consequently \(F_\alpha\) is real analytic in \(L^p\) for every
+finite \(p\). For each fixed \(\alpha\), \(w_\alpha\) is
+\(C^{1,\delta}\) up to the vertex for some \(\delta>0\), and
+
+\[
+\nabla w_\alpha(0)=0.
+\tag{2.11}
+\]
+
+\emph{Proof.} Choose a smooth radial cutoff \(\chi\) supported strictly
+inside the radius on which \(P\) agrees with the sector, and equal to
+one on a smaller sector. Extend \(z_\alpha=\chi w_\alpha\) by zero to
+\(\Gamma_\omega\). Its ray normal derivative is zero. Lemma 2.2 and
+multiplication by the exponential show that \(z_\alpha\) is analytic in
+\(H^1\). Moreover,
+
+\[
+\Delta z_\alpha
+=\chi F_\alpha+2\nabla\chi\cdot\nabla w_\alpha
++(\Delta\chi)w_\alpha
+\tag{2.12}
+\]
+
+is analytic in \(L^2\). The pairs \((z_\alpha,\Delta z_\alpha)\) are
+therefore analytic in the closed graph space in Lemma 2.1. Since
+\(1<\beta\), that lemma with \(p=2\) makes \(z_\alpha\) analytic in
+\(H^2\). Planar Sobolev embedding gives analytic dependence of
+\(w_\alpha\) and \(\nabla w_\alpha\) in every finite \(L^p\) on a
+smaller sector, and hence the claim about \(F_\alpha\).
+
+Choose \(p>2\) sufficiently close to two that (2.2) holds. A second,
+nested radial cutoff and (2.12), now with \(L^p\) data, give
+\(w_\alpha\in W^{2,p}\) locally. Morrey embedding gives \(C^{1,\delta}\)
+regularity, with \(0<\delta<1-2/p\). The two Neumann conditions then
+hold at the vertex by continuity. The independent normals force (2.11).
+\(\square\)
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.4 (positivity at the vertex).} If \(\alpha>0\), then
+\(w_\alpha(0)>0\).
+
+\emph{Proof.} On a sufficiently small sector put
+\(\rho(x)=e^{2\alpha\gamma\cdot x}\) and
+\(k=\lambda_\alpha+\alpha^2|\gamma|^2>0\). Equation (2.10) becomes
+
+\[
+-\operatorname{div}(\rho\nabla w_\alpha)=k\rho w_\alpha.
+\tag{2.13}
+\]
+
+The ground state is positive in the interior. It is also positive at
+every point in the relative interior of either edge: otherwise the Hopf
+boundary lemma at that smooth boundary point would contradict the Robin
+condition. Thus \(w_\alpha\) has a positive minimum \(m\) on the closed
+outer circular arc of a small sector. Regularity from Lemma 2.3 gives
+continuity on its closure.
+
+Use \(\varphi=(m-w_\alpha)_+\) as a test function in (2.13), with zero
+trace on the outer arc and no restriction on the rays. The ray fluxes
+vanish, and \(w_\alpha\ge0\). Hence
+
+\[
+-\int_{S_R}\rho|\nabla\varphi|^2
+=k\int_{S_R}\rho w_\alpha\varphi\ge0.
+\tag{2.14}
+\]
+
+It follows that \(\varphi=0\), since its outer-arc trace is zero.
+Therefore \(w_\alpha\ge m\) on the whole sector, including its vertex. \(\square\)
+
+\section{3. A bounded functional for the corner
+coefficient}\label{a-bounded-functional-for-the-corner-coefficient}
+
+Fix an obtuse sector, so \(1<\beta<2\), and a radius \(R\) lying inside
+the region of Lemma 2.3. Set
+
+\[
+\begin{aligned}
+a_\alpha(r)&=\frac2\omega\int_0^\omega
+w_\alpha(r,\theta)\cos(\beta\theta)\,d\theta,\\
+b_\alpha(r)&=\frac2\omega\int_0^\omega
+F_\alpha(r,\theta)\cos(\beta\theta)\,d\theta.
+\end{aligned}
+\tag{3.1}
+\]
+
+\Needspace{6\baselineskip}\textbf{Lemma 3.1 (analytic coefficient).} The limit
+
+\[
+c(\alpha)=\lim_{r\downarrow0}r^{-\beta}a_\alpha(r)
+\tag{3.2}
+\]
+
+exists for every real \(\alpha\) and is a real-analytic function of
+\(\alpha\). More precisely,
+
+\[
+\begin{aligned}
+c(\alpha)={}&R^{-\beta}a_\alpha(R)\\
+&-\frac1{2\beta}\int_0^R
+\big(s^{1-\beta}-R^{-2\beta}s^{1+\beta}\big)b_\alpha(s)\,ds.
+\end{aligned}
+\tag{3.3}
+\]
+
+\emph{Proof.} Angular projection of (2.10), using the homogeneous
+Neumann conditions, gives
+
+\[
+a_\alpha''+\frac1r a_\alpha'-\frac{\beta^2}{r^2}a_\alpha=b_\alpha.
+\tag{3.4}
+\]
+
+This equation first holds distributionally away from zero; the functions
+are smooth there. Choose a finite exponent \(p\) so large that
+
+\[
+p>\frac2{2-\beta},\qquad \kappa:=2-\frac2p>\beta.
+\tag{3.5}
+\]
+
+Lemma 2.3 permits this choice for \(F_\alpha\). Variation of constants
+in (3.4) gives the regular particular solution
+
+\[
+A_\alpha(r)=\frac1{2\beta}\left[
+r^\beta\int_0^r s^{1-\beta}b_\alpha(s)\,ds
+-r^{-\beta}\int_0^r s^{1+\beta}b_\alpha(s)\,ds\right].
+\tag{3.6}
+\]
+
+Hölder\textquotesingle s inequality, with planar area measure
+\(s\,ds\,d\theta\), gives
+
+\[
+|A_\alpha(r)|+r|A_\alpha'(r)|
+\le C r^\kappa\|F_\alpha\|_{L^p(S_r)}.
+\tag{3.7}
+\]
+
+For the first integral the relevant weight is \(s^{-\beta}\) relative to
+area measure. Its \(L^{p'}\) norm is finite exactly when \(\beta p'<2\),
+which is equivalent to (3.5). The second integral is less singular. The
+homogeneous solutions of (3.4) are \(r^\beta\) and \(r^{-\beta}\). The
+latter is excluded by \(w_\alpha\in H^1(S_R)\), since its angular
+projection would have infinite \(H^1\) energy. Thus
+
+\[
+a_\alpha(r)=c(\alpha)r^\beta+A_\alpha(r).
+\tag{3.8}
+\]
+
+Equations (3.7) and (3.5) prove (3.2). Evaluating (3.8) at \(R\) proves
+(3.3).
+
+The trace functional \(w\mapsto a(R)\) is bounded on \(H^2\) on a sector
+extending past \(R\). The integral in (3.3) is a bounded linear
+functional of \(F\in L^p(S_R)\) by the same weighted Hölder estimate.
+Lemma 2.3 therefore proves analyticity of (3.3). The value is
+independent of the auxiliary radius because it equals the limit (3.2). \(\square\)
+
+Two different exponents have been used for different purposes. An
+exponent just above two yields \(C^1\) regularity in Lemma 2.3. A much
+larger exponent is allowed for the forcing \(F_\alpha\) in Lemma 3.1. No
+\(W^{2,p}\) regularity of \(w_\alpha\) is asserted for that larger
+exponent; generally it is false when \(c(\alpha)\ne0\).
+
+\Needspace{6\baselineskip}\textbf{Lemma 3.2 (semiconcavity annihilates the coefficient).} For
+\(\alpha>0\), if either \(u_\alpha\) or \(\log u_\alpha\) is semiconcave
+on a neighborhood of the vertex, then \(c(\alpha)=0\).
+
+\emph{Proof.} By Lemmas 2.3 and 2.4, \(u_\alpha\), \(w_\alpha\) and
+their logarithms are \(C^1\) on a smaller closed sector, and the
+positive functions are bounded away from zero there. If \(u_\alpha\) is
+semiconcave, its interior Hessian has an upper bound, while
+
+\[
+\Delta u_\alpha=-\lambda_\alpha u_\alpha
+\tag{3.9}
+\]
+
+is bounded. In two dimensions a symmetric matrix with bounded trace and
+eigenvalues bounded above has eigenvalues bounded below as well.
+Therefore \(D^2u_\alpha\) is bounded in the interior of that sector.
+Integration along segments in the convex sector gives
+\(u_\alpha\in C^{1,1}\) up to the vertex, and multiplication by the
+smooth gauge gives \(w_\alpha\in C^{1,1}\).
+
+If \(\log u_\alpha\) is semiconcave, put
+\(q=\log w_\alpha=\log u_\alpha-\alpha\gamma\cdot x\). Subtracting a
+linear function preserves semiconcavity. Equation (2.10) gives
+
+\[
+\Delta q=-|\nabla q|^2-2\alpha\gamma\cdot\nabla q
+-(\lambda_\alpha+\alpha^2|\gamma|^2).
+\tag{3.10}
+\]
+
+Its right hand side is bounded. The same Hessian argument gives
+\(q\in C^{1,1}\) and hence \(w_\alpha\in C^{1,1}\).
+
+In either case, (2.11) yields
+
+\[
+w_\alpha(x)=w_\alpha(0)+O(|x|^2).
+\tag{3.11}
+\]
+
+The angular integral of \(\cos(\beta\theta)\) is zero, so (3.1) gives
+\(a_\alpha(r)=O(r^2)\). Since \(\beta<2\), (3.2) forces \(c(\alpha)=0\).
+The same argument works on every smaller corner neighborhood. \(\square\)
+
+\section{4. The initial nonzero mode}\label{the-initial-nonzero-mode}
+
+Let
+
+\[
+v=\left.\frac{d u_\alpha}{d\alpha}\right|_{\alpha=0},
+\qquad \mu=\frac{|\partial P|}{|P|}.
+\tag{4.1}
+\]
+
+Differentiation of the weak eigenvalue equation and normalization gives
+
+\[
+\Delta v=-\mu\quad\text{in }P,
+\qquad \partial_\nu v=-1\quad\text{on }\partial P,
+\qquad \int_Pv=0.
+\tag{4.2}
+\]
+
+We use the following established rigidity result, with regularity on the
+closure understood: by {[}ACH, Corollary 8.3{]}, a solution of (4.2) is
+\(C^2(\overline P)\) if and only if \(P\) is a product of circumsolids.
+Thus it is not \(C^2(\overline P)\) under the hypotheses of Theorem 1.1.
+
+\Needspace{6\baselineskip}\textbf{Lemma 4.1 (nonzero first variation).} If \(P\) is neither
+tangential nor a rectangle, there is an obtuse vertex for which the
+coefficient in Lemma 3.1 satisfies \(c(0)=0\) and \(c'(0)\ne0\).
+
+\emph{Proof.} At any vertex, translate the vertex to zero and choose
+\(\gamma\) as in (2.8). The function
+
+\[
+h(x)=v(x)+\frac\mu4|x|^2-\gamma\cdot x
+\tag{4.3}
+\]
+
+is harmonic with homogeneous Neumann data on the two rays. Indeed, the
+normal derivative of \(|x|^2\) vanishes on either ray. Separation of
+variables gives
+
+\[
+h(r,\theta)=d_0+\sum_{j\ge1}d_j r^{j\pi/\omega}
+\cos\left(\frac{j\pi\theta}{\omega}\right).
+\tag{4.4}
+\]
+
+This expansion also follows from {[}ACH, Proposition 5.5{]}. It can be
+obtained directly by expanding the trace on an inner arc in the Neumann
+cosine basis. The \(H^1\) condition excludes negative powers and the
+logarithmic zero mode. On every strictly smaller sector the series and
+its derivatives converge away from zero. Moreover, the part with
+exponents strictly greater than two has second derivatives tending to
+zero at the vertex: square summability of the trace coefficients and the
+geometric factor \((r/R)^{j\pi/\omega}\) justify termwise bounds on
+smaller radii.
+
+If \(\omega<\pi/2\), every nonconstant exponent exceeds two. If
+\(\omega=\pi/2\), the first term is a harmonic quadratic polynomial, and
+all subsequent exponents exceed two. If \(\pi/2<\omega<\pi\), only the
+first exponent \(\beta=\pi/\omega\) lies below two, and the next is
+\(2\beta>2\). Therefore failure of \(C^2\) regularity at a vertex is
+possible only at an obtuse vertex with \(d_1\ne0\).
+
+The solution \(v\) is smooth in the interior and up to the relative
+interiors of edges, by reflection after subtracting a local particular
+solution with the given normal derivative. If every vertex had a \(C^2\)
+expansion, these local statements would give \(v\in C^2(\overline P)\),
+contrary to the rigidity result above. Fix an obtuse vertex with
+\(d_1\ne0\).
+
+At this vertex \(w_0=1\), so \(c(0)=0\). Differentiating (2.9) and
+(2.10) at zero gives
+
+\[
+\dot w_0=v-\gamma\cdot x,
+\qquad \dot F_0=-\mu.
+\tag{4.5}
+\]
+
+The constant forcing has zero first cosine projection. The radial
+quadratic term in (4.3) also has zero first cosine projection. It
+follows from (3.3), which may be differentiated by Lemma 3.1, and (4.4)
+that
+
+\[
+c'(0)=d_1\ne0.
+\tag{4.6}
+\]
+
+This is the claimed vertex and coefficient. \(\square\)
+
+\emph{Proof of Theorem 1.1.} Choose the vertex from Lemma 4.1 and its
+analytic coefficient from Lemma 3.1. Since \(c'(0)\ne0\), this
+real-analytic function is not identically zero. Its zero set is locally
+finite on \(\mathbb R\), by the identity theorem, and zero is an
+isolated simple zero. Lemma 3.2 shows that semiconcavity of either
+\(u_\alpha\) or its logarithm on any sufficiently small corner
+neighborhood forces \(c(\alpha)=0\). This proves the local assertion and
+(1.4). A locally finite subset cannot contain any interval \((A,A+1)\),
+so there are arbitrarily large parameters outside the exceptional set. \(\square\)
+
+\section{5. Explicit domains and the Dirichlet
+limit}\label{explicit-domains-and-the-dirichlet-limit}
+
+\emph{Proof of Corollary 1.2.} The polygon (1.5) is a parallelogram with
+adjacent side lengths \(2\) and \(\sqrt2\), and angles \(\pi/4\) and
+\(3\pi/4\). It is not a rectangle. A tangential quadrilateral has equal
+sums of opposite side lengths: the two tangent segments from each vertex
+have equal lengths, and summing them gives the identity. A tangential
+parallelogram must therefore have equal adjacent side lengths. Our
+polygon is not tangential, so Theorem 1.1 applies. At its obtuse
+vertices the relevant exponent is \(\beta=4/3\).
+
+For \(d>2\), use
+
+\[
+\Omega_d=P\times(0,1)^{d-2}.
+\tag{5.1}
+\]
+
+The positive product of the first Robin eigenfunctions on the factors
+satisfies the Robin condition with the same parameter on every face. Its
+eigenvalue is the sum of the first eigenvalues of the factors, and
+positivity identifies it with the ground state. Restriction to a slice
+with fixed interior coordinates in the interval factors is a positive
+constant multiple of \(u_\alpha\) on \(P\). Log-concavity of the product
+would imply log-concavity on this slice. Thus every parameter excluded
+for \(P\) is excluded for \(\Omega_d\). \(\square\)
+
+The contrast with the Dirichlet limit concerns regularity at the
+corners. A nonzero coefficient in (3.2) is compatible with convergence
+in weaker norms and with arbitrarily small amplitude as \(\alpha\)
+increases. For each fixed finite parameter with \(c(\alpha)\ne0\),
+however, the mode \(r^\beta\) with \(\beta<2\) prevents \(C^{1,1}\)
+regularity of the gauge at the vertex. Semiconcavity would force that
+regularity through the bounded-trace argument of Lemma 3.2. No uniform
+\(C^2\) convergence near the polygon\textquotesingle s corners is
+available from a Dirichlet limit alone.
+
+The results of {[}CF{]} and {[}YZ{]} assume smooth uniformly convex
+domains. Our polygonal examples satisfy neither boundary hypothesis.
+Approximating a polygon by smooth domains for a fixed parameter does not
+produce a single smooth domain with the discrete-exception property
+proved here, since the approximation can depend on the parameter. The
+remaining smooth-boundary questions must be treated separately.
+
+The method suggests two further problems. One is to determine the
+exceptional parameters, or to show their absence for particular
+nonsymmetric polygons. Another is to understand eventual log-concavity
+within the tangential class, where the first-variation singular
+coefficient vanishes and the present initial-mode argument gives no
+obstruction. These questions are distinct from the conjecture for all
+convex domains, which Corollary 1.2 answers negatively.
+
+\sloppy\section{References}\label{references}
+
+{[}ACH{]} B. Andrews, J. Clutterbuck and D. Hauer, \emph{Non-concavity
+of the Robin ground state}, Cambridge Journal of Mathematics \textbf{8}
+(2020), no. 2, 243-310.
+\href{https://doi.org/10.4310/CJM.2020.v8.n2.a1}{Final journal article}.
+\href{https://arxiv.org/abs/1711.02779v2}{arXiv:1711.02779v2}.
+
+{[}CF{]} G. Crasta and I. Fragalà, \emph{Concavity properties of
+solutions to Robin problems}, Cambridge Journal of Mathematics
+\textbf{9} (2021), no. 1, 177-212.
+\href{https://doi.org/10.4310/CJM.2021.v9.n1.a3}{Final journal article}.
+\href{https://arxiv.org/abs/2006.07192v1}{arXiv:2006.07192v1}.
+
+{[}D{]} M. Dauge, \emph{Neumann and mixed problems on curvilinear
+polyhedra}, Integral Equations and Operator Theory \textbf{15} (1992),
+227-261.
+\href{https://dauge.pages.math.cnrs.fr/publis/DaugeMixed92.pdf}{Author-posted
+text}, Theorem 8.1.
+
+{[}YZ{]} D. Ye and D. Zhang, \emph{Concavity Properties of Robin
+Solutions on \(C^{3,1}\) Uniformly Convex Domains},
+\href{https://arxiv.org/abs/2609.06223v1}{arXiv:2609.06223v1}, September
+5, 2026.
+
+\end{document}

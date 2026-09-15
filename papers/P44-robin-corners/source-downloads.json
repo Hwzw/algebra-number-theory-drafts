@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-15",
+  "notes": [
+    "The archive.intlpress.com final-PDF link failed TLS certificate validation; the current publisher asset link was tried instead."
+  ],
+  "files": [
+    {
+      "file": "ach-final.pdf",
+      "url": "https://intlpress.com/api/bgcloud-front/resource/pdf/volume/1805782368600416258-1805782368600416258-88f605793884422439eff9c89a8550e7.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "ach-version.html",
+      "url": "https://arxiv.org/abs/1711.02779",
+      "bytes": 40834,
+      "sha256": "8efd1e053e935fcd9eca0c784ac4e03a95d07ed12f2afd3cabaf721e9a939c01"
+    },
+    {
+      "file": "ye-zhang-v1.html",
+      "url": "https://arxiv.org/html/2609.06223v1",
+      "bytes": 678187,
+      "sha256": "f9bbf064fafacfb0ce3ae2e830eb32a54617fc15ff70917f3b00a8724b17b176"
+    },
+    {
+      "file": "ye-zhang-version.html",
+      "url": "https://arxiv.org/abs/2609.06223",
+      "bytes": 39457,
+      "sha256": "d1e32ff951ec79d1f5d83da0a73fff19638da8bc05a1b5dc9ef9e344fffa0f44"
+    },
+    {
+      "file": "interval-version.html",
+      "url": "https://arxiv.org/abs/2002.06900",
+      "bytes": 38825,
+      "sha256": "5c7362ad83e2def09537d87e65d85fd77654e3e83fe284650217067066c25888"
+    },
+    {
+      "file": "laugesen-version.html",
+      "url": "https://arxiv.org/abs/1905.07658",
+      "bytes": 41846,
+      "sha256": "808105f93fa97c3b49c36bbccea749897885b078cbb643b94a2ba2614a118efb"
+    },
+    {
+      "file": "ach-v2.pdf",
+      "url": "https://arxiv.org/pdf/1711.02779v2",
+      "bytes": 751908,
+      "sha256": "c24491ebaf1b2266bde69876d9bb35f315b3832a78a7bd9ca18787b5d436337f"
+    },
+    {
+      "file": "laugesen.pdf",
+      "url": "https://arxiv.org/pdf/1905.07658",
+      "bytes": 804599,
+      "sha256": "2e8a162bb34ef77aab18a819edc72c445268235d6639d882afc7e75e1bb8383e"
+    },
+    {
+      "file": "dauge-regularity-slides.pdf",
+      "url": "https://perso.univ-rennes1.fr/monique.dauge/publis/Talk_Karlsruhe08.pdf",
+      "bytes": 3264778,
+      "sha256": "1482d68af9307723b997f388c085b78c8f7af27feeb493131328ba6db6ac401d"
+    },
+    {
+      "file": "lamberti-provenzano.html",
+      "url": "https://link.springer.com/article/10.1007/s10958-025-08035-1",
+      "bytes": 331341,
+      "sha256": "474f2143513bbd349d78ee300bde597b9972d563fbeb7cad9b58f2dd6d2d646f"
+    },
+    {
+      "file": "crasta-fragala-version.html",
+      "url": "https://arxiv.org/abs/2006.07192",
+      "bytes": 38772,
+      "sha256": "3eaa37d04e3234b84ba2835944741246223934fd2c34686de3ebf93daa0c1268"
+    },
+    {
+      "file": "dauge-mixed.pdf",
+      "url": "https://dauge.pages.math.cnrs.fr/publis/DaugeMixed92.pdf",
+      "bytes": 301663,
+      "sha256": "ffe409628acdd0e2203ae640871bd2e6ccb50b6616e11a20847b34b9b6b34294"
+    },
+    {
+      "file": "crasta-fragala-v1.html",
+      "url": "https://arxiv.org/html/2006.07192v1",
+      "bytes": 747106,
+      "sha256": "8b3cb8b43baaaa3f66d2773f94ec9a15a0596bde773f3574f02d9aa8b63d3aca"
+    }
+  ]
+}

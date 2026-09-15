@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q52",
+  "status": "Complete bounded primary-source comparison for P44; internal publication assessment; limits explicitly disclosed",
+  "sources": [
+    {
+      "name": "Andrews-Clutterbuck-Hauer final CJM paper",
+      "read": "Final Section 10 Conjecture 1 p.306; final Corollary 8.3 p.295; final Section 9 pp.300-305, including nonzero obtuse-corner mode; arXiv v2 Proposition 3.1 statement and full proof, Corollary 8.3, planar expansion discussion",
+      "current_arxiv": "1711.02779v2, February 20, 2018; latest listed version",
+      "local_final_download": "Failed archive TLS validation and current publisher HTTP 403; final statement nevertheless read through web PDF",
+      "limitation": "Complete 68-page final proof not reread; the stated published rigidity theorem is a dependency, not an independently reproved claim. Final PDF web extraction was available, local final download and later screenshot attempts failed."
+    },
+    {
+      "name": "Ye-Zhang",
+      "current_arxiv": "2609.06223v1, September 5, 2026; only listed version",
+      "read": "Complete introduction, Theorems 1.3-1.6, convergence proof outline",
+      "decision": "C3,1 uniformly convex eventual concavity already solved; exclude as new target",
+      "limitation": "Full proof not yet audited"
+    },
+    {
+      "name": "Andrews-Clutterbuck-Hauer interval gap",
+      "current_arxiv": "2002.06900v1, February 17, 2020; only listed version",
+      "read": "Abstract and submission history",
+      "decision": "Convex-potential interval gap already solved"
+    },
+    {
+      "name": "Laugesen rectangular theorems",
+      "current_arxiv": "1905.07658v1, May 18, 2019; only listed version",
+      "read": "Abstract; Conjecture F, Theorem 3.8 and surrounding pp. 12-14",
+      "decision": "Rectangular-box gap already solved",
+      "limitation": "Final journal comparison and complete relevant proof audit pending"
+    },
+    {
+      "name": "Kielty negative Robin parameter",
+      "read": "Final 2023 publisher abstract",
+      "decision": "Negative-parameter counterexample is distinct from positive-parameter gap question"
+    },
+    {
+      "name": "Dauge, Neumann and mixed problems on curvilinear polyhedra",
+      "url": "https://dauge.pages.math.cnrs.fr/publis/DaugeMixed92.pdf",
+      "version": "Author-posted text, record dated Rennes May 2001; article IEOT 15 (1992), 227-261",
+      "read": "Theorem 8.1, author PDF p.22 (zero indexed), and surrounding definition of wedge and boundary conditions; k=0 criterion 0<2-2/p<pi/omega",
+      "use": "Published Neumann regularity input. Manuscript proves the planar reduction by adding a compactly supported extra coordinate and the graph-norm continuity by closed graph.",
+      "limitation": "Complete 35-page proof not independently reconstructed. Initial author slides Theorem 1 supplied a consistent Hs cross-check, but final proof cites the journal theorem."
+    },
+    {
+      "name": "Crasta-Fragala",
+      "url": "https://arxiv.org/html/2006.07192v1",
+      "version": "Only v1, June 12, 2020, in checked current history; final journal CJM 9 (2021), 177-212",
+      "read": "Complete arXiv introduction, Theorems 1.1-1.2 and closing open questions; authors institutional final metadata and abstract",
+      "limitation": "Final journal full text not successfully opened. Polimi public PDF is labeled AAM by repository, but visible first page says arXiv v1, so it is not a verified final-text comparison. No proof dependency on this paper."
+    }
+  ],
+  "proof_progress": "Complete manuscript: fixed-boundary gauge, analytic H2 graph-space upgrade, explicit Lp-continuous angular coefficient, corner positivity by a weighted weak maximum principle, semiconcavity implies zero coefficient, nonzero Neumann derivative, analytic identity theorem.",
+  "next_obligation": "Exact artifact/public verification, then outside mathematical review. Exceptional parameters and tangential class remain open; earlier cone quasiconcavity route remains unresolved.",
+  "priority_search": {
+    "date": "2026-09-15",
+    "queries": [
+      "Robin log-concavity polygon large",
+      "eventual log-concavity Robin counterexamples",
+      "Robin concavity analytic corner",
+      "Robin concavity parallelogram",
+      "Robin log-concave discrete",
+      "Robin polygon singular coefficient concavity",
+      "Robin ground state large polygonal",
+      "Robin concavity corner singularities"
+    ],
+    "result": "No prior analytic-persistence disproof identified in inspected primary sources. Dated bounded search, not absolute priority certification."
+  }
+}
