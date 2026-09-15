@@ -1,0 +1,807 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.88in]{geometry}
+\usepackage{amsmath,amssymb,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{Euclidean persistence and sharp stability for anisotropic eigenvalue--torsion products}
+\author{Henry Zweiman}
+\date{September 15, 2026}
+\begin{document}
+\maketitle
+\section{Abstract}\label{abstract}
+
+We optimize the product of the first Dirichlet eigenvalue and a power of
+torsional rigidity on a fixed Euclidean ball, allowing the anisotropic
+energy to vary over all normalized symmetric seminorms. For every
+dimension \(n\geq2\) and every energy exponent \(1<p<\infty\), we prove
+that the Euclidean norm uniquely maximizes the product for all
+sufficiently small positive torsion exponents and uniquely minimizes it
+for all sufficiently large exponents. In either regime, the product
+deficit is equivalent to the spherical average of \(1-H^p\).
+Consequently it controls the supremum norm distance from the Euclidean
+norm with the optimal power \((n+1)/2\). The proof combines radial
+variational tests, convex symmetrization, and an integral comparison
+between support and radial deficits of convex bodies inside a ball. For
+quadratic growth, this answers the ball cases of two
+Euclidean-optimality questions of Buttazzo and Fernandes Horta, beyond
+the quadratic-seminorm class. No regularity or strict convexity of the
+competing anisotropies is assumed.
+
+\textbf{Keywords:} anisotropic spectral optimization; torsional
+rigidity; nonlinear eigenvalue; convex symmetrization; quantitative
+stability.
+
+\section{1. Introduction and main
+results}\label{introduction-and-main-results}
+
+Fix the Euclidean unit ball \(B\subset\mathbb R^n\), where \(n\geq2\),
+and an exponent \(1<p<\infty\). Denote its volume by \(V\), write
+\(S=\partial B\), and let \(\sigma\) be probability surface measure on
+\(S\). We consider the class \(\mathcal H\) of symmetric seminorms
+\(H:\mathbb R^n\to[0,\infty)\) normalized by
+
+\[
+\max_{\theta\in S}H(\theta)=1.
+\tag{1.1}
+\]
+
+Thus \(H\) is convex, satisfies \(H(t\xi)=|t|H(\xi)\), and may vanish on
+a nonzero subspace. The Euclidean norm is denoted by \(E(\xi)=|\xi|\).
+For \(H\in\mathcal H\) define
+
+\[
+\begin{aligned}
+\lambda_H&=\inf_{u\in W^{1,p}_0(B)\setminus\{0\}}
+\frac{\int_B H(\nabla u)^p\,dx}{\int_B|u|^p\,dx},\\
+T_H&=\left(
+\sup_{u\in W^{1,p}_0(B)\setminus\{0\}}
+\frac{|\int_Bu\,dx|^p}{\int_BH(\nabla u)^p\,dx}
+\right)^{1/(p-1)}.
+\end{aligned}
+\tag{1.2}
+\]
+
+The dependence on \(n,p\) is suppressed. These quantities are finite and
+strictly positive even for degenerate seminorms; a direct proof is given
+below. The definition does not require attainment in the degenerate
+case. Our torsion convention agrees with the integral of the solution of
+the torsion equation in the usual coercive setting. In particular,
+\(T_H^{p-1}\) is the variational quotient before taking the root in
+(1.2).
+
+The normalized product and its angular deficit are
+
+\[
+R_q(H)=\frac{\lambda_H T_H^q}{\lambda_E T_E^q},
+\qquad
+\delta_p(H)=\int_S\bigl(1-H(\theta)^p\bigr)\,d\sigma(\theta).
+\tag{1.3}
+\]
+
+The exponent \(q>0\) is independent of the energy exponent \(p\). Since
+\(H\leq E\), decreasing the anisotropy lowers the eigenvalue and raises
+the torsion. Separate monotonicity statements therefore do not determine
+the product. Even convergence of optimizers to \(E\) as \(q\) tends to
+an endpoint would not establish that \(E\) is the exact optimizer at a
+fixed finite \(q\).
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.1 (Euclidean persistence and deficit equivalence).}
+For every \(n\geq2\) and \(1<p<\infty\), there are numbers
+
+\[
+0<q_-(n,p)<p-1<q_+(n,p)<\infty
+\tag{1.4}
+\]
+
+with the following properties. The Euclidean norm uniquely maximizes
+\(\lambda_H T_H^q\) over \(\mathcal H\) whenever \(0<q\leq q_-\), and
+uniquely minimizes it whenever \(q\geq q_+\). For each fixed \(q\) in
+these regimes, set
+
+\[
+D_q(H)=
+\begin{cases}
+1-R_q(H),&0<q\leq q_-,\\
+R_q(H)-1,&q\geq q_+.
+\end{cases}
+\tag{1.5}
+\]
+
+There are constants \(0<a_{n,p,q}\leq b_{n,p,q}<\infty\) such that
+
+\[
+a_{n,p,q}\delta_p(H)\leq D_q(H)
+\leq b_{n,p,q}\delta_p(H)
+\qquad(H\in\mathcal H).
+\tag{1.6}
+\]
+
+The theorem applies to the full infinite-dimensional class of normalized
+symmetric seminorms, with no ellipticity constant prescribed in advance.
+In particular it includes polyhedral norms and seminorms of every
+positive rank. Explicit, though nonoptimal, choices of the thresholds
+are provided below.
+
+The associated uniform distance is
+
+\[
+\varepsilon(H)=\|H-E\|_{L^\infty(S)}
+=\max_{\theta\in S}\bigl(1-H(\theta)\bigr).
+\tag{1.7}
+\]
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.2 (optimal stability power).} Under the assumptions
+and exponent restrictions of Theorem 1.1, there is \(c_{n,p,q}>0\) such
+that
+
+\[
+D_q(H)\geq c_{n,p,q}\varepsilon(H)^{(n+1)/2}
+\qquad(H\in\mathcal H).
+\tag{1.8}
+\]
+
+The power \((n+1)/2\) cannot be replaced by a smaller one, even if the
+competitors are restricted to genuine norms. More precisely, there are
+norms \(H_\varepsilon\in\mathcal H\), for \(0<\varepsilon<1/2\), with
+\(\varepsilon(H_\varepsilon)=\varepsilon\) and
+
+\[
+D_q(H_\varepsilon)\leq C_{n,p,q}\varepsilon^{(n+1)/2}.
+\tag{1.9}
+\]
+
+By scaling the spatial variable, the same normalized conclusions hold on
+any Euclidean ball. The thresholds do not depend on its radius: the
+eigenvalue scales by the inverse \(p\)-th power of the radius and
+torsion by the power \(n+p/(p-1)\), and these factors cancel in \(R_q\).
+
+\subsubsection{Relation to previous
+work}\label{relation-to-previous-work}
+
+Buttazzo and Fernandes Horta {[}BFH{]} study eigenvalue-torsion products
+while varying normalized seminorms on a fixed domain. Their Section 6
+asks whether the norm optimizers in the small-\(q\) maximum and
+large-\(q\) minimum regimes are Euclidean. For balls, their Theorem 4.10
+proves maximality for \(q\leq1\) within the class of quadratic
+seminorms. Theorem 1.1 answers both questions on balls in the full
+symmetric-seminorm class, and treats the general \(p\)-growth setting
+also proposed in their final remarks. It does not resolve their
+questions for arbitrary fixed domains or determine the optimal
+thresholds.
+
+The optimization of the eigenvalue alone, including rigidity of
+Euclidean maximality, was studied by Fernandes Horta and Montenegro
+{[}HM{]}; see their Theorem 1.5. We do not claim that endpoint result as
+new. Our spectral lower estimate uses the convex symmetrization theorem
+of Alvino, Ferone, Trombetti and Lions {[}AFTL{]}. The body and
+normalization conventions for this input are stated explicitly in
+Section 4. The convex-geometric part uses support and radial deficits,
+quantities related to the intrinsic and dual volume deviations studied
+in {[}BHK{]}. We provide the geometric estimate needed here in full and
+make no separate priority claim for the elementary cap geometry.
+
+The main analytic point is a common linear control, in \(\delta_p(H)\),
+of the spectral loss and torsion gain near \(E\). Directional first
+variation alone gives no such uniform estimate over increasingly
+concentrated angular perturbations. The support-to-radial comparison in
+Section 3 supplies this missing control without smoothness assumptions.
+It also produces the sharp supremum norm stability power.
+
+\section{2. Convex representation and global variational
+bounds}\label{convex-representation-and-global-variational-bounds}
+
+Every \(H\in\mathcal H\) is the support function of the compact
+centrally symmetric convex set
+
+\[
+K=\{x\in\mathbb R^n:x\cdot\xi\leq H(\xi)
+\text{ for every }\xi\in\mathbb R^n\},
+\qquad H=h_K.
+\tag{2.1}
+\]
+
+Indeed, the support representation follows from separation for finite
+continuous sublinear functions. Normalization gives
+\(K\subset\overline B\) and \(K\cap S\ne\varnothing\). To check the
+latter, the maximum of \(h_K\) on \(S\) equals the maximum of \(|x|\)
+over \(K\). In particular, there is \(v\in K\cap S\), and symmetry
+implies
+
+\[
+[-v,v]\subset K,
+\qquad H(\xi)\geq|v\cdot\xi|.
+\tag{2.2}
+\]
+
+Also \(|H(\xi)-H(\eta)|\leq|\xi-\eta|\). When \(K\) has interior, write
+\(\rho_K\) for its radial function and \(H^\circ\) for the dual norm of
+\(H\). Then
+
+\[
+K=\{H^\circ\leq1\},\qquad
+H^\circ(\theta)=\rho_K(\theta)^{-1}.
+\tag{2.3}
+\]
+
+Thus \(K\) is the polar of the unit ball of \(H\), not the unit ball of
+\(H\) itself.
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.1 (global bounds).} Put
+
+\[
+m_H=\int_SH^p\,d\sigma=1-\delta_p(H),
+\qquad p'=\frac p{p-1}.
+\tag{2.4}
+\]
+
+For every \(H\in\mathcal H\),
+
+\[
+2^{-p}\leq\lambda_H\leq m_H\lambda_E,
+\qquad
+m_H^{-1/(p-1)}T_E\leq T_H\leq V2^{p'}.
+\tag{2.5}
+\]
+
+Moreover, \(m_H\geq\int_S|\theta\cdot v|^p\,d\sigma>0\), where this last
+integral depends only on \(n,p\).
+
+\emph{Proof.} For \(f\in C_c^\infty(I)\) on an interval of length
+\(L\leq2\), the fundamental theorem of calculus and
+Hölder\textquotesingle s inequality imply
+
+\[
+\int_I|f|^p\leq L^p\int_I|f'|^p
+\leq2^p\int_I|f'|^p.
+\tag{2.6}
+\]
+
+Apply this on chords parallel to \(v\) and integrate over the orthogonal
+variables. Using (2.2) and density in \(W^{1,p}_0(B)\) gives
+
+\[
+\int_B|u|^p\leq2^p\int_BH(\nabla u)^p.
+\tag{2.7}
+\]
+
+This proves the eigenvalue lower bound. Combining (2.7) with
+\(|\int_Bu|^p\leq V^{p-1}\int_B|u|^p\) proves the torsion upper bound in
+(2.5). In particular, none of the denominators in (1.2) vanish for
+nonzero admissible functions.
+
+A Euclidean first eigenfunction can be chosen radial and nonnegative by
+Schwarz symmetrization of a minimizer. Existence follows by the direct
+method and the compact embedding into \(L^p(B)\). For every radial
+Sobolev function \(f\), homogeneity and polar coordinates give
+
+\[
+\int_BH(\nabla f)^p=m_H\int_B|\nabla f|^p.
+\tag{2.8}
+\]
+
+Testing the eigenvalue with a radial Euclidean minimizer proves its
+upper bound. The Euclidean torsion function and its integral are
+
+\[
+w_E(x)=\frac{n^{-1/(p-1)}}{p'}(1-|x|^{p'}),
+\qquad
+T_E=\frac{V n^{-1/(p-1)}}{n+p'}.
+\tag{2.9}
+\]
+
+In fact \(|\nabla w_E|^{p-2}\nabla w_E=-x/n\), so \(-\Delta_pw_E=1\) in
+distributions. Testing this identity with \(w_E\) gives
+
+\[
+\int_B|\nabla w_E|^p=\int_Bw_E=T_E.
+\tag{2.10}
+\]
+
+Hölder applied to the same weak identity shows that \(w_E\) attains the
+Euclidean torsion quotient. Equations (2.8)-(2.10) then give its lower
+bound in (2.5). The final assertion follows by integrating (2.2) on
+\(S\). \(\square\)
+
+We shall use the fixed constants
+
+\[
+\ell=\min\left\{\frac12,\frac{2^{-p}}{\lambda_E}\right\},
+\qquad
+M=\max\left\{2,\frac{V2^{p'}}{T_E}\right\}.
+\tag{2.11}
+\]
+
+They give the global bounds \(\lambda_H/\lambda_E\geq\ell\) and
+\(T_H/T_E\leq M\). Their sharp values are unnecessary.
+
+\section{3. An integral comparison of support and radial
+deficits}\label{an-integral-comparison-of-support-and-radial-deficits}
+
+For \(\nu\in S\) and \(r>0\), let
+\(C(\nu,r)=\{\theta\in S:|\theta-\nu|<r\}\) be a chordal cap. The
+notation \(aC\) denotes the cap with the same center and radius
+multiplied by \(a\).
+
+\Needspace{6\baselineskip}\textbf{Lemma 3.1 (support-to-radial comparison).} There is
+\(A_n<\infty\) such that every compact convex set \(K\) with
+\(\tfrac12\overline B\subset K\subset\overline B\) satisfies
+
+\[
+\int_S(1-\rho_K)\,d\sigma
+\leq A_n\int_S(1-h_K)\,d\sigma.
+\tag{3.1}
+\]
+
+Symmetry is not required in this lemma.
+
+\emph{Proof.} We first record a cap estimate. Suppose that
+\(h_K(\nu)=1-e\), where \(0<e\leq1\). Since
+\(K\subset\{x\in\overline B:x\cdot\nu\leq1-e\}\), its support function
+at a direction \(\eta\) making angle \(\alpha\leq\sqrt e/4\) with
+\(\nu\) satisfies
+
+\[
+\begin{aligned}
+h_K(\eta)
+&\leq(1-e)\cos\alpha+\sqrt{2e-e^2}\sin\alpha\\
+&\leq1-e+\frac{\sqrt2}{4}e
+\leq1-\frac e2.
+\end{aligned}
+\tag{3.2}
+\]
+
+For completeness, \(\cos\alpha>1-e\) because
+\(1-\cos\alpha\leq\alpha^2/2\leq e/32\). Thus the unconstrained support
+point \(\eta\) is excluded by the cutting plane, and maximizing the
+linear functional on the truncated ball puts the maximizing point on
+that plane. Decomposition into the \(\nu\) and \(\nu^\perp\) components
+gives the first line of (3.2). The last estimates use \(1-e\geq0\) and
+\(\sin\alpha\leq\alpha\).
+
+Set \(r=\sqrt e/8\). On \(C(\nu,r)\) the angle is less than
+\(2r\leq\sqrt e/4\), so this cap lies in \(\{1-h_K\geq e/2\}\).
+
+Now fix \(\theta\in S\setminus K\). Let \(z\) be its metric projection
+onto \(K\), and put
+
+\[
+d=|\theta-z|,\qquad
+\nu=\frac{\theta-z}{d},\qquad
+e=1-h_K(\nu).
+\tag{3.3}
+\]
+
+The projection inequality gives \(z\cdot\nu=h_K(\nu)\), hence
+\(\theta\cdot\nu=1-e+d\). Therefore
+
+\[
+0<d\leq e\leq\frac12,
+\qquad
+|\theta-\nu|^2=2(e-d)\leq2e.
+\tag{3.4}
+\]
+
+The cap \(C=C(\nu,\sqrt e/8)\) from (3.2) consequently has
+\(\theta\in12C\).
+
+Fix \(t>0\) and write
+\(E_t=\{\theta\in S:\operatorname{dist}(\theta,K)>t\}\). For each
+\(\theta\in E_t\) choose the cap just constructed; its associated \(e\)
+exceeds \(t\). Every compact subset \(L\subset E_t\) is covered by
+finitely many of the open caps \(12C\). Order the corresponding original
+caps by decreasing radius, and retain a cap precisely when it is
+disjoint from every previously retained cap. The retained caps \(C_i\)
+are disjoint. Any discarded cap of radius \(r\) intersects a retained
+cap of radius \(r_i\geq r\), so its twelvefold enlargement lies in
+\(14C_i\), and hence in \(30C_i\). Thus \(L\subset\bigcup_i30C_i\).
+
+Spherical cap measure is doubling: there is \(D_n<\infty\) such that
+
+\[
+\sigma(C(\nu,30r))\leq D_n\sigma(C(\nu,r))
+\quad\left(0<r\leq\frac{1}{8\sqrt2}\right).
+\tag{3.5}
+\]
+
+This follows directly by writing cap area in polar coordinates. The
+ratio tends to \(30^{n-1}\) as \(r\downarrow0\) and is bounded on every
+remaining compact interval; a cap whose chordal radius exceeds \(2\) is
+the entire sphere. Each retained cap is contained in \(\{1-h_K>t/2\}\)
+by (3.2). Disjointness and (3.5) give
+
+\[
+\sigma(L)\leq D_n\sum_i\sigma(C_i)
+\leq D_n\sigma\{1-h_K>t/2\}.
+\tag{3.6}
+\]
+
+By inner regularity this holds with \(L=E_t\). Integrating in \(t\)
+yields
+
+\[
+\int_S\operatorname{dist}(\theta,K)\,d\sigma
+\leq2D_n\int_S(1-h_K)\,d\sigma.
+\tag{3.7}
+\]
+
+The gauge \(g_K\) is \(2\)-Lipschitz since \(K\) contains
+\(\tfrac12\overline B\). Indeed, subadditivity gives
+\(g_K(x)-g_K(y)\leq g_K(x-y)\leq2|x-y|\), and one can interchange
+\(x,y\). For the projection \(z\) above, \(g_K(z)\leq1\), so
+
+\[
+\rho_K(\theta)^{-1}-1
+\leq g_K(\theta)-g_K(z)
+\leq2\operatorname{dist}(\theta,K).
+\tag{3.8}
+\]
+
+Since \(0<\rho_K\leq1\), we have \(1-\rho_K\leq\rho_K^{-1}-1\).
+Equations (3.7)-(3.8) prove (3.1) with \(A_n=4D_n\). \(\square\)
+
+The estimate transfers angular support loss to the radial moments needed
+by both variational problems. A supremum norm comparison alone would not
+give the linear dependence on \(\delta_p\) used below.
+
+\section{4. Uniform estimates near the Euclidean
+norm}\label{uniform-estimates-near-the-euclidean-norm}
+
+Set
+
+\[
+\eta_0=\frac12\bigl(1-(3/4)^p\bigr)\sigma(C(\nu,1/4)),
+\tag{4.1}
+\]
+
+which is positive and independent of \(\nu\). If \(\min_SH\leq1/2\), the
+\(1\)-Lipschitz property implies \(H\leq3/4\) on a cap of radius
+\(1/4\). Thus \(\delta_p(H)\geq2\eta_0\). In particular, if
+\(\delta_p(H)\leq\eta_0\), then \(H>1/2\) on \(S\) and \(K\) contains
+\(\tfrac12\overline B\).
+
+For the remainder of this section write
+\(\delta=\delta_p(H)\leq\eta_0\). Since \(1-H\leq1-H^p\) on \(S\), Lemma
+3.1 gives
+
+\[
+\int_S(1-\rho_K)\,d\sigma\leq A_n\delta.
+\tag{4.2}
+\]
+
+Polar integration and \(1-r^n\leq n(1-r)\) for \(0\leq r\leq1\) yield
+
+\[
+\frac{|K|}{V}=\int_S\rho_K^n\,d\sigma
+\geq1-nA_n\delta.
+\tag{4.3}
+\]
+
+Similarly, on \([1/2,1]\) the derivative of \(r^{-p'}\) has magnitude at
+most \(p'2^{p'+1}\), and therefore
+
+\[
+\int_S(H^\circ)^{p'}\,d\sigma
+\leq1+p'2^{p'+1}A_n\delta.
+\tag{4.4}
+\]
+
+Fix
+
+\[
+C=\max\{nA_n,p'2^{p'+1}A_n,1\},
+\qquad
+\eta=\min\{\eta_0,(2C)^{-1},1/4\}.
+\tag{4.5}
+\]
+
+\Needspace{12\baselineskip}\textbf{Lemma 4.1 (spectral and torsion control).} If
+\(\delta_p(H)\leq\eta\), then
+
+\[
+(1-C\delta_p(H))^{p/n}
+\leq\frac{\lambda_H}{\lambda_E}\leq1-\delta_p(H),
+\tag{4.6}
+\]
+
+and
+
+\[
+(1-\delta_p(H))^{-1/(p-1)}
+\leq\frac{T_H}{T_E}\leq1+C\delta_p(H).
+\tag{4.7}
+\]
+
+\emph{Proof.} Only the lower spectral and upper torsion bounds remain.
+Convex symmetrization {[}AFTL, Theorem 3.1 and equation (3.5){]}
+implies, for \(u\in W^{1,p}_0(B)\) and its Euclidean Schwarz
+rearrangement \(u^\#\),
+
+\[
+\int_BH(\nabla u)^p\,dx
+\geq\left(\frac{|K|}{V}\right)^{p/n}
+\int_B|\nabla u^\#|^p\,dx.
+\tag{4.8}
+\]
+
+Here one first replaces \(u\) by \(|u|\); evenness of \(H\) preserves
+the energy. To specify the normalization in (4.8), let
+\(\mu(t)=|\{|u|>t\}|\). The energy of the convex rearrangement has the
+level-set expression
+
+\[
+\int_0^\infty
+\bigl[n|K|^{1/n}\mu(t)^{1-1/n}\bigr]^p
+(-\mu'(t))^{1-p}\,dt,
+\tag{4.9}
+\]
+
+in the usual rearrangement interpretation. The corresponding expression
+for \(u^\#\) replaces \(|K|\) by \(V\). The convex rearrangement theorem
+decreases the original energy; comparison of these expressions gives
+(4.8), with the general Sobolev statement supplied by that theorem. The
+body denoted \(K\) in Section 2 of {[}AFTL{]} is the unit ball of \(H\);
+its polar is the body called \(K\) here. Their auxiliary volume
+normalization can be removed by scaling \(H\): both sides of (4.8) scale
+by its \(p\)-th power. Their hypotheses allow nonsmooth convex norms
+with positive coercivity, which holds in the present neighborhood. No
+regularity approximation of \(H\) or equality case is needed.
+
+Equimeasurability preserves the \(L^p\) denominator in the Rayleigh
+quotient. Taking the infimum in (4.8) gives
+\(\lambda_H/\lambda_E\geq(|K|/V)^{p/n}\), and (4.3) proves (4.6).
+
+For torsion use the Euclidean flux
+
+\[
+F=|\nabla w_E|^{p-2}\nabla w_E=-\frac xn.
+\tag{4.10}
+\]
+
+For every \(u\in W^{1,p}_0(B)\), integration by parts, duality of norms
+and Hölder\textquotesingle s inequality give
+
+\[
+\left|\int_Bu\right|^p
+=\left|\int_BF\cdot\nabla u\right|^p
+\leq\left(\int_BH^\circ(F)^{p'}\right)^{p-1}
+\int_BH(\nabla u)^p.
+\tag{4.11}
+\]
+
+Take the supremum and the power \(1/(p-1)\) in (1.2). Radiality of \(F\)
+and (2.10) imply
+
+\[
+T_H\leq\int_BH^\circ(F)^{p'}
+=T_E\int_S(H^\circ)^{p'}\,d\sigma.
+\tag{4.12}
+\]
+
+Equation (4.4) proves the upper torsion bound. Notice that the duality
+test uses the flux \(F\), whose Euclidean \(p'\)-energy equals \(T_E\),
+rather than the gradient \(\nabla w_E\) with an incorrect exponent. \(\square\)
+
+\Needspace{6\baselineskip}\textbf{Corollary 4.2.} For \(q>0\) and \(\delta=\delta_p(H)\leq\eta\),
+
+\[
+\log R_q(H)\leq(-1+qC)\delta,
+\qquad
+\log R_q(H)\geq
+\left(\frac q{p-1}-\frac{2pC}{n}\right)\delta.
+\tag{4.13}
+\]
+
+\emph{Proof.} For the first estimate use \(\log(1-\delta)\leq-\delta\)
+and \(\log(1+C\delta)\leq C\delta\). For the second use
+\(\log(1-C\delta)\geq-2C\delta\), valid because \(C\delta\leq1/2\), and
+\(-\log(1-\delta)\geq\delta\). Apply (4.6)-(4.7) to the logarithm of the
+product. \(\square\)
+
+\section{5. Persistence and quantitative
+equivalence}\label{persistence-and-quantitative-equivalence}
+
+With the constants from (2.11) and (4.5), choose
+
+\[
+q_-=
+\min\left\{\frac{p-1}{2},\frac1{2C},
+\frac{-\log(1-\eta)}{2\log M}\right\},
+\tag{5.1}
+\]
+
+and
+
+\[
+q_+=(p-1)\max\left\{\frac{2pC}{n}+1,
+\frac{\log(1/\ell)+1}{-\log(1-\eta)}\right\}.
+\tag{5.2}
+\]
+
+These constants satisfy (1.4).
+
+\emph{Proof of Theorem 1.1.} Suppose first that
+\(0<\delta_p(H)\leq\eta\). Corollary 4.2 gives
+
+\[
+R_q(H)\leq e^{-\delta_p(H)/2}<1
+\quad(0<q\leq q_-),
+\tag{5.3}
+\]
+
+and
+
+\[
+R_q(H)\geq e^{\delta_p(H)}>1
+\quad(q\geq q_+).
+\tag{5.4}
+\]
+
+For \(\delta_p(H)\geq\eta\), Lemma 2.1 and (2.11) imply
+
+\[
+R_q(H)\leq(1-\eta)M^q
+\leq\sqrt{1-\eta}<1
+\quad(0<q\leq q_-),
+\tag{5.5}
+\]
+
+whereas
+
+\[
+R_q(H)\geq\ell(1-\eta)^{-q/(p-1)}
+\geq e>1
+\quad(q\geq q_+).
+\tag{5.6}
+\]
+
+These estimates include all degenerate seminorms. Finally,
+\(\delta_p(H)=0\) forces \(H=1\) everywhere on \(S\) by continuity, so
+\(H=E\). Equations (5.3)-(5.6) prove uniqueness and existence of the
+stated optimizers directly.
+
+For completeness, we establish both sides of (1.6). In the small-\(q\)
+regime and for \(\delta=\delta_p(H)\leq\eta\), (5.3) gives
+
+\[
+D_q(H)\geq1-e^{-\delta/2}
+\geq\tfrac12 e^{-1/2}\delta.
+\tag{5.7}
+\]
+
+Since \(T_H\geq T_E\), the other side follows from (4.6):
+
+\[
+R_q(H)\geq(1-C\delta)^{p/n}
+\geq1-\max\{1,p/n\}C\delta.
+\tag{5.8}
+\]
+
+The last inequality follows from Bernoulli\textquotesingle s inequality
+if \(p/n\geq1\) and from \((1-x)^{p/n}\geq1-x\) otherwise. In the
+large-\(q\) regime, (5.4) implies \(D_q(H)\geq\delta\). For its upper
+bound, \(\lambda_H\leq\lambda_E\) and (4.7) give
+
+\[
+R_q(H)\leq(1+C\delta)^q\leq1+C_q\delta,
+\tag{5.9}
+\]
+
+where one may take \(C_q=qC\max\{1,(3/2)^{q-1}\}\).
+
+It remains to treat \(\delta\geq\eta\). We always have \(\delta<1\). The
+uniform gaps in (5.5)-(5.6) therefore give a positive constant times
+\(\delta\) as a lower bound for \(D_q\). In the maximum regime
+\(D_q\leq1\leq\delta/\eta\). In the minimum regime \(R_q\leq M^q\), so
+\(D_q\leq M^q\delta/\eta\). Combining these constants with (5.7)-(5.9)
+proves (1.6). \(\square\)
+
+\section{6. Optimal supremum norm
+stability}\label{optimal-supremum-norm-stability}
+
+\Needspace{6\baselineskip}\textbf{Lemma 6.1 (angular concentration bound).} There is \(c_n>0\)
+such that every \(H\in\mathcal H\) satisfies
+
+\[
+c_n\varepsilon(H)^{(n+1)/2}
+\leq\delta_p(H)\leq p\varepsilon(H).
+\tag{6.1}
+\]
+
+\emph{Proof.} If \(\varepsilon=0\), both assertions are immediate.
+Otherwise choose \(\nu\in S\) with \(H(\nu)=1-\varepsilon\). The cap
+calculation (3.2), which holds for every \(0<e\leq1\) without an inball
+assumption, applies with \(e=\varepsilon\). On
+\(C(\nu,\sqrt\varepsilon/8)\) we have \(1-H\geq\varepsilon/2\), and
+hence \(1-H^p\geq\varepsilon/2\). Its measure is at least a dimensional
+constant times \(\varepsilon^{(n-1)/2}\). This proves the lower bound.
+The upper bound follows from \(1-t^p\leq p(1-t)\) for \(0\leq t\leq1\).
+\(\square\)
+
+\emph{Proof of Theorem 1.2.} The lower bound follows at once by
+combining (1.6) and Lemma 6.1. For sharpness, take
+
+\[
+K_\varepsilon=
+\overline B\cap\{x:|x\cdot e_1|\leq1-\varepsilon\},
+\qquad H_\varepsilon=h_{K_\varepsilon},
+\quad 0<\varepsilon<\tfrac12.
+\tag{6.2}
+\]
+
+This centrally symmetric body contains \((1-\varepsilon)\overline B\)
+and, since \(n\geq2\), touches \(S\) on the equator perpendicular to
+\(e_1\). Consequently \(H_\varepsilon\) is a genuine normalized norm. At
+\(e_1\) its support equals \(1-\varepsilon\), so
+\(\varepsilon(H_\varepsilon)=\varepsilon\).
+
+Whenever \(|\theta\cdot e_1|\leq1-\varepsilon\), the point \(\theta\)
+itself belongs to \(K_\varepsilon\), and thus
+\(H_\varepsilon(\theta)=1\). The angular deficit is supported on two
+spherical caps of angular radius
+\(\arccos(1-\varepsilon)\leq C\sqrt\varepsilon\). Their total measure is
+at most \(C_n\varepsilon^{(n-1)/2}\). Also
+\(1-H_\varepsilon^p\leq p\varepsilon\), whence
+
+\[
+\delta_p(H_\varepsilon)\leq C_{n,p}\varepsilon^{(n+1)/2}.
+\tag{6.3}
+\]
+
+The upper bound in (1.6) proves (1.9). If a uniform estimate
+\(D_q(H)\geq c\varepsilon(H)^\gamma\) held for some \(\gamma<(n+1)/2\),
+evaluating it at \(H_\varepsilon\) and letting
+\(\varepsilon\downarrow0\) would force a fixed positive \(c\) to be
+zero. This proves optimality. \(\square\)
+
+\section{7. Scope and further
+questions}\label{scope-and-further-questions}
+
+The argument identifies exact optimizers at finite exponents and gives a
+common angular measure of their stability. The two regimes and the
+nonlinear extension follow from the same comparison mechanism. None of
+the constants in the construction is intended to be optimal.
+
+The natural next question is to determine the full interval of \(q\) for
+which \(E\) is extremal. For \(p=2\), the quadratic-seminorm conclusion
+of {[}BFH, Theorem 4.10{]} reaches \(q=1\) in the maximizing problem;
+extending that endpoint to arbitrary norms requires information not
+supplied by (4.13). Another question is whether analogous persistence
+holds on fixed domains other than balls. Our radial trial identities and
+dual flux calculation depend on the ball geometry, and the present
+theorem makes no assertion for general domains. Finally, constants
+uniform as \(p\downarrow1\) or \(p\uparrow\infty\) are not obtained
+here.
+
+\sloppy\section{References}\label{references}
+
+{[}AFTL{]} A. Alvino, V. Ferone, G. Trombetti and P.-L. Lions,
+\emph{Convex symmetrization and applications}, Annales de
+l\textquotesingle Institut Henri Poincaré C, Analyse non linéaire
+\textbf{14} (1997), 275-293.
+\href{https://www.numdam.org/item/AIHPC_1997__14_2_275_0/}{Primary
+article and full text}.
+
+{[}BFH{]} G. Buttazzo and R. Fernandes Horta, \emph{On the relations
+between fundamental frequency and torsional rigidity in the case of
+anisotropic energies}, arXiv:2603.09851v1 (2026).
+\href{https://arxiv.org/html/2603.09851v1}{Versioned full text}.
+
+{[}BHK{]} F. Besau, S. Hoehner and G. Kur, \emph{Intrinsic and dual
+volume deviations of convex bodies and polytopes}, International
+Mathematics Research Notices \textbf{2021} (22), 17456-17513.
+\href{https://doi.org/10.1093/imrn/rnz277}{DOI};
+\href{https://arxiv.org/abs/1905.08862}{author preprint}.
+
+{[}HM{]} R. Fernandes Horta and M. Montenegro, \emph{Sharp
+isoanisotropic estimates for fundamental frequencies of membranes and
+connections with shapes}, Calculus of Variations and Partial
+Differential Equations \textbf{64} (2025), article 273.
+\href{https://doi.org/10.1007/s00526-025-03114-2}{Published article};
+\href{https://arxiv.org/html/2406.18683v4}{arXiv:2406.18683v4}.
+
+\end{document}

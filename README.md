@@ -4,15 +4,21 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 41 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 42 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Euclidean persistence for anisotropic products
+
+[**P42: Euclidean persistence and sharp stability for anisotropic eigenvalue-torsion products**](papers/P42-anisotropic-persistence/README.md), by **Henry Zweiman**, proposes exact Euclidean optimality on balls over all normalized symmetric seminorms: maximization for sufficiently small positive torsion exponents and minimization for sufficiently large ones. The proof covers every dimension n>=2 and every energy exponent p>1. The product deficit is equivalent to an angular average and controls uniform distance with the optimal power (n+1)/2. The [ten-page PDF](papers/P42-anisotropic-persistence/manuscript.pdf), [full Markdown](papers/P42-anisotropic-persistence/manuscript.md), and [LaTeX](papers/P42-anisotropic-persistence/manuscript.tex) are included.
+
+The [assessment](papers/P42-anisotropic-persistence/ASSESSMENT.md) compares the explicit questions of Buttazzo and Fernandes Horta, their quadratic-seminorm predecessor, the published eigenvalue-only theory, and the classical symmetrization input. The [review](papers/P42-anisotropic-persistence/REVIEW.md) checks the cap covering argument, nonlinear flux duality, global thresholds and sharpness. General domains and optimal thresholds remain outside the theorem. This is one internally assessed preprint, not an independently certified solution.
 
 ## Uniform reverse Robin Kohler-Jobin inequality
 
 [**P41: Torsion transplantation and a uniform reverse Kohler-Jobin inequality for Robin problems**](papers/P41-robin-reverse-kohler-jobin/README.md), by **Henry Zweiman**, proposes an affirmative answer to the planar reverse Robin question of Buttazzo, Cito and Solombrino. Balls uniquely maximize the competing eigenvalue-torsion product for sufficiently large exponents among all bounded planar Lipschitz sets of fixed area. The exponent is uniform in the positive Robin parameter and area. A nonlinear extension and equivalent product/torsion deficits belong to the same proof. The [eight-page PDF](papers/P41-robin-reverse-kohler-jobin/manuscript.pdf), [full Markdown](papers/P41-robin-reverse-kohler-jobin/manuscript.md) and [LaTeX](papers/P41-robin-reverse-kohler-jobin/manuscript.tex) are included.
 
-The [assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md) records the current primary-source comparison and the essential prior Talenti and Faber-Krahn inputs. The [review](papers/P41-robin-reverse-kohler-jobin/REVIEW.md) audits the boundary correction, global threshold and parameter limits. The linear problem in dimensions at least three and the optimal exponent remain unresolved. P40 and P41 are the two manuscripts internally assessed and provisionally admitted under the revised September 15 standard; the earlier 39 remain pending reassessment. This is not independent certification of correctness, novelty or journal suitability.
+The [assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md) records the current primary-source comparison and the essential prior Talenti and Faber-Krahn inputs. The [review](papers/P41-robin-reverse-kohler-jobin/REVIEW.md) audits the boundary correction, global threshold and parameter limits. The linear problem in dimensions at least three and the optimal exponent remain unresolved. P40, P41 and P42 are the three manuscripts internally assessed and provisionally admitted under the revised September 15 standard; the earlier 39 remain pending reassessment. This is not independent certification of correctness, novelty or journal suitability.
 
 ## Boundary selection for logarithmic Sobolev constants
 

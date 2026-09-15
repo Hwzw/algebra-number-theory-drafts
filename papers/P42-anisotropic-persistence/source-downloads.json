@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-15",
+  "files": [
+    {
+      "file": "version.html",
+      "url": "https://arxiv.org/abs/2603.09851",
+      "bytes": 39957,
+      "sha256": "53b53a3231618b9cc294b696098ddf6e542ee2d76af0e40e9ddbae46d1748046"
+    },
+    {
+      "file": "v1.html",
+      "url": "https://arxiv.org/html/2603.09851v1",
+      "bytes": 726976,
+      "sha256": "542791590ec4c4290f35f2760ff37c6bcbd65f32cd1e161fa124dc960c863264"
+    },
+    {
+      "file": "cvgmt.html",
+      "url": "https://cvgmt.sns.it/paper/7593/",
+      "bytes": 12319,
+      "sha256": "372610562bab5e103fd239805c4ed5b79871161995edd80f60362e051b5c43a9"
+    },
+    {
+      "file": "bfh-primary.pdf",
+      "url": "https://cvgmt.sns.it/media/doc/paper/7593/BFH26.pdf",
+      "bytes": 435302,
+      "sha256": "5fe653aa64b660bb0eb9950a1ae410f6716ad168b4f73027f815c03c4b7afec5"
+    },
+    {
+      "file": "convex-symmetrization-1997.pdf",
+      "url": "https://www.numdam.org/item/AIHPC_1997__14_2_275_0.pdf",
+      "bytes": 1114477,
+      "sha256": "0cd8a79873cdd82d2bec8d1880479836a64e9a0d68db28d996249496218c49fc"
+    },
+    {
+      "file": "hm-v4.html",
+      "url": "https://arxiv.org/html/2406.18683v4",
+      "bytes": 885450,
+      "sha256": "b380c235f9e198c3b25f3814d60a308ca71d94aed8827a901f2232d478997844"
+    },
+    {
+      "file": "hm-history.html",
+      "url": "https://arxiv.org/abs/2406.18683",
+      "bytes": 42239,
+      "sha256": "44cb6be362cd0157885e2c28cd28d4c7a7031665ccaaae82f27d381ed93812ce"
+    },
+    {
+      "file": "hm-published.html",
+      "url": "https://link.springer.com/article/10.1007/s00526-025-03114-2",
+      "bytes": 535845,
+      "sha256": "431ce17de805e9ea2e0ca3ad8c65de6e54cffc9f918af7f4718316772a73b8ed"
+    },
+    {
+      "file": "bhk.pdf",
+      "url": "https://arxiv.org/pdf/1905.08862",
+      "bytes": 861564,
+      "sha256": "299c3fc86c568be8eebeab807f656843e358f5a5121fb3efc3455f077a7f66d7"
+    },
+    {
+      "file": "hhm-published.pdf",
+      "url": "https://idus.us.es/server/api/core/bitstreams/be334e4f-cd3e-4324-84e1-b628393f77bf/content",
+      "bytes": 1305226,
+      "sha256": "3fc88daac99605c942ee2caf65ba82653bfe0b8c62b7935784882fd749e4f6b2"
+    }
+  ]
+}

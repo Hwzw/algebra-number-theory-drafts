@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q49",
+  "primary_source": "https://arxiv.org/html/2603.09851v1",
+  "version_history_checked": "Only v1, March 10, 2026; CVGMT entry last updated same date",
+  "source_portions_read": [
+    "Introduction and definitions",
+    "Section 4 pages 14-20 including Theorem 4.10 and extreme-regime statements",
+    "Sections 5-6, pages 21-24"
+  ],
+  "target": "Section 6 Euclidean norm identification for small-q maximization and large-q minimization",
+  "proposed_scope": "Fixed Euclidean ball in every dimension n>=2, every p>1, full normalized symmetric seminorm class; sharp supremum-norm stability exponent (n+1)/2",
+  "prior_result_credited": "Theorem 4.10 gives ball maximality for q<=1 only in quadratic seminorm class; existence of a norm optimizer in extremes is also prior",
+  "not_claimed": "General fixed-domain persistence, optimal thresholds, independent correctness or priority certification",
+  "new_proof_note": "notes/0161-q49-nonlinear-extension.md",
+  "remaining_reviews": [
+    "Public publication verification",
+    "Independent expert review remains absent"
+  ],
+  "independent_review": false,
+  "verified_dependency": {
+    "source": "https://cvgmt.sns.it/media/doc/paper/2083/KJp_rev.pdf",
+    "portion": "Section 6 locates anisotropic Polya-Szego and Faber-Krahn antecedents",
+    "original_source": "Alvino-Ferone-Trombetti-Lions, Convex symmetrization and applications, AIHP C 14 (1997), 275-293",
+    "status": "Original Section 2 hypotheses and printed pages 283-284, equation (3.5) and Theorem 3.1, read and normalization verified for every p>1; no approximation required",
+    "url": "https://www.numdam.org/item/AIHPC_1997__14_2_275_0/"
+  },
+  "covering_audit": "Finite greedy selection on compact subsets and inner regularity; no gap identified",
+  "full_manuscript": "papers/P42-anisotropic-persistence/manuscript.md",
+  "additional_sources": [
+    {
+      "source": "Fernandes Horta and Montenegro, Calc. Var. 64 (2025), 273",
+      "doi": "10.1007/s00526-025-03114-2",
+      "published_date": "2025-09-30",
+      "arxiv_history": "2406.18683v4, September 15, 2024; v1-v3 also listed",
+      "read": "Current v4 principal statements, published Sections 1.3-1.4, 1.7 and full Section 3.1 proof of Theorem 1.5",
+      "access_detail": "Web tool presented subscription preview, but direct ordinary request returned full publisher HTML; archived and read that text",
+      "comparison": "Eigenvalue-only optimization and Euclidean rigidity, not eigenvalue-torsion products. Theorem 1.5 credited; no torsion term found in full publisher text."
+    },
+    {
+      "source": "Haddad, Fernandes Horta and Montenegro, JDE 447 (2025), 113635",
+      "doi": "10.1016/j.jde.2025.113635",
+      "read": "Published primary repository PDF, Section 1 including Theorems 1.1-1.6 and scope through start of Section 2",
+      "comparison": "Asymmetric one- and two-dimensional eigenvalue-only theory; broader anisotropy class, different objective."
+    },
+    {
+      "source": "Besau, Hoehner and Kur, IMRN 2021, 17456-17513",
+      "arxiv_history": "1905.08862v2, February 27, 2020",
+      "read": "Introduction, principal approximation statement, definitions and Section 6 radial-moment deviation identities; not a full proof audit",
+      "comparison": "Intrinsic and dual volume deviations and polytope approximation. Geometric background credited; no claim that cap argument is a novel standalone theorem."
+    }
+  ],
+  "searches": [
+    "Exact BFH title and identifier; anisotropic torsion Euclidean norm optimizer",
+    "Exact HM title, DOI, latest arXiv version and publisher text",
+    "Eigenvalue torsion norm persistence anisotropic",
+    "Support radial deficit convex body ball L1; mean width volume deficit",
+    "Exact BFH work-in-progress titles on Lane-Emden optimization and higher-dimensional membranes"
+  ],
+  "priority_assessment": "No competing full-seminorm ball product persistence theorem identified in the dated bounded search. BFH Section 6 questions remain in its only v1; no public version of its two cited works in progress was identified. No finite search excludes unindexed or unpublished work.",
+  "published_as": "P42",
+  "proof_audit": "Complete assembled manuscript internally reviewed; no remaining gap identified",
+  "admission": "Internally approved as one manuscript; see publication ledger for verified public count"
+}

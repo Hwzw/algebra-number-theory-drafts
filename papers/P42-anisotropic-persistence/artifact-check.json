@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-15",
+  "author": "Henry Zweiman",
+  "pdf_pages": 10,
+  "pdf_text_characters": 19659,
+  "pdf_text_replacement_characters": 0,
+  "mathjax_expressions": 310,
+  "mathjax_errors": 0,
+  "display_tag_count": 53,
+  "display_tags_match": true,
+  "visual_inspection": "All ten exact final PDF pages rendered at 105 dpi and visually inspected. After the final corollary pagination change, pages 1-6 were confirmed byte-identical as PNGs to reviewed pages, and pages 7-10 were reviewed again. No clipping, overlaps or missing glyphs.",
+  "tex_log": "No overfull or underfull boxes, no missing glyphs",
+  "independent_human_review": false,
+  "github_live_render_inspected": false,
+  "files": {
+    "manuscript.md": {
+      "bytes": 23772,
+      "sha256": "1318df8b8bb996ea6903133825905c01aa41f343af0d1d2f21d964d83a25a9e7"
+    },
+    "manuscript.tex": {
+      "bytes": 25706,
+      "sha256": "f5143f6a5073497931d533d3d49a1dc7b3bcee39879b95cce589898350ec18d2"
+    },
+    "manuscript.pdf": {
+      "bytes": 98590,
+      "sha256": "496d81b3e03cd3b723ef01dcb8ec209c149a1b9cf512f941d101fcf2c81db0de"
+    },
+    "build.py": {
+      "bytes": 2064,
+      "sha256": "3ee5ce498d4032e134a6836a4e49b38557b0de74072955792d137ff9f139c0ce"
+    },
+    "markdown-math-check.json": {
+      "bytes": 440,
+      "sha256": "b5a9b26cfe2d11562d5ab718e1eb5e20ea607aba052f3ce1b8cb22249697703f"
+    }
+  }
+}
