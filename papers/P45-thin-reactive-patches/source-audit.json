@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q53",
+  "paper": "P45",
+  "status": "Complete internal claim-specific primary-source comparison; no independent review or absolute priority guarantee",
+  "primary": {
+    "title": "Reactive capacitance of flat patches of arbitrary shape",
+    "authors": [
+      "Denis S. Grebenkov",
+      "Raphael Maurette"
+    ],
+    "final": "Physical Review E 113, 034112 (2026)",
+    "doi": "10.1103/mtgh-d591",
+    "published": "2026-03-10",
+    "arxiv_versions": [
+      "2510.25288v1, 2025-10-29",
+      "2510.25288v2, 2026-01-30"
+    ],
+    "read_scope": "Final Sections II A-D; relevant II F variational passage; III A-D; targeted IV discussion pp.17-18; Appendix B end p.23. Entire implementation and all appendix proofs not audited.",
+    "questions": [
+      "III C p.14: vanishing principal weight on thin ellipses and rhombi",
+      "IV p.17: small weights, rigorous localization, and whether a higher weight can dominate",
+      "B18 and B19 p.23: tube asymptotics with bounded remainders"
+    ],
+    "prior_inputs": [
+      "Integral operator and spectral response formulas",
+      "One-pole approximation",
+      "Capacitance variational principles and monotonicity"
+    ]
+  },
+  "later_sources": [
+    {
+      "id": "2509.17394v3",
+      "history": [
+        "2025-09-22 v1",
+        "2025-09-30 v2",
+        "2026-08-03 v3"
+      ],
+      "read_scope": "Abstract, Sections 1-2 setup and regime summary, Appendix D.1 local spectral formulation; full proofs not audited",
+      "comparison": "Shrinking patch diameters on confining 3D boundaries; local spectral formula credited; no inspected thin-width resolution"
+    },
+    {
+      "id": "2608.08626v1",
+      "history": [
+        "2026-08-09 v1 only"
+      ],
+      "read_scope": "Introduction, scaling and principal statements, local capacitance discussion, final discussion",
+      "comparison": "General curved-surface global capture expansions; local capacitance is an input"
+    },
+    {
+      "doi": "10.1137/25M180562X",
+      "final": "Multiscale Modeling & Simulation 24(2) (2026), 660-692",
+      "read_scope": "Final metadata and abstract; full final text not audited",
+      "comparison": "Context only, no proof dependency"
+    }
+  ],
+  "search_scope": [
+    "Thin reactive patch localization and spectral weights",
+    "Riesz potential operators on thin domains",
+    "Narrow-strip Steklov and single-layer slender-body asymptotics",
+    "Originating authors and later reactive-capacitance papers"
+  ],
+  "limitation": "Bounded public search; unindexed, unpublished or later work may alter priority. Search results and internal checks do not certify significance.",
+  "full_details": "ASSESSMENT.md",
+  "independent_review": false
+}

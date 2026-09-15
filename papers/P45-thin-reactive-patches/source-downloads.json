@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-15",
+  "files": [
+    {
+      "file": "reactive-patches-final.pdf",
+      "url": "https://pmc.polytechnique.fr/pagesperso/dg/publi/2026_04.pdf",
+      "bytes": 9169563,
+      "sha256": "c5d2dcfe70ba2b4254ab7846f9664ce769589c0eafd28c07a99c4ed93f09bf9f"
+    },
+    {
+      "file": "version.html",
+      "url": "https://arxiv.org/abs/2510.25288",
+      "bytes": 41780,
+      "sha256": "d2818a0746eb34e8465762e7d0a6f14bffd1c23caae47a3d02af11d762e570d6"
+    },
+    {
+      "file": "v2.html",
+      "url": "https://arxiv.org/html/2510.25288v2",
+      "bytes": 900214,
+      "sha256": "d7fbec83be4b077c126c048ed8082404d103966a75a49a147fdde9efe3e482db"
+    },
+    {
+      "file": "lbg-hw-v1.html",
+      "url": "https://arxiv.org/html/2608.08626v1",
+      "bytes": 1508464,
+      "sha256": "5be96399c682d19673f155e483bc03dae95e0f9367f44dc01f26c996708f1b64",
+      "status": "downloaded"
+    },
+    {
+      "file": "lbg-hw-history.html",
+      "url": "https://arxiv.org/abs/2608.08626",
+      "bytes": 42957,
+      "sha256": "a601fd8b1a4f22f821429ca88b955b6ba447c9ff057a8b792e0b1c56676380a8",
+      "status": "downloaded"
+    },
+    {
+      "file": "gw-v3.html",
+      "url": "https://arxiv.org/html/2509.17394v3",
+      "bytes": 2683519,
+      "sha256": "f8ab99b183e8253cdf3299ff9e7a0f276905d749441484cce1be55d9a62dfe6a",
+      "status": "downloaded"
+    },
+    {
+      "file": "gw-history.html",
+      "url": "https://arxiv.org/abs/2509.17394",
+      "bytes": 42411,
+      "sha256": "3d489a77b5b5661af9ab7f2163884cc1af38afad0e29aefc640fdd6b9457fbe1",
+      "status": "downloaded"
+    }
+  ]
+}

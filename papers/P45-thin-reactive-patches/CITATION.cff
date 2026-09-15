@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and note its unreviewed preprint status."
+type: article
+title: "Spectral localization and uniform reactive capacitance of thin planar patches"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+date-released: 2026-09-15
+version: 1.0.0
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P45-thin-reactive-patches"
+abstract: "Strong operator and spectral-measure limits for thin reactive patches, uniform relative capacitance asymptotics, bounded tube remainders, and a connected smooth example with a higher spectral weight exceeding the principal weight. AI-assisted preprint, not independently verified."
