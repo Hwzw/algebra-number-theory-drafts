@@ -6,9 +6,9 @@ September 15, 2026
 
 ## Abstract
 
-Let $P$ be a bounded convex polygon that is neither tangential nor a rectangle. We prove that the positive Robin parameters for which the first eigenfunction is log-concave form a locally finite set. In fact, at one fixed obtuse vertex, the eigenfunction and its logarithm fail to be semiconcave on every corner neighborhood for every parameter outside the zero set of a nontrivial real-analytic function. The proof continues a corner singularity of the first variation at the Neumann limit. An explicit angular projection gives an analytic singular coefficient without requiring analytic dependence of a full corner expansion. This disproves the eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer for general bounded convex domains. A single nonrhombic, nonrectangular parallelogram gives a counterexample, and products give examples in every dimension at least two. The result is compatible with eventual concavity on smooth uniformly convex domains.
+Let $P$ be a bounded convex polygon that is neither tangential nor a rectangle. We prove that the positive Robin parameters for which the first eigenfunction is log-concave form a locally finite set. In fact, at one fixed obtuse vertex, the eigenfunction and its logarithm fail to be semiconcave on every corner neighborhood for every parameter outside the zero set of a nontrivial real-analytic function. The proof continues a corner singularity of the first variation at the Neumann limit. An explicit angular projection gives an analytic singular coefficient without requiring analytic dependence of a full corner expansion. This disproves the eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer for general bounded convex domains. A single nonrhombic, nonrectangular parallelogram gives a counterexample, and products give examples in every dimension at least two. An interval-lifting argument further gives fixed convex prisms in every dimension at least three whose ground states have nonconvex superlevel sets outside the same discrete parameter set. The result is compatible with eventual concavity on smooth uniformly convex domains.
 
-**Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation.
+**Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation; quasiconcavity.
 
 **2020 Mathematics Subject Classification:** 35J25, 35B65, 35P05, 47A55.
 
@@ -66,7 +66,7 @@ does not have an eventual log-concavity threshold. There are bounded convex poly
 
 The new point is the continuation of a regularity obstruction through the entire finite Robin parameter axis. The first-variation classification in [ACH] supplies the initial nonzero corner mode. We extract its continuation by a bounded functional on a fixed Sobolev space, then use the identity theorem for real-analytic functions. Thus the argument does not extrapolate a small-parameter asymptotic estimate to large parameters.
 
-We do not determine whether log-concavity occurs at any of the exceptional parameters. Nor do we prove a classification for tangential polygons. Our result concerns log-concavity and semiconcavity; it does not resolve the higher-dimensional quasiconcavity conjecture or the sharp Robin fundamental-gap problem in [ACH].
+We do not determine whether log-concavity occurs at any of the exceptional parameters. Nor do we prove a classification for tangential polygons. Section 6 gives nonconvex superlevel sets on fixed prisms in every dimension at least three for all parameters outside the same discrete set. It does not resolve [ACH, Section 10, Conjecture 2], which concerns every convex polyhedron that is not a product of circumsolids for sufficiently small parameters, or the sharp Robin fundamental-gap problem.
 
 ## 2. Analytic dependence and local regularity
 
@@ -392,6 +392,85 @@ The contrast with the Dirichlet limit concerns regularity at the corners. A nonz
 The results of [CF] and [YZ] assume smooth uniformly convex domains. Our polygonal examples satisfy neither boundary hypothesis. Approximating a polygon by smooth domains for a fixed parameter does not produce a single smooth domain with the discrete-exception property proved here, since the approximation can depend on the parameter. The remaining smooth-boundary questions must be treated separately.
 
 The method suggests two further problems. One is to determine the exceptional parameters, or to show their absence for particular nonsymmetric polygons. Another is to understand eventual log-concavity within the tangential class, where the first-variation singular coefficient vanishes and the present initial-mode argument gives no obstruction. These questions are distinct from the conjecture for all convex domains, which Corollary 1.2 answers negatively.
+
+## 6. Nonconvex superlevel sets on fixed prisms
+
+A positive function $U$ on a convex domain is *quasiconcave* if every superlevel set $\{U>t\}$ is convex. For a smooth positive function, a strictly positive Hessian in a direction tangent to a level set of $\log U$ rules out quasiconcavity. We give the elementary argument in the following lemma.
+
+**Lemma 6.1 (interval lifting).** Let $D\subset\mathbb R^m$ be an open convex set, let $f\in C^2(D)$ have bounded gradient, and suppose $f$ is not semiconcave on $D$. Let $I$ be an open interval and $h\in C^2(I)$ satisfy $h'(t_0)\ne0$ at some $t_0\in I$. Then
+
+$$
+U(x,t)=\exp(f(x)+h(t))
+\tag{6.1}
+$$
+
+has a nonconvex superlevel set in $D\times I$.
+
+*Proof.* If $D^2 f(x)[v,v]\le M$ for every $x\in D$ and every unit vector $v$, integration along segments shows that $f-M|x|^2/2$ is concave. Therefore, failure of semiconcavity gives points $x_j\in D$ and unit vectors $v_j$ such that
+
+$$
+D^2f(x_j)[v_j,v_j]\longrightarrow+\infty.
+\tag{6.2}
+$$
+
+Put $F=\log U$ and
+
+$$
+s_j=-\frac{\nabla f(x_j)\cdot v_j}{h'(t_0)},
+\qquad V_j=(v_j,s_j).
+\tag{6.3}
+$$
+
+The numbers $s_j$ are bounded. At $z_j=(x_j,t_0)$ we have
+
+$$
+\nabla F(z_j)\cdot V_j=0,\qquad
+D^2F(z_j)[V_j,V_j]
+=D^2f(x_j)[v_j,v_j]+h''(t_0)s_j^2\longrightarrow+\infty.
+\tag{6.4}
+$$
+
+Fix $j$ for which the last expression is positive. Since $z_j$ is interior, Taylor's theorem gives, for sufficiently small $\varepsilon>0$,
+
+$$
+F(z_j\pm\varepsilon V_j)>F(z_j).
+\tag{6.5}
+$$
+
+Choose $b$ strictly between $F(z_j)$ and the smaller endpoint value. Both endpoints belong to $\{U>e^b\}$, while their midpoint does not. This proves the assertion. ∎
+
+**Theorem 6.2 (persistent failure of quasiconcavity on prisms).** Let $P$ satisfy the hypotheses of Theorem 1.1, and let $c$ be its analytic corner coefficient. For every integer $d\ge3$, the first Robin eigenfunction on the fixed convex polyhedron
+
+$$
+\Omega_d=P\times(0,1)^{d-2}
+\tag{6.6}
+$$
+
+has a nonconvex superlevel set whenever $\alpha>0$ and $c(\alpha)\ne0$. Consequently, the parameters at which this ground state is quasiconcave form a locally finite set, and there is no eventual quasiconcavity threshold for $\Omega_d$.
+
+*Proof.* Fix such an $\alpha$. On a sufficiently small convex corner neighborhood $D=P\cap B_r(v_*)$, the function $f=\log u_\alpha$ is smooth in the interior and has bounded gradient, by Lemmas 2.3 and 2.4. It is not semiconcave there, by Theorem 1.1.
+
+The positive first Robin eigenfunction on $(0,1)$ can be written
+
+$$
+g_\alpha(t)=\cos(k(t-1/2)),\qquad
+k\tan(k/2)=\alpha,\quad 0<k<\pi.
+\tag{6.7}
+$$
+
+The equation for $k$ has a unique solution because its left side is strictly increasing from zero to infinity. Direct differentiation verifies the Robin condition at both endpoints; positivity identifies the eigenfunction as the ground state. For $h=\log g_\alpha$ and $t_0=1/4$,
+
+$$
+h'(t_0)=k\tan(k/4)>0,
+\qquad h''(t_0)=-k^2\sec^2(k/4).
+\tag{6.8}
+$$
+
+Lemma 6.1 shows that $u_\alpha(x)g_\alpha(t)$ has a nonconvex superlevel set already in $D\times(0,1)$. This product is the ground state on $P\times(0,1)$, by the product argument in Section 5. For $d>3$, fix the remaining interval coordinates at interior points. The resulting slice is a positive constant multiple of the same product, so the same two endpoints and midpoint witness nonconvexity. The assertions about parameters follow from the locally finite zero set of $c$. ∎
+
+In particular, the explicit parallelogram (1.5) gives a fixed prism in each dimension $d\ge3$ with nonconvex ground-state superlevel sets for arbitrarily large Robin parameters. The small-parameter conclusion for these product domains follows already from the planar result in [ACH] and restriction to a slice. The additional conclusion here is persistence outside a discrete set over the entire positive parameter axis. No novelty is asserted for the elementary level-set criterion or separation of variables.
+
+This extension answers the eventual-quasiconcavity question for these fixed prisms negatively. It leaves [ACH, Section 10, Conjecture 2] unresolved on general polyhedra. The proof uses both bounded gradient and unbounded positive Hessian near a polygonal corner; failure of log-concavity alone would not imply the interval-lifting conclusion. No single smooth uniformly convex domain with arbitrarily large bad parameters is constructed here.
 
 ## References
 

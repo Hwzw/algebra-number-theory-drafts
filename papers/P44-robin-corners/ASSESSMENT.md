@@ -31,3 +31,9 @@ This resolves a published conjecture in its stated generality, and identifies a 
 ## Boundaries and counting
 
 Count at most one paper after exact public-file verification. Do not count the parallelogram, dimensional products, semiconcavity strengthening, or individual lemmas separately. The exceptional set need not be empty or globally finite. No single smooth counterexample to eventual concavity is constructed. Tangential polygons, higher-dimensional quasiconcavity, and the sharp fundamental gap remain outside the theorem. Independent mathematical review is still needed.
+
+## September 15 revision assessment
+
+Section 6 extends the same corner obstruction to nonconvex superlevel sets on fixed prisms in every dimension at least three, outside a discrete set of positive Robin parameters. This is a related consequence consolidated in P44. It is not a solution of ACH Conjecture 2 for all polyhedra: its small-parameter product-domain case was already implied by ACH's planar theorem. Its additional content is the arbitrarily-large-parameter conclusion and the discrete-exception statement. No claim that this extension alone meets an extraordinary-conjecture standard is made.
+
+The exact ACH Section 10 Conjecture 2, Remark 9.6, Lemma 9.5, and planar proof were reread in the primary arXiv v2 text on September 15, 2026. Focused searches for Robin quasiconcavity at large parameters, nonconvex superlevel sets on prisms, and product semiconcavity found no closer competing large-parameter theorem; this is a limited search, not proof of priority.

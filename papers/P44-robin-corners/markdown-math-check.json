@@ -1,9 +1,9 @@
 {
-  "file": "continuation/papers/P44-robin-corners/manuscript.md",
+  "file": "manuscript_extensions/P44-quasiconcavity/publish-ready/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "2568236e8c60f752f4f5166c7068d196435459f743f4c977995305d6fe76e876",
+  "markdown_sha256": "0a974ab61d82d6d30976eb74ea3fe2eeada61835f78aaf6d33b2e34350b58643",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
-  "expressions": 232,
+  "expressions": 286,
   "errors": [],
   "local_svg_preview_created": false,
   "local_visual_inspection": false,

@@ -52,7 +52,7 @@
     }
   ],
   "proof_progress": "Complete manuscript: fixed-boundary gauge, analytic H2 graph-space upgrade, explicit Lp-continuous angular coefficient, corner positivity by a weighted weak maximum principle, semiconcavity implies zero coefficient, nonzero Neumann derivative, analytic identity theorem.",
-  "next_obligation": "Exact artifact/public verification, then outside mathematical review. Exceptional parameters and tangential class remain open; earlier cone quasiconcavity route remains unresolved.",
+  "next_obligation": "Artifact and public verification for revision, then continue full-conjecture research. Independent review outstanding.",
   "priority_search": {
     "date": "2026-09-15",
     "queries": [
@@ -66,5 +66,18 @@
       "Robin concavity corner singularities"
     ],
     "result": "No prior analytic-persistence disproof identified in inspected primary sources. Dated bounded search, not absolute priority certification."
+  },
+  "revision_2026_09_15": {
+    "target": "Fixed-prism failure of eventual quasiconcavity",
+    "primary_text": "https://arxiv.org/html/1711.02779v2#S10",
+    "read": "Section 10 Conjecture 2; Remark 9.6; Lemma 9.5 and planar proof; Section 3 product context",
+    "scope": "Does not solve Conjecture 2 for all polyhedra; small-parameter product case already follows from ACH",
+    "proof": "Elementary interval lifting from the previously proved bounded gradient and failure of semiconcavity",
+    "search_queries": [
+      "Robin quasiconcavity large",
+      "Robin non-convex superlevel prism",
+      "Robin semiconcavity product"
+    ],
+    "search_limit": "No competing large-parameter prism result located in bounded search; not a complete priority certificate"
   }
 }

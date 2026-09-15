@@ -26,3 +26,9 @@ This review was performed by the originating assistant, not by a separate agent 
 ## Outcome
 
 No remaining logical gap was identified in the stated theorem during this internal audit. The proof uses the established ACH first-variation rigidity and Dauge Neumann regularity theorem; it does not independently reprove the entirety of either source. The source audit names the exact statements inspected. No finite-element experiment, symbolic verifier, or artifact check is used as a substitute for a universal argument. Historical priority and the mathematical conclusion remain subject to expert review and correction.
+
+## September 15 revision: interval lifting
+
+The Section 6 proof was checked directly. Failure of semiconcavity for a C2 function on a convex open set is exactly absence of a global upper Hessian bound. Bounded gradient and a fixed nonzero interval logarithmic derivative keep the correcting tangent component bounded. Its Hessian cost is finite for each fixed positive parameter, while the polygonal positive Hessian is unbounded. Taylor expansion is taken at one fixed interior point after the positive curvature has been obtained; no uniform Taylor remainder near the corner is assumed. Both endpoints strictly exceed their midpoint, proving nonconvexity of a superlevel set. The interval derivative is explicitly nonzero. The product Robin parameter is identical on every face. Higher-dimensional slicing retains the same midpoint witness. All analytic and regularity inputs are proved in Sections 2-4; no new PDE regularity theorem is assumed.
+
+This is an originating-assistant audit, not an independent review. The full ACH Conjecture 2 remains unresolved.
