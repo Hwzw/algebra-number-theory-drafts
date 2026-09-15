@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q48",
+  "author": "Henry Zweiman",
+  "independent_review": false,
+  "target": {
+    "source": "https://link.springer.com/article/10.1007/s00032-026-00438-2",
+    "statement": "Section 5, Q2",
+    "published": "2026-06-01",
+    "arxiv_latest_checked": "2512.14927v1",
+    "version_date": "2025-12-16",
+    "scope_solved": "All planar bounded open Lipschitz sets, every positive Robin parameter, common sufficiently large exponent; nonlinear extension for 1<p<=n/(n-1)",
+    "scope_not_solved": "Linear dimensions n>=3, optimal exponent, forward Q1"
+  },
+  "dependencies": [
+    {
+      "key": "AGM",
+      "url": "https://link.springer.com/article/10.1007/s10231-021-01153-y",
+      "arxiv": "2101.08099v2",
+      "version_date": "2021-07-27",
+      "read": "Published Theorem 1.2(i) and hypotheses; arXiv proof pp.13-14; published proof checked for dimensional exponent",
+      "input": "Pointwise Schwarz comparison, constant forcing, same beta, bounded open Lipschitz sets",
+      "publication": "Ann. Mat. Pura Appl. 201 (2022), 1189-1212"
+    },
+    {
+      "key": "ANT",
+      "url": "https://doi.org/10.1002/cpa.22090",
+      "arxiv": "1909.11950v2",
+      "version_date": "2020-06-14",
+      "read": "Published introduction and Theorem 1.3 via University of Naples primary repository; arXiv PDF archived",
+      "input": "Original planar linear comparison; covered also by AGM",
+      "publication": "CPAM 76 (2023), 585-603"
+    },
+    {
+      "key": "BD",
+      "url": "https://secure.maths.usyd.edu.au/u/daners/publ/abstracts/fkineq/isoper.pdf",
+      "doi": "10.1007/s00526-009-0252-3",
+      "read": "Theorem 1.1, introductory positivity/simplicity, Lemma 2.1 and ball discussion Section 4",
+      "input": "Robin p-Faber-Krahn, rigidity, positive simple ball eigenfunction; disconnected extension supplied in manuscript"
+    },
+    {
+      "key": "ABCMP",
+      "url": "https://arxiv.org/html/2511.11316v1",
+      "version_date": "2025-11-14",
+      "rendered_internal_date": "2026-08-24",
+      "date_discrepancy": "Version history lists only v1; HTML internal date differs. Exact current fetched HTML is archived and compared, not inferred from submission date.",
+      "read": "Introduction, Theorems 1.1-1.4, complete Section 4 including open questions",
+      "input": "Only optional geometric corollary uses quantitative Saint-Venant (Corollary 4.1); main theorem independent of this input",
+      "difference": "Quantitative lower deficits and Robin Talenti rigidity; no competing eigenvalue-torsion product result identified in these sections"
+    }
+  ],
+  "closest_prior_and_exclusions": [
+    {
+      "key": "BLNP",
+      "url": "https://arxiv.org/html/2304.10916v2",
+      "version_date": "2025-10-29",
+      "read": "Introduction, Corollary 1.6, complete Section 6.2 proof",
+      "result": "Full linear Dirichlet reverse Kohler-Jobin, already known and credited",
+      "difference": "Does not state present Robin theorem; proof uses earlier free-boundary spectral stability"
+    },
+    {
+      "key": "BMS",
+      "url": "https://arxiv.org/html/2603.26582v1",
+      "version_date": "2026-03-27",
+      "read": "Introduction and Theorems 1.1-1.5, Corollaries 1.2 and 1.6",
+      "result": "Convex Robin torsion/eigenvalue bounds with geometric factors and slab remainders",
+      "difference": "Different functionals and optimizing shapes; no reverse product theorem in inspected statements"
+    },
+    {
+      "key": "BFH",
+      "url": "https://cvgmt.sns.it/media/doc/paper/7593/BFH26.pdf",
+      "read": "First five pages, including abstract, introduction, definitions and preliminary propositions",
+      "result": "Optimization over anisotropic seminorms with fixed domain and Dirichlet boundary",
+      "difference": "Not optimization of Robin domains or present p-Laplacian theorem"
+    }
+  ],
+  "searches": [
+    "Robin reverse Kohler-Jobin inequality",
+    "Robin Kohler–Jobin reverse",
+    "Robin torsion transplantation",
+    "eigenvalue torsion deficit Talenti reverse Kohler Jobin composition proof",
+    "torsion transplantation eigenvalue Talenti",
+    "spectral deficit torsion ball upper bound"
+  ],
+  "search_limits": "Bounded primary-source audit. No identified competing Robin solution; cannot establish absence of unindexed or unpublished work. Broad all:Robin AND all:Kohler arXiv query returned irrelevant author-name matches and missed target, so is not negative priority evidence.",
+  "mathematical_review": "Complete hand proof and adversarial same-assistant audit; no external certification. No universal statement rests on a finite computation.",
+  "decision": "Proceed to one research preprint after artifact checks; revised-standard internal admission remains contingent on verified publication."
+}

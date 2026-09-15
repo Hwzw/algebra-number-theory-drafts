@@ -1,0 +1,514 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.88in]{geometry}
+\usepackage{amsmath,amssymb,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{Torsion transplantation and a uniform reverse Kohler--Jobin inequality for Robin problems}
+\author{Henry Zweiman}
+\date{September 15, 2026}
+\begin{document}
+\maketitle
+\section{Abstract}\label{abstract}
+
+We prove that balls maximize the product of the first Robin eigenvalue
+and a sufficiently large power of the torsional rigidity among bounded
+planar Lipschitz sets of prescribed area. The exponent threshold is
+independent of the positive Robin parameter and the area. This answers
+the planar case of the reverse Kohler-Jobin question posed by Buttazzo,
+Cito and Solombrino. More generally, the argument applies to the Robin
+\(p\)-Laplacian in dimension \(n\) when \(1<p\leq n/(n-1)\), using the
+integral of the \(p\)-torsion function. The main step is a composition
+identity with a nonpositive boundary correction, which transplants the
+ball eigenfunction through the torsion function and preserves the
+reference energy. The known pointwise Talenti comparison then yields a
+linear upper bound for the spectral deficit in terms of the torsional
+deficit. An elementary global bound completes the optimization argument.
+For larger exponents, the product deficit is equivalent to the torsional
+deficit, uniformly in the Robin parameter. The higher-dimensional linear
+Robin problem is not resolved.
+
+\section{1. Introduction and main
+results}\label{introduction-and-main-results}
+
+For a fixed positive Robin parameter, the ball minimizes the first
+eigenvalue and maximizes torsional rigidity among sets of prescribed
+volume. These two inequalities act in opposite directions on their
+product. Increasing the power of torsion suggests that its maximizer
+should eventually maximize the product, but the separate isoperimetric
+inequalities do not prove this assertion: one needs quantitative control
+of the competing increase in the eigenvalue.
+
+Buttazzo, Cito and Solombrino {[}BCS, Section 5, Q2{]} ask whether the
+ball maximizes the first Robin eigenvalue times a sufficiently large
+power of Robin torsional rigidity. The corresponding Dirichlet reverse
+Kohler-Jobin inequality is established by Bucur, Lamboley, Nahon and
+Prunier {[}BLNP, Corollary 1.6{]}. Here we answer the Robin question in
+the plane. Our exponent threshold is uniform in both the positive
+boundary parameter and the prescribed area. The proof also gives a
+nonlinear extension in the range of the known pointwise Robin
+rearrangement theorem.
+
+Let \(n\geq2\), \(p>1\) and \(\beta>0\). For a nonempty bounded open set
+\(\Omega\subset\mathbb R^n\) with Lipschitz boundary, define
+
+\[\begin{aligned}
+\mathcal E_{\beta,p,\Omega}(f)&=\int_\Omega|\nabla f|^p\,dx+\beta\int_{\partial\Omega}|f|^p\,d\mathcal H^{n-1},\\
+\lambda_{\beta,p}(\Omega)&=\inf_{f\in W^{1,p}(\Omega)\setminus\{0\}}
+\frac{\mathcal E_{\beta,p,\Omega}(f)}{\int_\Omega|f|^p\,dx}.
+\end{aligned}\tag{1.1}\]
+
+Let \(w=w_{\beta,p,\Omega}\) be the nonnegative weak solution of
+
+\[-\Delta_p w=1\quad\text{in }\Omega,
+\qquad |\nabla w|^{p-2}\partial_\nu w+\beta w^{p-1}=0
+\quad\text{on }\partial\Omega,\tag{1.2}\]
+
+where \(\Delta_p w=\operatorname{div}(|\nabla w|^{p-2}\nabla w)\), and
+put
+
+\[\tau_{\beta,p}(\Omega)=\int_\Omega w\,dx.\tag{1.3}\]
+
+Our convention for \(\tau\) is the integral of \(w\), rather than its
+\((p-1)\)-st power. For \(p=2\) it is the usual torsional rigidity
+\(T_\beta\). Let \(B\) be a ball with \(|B|=|\Omega|=V\). We omit
+subscripts when the parameters are fixed and write
+
+\[\theta(\Omega)=\frac{\tau(\Omega)}{\tau(B)},\qquad
+\mathcal R_q(\Omega)=\frac{\lambda(\Omega)\tau(\Omega)^q}
+{\lambda(B)\tau(B)^q}.\tag{1.4}\]
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.1 (uniform reverse Robin inequality).} Fix \(n\geq2\)
+and \(1<p\leq n/(n-1)\). There is a finite number
+\(Q(n,p)>\max\{1,p-1\}\) such that, for every \(\beta>0\), \(V>0\) and
+nonempty bounded open Lipschitz set \(\Omega\) of volume \(V\),
+
+\[\lambda_{\beta,p}(\Omega)\tau_{\beta,p}(\Omega)^q
+\leq\lambda_{\beta,p}(B)\tau_{\beta,p}(B)^q
+\qquad(q\geq Q(n,p)).\tag{1.5}\]
+
+For every such \(q\),
+
+\[1-\theta(\Omega)\leq1-\mathcal R_q(\Omega)
+\leq q\bigl(1-\theta(\Omega)\bigr).\tag{1.6}\]
+
+Equality in (1.5) holds if and only if \(\Omega\) is a translate of
+\(B\).
+
+In particular, \(Q(2,2)\) supplies a single exponent threshold for the
+planar problem {[}BCS, Q2{]}, simultaneously for all positive Robin
+parameters. Neither convexity nor connectedness is required. Formula
+(1.6) says that, for a fixed admissible exponent, the normalized product
+deficit and torsional deficit are equivalent with constants independent
+of \(\beta\), \(V\) and \(\Omega\).
+
+The estimate underlying the theorem is the following one-sided spectral
+control.
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.2 (linear spectral control).} Under the hypotheses of
+Theorem 1.1, there is \(C(n,p)<\infty\), independent of \(\beta\) and
+\(V\), such that
+
+\[0\leq\frac{\lambda(\Omega)}{\lambda(B)}-1
+\leq C(n,p)\bigl(1-\theta(\Omega)\bigr)
+\quad\text{if}\quad
+1-\theta(\Omega)\leq C(n,p)^{-1}.\tag{1.7}\]
+
+The essential rearrangement input is {[}AGM, Theorem 1.2(i){]}:
+
+\[w_\Omega^\#\leq w_B\quad\text{a.e. on }B
+\qquad\left(1<p\leq\frac n{n-1}\right),\tag{1.8}\]
+
+where \(\#\) denotes Schwarz decreasing rearrangement. For \(n=p=2\),
+this is the comparison of Alvino, Nitsch and Trombetti {[}ANT{]}. We use
+their theorem with constant forcing and exactly the same Robin parameter
+on both sets. The only dimensional restriction in our proof occurs at
+(1.8).
+
+We also use the Robin \(p\)-Faber-Krahn inequality and rigidity {[}BD,
+Theorem 1.1{]}. Its extension from connected domains to the present
+class is elementary. A bounded Lipschitz set has finitely many
+components \(\Omega_j\), each Lipschitz, and its first eigenvalue is
+\(\min_j\lambda(\Omega_j)\). The eigenvalue of a ball strictly decreases
+with its radius at fixed \(\beta\): dilation by \(t>1\) changes a trial
+quotient with gradient part \(A\) and boundary part \(D\) into
+\(t^{-p}A+t^{-1}D\), which is at most \(t^{-1}(A+D)\). Consequently
+\(\lambda(tB)\leq t^{-1}\lambda(B)<\lambda(B)\). Apply {[}BD{]} to every
+component and then enlarge its comparison ball to volume \(V\). This
+proves \(\lambda(\Omega)\geq\lambda(B)\), with strict inequality if
+\(\Omega\) is disconnected; the connected equality case is precisely
+{[}BD{]}. The positivity and simplicity of the ball ground state are
+standard parts of this Robin eigenvalue theory.
+
+\section{2. A composition identity with a favorable boundary
+term}\label{a-composition-identity-with-a-favorable-boundary-term}
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.1.} Suppose \(w\) is a bounded nonnegative weak Robin
+\(p\)-torsion function on a bounded Lipschitz set, with
+\(0\leq w\leq M\). Let \(h:[0,M]\to[0,\infty)\) be \(C^1\), with
+\(h(0)=0\), and set
+
+\[H(s)=\int_0^s|h'(t)|^p\,dt,
+\qquad G(s)=h(s)^p-s^{p-1}H(s).\tag{2.1}\]
+
+Then \(h(w)\in W^{1,p}(\Omega)\) and
+
+\[\mathcal E_{\beta,p,\Omega}(h(w))
+=\int_\Omega H(w)\,dx+\beta\int_{\partial\Omega}G(w)\,d\mathcal H^{n-1}
+\leq\int_\Omega H(w)\,dx.\tag{2.2}\]
+
+\textbf{Proof.} Extend \(h\) and \(H\) as Lipschitz functions beyond
+their compact intervals. Sobolev composition and the trace identity
+justify testing (1.2) with \(H(w)\). Since \(H'=|h'|^p\), this gives
+
+\[\int_\Omega|\nabla h(w)|^p\,dx
+=\int_\Omega H(w)\,dx-\beta\int_{\partial\Omega}w^{p-1}H(w)\,d\mathcal H^{n-1}.\]
+
+Adding the Robin energy of the trace gives the identity.
+Hölder\textquotesingle s inequality yields
+
+\[h(s)^p=\left|\int_0^s h'(t)\,dt\right|^p
+\leq s^{p-1}\int_0^s|h'(t)|^p\,dt,\]
+
+so \(G\leq0\). The interior bounds on \(w\) hold for its Sobolev trace
+as well: apply the trace operator to the truncations \((w-M)_+\) and
+\(w_-\). Thus all boundary terms above are integrable. This proves
+(2.2). \(\square\)
+
+If \(h\) is linear on \([0,b]\), then \(G(b)=0\). We will impose
+precisely this extension below the boundary value of the ball torsion.
+It makes the boundary inequality an equality on the reference ball,
+without requiring the trace of the competing torsion function to be
+constant.
+
+\section{3. Encoding the ball
+eigenfunction}\label{encoding-the-ball-eigenfunction}
+
+Let \(B=B_R\) and write \(p'=p/(p-1)\). The radial torsion function
+\(v=w_B\) is
+
+\[v(r)=b+\frac{p-1}{p}n^{-1/(p-1)}(R^{p'}-r^{p'}),
+\qquad b=\left(\frac R{n\beta}\right)^{1/(p-1)}.\tag{3.1}\]
+
+Let \(\phi\) be the positive first eigenfunction on \(B\), normalized by
+\(\int_B\phi^p\,dx=1\), and write \(\lambda_B=\lambda(B)\). Simplicity
+and rotational invariance make \(\phi\) radial. Integrating its radial
+equation gives
+
+\[-\phi'(r)=\left[\lambda_B r^{1-n}\int_0^r s^{n-1}\phi(s)^{p-1}\,ds\right]^{1/(p-1)}.\tag{3.2}\]
+
+In particular, \(\phi\) strictly decreases for \(r>0\). Put \(M=v(0)\)
+and define
+
+\[h(v(r))=\phi(r)\quad(0\leq r\leq R),
+\qquad h(s)=\frac{\phi(R)}b s\quad(0\leq s\leq b).\tag{3.3}\]
+
+For \(0<r\leq R\),
+
+\[h'(v(r))=
+\left[n\lambda_B r^{-n}\int_0^r s^{n-1}\phi(s)^{p-1}\,ds\right]^{1/(p-1)}.\tag{3.4}\]
+
+The derivative has the finite positive limit
+\(\lambda_B^{1/(p-1)}\phi(0)\) at the center. At \(r=R\), the two Robin
+boundary conditions give \(h'(b)=\phi(R)/b\), so the pieces in (3.3)
+join in \(C^1\). The limiting derivative also verifies differentiability
+at \(M\), for example by the mean value theorem. Thus \(h\) is
+increasing and \(C^1\) on \([0,M]\).
+
+Its derivative is nondecreasing in its argument. Indeed, the radial
+average in (3.4) decreases with \(r\), since \(\phi\) decreases, while
+\(v(r)\) decreases. Therefore both \(h\) and \(h'\) take their maxima at
+\(M\), and
+
+\[L:=\max_{0\leq s\leq M}(h(s)^p)'
+=p\lambda_B^{1/(p-1)}\phi(0)^p.\tag{3.5}\]
+
+For the function \(H\) in Lemma 2.1, the linear extension makes
+\(G(b)=0\). Applying the identity on \(B\) gives
+
+\[\int_B H(v)\,dx=\mathcal E_{\beta,p,B}(\phi)=\lambda_B,
+\qquad \int_B h(v)^p\,dx=1.\tag{3.6}\]
+
+Only first derivatives of \(h\) are used, including at the center of the
+ball.
+
+\section{4. From torsional deficit to global product
+optimality}\label{from-torsional-deficit-to-global-product-optimality}
+
+This section assumes (1.8). Define
+
+\[\delta=\tau(B)-\tau(\Omega),\qquad c=L\tau(B),
+\qquad\theta=\frac{\tau(\Omega)}{\tau(B)}.\tag{4.1}\]
+
+The comparison ensures \(0<\theta\leq1\) and bounds \(w\) by \(M\).
+Lemma 2.1, equimeasurability and the monotonicity of \(H\) imply
+
+\[\mathcal E_{\beta,p,\Omega}(h(w))
+\leq\int_\Omega H(w)\,dx
+=\int_B H(w^\#)\,dx
+\leq\int_B H(v)\,dx=\lambda_B.\tag{4.2}\]
+
+The denominator satisfies
+
+\[\begin{aligned}
+0\leq1-\int_\Omega h(w)^p\,dx
+&=\int_B\bigl(h(v)^p-h(w^\#)^p\bigr)\,dx\\
+&\leq L\int_B(v-w^\#)\,dx=L\delta.
+\end{aligned}\tag{4.3}\]
+
+The trial function is nonzero, since \(h\) is strictly increasing and
+\(w\) is nonzero and nonnegative. Its Rayleigh quotient yields
+
+\[\frac{\lambda(\Omega)}{\lambda_B}
+\leq\frac1{1-c(1-\theta)}
+\quad\text{if }c(1-\theta)<1.\tag{4.4}\]
+
+In particular, Faber-Krahn and (4.4) imply
+
+\[0\leq\frac{\lambda(\Omega)}{\lambda_B}-1
+\leq2c(1-\theta)
+\quad\text{if }1-\theta\leq\frac1{2c}.\tag{4.5}\]
+
+Since \(h(0)=0\) and \(h^p\) has Lipschitz constant \(L\), (3.6) gives
+\(1\leq L\tau(B)\), hence \(c\geq1\).
+
+We also need a global bound. Testing the torsion equation with \(w\)
+gives \(\mathcal E(w)=\tau(\Omega)\). Using \(w\) in the Rayleigh
+quotient and then applying Hölder gives
+
+\[\lambda(\Omega)\leq\frac{\tau(\Omega)}{\int_\Omega w^p\,dx}
+\leq\frac{V^{p-1}}{\tau(\Omega)^{p-1}}.\tag{4.6}\]
+
+This estimate alone does not identify the maximizing ball, but it
+controls domains outside the neighborhood covered by (4.5).
+
+\Needspace{6\baselineskip}\textbf{Proposition 4.1 (a threshold from ball data).} Set
+
+\[\begin{aligned}
+k&=\frac{\lambda_B\tau(B)^{p-1}}{V^{p-1}},\qquad t_0=1-\frac1{2c},\\
+q_0&=\max\left\{2c,\ p-1+\frac{\log(1/k)}{-\log t_0}\right\}.
+\end{aligned}\tag{4.7}\]
+
+Then \(\mathcal R_q(\Omega)\leq1\) for all \(q\geq q_0\). For all
+\(q\geq q_0+1\),
+
+\[1-\theta\leq1-\mathcal R_q(\Omega)\leq q(1-\theta).\tag{4.8}\]
+
+\textbf{Proof.} By (4.6), \(0<k\leq1\), and \(1/2\leq t_0<1\). If
+\(\theta\geq t_0\), then (4.4) gives
+
+\[\log\frac{\lambda(\Omega)}{\lambda_B}
+\leq-\log(1-c(1-\theta))
+\leq2c(1-\theta)\leq-2c\log\theta.\]
+
+Thus \(\lambda(\Omega)/\lambda_B\leq\theta^{-2c}\), proving the product
+bound for \(q\geq q_0\). If \(\theta\leq t_0\), (4.6) gives instead
+
+\[\mathcal R_q(\Omega)\leq k^{-1}\theta^{q-(p-1)}
+\leq k^{-1}t_0^{q-(p-1)}\leq1\qquad(q\geq q_0),\]
+
+by the definition of \(q_0\). This covers every \(\theta\in(0,1]\).
+
+For \(q\geq q_0+1\), apply the product bound at \(q_0\) and use
+Faber-Krahn to obtain
+
+\[\theta^q\leq\mathcal R_q(\Omega)
+=\mathcal R_{q_0}(\Omega)\theta^{q-q_0}
+\leq\theta^{q-q_0}\leq\theta.\]
+
+Bernoulli\textquotesingle s inequality \(1-\theta^q\leq q(1-\theta)\)
+proves (4.8). \(\square\)
+
+\section{5. Uniformity in the Robin
+parameter}\label{uniformity-in-the-robin-parameter}
+
+The constants in Proposition 4.1 involve only the reference ball. The
+next step shows that their dependence on its radius and on \(\beta\) can
+be eliminated.
+
+\Needspace{6\baselineskip}\textbf{Proposition 5.1.} For fixed \(n\geq2\) and \(p>1\), the
+quantities \(c\) and \(k\) in (4.1) and (4.7), computed on a ball with
+Robin parameter \(\beta>0\), satisfy
+
+\[1\leq c\leq C_0(n,p)<\infty,
+\qquad 0<k_0(n,p)\leq k\leq1.\tag{5.1}\]
+
+Consequently the supremum of \(q_0\) over all radii and all positive
+Robin parameters is finite.
+
+\textbf{Proof.} Under \(x=Ry\), the dimensionless boundary parameter is
+\(\alpha=\beta R^{p-1}\). The eigenvalue scales as \(R^{-p}\), the
+normalized eigenfunction as \(R^{-n/p}\), and \(\tau\) as \(R^{n+p'}\).
+It follows directly from (3.5), (4.1) and (4.7) that \(c\) and \(k\) are
+unchanged by this simultaneous rescaling. We may therefore take \(R=1\)
+and vary \(\beta\) in \((0,\infty)\).
+
+Write \(V=|B_1|\). Integrating (3.1) gives
+
+\[\tau(B_1)=V\left[b+\frac{n^{-1/(p-1)}}{n+p'}\right],
+\qquad b=(n\beta)^{-1/(p-1)}.\tag{5.2}\]
+
+Let \(\lambda_D\) be the first Dirichlet \(p\)-eigenvalue on \(B_1\).
+The Rayleigh principle, using a Dirichlet eigenfunction and a constant
+function respectively, gives
+
+\[0<\lambda_B\leq\lambda_D,\qquad\lambda_B\leq n\beta.\tag{5.3}\]
+
+Equation (3.2) implies
+
+\[0\leq-\phi'(r)\leq\lambda_D^{1/(p-1)}\phi(0)r^{1/(p-1)}.\tag{5.4}\]
+
+Choose \(r_*\in(0,1)\) depending only on \(n,p\) so that integration of
+(5.4) yields \(\phi(r)\geq\phi(0)/2\) on \([0,r_*]\). Normalization then
+bounds \(\phi(0)\) uniformly above, while monotonicity gives
+\(\phi(0)\geq V^{-1/p}\). The normalized radial eigenfunctions are
+therefore uniformly bounded and equicontinuous on \([0,1]\).
+
+As \(\beta\downarrow0\), (5.3) and (3.2) show that the oscillation of
+\(\phi\) tends to zero. Normalization implies uniform convergence to
+\(V^{-1/p}\). The integrated eigenfunction equation is
+
+\[\lambda_B\int_{B_1}\phi^{p-1}\,dx
+=\beta|\partial B_1|\phi(1)^{p-1}.\tag{5.5}\]
+
+Hence \(\lambda_B/(n\beta)\to1\). Inserting this limit and (5.2) into
+the definitions of \(c\) and \(k\) gives
+
+\[c\longrightarrow p,\qquad k\longrightarrow1
+\qquad(\beta\downarrow0).\tag{5.6}\]
+
+For the other endpoint, (5.4) and the Robin condition imply
+\(\phi(1)=O(\beta^{-1/(p-1)})\). Given any sequence \(\beta\to\infty\),
+take a subsequence along which \(\lambda_B\) converges to \(\lambda_*\)
+and \(\phi\) converges uniformly to \(\phi_*\). The limit is
+nonnegative, normalized, and vanishes at \(r=1\). Equation (3.2) passes
+to the limit. Its right-hand side is bounded by a constant times
+\(r^{1/(p-1)}\), so dominated convergence also gives convergence of the
+gradient energies. Furthermore,
+
+\[\beta\int_{\partial B_1}\phi^p\,d\mathcal H^{n-1}
+=O(\beta^{-1/(p-1)})\longrightarrow0.\]
+
+Therefore \(\phi_*\in W^{1,p}_0(B_1)\) and
+
+\[\lambda_D\leq\int_{B_1}|\nabla\phi_*|^p\,dx
+=\lambda_*\leq\lambda_D.\]
+
+Thus \(\lambda_*=\lambda_D\) and \(\phi_*\) is the normalized
+nonnegative first Dirichlet eigenfunction \(\phi_D\). Simplicity
+identifies every subsequential limit, so the whole family converges.
+Writing \(\tau_D=\int_{B_1}w_D\,dx\), we obtain
+
+\[\begin{aligned}
+c&\longrightarrow p\lambda_D^{1/(p-1)}\phi_D(0)^p\tau_D<\infty,\\
+k&\longrightarrow\frac{\lambda_D\tau_D^{p-1}}{V^{p-1}}>0
+\qquad(\beta\to\infty).
+\end{aligned}\tag{5.7}\]
+
+For completeness, the ball data are continuous at every
+\(\beta_*\in(0,\infty)\). The same radial compactness and gradient
+convergence apply along \(\beta\to\beta_*\). The limiting normalized
+trial gives \(\lambda_*\geq\lambda_{\beta_*,p}(B_1)\). Conversely, the
+fixed ground state at \(\beta_*\) is an admissible trial for nearby
+parameters and gives the reverse upper limit. Simplicity again
+identifies the uniform eigenfunction limit. Thus \(\lambda_B\) and
+\(\phi(0)\), and hence \(c\) and \(k\), are continuous.
+
+The endpoint limits and continuity prove (5.1), since \(c\geq1\) and
+\(k\leq1\) were proved in Section 4. The denominator \(-\log(1-1/(2c))\)
+in (4.7) is bounded below by the positive constant
+\(-\log(1-1/(2C_0))\). Hence \(q_0\) has a finite supremum. \(\square\)
+
+\textbf{Proof of Theorems 1.1 and 1.2.} Set
+
+\[Q(n,p)=1+\sup_{\alpha>0}q_0(n,p,\alpha),\qquad
+C(n,p)=2\sup_{\alpha>0}c(n,p,\alpha),\tag{5.8}\]
+
+where the ball has radius one and boundary parameter \(\alpha\).
+Proposition 5.1 makes these constants finite. Equation (4.5) proves
+Theorem 1.2; Proposition 4.1 proves (1.5) and (1.6). If equality holds
+in (1.5), (1.6) gives \(\theta=1\). Equation (4.4) then yields
+\(\lambda(\Omega)\leq\lambda(B)\); Faber-Krahn and its rigidity
+statement give that \(\Omega\) is a translate of \(B\). Such a translate
+plainly attains equality. \(\square\)
+
+\section{6. Consequences and remaining
+questions}\label{consequences-and-remaining-questions}
+
+Theorem 1.1 turns any available lower bound for the normalized torsional
+deficit into the same lower bound for the product deficit. For example,
+in the planar linear case the quantitative Robin Saint-Venant inequality
+gives a positive constant \(a(V,\beta)\) such that
+
+\[1-\mathcal R_q(\Omega)\geq a(V,\beta)\mathcal A(\Omega)^2
+\qquad(q\geq Q(2,2)),\tag{6.1}\]
+
+where
+\(\mathcal A(\Omega)=\inf_{x\in\mathbb R^2}|\Omega\mathbin\triangle(B+x)|/V\)
+is Fraenkel asymmetry. This is a direct consequence of (1.6) and the
+known torsional remainder, as given for example in {[}ABCMP, Corollary
+4.1{]}. The geometric estimate is a prior input; we do not claim that
+\(a(V,\beta)\) can be chosen uniformly in \(\beta\) by that argument.
+
+The proof of the product theorem uses no compactness of the class of
+competing domains and no boundary perturbation of the ball. The
+composition identity preserves the reference energy, and pointwise
+torsion comparison controls the loss in the trial denominator. The
+near-optimal estimate (4.4) and the global bound (4.6) are the two
+distinct ingredients needed to reach every domain.
+
+The same composition construction with zero boundary value is compatible
+with the Dirichlet problem. The linear Dirichlet reverse inequality is
+already a theorem of {[}BLNP{]}; it is not an additional open-problem
+solution asserted here. In the Robin setting, the linear case \(n\geq3\)
+remains beyond the pointwise input (1.8). The known \(L^1\) and \(L^p\)
+torsion comparisons do not by themselves control the nonlinear numerator
+\(\int H(w)\) in (4.2). Establishing a suitable substitute, or a
+different trial construction, remains necessary to extend the present
+proof.
+
+The exponent (5.8) is sufficient and is not asserted to be optimal.
+Determining the least admissible exponent, extending the range of \(p\),
+and settling the forward Robin Kohler-Jobin question {[}BCS, Q1{]}
+remain separate problems.
+
+\sloppy\section{References}\label{references}
+
+{[}ABCMP{]} V. Amato, R. Barbato, S. Cito, A. L. Masiello and G. Paoli,
+\emph{A quantitative Talenti-type comparison result with Robin boundary
+conditions}, preprint,
+\href{https://arxiv.org/abs/2511.11316v1}{arXiv:2511.11316v1}.
+
+{[}AGM{]} V. Amato, A. Gentile and A. L. Masiello, \emph{Comparison
+results for solutions to p-Laplace equations with Robin boundary
+conditions}, Annali di Matematica Pura ed Applicata \textbf{201} (2022),
+1189-1212. \href{https://doi.org/10.1007/s10231-021-01153-y}{DOI:
+10.1007/s10231-021-01153-y}.
+
+{[}ANT{]} A. Alvino, C. Nitsch and C. Trombetti, \emph{A Talenti
+comparison result for solutions to elliptic problems with Robin boundary
+conditions}, Communications on Pure and Applied Mathematics \textbf{76}
+(2023), 585-603. \href{https://doi.org/10.1002/cpa.22090}{DOI:
+10.1002/cpa.22090}.
+
+{[}BCS{]} G. Buttazzo, S. Cito and F. Solombrino, \emph{Relations
+between principal eigenvalue and torsional rigidity with Robin boundary
+conditions}, Milan Journal of Mathematics \textbf{94} (2026), 369-386.
+\href{https://doi.org/10.1007/s00032-026-00438-2}{DOI:
+10.1007/s00032-026-00438-2}.
+
+{[}BD{]} D. Bucur and D. Daners, \emph{An alternative approach to the
+Faber-Krahn inequality for Robin problems}, Calculus of Variations and
+Partial Differential Equations \textbf{37} (2010), 75-86.
+\href{https://doi.org/10.1007/s00526-009-0252-3}{DOI:
+10.1007/s00526-009-0252-3}.
+
+{[}BLNP{]} D. Bucur, J. Lamboley, M. Nahon and R. Prunier, \emph{Sharp
+quantitative stability of the Dirichlet spectrum near the ball},
+preprint, \href{https://arxiv.org/abs/2304.10916v2}{arXiv:2304.10916v2}.
+
+\end{document}

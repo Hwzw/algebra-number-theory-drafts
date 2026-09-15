@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-15",
+  "files": [
+    {
+      "file": "bcs-version.html",
+      "url": "https://arxiv.org/abs/2512.14927",
+      "bytes": 38988,
+      "sha256": "2be284156095d82407f1e4f1ad04235b74b84a75bf298b22d71ebb5296a9d90b"
+    },
+    {
+      "file": "bcs-v1.html",
+      "url": "https://arxiv.org/html/2512.14927v1",
+      "bytes": 405007,
+      "sha256": "6aadf6cd1bed21c086debd392f33a0c4062b763449ab67f43d0af60b416df6cb"
+    },
+    {
+      "file": "agm-version.html",
+      "url": "https://arxiv.org/abs/2101.08099",
+      "bytes": 41222,
+      "sha256": "28b74b7664ad64e0575f6e3e59e03e990775d63594726ff99ef5d5e28a5b3fda"
+    },
+    {
+      "file": "agm-v2.pdf",
+      "url": "https://arxiv.org/pdf/2101.08099v2",
+      "bytes": 254656,
+      "sha256": "915d2f812c0ddd40d59c0716d86650bf66f644382b0cb2396b22e7ebb8085783"
+    },
+    {
+      "file": "ant-version.html",
+      "url": "https://arxiv.org/abs/1909.11950",
+      "bytes": 39240,
+      "sha256": "d03deec2a5590f8c90846760894485df83460aeee93ee16330a2199e3e89a211"
+    },
+    {
+      "file": "quantitative-talenti-v1.html",
+      "url": "https://arxiv.org/html/2511.11316v1",
+      "bytes": 1138047,
+      "sha256": "bdb5088d009ee6f6608a4c8a9000437f5f377776383c72d44ec64a0c5953be69"
+    },
+    {
+      "file": "quantitative-talenti-version.html",
+      "url": "https://arxiv.org/abs/2511.11316",
+      "bytes": 40188,
+      "sha256": "68ce9e9fc52f14861c8547adfa1188394b223b7c81a6c1e10cfbc9980a2a01aa"
+    },
+    {
+      "file": "blnp-v2.html",
+      "url": "https://arxiv.org/html/2304.10916v2",
+      "bytes": 2046092,
+      "sha256": "3a2ee92908d2139df74697e1bd4f0c52f49f67052b799bd52c9cc15070f62be4"
+    },
+    {
+      "file": "blnp-version.html",
+      "url": "https://arxiv.org/abs/2304.10916",
+      "bytes": 42174,
+      "sha256": "77aaa0c1359ece6c890bd575477665dcc6487d80b4c753466a51dd5fb83508ee"
+    },
+    {
+      "file": "ant-v2.pdf",
+      "url": "https://arxiv.org/pdf/1909.11950v2",
+      "bytes": 186081,
+      "sha256": "8226311e5b395e82ee0d056a45ee8cdeaab28709117b3b4567073c6b4760594c"
+    },
+    {
+      "file": "bucur-daners.pdf",
+      "url": "https://secure.maths.usyd.edu.au/u/daners/publ/abstracts/fkineq/isoper.pdf",
+      "bytes": 170489,
+      "sha256": "90ca1db2fde42e0d0c44a13a5b1cb97d73ed33c7149a3a43302147a87df9e322"
+    },
+    {
+      "file": "bfh26.pdf",
+      "url": "https://cvgmt.sns.it/media/doc/paper/7593/BFH26.pdf",
+      "bytes": 435302,
+      "sha256": "5fe653aa64b660bb0eb9950a1ae410f6716ad168b4f73027f815c03c4b7afec5"
+    },
+    {
+      "file": "agm-published.html",
+      "url": "https://link.springer.com/article/10.1007/s10231-021-01153-y",
+      "bytes": 385031,
+      "sha256": "be77ec135faace57c73d31192d9991540dc91a1af122eadf488e49e6ceefc87e"
+    },
+    {
+      "file": "bcs-published.html",
+      "url": "https://link.springer.com/article/10.1007/s00032-026-00438-2",
+      "bytes": 385104,
+      "sha256": "62008f005409fe977bac78c1b74653c5c15ee1e6cc980c6c06c6679a92fbe787"
+    },
+    {
+      "file": "bms-v1.html",
+      "url": "https://arxiv.org/html/2603.26582v1",
+      "bytes": 636522,
+      "sha256": "0d45269a9d8428f5a15e9293822e16deb2bea6fd93b935751e5e3656577fa2c7"
+    }
+  ]
+}

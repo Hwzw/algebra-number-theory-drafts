@@ -27,3 +27,7 @@ All entries describe claims in AI-generated drafts. They have not been independe
 ## P40: low-temperature logarithmic Sobolev boundary selection
 
 The claimed theorem gives the sharp first-order coefficient for convex quadratic confinement around smooth bounded convex domains in every finite dimension, incorporating nonlinear extremizers and spectral limits. The unbounded exterior entropy estimate and its vanishing-energy uniformity are the principal proposed advances. Convexity, nondegenerate quadratic growth and a Laplacian bound remain hypotheses. The known spectral formula and interval asymptotic are credited; other boundary exponents and general extremizer classification remain open. See [the full assessment](papers/P40-log-sobolev-boundary-selection/ASSESSMENT.md).
+
+## P41: uniform reverse Robin Kohler-Jobin inequality
+
+The claimed theorem answers the planar case of Buttazzo--Cito--Solombrino Q2 for all bounded open Lipschitz sets, with a common exponent for every positive Robin parameter and area. The Robin p-Laplacian extension is restricted to 1<p<=n/(n-1), where a prior pointwise Talenti theorem applies. The torsion-composition boundary correction, linear spectral control and uniform exponent are the proposed advances. Faber--Krahn, its rigidity and quantitative Saint-Venant are credited inputs. Higher-dimensional linear Robin Q2, the least exponent and forward Q1 remain unresolved here. See [the assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md).
