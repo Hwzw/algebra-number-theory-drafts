@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-15",
+  "notes": [
+    "Third-party sources retained locally for audit; only download metadata is included in the published manuscript package.",
+    "tener-2017.pdf is the author preprint arXiv:1608.02095v1, not the typeset 2017 journal article.",
+    "belishev-korikov.pdf is arXiv:2112.14816v2.",
+    "Speciel published PDF is the final CC BY 4.0 journal article, obtained through its ordinary public download link."
+  ],
+  "files": [
+    {
+      "file": "speciel-v1.html",
+      "url": "https://arxiv.org/html/2503.00270v1",
+      "bytes": 203189,
+      "sha256": "34ab3a37dd68d5f08328c169e55d87a59e008f6b4eabdb38894c02a00726f599"
+    },
+    {
+      "file": "speciel-version.html",
+      "url": "https://arxiv.org/abs/2503.00270",
+      "bytes": 39735,
+      "sha256": "34e47c1bc057ee8007dbc76a7f3fc18ad2eb24eb769c107cb0a36e496352ef17"
+    },
+    {
+      "file": "speciel-v1.pdf",
+      "url": "https://arxiv.org/pdf/2503.00270v1",
+      "bytes": 832009,
+      "sha256": "4c30ee49b2f8e88b19bb6743bc9e2bcde0a8461b6a08231297933d17b9e5b198"
+    },
+    {
+      "file": "speciel-publisher.html",
+      "url": "https://ems.press/journals/jst/articles/14299819",
+      "bytes": 84508,
+      "sha256": "cbc7df40671913f960f401b9d4f8e56087d0f1ee2ce4bc8959bdf971e912115c"
+    },
+    {
+      "file": "speciel-published.pdf",
+      "url": "https://ems.press/content/serial-article-files/53975",
+      "bytes": 789237,
+      "sha256": "57b9ffb90d11af39d26b92b855cfe0fd677a43bd798a5c7a50451dc21ec294f4"
+    },
+    {
+      "file": "author-papers.html",
+      "url": "https://web.stanford.edu/~rspeciel/papers/",
+      "bytes": 8701,
+      "sha256": "fe441c8234b117e74e3b078fed6ed94f514279ab65f99a6950daed9336daa0d9"
+    },
+    {
+      "file": "stability-version.html",
+      "url": "https://arxiv.org/abs/2510.08822",
+      "bytes": 40641,
+      "sha256": "2486711bc0026d75fecb55a7c3d4c683c501b38c27da8c3437932a9f7e4d22b8"
+    },
+    {
+      "file": "stability.pdf",
+      "url": "https://arxiv.org/pdf/2510.08822",
+      "bytes": 466264,
+      "sha256": "aadd41d32d3caf7d6d5bc66b0ca79069aa6f9e934fc4e7d84cddd1e3abc062d7"
+    },
+    {
+      "file": "tener-2017.pdf",
+      "url": "https://pure.mpg.de/rest/items/item_3118456/component/file_3118457/content",
+      "bytes": 673531,
+      "sha256": "359c0696bc83cf33fedbb84dbd5089090574817a3cbee50743209c996ca95a59"
+    },
+    {
+      "file": "tener-version.html",
+      "url": "https://arxiv.org/abs/1608.02095",
+      "bytes": 40743,
+      "sha256": "679a6f5c22788e1b1c2eae44280963af0db50f1ac3c190ec3f6c61942eb96589"
+    },
+    {
+      "file": "henriques-tener-v1.html",
+      "url": "https://arxiv.org/html/2410.05929v1",
+      "bytes": 1130975,
+      "sha256": "2a52d852df1d1ee89ed4abe1eb328f799c7ca0958777b43465ae529ad8b5b1c1"
+    },
+    {
+      "file": "henriques-tener-version.html",
+      "url": "https://arxiv.org/abs/2410.05929",
+      "bytes": 41914,
+      "sha256": "4a37f81d025ff9643bab7112c2c1a408d51644acd7a6668777e8b81d1f7352d2"
+    },
+    {
+      "file": "belishev-korikov.pdf",
+      "url": "https://arxiv.org/pdf/2112.14816",
+      "bytes": 264959,
+      "sha256": "bbab1668f7b1cab27a2de2b9ab806ec044846363700d017b53575300adf7b537"
+    },
+    {
+      "file": "belishev-korikov-version.html",
+      "url": "https://arxiv.org/abs/2112.14816",
+      "bytes": 40396,
+      "sha256": "64e30d9f553755836caa6e7b4dd55754bf6548a96c742318f2d2cf8b89f1980f"
+    },
+    {
+      "file": "ball-rigidity-version.html",
+      "url": "https://arxiv.org/abs/2608.05577",
+      "bytes": 38122,
+      "sha256": "c482c478094df75a3c7eead3a50c589a59040a1904b588a1413232744f6df467"
+    },
+    {
+      "file": "ball-rigidity-v1.html",
+      "url": "https://arxiv.org/html/2608.05577v1",
+      "bytes": 162594,
+      "sha256": "b7af5f20513143f2ed0d464b1f5d6190a00cc50889fa76dceb65c585b7de9973"
+    }
+  ]
+}

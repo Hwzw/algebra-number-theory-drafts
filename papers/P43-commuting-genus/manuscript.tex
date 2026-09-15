@@ -1,0 +1,683 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.88in]{geometry}
+\usepackage{amsmath,amssymb,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{A genus obstruction for commuting boundary operators}
+\author{Henry Zweiman}
+\date{September 15, 2026}
+\begin{document}
+\maketitle
+\section{Abstract}\label{abstract}
+
+Let \(M\) be a compact connected oriented smooth Riemannian surface with
+nonempty smooth boundary. We prove that if its Dirichlet-to-Neumann map
+commutes with the boundary Laplacian, then \(M\) has genus zero. This
+answers both cases of Speciel\textquotesingle s Open Problem 1.6 and,
+together with his genus-zero classification, removes the topological
+restriction from the classification of oriented surfaces with commuting
+boundary operators. For connected boundary, the finite-dimensional
+obstruction to harmonic conjugation forces an exact determinant identity
+on all sufficiently high Fourier planes. The algebra of holomorphic
+boundary traces then produces a holomorphic map of degree one. For
+several boundary components, we prove that conformally attaching a
+Euclidean disk along an arclength identification preserves commutation.
+The proof separates the finite-period input, the multiplicative trace
+argument, and the variational elimination of the capped boundary.
+
+\textbf{2020 Mathematics Subject Classification:} 58J50, 35P05, 30F15.
+
+\textbf{Keywords:} Dirichlet-to-Neumann map, boundary Laplacian, genus,
+harmonic conjugation, conformal welding.
+
+\section{1. Introduction}\label{introduction}
+
+Let \((M,g)\) be a compact connected smooth Riemannian surface with
+nonempty smooth boundary. Its Dirichlet-to-Neumann map is
+
+\[
+Af=\partial_\nu u_f\big|_{\partial M},\qquad
+\Delta_g u_f=0,\qquad u_f\big|_{\partial M}=f,
+\tag{1.1}
+\]
+
+where \(\nu\) is the outward unit normal and \(\Delta_g\) is the
+nonnegative Laplacian. Write \(\Delta_\partial\) for the nonnegative
+Laplacian of the induced boundary metric. We consider the exact
+commutation condition
+
+\[
+A\Delta_\partial f=\Delta_\partial Af
+\qquad\text{for every }f\in C^\infty(\partial M).
+\tag{1.2}
+\]
+
+Speciel {[}S, Theorem 1.3{]} classified the surfaces satisfying (1.2)
+under the additional assumption that the genus is zero or that there are
+at least three boundary components. His classification contains disks,
+logarithmic ovals, and flat cylinders, with the equivalence appropriate
+to two-dimensional Dirichlet-to-Neumann data. The remaining cases, a
+positive-genus oriented surface with one or two boundary components, are
+explicitly posed in {[}S, Open Problem 1.6{]}. The numbering here refers
+to the final journal article; the corresponding question is Open Problem
+1.12 in its arXiv version.
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.1 (Genus obstruction).} Let \((M,g)\) be a compact
+connected oriented smooth Riemannian surface with nonempty smooth
+boundary. If (1.2) holds, then \(M\) has genus zero.
+
+The theorem imposes no curvature condition and no restriction on the
+number or lengths of the boundary components. In particular, neither of
+the positive-genus surfaces in {[}S, Open Problem 1.6{]} admits the
+requested metric.
+
+Recall that two surfaces are \emph{\(\sigma\)-isometric} if a
+diffeomorphism identifies their metrics after a conformal change
+\(g\mapsto e^{2\varphi}g\) with \(\varphi=0\) on the boundary. Both
+operators in (1.2) are preserved by this equivalence. A logarithmic oval
+is, up to Euclidean similarities, the image of the closed unit disk
+under \(z\mapsto\log(z-a)\), \(a>1\), using a branch holomorphic near
+the disk. We use the flat cylinder models of {[}S{]}.
+
+\Needspace{6\baselineskip}\textbf{Corollary 1.2 (Classification without a genus restriction).} A
+compact connected oriented smooth Riemannian surface with nonempty
+smooth boundary satisfies (1.2) if and only if it is
+\(\sigma\)-isometric to a disk, a logarithmic oval, or a flat cylinder.
+
+\emph{Proof.} Theorem 1.1 reduces the assertion to the genus-zero case
+of {[}S, Theorem 1.3{]}, which supplies both the classification and its
+converse. \(\square\)
+
+The new assertion is the genus obstruction. The models, their
+commutation property, and their classification in genus zero belong to
+Speciel. Our proof does not start from a uniformization of a
+positive-genus surface by a planar domain. Instead, it constructs a
+degree-one holomorphic map from the boundary operator identity.
+
+When the boundary is connected, let \(T\) denote positively oriented
+arclength differentiation. Harmonic conjugation can fail globally
+because of periods, but these periods lie in a finite-dimensional
+cohomology space. Consequently, on mean-zero functions,
+\((A^{-1}T)^2+I\) has finite rank. This is a classical feature of the
+boundary Hilbert transform in the inverse problem for Riemann surfaces;
+see {[}B{]} and the formulation in {[}BK, Section 2{]}. We give the
+needed period argument directly. Under (1.2), the finite-rank defect
+becomes an exact determinant constraint on every sufficiently high
+two-dimensional Fourier plane.
+
+The further input is multiplicative. Smooth holomorphic boundary traces
+form an algebra, characterized by \(Af=-iTf\). Condition (1.2) makes
+that algebra invariant under Fourier-plane projections. Multiplying
+adjacent high-frequency traces and projecting to frequency one
+constructs an ellipse-valued boundary parametrization. The exceptional
+case in which all negative high-frequency coefficients vanish produces a
+disk-valued parametrization by taking a quotient of two holomorphic
+functions. In both cases, the argument principle proves that the map has
+degree one.
+
+For disconnected boundary we attach a Euclidean disk along one boundary
+component by smooth conformal welding. Two-dimensional Dirichlet energy
+is unchanged on each piece by conformal rescaling. Minimizing over the
+seam trace gives a Schur complement of the original Dirichlet-to-Neumann
+map and the disk operator. The boundary arclength identification makes
+the latter the square root of the seam Laplacian. This proves that
+commutation survives capping, including at the constant mode. Iterating
+reduces to connected boundary without changing genus.
+
+\section{2. Holomorphic traces and the period
+defect}\label{holomorphic-traces-and-the-period-defect}
+
+We use the complex structure determined by the orientation and conformal
+class of \(g\). A holomorphic function on \(M\) will mean one
+holomorphic in the interior and smooth up to the boundary. Orient
+\(\partial M\) positively, so that \((\nu,\tau)\) is a positively
+oriented orthonormal frame when \(\tau\) is the positive unit tangent.
+Set \(T=\partial_\tau\) on each component. Our Hodge-star convention is
+\(*dx=dy\) in an oriented isothermal coordinate \(x+iy\).
+
+For complex-valued traces we extend \(A\) complex linearly.
+Green\textquotesingle s identity gives
+
+\[
+\int_{\partial M}\overline f\,Af\,ds
+=\int_M\bigl(|du|^2+|dv|^2\bigr)\,dV_g,
+\qquad u+iv=u_f.
+\tag{2.1}
+\]
+
+In particular, \(A\) is self-adjoint and nonnegative on
+\(L^2(\partial M,ds)\); its kernel consists of the global constants,
+since \(M\) is connected. Smooth elliptic boundary regularity is
+understood throughout.
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.1 (Holomorphic trace criterion).} A function
+\(f\in C^\infty(\partial M;\mathbb C)\) is the trace of a holomorphic
+function on \(M\) if and only if
+
+\[
+Af=-iTf.
+\tag{2.2}
+\]
+
+\emph{Proof.} If \(U=u+iv\) is holomorphic, then \(dv=*du\). At the
+boundary this gives \(Tv=Au\) and \(Av=-Tu\), proving (2.2).
+
+Conversely, extend \(f\) harmonically to \(U=u+iv\). By (2.1), (2.2),
+and Stokes\textquotesingle{} theorem,
+
+\[
+\begin{aligned}
+\int_M(|du|^2+|dv|^2)\,dV_g
+&=-i\int_{\partial M}\overline f\,df\\
+&=\int_{\partial M}(u\,dv-v\,du)
+=2\int_M du\wedge dv.
+\end{aligned}
+\tag{2.3}
+\]
+
+The imaginary term is \(-i\int_{\partial M}d(u^2+v^2)/2=0\). Pointwise,
+
+\[
+|dv-*du|^2\,dV_g
+=(|du|^2+|dv|^2)\,dV_g-2du\wedge dv.
+\tag{2.4}
+\]
+
+Its integral is zero by (2.3), hence \(dv=*du\). Thus \(U\) is
+holomorphic. \(\square\)
+
+Let \(\mathcal K\) be the space of these boundary traces. It contains
+the constants and is closed under multiplication. Lemma 2.1 identifies
+it as the kernel of \(A+iT\) on smooth complex functions. This standard
+trace-algebra viewpoint is also used in the inverse problem; our use
+below concerns its additional Fourier invariance under (1.2).
+
+From now through Section 3, assume that \(\partial M\) is connected. A
+constant rescaling of \(g\) preserves (1.2), since \(A\) and
+\(\Delta_\partial\) scale with degrees \(-1\) and \(-2\). Normalize its
+length to \(2\pi\). Positively oriented arclength is then
+\(s\in\mathbb R/2\pi\mathbb Z\), and \(T=d/ds\).
+
+Let \(C^\infty_0(\partial M;\mathbb R)\) denote the real smooth
+functions with zero boundary mean. The restriction of \(A\) to this
+space has a smooth inverse: the Neumann problem is solvable precisely
+for mean-zero normal data, and its additive constant is fixed by the
+boundary mean. Define
+
+\[
+H=A^{-1}T:C^\infty_0(\partial M;\mathbb R)
+\longrightarrow C^\infty_0(\partial M;\mathbb R).
+\tag{2.5}
+\]
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.2 (Finite period defect).} If \(M\) has genus \(\gamma\)
+and one boundary component, then \(H^2+I\) has rank at most \(2\gamma\)
+on \(C^\infty_0(\partial M;\mathbb R)\).
+
+\emph{Proof.} If \(u\) is the harmonic extension of \(f\), then \(*du\)
+is closed. Consider the linear period map
+
+\[
+\mathcal P:f\longmapsto[*du]\in H^1_{\mathrm{dR}}(M;\mathbb R).
+\tag{2.6}
+\]
+
+This cohomology space has dimension \(2\gamma\). If \(\mathcal P f=0\),
+there is a smooth real function \(v\) with \(dv=*du\). It is harmonic,
+and we choose its additive constant so that its boundary trace has mean
+zero. The boundary Cauchy-Riemann identities are
+
+\[
+A(v|_{\partial M})=-Tf,\qquad T(v|_{\partial M})=Af.
+\tag{2.7}
+\]
+
+Consequently \(Hf=-v|_{\partial M}\) and
+
+\[
+H^2f=-A^{-1}T(v|_{\partial M})=-f.
+\tag{2.8}
+\]
+
+Thus \(H^2+I\) vanishes on \(\ker\mathcal P\) and factors through a
+vector space of dimension at most \(2\gamma\). This proves the rank
+bound. No existence of a harmonic conjugate is asserted outside
+\(\ker\mathcal P\). \(\square\)
+
+The exact topological rank formula for a related boundary Hilbert
+transform is stronger than Lemma 2.2; see {[}BK, Section 2, formulas
+(12)-(16){]} and its attribution to {[}B, Lemma 1{]}. Only the
+elementary upper bound just proved is needed here.
+
+\section{3. Connected boundary forces genus
+zero}\label{connected-boundary-forces-genus-zero}
+
+Assume (1.2), and keep the normalization \(|\partial M|=2\pi\). For
+\(n\geq1\), let
+
+\[
+E_n=\operatorname{span}_{\mathbb R}\{\cos(ns),\sin(ns)\}.
+\tag{3.1}
+\]
+
+These are the positive eigenspaces of \(\Delta_\partial=-T^2\). Exact
+commutation implies that \(A\) preserves each \(E_n\). Self-adjointness
+then implies that its orthogonal Fourier projections commute with \(A\)
+on smooth functions. The operators \(A^{-1}\), \(T\), and \(H\) also
+preserve \(E_n\).
+
+\Needspace{6\baselineskip}\textbf{Lemma 3.1 (High Fourier planes).} There exists \(N\geq1\) such
+that for every \(n\geq N\) there is a unique \(c_n\in\mathbb C\),
+\(|c_n|<1\), for which
+
+\[
+f_n(s)=e^{ins}+c_ne^{-ins}\in\mathcal K.
+\tag{3.2}
+\]
+
+\emph{Proof.} In the real orthonormal cosine-sine basis of \(E_n\),
+write \(A_n\) for the positive symmetric matrix of \(A\) and
+\(J=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)\). The
+matrix of \(T\) is \(nJ\). For any positive symmetric two-by-two matrix
+\(S\), direct multiplication gives
+
+\[
+(S^{-1}J)^2=-\frac{1}{\det S}I.
+\tag{3.3}
+\]
+
+It follows that
+
+\[
+(H^2+I)|_{E_n}
+=\left(1-\frac{n^2}{\det A_n}\right)I.
+\tag{3.4}
+\]
+
+If the scalar in (3.4) were nonzero for infinitely many \(n\), the range
+of \(H^2+I\) would contain infinitely many independent Fourier planes.
+This contradicts Lemma 2.2. Hence
+
+\[
+\det A_n=n^2\qquad(n\geq N)
+\tag{3.5}
+\]
+
+for some \(N\).
+
+Set \(z=e^{is}\). In the complex orthonormal basis proportional to
+\((z^n,z^{-n})\), reality and self-adjointness give
+
+\[
+A_n=\begin{pmatrix}a&b\\\overline b&a\end{pmatrix},\qquad a>0,
+\qquad -iT=\begin{pmatrix}n&0\\0&-n\end{pmatrix}.
+\tag{3.6}
+\]
+
+By (3.5), \(\det(A_n+iT)=a^2-|b|^2-n^2=0\). Its kernel is
+one-dimensional, because its lower diagonal entry is \(a+n>0\). Lemma
+2.1 identifies this kernel with \(\mathcal K\cap E_n^{\mathbb C}\).
+
+For any nonzero trace \(f=\alpha z^n+\beta z^{-n}\) in this kernel,
+strict positivity of (2.1) and (2.2) imply
+
+\[
+0<\int_{\partial M}\overline f\,Af\,ds
+=2\pi n\bigl(|\alpha|^2-|\beta|^2\bigr).
+\tag{3.7}
+\]
+
+The trace is nonconstant, so its harmonic extension has strictly
+positive energy. Thus \(\alpha\ne0\) and \(|\beta/\alpha|<1\).
+Normalization proves existence and uniqueness in (3.2). \(\square\)
+
+Write \(P_n\) for the orthogonal projection onto \(E_n^{\mathbb C}\).
+Since both \(A\) and \(T\) commute with \(P_n\), Lemma 2.1 gives
+
+\[
+P_n\mathcal K\subset\mathcal K\qquad(n\geq1).
+\tag{3.8}
+\]
+
+\Needspace{6\baselineskip}\textbf{Proposition 3.2 (A degree-one boundary trace).} There is a
+holomorphic function \(F\) on \(M\) whose boundary trace has the form
+
+\[
+F|_{\partial M}=z+c z^{-1},\qquad |c|<1.
+\tag{3.9}
+\]
+
+\emph{Proof.} First suppose that \(c_n\ne0\) for some \(n\geq N\). The
+product \(f_nf_{n+1}\) belongs to \(\mathcal K\). Its frequency-one
+projection is
+
+\[
+P_1(f_nf_{n+1})=c_nz+c_{n+1}z^{-1}.
+\tag{3.10}
+\]
+
+This is a nonzero holomorphic trace by (3.8). Applying (3.7) at
+frequency one shows that \(|c_{n+1}|<|c_n|\). Dividing (3.10) by \(c_n\)
+proves (3.9).
+
+Suppose instead that \(c_n=0\) for all \(n\geq N\). Fix such an \(n\).
+Let \(F_n,F_{n+1}\) be the holomorphic extensions of \(z^n,z^{n+1}\).
+The holomorphic function \(F_n^{n+1}-F_{n+1}^n\) has zero boundary
+trace, so the maximum principle gives
+
+\[
+F_n^{n+1}=F_{n+1}^n\quad\text{on }M.
+\tag{3.11}
+\]
+
+The quotient \(G=F_{n+1}/F_n\) is meromorphic in the interior, is smooth
+near the boundary since \(F_n\) is nonzero there, and satisfies
+\(G^n=F_n\) wherever it is initially defined. A pole of \(G\) would give
+a pole of \(G^n\), which is impossible. Its apparent singularities are
+therefore removable. Thus \(G\) is holomorphic on \(M\), smooth to the
+boundary, and has boundary trace \(z\). Take \(F=G\) and \(c=0\).
+\(\square\)
+
+\Needspace{6\baselineskip}\textbf{Proposition 3.3 (Connected-boundary case of Theorem 1.1).} If
+\(\partial M\) is connected and (1.2) holds, then \(M\) has genus zero.
+
+\emph{Proof.} Take \(F\) from Proposition 3.2. The real-linear map
+\(w\mapsto w+c\overline w\) has determinant \(1-|c|^2>0\). Hence (3.9)
+maps the oriented boundary diffeomorphically onto a positively oriented
+nondegenerate ellipse \(\Gamma\). Let \(\Omega\) be the bounded
+component of \(\mathbb C\setminus\Gamma\).
+
+For \(a\notin\Gamma\), the argument principle on the bordered Riemann
+surface gives
+
+\[
+\sum_{p\in F^{-1}(a)}\operatorname{ord}_p(F-a)
+=\frac{1}{2\pi i}\int_{\partial M}\frac{dF}{F-a}
+=\begin{cases}1,&a\in\Omega,\\0,&a\notin\overline\Omega.\end{cases}
+\tag{3.12}
+\]
+
+There are finitely many zeros in (3.12), since there are none near the
+boundary. For completeness, the first equality follows by deleting small
+disjoint coordinate disks around those zeros and applying
+Stokes\textquotesingle{} theorem to the closed form \(dF/(F-a)\) on the
+remaining surface. Each small circle contributes its positive zero
+multiplicity.
+
+No interior point can map to \(\Gamma\): by the open mapping theorem its
+image neighborhood would contain points outside \(\overline\Omega\),
+contradicting the second case of (3.12). Therefore \(F\) maps the
+interior bijectively onto \(\Omega\), and every local multiplicity is
+one. It is a biholomorphism there. Its boundary map is also bijective,
+so \(F:M\to\overline\Omega\) is a homeomorphism by compactness. In
+particular \(M\) is a topological disk and has genus zero. \(\square\)
+
+\section{4. Conformal capping preserves
+commutation}\label{conformal-capping-preserves-commutation}
+
+We now allow several boundary components. The following construction
+concerns Dirichlet energy and keeps the line element on every uncapped
+component exactly fixed.
+
+\Needspace{6\baselineskip}\textbf{Lemma 4.1 (Smooth conformal cap).} Suppose \(M\) has at least
+two boundary components, and designate one of them by \(Y\). Let \(D\)
+be a Euclidean disk of perimeter \(|Y|_g\). Identify \(\partial D\) with
+\(Y\) by an orientation-reversing arclength isometry. The resulting
+topological surface admits a smooth conformal structure and a smooth
+compatible metric \(\widehat g\) with these properties:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The inclusions of \(M\) and \(D\) are conformal on their interiors and
+  smooth with nondegenerate derivatives up to the seam.
+\item
+  The line element of \(\widehat g\) on \(X=\partial M\setminus Y\)
+  equals the original line element of \(g\).
+\item
+  If \(U\in H^1(\widehat M)\) has restrictions \(u\) and \(v\) to the
+  two pieces, then
+\end{enumerate}
+
+\[
+\int_{\widehat M}|dU|_{\widehat g}^2\,dV_{\widehat g}
+=\int_M|du|_g^2\,dV_g+\int_D|dv|^2\,dx.
+\tag{4.1}
+\]
+
+The surface \(\widehat M\) is connected, has one fewer boundary
+component, and has the same genus as \(M\).
+
+\emph{Proof.} Smooth conformal sewing along an orientation-reversing
+boundary diffeomorphism is standard; a general bordered-surface
+statement is {[}T, Theorem 2.33{]}. The precise local smoothness can
+also be obtained from disk welding {[}HT, Theorem 3.1{]} and
+disk-annulus welding {[}HT, Proposition 3.6{]}. Here is the reduction to
+that local form.
+
+Choose a smooth annular collar of \(Y\) in \(M\). Its conformal
+uniformization by a round annulus is smooth with nonzero derivative at
+both boundary circles. In these coordinates the seam identification is a
+smooth circle diffeomorphism. Welding the disk to the collar produces a
+disk with conformal inclusions smooth up to a smooth seam. The conformal
+structure on the open interior of the original collar is unchanged. It
+therefore glues to the remainder of \(M\) along an open collar overlap.
+This supplies the asserted smooth conformal structure on \(\widehat M\).
+
+Choose any smooth metric \(h\) compatible with this structure. Its
+restriction to \(M\) is conformal to \(g\), and its restriction to \(D\)
+is conformal to the Euclidean metric. On each component of \(X\),
+prescribe a positive smooth scalar factor so that a conformal rescaling
+of \(h\) has the original line element. Extend this factor smoothly and
+positively to \(\widehat M\), using boundary collars, and denote the
+rescaled metric by \(\widehat g\).
+
+In dimension two,
+\(|du|_{e^{2\varphi}g}^2dV_{e^{2\varphi}g}=|du|_g^2dV_g\). Applying this
+on both pieces proves (4.1). Matching \(H^{1/2}\) traces across the
+smooth seam are precisely the compatibility condition for two piecewise
+\(H^1\) functions to define an \(H^1\) function on \(\widehat M\). This
+follows in a smooth seam chart from the usual trace and gluing property
+for a hypersurface; a jump is the only additional distributional
+derivative. No matching of normal metric derivatives across the seam is
+required. Finally, attaching a disk increases Euler characteristic by
+one and decreases the boundary count by one, so the genus is unchanged.
+\(\square\)
+
+The arclength condition determines the disk operator transported to the
+seam:
+
+\[
+B=\Delta_Y^{1/2}.
+\tag{4.2}
+\]
+
+Indeed, on a disk of radius \(r=|Y|_g/(2\pi)\), the modes
+\(e^{in\theta}\) have Dirichlet-to-Neumann eigenvalues \(|n|/r\) and
+boundary Laplace eigenvalues \(n^2/r^2\). Reversing orientation leaves
+both operators unchanged.
+
+Relative to \(L^2(X)\oplus L^2(Y)\) with the original line elements,
+write the original operator in blocks as
+
+\[
+A=\begin{pmatrix}A_{XX}&A_{XY}\\A_{YX}&A_{YY}\end{pmatrix}.
+\tag{4.3}
+\]
+
+\Needspace{6\baselineskip}\textbf{Proposition 4.2 (Capping and commutation).} If \(A\) commutes
+with \(\Delta_\partial\), then the Dirichlet-to-Neumann map
+\(\widehat A\) of \((\widehat M,\widehat g)\) in Lemma 4.1 commutes with
+the unchanged boundary Laplacian \(\Delta_X\).
+
+\emph{Proof.} Let \(d_M\) and \(d_{\widehat M}\) denote the minimized
+Dirichlet-energy forms for prescribed boundary values. Formula (4.1) and
+the trace gluing property give, for \(f\in H^{1/2}(X)\),
+
+\[
+d_{\widehat M}[f]
+=\inf_{h\in H^{1/2}(Y)}
+\left\{d_M[(f,h)]+\langle Bh,h\rangle\right\}.
+\tag{4.4}
+\]
+
+The brackets in (4.4) denote Sobolev duality, agreeing with the \(L^2\)
+energy pairing on smooth real functions; complex forms follow by
+polarization. Minimization over the interior of each piece first
+produces its harmonic extension, which justifies both directions of
+(4.4).
+
+The seam operator
+
+\[
+C=A_{YY}+B:H^{1/2}(Y)\longrightarrow H^{-1/2}(Y)
+\tag{4.5}
+\]
+
+is coercive. In fact, if \(u_h\) has boundary trace \((0,h)\) on
+\(X\sqcup Y\), then the Poincare inequality with zero trace on the
+nonempty boundary portion \(X\), followed by the trace theorem, yields
+
+\[
+\|h\|_{H^{1/2}(Y)}^2
+\leq C_0\|u_h\|_{H^1(M)}^2
+\leq C_1\int_M|du_h|^2\,dV_g
+=C_1\langle A_{YY}h,h\rangle.
+\tag{4.6}
+\]
+
+Adding the nonnegative disk energy preserves coercivity. The bounded
+form of \(C\) is therefore invertible by the variational existence
+theorem. This includes constants on \(Y\): although \(B\) annihilates
+constants, the extension with zero trace on \(X\) supplies the positive
+term in (4.6).
+
+The unique minimizing trace in (4.4) satisfies
+
+\[
+Ch=-A_{YX}f.
+\tag{4.7}
+\]
+
+Polarization, or differentiation of the minimum energy with respect to
+\(f\), gives the exact Schur complement
+
+\[
+\widehat A=A_{XX}-A_{XY}C^{-1}A_{YX}.
+\tag{4.8}
+\]
+
+The boundary measure used here is the original measure on \(X\), which
+equals the one for \(\widehat g\) by Lemma 4.1. Thus (4.8) is the
+geometric Dirichlet-to-Neumann map, with no additional boundary
+multiplier.
+
+It remains to check commutation without an unjustified manipulation of
+unbounded operators. The original commutation relation gives the block
+identities
+
+\[
+\Delta_iA_{ij}=A_{ij}\Delta_j,
+\qquad i,j\in\{X,Y\},
+\tag{4.9}
+\]
+
+on smooth functions. The diagonal block \(A_{YY}\) is self-adjoint and
+preserves every \(\Delta_Y\) eigenspace, so it commutes with its
+orthogonal spectral projections. The same is true of \(B\) and hence of
+the form operator \(C\). These projection identities extend to the
+indicated Sobolev spaces by density. Its inverse also commutes with the
+projections: apply a projection to \(Ch=k\) and use uniqueness of the
+solution.
+
+Now let \(f\) belong to the \(\lambda\) eigenspace of \(\Delta_X\). By
+(4.9), \(A_{YX}f\) belongs to the \(\lambda\) eigenspace of
+\(\Delta_Y\), or is zero if that eigenvalue is absent there. Equation
+(4.7) therefore puts \(h\) in the same eigenspace. Equations (4.8)-(4.9)
+imply that \(\widehat Af\) is in the \(\lambda\) eigenspace of
+\(\Delta_X\). This also holds for \(\lambda=0\) by the invertibility
+already proved. Hence \(\widehat A\) preserves every \(\Delta_X\)
+eigenspace. Smooth Fourier expansion on the finite union of boundary
+circles, together with continuity of both operators on smooth functions,
+proves their commutation. \(\square\)
+
+\emph{Proof of Theorem 1.1.} If the boundary is connected, use
+Proposition 3.3. Otherwise cap one boundary component using Lemma 4.1
+and Proposition 4.2. The resulting surface has the same genus, one fewer
+boundary component, and commuting boundary operators. Repeat until the
+boundary is connected. Proposition 3.3 makes the final genus zero, hence
+the original genus was zero. \(\square\)
+
+\section{5. Scope and further
+questions}\label{scope-and-further-questions}
+
+The proof uses exact commutation twice: first to reduce the
+finite-period defect to scalar defects on Fourier planes, and then to
+preserve the holomorphic-trace algebra under projection. A small
+commutator does not imply either exact determinant identities or exact
+multiplicative Fourier relations. A quantitative genus obstruction would
+require additional geometric control and is not a consequence of this
+argument. The stability results in {[}S2{]} concern other settings and
+do not supply that conclusion for arbitrary bordered surfaces.
+
+Proposition 4.2 may be useful separately when studying boundary
+symmetries compatible with conformal sewing. Its hypotheses specify the
+metric on the uncapped boundary and the arclength identification at the
+seam; omitting either can change the operators in (4.8). The present
+theorem concerns orientable surfaces with smooth metrics and smooth
+boundary. We make no classification claim for nonorientable surfaces or
+for rough boundaries.
+
+\textbf{Research and preparation statement.} This manuscript was
+developed and written with AI assistance, including its proof
+development, source comparison, and internal audit. It has not received
+independent expert review. The accompanying source and review records
+distinguish prior results, the proposed contribution, and the limits of
+the priority search. No numerical computation is used as evidence for
+the theorem.
+
+\sloppy\section{References}\label{references}
+
+{[}B{]} M. I. Belishev, \emph{The Calderon problem for two-dimensional
+manifolds by the BC-method}, SIAM Journal on Mathematical Analysis
+\textbf{35} (2003), no. 1, 172-182.
+\href{https://doi.org/10.1137/S0036141002413919}{DOI:
+10.1137/S0036141002413919}.
+
+{[}BK{]} M. I. Belishev and D. V. Korikov, \emph{On stability of
+determination of Riemann surface from its DN-map},
+\href{https://arxiv.org/abs/2112.14816v2}{arXiv:2112.14816v2}, 2022.
+Section 2, especially formulas (12)-(16).
+
+{[}HT{]} A. G. Henriques and J. E. Tener, \emph{The Segal-Neretin
+semigroup of annuli},
+\href{https://arxiv.org/abs/2410.05929v1}{arXiv:2410.05929v1}, 2024.
+Theorem 3.1 and Proposition 3.6.
+
+{[}S{]} R. Speciel, \emph{Surfaces with commuting boundary Laplacian and
+Dirichlet-to-Neumann map}, Journal of Spectral Theory \textbf{16}
+(2026), 1281-1292. \href{https://doi.org/10.4171/JST/617}{DOI:
+10.4171/JST/617}. Final journal numbering is used throughout.
+
+{[}S2{]} R. Speciel, \emph{Stability for commutativity properties of the
+Dirichlet-to-Neumann map}, International Mathematics Research Notices
+\textbf{2026} (2026), no. 14, rnag155.
+\href{https://doi.org/10.1093/imrn/rnag155}{DOI: 10.1093/imrn/rnag155}.
+Preprint titled \emph{Stability Estimates for Commutativity Properties
+of the Dirichlet-to-Neumann Map},
+\href{https://arxiv.org/abs/2510.08822v1}{arXiv:2510.08822v1}.
+
+{[}T{]} J. E. Tener, \emph{Construction of the unitary free fermion
+Segal CFT}, Communications in Mathematical Physics \textbf{355} (2017),
+463-518. \href{https://doi.org/10.1007/s00220-017-2959-x}{DOI:
+10.1007/s00220-017-2959-x}. The sewing statement used here is Theorem
+2.33 in the inspected author preprint,
+\href{https://arxiv.org/abs/1608.02095v1}{arXiv:1608.02095v1}, 2016.
+
+\end{document}

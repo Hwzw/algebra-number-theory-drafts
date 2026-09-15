@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-15",
+  "author": "Henry Zweiman",
+  "pdf_pages": 9,
+  "pdf_text_characters": 22243,
+  "pdf_text_replacement_characters": 0,
+  "mathjax_expressions": 264,
+  "mathjax_errors": 0,
+  "display_tag_count": 31,
+  "display_tags_match": true,
+  "visual_inspection": "All nine exact final PDF pages rendered at 105 dpi and visually inspected. No clipping, overlaps or missing glyphs.",
+  "tex_log": "No overfull or underfull boxes or missing characters",
+  "independent_human_review": false,
+  "github_live_render_inspected": false,
+  "files": {
+    "manuscript.md": {
+      "bytes": 25130,
+      "sha256": "b2a973b308fbb7a8acaa802755c51eb4da67c74d99bbb475714c97436a7bb973"
+    },
+    "manuscript.tex": {
+      "bytes": 27015,
+      "sha256": "c43bf61ecdae24119a190ba4d424040759a6fd27d3c96a634651aa279c31bd47"
+    },
+    "manuscript.pdf": {
+      "bytes": 91243,
+      "sha256": "75057500fb1329c4ac43d60651f188382324fdb0fd0a1d881437fd55f46a92af"
+    },
+    "build.py": {
+      "bytes": 1916,
+      "sha256": "2f9443d2541ae4e188d0bdfbc5eec95466f1325999e608ff7560389f66616c7b"
+    },
+    "markdown-math-check.json": {
+      "bytes": 432,
+      "sha256": "2832f9d6eae9e61d5d5a5aea9a0276daa1500651d1e8e6e4c55e1c3bc71442e0"
+    }
+  }
+}

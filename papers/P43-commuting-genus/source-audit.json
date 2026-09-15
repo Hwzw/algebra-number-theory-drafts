@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q51",
+  "paper": "P43",
+  "author": "Henry Zweiman",
+  "current_open_statement": {
+    "source": "Speciel, J. Spectr. Theory 16 (2026), 1281-1292, DOI 10.4171/JST/617",
+    "location": "Open Problem 1.6, printed page 1284",
+    "scope": "Positive-genus oriented surfaces with one or two boundary components",
+    "final_full_text_read": true,
+    "arxiv_record": "2503.00270, only v1 March 1, 2025 in inspected submission history",
+    "arxiv_number": "Open Problem 1.12",
+    "proposed_resolution": "Nonexistence in both cases, by a genus obstruction for any finite nonempty boundary"
+  },
+  "sources": [
+    {
+      "id": "S",
+      "files": [
+        "speciel-published.pdf",
+        "speciel-v1.html",
+        "speciel-version.html",
+        "speciel-publisher.html"
+      ],
+      "read": "Complete 12-page final journal article, including all proofs and references; final theorem numbering controls the citation. ArXiv version history and earlier open statement compared.",
+      "prior_contribution": "Genus-zero classification as disks, logarithmic ovals and flat cylinders up to sigma-isometry; exclusion of at least three boundary components; Fourier support argument for the boundary conformal factor.",
+      "new_contribution_claimed": "Exclusion of positive genus with one or two boundary components. The classification corollary combines the new obstruction with the existing theorem."
+    },
+    {
+      "id": "BK",
+      "files": [
+        "belishev-korikov.pdf",
+        "belishev-korikov-version.html"
+      ],
+      "version": "arXiv:2112.14816v2, March 26, 2022; latest listed version",
+      "read": "Section 2 preliminaries, pages 5-6, formulas (12)-(16), including finite-rank genus formula and trace-algebra description; bibliographic attribution to Belishev 2003.",
+      "use": "Prior finite-dimensional period/Hilbert-transform defect and trace-algebra context. Our required upper rank bound and holomorphic trace criterion are proved directly.",
+      "limitation": "No full audit of its stability proof."
+    },
+    {
+      "id": "B",
+      "url": "https://epubs.siam.org/doi/10.1137/S0036141002413919",
+      "read": "Publisher record and bibliographic metadata; finite-rank result located through the explicit primary attribution in BK.",
+      "limitation": "Original full proof not independently read. No unsupported dependency is assumed: the weaker rank bound used in this manuscript has a complete direct proof."
+    },
+    {
+      "id": "T",
+      "files": [
+        "tener-2017.pdf",
+        "tener-version.html"
+      ],
+      "version": "arXiv:1608.02095v1, August 6, 2016; only listed version; archived PDF is the preprint, despite filename",
+      "read": "Section 2.2.4, Theorem 2.33 and surrounding sewing discussion and Corollary 2.35.",
+      "use": "Smooth sewing for general bordered Riemann surfaces along orientation-reversing smooth diffeomorphisms.",
+      "limitation": "No full CFT-paper proof audit; theorem numbering is explicitly the preprint numbering. Smooth seam regularity is also checked through HT."
+    },
+    {
+      "id": "HT",
+      "files": [
+        "henriques-tener-v1.html",
+        "henriques-tener-version.html"
+      ],
+      "version": "arXiv:2410.05929v1, October 8, 2024; only listed version",
+      "read": "Full Section 3.1 including complete proof of Theorem 3.1 and smooth boundary nonvanishing-derivative statement Theorem 3.2; Proposition 3.6 and its preceding disk/annulus welding context.",
+      "use": "Smooth conformal disk welding and local disk-annulus capping; no CFT, spin or thin-annulus result used.",
+      "limitation": "Other sections not audited."
+    },
+    {
+      "id": "S2",
+      "files": [
+        "stability.pdf",
+        "stability-version.html"
+      ],
+      "version": "arXiv:2510.08822v1, October 9, 2025; only listed version",
+      "published": "IMRN 2026 no. 14, rnag155; DOI 10.1093/imrn/rnag155; title changed to Stability for commutativity properties of the Dirichlet-to-Neumann map",
+      "read": "ArXiv introduction and main statements, pages 1-4, Theorems 1.7, 1.14 and 1.17; final publisher abstract and metadata.",
+      "scope": "Three-dimensional domain stability and higher-dimensional potential/radial settings; no genus-obstruction result identified.",
+      "limitation": "Final full body not accessible through the web extract and not claimed read; comparison is with the current arXiv text plus final abstract."
+    },
+    {
+      "id": "S3",
+      "files": [
+        "ball-rigidity-v1.html",
+        "ball-rigidity-version.html"
+      ],
+      "version": "arXiv:2608.05577v1, August 6, 2026; only listed version",
+      "read": "Abstract and Section 1, Theorem 1.2 and Corollary 1.3; surrounding scope comparison",
+      "scope": "Euclidean balls in dimensions at least three, plus known planar disk spectral rigidity. No arbitrary positive-genus bordered-surface commutation theorem identified."
+    },
+    {
+      "id": "author-page",
+      "files": [
+        "author-papers.html"
+      ],
+      "read": "Current papers list, updated September 6, 2026, including later stability and ball-rigidity papers."
+    }
+  ],
+  "bounded_priority_search": {
+    "queries": [
+      "\"commuting\" \"Dirichlet-to-Neumann\" \"genus\" Speciel",
+      "\"Speciel\" \"Open Problem 1.6\"",
+      "\"boundary Laplacian\" \"holomorphic\" genus",
+      "\"Dirichlet-to-Neumann\" \"commut\" \"positive genus\"",
+      "\"Surfaces with commuting\" and title/author variants",
+      "Speciel conformal capping and holomorphic trace variants"
+    ],
+    "finding": "No later public resolution of the two positive-genus cases identified in the checked primary sources and bounded indexed searches.",
+    "limitations": [
+      "Search absence is not proof of absolute priority.",
+      "Unindexed, unpublished, or subsequent work may overlap.",
+      "Not an independent human proof review or journal acceptance assessment."
+    ]
+  },
+  "proof_dependencies": [
+    "Smooth Dirichlet and Neumann regularity, trace theorem and Poincare inequality with a nonempty Dirichlet boundary portion",
+    "Elementary de Rham period obstruction and surface Euler characteristic",
+    "Smooth conformal welding as specified in T and HT",
+    "Argument principle, proved in the required form by Stokes and local zero multiplicities",
+    "Speciel final Theorem 1.3 only for the classification corollary"
+  ],
+  "counting": "One consolidated paper. Do not count the connected-boundary theorem, capping lemma, classification corollary or possible later spectral corollaries separately."
+}

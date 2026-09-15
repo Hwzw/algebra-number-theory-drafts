@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 42 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 43 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Genus obstruction for commuting boundary operators
+
+[**P43: A genus obstruction for commuting boundary operators**](papers/P43-commuting-genus/README.md), by **Henry Zweiman**, proposes a complete negative answer to both cases of Speciel's final Open Problem 1.6: a compact connected oriented smooth surface with commuting Dirichlet-to-Neumann map and boundary Laplacian must have genus zero. Together with Speciel's existing theorem, this completes the oriented classification. The [nine-page PDF](papers/P43-commuting-genus/manuscript.pdf), [full Markdown](papers/P43-commuting-genus/manuscript.md), and [LaTeX](papers/P43-commuting-genus/manuscript.tex) contain the proof.
+
+The [assessment](papers/P43-commuting-genus/ASSESSMENT.md) compares the final journal problem, later author papers, classical finite-period theory, and smooth conformal welding. The [review](papers/P43-commuting-genus/REVIEW.md) checks the holomorphic trace multiplication, degree-one map, conformal energy gluing and constant-mode coercivity. This is one internally assessed preprint; independent mathematical review and absolute priority remain unverified.
 
 ## Euclidean persistence for anisotropic products
 
@@ -18,7 +24,7 @@ The [assessment](papers/P42-anisotropic-persistence/ASSESSMENT.md) compares the 
 
 [**P41: Torsion transplantation and a uniform reverse Kohler-Jobin inequality for Robin problems**](papers/P41-robin-reverse-kohler-jobin/README.md), by **Henry Zweiman**, proposes an affirmative answer to the planar reverse Robin question of Buttazzo, Cito and Solombrino. Balls uniquely maximize the competing eigenvalue-torsion product for sufficiently large exponents among all bounded planar Lipschitz sets of fixed area. The exponent is uniform in the positive Robin parameter and area. A nonlinear extension and equivalent product/torsion deficits belong to the same proof. The [eight-page PDF](papers/P41-robin-reverse-kohler-jobin/manuscript.pdf), [full Markdown](papers/P41-robin-reverse-kohler-jobin/manuscript.md) and [LaTeX](papers/P41-robin-reverse-kohler-jobin/manuscript.tex) are included.
 
-The [assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md) records the current primary-source comparison and the essential prior Talenti and Faber-Krahn inputs. The [review](papers/P41-robin-reverse-kohler-jobin/REVIEW.md) audits the boundary correction, global threshold and parameter limits. The linear problem in dimensions at least three and the optimal exponent remain unresolved. P40, P41 and P42 are the three manuscripts internally assessed and provisionally admitted under the revised September 15 standard; the earlier 39 remain pending reassessment. This is not independent certification of correctness, novelty or journal suitability.
+The [assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md) records the current primary-source comparison and the essential prior Talenti and Faber-Krahn inputs. The [review](papers/P41-robin-reverse-kohler-jobin/REVIEW.md) audits the boundary correction, global threshold and parameter limits. The linear problem in dimensions at least three and the optimal exponent remain unresolved. P40, P41, P42 and P43 are the four manuscripts internally assessed and provisionally admitted under the revised September 15 standard; the earlier 39 remain pending reassessment. This is not independent certification of correctness, novelty or journal suitability.
 
 ## Boundary selection for logarithmic Sobolev constants
 

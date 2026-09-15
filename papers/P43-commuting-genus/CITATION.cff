@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this research preprint if you use it. It has not been peer reviewed."
+title: "A genus obstruction for commuting boundary operators"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+type: unpublished
+version: "1.0"
+date-released: 2026-09-15
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P43-commuting-genus"
