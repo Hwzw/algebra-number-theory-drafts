@@ -1,0 +1,50 @@
+[
+  {
+    "file": "gms-final.pdf",
+    "url": "https://www.dmf.unicatt.it/~squassin/papers/lavori/GMSlog.pdf",
+    "bytes": 1578218,
+    "sha256": "b56a82ee8eb48cd2c7dcbb5800ffe46f8b8d32bfea32d53f06d2afb37cf41db7"
+  },
+  {
+    "file": "history.html",
+    "url": "https://arxiv.org/abs/2411.01614",
+    "bytes": 42150,
+    "sha256": "67ef744ddb6ed1e01f0d767eb0dda4c1615c89aad9f68f2450d61d925dbc5b52"
+  },
+  {
+    "file": "ben-chrouda-2022.pdf",
+    "url": "https://www.math.u-szeged.hu/ejqtde/p10092.pdf",
+    "bytes": 488193,
+    "sha256": "ff90b287e7c623093c5232cb7f5350f98c02cfd915e284e74dbf5426c8f9df2b"
+  },
+  {
+    "file": "gallo-moraschi-squassina.pdf",
+    "url": "https://www.dmf.unicatt.it/~squassin/papers/lavori/parabconc.pdf",
+    "bytes": 744014,
+    "sha256": "e7bbaeec0b4cce5ab75134459127bc5cabedb26504882185ee17b4aaa78e1236"
+  },
+  {
+    "file": "liu-sun-zou-v1.pdf",
+    "url": "https://arxiv.org/pdf/2606.19077v1",
+    "bytes": 404455,
+    "sha256": "19b7cbc162d018c565bf07866a3cf5884ba62dd852e8ecdb2dbcd822ea938889"
+  },
+  {
+    "file": "lsz-history.html",
+    "url": "https://arxiv.org/abs/2606.19077",
+    "bytes": 41722,
+    "sha256": "92b4bc4c4c807a472d52c82ed80059fb00d09dc91ef52926dfebffbd435790ad"
+  },
+  {
+    "file": "gms-parabolic-history.html",
+    "url": "https://arxiv.org/abs/2504.09494",
+    "bytes": 41259,
+    "sha256": "75f080f7921dd36c7d8cf8cb8448098a2fbbb53bcf6ca9af1e8d456e87b9987b"
+  },
+  {
+    "file": "liu-sun-zou-v2.pdf",
+    "url": "https://arxiv.org/pdf/2606.19077v2",
+    "bytes": 518284,
+    "sha256": "f897d2dbfed3361fcad184e2f46d4b41991127466ba23de3b44c345ecd6c6555"
+  }
+]

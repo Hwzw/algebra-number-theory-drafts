@@ -1,0 +1,686 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.88in]{geometry}
+\usepackage{amsmath,amssymb,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.35em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{Positive radial series and sharp logarithmic concavity on balls}
+\author{Henry Zweiman}
+\date{September 15, 2026}
+\begin{document}
+\maketitle
+\Needspace{8\baselineskip}\section{Abstract}\label{abstract}
+
+We study positive Dirichlet solutions of \(-\Delta u=u\log u^2\) on a
+ball in any dimension. We prove that \(-\log(u(r)/u(0))\) has a power
+series in \(r^2\) with strictly positive coefficients and convergence
+radius equal to the square of the ball radius. The coefficients follow
+an explicit positive recurrence and are polynomials with nonnegative
+coefficients in the excess of the central logarithmic height above the
+Gaussian threshold. This structure proves concavity of
+\(-\sqrt{-\log(u/\|u\|_\infty)}\), answering a question of Gallo,
+Mosconi and Squassina. The exponent \(1/2\) is sharp among positive
+powers of the negative normalized logarithm. We also obtain a
+quantitative lower bound for its Hessian before taking the square root,
+positive power concavity of \(u\) on every ball, and a comparison of
+normalized profiles. The argument gives an alternative proof of the
+known shooting order and ball uniqueness theorem. The essential step is
+to pass from a local positive recurrence to a convergent representation
+throughout the domain.
+
+\textbf{Mathematics Subject Classification (2020).} 35B45, 35J61, 34B15,
+26A51.
+
+\textbf{Keywords.} Logarithmic Schrödinger equation; concavity; radial
+solutions; positive power series; shooting method.
+
+\Needspace{8\baselineskip}\section{1. Introduction and main
+results}\label{introduction-and-main-results}
+
+Let \(N\geq1\), \(R>0\), and \(B_R=\{x\in\mathbb R^N:|x|<R\}\). We
+consider
+
+\[
+-\Delta u=u\log u^2\quad\text{in }B_R,
+\qquad u>0\quad\text{in }B_R,
+\qquad u=0\quad\text{on }\partial B_R,
+\tag{1.1}
+\]
+
+where \(u\in C^2(B_R)\cap C(\overline{B_R})\). All concavity statements
+about a logarithmic transform concern the open ball. Statements about
+\(u^\alpha\) extend to the closed ball by continuity.
+
+Gallo, Mosconi and Squassina {[}GMS{]} establish existence of a solution
+with locally negative-definite logarithmic Hessian on every bounded
+convex domain. Their Theorem 6.5 gives radial symmetry and radial
+decrease of every positive solution on a ball. In Sections 6.2-\/-6.3
+they ask for stronger concavity in balls: positive power concavity of
+\(u\), and concavity of the negative square root of its negative
+normalized logarithm. Their Theorem 6.6 proves both properties in
+dimension one. The second question remains explicitly stated on page 44
+of the final article.
+
+Our main result is a positive-series representation that answers both
+questions in every dimension. Write \(u(x)=U(r)\), \(r=|x|\), and set
+
+\[
+M=\log U(0),\qquad
+w(r)=-\log\frac{U(r)}{U(0)},\qquad
+A=\frac{2M}{N}.
+\tag{1.2}
+\]
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.1 (Positive radial series).} Every solution of (1.1)
+satisfies \(A>1\). There are strictly positive coefficients \(c_n\),
+\(n\geq0\), such that
+
+\[
+\frac{w'(r)}r=\sum_{n=0}^\infty c_n r^{2n},
+\qquad
+w(r)=\sum_{j=1}^\infty\frac{c_{j-1}}{2j}r^{2j},
+\qquad 0\leq r<R.
+\tag{1.3}
+\]
+
+The quotient at \(r=0\) is interpreted by continuity. Both series,
+regarded as series in \(r^2\), have radius of convergence exactly
+\(R^2\). Their coefficients are determined by
+
+\[
+c_0=A,\qquad
+c_{n+1}=
+\frac{(n+1)\displaystyle\sum_{i=0}^n c_i c_{n-i}-c_n}
+{(n+1)(2n+N+2)}.
+\tag{1.4}
+\]
+
+In particular, \(Z(t)=w'(\sqrt t)/\sqrt t\) is absolutely monotone on
+\([0,R^2)\): every derivative is strictly positive there. The same is
+true of every derivative of positive order of \(W(t)=w(\sqrt t)\). In
+addition,
+
+\[
+D^2w(|x|)\succeq A I_N,
+\tag{1.5}
+\]
+
+with strict inequality as quadratic forms when \(x\neq0\). Here
+\(\succeq\) denotes the order on symmetric matrices.
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.2 (Sharp transformed concavity).} For every solution
+of (1.1),
+
+\[
+x\longmapsto -\left(-\log\frac{u(x)}{\|u\|_\infty}\right)^\beta
+\quad\text{is concave on }B_R
+\quad\Longleftrightarrow\quad \beta\geq\frac12,
+\qquad \beta>0.
+\tag{1.6}
+\]
+
+For \(\beta=1/2\) its Hessian is negative definite away from the center.
+At the center it is continuous and has a norm-type cusp; no
+differentiability assertion there is intended.
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.3 (Positive power concavity).} There exists a number
+\(\alpha_*(U)\in(0,1)\) such that, for \(\alpha>0\),
+
+\[
+u^\alpha\text{ is concave on }\overline{B_R}
+\quad\Longleftrightarrow\quad
+\alpha\leq\alpha_*(U).
+\tag{1.7}
+\]
+
+It is characterized by an attained interior minimum,
+
+\[
+\alpha_*(U)=\min_{0<r<R}\frac{w''(r)}{w'(r)^2}.
+\tag{1.8}
+\]
+
+The formula is implicit. We do not assert a positive exponent uniform
+over all radii, or monotonicity of this optimal exponent as a function
+of the radius.
+
+\subsection{1.1. Prior results and the scope of the
+contribution}\label{prior-results-and-the-scope-of-the-contribution}
+
+The amplitude threshold, uniqueness in balls, and strict ordering of
+first zeros are prior results. For \(k=1\) and \(\beta=0\), Ben Chrouda
+{[}BC, Theorem 1.2 and Corollaries 1.3 and 1.5{]} proves these facts for
+\(-\Delta v=v\log v\). The change \(v(y)=u(y/\sqrt2)\) gives the
+normalization (1.1). The equality case in the amplitude threshold is
+excluded by the Gaussian solution and uniqueness of the central
+initial-value problem. We give new proofs of these particular
+consequences because they fit the recurrence argument, but do not claim
+their first discovery.
+
+Liu, Sun and Zou {[}LSZ{]} prove a broader shooting classification of
+whole-space nodal solutions; in particular, their argument establishes
+strict motion of zeros with the initial value. Gallo, Moraschi and
+Squassina {[}GMoS{]} develop parabolic concavity principles whose
+logarithmic example yields preservation of logarithmic concavity.
+Neither of these results supplies the positive radial series used here.
+Our priority claim concerns that structure and the resulting stronger
+concavity, rather than existence, radial symmetry, Gaussian ground-state
+classification, or shooting uniqueness. Current versions of these
+sources were compared on September 15, 2026.
+
+The proof of Theorem 1.1 has three stages. An integrating factor puts
+the logarithmic radial derivative above its Gaussian value. Its equation
+then produces positive Taylor coefficients. Finally, positivity and a
+real-axis singularity argument show that the series represents the
+solution all the way to its first zero. Convexity of a Hilbert-space
+norm proves Theorem 1.2. A separate boundary argument, which
+accommodates the singular derivative of \(u\log u^2\) at zero, completes
+Theorem 1.3.
+
+\Needspace{8\baselineskip}\section{2. The radial equation and the Gaussian
+threshold}\label{the-radial-equation-and-the-gaussian-threshold}
+
+We use radial symmetry and radial decrease from {[}GMS, Theorem 6.5{]}.
+These are nontrivial inputs: the derivative of the nonlinearity is
+unbounded below near zero, so an unqualified appeal to the usual locally
+Lipschitz moving-plane theorem would be inappropriate. Existence follows
+from {[}GMS, Theorem 1.1{]}, with its one-dimensional result covering
+\(N=1\). The rest of the argument applies to every positive radial
+decreasing solution.
+
+Put \(f(s)=s\log s^2\) for \(s>0\), and \(f(0)=0\). The radial equation
+and its integral form are
+
+\[
+U''+\frac{N-1}{r}U'+f(U)=0,
+\qquad
+U'(r)=-r^{1-N}\int_0^r s^{N-1}f(U(s))\,ds.
+\tag{2.1}
+\]
+
+The central initial-value problem is unique as long as its solution
+stays positive. Indeed, integrating (2.1) once more gives a Volterra
+equation. On a sufficiently small interval the Lipschitz bound for \(f\)
+near a prescribed positive central value makes its integral operator a
+contraction, since the norm of the double integral is bounded by a
+constant times \(r^2\). Ordinary uniqueness then continues the solution
+away from zero. The same identity, using smoothness of \(f\) near a
+positive central value, gives the usual even expansions at the center.
+
+Since \(U\) has its maximum at zero, (2.1) implies \(f(U(0))\geq0\),
+hence \(M\geq0\). If \(M=0\), central uniqueness would give
+\(U\equiv1\), which violates the boundary condition. Thus \(M>0\).
+
+In fact \(U'(r)<0\) for \(0<r<R\). If \(U'\) vanished there, its
+nonpositivity would imply \(U''=0\) at that point. Equation (2.1) would
+give \(U=1\), and ordinary uniqueness with data \((U,U')=(1,0)\) would
+again force the constant solution.
+
+In terms of (1.2), equation (2.1) becomes
+
+\[
+w''+\frac{N-1}{r}w'-(w')^2=2M-2w.
+\tag{2.2}
+\]
+
+Define \(z(r)=w'(r)/r\) for \(r>0\) and extend it to the center. The
+central expansion gives
+
+\[
+z(0)=\frac{2M}{N}=A,\qquad z'(r)=O(r).
+\tag{2.3}
+\]
+
+Differentiation of (2.2) yields
+
+\[
+z''+\left(\frac{N+1}{r}-2rz\right)z'=2z(z-1).
+\tag{2.4}
+\]
+
+Equivalently,
+
+\[
+\left(r^{N+1}e^{-2w}z'\right)'
+=2r^{N+1}e^{-2w}z(z-1).
+\tag{2.5}
+\]
+
+\Needspace{6\baselineskip}\textbf{Lemma 2.1.} We have \(A>1\) and \(z'(r)>0\) for all \(0<r<R\).
+
+\emph{Proof.} Suppose first that \(0<A<1\). Integrating (2.5) from zero
+shows that \(z'<0\) while \(0<z<1\). The boundary term at zero vanishes
+by (2.3). The function cannot first reach \(1\), since it is decreasing.
+It cannot first reach zero either: the integral in (2.5) would then give
+a strictly negative derivative, whereas \(z=w'/r>0\) throughout the
+interior. Thus \(0<z\leq A\) on \([0,R)\), giving \(w(r)\leq Ar^2/2\).
+This contradicts \(w(r)\to\infty\) as \(r\uparrow R\).
+
+If \(A=1\), the central solution is
+
+\[
+U(r)=\exp\left(\frac N2-\frac{r^2}2\right),
+\tag{2.6}
+\]
+
+by the uniqueness following (2.1). It has no finite zero. Hence \(A>1\).
+Now (2.5) gives \(z'>0\) as long as \(z>1\), and this strict increase
+prevents any first exit from that region. \(\square\)
+
+The eigenvalues of \(D^2w(|x|)\) are \(w''=z+rz'\) in the radial
+direction and \(z\) in the tangential directions. Lemma 2.1 proves
+(1.5), including its strict form away from the center. In dimension one
+only the radial eigenvalue is present.
+
+\Needspace{8\baselineskip}\section{3. A positive recurrence valid throughout the
+ball}\label{a-positive-recurrence-valid-throughout-the-ball}
+
+Let \(t=r^2\) and \(Z(t)=z(\sqrt t)\). Equation (2.4) becomes
+
+\[
+2tZ''+(N+2)Z'-2tZZ'=Z(Z-1).
+\tag{3.1}
+\]
+
+\Needspace{6\baselineskip}\textbf{Lemma 3.1 (Local construction).} For each \(A>1\), recurrence
+(1.4) defines strictly positive coefficients satisfying
+
+\[
+0<c_n\leq A^{n+1},\qquad n\geq0.
+\tag{3.2}
+\]
+
+The resulting series solves (3.1) near zero and agrees with the
+transformed radial solution.
+
+\emph{Proof.} The coefficient of \(t^n\) in the linear derivative terms
+of (3.1) is \((n+1)(2n+N+2)c_{n+1}\). In the nonlinear terms, symmetry
+of convolution gives
+
+\[
+[t^n](Z^2+2tZZ')=(n+1)\sum_{i=0}^n c_i c_{n-i},
+\tag{3.3}
+\]
+
+which proves (1.4). In particular \(c_1=A(A-1)/(N+2)>0\). For
+\(n\geq1\), its numerator can be written
+
+\[
+\bigl(2(n+1)A-1\bigr)c_n
++(n+1)\sum_{i=1}^{n-1}c_i c_{n-i},
+\tag{3.4}
+\]
+
+so positivity follows by induction. Dropping the negative term in (1.4)
+and using the inductive upper bounds gives
+
+\[
+c_{n+1}\leq\frac{(n+1)A^{n+2}}{2n+N+2}\leq A^{n+2}.
+\tag{3.5}
+\]
+
+Consequently the series converges for \(|t|<1/A\), and termwise
+differentiation verifies (3.1).
+
+Integrate \(w'(r)=rZ(r^2)\) with \(w(0)=0\). The derivative of the
+difference between the two sides of (2.2) vanishes by (3.1). Its
+limiting value at zero is \(NA-2M=0\). Thus (2.2) holds. Setting
+\(U(r)=e^{M-w(r)}\) recovers the radial equation with the prescribed
+central data. The uniqueness argument after (2.1) identifies this
+constructed solution with the given one. \(\square\)
+
+We next state the positive-series continuation principle, including its
+short proof.
+
+\Needspace{6\baselineskip}\textbf{Lemma 3.2 (Positive real singularity).} Suppose
+\(F(t)=\sum_{n\geq0}a_nt^n\) has \(a_n\geq0\) and finite positive radius
+of convergence \(\rho\). It cannot admit a holomorphic continuation to a
+neighborhood of the positive real point \(\rho\).
+
+\emph{Proof.} If such a continuation existed, continuity of its
+derivatives and monotone convergence as \(t\uparrow\rho\) would give,
+for every \(k\geq0\),
+
+\[
+F^{(k)}(\rho)=\sum_{n\geq k}\frac{n!}{(n-k)!}a_n\rho^{n-k}.
+\tag{3.6}
+\]
+
+Choose a sufficiently small \(h>0\) in the convergence disk of the
+Taylor series centered at \(\rho\). Its coefficients are nonnegative by
+(3.6). Interchanging nonnegative sums gives
+
+\[
+\begin{aligned}
+\sum_{k\geq0}\frac{F^{(k)}(\rho)}{k!}h^k
+&=\sum_{n\geq0}a_n\sum_{k=0}^n\binom nk\rho^{n-k}h^k\\
+&=\sum_{n\geq0}a_n(\rho+h)^n<\infty,
+\end{aligned}
+\tag{3.7}
+\]
+
+contradicting the definition of \(\rho\). \(\square\)
+
+\emph{Proof of Theorem 1.1.} By Lemma 3.1 the series for \(Z\)
+represents the actual solution near zero. Denote its convergence radius
+by \(\rho\). If \(\rho<R^2\), the actual solution is regular at the
+positive point \(\rho\). On an interval around that point, (3.1) is an
+ordinary differential equation with analytic right-hand side after
+solving for \(Z''\). It therefore has a locally holomorphic solution
+with the actual values of \(Z\) and \(Z'\) there. Ordinary uniqueness
+identifies this solution with the continuation from zero. This
+contradicts Lemma 3.2. Thus \(\rho\geq R^2\).
+
+Conversely, \(z(r)\) tends to infinity as \(r\uparrow R\): by Lemma 2.1
+it is increasing, and a finite limit would make
+\(w(r)=\int_0^r sz(s)\,ds\) bounded. Therefore \(\rho>R^2\) is
+impossible. We have proved \(\rho=R^2\). Integration gives the second
+series in (1.3). Dividing its coefficients by a factor linear in the
+index leaves the convergence radius unchanged. All derivative assertions
+now follow by differentiating convergent positive series on compact
+subintervals of \([0,R^2)\). The Hessian assertion was proved after
+Lemma 2.1. \(\square\)
+
+The continuation step is essential: positivity of finitely many
+coefficients, or even a formal positive recurrence without convergence
+control, would not imply a global concavity theorem.
+
+\Needspace{8\baselineskip}\section{4. Convexity of the square root and
+sharpness}\label{convexity-of-the-square-root-and-sharpness}
+
+Put \(a_j=c_{j-1}/(2j)>0\). Theorem 1.1 gives
+
+\[
+\sqrt{w(r)}=\left\|\bigl(\sqrt{a_j}\,r^j\bigr)_{j\geq1}\right\|_{\ell^2},
+\qquad 0\leq r<R.
+\tag{4.1}
+\]
+
+Every coordinate on the right is nonnegative, nondecreasing and convex
+as a function of \(r\). Coordinatewise convexity, monotonicity of the
+\(\ell^2\) norm on nonnegative sequences, and the triangle inequality
+show that \(r\mapsto\sqrt{w(r)}\) is convex and nondecreasing.
+Equivalently one may first prove this for the finite partial sums and
+pass to the finite pointwise limit on \([0,R)\).
+
+For strictness it is useful to give an exact identity. At \(r>0\) let
+
+\[
+p_j=\frac{a_jr^{2j}}{w(r)},\qquad
+m=\sum_{j\geq1}jp_j,\qquad
+v=\sum_{j\geq1}(j-m)^2p_j.
+\tag{4.2}
+\]
+
+These are a probability distribution, its mean and its variance; all
+moments are finite inside the convergence interval. Direct
+differentiation gives
+
+\[
+\frac{r^2\bigl(2ww''-(w')^2\bigr)}{4w^2}
+=2v+m(m-1)>0.
+\tag{4.3}
+\]
+
+The strict inequality holds because \(m>1\), as \(a_2>0\). Thus
+\((\sqrt w)''>0\) for \(r>0\). Its tangential Hessian eigenvalue is
+\((\sqrt w)'/r>0\).
+
+\emph{Proof of Theorem 1.2.} A convex nondecreasing function of the
+Euclidean norm is convex. Applying this fact to (4.1) proves convexity
+of \(x\mapsto\sqrt{w(|x|)}\) across the center as well. The Hessian
+assertions away from the center follow from (4.3). For \(\beta\geq1/2\),
+the function \(s\mapsto s^{2\beta}\) is convex and nondecreasing on
+\([0,\infty)\); composing it with \(\sqrt w\) proves the forward
+implication of (1.6).
+
+For necessity, the central expansion is
+
+\[
+w(r)=\frac A2 r^2+O(r^4).
+\tag{4.4}
+\]
+
+If \(0<\beta<1/2\), the restriction \(w(r)^\beta\) to a positive radial
+segment has strictly negative second derivative for sufficiently small
+\(r>0\). Indeed its leading term is \((A/2)^\beta r^{2\beta}\), whose
+second derivative has the negative factor \(2\beta(2\beta-1)\); the
+differentiated remainder has higher order. It cannot be convex. Finally,
+(4.4) gives \(\sqrt{w(|x|)}=\sqrt{A/2}|x|+O(|x|^3)\), which describes
+the stated cusp. \(\square\)
+
+The same series gives more than a Hessian bound. For every integer
+\(k\geq1\), the radial differential operator
+\(\mathcal D=(2r)^{-1}d/dr\) satisfies \(\mathcal D^k w(r)>0\) on
+\(0<r<R\), with a positive limit at zero. These infinitely many sign
+inequalities refer to differentiation with respect to squared radius,
+not arbitrary mixed spatial derivatives.
+
+\Needspace{8\baselineskip}\section{5. Boundary behavior and the optimal positive
+power}\label{boundary-behavior-and-the-optimal-positive-power}
+
+Because \(f\) is bounded on the compact range of \(U\), (2.1) gives a
+finite limit of \(U'\) at \(R\). The differential equation then gives a
+continuous limit of \(U''\) there. The next argument rules out a zero
+boundary slope without assuming a finite value of \(f'(0)\).
+
+\Needspace{6\baselineskip}\textbf{Lemma 5.1 (Simple boundary zero).} There is \(b>0\) such that
+
+\[
+U(r)=b(R-r)+O((R-r)^2),\qquad
+U'(r)=-b+O(R-r),
+\tag{5.1}
+\]
+
+and
+
+\[
+z(r)\sim\frac{1}{R(R-r)}\quad\text{as }r\uparrow R.
+\tag{5.2}
+\]
+
+\emph{Proof.} Write \(v=-U'>0\). Near \(R\) we have \(0<U<1\), and (2.1)
+gives \(U''>0\). Thus \(v\) is decreasing there. Set
+
+\[
+F(s)=\frac{s^2}{2}(\log s^2-1),\qquad
+E(r)=\frac{v(r)^2}{2}+F(U(r)).
+\tag{5.3}
+\]
+
+The energy identity is \(E'=-(N-1)v^2/r\). Suppose \(U'(R)=0\). Then
+\(E(R)=0\), and for \(r\) sufficiently close to \(R\),
+
+\[
+E(r)=\int_r^R\frac{N-1}{s}v(s)^2\,ds
+\leq C(R-r)v(r)^2.
+\tag{5.4}
+\]
+
+Choose this neighborhood so that \(C(R-r)\leq1/4\). Equation (5.4)
+implies
+
+\[
+\frac{v(r)^2}{4}\leq-F(U(r)),\qquad
+v(r)\leq C_1U(r)\sqrt{\log(1/U(r))}.
+\tag{5.5}
+\]
+
+Since \(U\) is strictly decreasing, it can be used as the variable of
+integration on this interval. The remaining time to reach zero would
+satisfy
+
+\[
+R-r=\int_0^{U(r)}\frac{ds}{v(U^{-1}(s))}
+\geq\frac1{C_1}\int_0^{U(r)}\frac{ds}{s\sqrt{\log(1/s)}}
+=\infty,
+\tag{5.6}
+\]
+
+a contradiction. When \(N=1\), the integral in (5.4) is zero and the
+same argument applies. Thus \(b=-U'(R)>0\). The bounded second
+derivative gives (5.1), and \(z=-U'/(rU)\) gives (5.2). \(\square\)
+
+\emph{Proof of Theorem 1.3.} For \(r>0\),
+
+\[
+(U^\alpha)''=\alpha U^\alpha\bigl(\alpha(w')^2-w''\bigr),
+\qquad
+\frac{(U^\alpha)'}r=-\alpha U^\alpha\frac{w'}r<0.
+\tag{5.7}
+\]
+
+Thus the radial Hessian condition is precisely \(\alpha\leq q(r)\),
+where \(q=w''/(w')^2\). The condition at the center holds automatically,
+because \(D^2u^\alpha(0)=-\alpha U(0)^\alpha A I_N\). By Lemma 2.1,
+\(q>0\). Equation (4.4) gives \(q(r)\to\infty\) at zero, while Lemma 5.1
+gives
+
+\[
+q(r)=1-\frac{U(r)U''(r)}{U'(r)^2}\longrightarrow1
+\quad\text{as }r\uparrow R.
+\tag{5.8}
+\]
+
+Moreover \(U''>0\) near \(R\), so \(q<1\) there. Choose any such point.
+The limits at both endpoints and continuity imply that the global
+infimum is achieved on a compact interior interval; its value is
+strictly between zero and one. Equations (5.7) prove (1.7)-\/-(1.8), and
+continuity extends concavity to the closed ball. \(\square\)
+
+\Needspace{8\baselineskip}\section{6. Coefficient comparison and two
+consequences}\label{coefficient-comparison-and-two-consequences}
+
+The recurrence contains information about variation with the central
+height. Fix \(N\) and put \(\delta=A-1>0\). Write \(c_n(\delta)\) for
+its coefficients.
+
+\Needspace{6\baselineskip}\textbf{Proposition 6.1 (Positive parameter dependence).} For every
+\(n\geq1\), \(c_n(\delta)\) is a polynomial in \(\delta\) with
+nonnegative coefficients and zero constant term. If two solutions have
+\(0<\delta_1<\delta_2\) and \(\theta=\delta_2/\delta_1\), then on their
+common radial interval,
+
+\[
+z_2(r)-1\geq\theta\bigl(z_1(r)-1\bigr),
+\tag{6.1}
+\]
+
+and
+
+\[
+w_2(r)-\frac{r^2}{2}
+\geq\theta\left(w_1(r)-\frac{r^2}{2}\right).
+\tag{6.2}
+\]
+
+\emph{Proof.} We have \(c_1=(\delta+\delta^2)/(N+2)\). For \(n\geq1\),
+rewrite (1.4) as
+
+\[
+c_{n+1}=
+\frac{\bigl(2n+1+2(n+1)\delta\bigr)c_n
++(n+1)\displaystyle\sum_{i=1}^{n-1}c_ic_{n-i}}
+{(n+1)(2n+N+2)}.
+\tag{6.3}
+\]
+
+The polynomial assertion follows by induction. Every monomial of
+positive degree satisfies \(\delta_2^k\geq\theta\delta_1^k\). Apply this
+coefficientwise, including the constant-in-\(r\) term \(c_0-1=\delta\),
+and sum the convergent series to obtain (6.1). Integrating
+\(r(z_i(r)-1)\) gives (6.2). \(\square\)
+
+\Needspace{6\baselineskip}\textbf{Corollary 6.2 (Known shooting order and uniqueness).} If
+\(U_2(0)>U_1(0)\), their first zero radii satisfy \(R_2<R_1\).
+Consequently (1.1) has exactly one positive solution for every \(R>0\).
+
+\emph{Proof.} Suppose \(R_2\geq R_1\). By (6.1) and divergence of
+\(z_1\) at \(R_1\), strict inequality \(R_2>R_1\) is impossible. If
+\(R_2=R_1\), (5.2) gives \(z_2/z_1\to1\), contradicting (6.1) and
+\(\theta>1\). This proves the strict shooting order. Two distinct
+positive solutions on the same ball are radial and have either different
+central values, contradicted by this order, or equal central values,
+contradicted by initial-value uniqueness. Existence is the prior input
+stated in Section 2. \(\square\)
+
+As emphasized in Section 1.1, this is an alternative proof of a prior
+theorem. The coefficientwise parameter comparison (6.1)-\/-(6.2) is the
+additional conclusion of the present method.
+
+\Needspace{6\baselineskip}\textbf{Corollary 6.3 (Products of balls).} Let \(u_i\) be positive
+solutions of (1.1) on \(B_{R_i}\subset\mathbb R^{N_i}\), for
+\(1\leq i\leq k\). Then
+
+\[
+u(x_1,\ldots,x_k)=\prod_{i=1}^k u_i(x_i)
+\tag{6.4}
+\]
+
+solves the same equation on the product domain, and
+\(-\sqrt{-\log(u/\|u\|_\infty)}\) is concave there.
+
+\emph{Proof.} Dividing the Laplacian of the product by the product gives
+\(-\Delta u/u=\sum_i\log u_i^2=\log u^2\). The negative normalized
+logarithm is \(\sum_i w_i\). Its square root is the Euclidean norm of
+the vector \((\sqrt{w_i})_{i=1}^k\). Each component is nonnegative and
+convex in its corresponding variables by Theorem 1.2. The argument of
+(4.1) proves convexity of this norm. \(\square\)
+
+This includes the interval-product construction already treated in
+{[}GMS{]}; the factorization itself is elementary and is not a separate
+novelty claim.
+
+\Needspace{8\baselineskip}\section{7. Further questions}\label{further-questions}
+
+The argument uses the squared-radius equation and does not extend the
+square-root-log conclusion to arbitrary convex domains. Whether that
+conclusion survives controlled deformations of a ball, and what
+geometric obstructions can prevent it, remain natural questions. The
+positivity proof also depends on the particular coefficient structure in
+(3.1); a classification of nonlinearities or radial potentials admitting
+a comparable positive recurrence would be useful.
+
+Formula (1.8) does not evaluate the optimal positive concavity exponent.
+Determining its dependence on the radius in dimensions \(N\geq2\),
+especially its sharp limiting behavior, is a further problem. These
+questions and the related consequences above belong to the same research
+direction; no result about them is asserted here.
+
+\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
+
+{[}BC{]} M. Ben Chrouda, \emph{Uniqueness and Liouville type results for
+radial solutions of some classes of k-Hessian equations}, Electronic
+Journal of Qualitative Theory of Differential Equations \textbf{2022},
+no. 62, 1-\/-17.
+\href{https://doi.org/10.14232/ejqtde.2022.1.62}{doi:10.14232/ejqtde.2022.1.62}.
+
+{[}GMS{]} M. Gallo, S. Mosconi and M. Squassina, \emph{Power law
+convergence and concavity for the logarithmic Schrödinger equation},
+Mathematische Annalen \textbf{395} (2026), article 21, 60 pp.
+\href{https://doi.org/10.1007/s00208-026-03452-2}{doi:10.1007/s00208-026-03452-2}.
+\href{https://arxiv.org/abs/2411.01614v2}{arXiv:2411.01614v2}.
+
+{[}GMoS{]} M. Gallo, R. Moraschi and M. Squassina, \emph{Quantitative
+and exact concavity principles for parabolic and elliptic equations},
+\href{https://arxiv.org/abs/2504.09494v2}{arXiv:2504.09494v2}. Also
+compared with the
+\href{https://www.dmf.unicatt.it/~squassin/papers/lavori/parabconc.pdf}{41-page
+author manuscript}, accessed September 15, 2026.
+
+{[}LSZ{]} T. Liu, X. Sun and W. Zou, \emph{Uniqueness of bound states to
+the logarithmic Schrödinger equation},
+\href{https://arxiv.org/abs/2606.19077v2}{arXiv:2606.19077v2}, June 22,
+2026.
+
+\Needspace{8\baselineskip}\section{Preparation note}\label{preparation-note}
+
+This manuscript was prepared with OpenAI Codex assistance in literature
+searches, proof development and writing. It is a research preprint. No
+independent human verification or journal acceptance is claimed.
+
+\end{document}

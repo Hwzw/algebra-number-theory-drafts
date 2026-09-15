@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 45 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 46 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Positive radial series and sharp logarithmic concavity
+
+[**P46: Positive radial series and sharp logarithmic concavity on balls**](papers/P46-logarithmic-ball-concavity/README.md), by **Henry Zweiman**, proposes a global positive-series representation for positive logarithmic Schrodinger solutions on balls in every dimension. It proves the square-root-log concavity asked about by Gallo--Mosconi--Squassina, determines the sharp transform exponent, and proves positive power concavity on each ball. The [nine-page PDF](papers/P46-logarithmic-ball-concavity/manuscript.pdf), [full Markdown](papers/P46-logarithmic-ball-concavity/manuscript.md), and [LaTeX](papers/P46-logarithmic-ball-concavity/manuscript.tex) contain the proofs.
+
+The [assessment](papers/P46-logarithmic-ball-concavity/ASSESSMENT.md) credits Ben Chrouda's prior amplitude, uniqueness and shooting results and compares current 2026 work. The [review](papers/P46-logarithmic-ball-concavity/REVIEW.md) checks the global series continuation, center cusp and non-Lipschitz boundary argument. This is one internally assessed preprint, not an independently certified solution. Arbitrary convex domains and the explicit optimal positive-power exponent remain outside its conclusions.
 
 ## Spectral localization and uniform reactive capacitance
 

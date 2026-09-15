@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-15",
+  "pages": 9,
+  "pdf_bytes": 90821,
+  "pdf_sha256": "4e9eed6b204a05907f013886805b046611a46d6e4f372548bafb36d33ad0a8c9",
+  "markdown_sha256": "fb8fe92692d8b7716b47d93b6d5c6ae9aa2a801bb412e4e9875304ca16ed8b96",
+  "tex_sha256": "fe1a82144be2455ec7f5d3a45030a545aa44668a7a2c609569397d7efd00c4d4",
+  "pdf_text_characters": 20433,
+  "replacement_characters": 0,
+  "byline_verified": true,
+  "equation_tags": 37,
+  "unique_tags": 37,
+  "markdown_tex_tag_order_matches": true,
+  "all_equation_tags_in_pdf": true,
+  "math_expressions": 235,
+  "math_errors": 0,
+  "tex_overfull_underfull_warnings": 0,
+  "final_pdf_visual_review": {
+    "all_pages_reviewed": true,
+    "page_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "render_long_dimension_px": 1400,
+    "findings": "No clipping, overlap, missing glyphs or illegible formulas identified. Final edited PDF rerendered and all nine pages inspected."
+  },
+  "meaning": "Artifact consistency checks and internal visual review; not independent proof or novelty certification."
+}
