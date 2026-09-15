@@ -32,3 +32,17 @@ No remaining logical gap was identified in the stated theorem during this intern
 The Section 6 proof was checked directly. Failure of semiconcavity for a C2 function on a convex open set is exactly absence of a global upper Hessian bound. Bounded gradient and a fixed nonzero interval logarithmic derivative keep the correcting tangent component bounded. Its Hessian cost is finite for each fixed positive parameter, while the polygonal positive Hessian is unbounded. Taylor expansion is taken at one fixed interior point after the positive curvature has been obtained; no uniform Taylor remainder near the corner is assumed. Both endpoints strictly exceed their midpoint, proving nonconvexity of a superlevel set. The interval derivative is explicitly nonzero. The product Robin parameter is identical on every face. Higher-dimensional slicing retains the same midpoint witness. All analytic and regularity inputs are proved in Sections 2-4; no new PDE regularity theorem is assumed.
 
 This is an originating-assistant audit, not an independent review. The full ACH Conjecture 2 remains unresolved.
+
+## Revision 1.2: weighted cone proof audit
+
+1. A radial cutoff preserves Neumann data and has L2 Laplacian; convex-domain H2 regularity therefore gives h = partial_e psi in local H1, including the vertex.
+2. Transverse concavity transfers by positive homogeneity only because all cone points have positive e height.
+3. Face differentiation gives H nu = a nu. Eliminating the mixed component yields (7.6) exactly. Its sign depends on the strict k < 1/sqrt(2) hypothesis.
+4. Codimension-two logarithmic cutoffs have vanishing H1 energy. They remove the skeleton from nonnegative tests, then pass the facet flux inequality to all compact tests by the H1 continuity of the form. Thus no boundary Hessian trace at an edge is assumed.
+5. The exponential test is integrable by the separately stated strict-dual condition. Homogeneous annular norms give vanishing cutoff errors; q is nonnegative, so the resulting integral identity forces it to vanish.
+6. A negative-semidefinite transverse block with zero trace is zero. Transverse affinity, homogeneity and harmonicity then force psi = 0 for degree between one and two.
+7. The Robin corollary assumes a nonzero leading mode at an eligible cone. Its tangent correction uses a nonzero limiting derivative along gamma and is of order rho^(beta-1); the fixed midpoint witness then survives the Neumann perturbation.
+8. The triangular-cone example proves nonempty degree range variationally. Positive spanning gives the strict-dual property; bounded convergence gives a Rayleigh quotient tending to two; ACH's equality classification gives the strict lower bound on each pointed cone. No explicit epsilon or numerical eigenvalue is asserted.
+9. The exact matrix (7.16) shows the sign step fails in the remaining angle range. It is not a counterexample to the full conjecture.
+
+This is an originating-assistant proof audit. The full conjecture, independent human review, and broad priority certification remain outside the established result.

@@ -6,7 +6,7 @@ September 15, 2026
 
 ## Abstract
 
-Let $P$ be a bounded convex polygon that is neither tangential nor a rectangle. We prove that the positive Robin parameters for which the first eigenfunction is log-concave form a locally finite set. In fact, at one fixed obtuse vertex, the eigenfunction and its logarithm fail to be semiconcave on every corner neighborhood for every parameter outside the zero set of a nontrivial real-analytic function. The proof continues a corner singularity of the first variation at the Neumann limit. An explicit angular projection gives an analytic singular coefficient without requiring analytic dependence of a full corner expansion. This disproves the eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer for general bounded convex domains. A single nonrhombic, nonrectangular parallelogram gives a counterexample, and products give examples in every dimension at least two. An interval-lifting argument further gives fixed convex prisms in every dimension at least three whose ground states have nonconvex superlevel sets outside the same discrete parameter set. The result is compatible with eventual concavity on smooth uniformly convex domains.
+Let $P$ be a bounded convex polygon that is neither tangential nor a rectangle. We prove that the positive Robin parameters for which the first eigenfunction is log-concave form a locally finite set. In fact, at one fixed obtuse vertex, the eigenfunction and its logarithm fail to be semiconcave on every corner neighborhood for every parameter outside the zero set of a nontrivial real-analytic function. The proof continues a corner singularity of the first variation at the Neumann limit. An explicit angular projection gives an analytic singular coefficient without requiring analytic dependence of a full corner expansion. This disproves the eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer for general bounded convex domains. A single nonrhombic, nonrectangular parallelogram gives a counterexample, and products give examples in every dimension at least two. An interval-lifting argument further gives fixed convex prisms in every dimension at least three whose ground states have nonconvex superlevel sets outside the same discrete parameter set. A weighted Neumann argument also proves transverse nonconcavity of homogeneous modes on a specified class of higher-dimensional cones, supplying a conditional small-parameter Robin consequence. The result is compatible with eventual concavity on smooth uniformly convex domains.
 
 **Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation; quasiconcavity.
 
@@ -472,6 +472,168 @@ In particular, the explicit parallelogram (1.5) gives a fixed prism in each dime
 
 This extension answers the eventual-quasiconcavity question for these fixed prisms negatively. It leaves [ACH, Section 10, Conjecture 2] unresolved on general polyhedra. The proof uses both bounded gradient and unbounded positive Hessian near a polygonal corner; failure of log-concavity alone would not imply the interval-lifting conclusion. No single smooth uniformly convex domain with arbitrarily large bad parameters is constructed here.
 
+## 7. A weighted obstruction on higher-dimensional cones
+
+The unresolved local condition in [ACH, Lemma 9.5 and Remark 9.6] concerns the restriction of a homogeneous harmonic Neumann mode to a transverse affine slice. The following result verifies that condition for a geometric class of cones. It imposes no symmetry on the mode.
+
+**Theorem 7.1 (transverse nonconcavity).** Let $\Gamma\subset\mathbb R^d$, $d\ge3$, be an open full-dimensional convex polyhedral cone with outward unit face normals $\nu_i$. Suppose a unit vector $e$ and a number $\eta>0$ satisfy
+
+$$
+e\cdot x\ge\eta|x|\quad(x\in\overline\Gamma),
+\qquad 0<k_i:=-\nu_i\cdot e<\frac1{\sqrt2}
+\quad\text{for every face}.
+\tag{7.1}
+$$
+
+Let $\psi$ be a nonzero homogeneous weak Neumann harmonic function of degree $\beta\in(1,2)$, with $\psi\in H^1(\Gamma\cap B_R)$ for every finite $R$. Then $\psi$ is not concave on the affine slice
+
+$$
+K=\{x\in\Gamma:e\cdot x=1\}.
+\tag{7.2}
+$$
+
+*Proof.* We first justify the derivatives used below. A smooth radial cutoff $\chi$ preserves the zero Neumann condition on the cone faces. On a sufficiently large convex truncation $\Gamma\cap B_R$, the function $z=\chi\psi$ vanishes near the outer sphere and has
+
+$$
+\Delta z=2\nabla\chi\cdot\nabla\psi+(\Delta\chi)\psi\in L^2.
+\tag{7.3}
+$$
+
+The standard homogeneous Neumann regularity theorem on bounded convex domains gives $z\in H^2$. The theorem and its convex approximation argument are recalled in [T, Section 4, following Theorem 4.2]. Thus $\psi$ is locally $H^2$ up to the cone boundary, including its vertex. In particular, $h=\partial_e\psi$ is locally $H^1$ and harmonic in the interior. Even reflection gives smoothness up to every relative face interior.
+
+Suppose that the restriction to $K$ is concave. The first condition in (7.1) puts every nonzero cone point at positive height, so homogeneity gives concavity on every parallel slice. Put $H=D^2\psi$. Its restriction to $e^\perp$ is negative semidefinite, and harmonicity gives
+
+$$
+q:=H[e,e]=-\operatorname{tr}(H|_{e^\perp})\ge0.
+\tag{7.4}
+$$
+
+At a relative face interior, differentiation of the Neumann condition in every face-tangent direction shows that
+
+$$
+H\nu=a\nu,\qquad a=H[\nu,\nu].
+\tag{7.5}
+$$
+
+Write $\nu=-ke+su$, where $s=\sqrt{1-k^2}$ and $u\perp e$ is a unit vector. Taking the $e$ and $u$ components of (7.5), and eliminating $H[e,u]$, gives
+
+$$
+(1-k^2)H[u,u]=(1-2k^2)a+k^2q.
+\tag{7.6}
+$$
+
+The left side is nonpositive, while $q\ge0$ and $1-2k^2>0$. Hence $a\le0$, and therefore
+
+$$
+\partial_\nu h=H[\nu,e]=-ka\ge0
+\tag{7.7}
+$$
+
+on each relative face interior.
+
+We now pass this face inequality across the polyhedral skeleton. On each bounded set, the union of strata of codimension at least two has zero $H^1$ capacity. Here is the needed explicit approximation. For an affine subspace of codimension two, take a cutoff equal to zero at distance at most $\varepsilon^2$, equal to one at distance at least $\varepsilon$, and affine in the logarithm of distance between them. On a bounded set, its squared-gradient integral is $O(1/|\log\varepsilon|)$, while its difference from one tends to zero in $L^2$. A finite product treats all the lower-dimensional strata, each of which lies in such a subspace. Smooth approximations can be chosen with values between zero and one.
+
+If $\varphi$ is a nonnegative smooth compactly supported test function on $\overline\Gamma$ whose support avoids the skeleton, harmonicity and (7.7) give
+
+$$
+\int_\Gamma\nabla h\cdot\nabla\varphi\ge0.
+\tag{7.8}
+$$
+
+Multiplying an arbitrary such $\varphi$ by the preceding cutoffs gives nonnegative tests converging to it in $H^1$. Since $h$ is locally $H^1$, (7.8) follows for the original test as well. In particular, no unaccounted edge flux is discarded.
+
+Use (7.8) with
+
+$$
+\varphi_R(x)=e^{-e\cdot x}\chi_0(|x|/R),
+\tag{7.9}
+$$
+
+where $\chi_0$ is a smooth nonnegative cutoff equal to one on $[0,1]$ and zero on $[2,\infty)$. Homogeneity and the local $H^2$ estimate give polynomial growth of the relevant annular Sobolev norms. The first condition in (7.1) gives exponential decay of the weight. The term containing $\nabla\chi_0(|x|/R)$ therefore tends to zero by Cauchy--Schwarz. The remaining term converges, so (7.8) yields
+
+$$
+0\le-\int_\Gamma e^{-e\cdot x}\partial_e h
+=-\int_\Gamma e^{-e\cdot x}q\le0.
+\tag{7.10}
+$$
+
+It follows that $q=0$ in the interior. The negative-semidefinite transverse Hessian block then has zero trace and must vanish. Writing $x=te+z$, $z\perp e$, connectedness of each transverse slice and homogeneity give constants $A\in\mathbb R$ and $b\in e^\perp$ such that
+
+$$
+\psi(te+z)=At^\beta+t^{\beta-1}b\cdot z.
+\tag{7.11}
+$$
+
+Harmonicity becomes
+
+$$
+0=(\beta-1)t^{\beta-3}
+\big(\beta At+(\beta-2)b\cdot z\big).
+\tag{7.12}
+$$
+
+Since $1<\beta<2$ and $\Gamma$ has nonempty interior, $A=0$ and $b=0$. This contradicts the nonzero mode and proves the theorem. ∎
+
+### 7.1. Consequence for the small-parameter Robin question
+
+For a consistent-normal cone, let $\gamma$ satisfy $\gamma\cdot\nu_i=-1$ for every face and set $e=\gamma/|\gamma|$. The second condition in (7.1) becomes $|\gamma|>\sqrt2$; the first condition is a separate strict-dual requirement.
+
+**Corollary 7.2.** Let $\Omega\subset\mathbb R^d$, $d\ge3$, be a bounded convex polyhedron. Suppose the first Neumann variation $v$ of its normalized Robin ground state has at a boundary point $x_0$ a nonzero leading nonlinear homogeneous Neumann mode $\psi$ of degree $\beta\in(1,2)$. Suppose also that the tangent cone has consistent normals and satisfies (7.1) with $e=\gamma/|\gamma|$. Then the Robin ground state on $\Omega$ has a nonconvex superlevel set for every sufficiently small positive Robin parameter.
+
+*Proof.* The expansion and interior derivative estimates in [ACH, Section 9] give, on each fixed compact subset of the tangent cone,
+
+$$
+\begin{aligned}
+\nabla v(x_0+\rho x)&=\gamma+\rho^{\beta-1}\nabla\psi(x)
++o(\rho^{\beta-1}),\\
+D^2v(x_0+\rho x)&=\rho^{\beta-2}D^2\psi(x)
++o(\rho^{\beta-2}).
+\end{aligned}
+\tag{7.13}
+$$
+
+The lower-order quadratic particular solution is included in the remainders. By Theorem 7.1 there are an interior point $x$ and a vector $\xi\perp e$ with $D^2\psi(x)[\xi,\xi]>0$. Correct $\xi$ to $\xi+a_\rho e$ so that it is orthogonal to $\nabla v(x_0+\rho x)$. Since $\gamma\cdot e=|\gamma|>0$, the first line of (7.13) gives $a_\rho=O(\rho^{\beta-1})$. The second line gives strictly positive second derivative in this corrected direction for small $\rho$. Taylor's theorem at one fixed such interior point produces two endpoints whose $v$ values strictly exceed that of their midpoint.
+
+The Neumann perturbation $u_\alpha=1+\alpha v+o(\alpha)$ from [ACH, Proposition 3.1] holds uniformly on these three fixed points. Thus the strict midpoint inequality persists for $u_\alpha$ for all sufficiently small $\alpha>0$. This is the transfer mechanism of [ACH, Lemma 9.5]. ∎
+
+The leading nonzero mode in this corollary is a hypothesis. No assertion is made that a chosen vertex necessarily has a nonzero coefficient, or that every polyhedron has a vertex satisfying (7.1).
+
+### 7.2. Nonempty scope and the remaining angle range
+
+Theorem 7.1 is not vacuous in its degree interval. Fix $0<k<1/\sqrt2$ and put $s=\sqrt{1-k^2}$. In coordinates $(x,y,t)$, consider the cone with three outward normals
+
+$$
+\begin{aligned}
+\nu_1&=(s,0,-k),\\
+\nu_2&=(-s\cos\varepsilon,s\sin\varepsilon,-k),\\
+\nu_3&=(-s\cos(2\varepsilon),-s\sin(2\varepsilon),-k),
+\end{aligned}
+\qquad 0<\varepsilon<\pi/6.
+\tag{7.14}
+$$
+
+The transverse normals positively span $\mathbb R^2$, so the section $t=1$ is a bounded triangle and $t$ is strictly positive on every nonzero direction in the closed cone. Thus (7.1) holds with $e=(0,0,1)$ and a positive $\eta$ depending on $\varepsilon$.
+
+As $\varepsilon\downarrow0$, the spherical sections converge almost everywhere to the spherical section of $\{|x|<(k/s)t\}\times\mathbb R_y$. On this limiting section, $y$ has mean zero and Neumann eigenvalue two. Indeed, latitude integration gives $\int y^2=|A_0|/3$, while $|\nabla_{S^2}y|^2=1-y^2$. The Rayleigh quotient on the finite sections, tested with $y$ minus its mean, therefore tends to two by bounded convergence. On every finite pointed cone, [ACH, Theorem 9.1] gives $\lambda_1>2$, since equality requires a linear factor. Hence, for sufficiently small positive $\varepsilon$,
+
+$$
+2<\lambda_1<6,\qquad
+1<\beta_1<2,\qquad \beta_1(\beta_1+1)=\lambda_1.
+\tag{7.15}
+$$
+
+No explicit cutoff in $\varepsilon$ or eigenfunction parity is needed.
+
+The angle condition cannot simply be deleted from the face-sign step. For example, with $e=(1,0,0)$,
+
+$$
+\nu=(-\sqrt3/2,1/2,0),\qquad
+H=\begin{pmatrix}1&-\sqrt3&0\\-\sqrt3&-1&0\\0&0&0\end{pmatrix},
+\tag{7.16}
+$$
+
+we have $\operatorname{tr}H=0$, $H|_{e^\perp}\preceq0$, and $H\nu=2\nu$. The normal second derivative is positive and the desired face-flux sign reverses. This matrix is an obstruction to that algebraic proof step, not a counterexample to the cone conjecture. The borderline angle, the larger-angle range, and cones without the strict-dual property require further arguments. The general [ACH, Section 10, Conjecture 2] remains unresolved here.
+
 ## References
 
 [ACH] B. Andrews, J. Clutterbuck and D. Hauer, *Non-concavity of the Robin ground state*, Cambridge Journal of Mathematics **8** (2020), no. 2, 243-310. [Final journal article](https://doi.org/10.4310/CJM.2020.v8.n2.a1). [arXiv:1711.02779v2](https://arxiv.org/abs/1711.02779v2).
@@ -481,3 +643,5 @@ This extension answers the eventual-quasiconcavity question for these fixed pris
 [D] M. Dauge, *Neumann and mixed problems on curvilinear polyhedra*, Integral Equations and Operator Theory **15** (1992), 227-261. [Author-posted text](https://dauge.pages.math.cnrs.fr/publis/DaugeMixed92.pdf), Theorem 8.1.
 
 [YZ] D. Ye and D. Zhang, *Concavity Properties of Robin Solutions on $C^{3,1}$ Uniformly Convex Domains*, [arXiv:2609.06223v1](https://arxiv.org/abs/2609.06223v1), September 5, 2026.
+
+[T] P. Tolksdorf, *The Stokes resolvent problem: optimal pressure estimates and remarks on resolvent estimates in convex domains*, Calculus of Variations and Partial Differential Equations **59** (2020), article 154. [Final journal article](https://doi.org/10.1007/s00526-020-01811-8), Section 4.

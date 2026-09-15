@@ -79,5 +79,25 @@
       "Robin semiconcavity product"
     ],
     "search_limit": "No competing large-parameter prism result located in bounded search; not a complete priority certificate"
+  },
+  "revision_1_2": {
+    "date": "2026-09-15",
+    "target": "Weighted transverse-concavity obstruction for homogeneous Neumann modes",
+    "ACH_read": "Primary arXiv v2 Theorem 9.1 including equality proof, mode expansion, Lemma 9.5 and Section 10 Conjecture 2",
+    "regularity_source": {
+      "name": "Patrick Tolksdorf, Calc. Var. PDE 59 (2020), 154",
+      "url": "https://doi.org/10.1007/s00526-020-01811-8",
+      "read": "Final publisher Section 4, Theorems 4.1-4.2 and following scalar Neumann H2 argument, Remark 4.3",
+      "scope": "Standard convex scalar Neumann H2 result; no Stokes theorem used",
+      "local_pdf": "Repository download returned HTTP 503; final publisher HTML available and read"
+    },
+    "new_proof": "Face matrix identity, explicit skeleton cutoffs, weighted weak inequality, affine homogeneous contradiction, variational nonvacuity",
+    "scope_limits": [
+      "Strict dual condition required",
+      "All face axial components strictly less than 1/sqrt(2)",
+      "Robin consequence assumes leading nonzero eligible mode",
+      "Full ACH Conjecture 2 remains open"
+    ],
+    "priority": "Bounded targeted search did not identify a competing weighted cone result; not comprehensive certification"
   }
 }
