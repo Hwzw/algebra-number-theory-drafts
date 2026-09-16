@@ -1,38 +1,38 @@
 {
   "date": "2026-09-15",
-  "revision": "3.1",
+  "revision": "4.0",
   "author": "Henry Zweiman",
-  "pdf_pages": 29,
-  "pdf_text_characters": 72994,
+  "pdf_pages": 35,
+  "pdf_text_characters": 89031,
   "pdf_text_replacement_characters": 0,
-  "mathjax_expressions": 988,
+  "mathjax_expressions": 1234,
   "mathjax_errors": 0,
-  "display_tag_count": 136,
+  "display_tag_count": 164,
   "display_tags_match": true,
-  "visual_inspection": "All 29 final PDF pages rendered at 1.5x with PyMuPDF and inspected in eight contact sheets after the final build; no clipping, overlap or missing glyphs.",
+  "visual_inspection": "All 35 final PDF pages rendered at 1.5x with PyMuPDF and inspected in nine contact sheets after the final build; no clipping, overlap or missing glyphs.",
   "tex_log": "No warnings, overfull or underfull boxes, or missing characters",
   "independent_human_review": false,
   "github_live_render_inspected": false,
   "files": {
     "manuscript.md": {
-      "bytes": 88355,
-      "sha256": "47d0b19a413701b2a2474d6c9548e06edaa7a0910b4f0e2cf95d17e5ce004827"
+      "bytes": 107573,
+      "sha256": "9afe2bdf9b07f9b5b958f373105a2219e9199afdda15e1c263981ac65c8b4302"
     },
     "manuscript.tex": {
-      "bytes": 94008,
-      "sha256": "98a4fa3e3a84319b86283dda7f4a0d0dc057d859853986b05249be408bbcb873"
+      "bytes": 114200,
+      "sha256": "cba14f552a91d12891d4cae7a7c448e2059772b57f71c26b8b3f7c5c02e1b252"
     },
     "manuscript.pdf": {
-      "bytes": 205004,
-      "sha256": "30376cfa5b153d0b60152c10db91d103974a885e8944f5a2477c96d690cc95ee"
+      "bytes": 240892,
+      "sha256": "3cfecc31dbf1196bbe7a4ad1a47f167c1d94bb506b5598a1e2fd4b89f5f41469"
     },
     "build.py": {
       "bytes": 1969,
       "sha256": "9a575fbfd170ae3251fbb6bf9792b8911e22b46fcc7ccac29d12940ac3c9f14e"
     },
     "markdown-math-check.json": {
-      "bytes": 447,
-      "sha256": "e9b3959dac120d1ff5fdfa13d50ceabc0f10006dc690fab686e64ca8a2f415a9"
+      "bytes": 448,
+      "sha256": "c4012909b20a96dcaf4267644d44ffbb7304a82b275e94f7abeec3a77a06d700"
     }
   }
 }

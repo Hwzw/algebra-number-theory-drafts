@@ -51,7 +51,7 @@
       "limitation": "Final journal full text not successfully opened. Polimi public PDF is labeled AAM by repository, but visible first page says arXiv v1, so it is not a verified final-text comparison. No proof dependency on this paper."
     }
   ],
-  "proof_progress": "Revision 3.1 adds a complete written counterexample to Laugesen Conjecture B and an exponential gap upper bound; independent expert verification is outstanding.",
+  "proof_progress": "Revision 4.0 adds a complete written counterexample to Laugesen Conjecture C, with a self-contained variational spectral convergence proof; independent expert verification remains outstanding.",
   "next_obligation": "Publication and artifact receipts record verification separately; independent expert proof and priority review remain outstanding.",
   "priority_search": {
     "date": "2026-09-15",
@@ -205,5 +205,39 @@
     "priority_result": "No competing counterexample found in bounded inspected primary sources; not exhaustive certification",
     "independent_human_review": false,
     "remaining": "Dimensions 2 and 3; Laugesen Conjecture C; renewed exceptional-significance goal remains active"
+  },
+  "revision_4_0": {
+    "date": "2026-09-15",
+    "target": "Laugesen Conjecture C, convex-domain second eigenvalue concavity for positive alpha",
+    "Laugesen_read": "Exact Conjecture C, surrounding symmetry and negative-parameter discussion, Theorem 2.3 in primary arXiv v1",
+    "conference_read": [
+      "2020 list Open Problem 7",
+      "2023 Oberwolfach Geometric Spectral Theory report, printed p.2099 exact problem paragraph"
+    ],
+    "GLP": {
+      "url": "https://arxiv.org/abs/2604.11526v1",
+      "date": "April 13, 2026",
+      "read": "Complete introduction; Section 4.1 statements including Proposition 4.4 and Remark 4.5; Theorem 4.15 and proof; current history v1 only",
+      "comparison": "Principal DtN concavity in Helmholtz parameter and Robin negative-infinity branch limit, not Conjecture C",
+      "limit": "Full 60-page proof not audited; no dependency"
+    },
+    "BFK": {
+      "doi": "10.1515/9783110550887-004",
+      "read": "Indexed primary excerpts printed pp.82 and 87 and publisher metadata",
+      "issue": "Local eigencurve concavity assertion with crossing exception; not used. First-eigenvalue infimum argument does not directly apply to min-max higher eigenvalues.",
+      "retrieval": "Publisher returned non-PDF; Library of Congress HTTP 403; complete text not claimed read"
+    },
+    "proof": "Retained transverse coercivity, explicit uniformly bi-Lipschitz radial map, moment tightness, ordered spectral compactness and min-max, Neumann/Dirichlet cut brackets, crossing limiting ground branches, strict three-point witness, direct interval product estimate and scaling",
+    "queries": [
+      "Robin second eigenvalue concavity conjecture Laugesen counterexample",
+      "Robin Conjecture C concave",
+      "Robin eigenvalue concavity second convex domains 2026",
+      "Robin second eigenvalue concave thin",
+      "Robin concavity avoided crossings",
+      "Robin thin domains Airy"
+    ],
+    "priority_result": "No competing counterexample found in bounded inspected primary sources; not exhaustive certification",
+    "independent_human_review": false,
+    "remaining": "Dimensions 2 and 3; smooth strictly convex examples; explicit geometric threshold; renewed exceptional-significance goal remains active"
   }
 }

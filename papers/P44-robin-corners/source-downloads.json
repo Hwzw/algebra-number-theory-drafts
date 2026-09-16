@@ -181,5 +181,28 @@
   "revision_3_1_notes": [
     "Local archive: ratio-audit; third-party PDFs are not republished.",
     "Andrews-Clutterbuck downloaded current PDF identifies arXiv v2. Dai-Sun version v3 verified from title and history."
+  ],
+  "revision_4_0_files": [
+    {
+      "file": "grebenkov-levitin-polterovich-v1.html",
+      "url": "https://arxiv.org/html/2604.11526v1",
+      "bytes": 1443456,
+      "sha256": "d0bc6ba0f204c12f357d5e2ec7b5c04d6d75e334048db8489c01923ef83fbf13"
+    },
+    {
+      "file": "grebenkov-levitin-polterovich-history.html",
+      "url": "https://arxiv.org/abs/2604.11526",
+      "bytes": 40629,
+      "sha256": "ee58b0577ec12eb82b64689ae00c5e16d9426fbde0bd6476d9ef20d84fc927b4"
+    },
+    {
+      "file": "bfk-book.pdf",
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/98/95/2020719895/2020719895.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "revision_4_0_notes": [
+    "Local archive: concavity-audit. Laugesen and Oberwolfach copies are archived in prior audit folders.",
+    "No third-party PDFs or HTML source texts are republished."
   ]
 }

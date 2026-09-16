@@ -25,17 +25,20 @@ force the ground-state mass toward the two ends; an odd ground-state
 multiple and nested cutoffs give an exponentially small gap. A concrete
 member disproves both the convex-domain Robin gap monotonicity
 conjecture and Laugesen\textquotesingle s spectral-ratio monotonicity
-conjecture. For the latter, we prove that the Robin ratio lies strictly
-below the Dirichlet ratio on the same fixed domain, using the
-established Dirichlet fundamental-gap theorem. Independently, we prove
-that the positive parameters with a log-concave ground state form a
-locally finite set on every convex polygon that is neither tangential
-nor rectangular, disproving the general eventual log-concavity
-conjecture of Andrews, Clutterbuck and Hauer. We also prove their full
-small-parameter polyhedral quasiconcavity conjecture by a global
-Hessian-norm rigidity argument for the Neumann first variation. The gap
-proof is independent of the corner regularity arguments and leaves
-dimensions two and three open.
+conjecture. An asymmetric modification also disproves his conjecture
+that the second Robin eigenvalue is concave in the positive parameter: a
+fully proved limit to two half-line operators gives a strict midpoint
+violation on a fixed convex polyhedron. For the latter, we prove that
+the Robin ratio lies strictly below the Dirichlet ratio on the same
+fixed domain, using the established Dirichlet fundamental-gap theorem.
+Independently, we prove that the positive parameters with a log-concave
+ground state form a locally finite set on every convex polygon that is
+neither tangential nor rectangular, disproving the general eventual
+log-concavity conjecture of Andrews, Clutterbuck and Hauer. We also
+prove their full small-parameter polyhedral quasiconcavity conjecture by
+a global Hessian-norm rigidity argument for the Neumann first variation.
+The gap proof is independent of the corner regularity arguments and
+leaves dimensions two and three open.
 
 \textbf{Keywords:} Robin eigenfunction; log-concavity; polygonal domain;
 corner singularity; analytic perturbation; quasiconcavity; fundamental
@@ -187,7 +190,19 @@ Clutterbuck {[}AC{]}. Proposition 10.4 gives an entirely explicit
 instance with rational bounds. The recent ball monotonicity theorem of
 Dai and Sun {[}DS{]} remains consistent with these polyhedral
 counterexamples. The different second-eigenvalue concavity conjecture
-{[}L, Conjecture C{]} is unresolved here.
+{[}L, Conjecture C{]} is answered in Section 11:
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.6 (failure of second-eigenvalue concavity).} In every
+dimension \(d\ge4\) and at every prescribed diameter, there is a bounded
+open convex polyhedron on which the second Robin eigenvalue is not
+concave in the positive parameter.
+
+We replace the two symmetric end regions by asymmetric regions whose
+limiting ground energies exchange order. A complete variational
+convergence proof, including the Robin end caps and the ordering of low
+eigenvalues, produces a strict concavity violation at three positive
+parameters on a single domain. Theorem 11.1 gives the precise statement.
+The first eigenvalue remains concave.
 
 \section{2. Analytic dependence and local
 regularity}\label{analytic-dependence-and-local-regularity}
@@ -2367,9 +2382,509 @@ The conclusion refutes {[}L, Conjecture B{]} independently of the
 gap-monotonicity conjecture {[}L, Conjecture A{]}. It does not refute
 monotonicity of \(\alpha\mathcal Q(G;\alpha)\), which is a theorem of
 {[}L{]}, or the ball result of {[}DS{]}. The spectral-ratio conjecture
-restricted to dimensions two and three remains unresolved here. So does
-the different conjecture that the second eigenvalue itself is concave in
-the positive Robin parameter {[}L, Conjecture C{]}.
+restricted to dimensions two and three remains unresolved here. The
+different conjecture that the second eigenvalue itself is concave in the
+positive Robin parameter {[}L, Conjecture C{]} is addressed next, using
+asymmetric geometry.
+
+\section{11. The second Robin eigenvalue need not be
+concave}\label{the-second-robin-eigenvalue-need-not-be-concave}
+
+Laugesen {[}L, Conjecture C{]} asks whether the second Robin eigenvalue
+on every bounded convex domain is concave in the positive parameter. The
+question is also recorded in {[}OP, Open Problem 7{]} and {[}OW,
+p.2099{]}. The symmetric family of Section 9 does not by itself answer
+this question: if a second eigenfunction is odd across a symmetry plane,
+its eigenvalue is the ground eigenvalue of a mixed problem on one half
+and is therefore concave, as observed in {[}L{]}. We instead construct
+two asymmetric end regions whose limiting ground energies cross.
+
+\Needspace{6\baselineskip}\textbf{Theorem 11.1 (failure of second-eigenvalue concavity).} For
+every \(d\ge4\) and \(D>0\), there is a bounded open convex polyhedron
+\(G\subset\mathbb R^d\) of diameter \(D\) and positive parameters
+\(\alpha_-<\alpha_0<\alpha_+\), with \(\alpha_0=(\alpha_-+\alpha_+)/2\),
+such that
+
+\[
+E_1(G;\alpha_0)
+<\frac{E_1(G;\alpha_-)+E_1(G;\alpha_+)}2.
+\tag{11.1}
+\]
+
+Thus {[}L, Conjecture C{]} is false. The proof uses convergence at three
+fixed parameters before diameter normalization, not differentiation of
+an asymptotic expansion. We provide the needed spectral convergence
+argument in full.
+
+\subsection{11.1. Geometry and the two limiting one-dimensional
+problems}\label{geometry-and-the-two-limiting-one-dimensional-problems}
+
+Let \(h>0\), \(\varepsilon=h^3\), \(a_L=1/2\) and \(a_R=1\). For a fixed
+\(b>0\), to be chosen below, define
+
+\[
+A_h(t)=1+\frac{bh(t+1)}2,
+\qquad L(t)=\min\{a_L(t+1),a_R(1-t)\},
+\quad -1<t<1,
+\tag{11.2}
+\]
+
+and
+
+\[
+\begin{split}
+\mathcal O_h=\{(t,x,y,z):\ &|t|<1,\\
+&|x|+5|y|<\varepsilon A_h(t),\\
+&|x|+|z|<\varepsilon[A_h(t)+L(t)]\}.
+\end{split}
+\tag{11.3}
+\]
+
+Every condition is an intersection of finitely many strict affine
+inequalities: for the last condition impose separately the two affine
+branches of \(L\). Thus \(\mathcal O_h\) is convex, bounded and full
+dimensional. The branches meet at \(t_0=1/3\), where \(L=2/3\). For
+small \(h\), \(1\le A_h\le2\), and its unscaled transverse section is
+
+\[
+K_h(t)=A_h(t)K_{s_h(t)},\qquad
+s_h(t)=\frac{L(t)}{A_h(t)}\in[0,2/3].
+\tag{11.4}
+\]
+
+Here \(K_s\), \(r(s)\) and \(r_0\) are from (9.4)-\/-(9.6). Write
+
+\[
+R_h(t)=\frac{r(s_h(t))}{A_h(t)},
+\qquad k=r'(0)>0.
+\tag{11.5}
+\]
+
+Cut the domain at \(t=t_0\) into its left and right parts. Let
+\(E_{q,j}^{\mathsf B}(h;\alpha)\), \(q=L,R\), be the ordered eigenvalues
+on part \(q\), with the original Robin condition on the exterior
+boundary and condition \(\mathsf B=N\) or \(D\) on the cut. Here \(N\)
+means that the cut has no boundary term in the form and no trace
+restriction; \(D\) means zero trace there. No Robin term is added at the
+cut.
+
+The left rescaling is \(t=-1+h\tau\), \(0<\tau<T_L/h\), where
+\(T_L=4/3\). The right rescaling is \(t=1-h\tau\), \(0<\tau<T_R/h\),
+where \(T_R=2/3\). Taylor expansion of the explicit smooth function
+\(r\), uniformly on compact \(\tau\) intervals, gives
+
+\[
+\begin{aligned}
+\frac{R_h(-1+h\tau)-r_0}{h}&\longrightarrow k a_L\tau,\\
+\frac{R_h(1-h\tau)-r_0}{h}&\longrightarrow k a_R\tau-br_0.
+\end{aligned}
+\tag{11.6}
+\]
+
+Indeed, on the left \(A_h=1+(b/2)h^2\tau\) and \(L=a_Lh\tau\); on the
+right \(A_h=1+bh-(b/2)h^2\tau\) and \(L=a_Rh\tau\).
+
+There is also a global lower bound on each rescaled half. If
+\(m=\min_{[0,2/3]}r'>0\), then \(r(s)\ge r_0+ms\), whence, using
+\(1\le A_h\le2\),
+
+\[
+\frac{R_h(t)-r_0}{h}
+\ge \frac{m L(t)}{4h}-br_0
+=\frac{m a_q}4\tau-br_0.
+\tag{11.7}
+\]
+
+This estimate prevents low-energy mass from escaping to large \(\tau\).
+
+Let \(\mu_j\), \(j=0,1,\ldots\), be the eigenvalues of the form
+
+\[
+\mathfrak a[g]=\int_0^\infty\bigl(|g'|^2+\tau|g|^2\bigr)\,d\tau,
+\quad
+\mathcal D(\mathfrak a)=\{g\in H^1(0,\infty):\sqrt\tau g\in L^2\}.
+\tag{11.8}
+\]
+
+There is no trace restriction at zero, so the associated operator is the
+Neumann half-line Airy operator. Its form embedding is compact: local
+Rellich compactness and the bound
+\(\int_T^\infty|g|^2\le T^{-1}\int\tau|g|^2\) give global compactness.
+Its eigenvalues are simple, since a solution of \(-g''+\tau g=\mu g\)
+with \(g'(0)=0\) is determined by \(g(0)\); if both initial values
+vanish the solution is zero. Its ground energy is positive, because a
+zero-energy eigenfunction would have both derivative and \(\sqrt\tau g\)
+equal to zero. In particular \(0<\mu_0<\mu_1\).
+
+\Needspace{6\baselineskip}\textbf{Lemma 11.2 (end-region spectral limits).} For every fixed
+\(\alpha>0\), \(j\ge0\) and \(\mathsf B\in\{N,D\}\),
+
+\[
+\begin{aligned}
+h^2\left(E_{L,j}^{\mathsf B}(h;\alpha)-\frac{\alpha r_0}{h^3}\right)
+&\longrightarrow \mu_j(\alpha k a_L)^{2/3},\\
+h^2\left(E_{R,j}^{\mathsf B}(h;\alpha)-\frac{\alpha r_0}{h^3}\right)
+&\longrightarrow \mu_j(\alpha k a_R)^{2/3}-\alpha br_0.
+\end{aligned}
+\tag{11.9}
+\]
+
+\subsection{11.2. Proof of the spectral
+limits}\label{proof-of-the-spectral-limits}
+
+We prove Lemma 11.2 through matching variational bounds. All constants
+below may depend on the fixed \(b\) and \(\alpha\), but not on \(h\),
+the cut condition, or the function being estimated.
+
+\textbf{Retained transverse coercivity.} The proof of Lemma 9.2 yields
+the slightly stronger estimate
+
+\[
+q_{K_s,\beta}[f]\ge\frac14\|\nabla f\|_2^2
+ +(\beta r(s)-110000\beta^2)\|f\|_2^2,
+\qquad 0\le\beta\le1/8192.
+\tag{11.10}
+\]
+
+To check this, in (9.12) use only one quarter of \(g^2\) to dominate
+\(\beta r(s)\|w\|_2^2\): \(r(s)\le32\), \(\|w\|_2^2\le64g^2\), and
+\(\beta\le1/8192\) suffice. The remaining quarter is retained, and the
+same mean estimate bounds the remainder by \(102400\beta^2\|f\|_2^2\).
+Dilation by \(A\in[1,2]\) preserves the coefficient \(1/4\) and the
+constant \(110000\) in the quadratic remainder, with \(r(s)\) replaced
+by \(r(s)/A\), provided \(A\beta\le1/8192\).
+
+On either half of \(\mathcal O_h\), each lateral facet is a graph with
+\(t\) slope bounded by \(C\varepsilon\); its surface measure divided by
+\(dt\) times the fiber surface measure lies between \(1\) and
+\(1+C\varepsilon^2\). This follows directly from the affine inequalities
+in (11.3): the transverse facet normals have lengths \(\sqrt{26}\) and
+\(\sqrt2\), while the longitudinal components are respectively
+\(-\varepsilon A_h'\) and \(-\varepsilon(A_h'+L')\). Their intersections
+have surface measure zero. Positivity of \(\alpha\) allows us to drop
+the excess surface factor and the exterior cap for a lower bound.
+
+Use \(X=(x,y,z)/\varepsilon\) and one of the endpoint coordinates
+\(\tau\) above, and write \(U(\tau,X)=u(t,\varepsilon X)\). After
+dividing both form and norm by the constant volume factor
+\(h\varepsilon^3\), multiplying the form by \(h^2\), and subtracting
+\(\alpha r_0/h\) times the norm, denote the centered form by
+\(\mathfrak q_h[U]\) and its norm by \(\|U\|_h^2=\int|U|^2\,dX\,d\tau\).
+The moving fibers in this integral are \(K_h(t(\tau))\). Scaling
+(11.10), with \(\beta=\alpha\varepsilon\), gives
+
+\[
+\mathfrak q_h[U]\ge
+\int\left\{|\partial_\tau U|^2+
+ \frac1{4h^4}|\nabla_XU|^2+
+ (W_h(\tau)-110000\alpha^2h^2)|U|^2\right\}\,dX\,d\tau,
+\tag{11.11}
+\]
+
+where \(W_h(\tau)=\alpha(R_h(t(\tau))-r_0)/h\) and \(\partial_\tau\) is
+taken at fixed \(X\). The factor \(h^{-4}\) is \(h^2\varepsilon^{-2}\).
+The estimate holds with either condition on the cut. It follows first
+for smooth functions by the facet formula and Fubini, then for the form
+domain by Sobolev density and trace continuity.
+
+\textbf{Fixed-fiber coordinates.} We give the details needed to handle
+the moving sections without assuming differentiability of their edges.
+On \(\mathbb R^3\) put
+
+\[
+p_s(X)=\max\left\{|X_1|+5|X_2|,
+ \frac{|X_1|+|X_3|}{1+s}\right\}.
+\tag{11.12}
+\]
+
+Then \(K_s=\{p_s<1\}\). On the unit sphere the functions \(p_s\) are
+uniformly Lipschitz in \((s,X)\) and bounded above and below by positive
+constants, since the sets \(K_s\) contain \(B_{1/6}\) and lie in
+\(B_3\). Let
+
+\[
+f_h(\tau,\theta)=
+ A_h(t(\tau))\frac{p_0(\theta)}{p_{s_h(t(\tau))}(\theta)},
+\qquad
+\Phi_h(\tau,Y)=f_h(\tau,Y/|Y|)Y,
+\tag{11.13}
+\]
+
+with \(\Phi_h(\tau,0)=0\). This map carries \(K_0\) onto
+\(K_h(t(\tau))\). The functions \(f_h\) and \(f_h^{-1}\) have uniform
+angular Lipschitz bounds and positive upper and lower bounds. The radial
+map and its inverse are consequently uniformly Lipschitz. For example,
+for \(|Y|\ge|Z|>0\), bound the radial coefficient difference by its
+spherical Lipschitz constant times \(|Y/|Y|-Z/|Z||\), and use
+\(|Z|\,|Y/|Y|-Z/|Z||\le2|Y-Z|\). The bound at zero is immediate.
+Moreover \(|\partial_\tau f_h|\le Ch\) almost everywhere, because the
+\(t\) derivatives of \(A_h\) and \(s_h\) are bounded. Thus
+\(|\partial_\tau\Phi_h|\le Ch\) on \(K_0\).
+
+The spatial Jacobian is
+
+\[
+J_h(\tau,Y)=\det D_Y\Phi_h=f_h(\tau,Y/|Y|)^3
+\tag{11.14}
+\]
+
+almost everywhere. Indeed \(D_Y(fY)=fI+Y\otimes\nabla f\) and
+\(Y\cdot\nabla f=0\) for the homogeneous degree-zero radial coefficient;
+the determinant formula gives \(f^3\). In particular
+\(0<c\le J_h\le C\). On each fixed finite \(\tau\) interval, \(f_h\to1\)
+and \(J_h\to1\) uniformly, on either half. The map
+\((\tau,Y)\mapsto(\tau,\Phi_h(\tau,Y))\) and its inverse are
+bi-Lipschitz, so Sobolev change of variables and the almost-everywhere
+chain rule apply.
+
+Put \(v(\tau,Y)=U(\tau,\Phi_h(\tau,Y))\). The chain rule gives
+
+\[
+\partial_\tau U=\partial_\tau v-B_h\cdot\nabla_Yv,
+\qquad |B_h|\le Ch,
+\qquad |\nabla_XU|\ge c|\nabla_Yv|,
+\tag{11.15}
+\]
+
+at corresponding points. For the first formula
+\(B_h=(D_Y\Phi_h)^{-1}\partial_\tau\Phi_h\). The inverse derivative is
+bounded by the bi-Lipschitz constant. Using
+\(|a-B_h\cdot z|^2\ge(1-h)|a|^2-Ch|z|^2\) in (11.11) and absorbing the
+negative term into the transverse term yields, for small \(h\),
+
+\[
+\mathfrak q_h[v]\ge
+\int_{(0,T_q/h)\times K_0}
+\left\{(1-h)|\partial_\tau v|^2+
+ c h^{-4}|\nabla_Yv|^2+
+ (W_h-C_\alpha h^2)|v|^2\right\}J_h\,dY\,d\tau.
+\tag{11.16}
+\]
+
+We keep the same form symbol after pullback; its norm is now
+\(\|v\|_h^2=\int|v|^2J_h\). By (11.7) there are \(c_\alpha>0\) and
+\(C_\alpha'>0\) such that \(W_h\ge c_\alpha\tau-C_\alpha'\) on the whole
+cylinder. Consequently every sequence of bounded norm and bounded
+centered energy satisfies
+
+\[
+\int\left(|\partial_\tau v_h|^2+h^{-4}|\nabla_Yv_h|^2
+ +\tau|v_h|^2\right)\,dY\,d\tau\le C.
+\tag{11.17}
+\]
+
+\textbf{Lower-limit compactness.} On each fixed cylinder
+\((0,T)\times K_0\), (11.17) gives an \(H^1\) bound and hence a strongly
+\(L^2\) convergent subsequence. A diagonal extraction gives a common
+limit on all such cylinders. Since \(\nabla_Yv_h\to0\) in \(L^2\), this
+limit is \(v(\tau,Y)=g(\tau)\): \(K_0\) is connected. The tail estimate
+\(\int_{\tau>T}|v_h|^2J_h\le C/T\) follows from (11.17). Local
+convergence, \(J_h\to1\) on finite cylinders and this tail bound show
+that norms and pairwise inner products converge globally. This statement
+concerns integrals over the increasing cylinders; no zero extension
+across a Neumann cut is asserted to lie in \(H^1\).
+
+By (11.6), \(W_h\) converges locally uniformly to
+\(W_L(\tau)=\alpha k a_L\tau\) or
+\(W_R(\tau)=\alpha k a_R\tau-\alpha br_0\). Choose a fixed \(C_0\) so
+that \(W_h+C_0\ge0\) for all small \(h\). Apply (11.16) after adding
+\(C_0\|v_h\|_h^2\), restrict its nonnegative integrands to
+\((0,T)\times K_0\), and pass to the lower limit. Weak lower
+semicontinuity of the derivative term and strong local convergence of
+the potential term give the limiting integral there. Let \(T\to\infty\)
+and subtract \(C_0\) times the converging norm. We obtain
+
+\[
+\liminf_{h\to0}\mathfrak q_h[v_h]
+\ge |K_0|\int_0^\infty(|g'|^2+W_q|g|^2)\,d\tau.
+\tag{11.18}
+\]
+
+The disappearing \(C_\alpha h^2\) term in (11.16) can equivalently be
+moved to the left before restriction. The limit belongs to the form
+domain in (11.8); no condition on \(g(0)\) is imposed. This proves the
+needed lower-limit statement for any bounded-energy sequence, not only
+eigenfunctions.
+
+\textbf{Upper trial spaces.} Take \(g\) smooth on \([0,\infty)\) and
+compactly supported, with arbitrary value at zero. On the actual moving
+fibers set \(U(\tau,X)=g(\tau)\). For small \(h\) its support avoids the
+cut, so it is admissible for both cut conditions. Its squared norm is
+\(\int V_h(\tau)|g|^2\), where \(V_h=|K_h(t(\tau))|\to|K_0|\) locally
+uniformly. The part of its lateral form with graph factor one gives
+exactly \(\int V_h W_h|g|^2\) after centering; its longitudinal energy
+is \(\int V_h|g'|^2\). The excess graph factor contributes at most
+\(C\alpha h^5\int V_h|g|^2\), because
+\(h^2\alpha\varepsilon^{-1}\varepsilon^2=\alpha h^5\) and \(R_h\) is
+bounded. The exterior cap contributes \(\alpha h V_h(0)|g(0)|^2\), which
+tends to zero. Thus both the form and norm converge to
+
+\[
+|K_0|\int_0^\infty(|g'|^2+W_q|g|^2),
+\qquad |K_0|\int_0^\infty|g|^2,
+\tag{11.19}
+\]
+
+respectively. By polarization this convergence holds on every fixed
+finite-dimensional space of such trial functions. Smooth compactly
+supported functions on the closed half-line are dense in (11.8):
+truncate at large \(\tau\), then reflect across zero and mollify.
+Approximation of each finite eigenspace followed by min-\/-max gives the
+upper bound for every ordered eigenvalue of the centered form.
+
+\textbf{Ordered eigenvalues and multiplicity.} For the lower bound on
+the \(j\)-th centered eigenvalue, take a sequence realizing its lower
+limit and its first \(j+1\) orthonormal eigenfunctions. The upper bounds
+just proved and the lower coercive bound give (11.17) for all of them.
+After a common subsequence their limits \(g_0,\ldots,g_j\) are
+orthonormal in \(L^2(0,\infty;|K_0|\,d\tau)\). For any fixed
+coefficients, the corresponding linear combination has centered Rayleigh
+quotient at most the \(j\)-th centered eigenvalue. Apply (11.18) to that
+combination. The limiting span therefore has maximum Rayleigh quotient
+no greater than that lower limit. Min-\/-max for the half-line form
+proves the opposite eigenvalue inequality. This handles multiplicities
+without assuming convergence of individual eigenfunctions to a
+prescribed basis.
+
+Finally, dilation of \(\tau\) in (11.8) shows that the eigenvalues with
+potential \(c\tau\) are \(c^{2/3}\mu_j\). Adding the constant
+\(-\alpha br_0\) shifts the right-hand eigenvalues. This proves (11.9).
+\(\square\)
+
+\subsection{11.3. A crossing of limiting ground energies gives a strict
+concavity
+violation}\label{a-crossing-of-limiting-ground-energies-gives-a-strict-concavity-violation}
+
+Let \(\nu_j(\alpha)\) be the increasingly ordered union, with
+multiplicity, of the two spectra on the right of (11.9). The original
+domain lies between the two cut problems in the form sense. More
+precisely, restriction to the halves embeds its form domain into the
+direct sum with Neumann cuts, and the direct sum with Dirichlet cuts
+embeds by zero-trace gluing into its form domain, with the same form
+values. Min-\/-max gives
+
+\[
+E_j^{N\oplus N}(h;\alpha)\le E_j(\mathcal O_h;\alpha)
+\le E_j^{D\oplus D}(h;\alpha).
+\tag{11.20}
+\]
+
+For each fixed \(j\), the first \(j+1\) entries in each half suffice to
+determine the first \(j+1\) entries of its ordered union. Lemma 11.2 and
+(11.20) imply
+
+\[
+h^2\left(E_j(\mathcal O_h;\alpha)-\frac{\alpha r_0}{h^3}\right)
+\longrightarrow \nu_j(\alpha).
+\tag{11.21}
+\]
+
+Choose the geometry coefficient by
+
+\[
+\ell=\mu_0(k a_L)^{2/3},\qquad
+r=\mu_0(k a_R)^{2/3},\qquad
+C=r-\ell>0,\qquad b=C/r_0.
+\tag{11.22}
+\]
+
+The two limiting ground energies are \(F_L(\alpha)=\ell\alpha^{2/3}\)
+and \(F_R(\alpha)=r\alpha^{2/3}-C\alpha\). They coincide at
+\(\alpha=1\), where each is strictly below both first excited end
+energies. By continuity, for all \(\alpha\) in some interval about one
+the first two entries of the limiting union are these two ground
+energies. Therefore
+
+\[
+\nu_1(\alpha)=\max\{F_L(\alpha),F_R(\alpha)\}
+\quad\text{near }1.
+\tag{11.23}
+\]
+
+Since \(F_R-F_L=C(\alpha^{2/3}-\alpha)\), the right branch is larger
+below one and the left branch is larger above one. For small \(\eta>0\),
+Taylor\textquotesingle s theorem gives
+
+\[
+\frac{\nu_1(1-\eta)+\nu_1(1+\eta)}2-\nu_1(1)
+=\frac C6\eta+O(\eta^2)>0.
+\tag{11.24}
+\]
+
+Fix one such \(\eta<1\). Use (11.21) at the three fixed parameters
+\(1-\eta,1,1+\eta\). The affine leading term cancels in their midpoint
+difference. Hence for every sufficiently small \(h\),
+
+\[
+E_1(\mathcal O_h;1)
+<\frac{E_1(\mathcal O_h;1-\eta)+E_1(\mathcal O_h;1+\eta)}2.
+\tag{11.25}
+\]
+
+This is a strict inequality on a single fixed full-dimensional convex
+polyhedron once \(h\) is chosen. The crossing in the proof belongs to
+the limiting decoupled problems; no actual crossing of the first two
+eigenvalues on the connected domain is asserted.
+
+\subsection{11.4. Higher dimensions and prescribed
+diameter}\label{higher-dimensions-and-prescribed-diameter}
+
+We include the short interval estimate needed for products. For
+\(f=m+w\) on \((0,1)\) with \(\int w=0\), the identity
+\(w(x)=\int_0^1(w(x)-w(y))\,dy\) gives \(|w(x)|\le\|w'\|_2\) and
+\(\|w\|_2\le\|w'\|_2\). Dropping the nonnegative boundary quadratic term
+of \(w\) and completing a square yields, for \(g=\|w'\|_2\),
+
+\[
+q_{(0,1),\beta}[f]\ge g^2+2\beta m^2-4\beta|m|g
+\ge\tfrac12g^2+2\beta m^2-8\beta^2m^2.
+\tag{11.26}
+\]
+
+For \(0\le\beta\le1/4\), the retained \(g^2/2\) dominates
+\(2\beta\|w\|_2^2\). A constant trial gives the upper bound, so after
+scaling,
+
+\[
+\frac{2\alpha}{\varepsilon}-8\alpha^2
+\le E_0((0,\varepsilon);\alpha)
+\le\frac{2\alpha}{\varepsilon}
+\quad(\alpha\varepsilon\le1/4).
+\tag{11.27}
+\]
+
+For \(d>4\) put \(H_h=\mathcal O_h\times(0,h^3)^{d-4}\). At each of the
+three fixed parameters in (11.25), (11.21) bounds the gap of
+\(\mathcal O_h\) by \(O(h^{-2})\). The interval gap is at least
+\(\pi^2h^{-6}-2\alpha h^{-3}\) by Neumann comparison and the constant
+trial. Thus the first excited eigenvalue of the product is obtained by
+exciting only the four-dimensional factor for small \(h\). Product
+separation and (11.27) give
+
+\[
+h^2\left(E_1(H_h;\alpha)
+-\frac{\alpha[r_0+2(d-4)]}{h^3}\right)
+\longrightarrow\nu_1(\alpha)
+\tag{11.28}
+\]
+
+at these parameters. The same strict midpoint violation follows. For
+\(d=4\) take \(H_h=\mathcal O_h\).
+
+Finally fix one sufficiently small \(h\) and set
+\(a=D/\operatorname{diam}(H_h)\), \(G=aH_h\). Scaling gives
+\(E_1(G;\alpha)=a^{-2}E_1(H_h;a\alpha)\). Choose
+\(\alpha_\pm=(1\pm\eta)/a\) and \(\alpha_0=1/a\) to transfer the strict
+midpoint inequality. This proves Theorem 11.1. \(\square\)
+
+The construction uses positive parameters, constant boundary coefficient
+and zero interior potential. Its universal counterexample starts in
+dimension four; dimensions two and three remain unresolved here. It
+gives an existence theorem for sufficiently small \(h\), not an explicit
+numerical threshold or a smooth strictly convex example. The first
+eigenvalue remains concave, and the ball and rectangular-box results of
+{[}L{]} remain valid. Sections 9, 10 and 11 answer, respectively, the
+separate parameter conjectures A, B and C of {[}L{]}.
 
 \sloppy\section{References}\label{references}
 
@@ -2465,5 +2980,10 @@ of the first two eigenvalues of Robin Laplacian},
 \href{https://arxiv.org/abs/2511.20988v3}{arXiv:2511.20988v3}, December
 20, 2025, Theorem 1.3. The revised title, theorem numbering and
 hypotheses are those of v3.
+
+{[}OW{]} \emph{Geometric Spectral Theory}, Oberwolfach Reports
+\textbf{36/2023}, meeting August 20-\/-25, 2023, problem section,
+p.2099. \href{https://doi.org/10.4171/OWR/2023/36}{Report}.
+\href{https://ems.press/content/serial-article-files/47475}{Full text}.
 
 \end{document}
