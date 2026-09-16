@@ -6,7 +6,7 @@ September 16, 2026
 
 ## Abstract
 
-We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. The full all-exponent variation conjecture remains open.
+We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. Affine dilation also excludes midpoint-symmetric three-switch maximizers and restricts the geometry of remaining three-switch candidates. The full all-exponent variation conjecture remains open.
 
 ## 1. The sharp inequality
 
@@ -1337,9 +1337,101 @@ Every nearby translated sign load has dual norm at most the sharp variation norm
 
 For three or more switches, the same translation cancellation gives an alternating sum in (12.7). It no longer equates the values at just two points, so the sign conclusion in (12.8) does not follow. No exclusion of all such configurations is asserted.
 
-## 13. Remaining questions
+## 13. Affine motion and the three-switch obstruction
 
-The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. The remaining finite-exponent task is to exclude a maximizing configuration with three or more switches. The endpoint p=infinity also remains to be addressed for the full variation statement. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
+The dilation direction complements common translation. It excludes a midpoint-symmetric three-switch maximizer and imposes a further necessary geometric condition on every remaining three-switch candidate.
+
+**Theorem 14 (three-switch dilation test).** Let $n\ge3$ and $1<p<\infty$. A global variation maximizer that is symmetric about the midpoint cannot have exactly three interior critical points. More generally, if a global maximizer has exactly three critical points $a<b<c$, the unique minimum of the auxiliary function for dilation about $b$, defined below, must lie outside the closed interval $[a,c]$.
+
+### 13.1. The general affine cancellation
+
+Use the notation of Section 11, put $m=n-1$, $d=mq+1$, and set $F=|R|^{q-2}R$, $U=I^nF$. Fix an affine velocity $v(t)=A+Bt$ and move the switches along $\tau_i(s)=\tau_i+s v(\tau_i)$. A dot denotes differentiation at zero. The kernel identity
+
+$$
+v(\tau)\partial_\tau K_\tau(t)+v(t)\partial_tK_\tau(t)=mB K_\tau(t)
+$$
+
+shows that
+
+$$
+T_v=\dot R+vR'-mBR\in\mathcal P_m.
+\tag{13.1}
+$$
+
+Define
+
+$$
+W_v=\dot U+vU'-BdU,\qquad
+W_v^{(n)}=(q-1)|R|^{q-2}T_v.
+\tag{13.2}
+$$
+
+As in Section 12, simple residual roots justify parameter and spatial differentiation of the signed residual power in $L^1$. Thus $W_v\in W^{n,1}$, its endpoint derivatives through order $n-2$ vanish, and
+
+$$
+W_v^{(n-1)}(0)=v(0)F(0),\qquad
+W_v^{(n-1)}(1)=v(1)F(1).
+\tag{13.3}
+$$
+
+Polynomial orthogonality gives $\int RW_v^{(n)}=0$. After $n-1$ integrations by parts, the surviving boundary term is $[vRF]_0^1=B|R(0)|^q$. Hence
+
+$$
+2\sum_i\sigma_i W_v(\tau_i)=-B|R(0)|^q.
+\tag{13.4}
+$$
+
+Let $\mathcal H$ be the Hessian in (11.9), and let $\mathbf v=(v(\tau_i))_i$. Since $U'(\tau_i)=0$, differentiating the envelope formula gives
+
+$$
+(\mathcal H\mathbf v)_i=2q\sigma_iW_v'(\tau_i),\qquad
+\mathbf v^T\mathcal H\mathbf v
+=2q\sum_i\sigma_i v(\tau_i)W_v'(\tau_i).
+\tag{13.5}
+$$
+
+Indeed $W_v'=\dot U'+vU''+B(1-d)U'$, and the last term vanishes at the switches. The switch path is affine in $s$, so there is no acceleration term.
+
+### 13.2. Dilation about the middle switch
+
+Suppose there are exactly three switches $a<b<c$, and choose the sign so that $F(0)>0$. Their signs are $+,-,+$. The $n+2$ simple residual zeros and equal endpoint magnitudes give $F(1)=(-1)^nF(0)$. Take $v(t)=t-b$. Equation (13.3) implies that $W_v'<0$ near zero and $W_v'>0$ near one, with endpoint zeros of exact multiplicity $n-2$.
+
+The weighted Rolle argument in (12.5) applies verbatim to (13.2): $W_v'$ has at most two interior zeros counted with the same multiplicity convention. Its opposite endpoint signs exclude a second zero or tangency. Consequently there is a unique interior point $z$ such that
+
+$$
+W_v'<0\quad(0,z),\qquad W_v'>0\quad(z,1).
+\tag{13.6}
+$$
+
+The auxiliary function is negative in the interior and has its unique minimum at $z$. If $a\le z\le c$, the middle switch has zero velocity and (13.5) becomes
+
+$$
+\mathbf v^T\mathcal H\mathbf v
+=2q\{(a-b)W_v'(a)+(c-b)W_v'(c)\}>0.
+\tag{13.7}
+$$
+
+Both summands are positive when $a<z<c$. At either endpoint of $[a,c]$, one vanishes and the other remains positive. This contradicts maximality. Any remaining three-switch global maximizer therefore requires $z<a$ or $z>c$.
+
+### 13.3. Midpoint symmetry excludes three switches
+
+If $u(1-t)=u(t)$, its three simple critical points are $a,1/2,1-a$, with $a<1/2$. Dilation about $1/2$ preserves this symmetry of the switch set. Every moved sign load is antisymmetric. Reflection and uniqueness of best $L^q$ polynomial approximation give $R_s(1-t)=(-1)^nR_s(t)$; the clamped potentials $U_s$ are consequently symmetric. Thus $\dot U$, $(t-1/2)U'$ and $W_v$ are symmetric as well.
+
+The unique minimum in (13.6) is therefore at $z=1/2$, between the outer switches. In particular,
+
+$$
+\mathbf v^T\mathcal H\mathbf v
+=4q(1/2-a)W_v'(1-a)>0,
+\tag{13.8}
+$$
+
+contradicting maximality and completing the proof of Theorem 14. $\square$
+
+The theorem does not establish symmetry of arbitrary variation maximizers. For a nonsymmetric three-switch candidate, it remains to exclude the response-minimum locations $z<a$ and $z>c$, or find another positive Hessian direction. Configurations with at least four switches also remain open.
+
+## 14. Remaining questions
+
+The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. Theorem 14 excludes midpoint-symmetric three-switch maximizers and imposes a response-minimum condition on any remaining three-switch candidate. The remaining finite-exponent task is to exclude nonsymmetric three-switch maximizers and configurations with at least four switches. The endpoint p=infinity also remains to be addressed for the full variation statement. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 
 ## References
 

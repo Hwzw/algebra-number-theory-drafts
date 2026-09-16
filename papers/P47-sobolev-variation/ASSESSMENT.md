@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.7, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.8, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,18 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.8: affine motion and symmetric three-switch exclusion
+
+Theorem 14 excludes every midpoint-symmetric global variation maximizer with exactly three interior critical points, for n>=3 and every finite exponent 1<p<infinity. It does not prove that arbitrary variation maximizers have midpoint symmetry. It also gives a necessary condition for any remaining three-switch maximizer: the unique minimum of the auxiliary response to dilation about the middle switch must lie strictly outside the two outer switches.
+
+The proof derives the response to a general affine velocity v(t)=A+Bt. Homogeneity of the truncated-power kernel cancels the parameter and spatial derivatives into a polynomial. A normalization term with coefficient B((n-1)q+1) cancels the remaining signed residual power. This gives an exact weighted-polynomial differential equation, endpoint values, an orthogonality identity and the Hessian action. For dilation about the middle of three switches, the weighted Rolle count makes the auxiliary response negative and strictly decreasing then increasing. If its minimum lies between the outer switches, their two Hessian contributions are positive and the fixed middle switch contributes zero. Midpoint symmetry forces precisely this location.
+
+The argument is a hand proof and uses only the manuscript's regularity and differentiability results. A separate exact order-three Hilbert calculation isolates the symmetric stationary root and certifies positive translation and centered-dilation second variations by rational interval arithmetic. This is a diagnostic of one stationary family and is not the proof of the universal theorem.
+
+A primary-source comparison with Elias and Pinkus, Proceedings of the Royal Society of Edinburgh A 132 (2002), 1333-1359, DOI 10.1017/S0308210500002134, inspected the initial formulation and main Theorem 1.3 in the author's hosted final-form PDF. That result requires strictly positive signed-power exponents and matched homogeneous scaling, with two-point boundary conditions. Our sign-forced equation with an additional mean constraint does not meet those hypotheses; its nonlinear eigenvalue ordering cannot be imported directly. The author's list and publisher metadata agree on 2002, despite the publisher's later 2007 online date. No theorem from this source is a dependency of Theorem 14, and the full proof and appendix were not audited here.
+
+The research notes also contain a conditional transfer of 1<p<2 maximizers to a weighted Hilbert problem and a bounded twelve-weight diagnostic. The required weighted single-peak theorem remains unproved, and no such inequality is asserted in the manuscript. Bounded searches and originating-assistant review do not establish independent verification or exhaustive priority. Nonsymmetric three-switch maximizers, all counts at least four and the p=infinity variation endpoint remain open. This is one paper; the broad conjecture-resolution goal remains active.
 
 ## Revision 1.7: two-switch exclusion at every finite exponent
 

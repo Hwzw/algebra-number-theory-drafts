@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.7.**
+**Henry Zweiman. September 16, 2026. Revision 1.8.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -18,8 +18,10 @@ Revision 1.6 proves that every finite-exponent variation maximizer has finitely 
 
 Revision 1.7 excludes every variation maximizer with exactly two interior critical points, in every order n>=3 and at every finite exponent, without assuming symmetry. Translating both switches gives a polynomial cancellation, a strictly unimodal auxiliary function and a positive second variation. The remaining finite-exponent obstruction is a maximizer with at least three switches. Section 10 also corrects a missing backslash in the spacing command of (10.6).
 
+Revision 1.8 derives the response to every affine switch motion and excludes midpoint-symmetric three-switch maximizers in every order n>=3 and at every finite exponent. Any remaining three-switch maximizer must have the unique minimum of its central-switch dilation response strictly outside its two outer switches. Nonsymmetric three-switch configurations and configurations with at least four switches remain unresolved.
+
 - [Full Markdown manuscript](manuscript.md)
-- [30-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [32-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

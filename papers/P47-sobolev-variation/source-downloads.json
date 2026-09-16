@@ -178,5 +178,14 @@
     "bytes": 473958,
     "date": "2026-09-16",
     "note": "Research-workspace source; not redistributed"
+  },
+  {
+    "file": "affine-stability-audit/elias-pinkus-author.pdf",
+    "url": "https://elias.net.technion.ac.il/files/2017/01/2002-PROC-EDINBURGH-ev-ODE.pdf",
+    "date": "2026-09-16",
+    "bytes": 307284,
+    "sha256": "2925b4fdc9295b4e2a845f65d8ff9d069ec12f89ba3ae22aab4f4ea1e424da1b",
+    "actual_pdf_pages": 27,
+    "note": "Research-workspace comparison source; not redistributed; initial formulation and main theorem reviewed, not the full proof"
   }
 ]
