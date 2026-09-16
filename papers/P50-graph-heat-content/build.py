@@ -23,6 +23,7 @@ body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{
 body=body.replace(r'\section{References}',r'\raggedright\section{References}')
 body=body.replace(r'\section{',r'\Needspace{8\baselineskip}\section{')
 body=re.sub(r'(?=\\textbf\{(?:Theorem|Lemma|Proposition|Corollary) )',lambda _:r'\Needspace{6\baselineskip}',body)
+body=body.replace(r'For \(0<x<\pi/2\),',r'\Needspace{5\baselineskip}For \(0<x<\pi/2\),')
 preamble=r'''\documentclass[11pt]{article}
 \usepackage[margin=0.82in]{geometry}
 \usepackage{amsmath,amssymb,lmodern}

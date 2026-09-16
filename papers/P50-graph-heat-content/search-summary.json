@@ -73,5 +73,17 @@
       "Ozcan-Taufer final theorem body",
       "Kurasov-Serio theorem proofs"
     ]
+  },
+  "one_point_search": {
+    "date": "2026-09-16",
+    "queries": [
+      "Kohler-Jobin Robin inequality 2026",
+      "Kohler-Jobin delta graphs",
+      "Kohler-Jobin graph single",
+      "Kohler-Jobin one Robin graph",
+      "torsional rigidity graph arctan",
+      "Kohler-Jobin one-point"
+    ],
+    "result": "Located and checked MP final proof, BCS 2026 domain questions, and Ozcan 2607.12333v2 nonlinear Dirichlet scope. No matching one-point Robin comparison found; not an exhaustive priority certificate."
   }
 }

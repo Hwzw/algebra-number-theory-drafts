@@ -102,7 +102,7 @@
   "latest_proof_note": "papers/P50-graph-heat-content/manuscript.md",
   "screen_note": "../../notes/0195-q58-heat-content-screen.md",
   "independent_human_review": false,
-  "revision": "1.1.0",
+  "revision": "1.2.0",
   "revision_date": "2026-09-16",
   "extension": {
     "theorem": "7.1",
@@ -144,5 +144,45 @@
     "proof_review": "Originating assistant only",
     "priority_certified": false,
     "extraordinary_goal_complete": false
+  },
+  "one_point_kohler_jobin": {
+    "date": "2026-09-16",
+    "theorems": [
+      "8.1",
+      "8.2"
+    ],
+    "proof_status": "Complete internally audited hand proofs; no independent review",
+    "scope": "One killing point only. General killing-measure analogues remain open.",
+    "primary_record": {
+      "date": "2026-09-16",
+      "downloads": [
+        {
+          "file": "mugnolo-plumer-final.html",
+          "url": "https://link.springer.com/article/10.1007/s00526-022-02363-9",
+          "bytes": 617247,
+          "sha256": "15f8e1c7511e71aeec2658b89fbd1d4d07be44664bb861d555ac5636cd25fc8e"
+        },
+        {
+          "file": "buttazzo-cito-solombrino-final.html",
+          "url": "https://link.springer.com/article/10.1007/s00032-026-00438-2",
+          "bytes": 385141,
+          "sha256": "9a18f4c26ac5149f593a83c393bd2848dda652084362a2c30450580e4e2f1bea"
+        },
+        {
+          "url": "https://arxiv.org/html/2607.12333v2",
+          "file": "ozcan-2026-v2.html",
+          "bytes": 556844,
+          "sha256": "03492b087cd8a7952a79987ffa06923c643591464d2bc0d68d22d4631fc2b508"
+        }
+      ],
+      "read_scope": {
+        "MP": "Final introduction, Theorem 5.8, Definitions 5.9 and 5.12, Lemmas 5.10-5.11 and 5.15-5.17, proof of Theorem 5.8",
+        "BCS": "Final metadata, introduction, Section 2 scaling/form conventions, Section 5 questions; selected Section 4 comparison statements. Perforation proof not audited.",
+        "Bifulco thesis": "Extracted Chapter 5.4 introductory scope and principal statements; concerns combinatorial Dirichlet graphs with zero potential, not a metric Robin theorem.",
+        "O26": "Latest v2 metadata/history, introduction and boundary assumptions; searched full HTML for Robin and delta terms; nonlinear theorem proof not audited."
+      },
+      "final_OT_body_read": false
+    },
+    "priority_limit": "No matching result located in bounded searches; final OT theorem body still not read."
   }
 }
