@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.12, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.13, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,14 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.13: all-order endpoint saturation
+
+Theorem 19 proves |u^(n)|=1 almost everywhere for every normalized uniform-endpoint variation maximizer, in every derivative order n>=2. Quotient duality and a higher-order conserved quantity give endpoint residual magnitude nV(n,infinity). A one-signed-derivative zero lemma and explicit treatment of residual zero intervals prove |c|<1. Repeated level-set derivative arguments then rule out positive-measure zero sets of both the residual and u'. The highest derivative is constant near each endpoint.
+
+This is a structural extension of the order-three result. It does not establish finite switching, simple roots, or the remaining higher-order variation conjecture. Two exact local order-four stationary solutions, at q=1 and q=2, show that the additional mixed derivative terms prevent deriving the order-three pointwise residual bound from the local conserved quantity alone. They are not clamped maximizers and do not disprove the conjecture or a prospective global bound.
+
+The final primary survey was refreshed at Conjecture 4.14, Remark 4.15 and the endpoint convention. Bounded searches did not establish exhaustive priority for the structural result. The proof was internally audited, with exact algebra used only to verify the explicit local examples. No independent expert certification or additional paper is claimed.
 
 ## Revision 1.12: the complete order-three case at every exponent
 

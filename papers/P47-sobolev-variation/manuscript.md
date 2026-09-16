@@ -10,7 +10,7 @@ We study the sharp control of total variation by a higher derivative under homog
 
 For each fixed order, compactness and persistence of a single peak give the full variation statement on intervals around two and immediately above one. We then prove finite nondegenerate switching and simple residual zeros for every finite-exponent variation maximizer, derive its switching Hessian, and exclude all two-switch and all midpoint-symmetric three-switch maximizers. An exact rational counterexample rules out an unrestricted extension to positive derivative weights.
 
-Finally, we settle derivative order three for every finite exponent $1<p<\infty$: the variation and height extremizers coincide, are symmetric about the midpoint, and have exactly one interior critical point. A conserved residual quantity parametrizes the nodal intervals by their quadratic vertices. A positive action is strictly concave in the vertex depths and strictly convex after optimization in the mean parameter. Comparing its values for different nodal counts constructs a better competitor whenever there are at least four intervals; the earlier two-switch exclusion completes the proof. At the uniform endpoint, a duality and regularity argument extends the positive action and gives the complete equality classification with an explicit extremizer. Thus the order-three conjecture holds at every exponent, with the measure interpretation at one. The full all-order variation conjecture remains open for the remaining cases in orders at least four.
+Finally, we settle derivative order three for every finite exponent $1<p<\infty$: the variation and height extremizers coincide, are symmetric about the midpoint, and have exactly one interior critical point. A conserved residual quantity parametrizes the nodal intervals by their quadratic vertices. A positive action is strictly concave in the vertex depths and strictly convex after optimization in the mean parameter. Comparing its values for different nodal counts constructs a better competitor whenever there are at least four intervals; the earlier two-switch exclusion completes the proof. At the uniform endpoint, a duality and regularity argument extends the positive action and gives the complete equality classification with an explicit extremizer. Thus the order-three conjecture holds at every exponent, with the measure interpretation at one. In every order, an endpoint conserved quantity also proves that every uniform-endpoint maximizer saturates its highest-derivative bound almost everywhere. The full all-order variation conjecture remains open for the remaining cases in orders at least four.
 
 ## 1. The sharp inequality
 
@@ -2261,11 +2261,154 @@ $$
 Thus every normalized variation maximizer is $u_*$ or $-u_*$. Its height is half its variation. Conversely, any height maximizer has variation at least twice that height and at most $V_{3,\infty}$, so it is a variation maximizer as well. This proves the complete equality classification and the endpoint constant formula. The scalar multiples include all nonzero extremizers; the zero function gives the trivial equality.
 
 
-## 18. Remaining questions
+## 18. Uniform-endpoint saturation in every order
+
+The conserved quantity extends to all derivative orders if its additional mixed derivative terms are retained. It proves saturation for every endpoint maximizer, even though it does not supply the quadratic comparison used in order three.
+
+**Theorem 19 (all-order endpoint saturation).** Let $n\ge2$, and let $u$ be any maximizer of variation in the clamped class with $\|u^{(n)}\|_\infty\le1$. Put $m=n-1$, $v=u'$, $f=u^{(n)}$, and $g=\operatorname{sign}v$, with $\operatorname{sign}0=0$. For any best $L^1$ polynomial approximant $P\in\mathcal P_m$ to $H_g$, put $R=H_g-P$. Then
+
+$$
+R^{(m)}=(-1)^m(g-c),\qquad -1<c<1,
+\tag{18.1}
+$$
+
+for a real constant $c$. With $J=V_{n,\infty}>0$, one has
+
+$$
+\int_0^1|R|=\int_0^1Rf=\int_0^1|v|=J,
+\qquad |R(0)|=|R(1)|=nJ.
+\tag{18.2}
+$$
+
+The zero sets of both $R$ and $v$ have measure zero. In particular,
+
+$$
+f=\operatorname{sign}R\quad\hbox{almost everywhere},
+\qquad |u^{(n)}|=1\quad\hbox{almost everywhere}.
+\tag{18.3}
+$$
+
+The highest derivative is constant almost everywhere on a neighborhood of either endpoint, and $v$ is a nonzero signed monomial on each such neighborhood. Neither zero set is asserted to be finite.
+
+### 18.1. Duality and the conserved quantity
+
+Existence follows from weak-star compactness of the $L^\infty$ unit ball under its $n$ moment constraints, together with uniform convergence of the integrated first derivative. A nonzero smooth clamped function shows that $J>0$, and homogeneity makes the highest-derivative norm of every maximizer equal to one.
+
+The annihilator of $\mathcal P_m$ in $L^\infty$ is exactly the set of clamped $n$th derivatives. The $L^1$ quotient norm of $H_g$ modulo $\mathcal P_m$ is the norm of the load $g$ on this annihilator. It is at most $J$, while its pairing with the present $f$ is $J$. A best polynomial exists by finite-dimensional coercivity. This proves the integral equalities in (18.2), and equality in $Rf\le|R|$ gives $f=\operatorname{sign}R$ off the residual zero set. On that zero set only $|f|\le1$ is initially known.
+
+Both $R$ and $v$ belong to $W^{m,\infty}$, and differentiating the integrated load gives the first identity in (18.1). Define the absolutely continuous function
+
+$$
+\mathcal H=
+\sum_{i=1}^{m-1}(-1)^{m-1-i}R^{(m-i)}v^{(i)}
+-|v|+cv-|R|,
+\tag{18.4}
+$$
+
+where the sum is empty for $m=1$. Differentiation of the sum telescopes. Using $v^{(m)}=f$ and (18.1), the chain rules give
+
+$$
+\mathcal H'=R'(f-\operatorname{sign}R)=0
+\quad\hbox{almost everywhere}.
+$$
+
+Off the residual zero set this is dual equality; on that set $R'=0$ almost everywhere by the absolutely continuous level-set derivative property. For $m=1$ the same displayed derivative follows directly. No sign function is differentiated.
+
+All endpoint derivatives of $v$ through order $m-1$ vanish, so $\mathcal H=-|R|$ at both endpoints. Each summand in (18.4) has integral
+
+$$
+\int_0^1(-1)^{m-1-i}R^{(m-i)}v^{(i)}
+=-\int_0^1(g-c)v=-J.
+$$
+
+Indeed, integrate by parts $i$ times; the clamped traces remove every boundary term, and $\int v=0$. The remaining two contributions in (18.4) also integrate to $-J$. Hence
+
+$$
+\mathcal H=-nJ=-A,\qquad A=nJ>0,
+\tag{18.5}
+$$
+
+proving the endpoint identities before any restriction on $c$ or either zero set.
+
+### 18.2. The strict mean-parameter bound
+
+We first record a zero lemma. If $h\in W^{m,\infty}$ has $h^{(m)}$ of one sign almost everywhere, then $m+1$ distinct zeros force $h$ to vanish throughout their convex hull. To prove this, take zeros $t_0<\cdots<t_m$. Their divided difference of order $m$ is zero. The repeated fundamental theorem of calculus expresses this divided difference as the integral of $h^{(m)}$ over the simplex of convex combinations of these knots. Its induced density is positive almost everywhere throughout $(t_0,t_m)$. The one-signed derivative must therefore vanish almost everywhere there. Thus $h$ is a polynomial of degree at most $m-1$ on that interval, and its $m+1$ zeros make it identically zero. The integral formula for $W^{m,\infty}$ follows by mollification from the smooth formula. In particular, a function of this kind with no zero interval has at most $m$ distinct zeros.
+
+Suppose now that $c\ge1$. Then $R^{(m)}$ has one sign. If $R$ has no zero interval, it has at most $m$ zeros and $f=\operatorname{sign}R$ almost everywhere. Choose a polynomial $Q$ with roots exactly at the sign-changing zeros of $R$, and choose its overall sign to agree with $R$. Then $\deg Q\le m$ and $fQ=|Q|$ almost everywhere. The positive integral of this product contradicts the moment constraints.
+
+Otherwise take a maximal nontrivial zero interval $[\alpha,\beta]$ of $R$. Its derivative traces through order $m-1$ vanish at both ends. Equation (18.1) gives $g=c$ almost everywhere inside it, so $c=1$ and $v>0$ almost everywhere there. The integral Taylor formulas give
+
+$$
+R(t)=\frac1{(m-1)!}\int_t^\alpha(s-t)^{m-1}(g(s)-1)\,ds\le0
+\quad(t<\alpha)
+$$
+
+and
+
+$$
+R(t)=\frac{(-1)^m}{(m-1)!}\int_\beta^t(t-s)^{m-1}(g(s)-1)\,ds
+\quad(t>\beta).
+$$
+
+The signs are strict outside the maximal zero interval: equality at an outside point would force $g-1=0$ almost everywhere between it and the interval, extending the zero interval by the same Taylor formula. Consequently $f=-1$ to the left and $f=(-1)^{m+1}$ to the right. The clamped endpoint traces imply
+
+$$
+v(t)=-\frac{t^m}{m!}\quad(t<\alpha),\qquad
+v(t)=-\frac{(1-t)^m}{m!}\quad(t>\beta).
+\tag{18.6}
+$$
+
+Continuity against $v>0$ almost everywhere inside the zero interval forces $\alpha=0$ and $\beta=1$. This would make $R$ identically zero, contradicting $J>0$. Thus $c<1$. Applying the same argument to $-u,-R,-c$ gives $c>-1$.
+
+### 18.3. Null zero sets and saturation
+
+For a function in $W^{m,\infty}$, all derivatives through order $m$ vanish almost everywhere on a level set. This follows by successively applying the absolutely continuous level-set derivative property, discarding a null set at each of the finitely many steps.
+
+Suppose that $E=\{R=0\}$ had positive measure. Equation (18.1) would give $g=c$ almost everywhere on $E$. Since $g$ takes values only in $\{-1,0,1\}$ and $|c|<1$, this forces $c=0$ and $v=0$ almost everywhere on $E$. Every term in (18.4) then vanishes almost everywhere on $E$, contradicting the nonzero constant (18.5). Hence $E$ is null, proving (18.3).
+
+If $\{v=0\}$ had positive measure, the same level-set property would give $f=v^{(m)}=0$ almost everywhere on it. This contradicts $|f|=1$ almost everywhere. Thus the zero set of $v$ is also null.
+
+Finally, continuity and the nonzero endpoint values of $R$ give a fixed nonzero sign on each endpoint neighborhood. Equation (18.3) makes $f$ constant there. Integration of the clamped traces gives, on the respective neighborhoods,
+
+$$
+v(t)=\operatorname{sign}R(0)\frac{t^m}{m!},\qquad
+v(t)=(-1)^m\operatorname{sign}R(1)\frac{(1-t)^m}{m!}.
+\tag{18.7}
+$$
+
+This proves Theorem 19. $\square$
+
+### 18.4. A local obstruction to the order-three residual bound
+
+For $n=3$, the mixed term in (18.4) is $R'v'$, which vanishes at a residual extremum. For $n=4$, it is $-R''v'+R'v''$. At $R'=0$ the first term survives and has no prescribed sign. The following exact local solutions show why the conserved quantity alone cannot supply the order-three bound.
+
+On $[-1/4,1/4]$, put $c=0$ and
+
+$$
+R(t)=2-\frac{t^2}{2}-\frac{t^3}{6},\qquad
+v(t)=1+2t+\frac{t^3}{6}.
+\tag{18.8}
+$$
+
+Here $R>1$ and $v>0$, while $R'''=-\operatorname{sign}v$, $v'''=\operatorname{sign}R$ and $\mathcal H=-1$. At zero, $R$ has a strict local maximum of value two, exceeding the formal level $A=1$ obtained from $-\mathcal H$. This is a local stationary solution; it is not clamped and is not a global maximizer.
+
+The same obstruction is present at finite exponent. For $q=2$, keep this $R$ and take
+
+$$
+v(t)=1+\frac52t+\frac{t^3}{3}-\frac{t^5}{120}-\frac{t^6}{720}.
+\tag{18.9}
+$$
+
+Then $v'''=R$, $R'''=-\operatorname{sign}v$, and
+$-R''v'+R'v''-|v|-R^2/2=-1/2$. Again the formal level is $A=1$ while $R(0)=2$. Direct triangle bounds on the stated interval give $R\ge755/384>1$ and $v\ge218107/589824>0$; in (18.8), $v\ge191/384>0$.
+
+These examples disprove only an inference from the local equations and negative conserved level to the residual bound. They do not disprove a bound with global maximizing hypotheses, or the variation conjecture. The remaining problem is to control the additional derivative traces and construct a better admissible competitor for every multiple-peak maximizer.
+
+## 19. Remaining questions
 
 The order-three case of [NS, Conjecture 4.14] is now complete at every exponent: Theorem 17 gives the finite-exponent identity and equality classification, Theorem 18 gives the complete uniform endpoint, and Theorem 9 supplies the measure endpoint. The full all-order conjecture remains unresolved. In every order, Theorems 5 and 11 establish exponent intervals around two and immediately above one; their widths and overlap are not known. Theorem 10 proves height symmetry and uniqueness at every finite exponent.
 
-For orders $n\ge4$, Theorem 12 supplies finite nondegenerate critical points and simple dual-residual zeros. Theorem 13 excludes every two-switch maximizer, and Theorem 14 excludes midpoint-symmetric three-switch maximizers and restricts every remaining three-switch candidate. Excluding nonsymmetric three-switch configurations and all higher counts remains the finite-exponent task in those orders. The uniform-endpoint variation problem there also remains open. The positive action in Sections 16 and 17 uses the quadratic residual pieces specific to order three; no higher-order extension is proved here.
+For orders $n\ge4$, Theorem 12 supplies finite nondegenerate critical points and simple dual-residual zeros. Theorem 13 excludes every two-switch maximizer, and Theorem 14 excludes midpoint-symmetric three-switch maximizers and restricts every remaining three-switch candidate. Excluding nonsymmetric three-switch configurations and all higher counts remains the finite-exponent task in those orders. At the uniform endpoint, Theorem 19 proves saturation and null zero sets in every order, but does not prove finite switching or resolve the variation problem in those higher orders. The positive action in Sections 16 and 17 uses the quadratic residual pieces specific to order three. Section 18 identifies the additional mixed derivative terms and gives exact local obstructions to reusing the same pointwise argument; no higher-order action comparison is proved here.
 
 Theorem 15 rules out a reduction using the same identity for arbitrary derivative weights. The special weights generated by an actual maximizer remain a possible restricted route in higher orders. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 

@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.12",
-  "pdf_pages": 48,
-  "pdf_text_characters": 118182,
+  "revision": "1.13",
+  "pdf_pages": 51,
+  "pdf_text_characters": 126221,
   "replacement_characters": 0,
-  "equation_tags": 186,
+  "equation_tags": 195,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1714,
+  "mathjax_expressions": 1859,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -60,15 +60,18 @@
       45,
       46,
       47,
-      48
+      48,
+      49,
+      50,
+      51
     ],
     "resolution_dpi": 108,
-    "outcome": "All 48 pages rendered and inspected in twelve contact sheets. The final introductory paragraph placement changed pages 1 through 14, which were re-inspected in contact sheets; pages 15 through 48 have unchanged PNG hashes. Pages 1, 2 and 44 through 47 were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading remains. The arbitrary-maximizer endpoint argument, regularity, endpoint action derivatives, count comparison and explicit equality classification are legible. A final pronoun clarification changed only page 47; it was re-inspected individually after rendering, with all other page hashes unchanged."
+    "outcome": "All 51 pages were rendered at 108 dpi and inspected in thirteen contact sheets. The new proof and remaining frontier on pages 47 through 50 were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading was observed. The higher-order conserved quantity, strict mean-parameter proof, zero-set argument and two exact local obstructions are legible."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "75c45beb821eede3245d910ddccfb1831399a723872c26e9e185302afde43559",
-    "manuscript.tex": "a1be63d23150aa5c63b76418d86c905195dae38c1ed5c8fbaf8f9d44dbb87c7f",
-    "manuscript.pdf": "3c978ea804d71e5c977c930d1098c81f0147570896cc6833553cfea2a3c6acea"
+    "manuscript.md": "b309dc7a978335491b10032f8ac105bc2a5c1b467b08a8b58a1bbac8ba293c47",
+    "manuscript.tex": "9df2c48b9f1d0f903bc35bfa9f5fea107cb933227efb472f4a36ede22a01bb73",
+    "manuscript.pdf": "8ac00459c51a8828c6284e7c3ab3b77d44fe3c83992a502bf818e3c77ee743e0"
   }
 }

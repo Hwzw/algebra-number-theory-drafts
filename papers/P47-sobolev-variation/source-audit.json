@@ -252,5 +252,18 @@
     "independent_review": false,
     "priority_certified": false,
     "primary_source_refresh": "Final NS Conjecture 4.14 and Theorems 4.5 and 4.12, September 16, 2026"
+  },
+  "revision_1_13": {
+    "date": "2026-09-16",
+    "result": "Every normalized uniform-endpoint variation maximizer saturates its nth derivative bound in every n>=2; null zero sets, endpoint residual normalization and strict mean-parameter bound",
+    "proof": "L1 quotient duality, full higher-order conserved quantity, positive divided-difference zero lemma, zero-interval exclusion and repeated level-set derivative arguments",
+    "finite_sampling_used_as_proof": false,
+    "all_order_uniform_endpoint_saturation_proved": true,
+    "higher_order_finite_switching_proved": false,
+    "full_all_order_variation_conjecture_solved": false,
+    "independent_review": false,
+    "priority_certified": false,
+    "local_obstructions_scope": "Exact local stationary solutions, not clamped global profiles or conjecture counterexamples",
+    "primary_source_refresh": "NS final Conjecture 4.14, Remark 4.15, Theorem 4.12 and Remark 4.1 on September 16, 2026"
   }
 }

@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.12.**
+**Henry Zweiman. September 16, 2026. Revision 1.13.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -28,9 +28,11 @@ Revision 1.11 proves the full variation identity and equality classification in 
 
 Revision 1.12 completes the uniform-endpoint equality classification in order three. Every nonzero extremizer is a scalar multiple of the explicit one-peak function with third derivative +1,-1,+1,-1 at the knots (1-1/sqrt(2))/2, 1/2, and (1+1/sqrt(2))/2. The variation constant is (2-sqrt(2))/48. Together with Theorems 9 and 17, this completes the order-three conjecture at every exponent, with the measure interpretation at p=1. The remaining all-order cases in n>=4 are open.
 
+Revision 1.13 proves that every normalized uniform-endpoint variation maximizer saturates its highest-derivative bound almost everywhere, in every order n>=2. Theorem 19 gives an all-order conserved quantity, endpoint residual normalization, a strict mean-parameter bound, null residual and first-derivative zero sets, and fixed controls near both endpoints. It does not prove finite switching. Exact local order-four solutions identify why the order-three residual bound does not follow from the higher-order conserved quantity alone. The remaining all-order conjecture is open.
+
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [48-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [51-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

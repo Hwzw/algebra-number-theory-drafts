@@ -211,5 +211,12 @@
     "bytes": 473992,
     "sha256": "291e9ffce81c88c0b2aca271d5772a989657cc6bde41c582b38603c9a6bd770d",
     "note": "Research-workspace HTML; Conjecture 4.14 and credited height Theorems 4.5 and 4.12 refreshed; not redistributed"
+  },
+  {
+    "url": "https://link.springer.com/article/10.1134/S0081543825601509",
+    "file": "higher-order-endpoint-audit/survey-final.html",
+    "bytes": 473992,
+    "sha256": "e457195e37b89c8abc4d9c65f903b7058a8590b55c695ed97a9fff181ba76a22",
+    "read_scope": "Conjecture 4.14, Remark 4.15, Theorem 4.12 and endpoint convention Remark 4.1; web full-text lines 189-357"
   }
 ]
