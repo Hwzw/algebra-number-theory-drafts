@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.10, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.11, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,16 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.11: the full finite-exponent variation theorem in order three
+
+Theorem 17 proves V(3,p)=2C(3,p) for every finite p>1 and identifies all nonzero variation extremizers with the unique midpoint-symmetric height extremizer up to multiplication by a scalar. This closes the n=3 finite-exponent case of Nazarov-Shcheglova Conjecture 4.14. Its corollary proves the constant identity at p=infinity by passage to the limit. The complete variation equality classification at that endpoint is not asserted.
+
+The universal proof uses a conserved residual quantity and the quadratic structure particular to order three. Every possible global maximizer is reconstructed from nodal vertex depths and a mean parameter. A positive action is strictly concave in the depths and strictly convex after optimizing in the mean parameter. Appending two repeated depths increases the action; the optimized comparison then constructs an actual admissible function with two fewer intervals and a strictly better quotient. The earlier two-switch theorem excludes the remaining three-interval case. No finite branch enumeration or symbolic check substitutes for this proof.
+
+The current final survey still states the all-order conjecture and records the prior n=2 case in Remark 4.15. This makes the n=3 extension a substantive special-case resolution, while the full n>=4 problem remains open. The new theorem also makes the order-three length restriction in Theorem 16 unnecessary for classifying global finite-exponent maximizers; it is retained as an earlier independent necessary-condition argument. The lower-count competitors and the zero-mean condition are both proved, rather than assumed from a formal shooting model.
+
+The scope audit compared the current survey formulation and retained the earlier mismatch with nonlinear eigenvalue results that lack the additional mean constraint or the limiting L1 forcing. No new external theorem is imported. Bounded literature discovery does not establish absolute priority; internal mathematical review is not independent expert certification. The broader goal remains active pending further conjecture-level work and audit. This remains one paper.
 
 ## Revision 1.10: an explicit nodal-length restriction in order three
 

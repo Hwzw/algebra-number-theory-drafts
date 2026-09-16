@@ -17,49 +17,38 @@
 \Needspace{8\baselineskip}\section{Abstract}\label{abstract}
 
 We study the sharp control of total variation by a higher derivative
-under homogeneous endpoint conditions. For every integer \(n\ge2\), we
-prove that the norm of \(u\mapsto u'\) from \(W_0^{n,2}(0,1)\) to
-\(L^1(0,1)\) is twice the norm of point evaluation into
-\(L^\infty(0,1)\). The extremizers of the two embeddings coincide and
-are symmetric about the midpoint. This proves the Hilbert-space case of
-a conjecture of Nazarov and Shcheglova. The main step is a rearrangement
-principle for a clamped Green operator after projection onto the
-zero-mean subspace. A Jacobi-polynomial representation identifies its
-quadratic form with a positive mixture of Poisson interactions on a
-sphere, where rearrangement reduces the optimization to a cap. We also
-prove the constant identity and coincidence of maximizing sets at the
-measure endpoint \(p=1\), using the geometry of extreme moment measures
-and unimodal splines. For each fixed derivative order, we further prove
-the full variation identity and midpoint-symmetric equality
-classification on an open interval of exponents around two. A dual
-optimality equation gives compactness through the highest derivative;
-polynomial sublevel bounds control the point-evaluation profile on both
-sides of the Hilbert exponent. At the measure endpoint in derivative
-order four, we also determine the exact sharp constant and unique
-symmetric extremizer by a cubic alternation argument and an explicit
-algebraic exclusion of asymmetric maximizers. An all-order
-contact-motion argument then proves strict midpoint maximization and the
-unique symmetric measure extremizer in every order, completing the
-measure-endpoint conjecture. A weighted zero-count extension proves
-strict midpoint point-evaluation maximization and unique symmetric
-height extremizers for every finite exponent. This completes the
-function-height case of the broader symmetry conjecture when combined
-with the endpoint results. Finally, compactness of arbitrary variation
-maximizers at the unique measure endpoint proves the full variation
-statement on an order-dependent interval immediately above one. We also
-prove that every finite-exponent variation maximizer has finitely many
-nondegenerate critical points and simple dual-residual zeros, and derive
-its switching Hessian. A translation cancellation then excludes every
-two-switch variation maximizer, without a symmetry assumption. Affine
-dilation also excludes midpoint-symmetric three-switch maximizers and
-restricts the geometry of remaining three-switch candidates. An explicit
-rational certificate shows that the analogous identity fails for
-arbitrary positive derivative weights, even for smooth weights in order
-three; this rules out an unrestricted weighted Hilbert shortcut. In
-order three, a nodal-length variation also proves that two intervals of
-constant sign of the first derivative cover more than \(p(3-p)/(3p-1)\)
-of the domain for \(1<p<3\). The full all-exponent variation conjecture
-remains open.
+under homogeneous endpoint conditions. For every derivative order
+\(n\ge2\), we prove that the variation norm on \(W_0^{n,2}(0,1)\) is
+twice the point-evaluation norm, with coincident midpoint-symmetric
+extremizers. A Jacobi-polynomial representation identifies the
+constrained Green form with a positive mixture of spherical Poisson
+interactions, permitting rearrangement to a cap. We also prove the
+complete measure-endpoint identity and equality classification in every
+order, using extreme moment measures, unimodal splines and contact
+motion. A weighted zero-count argument establishes strict midpoint
+height maximization and unique symmetric height extremizers at every
+finite exponent.
+
+For each fixed order, compactness and persistence of a single peak give
+the full variation statement on intervals around two and immediately
+above one. We then prove finite nondegenerate switching and simple
+residual zeros for every finite-exponent variation maximizer, derive its
+switching Hessian, and exclude all two-switch and all midpoint-symmetric
+three-switch maximizers. An exact rational counterexample rules out an
+unrestricted extension to positive derivative weights.
+
+Finally, we settle derivative order three for every finite exponent
+\(1<p<\infty\): the variation and height extremizers coincide, are
+symmetric about the midpoint, and have exactly one interior critical
+point. A conserved residual quantity parametrizes the nodal intervals by
+their quadratic vertices. A positive action is strictly concave in the
+vertex depths and strictly convex after optimization in the mean
+parameter. Comparing its values for different nodal counts constructs a
+better competitor whenever there are at least four intervals; the
+earlier two-switch exclusion completes the proof. The constant identity
+also holds at \(p=\infty\) by passage to the limit. The full all-order
+variation conjecture and the uniform-endpoint variation equality
+classification remain open.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -2806,31 +2795,598 @@ short intervals. The direct rescaling argument does not extend to higher
 derivative orders, because preserving \(v'\) at the joins does not
 preserve all the additional derivatives then required.
 
-\Needspace{8\baselineskip}\section{16. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{16. The complete finite-exponent theorem in order
+three}\label{the-complete-finite-exponent-theorem-in-order-three}
 
-The full all-exponent form of {[}NS, Conjecture 4.14{]} remains
-unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and
+We now settle the variation identity and the full equality
+classification in derivative order three at every finite exponent.
+
+\Needspace{6\baselineskip}\textbf{Theorem 17 (order three at every finite exponent).} For every
+\(1<p<\infty\),
+
+\[
+V_{3,p}=2C_{3,p}.
+\tag{16.1}
+\]
+
+The nonzero variation extremizers are exactly the scalar multiples of
+the unique positive norm-one midpoint height extremizer. They are
+symmetric about the midpoint and have exactly one interior critical
+point. In particular, {[}NS, Conjecture 4.14{]} holds for \(n=3\) and
+every finite \(p>1\).
+
+The proof retains the residual equation, which contains more information
+than the interval-energy conditions in Section 15. It reconstructs every
+possible global maximizer from its residual vertices, then compares a
+positive action across different nodal counts. The comparison is a hand
+proof for every count and exponent.
+
+\subsection{16.1. Normalization and the conserved
+quantity}\label{normalization-and-the-conserved-quantity}
+
+Let \(q=p/(p-1)>1\). Use the unnormalized dual potential \(U\) and set
+\(v=U'\), so
+
+\[
+v''=\phi_q(R),\qquad \phi_q(s)=|s|^{q-2}s,
+\qquad R''=\operatorname{sign}(v)-c.
+\]
+
+The endpoint conditions are \(v=v'=0\) at both endpoints and
+\(\int v=0\). For a global maximizer, Theorem 12 supplies finitely many
+simple interior zeros of \(v\), and \(-1<c<1\). Its dual residual is
+continuously differentiable and quadratic between those zeros. Put
+\(J=\int |R|^q\).
+
+On any interval of constant sign of \(v\), direct differentiation gives
+
+\[
+\mathcal H=R'v'-R''v-\frac{|R|^q}{q},\qquad \mathcal H'=0.
+\tag{16.2}
+\]
+
+This remains valid for \(1<q<2\): the derivative of \(|R|^q/q\) is the
+continuous function \(\phi_q(R)R'\). No derivative of \(\phi_q\) is
+needed. At a switch, \(R''\) jumps but \(v=0\), so \(\mathcal H\) has no
+jump. The endpoint conditions imply
+
+\[
+\mathcal H=-\frac{A^q}{q},\qquad A=|R(0)|=|R(1)|>0.
+\tag{16.3}
+\]
+
+Integrating (16.2) on an interval of total length \(\ell\), and
+integrating by parts using \(v=v'=0\), gives
+
+\[
+\int R'v'=-J,\qquad \int R''v=J,
+\qquad A^q\ell=(2q+1)J.
+\tag{16.4}
+\]
+
+When \(\ell=1\), this recovers the published endpoint normalization. The
+identity (16.4) uses the two endpoint conditions on \(v\); the extra
+mean condition is not needed for this particular identity.
+
+\subsection{16.2. Strict interior bound and one vertex in every nodal
+interval}\label{strict-interior-bound-and-one-vertex-in-every-nodal-interval}
+
+\textbf{Lemma.} Every interior point satisfies \(|R(t)|<A\). In every
+nodal interval of \(v\) there is exactly one zero of \(R'\), and the
+sign of \(R\) there is opposite to the sign of \(v\).
+
+At an interior maximum of \(|R|\), one has \(R'=0\). If this point is
+not a switch, then \(R''v=(1-c\operatorname{sign}v)|v|>0\). Equations
+(16.2)-(16.3) imply \(|R|^q<A^q\). If it is a switch, they imply
+\(|R|=A\). Thus the maximum over the closed interval is at most \(A\).
+
+An interior equality point must therefore be a switch \(t_0\) with
+\(R'(t_0)=0\). The two nonzero constant curvatures on its sides have
+opposite signs. Since \(R'\) vanishes at the switch, it has the same
+strict sign immediately on both sides. Hence \(R\) passes strictly
+through its value there, which contradicts the global bound
+\(|R|\le A\). This proves strictness.
+
+At an interior switch, (16.2)-(16.3) now give
+
+\[
+R'v'=\frac{|R|^q-A^q}{q}<0.
+\tag{16.5}
+\]
+
+Let \(\sigma\) be the sign of \(v\) on a nodal interval and
+\(a=1-c\sigma>0\). The derivative \(R'\) is affine with slope
+\(\sigma a\). At an interior left endpoint it has sign \(-\sigma\), and
+at an interior right endpoint it has sign \(\sigma\), by (16.5) and the
+simple crossing signs of \(v'\).
+
+At the outer left endpoint, \(R(0)=\sigma A\): this follows from
+\(v(0)=v'(0)=0\) and \(v''(0)=\phi_q(R(0))\). Strict decrease of
+\(\sigma R\) into the interval gives \(\sigma R'(0)<0\); equality would
+contradict the positive curvature of \(\sigma R\). The corresponding
+right endpoint argument gives \(\sigma R'(1)>0\). Consequently every
+nodal interval has exactly one interior vertex of \(R\).
+
+Finally, on a nodal interval \(I\),
+
+\[
+\int_I v\phi_q(R)=\int_I vv''=-\int_I(v')^2<0.
+\]
+
+Thus \(\sigma R\) is negative somewhere. Its unique minimum is therefore
+\(-h\) for some \(0<h<A\). This proves the lemma.
+
+For the normalized original maximizer, the lemma also gives
+\(|u'''(t)|^p<2q+1\) at every interior point. This is stronger than a
+bound only at the endpoints but does not by itself force the average
+energy-density threshold in Theorem 16.
+
+\subsection{16.3. Matching consecutive quadratic
+pieces}\label{matching-consecutive-quadratic-pieces}
+
+Let the \(N\) nodal intervals have alternating signs
+\(\sigma_j=(-1)^{j-1}\) after a global sign choice, and set
+\(a_j=1-c\sigma_j\). Write the residual on interval \(j\), in
+coordinates \(y\) centered at its vertex, as
+
+\[
+R=\sigma_j P_j(y),\qquad P_j(y)=\frac{a_jy^2}{2}-h_j,
+\qquad -\alpha_j\le y\le\beta_j.
+\tag{16.6}
+\]
+
+At the join between \(j\) and \(j+1\), continuity of \(R'\) and \(R\)
+gives
+
+\[
+s_j=a_j\beta_j=a_{j+1}\alpha_{j+1},
+\qquad s_j^2=a_ja_{j+1}(h_j+h_{j+1}).
+\tag{16.7}
+\]
+
+Indeed, \(a_j+a_{j+1}=2\), and substitution of the matching slopes into
+the matching values yields (16.7). The outer endpoint values give
+
+\[
+\alpha_1=\sqrt{\frac{2(A+h_1)}{a_1}},\qquad
+\beta_N=\sqrt{\frac{2(A+h_N)}{a_N}}.
+\tag{16.8}
+\]
+
+Thus all half-lengths are determined by \(A\), \(c\), and the positive
+vertex depths \(h_j<A\).
+
+\subsection{16.4. The exact nodal
+equation}\label{the-exact-nodal-equation}
+
+On interval \(j\), put \(w=\sigma_jv>0\). At its vertex, (16.2) gives
+
+\[
+b_j=w(0)=\frac{A^q-h_j^q}{q a_j}>0.
+\]
+
+Since \(w''=\phi_q(P_j)\) and \(P_j\) is even, for some real tilt
+\(B_j\) one has
+
+\[
+w(y)=b_j+B_jy+I_j(|y|),\qquad
+I_j(t)=\int_0^t(t-z)\phi_q(P_j(z))\,dz.
+\tag{16.9}
+\]
+
+Define
+
+\[
+\Psi_j(t)=\frac{b_j+I_j(t)}t.
+\]
+
+The two endpoint equations \(w(-\alpha_j)=w(\beta_j)=0\) are equivalent
+to
+
+\[
+\Psi_j(\alpha_j)+\Psi_j(\beta_j)=0,
+\qquad B_j=\Psi_j(\alpha_j).
+\tag{16.10}
+\]
+
+A useful derivative identity is
+
+\[
+\Psi_j'(t)=\frac{|P_j(t)|^q-A^q}{q a_jt^2}.
+\tag{16.11}
+\]
+
+To check it, use \(P_j'=a_jt\) to integrate \(z\phi_q(P_j(z))\). The
+\(h_j^q\) terms cancel against \(b_j\). In particular, \(\Psi_j\) is
+strictly decreasing wherever \(|P_j|<A\).
+
+\subsection{16.5. Sufficiency and the remaining mean
+condition}\label{sufficiency-and-the-remaining-mean-condition}
+
+Conversely, take \(q>1\), \(A>0\), \(-1<c<1\), and \(0<h_j<A\), with
+half-lengths defined by (16.7)-(16.8). Suppose all \(N\) equations
+(16.10) hold. At every internal join the residual value is
+
+\[
+\sigma_jR=\frac{a_{j+1}h_{j+1}-a_jh_j}{2},
+\]
+
+which lies strictly between \(-A\) and \(A\). The quadratic pieces
+themselves remain in this range away from the outer endpoints. Hence
+(16.11) proves \(w>0\) between its two zeros: on the right,
+
+\[
+w(t)=t[\Psi_j(t)-\Psi_j(\beta_j)]>0,
+\]
+
+and the left half is identical with \(\alpha_j\) in place of
+\(\beta_j\).
+
+The pieces (16.9) glue to a continuously differentiable \(v\). In fact,
+at either internal join their one-sided derivatives both satisfy (16.5),
+with the same nonzero \(R'\). Thus these derivatives agree. The outer
+derivatives vanish because \(|R|=A\) there. Since \(v''=\phi_q(R)\) is
+continuous, the resulting \(v\) is \(C^2\) and has the required simple
+interior zeros.
+
+Set
+
+\[
+L_j=\alpha_j+\beta_j,\qquad
+\mathcal E_j=\int_{-\alpha_j}^{\beta_j}|P_j(y)|^q\,dy.
+\]
+
+Integrating the conserved quantity on a nodal interval gives its
+positive area
+
+\[
+\mathcal A_j=\int_{I_j}|v|
+=\frac{A^qL_j-\mathcal E_j}{2q a_j}.
+\tag{16.12}
+\]
+
+Consequently the last condition needed for \(U=\int v\) to have all
+three zero endpoint traces is precisely
+
+\[
+\sum_j\sigma_j\mathcal A_j=0.
+\tag{16.13}
+\]
+
+Under (16.13), \(\phi_q(R)=U'''\) annihilates every polynomial of degree
+at most two by integration by parts. Also
+\(R''=\operatorname{sign}(v)-c\), so \(R\) differs from the integrated
+sign load by a quadratic. These are exactly the normal equations for its
+unique best \(L^q\) approximation by quadratics. Thus the constructed
+profile is a genuine sign-compatible stationary dual configuration, not
+merely an abstract collection of lengths and energies. This converse
+does not assert local or global maximality.
+
+\subsection{16.6. Removing the overall scale and identifying the
+comparison
+target}\label{removing-the-overall-scale-and-identifying-the-comparison-target}
+
+Normalize the endpoint residual magnitude to \(A=1\), and solve (16.10)
+and (16.13) for the \(N+1\) unknowns \(h_1,\ldots,h_N,c\), with
+\(0<h_j<1\). Let
+
+\[
+\Lambda=\sum_j(\alpha_j+\beta_j),\qquad d=2q+1.
+\]
+
+The unit-interval residual is obtained by multiplying lengths by
+\(\Lambda^{-1}\) and residual values by \(\Lambda^{-2}\). Its energy and
+variation quotient are
+
+\[
+J_{\mathrm{unit}}=\frac{\Lambda^{-2q}}d,
+\qquad \mathcal V_{\mathrm{unit}}=J_{\mathrm{unit}}^{1/q}
+=\Lambda^{-2}d^{-1/q}.
+\tag{16.14}
+\]
+
+Indeed (16.4) on the normalized interval gives \(J=\Lambda/d\), and the
+rescaling factor in its energy is \(\Lambda^{-(2q+1)}\). Also
+\(\int|v|=J\) follows from (16.13), so Holder equality identifies the
+quotient.
+
+Every global maximizer is covered by this finite system by Theorem 12.
+The next argument constructs a better admissible competitor whenever
+\(N\ge4\). Published Theorem 13 already excludes \(N=3\).
+
+At \(q=2\), the single-switch solution has \(c=0\) and \(h_1=h_2=9/16\).
+Its half-lengths are \(5/(2\sqrt2)\) and \(3/(2\sqrt2)\) in each
+interval, giving \(\Lambda^2=32\) and \(\mathcal V=1/(32\sqrt5)\), in
+agreement with Theorem 1. The all-\(q\) single-switch profile is
+supplied by Theorem 10.
+
+\subsection{16.7. A positive action for matched
+intervals}\label{a-positive-action-for-matched-intervals}
+
+Fix \(q>1\), \(N\ge2\), alternating signs \(\sigma_j=(-1)^{j-1}\),
+depths \(h\in(0,1)^N\), and \(c\in(-1,1)\). Put \(a_j=1-c\sigma_j\) and
+\(f(r)=1-|r|^q\). Define the positive outer contribution
+
+\[
+O(h,a)=\frac1{\sqrt{2a}}\int_{-h}^1\frac{f(r)}{\sqrt{r+h}}\,dr.
+\tag{16.15}
+\]
+
+For consecutive depths \(h,k\) and curvatures \(a,b\) with \(a+b=2\),
+define
+
+\[
+B(h,k;a,b)=\max_{-h\le z\le k}\left\{
+\frac1{\sqrt{2a}}\int_{-h}^z\frac{f(r)}{\sqrt{r+h}}\,dr
++\frac1{\sqrt{2b}}\int_{-k}^{-z}\frac{f(r)}{\sqrt{r+k}}\,dr
+\right\}.
+\tag{16.16}
+\]
+
+The maximizing join is unique and interior. Indeed the derivative in
+\(z\) is
+
+\[
+f(z)\left[\frac1{\sqrt{2a(z+h)}}-
+\frac1{\sqrt{2b(k-z)}}\right].
+\]
+
+Its bracket is strictly decreasing from positive infinity to negative
+infinity. Since \(f(z)>0\) on \([-h,k]\), its unique zero is
+
+\[
+z=\frac{bk-ah}{2}.
+\tag{16.17}
+\]
+
+This is precisely the matching join in (16.7). Consequently
+
+\[
+K_N(h,c)=O(h_1,a_1)+O(h_N,a_N)
++\sum_{j=1}^{N-1}B(h_j,h_{j+1};a_j,a_{j+1})
+=\sum_j\int_{-\alpha_j}^{\beta_j}f(P_j(y))\,dy.
+\tag{16.18}
+\]
+
+Every contribution is positive.
+
+\subsection{16.8. The depths maximize a strictly concave
+function}\label{the-depths-maximize-a-strictly-concave-function}
+
+For fixed \(c\), direct differentiation of the last expression in
+(16.18) gives
+
+\[
+\frac{\partial K_N}{\partial h_j}
+=q\bigl[\Psi_j(\alpha_j)+\Psi_j(\beta_j)\bigr].
+\tag{16.19}
+\]
+
+Here is the endpoint accounting. An internal join has slope magnitude
+\(s=\sqrt{ab(h+k)}\). Varying \(h\) changes the sum of its two
+half-lengths by \(1/s\). The two matching residual values have the same
+absolute value, so their endpoint contribution is \(f(z)/s\). The
+integral contribution on the changed interval is \(q\int\phi_q(P_j)\).
+Since \(s=a_jt\), these are exactly \(q\Psi_j(t)\) in the alternative
+identity
+
+\[
+\Psi_j(t)=\int_0^t\phi_q(P_j(y))\,dy+
+\frac{1-|P_j(t)|^q}{q a_jt}.
+\]
+
+At an outer endpoint \(P_j=1\), the endpoint contribution is zero and
+this same formula applies.
+
+For fixed \(a\) and \(t\), differentiating the original definition
+\(\Psi=(b+I)/t\) in \(h\) gives
+
+\[
+\Psi_h=-\frac{h^{q-1}}{at}
+-\frac{q-1}{t}\int_0^t(t-y)|ay^2/2-h|^{q-2}\,dy<0.
+\tag{16.20}
+\]
+
+The integral is finite for all \(q>1\): its possible zero is simple,
+because \(h>0\). At a zero located exactly at \(t\), the factor \(t-y\)
+also removes any endpoint concern. The derivative follows by splitting
+at the moving simple zero, or by local power estimates. Thus the depth
+gradient is continuously differentiable in the open cube.
+
+The derivative \(\Psi_t\) is negative at an internal half-length by
+(16.11). That half-length has equal positive derivatives with respect to
+its own depth and its neighboring depth. The outer half-length has
+positive own-depth derivative and \(\Psi_t=0\) there. Therefore the
+Hessian of \(K_N\) is symmetric, has negative diagonal entries and
+nonpositive off-diagonal entries, and is strictly diagonally dominant:
+the two strictly negative fixed-\(t\) terms (16.20) supply the strict
+excess on each diagonal. Hence it is negative definite. So
+\(K_N(\cdot,c)\) is strictly concave.
+
+A maximum exists in the interior. The function extends continuously to
+\([0,1]^N\) by its integral definitions; zero-length internal pieces
+contribute zero. If \(h_j\) is sufficiently close to zero, uniformly
+over the other depths, both relevant \(\Psi\) terms are positive. One
+bound is
+
+\[
+\Psi(t)\ge\frac{1-h_j^q}{q a_jt}-\frac{h_j^{q-1}t}{2},
+\]
+
+and the half-lengths have a fixed upper bound when \(c\) is fixed. If
+\(h_j\) is sufficiently close to one, both terms are negative uniformly
+over the other depths. At \(h_j=1\), \(b=0\), \(\Psi(0+)=0\), and
+(16.11) is strictly negative up to the outer endpoint. All half-lengths
+have a uniform positive lower bound when \(h_j\) is near one.
+Compactness and continuity give the asserted uniform negativity. Thus
+every maximizing depth lies in an interior cube. Strict concavity gives
+a unique maximizing depth vector \(h(c)\), and (16.19) says it solves
+exactly the \(N\) nodal equations. Conversely every solution of those
+equations is this maximizer.
+
+For a second uniqueness argument not requiring (16.20), choose an index
+with maximal absolute difference between two proposed solutions. After
+exchanging the solutions, its own depth increases and the sum with
+either neighboring depth does not decrease. Hence both half-lengths do
+not decrease. Each \(\Psi\) decreases strictly with its own depth and
+decreases with the half-length throughout the admissible range. Its
+nodal equation cannot remain zero. This contradicts the existence of two
+solutions.
+
+\subsection{16.9. Strict convexity in the mean
+parameter}\label{strict-convexity-in-the-mean-parameter}
+
+For fixed \(h,k,z\), each integral in (16.16) is nonnegative and
+independent of \(c\); its coefficient is a positive multiple of
+\((1-c\sigma)^{-1/2}\), a strictly convex function of \(c\). Thus \(B\)
+is convex in \(c\), being the maximum over a fixed interval of convex
+functions. The outer terms are strictly convex and positive. Therefore
+\(K_N(h,\cdot)\) is strictly convex.
+
+Set \(G_N(c)=\max_h K_N(h,c)=K_N(h(c),c)\). This is convex as a supremum
+of convex functions, and is strictly convex because the positive outer
+terms supply strictness. More explicitly, for two distinct parameter
+values take the maximizing \(h\) at their strict convex combination,
+apply strict convexity for that same \(h\), and then bound its endpoint
+values by the corresponding maxima.
+
+Moreover \(G_N(c)\to\infty\) as \(c\to\pm1\). For \(c\to1\), the
+positive first outer interval suffices. For \(c\to-1\), an even \(N\)
+has a negative last outer interval. For odd \(N\ge3\), choose fixed
+positive depths and, in an internal edge adjacent to a negative
+interval, a fixed interior join such as zero; its positive integral has
+coefficient \((1+c)^{-1/2}\). The definition as a maximum gives
+divergence. Thus \(G_N\) has a unique minimum at some \(c_N\in(-1,1)\).
+
+The nondegenerate depth Hessian gives differentiable dependence on \(c\)
+by the implicit function theorem. Differentiating (16.16) at its
+optimizing join and then (16.18) gives
+
+\[
+G_N'(c)=\frac{\partial K_N}{\partial c}(h(c),c)
+=\sum_j\frac{\sigma_j}{2a_j}(L_j-\mathcal E_j)
+=q\sum_j\sigma_j\mathcal A_j.
+\tag{16.21}
+\]
+
+The moving-join term vanishes because (16.17) is its critical point; the
+moving-depth terms vanish by (16.19). Hence \(c_N\) is exactly the
+unique parameter satisfying the zero-mean condition. The shooting
+reconstruction proves that this minimum supplies an actual admissible
+sign-compatible stationary profile on rescaling to the unit interval.
+
+For every \(c\), reconstruction gives the two zero endpoint traces of
+\(v\), whether or not its mean is zero. Therefore (16.4) yields
+
+\[
+G_N(c)=\frac{2q}{2q+1}\Lambda_N(c).
+\tag{16.22}
+\]
+
+A stationary mean-zero profile with \(N\) intervals thus has normalized
+total length \(\Lambda_N(c_N)\) and variation quotient given by (16.14).
+
+\subsection{16.10. Removing a pair of intervals improves the
+quotient}\label{removing-a-pair-of-intervals-improves-the-quotient}
+
+For \(N\ge4\) and a fixed \(c\), take the maximizing depth vector of
+\(K_{N-2}\). Append two copies of its final depth. The final sign is
+unchanged by adding two intervals, so the two outer contributions and
+every old edge contribution are unchanged. Exactly two additional edge
+contributions appear, and both are strictly positive. Thus
+
+\[
+G_N(c)>G_{N-2}(c).
+\tag{16.23}
+\]
+
+Evaluate this at \(c_N\) and use the minimum defining \(c_{N-2}\):
+
+\[
+G_N(c_N)>G_{N-2}(c_N)\ge G_{N-2}(c_{N-2}).
+\tag{16.24}
+\]
+
+By (16.22) and (16.14), the admissible stationary profile with \(N-2\)
+intervals has a strictly larger variation quotient than the profile with
+\(N\) intervals. Therefore no global variation maximizer can have
+\(N\ge4\) nodal intervals.
+
+A global maximizer cannot have \(N=1\) because its nonzero first
+derivative has zero mean. The case \(N=3\) is excluded by published
+Theorem 13 (two interior critical points). Thus \(N=2\) for every global
+maximizer in derivative order three and every finite \(p>1\). Such a
+function has a single peak, so its variation is twice its height.
+Published Theorem 10 supplies the unique midpoint-symmetric height
+extremizer, up to scalar multiplication. This establishes
+
+\[
+V_{3,p}=2C_{3,p},\qquad 1<p<\infty,
+\]
+
+with coincidence and midpoint symmetry of the extremizers. This proves
+Theorem 17. \(\square\)
+
+\Needspace{10\baselineskip}\subsection{16.11. The constant at the uniform
+endpoint}\label{the-constant-at-the-uniform-endpoint}
+
+\Needspace{6\baselineskip}\textbf{Corollary (uniform norm constant).} One also has
+
+\[
+V_{3,\infty}=2C_{3,\infty}.
+\tag{16.25}
+\]
+
+\emph{Proof.} The height constants \(C_{3,p}\) decrease as \(p\)
+increases and are bounded below by \(C_{3,\infty}\). To identify their
+limit, take normalized height maximizers with \(p\to\infty\). For every
+fixed \(s>1\), their third derivatives eventually have \(L^s\) norm at
+most one. Successive integration and compactness give a subsequence
+converging through the second derivative. Weak compactness in every
+fixed \(L^s\), followed by a diagonal extraction, gives a limit whose
+third derivative has \(L^s\) norm at most one for every finite \(s\). On
+an interval of length one this implies its \(L^\infty\) norm is at most
+one: any set on which its magnitude exceeded \(1+\varepsilon\) would
+contradict the bound for sufficiently large \(s\). Thus the limiting
+height is at most \(C_{3,\infty}\), and \(C_{3,p}\to C_{3,\infty}\).
+
+For any clamped \(u\) with \(\|u'''\|_\infty\le1\), Theorem 17 gives
+\(\|u'\|_1\le2C_{3,p}\) for every finite \(p>1\). Passing to the limit
+proves the upper bound in (16.25); the reverse bound follows from
+variation being at least twice the height. \(\square\)
+
+The corollary proves the endpoint constant identity. It does not
+classify every variation extremizer at \(p=\infty\). The measure
+endpoint and its equality classification were already settled by Theorem
+9. For derivative orders at least four, the remaining finite-exponent
+variation problem is still open.
+
+\Needspace{8\baselineskip}\section{17. Remaining questions}\label{remaining-questions}
+
+The full all-order form of {[}NS, Conjecture 4.14{]} remains unresolved.
+Theorem 17 settles derivative order three at every finite exponent,
+including coincidence and midpoint symmetry of all extremizers. Its
+corollary proves the constant identity at the uniform endpoint, where
+the complete variation equality classification remains open. Theorem 9
+gives the complete measure endpoint in every order, and Theorems 5 and
 11 give exponent intervals around two and immediately above one. Their
 widths and overlap are not established. Theorem 10 proves height
-symmetry and uniqueness at every finite exponent. Theorem 12 now proves
-that every finite-exponent variation maximizer has finitely many
-nondegenerate critical points and simple dual-residual zeros, so the
-stability matrix (11.10) applies without a regularity assumption.
-Theorem 13 excludes every two-switch maximizer. Theorem 14 excludes
-midpoint-symmetric three-switch maximizers and imposes a
-response-minimum condition on any remaining three-switch candidate. The
-remaining finite-exponent task is to exclude nonsymmetric three-switch
-maximizers and configurations with at least four switches. The endpoint
-p=infinity also remains to be addressed for the full variation
-statement. Theorem 15 rules out a reduction that assumes the same
-identity for arbitrary derivative weights. The special weights generated
-by an actual maximizer remain a possible restricted route. In order
-three, Theorem 16 gives an explicit concentration bound for the
-nodal-interval lengths, but still permits additional short intervals. A
-necessary matrix condition and finite examples are not a universal
-exclusion theorem. The stronger centroid and knot-reflection
-inequalities in the research notes remain unproved and are not needed
-for the results above.
+symmetry and uniqueness at every finite exponent.
+
+For orders \(n\ge4\), Theorem 12 supplies finite nondegenerate critical
+points and simple dual-residual zeros. Theorem 13 excludes every
+two-switch maximizer, and Theorem 14 excludes midpoint-symmetric
+three-switch maximizers and restricts every remaining three-switch
+candidate. Excluding nonsymmetric three-switch configurations and all
+higher counts remains the finite-exponent task in these orders. The
+positive action in Section 16 uses the quadratic residual pieces
+specific to order three; no higher-order extension is proved here.
+
+Theorem 15 rules out a reduction using the same identity for arbitrary
+derivative weights. The special weights generated by an actual maximizer
+remain a possible restricted route in higher orders. The stronger
+centroid and knot-reflection inequalities in the research notes remain
+unproved and are not needed for the results above.
 
 \clearpage\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 

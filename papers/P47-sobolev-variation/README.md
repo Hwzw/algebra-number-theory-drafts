@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.10.**
+**Henry Zweiman. September 16, 2026. Revision 1.11.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -24,9 +24,11 @@ Revision 1.9 disproves the arbitrary positive derivative-weight extension in ord
 
 Revision 1.10 proves an explicit nodal-length restriction in order three. For 1<p<3, at most two intervals of constant sign of the first derivative cover more than p(3-p)/(3p-1) of the domain. Theorem 16 uses an admissible stretching family and a constrained second variation. Additional short intervals remain possible under this necessary condition; the full conjecture remains open.
 
+Revision 1.11 proves the full variation identity and equality classification in derivative order three for every finite p>1. Theorem 17 reconstructs the stationary profiles from their quadratic residual vertices and compares a positive action across nodal counts. Every global maximizer has one peak and equals the unique midpoint height extremizer up to a scalar. The constant identity also holds at p=infinity; classification of all equality cases there remains open. The all-order conjecture remains unresolved for the remaining exponents in orders n>=4.
+
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [37-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [44-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

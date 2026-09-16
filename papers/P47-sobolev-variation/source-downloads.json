@@ -195,5 +195,13 @@
     "bytes": 138097,
     "sha256": "9fe26325a371e7720bd472587ac654f0c5087c4e13e73aae4ffa0a4bdf6a6efd",
     "note": "Primary arXiv HTML archived in research workspace; formulation and main theorem compared; no PDF visual or full proof certification; not redistributed in publication package"
+  },
+  {
+    "file": "residual-shooting-audit/survey-final.html",
+    "url": "https://link.springer.com/article/10.1134/S0081543825601509",
+    "date": "2026-09-16",
+    "bytes": 473958,
+    "sha256": "b2526b41490ee2acedbddb253b9dd7bd8fcbf97803ca47e616fec08f8709caaa",
+    "note": "Research-workspace HTML; current Conjecture 4.14, Remark 4.15 and height formulations refreshed; not redistributed"
   }
 ]
