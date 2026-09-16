@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-15",
+  "queries": [
+    {
+      "query": "all:Henon AND all:Neumann",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3AHenon+AND+all%3ANeumann&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 2,
+      "returned": 2,
+      "truncated": false
+    },
+    {
+      "query": "au:Shcheglova AND (all:Henon OR all:Neumann)",
+      "url": "https://export.arxiv.org/api/query?search_query=au%3AShcheglova+AND+%28all%3AHenon+OR+all%3ANeumann%29&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 1,
+      "returned": 1,
+      "truncated": false
+    },
+    {
+      "query": "all:\"weighted\" AND (all:\"Morse\" OR all:\"local minimality\") AND submittedDate:[202301010000 TO 202609152359]",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22weighted%22+AND+%28all%3A%22Morse%22+OR+all%3A%22local+minimality%22%29+AND+submittedDate%3A%5B202301010000+TO+202609152359%5D&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 62,
+      "returned": 62,
+      "truncated": false
+    },
+    {
+      "query": "all:Henon AND submittedDate:[202501010000 TO 202609152359]",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3AHenon+AND+submittedDate%3A%5B202501010000+TO+202609152359%5D&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 25,
+      "returned": 25,
+      "truncated": false
+    },
+    {
+      "query": "all:\"H\u00e9non\" AND all:Neumann",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22H%C3%A9non%22+AND+all%3ANeumann&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 4,
+      "returned": 4,
+      "truncated": false
+    },
+    {
+      "query": "all:\"H\u00e9non\" AND submittedDate:[202501010000 TO 202609152359]",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22H%C3%A9non%22+AND+submittedDate%3A%5B202501010000+TO+202609152359%5D&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 96,
+      "returned": 96,
+      "truncated": false
+    },
+    {
+      "query": "au:Shcheglova",
+      "url": "https://export.arxiv.org/api/query?search_query=au%3AShcheglova&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 35,
+      "returned": 35,
+      "truncated": false
+    },
+    {
+      "query": "(all:\"p-Laplacian\" OR all:\"p-Laplace\") AND (all:\"local minimum\" OR all:\"local minimality\" OR all:\"Morse\") AND submittedDate:[202301010000 TO 202609152359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22p-Laplacian%22+OR+all%3A%22p-Laplace%22%29+AND+%28all%3A%22local+minimum%22+OR+all%3A%22local+minimality%22+OR+all%3A%22Morse%22%29+AND+submittedDate%3A%5B202301010000+TO+202609152359%5D&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 11,
+      "returned": 11,
+      "truncated": false
+    }
+  ],
+  "unique_entries": 225,
+  "limitations": [
+    "Search is discovery evidence, not exhaustive priority certification.",
+    "Unaccented Henon searches omit many accented titles; accented searches and author searches were also completed."
+  ],
+  "screened_close_matches": [
+    {
+      "id": "2604.26286v2",
+      "assessment": "Primary explicit open question; latest listed version unchanged."
+    },
+    {
+      "id": "2003.04718v4",
+      "assessment": "Semilinear planar anisotropic Neumann concentration; large reaction exponent, different problem."
+    },
+    {
+      "id": "1904.00385v3",
+      "assessment": "Fractional isolated singularities, different operator and question."
+    },
+    {
+      "id": "2605.31165v1",
+      "assessment": "Thesis on quasilinear systems, critical groups and eigenvalues; abstract screened, not a full-body dependency."
+    },
+    {
+      "id": "2506.21515v1",
+      "assessment": "Semilinear stable-solution regularity; no local-minimum theorem for this quotient."
+    },
+    {
+      "id": "2504.19721v1",
+      "assessment": "Primary full theorem comparison: PDE theorem assumes positive regularization; abstract Theorem 3.7 requires nearby directional Hessian estimate."
+    },
+    {
+      "id": "2308.11227v1",
+      "assessment": "Predecessor regularized Dirichlet Morse theory, summarized and superseded in close comparison by 2504.19721."
+    }
+  ]
+}

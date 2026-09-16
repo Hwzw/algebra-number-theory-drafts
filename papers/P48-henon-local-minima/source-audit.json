@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q56",
+  "primary_source": "https://arxiv.org/abs/2604.26286",
+  "latest_version": "v2 May 11, 2026; live abstract/history and API verified September 15, 2026",
+  "open_statement": "Introduction footnote on PDF page 2 (footnote 1 in PDF; HTML anchor footnote 7): local minimality remains open after directional second-variation positivity.",
+  "primary_read_scope": "21-page v2 including main results, limiting criterion and appendices.",
+  "claim_map": [
+    {
+      "source": "Shcheglova 2018, final publisher PDF",
+      "read_scope": "Proposition 2.1 and Theorems 2.1-2.2, pp.362-367; Theorem 3.1 statement and proof context",
+      "use": "Existence, radial regularity and uniform convergence to the normalized first Steklov eigenfunction; global symmetry breaking for boundary-supercritical q. Our multiplier is rederived consistently."
+    },
+    {
+      "source": "Nazarov-Shcheglova 2026 v2",
+      "use": "Explicit open local-minimality problem, existing angular Steklov threshold and parameter regimes. These are credited; nonlinear local minimality is the claimed advance."
+    },
+    {
+      "source": "Gazzini-Serra 2008, final Numdam PDF",
+      "read_scope": "Section 3, especially Proposition 3.6 and Theorem 3.8; Section 4 comparison",
+      "use": "Known p=2 local-minimum result and Hilbert compactness precedent, not claimed as new."
+    },
+    {
+      "source": "Castorina-Esposito-Sciunzi 2011, author-hosted final PDF",
+      "read_scope": "Introduction and Section 2, pp.3606-3610",
+      "use": "Prior weighted spectral completion and compact embedding theory. Dirichlet setting; no direct resolution of the present Neumann quotient."
+    },
+    {
+      "source": "Cingolani 2013, publisher PDF online 2014",
+      "read_scope": "Introduction and Section 6, pp.355-358 and 368-370 plus references",
+      "use": "Prior Banach Morse theory; led to final 2024 article comparison."
+    },
+    {
+      "source": "Cingolani-Degiovanni-Sciunzi 2024, institutional final PDF",
+      "read_scope": "Introduction and Section 2, pp.1-14; full 45-page PDF retained",
+      "use": "Theorems 1.7-1.14 and 2.1/2.3 use Dirichlet conditions and PC compactness of regularized solutions. No direct Neumann local-minimum result. Not a theorem dependency."
+    },
+    {
+      "source": "Asselle-Cingolani-Starostka 2025, arXiv:2504.19721v1",
+      "read_scope": "Introduction assumptions and Theorem 1.2; Section 3 Theorem 3.7 and proof mechanism, author HTML and PDF",
+      "use": "PDE theorem assumes positive regularization parameter kappa. Abstract result assumes a nearby directional Hessian estimate, not just a gap at the base point. Related journal DOI 10.1142/S0219199726500082 verified on arXiv; publisher body unavailable. Cited as author preprint, not as inspected final journal body."
+    }
+  ],
+  "source_cautions": [
+    "Quotient homogeneity leaves a scaling zero direction. The literal all-nonzero language in NS Theorem 4 must be read with the scaling exclusion in (16). Our theorem is modulo positive scaling.",
+    "NS Lemma 3 fixed-alpha trace replacement cannot hold literally for a constant sequence of interior-supported tests. Our argument proves a joint alpha-to-infinity concentration limit in a common weighted space.",
+    "NS boundary gradient expansion cannot be joint-uniform when alpha(1-r) grows. Our exact-flux argument uses the saturated factor min(1,alpha(1-r))."
+  ],
+  "proof_audit": "Full proposed manuscript and proof notes 0186-0187 audited by the originating assistant; no independent human or subagent review. Key checks recorded in REVIEW.md. No gap identified in this internal audit.",
+  "novelty_assessment": "No matching resolution found in targeted web searches or eight complete arXiv API feeds (225 unique entries). Search coverage is not exhaustive proof of priority. Related weighted and Morse mechanisms credited; main novelty claimed for the Neumann local-minimum theorem and its explicit concentration-resistant proof.",
+  "search_record": "search-summary.json",
+  "scope": [
+    "q=q_c undecided",
+    "No alpha-uniform nonlinear neighborhood",
+    "No general Morse theory or new threshold formula",
+    "Nonlinear lemma, compactness argument, Riccati observation and negative-direction test form one paper"
+  ],
+  "current_status": "Complete internally audited preprint, provisionally admitted as P48; final ten-page PDF inspected. Public transaction is documented separately in the program publication receipt.",
+  "paper": "P48"
+}

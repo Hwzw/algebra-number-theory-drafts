@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 47 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 48 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Local minimality for the generalized Neumann Hénon problem
+
+[**P48: Local minimality for the generalized Neumann Hénon problem**](papers/P48-henon-local-minima/README.md), by **Henry Zweiman**, proves strict Sobolev local minimality of radial minimizers below the known Steklov threshold. It covers q near p for all 2<p<n and the full subcritical range when n>=4 and p>2 is close to two. The [ten-page PDF](papers/P48-henon-local-minima/manuscript.pdf), [full Markdown](papers/P48-henon-local-minima/manuscript.md), and [LaTeX](papers/P48-henon-local-minima/manuscript.tex) contain the weighted compactness and nonlinear coercivity arguments.
+
+The [assessment](papers/P48-henon-local-minima/ASSESSMENT.md) compares the explicit 2026 open question and close weighted Morse theory; the [review](papers/P48-henon-local-minima/REVIEW.md) checks concentration, normalization, boundary traces and the angular threshold. The threshold formula and p=2 theorem are credited prior work. Equality at the threshold and a uniform nonlinear neighborhood remain unresolved. This is one internally assessed preprint, without independent expert verification.
 
 ## Sharp total variation from spherical rearrangement
 

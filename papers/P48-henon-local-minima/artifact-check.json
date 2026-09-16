@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-15",
+  "author": "Henry Zweiman",
+  "pdf_pages": 10,
+  "pdf_text_characters": 21217,
+  "replacement_characters": 0,
+  "equation_tags": 43,
+  "equation_tags_sequential": true,
+  "mathjax_expressions": 336,
+  "mathjax_errors": 0,
+  "tex_warnings": [],
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "resolution_dpi": 105,
+    "outcome": "All final pages inspected after the final manuscript edit; no clipping, overlap, missing glyphs or broken equations identified."
+  },
+  "proof_status": "Artifact integrity only; not mathematical certification",
+  "hashes": {
+    "manuscript.md": "b3adb0aefa3388636294fe1e1cf514bf4c14ff4a5509451bcf214d30bb55ecd7",
+    "manuscript.tex": "864a32eafe7b62e414e2034419a82459f521d06801d080316b1ba550bfca34c4",
+    "manuscript.pdf": "eadcdfa98ab59ac8e29c04b8dcede4438ab1415194f00ed19bd7d7450ff84b18"
+  }
+}

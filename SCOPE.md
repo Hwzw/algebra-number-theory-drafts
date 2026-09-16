@@ -55,3 +55,7 @@ The claimed representation has strictly positive coefficients and convergence ra
 ## P47: sharp total variation from spherical rearrangement
 
 The claimed theorem proves V(n,2)=2C(n,2) for every n>=2, with the exact constant and precisely the midpoint point-evaluation extremizers. The proposed advance is a rearrangement inequality for the zero-mean clamped Green form via a positive spherical Poisson mixture. A complementary moment-measure argument proves the p=1 constant identity and coincidence of relaxed maximizers. These results form one paper. The point diagonal, spherical rearrangement and spline identities are credited prior work. General p, p=1 symmetry, knot classification and ordinary endpoint attainment are outside the claims. See [the assessment](papers/P47-sobolev-variation/ASSESSMENT.md).
+
+## P48: local minimality for the generalized Neumann Hénon problem
+
+The claimed theorem upgrades directional second-variation positivity to strict W1p local minimality modulo scaling below the known limiting Steklov threshold, for large radial-weight exponent. A common weighted space has compact boundary trace; a nonlinear convexity estimate retains concentrated perturbation energy. Above the threshold, the angular test gives instability. The threshold formula, radial convergence and p=2 local-minimum theorem are credited prior work. Equality at the threshold and a nonlinear neighborhood uniform in the weight exponent remain unresolved. See [the assessment](papers/P48-henon-local-minima/ASSESSMENT.md).
