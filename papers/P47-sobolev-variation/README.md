@@ -28,11 +28,11 @@ Revision 1.11 proves the full variation identity and equality classification in 
 
 Revision 1.12 completes the uniform-endpoint equality classification in order three. Every nonzero extremizer is a scalar multiple of the explicit one-peak function with third derivative +1,-1,+1,-1 at the knots (1-1/sqrt(2))/2, 1/2, and (1+1/sqrt(2))/2. The variation constant is (2-sqrt(2))/48. Together with Theorems 9 and 17, this completes the order-three conjecture at every exponent, with the measure interpretation at p=1. The remaining all-order cases in n>=4 are open.
 
-Revision 1.13 proves that every normalized uniform-endpoint variation maximizer saturates its highest-derivative bound almost everywhere, in every order n>=2. Theorem 19 gives an all-order conserved quantity, endpoint residual normalization, a strict mean-parameter bound, null residual and first-derivative zero sets, and fixed controls near both endpoints. It does not prove finite switching. Exact local order-four solutions identify why the order-three residual bound does not follow from the higher-order conserved quantity alone. The remaining all-order conjecture is open.
+Revision 1.13 proves that every normalized uniform-endpoint variation maximizer saturates its highest-derivative bound almost everywhere, in every order n>=2. Theorem 19 gives an all-order conserved quantity, endpoint residual normalization, a strict mean-parameter bound, null residual and first-derivative zero sets, and fixed controls near both endpoints. A separate accumulation-point argument proves finite switching, and a spline zero count gives simple critical points and exactly n+r-1 simple residual zeros. For each fixed n>=3, the number of critical points is uniformly bounded over all 1<p<=infinity; the bound is not explicit. Exact local order-four solutions identify why the order-three residual bound does not follow from the higher-order conserved quantity alone. The remaining all-order conjecture is open.
 
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [51-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [53-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

@@ -10,7 +10,7 @@ We study the sharp control of total variation by a higher derivative under homog
 
 For each fixed order, compactness and persistence of a single peak give the full variation statement on intervals around two and immediately above one. We then prove finite nondegenerate switching and simple residual zeros for every finite-exponent variation maximizer, derive its switching Hessian, and exclude all two-switch and all midpoint-symmetric three-switch maximizers. An exact rational counterexample rules out an unrestricted extension to positive derivative weights.
 
-Finally, we settle derivative order three for every finite exponent $1<p<\infty$: the variation and height extremizers coincide, are symmetric about the midpoint, and have exactly one interior critical point. A conserved residual quantity parametrizes the nodal intervals by their quadratic vertices. A positive action is strictly concave in the vertex depths and strictly convex after optimization in the mean parameter. Comparing its values for different nodal counts constructs a better competitor whenever there are at least four intervals; the earlier two-switch exclusion completes the proof. At the uniform endpoint, a duality and regularity argument extends the positive action and gives the complete equality classification with an explicit extremizer. Thus the order-three conjecture holds at every exponent, with the measure interpretation at one. In every order, an endpoint conserved quantity also proves that every uniform-endpoint maximizer saturates its highest-derivative bound almost everywhere. The full all-order variation conjecture remains open for the remaining cases in orders at least four.
+Finally, we settle derivative order three for every finite exponent $1<p<\infty$: the variation and height extremizers coincide, are symmetric about the midpoint, and have exactly one interior critical point. A conserved residual quantity parametrizes the nodal intervals by their quadratic vertices. A positive action is strictly concave in the vertex depths and strictly convex after optimization in the mean parameter. Comparing its values for different nodal counts constructs a better competitor whenever there are at least four intervals; the earlier two-switch exclusion completes the proof. At the uniform endpoint, a duality and regularity argument extends the positive action and gives the complete equality classification with an explicit extremizer. Thus the order-three conjecture holds at every exponent, with the measure interpretation at one. In every order, an endpoint conserved quantity also proves saturation of the highest derivative, finitely many simple critical points and simple residual zeros. For each fixed order, the critical-point count is uniformly bounded over all exponents above one, including the uniform endpoint. The full all-order variation conjecture remains open for the remaining cases in orders at least four.
 
 ## 1. The sharp inequality
 
@@ -2261,11 +2261,11 @@ $$
 Thus every normalized variation maximizer is $u_*$ or $-u_*$. Its height is half its variation. Conversely, any height maximizer has variation at least twice that height and at most $V_{3,\infty}$, so it is a variation maximizer as well. This proves the complete equality classification and the endpoint constant formula. The scalar multiples include all nonzero extremizers; the zero function gives the trivial equality.
 
 
-## 18. Uniform-endpoint saturation in every order
+## 18. Uniform-endpoint regularity in every order
 
-The conserved quantity extends to all derivative orders if its additional mixed derivative terms are retained. It proves saturation for every endpoint maximizer, even though it does not supply the quadratic comparison used in order three.
+The conserved quantity extends to all derivative orders if its additional mixed derivative terms are retained. It proves saturation and finite simple switching for every endpoint maximizer, even though it does not supply the quadratic comparison used in order three.
 
-**Theorem 19 (all-order endpoint saturation).** Let $n\ge2$, and let $u$ be any maximizer of variation in the clamped class with $\|u^{(n)}\|_\infty\le1$. Put $m=n-1$, $v=u'$, $f=u^{(n)}$, and $g=\operatorname{sign}v$, with $\operatorname{sign}0=0$. For any best $L^1$ polynomial approximant $P\in\mathcal P_m$ to $H_g$, put $R=H_g-P$. Then
+**Theorem 19 (all-order endpoint regularity).** Let $n\ge2$, and let $u$ be any maximizer of variation in the clamped class with $\|u^{(n)}\|_\infty\le1$. Put $m=n-1$, $v=u'$, $f=u^{(n)}$, and $g=\operatorname{sign}v$, with $\operatorname{sign}0=0$. For any best $L^1$ polynomial approximant $P\in\mathcal P_m$ to $H_g$, put $R=H_g-P$. Then
 
 $$
 R^{(m)}=(-1)^m(g-c),\qquad -1<c<1,
@@ -2280,7 +2280,7 @@ $$
 \tag{18.2}
 $$
 
-The zero sets of both $R$ and $v$ have measure zero. In particular,
+Both $R$ and $v$ have finitely many simple interior zeros. If $v$ has $r$ such zeros, then $r\ge1$ and $R$ has exactly $n+r-1$. In particular,
 
 $$
 f=\operatorname{sign}R\quad\hbox{almost everywhere},
@@ -2288,7 +2288,7 @@ f=\operatorname{sign}R\quad\hbox{almost everywhere},
 \tag{18.3}
 $$
 
-The highest derivative is constant almost everywhere on a neighborhood of either endpoint, and $v$ is a nonzero signed monomial on each such neighborhood. Neither zero set is asserted to be finite.
+The highest derivative is constant almost everywhere on a neighborhood of either endpoint, and $v$ is a nonzero signed monomial on each such neighborhood. For each fixed $n\ge3$, the critical-point count is uniformly bounded over all $1<p\le\infty$, as proved below.
 
 ### 18.1. Duality and the conserved quantity
 
@@ -2376,9 +2376,45 @@ v(t)=(-1)^m\operatorname{sign}R(1)\frac{(1-t)^m}{m!}.
 \tag{18.7}
 $$
 
-This proves Theorem 19. $\square$
+This proves saturation and the endpoint assertions. We next prove finiteness and simplicity.
 
-### 18.4. A local obstruction to the order-three residual bound
+### 18.4. Finitely many simple zeros
+
+An infinite set of residual zeros would have an accumulation point $t_0$ in the interior, because $R$ is nonzero near both endpoints. Repeated Rolle arguments and $R\in C^{m-1}$ give
+
+$$
+R^{(j)}(t_0)=0\qquad(0\le j\le m-1).
+$$
+
+Equation (18.5) then gives $|v(t_0)|-cv(t_0)=A>0$, so $v(t_0)\ne0$. Its sign is fixed on a neighborhood. There (18.1) makes $R$ a polynomial of degree exactly $m$, since $|c|<1$. It cannot have infinitely many zeros on that neighborhood. Thus $R$ has finitely many zeros.
+
+The same argument applies to $v$. Its endpoint monomials exclude accumulation at the boundary. At an interior accumulation point, $v^{(j)}(t_0)=0$ for $0\le j\le m-1$, and (18.5) gives $|R(t_0)|=A>0$. Hence $f$ has one fixed sign nearby, making $v$ a polynomial of degree exactly $m$, again a contradiction.
+
+Both functions are therefore $C^{m-1}$ splines of degree $m$: $R$ has a knot only where $v$ changes sign, while $v$ has a knot only where $R$ changes sign. All polynomial pieces have nonzero leading coefficient. Every zero has finite multiplicity at most $m$. Indeed, if all derivatives through $m-1$ vanish at a zero of either function, the conserved quantity makes the other function nonzero there; the first function then agrees locally with a polynomial of degree exactly $m$.
+
+Let $s$ be the number of sign changes of $R$, let $r_0$ be the number of sign changes of $v$, and let $M$ be the sum of the multiplicities of all interior zeros of $v$. A $C^{m-1}$ spline of degree $m$ with $k$ knots and nonzero leading coefficient on every piece has at most $m+k$ zeros counted with multiplicity. This follows by applying Rolle's theorem $m-1$ times: its $(m-1)$st derivative is continuous and affine with nonzero slope on each of the $k+1$ pieces, so it has at most $k+1$ distinct zeros. Multiplicities are reduced by one at each differentiation, as in Section 8. Endpoint zeros are included when present.
+
+Apply this bound first to $v$, whose endpoint zeros each have multiplicity $m$, and then to $R$, whose endpoint values are nonzero. If $Z$ is the sum of the multiplicities of the interior residual zeros, then
+
+$$
+2m+M\le m+s,\qquad
+s\le Z\le m+r_0\le m+M.
+\tag{18.8}
+$$
+
+Thus equality holds throughout. In particular $M=r_0$: every zero of $v$ changes sign and has multiplicity one. Also $Z=s=m+r_0$, so every residual zero is simple and changes sign. Writing $r=r_0$, there are exactly $n+r-1$ residual zeros. Since $\int v=0$ and $v\ne0$, one has $r\ge1$. For $m=1$ the same count applies directly to continuous piecewise affine functions. This proves Theorem 19. $\square$
+
+**Corollary (uniform critical-point bound over all exponents).** For each fixed $n\ge3$, there is a finite bound on the number of critical points of any variation maximizer, uniform over $1<p\le\infty$. The bound is not made explicit.
+
+*Proof.* Theorem 11 bounds the count by one when $p$ is sufficiently close to one, and Theorem 12 gives uniform bounds on compact subintervals of $(1,\infty)$. It remains to treat sequences $p_j\to\infty$, allowing $p_j=\infty$.
+
+The constants $V_{n,p}$ decrease with $p$ and are bounded below by $V_{n,\infty}$. For normalized maximizers at finite $p_j$, the highest derivative has $L^s$ norm at most one once $p_j\ge s$, for every fixed finite $s$. Compactness of its successive integrals, weak compactness for each $s>1$, and a diagonal extraction give a limit whose highest derivative has every finite $L^s$ norm at most one and hence $L^\infty$ norm at most one. The first derivatives converge uniformly. Their variations converge to the limit of the constants, proving $V_{n,p}\to V_{n,\infty}$ and showing that every such limit maximizes endpoint variation. The same compactness holds for sequences already at the endpoint.
+
+Choose best polynomial residuals for the sequence. Their coefficients are bounded: $\|P_j\|_1\le2\|H_{g_j}\|_\infty$, using the best-approximation inequality and finite-dimensional norm equivalence. By the just-proved regularity of the endpoint limit, its first derivative has only finitely many zeros, so uniform convergence gives $g_j\to g$ almost everywhere and in $L^1$. Thus, after extracting polynomial coefficients, $R_j\to R$ uniformly. For finite exponents, $q_j\to1$ and comparison against every fixed polynomial shows that $R$ is a best $L^1$ residual for the endpoint load. The same assertion follows directly for endpoint residuals.
+
+Theorem 19 gives nonzero endpoint values of $R$. Uniform residual convergence therefore fixes the highest-derivative signs on two common endpoint neighborhoods, by (6.6) for finite exponents and (18.3) at the endpoint. Successive integration from the clamped traces excludes critical points there. On the interior, $u_j'\to u'$ also holds in $C^1$: the functions $u_j''$ have uniform Holder control from any fixed $L^s$ bound on the highest derivative with $s>1$, also when $n=3$. The endpoint limit's critical points are all simple. On disjoint small neighborhoods of those points, the second derivative has one fixed nonzero sign, and on the remaining compact set the first derivative stays away from zero. The sequence therefore has exactly the same critical-point count for all sufficiently large indices. This excludes an unbounded sequence of counts as $p\to\infty$ and completes the proof. $\square$
+
+### 18.5. A local obstruction to the order-three residual bound
 
 For $n=3$, the mixed term in (18.4) is $R'v'$, which vanishes at a residual extremum. For $n=4$, it is $-R''v'+R'v''$. At $R'=0$ the first term survives and has no prescribed sign. The following exact local solutions show why the conserved quantity alone cannot supply the order-three bound.
 
@@ -2387,7 +2423,7 @@ On $[-1/4,1/4]$, put $c=0$ and
 $$
 R(t)=2-\frac{t^2}{2}-\frac{t^3}{6},\qquad
 v(t)=1+2t+\frac{t^3}{6}.
-\tag{18.8}
+\tag{18.9}
 $$
 
 Here $R>1$ and $v>0$, while $R'''=-\operatorname{sign}v$, $v'''=\operatorname{sign}R$ and $\mathcal H=-1$. At zero, $R$ has a strict local maximum of value two, exceeding the formal level $A=1$ obtained from $-\mathcal H$. This is a local stationary solution; it is not clamped and is not a global maximizer.
@@ -2396,11 +2432,11 @@ The same obstruction is present at finite exponent. For $q=2$, keep this $R$ and
 
 $$
 v(t)=1+\frac52t+\frac{t^3}{3}-\frac{t^5}{120}-\frac{t^6}{720}.
-\tag{18.9}
+\tag{18.10}
 $$
 
 Then $v'''=R$, $R'''=-\operatorname{sign}v$, and
-$-R''v'+R'v''-|v|-R^2/2=-1/2$. Again the formal level is $A=1$ while $R(0)=2$. Direct triangle bounds on the stated interval give $R\ge755/384>1$ and $v\ge218107/589824>0$; in (18.8), $v\ge191/384>0$.
+$-R''v'+R'v''-|v|-R^2/2=-1/2$. Again the formal level is $A=1$ while $R(0)=2$. Direct triangle bounds on the stated interval give $R\ge755/384>1$ and $v\ge218107/589824>0$; in (18.9), $v\ge191/384>0$.
 
 These examples disprove only an inference from the local equations and negative conserved level to the residual bound. They do not disprove a bound with global maximizing hypotheses, or the variation conjecture. The remaining problem is to control the additional derivative traces and construct a better admissible competitor for every multiple-peak maximizer.
 
@@ -2408,7 +2444,7 @@ These examples disprove only an inference from the local equations and negative 
 
 The order-three case of [NS, Conjecture 4.14] is now complete at every exponent: Theorem 17 gives the finite-exponent identity and equality classification, Theorem 18 gives the complete uniform endpoint, and Theorem 9 supplies the measure endpoint. The full all-order conjecture remains unresolved. In every order, Theorems 5 and 11 establish exponent intervals around two and immediately above one; their widths and overlap are not known. Theorem 10 proves height symmetry and uniqueness at every finite exponent.
 
-For orders $n\ge4$, Theorem 12 supplies finite nondegenerate critical points and simple dual-residual zeros. Theorem 13 excludes every two-switch maximizer, and Theorem 14 excludes midpoint-symmetric three-switch maximizers and restricts every remaining three-switch candidate. Excluding nonsymmetric three-switch configurations and all higher counts remains the finite-exponent task in those orders. At the uniform endpoint, Theorem 19 proves saturation and null zero sets in every order, but does not prove finite switching or resolve the variation problem in those higher orders. The positive action in Sections 16 and 17 uses the quadratic residual pieces specific to order three. Section 18 identifies the additional mixed derivative terms and gives exact local obstructions to reusing the same pointwise argument; no higher-order action comparison is proved here.
+For orders $n\ge4$, Theorem 12 supplies finite nondegenerate critical points and simple dual-residual zeros. Theorem 13 excludes every two-switch maximizer, and Theorem 14 excludes midpoint-symmetric three-switch maximizers and restricts every remaining three-switch candidate. Excluding nonsymmetric three-switch configurations and all higher counts remains the finite-exponent task in those orders. At the uniform endpoint, Theorem 19 proves saturation, finite simple critical points and exactly $n+r-1$ simple residual zeros in every order. The critical-point count is uniformly bounded over all $1<p\le\infty$ for each fixed order, but no explicit bound or higher-order single-peak conclusion is proved. The positive action in Sections 16 and 17 uses the quadratic residual pieces specific to order three. Section 18 identifies the additional mixed derivative terms and gives exact local obstructions to reusing the same pointwise argument; no higher-order action comparison is proved here.
 
 Theorem 15 rules out a reduction using the same identity for arbitrary derivative weights. The special weights generated by an actual maximizer remain a possible restricted route in higher orders. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 

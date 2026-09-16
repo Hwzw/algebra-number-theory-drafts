@@ -2,13 +2,13 @@
   "date": "2026-09-16",
   "author": "Henry Zweiman",
   "revision": "1.13",
-  "pdf_pages": 51,
-  "pdf_text_characters": 126221,
+  "pdf_pages": 53,
+  "pdf_text_characters": 131693,
   "replacement_characters": 0,
-  "equation_tags": 195,
+  "equation_tags": 196,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1859,
+  "mathjax_expressions": 1955,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -63,15 +63,17 @@
       48,
       49,
       50,
-      51
+      51,
+      52,
+      53
     ],
     "resolution_dpi": 108,
-    "outcome": "All 51 pages were rendered at 108 dpi and inspected in thirteen contact sheets. The new proof and remaining frontier on pages 47 through 50 were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading was observed. The higher-order conserved quantity, strict mean-parameter proof, zero-set argument and two exact local obstructions are legible."
+    "outcome": "All final 53 pages were rendered at 108 dpi and inspected in fourteen contact sheets after the strengthened theorem changed the pagination. Pages 50 and 51 containing the accumulation, multiplicity and uniform-count arguments were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading was observed. The conserved quantity, zero-set proof, finite simple switching, compactness corollary and exact local obstructions are legible."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "b309dc7a978335491b10032f8ac105bc2a5c1b467b08a8b58a1bbac8ba293c47",
-    "manuscript.tex": "9df2c48b9f1d0f903bc35bfa9f5fea107cb933227efb472f4a36ede22a01bb73",
-    "manuscript.pdf": "8ac00459c51a8828c6284e7c3ab3b77d44fe3c83992a502bf818e3c77ee743e0"
+    "manuscript.md": "37dd8dbde38f7169423c391255b43b258baa006fe0e81d1a642596ec077a38dd",
+    "manuscript.tex": "0b987e2cc134da830f2231686fbbdf5b15007e4cb1034f1fc1222facfcbb5527",
+    "manuscript.pdf": "a8eaa2d1b594294d284bdd3c834f494ac4c80e1b2feb258b5e47fd7d04c624b4"
   }
 }

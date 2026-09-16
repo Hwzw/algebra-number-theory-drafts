@@ -255,15 +255,17 @@
   },
   "revision_1_13": {
     "date": "2026-09-16",
-    "result": "Every normalized uniform-endpoint variation maximizer saturates its nth derivative bound in every n>=2; null zero sets, endpoint residual normalization and strict mean-parameter bound",
-    "proof": "L1 quotient duality, full higher-order conserved quantity, positive divided-difference zero lemma, zero-interval exclusion and repeated level-set derivative arguments",
+    "result": "Every normalized uniform-endpoint variation maximizer saturates its nth derivative bound and has finitely many simple critical points with exactly n+r-1 simple residual roots. For each n>=3, a critical-point count bound is uniform over all 1<p<=infinity.",
+    "proof": "L1 quotient duality, full higher-order conserved quantity, positive divided-difference zero lemma, zero-interval exclusion and repeated level-set derivative arguments, accumulation-point contradiction, spline zero multiplicity count, and compactness near infinity combined with the published endpoint-one and compact-exponent results",
     "finite_sampling_used_as_proof": false,
     "all_order_uniform_endpoint_saturation_proved": true,
-    "higher_order_finite_switching_proved": false,
+    "higher_order_finite_switching_proved": true,
     "full_all_order_variation_conjecture_solved": false,
     "independent_review": false,
     "priority_certified": false,
     "local_obstructions_scope": "Exact local stationary solutions, not clamped global profiles or conjecture counterexamples",
-    "primary_source_refresh": "NS final Conjecture 4.14, Remark 4.15, Theorem 4.12 and Remark 4.1 on September 16, 2026"
+    "primary_source_refresh": "NS final Conjecture 4.14, Remark 4.15, Theorem 4.12 and Remark 4.1 on September 16, 2026",
+    "uniform_count_bound_all_exponents_above_one": true,
+    "count_bound_explicit": false
   }
 }
