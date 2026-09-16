@@ -66,7 +66,7 @@
     "Semantic Scholar citation API returned 429; no exhaustive citation-chain search claimed."
   ],
   "proof_state": {
-    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment. Revision 1.3 completes the all-order measure endpoint by contact motion and B-spline peak monotonicity. Revisions 1.4 and 1.5 establish finite-exponent height symmetry and full variation continuation above one. Revision 1.6 establishes global finite-exponent maximizer regularity and the necessary switching Hessian.",
+    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment. Revision 1.3 completes the all-order measure endpoint by contact motion and B-spline peak monotonicity. Revisions 1.4 and 1.5 establish finite-exponent height symmetry and full variation continuation above one. Revision 1.6 establishes global finite-exponent maximizer regularity and the necessary switching Hessian. Revision 1.7 excludes all two-switch finite-exponent variation maximizers without a symmetry assumption.",
     "standard_dependencies": [
       "Genocchi-Hermite divided differences (de Boor, formula 52)",
       "Brunn-Minkowski",
@@ -171,5 +171,19 @@
     "full_variation_conjecture_solved": false,
     "independent_review": false,
     "priority_certified": false
+  },
+  "revision_1_7": {
+    "date": "2026-09-16",
+    "result": "No global variation maximizer has exactly two interior critical points for n>=3 and 1<p<infinity",
+    "symmetry_assumption": false,
+    "proof": "Common switch translation; polynomial cancellation; weighted Rolle count; endpoint orthogonality; strictly positive translation Hessian",
+    "new_external_theorem_dependency": false,
+    "source_refresh": "Final NS Conjecture4.14 and Remark4.15",
+    "all_multiple_switches_excluded": false,
+    "remaining_finite_exponent_counts": "r>=3; r=1 already classified",
+    "full_variation_conjecture_solved": false,
+    "independent_review": false,
+    "priority_certified": false,
+    "notation_correction": "Restored missing backslash before quad in (10.6)"
   }
 }

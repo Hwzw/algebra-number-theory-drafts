@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.6, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.7, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,18 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.7: two-switch exclusion at every finite exponent
+
+Theorem 13 excludes every global variation maximizer with exactly two interior critical points, for every n>=3 and every 1<p<infinity. No symmetry or restriction on the locations of the two switches is assumed. Together with Theorem 12, this leaves only the known single-peak class or configurations with at least three switches. This answers the two-switch part of the manuscript's remaining stability question, but does not resolve the full all-exponent variation conjecture or its p=infinity endpoint.
+
+The proof translates both switches simultaneously. The load derivative cancels its spatial derivative, leaving a polynomial after subtraction of the best approximating polynomial. The corresponding auxiliary potential has highest derivative equal to a positive weight times that polynomial. Its endpoint signs and a weighted Rolle count force strict unimodality. Polynomial orthogonality and the equal endpoint residual magnitudes force the auxiliary values at the two switches to agree. The switches consequently straddle its unique peak, which gives a strictly positive translation second variation and contradicts maximality.
+
+All steps are hand arguments. The earlier order-three Hilbert diagnostic is consistent with this universal two-switch theorem, but is not used as a proof. The weight may be singular when q<2: the proof uses L1 differentiation, absolutely continuous primitives and integrals between their zeros, never differentiation of the weight. A repeated interior zero is counted only using the continuous first derivative; no unavailable higher derivative at a residual root is assumed.
+
+The full primary survey's Conjecture 4.14 and Remark 4.15 were refreshed. Bounded targeted searches for variation maximizers, critical-point counts, translation instability and higher-order Sobolev extremals did not identify a matching two-switch exclusion in the inspected results. Searches were noisy, and this is not exhaustive priority certification. The new proof has no external dependency beyond the manuscript's established results. It has received originating-assistant review only.
+
+An exact auxiliary four-node example in the research notes shows why strict unimodality and an alternating value sum alone cannot extend this sign argument to all higher switch counts. It is not a counterexample to the conjecture. An additional affine-dilation cancellation is recorded for the next investigation. No distinct paper is added and the broader goal remains active.
 
 ## Revision 1.6: global regularity and a justified stability matrix
 

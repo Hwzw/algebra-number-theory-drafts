@@ -6,6 +6,6 @@ authors:
   - family-names: Zweiman
     given-names: Henry
 date-released: 2026-09-16
-version: "1.6"
+version: "1.7"
 url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P47-sobolev-variation"
-abstract: "Sharp all-order Hilbert total variation bounds via spherical rearrangement, with a measure-endpoint theorem and full local continuation to exponents near two, and the complete all-order measure-endpoint symmetry and extremizer classification, with an explicit fourth-order constant. Also proves all-order midpoint symmetry and height-extremizer uniqueness for every finite exponent. Also proves the full variation statement on an order-dependent interval immediately above p=1. Also proves finite nondegenerate switching and simple residual zeros for every finite-exponent variation maximizer, with an explicit necessary stability matrix. AI-assisted preprint, not independently verified."
+abstract: "Sharp all-order Hilbert total variation bounds via spherical rearrangement, with a measure-endpoint theorem and full local continuation to exponents near two, and the complete all-order measure-endpoint symmetry and extremizer classification, with an explicit fourth-order constant. Also proves all-order midpoint symmetry and height-extremizer uniqueness for every finite exponent. Also proves the full variation statement on an order-dependent interval immediately above p=1. Also proves finite nondegenerate switching and simple residual zeros for every finite-exponent variation maximizer, with an explicit necessary stability matrix. Also excludes two-switch variation maximizers at every finite exponent and in every derivative order at least three, without symmetry assumptions. AI-assisted preprint, not independently verified."

@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.6",
-  "pdf_pages": 28,
-  "pdf_text_characters": 72191,
+  "revision": "1.7",
+  "pdf_pages": 30,
+  "pdf_text_characters": 76701,
   "replacement_characters": 0,
-  "equation_tags": 108,
+  "equation_tags": 116,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1000,
+  "mathjax_expressions": 1068,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -40,15 +40,17 @@
       25,
       26,
       27,
-      28
+      28,
+      29,
+      30
     ],
     "resolution_dpi": 108,
-    "outcome": "All 28 final pages rendered and inspected in seven contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new regularity theorem, endpoint identities, perturbation argument, uniform count bound and Hessian condition are legible; references occupy a separate page."
+    "outcome": "All 30 final pages rendered and inspected in eight contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new two-switch theorem, weighted Rolle count, endpoint integration and positive second variation are legible. The spacing command in (10.6) is corrected; references occupy a separate page."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "63099a6b7875c436db1daa70c8172131b09ae966128e0104b4b49e776a2587d2",
-    "manuscript.tex": "fe48015088daebf9060f38a6e73038697c6c56e54aca57f92f7c7b65baae82a3",
-    "manuscript.pdf": "a550298ab91b8f350dc82f112092090bc26bb5333700eb14940f00790473ecb8"
+    "manuscript.md": "ecad81e17793268667053fc26c3a391cff5912658da932a6b19a238aab1cd8bb",
+    "manuscript.tex": "b573d5231cc17ca9f9d759f3f56caf110fdcf5f2ef005e4f2399596345181714",
+    "manuscript.pdf": "7df6da3d7d79d92131a66739a4fa82f987e76b3cfc795a2dfba31825054df38f"
   }
 }

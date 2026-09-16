@@ -6,7 +6,7 @@ September 16, 2026
 
 ## Abstract
 
-We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. The full all-exponent variation conjecture remains open.
+We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. The full all-exponent variation conjecture remains open.
 
 ## 1. The sharp inequality
 
@@ -1083,7 +1083,7 @@ $$
 First let $j$ tend to infinity, using uniform convergence, and then let $r$ tend to infinity. Thus $P_\infty$ is a best uniform approximant to $H_*$. Uniqueness of best uniform polynomial approximation and (10.4) identify
 
 $$
-R_j:=H_j-P_j\longrightarrow2R_{1/2}quad\hbox{uniformly},
+R_j:=H_j-P_j\longrightarrow2R_{1/2}\quad\hbox{uniformly},
 \qquad
 f_j=\operatorname{sign}(R_j)
 \left|\frac{R_j}{V_{n,p_j}}\right|^{q_j-1}.
@@ -1245,11 +1245,101 @@ $$
 \tag{11.10}
 $$
 
-where $\preceq$ denotes comparison of quadratic forms. This is a necessary condition for every finite-exponent variation maximizer. Theorem 12 justifies its finite, nondegenerate setting; it remains to exclude every configuration with $r\ge2$ satisfying it, or prove that such a configuration has a smaller value than the midpoint load. No such general exclusion is asserted here.
+where $\preceq$ denotes comparison of quadratic forms. This is a necessary condition for every finite-exponent variation maximizer. Theorem 12 justifies its finite, nondegenerate setting; Theorem 13 below excludes $r=2$. It remains to exclude every configuration with $r\ge3$ satisfying it, or prove that such a configuration has a smaller value than the midpoint load. No such general exclusion is asserted here.
 
-## 12. Remaining questions
+## 12. Two switches are unstable
 
-The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. The remaining finite-exponent task is to exclude a maximizing configuration with two or more switches. The endpoint p=infinity also remains to be addressed for the full variation statement. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
+The translation direction in the Hessian has a stronger consequence than the finite Hilbert diagnostic: it excludes a two-switch maximizer at every finite exponent, without a symmetry assumption.
+
+**Theorem 13 (two-switch exclusion).** Let $n\ge3$ and $1<p<\infty$. A nonzero global variation maximizer cannot have exactly two interior critical points. Consequently its critical-point count is either one or at least three.
+
+### 12.1. A polynomial cancellation under translation
+
+Suppose otherwise, and write the critical points as $a<b$. Choose the sign so that $u'>0$ near zero. Put $m=n-1$, $q=p/(p-1)$, $F=|R|^{q-2}R$ and $U=I^nF$, so $U$ is a positive multiple of $u$. By Theorem 12, the sign load is $+1,-1,+1$ on the three successive intervals, all residual roots are simple, and
+
+$$
+F(0)>0,\qquad F(1)=(-1)^{n+1}F(0).
+\tag{12.1}
+$$
+
+The signs follow from the $n+1$ residual roots, and equality of the endpoint magnitudes follows from (11.5).
+
+Translate both switches to $a+s,b+s$. Modulo $\mathcal P_m$, the load is $H_s=2K_{a+s}-2K_{b+s}$. Let $R_s=H_s-P_s$ be its best $L^q$ residual and $U_s=I^n(|R_s|^{q-2}R_s)$. A dot denotes differentiation in $s$ at zero. Since differentiation in $s$ cancels differentiation in the integration variable for each translated kernel,
+
+$$
+T=\dot R+R'=-\dot P-P'\in\mathcal P_m.
+\tag{12.2}
+$$
+
+Define
+
+$$
+W=\dot U+U',\qquad W^{(n)}=(q-1)|R|^{q-2}T.
+\tag{12.3}
+$$
+
+The simple-root estimates used in Section 11 justify differentiation of the signed residual power in $L^1$, even when $1<q<2$. They also give $F'=(q-1)|R|^{q-2}R'\in L^1$. Thus $W\in W^{n,1}(0,1)\subset C^{n-1}[0,1]$, and (12.3) is an almost-everywhere identity with a positive almost-everywhere integrable weight.
+
+The moment equations make every $U_s$ clamped. Their differentiated equations make $\dot U$ clamped as well. Therefore
+
+$$
+\begin{aligned}
+W^{(j)}(0)&=W^{(j)}(1)=0 &&(0\le j\le n-2),\\
+W^{(n-1)}(0)&=F(0),&\qquad W^{(n-1)}(1)&=F(1).
+\end{aligned}
+\tag{12.4}
+$$
+
+### 12.2. The auxiliary function has a single peak
+
+Put $z=W'$. Its endpoint zeros have exact multiplicity $n-2$. Equations (12.1) and (12.4) show that $z>0$ just after zero and $z<0$ just before one. We claim that $z$ has exactly one interior zero.
+
+Here is the required weighted Rolle count. If selected interior zeros of $z$ have total multiplicity $N$, counting a zero with $z'=0$ twice, repeated Rolle arguments through $n-2$ derivatives give at least $n-2+N$ distinct zeros of $W^{(n-1)}$. Between consecutive zeros the integral of $|R|^{q-2}T$ vanishes. Positivity of the weight forces a root of the polynomial $T$ in every such open interval. The polynomial is nonzero: otherwise $W$ would be a polynomial of degree at most $n-1$ with endpoint zeros of multiplicity $n-1$ at both ends, contradicting $F(0)>0$. Hence
+
+$$
+n-3+N\le\deg T\le n-1,\qquad N\le2.
+\tag{12.5}
+$$
+
+This reasoning uses an integral between zeros of the absolutely continuous function $W^{(n-1)}$; it does not differentiate the weight or assign a finite value to it at a residual zero.
+
+There must be a sign-changing zero of $z$ because its endpoint signs are opposite. Two distinct sign-changing zeros would require a third to give these endpoint signs. Any additional tangency contributes multiplicity at least two and, together with the sign-changing zero, also violates (12.5). An infinite zero set is excluded by selecting three distinct zeros. Thus $z$ has exactly one interior zero $c$, and
+
+$$
+W'>0\quad(0,c),\qquad W'<0\quad(c,1).
+\tag{12.6}
+$$
+
+In particular $W$ is strictly unimodal and positive in the interior.
+
+### 12.3. Orthogonality gives a positive second variation
+
+Since $T\in\mathcal P_m$, the moment equations give $\int FT=0$, and (12.3) gives $\int RW^{(n)}=0$. Integrating by parts $n-1$ times, the only possible boundary term is
+$[RW^{(n-1)}]_0^1=[RF]_0^1=0$ by (11.5). Using (11.3) and $W(0)=W(1)=0$, we obtain
+
+$$
+0=\int_0^1RW^{(n)}
+=\int_0^1gW'=2\{W(a)-W(b)\}.
+\tag{12.7}
+$$
+
+Strict unimodality and $a<b$ now imply $a<c<b$. Let $J(s)=\int|R_s|^q$. The envelope identity near zero and its derivative at zero give
+
+$$
+\begin{aligned}
+J'(s)&=2q\{U_s'(a+s)-U_s'(b+s)\},\\
+J''(0)&=2q\{W'(a)-W'(b)\}>0.
+\end{aligned}
+\tag{12.8}
+$$
+
+Every nearby translated sign load has dual norm at most the sharp variation norm attained at $s=0$. The strict positivity in (12.8) contradicts this local maximum, proving Theorem 13. $\square$
+
+For three or more switches, the same translation cancellation gives an alternating sum in (12.7). It no longer equates the values at just two points, so the sign conclusion in (12.8) does not follow. No exclusion of all such configurations is asserted.
+
+## 13. Remaining questions
+
+The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. The remaining finite-exponent task is to exclude a maximizing configuration with three or more switches. The endpoint p=infinity also remains to be addressed for the full variation statement. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 
 ## References
 
