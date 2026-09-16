@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.3, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.4, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,18 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.4: finite-exponent height symmetry
+
+Theorem 10 proves strict midpoint maximization of the evaluation norm for every n>=2 and 1<p<infinity, with unique height extremizers up to scale, symmetry, positivity and a nondegenerate single peak. Together with the measure endpoint and the credited p=infinity theorem, this settles the k=0, target-L-infinity slice of Nazarov--Shcheglova Conjecture 4.3. It does not settle all k and target exponents in that conjecture, or the all-p variation identity of Conjecture 4.14.
+
+The proof first establishes exactly n simple zeros of the best L^q residual using its moment equations and a one-knot zero count. This gives a positive norming potential with one nondegenerate peak and differentiability for every q>1, including the integrable singular weight when q<2. For W=dot u+u'-ell u, the nth derivative is a positive weight times a one-knot spline. Its endpoint conditions and a repeated Rolle count force W' to be negative at the peak. Hence the peak moves with velocity less than one. Reflection and the envelope identity give the global midpoint comparison. This proof does not depend on the B-spline peak monotonicity theorem used for the measure endpoint.
+
+The final 2026 survey was read at Conjecture 4.3, Theorems 4.5 and 4.12, Remark 4.6, and Conjecture 4.14. The order-two and order-three results are credited. The primary Watanabe et al. 2009 publisher PDF, pp1-3, was inspected: Theorem 1.1 and Lemma 1.3 cover orders 1-3; Remark 1.4 explicitly identifies the failure of their symmetrization proof in orders at least four. The new argument crosses that order restriction for midpoint height symmetry without claiming closed-form constants for all orders. The credited best-approximation formula was rechecked in Garmanova--Sheipak 2024, Theorem 2 and Corollary 1. The separately archived even-order Garmanova--Sheipak paper concerns Hilbert input exponent, as its abstract confirms.
+
+Twenty-four floating-point quadrature cases in orders 3,4,6, at evaluation 1/4 and 1/2, with dual exponents 3/2,2,3,5 checked moment equations, peak velocity, and two independent endpoint identities. Root duplication at the kernel knot and singular-weight roundoff were corrected in the diagnostic; a small numerical weight cutoff remains explicitly disclosed. These are consistency checks without certified error bounds and are not premises of the theorem.
+
+This is an internally audited preprint. Bounded primary-source comparisons and noisy successor searches do not establish exhaustive priority. No independent expert verification or extraordinary-significance certification has occurred. The broader research goal remains active, and the revision adds no distinct paper.
 
 ## Revision 1.3: all-order endpoint symmetry
 
@@ -62,4 +74,4 @@ Eleven arXiv API feeds were screened, with totals and truncation flags retained 
 
 ## Scope and review limits
 
-All functions and measures are real. No theorem for every p or closed-form knot coordinates in every order is claimed. Measure-endpoint symmetry and ordinary nonattainment are proved in every order. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.
+All functions and measures are real. No all-p variation theorem or closed-form knot coordinates in every order is claimed. Height symmetry is now proved for all finite p. Measure-endpoint symmetry and ordinary nonattainment are proved in every order. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.

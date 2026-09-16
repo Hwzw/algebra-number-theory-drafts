@@ -6,6 +6,6 @@ authors:
   - family-names: Zweiman
     given-names: Henry
 date-released: 2026-09-16
-version: "1.3"
+version: "1.4"
 url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P47-sobolev-variation"
-abstract: "Sharp all-order Hilbert total variation bounds via spherical rearrangement, with a measure-endpoint theorem and full local continuation to exponents near two, and the complete all-order measure-endpoint symmetry and extremizer classification, with an explicit fourth-order constant. AI-assisted preprint, not independently verified."
+abstract: "Sharp all-order Hilbert total variation bounds via spherical rearrangement, with a measure-endpoint theorem and full local continuation to exponents near two, and the complete all-order measure-endpoint symmetry and extremizer classification, with an explicit fourth-order constant. Also proves all-order midpoint symmetry and height-extremizer uniqueness for every finite exponent. AI-assisted preprint, not independently verified."

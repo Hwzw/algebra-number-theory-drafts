@@ -39,8 +39,12 @@ symmetric extremizer by a cubic alternation argument and an explicit
 algebraic exclusion of asymmetric maximizers. An all-order
 contact-motion argument then proves strict midpoint maximization and the
 unique symmetric measure extremizer in every order, completing the
-measure-endpoint conjecture. The full all-exponent conjecture remains
-open.
+measure-endpoint conjecture. A weighted zero-count extension proves
+strict midpoint point-evaluation maximization and unique symmetric
+height extremizers for every finite exponent. This completes the
+function-height case of the broader symmetry conjecture when combined
+with the endpoint results. The full all-exponent variation conjecture
+remains open.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -504,7 +508,7 @@ negative derivative on \((1/2,1)\).
 
 The radius is allowed to depend on \(n\) and is not estimated here. The
 theorem does not reach all \(1<p<\infty\), give an interval uniform in
-\(n\), or settle the remaining endpoint symmetry questions.
+\(n\), or settle the full all-exponent variation conjecture.
 
 \subsection{6.1. Dual representation and compactness of variation
 maximizers}\label{dual-representation-and-compactness-of-variation-maximizers}
@@ -869,10 +873,10 @@ at residual zeros.
 This argument does not prove that the set of valid exponents is closed.
 At a hypothetical first exponent where the result ceases to hold,
 compactness of the old single-peak branch does not exclude a different
-multiple-peak global maximizer with the same value. Nor does local
-strict concavity of the point-evaluation profile exclude a remote
-competing maximum at other exponents. These are substantive global
-obstacles, not consequences of the implicit function theorem.
+multiple-peak global maximizer with the same value. Theorem 10 below
+resolves the separate point-evaluation symmetry question at every finite
+exponent. The possible coexistence of multiple-peak variation maximizers
+remains a substantive global obstacle.
 
 The remaining task is to exclude such competing branches or to find a
 counterexample. Theorem 5 supplies a local result, not the full
@@ -1449,19 +1453,267 @@ For \(n=2\), the direct formula \(A_2(x)=x(1-x)/2\) and its unique
 three-point norming measure give the same conclusions. This completes
 the proof. \(\square\)
 
-\Needspace{8\baselineskip}\section{9. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{9. Point symmetry at every finite
+exponent}\label{point-symmetry-at-every-finite-exponent}
+
+The preceding cancellation also has a finite-exponent form. Instead of
+following finitely many contacts, we integrate an auxiliary spline
+against a positive weight and count its zeros. Throughout this section
+\(q=p/(p-1)\) is the dual exponent; it is not the target exponent in
+{[}NS, Conjecture 4.3{]}.
+
+\Needspace{6\baselineskip}\textbf{Theorem 10 (finite-exponent point symmetry).} Let \(n\ge2\) and
+\(1<p<\infty\). The point-evaluation norm
+
+\[
+A_{n,p}(a)=\sup\{u(a):u\in W_0^{n,p}(0,1),\ \|u^{(n)}\|_p\le1\}
+\tag{9.1}
+\]
+
+is strictly increasing on \((0,1/2)\) and strictly decreasing on
+\((1/2,1)\). The nonzero extremizers for the height inequality in (2)
+are precisely the scalar multiples of the unique positive norm-one
+midpoint normer. That normer is symmetric, positive in the interior, and
+has a unique nondegenerate maximum.
+
+The order-two statement and order-three midpoint symmetry are prior
+results {[}W, Theorem 1.1 and Lemma 1.3{]}, recorded also in {[}NS,
+Theorem 4.5{]}. Watanabe et al. explicitly note in {[}W, Remark 1.4{]}
+that their symmetrization proof does not extend to orders at least four.
+The theorem above gives the all-order comparison. Together with Theorem
+9 and the credited \(p=\infty\) theorem {[}NS, Theorem 4.12{]}, it
+establishes the \(k=0\), target-\(L^\infty\) case of {[}NS, Conjecture
+4.3{]} for every \(n\ge2\) and \(1\le p\le\infty\). It does not
+establish the remaining variation identity in Conjecture 4.14.
+
+\subsection{9.1. Simple residual zeros and a single
+peak}\label{simple-residual-zeros-and-a-single-peak}
+
+We prove the theorem for \(n\ge3\) and write \(m=n-1\). As in Section 6,
+let \(P_a\) be the unique best \(L^q\) polynomial approximant of degree
+at most \(m\) to \(K_a(t)=(a-t)_+^m/m!\). Set
+
+\[
+R_a=K_a-P_a,\qquad f_a=|R_a|^{q-2}R_a,\qquad
+u_a(t)=\int_0^t\frac{(t-z)^{n-1}}{(n-1)!}f_a(z)\,dz.
+\tag{9.2}
+\]
+
+The normal equations (6.5) make \(u_a\) clamped at both endpoints and
+give
+
+\[
+u_a(a)=\int_0^1|R_a|^q>0,\qquad
+v_a=\frac{u_a}{\|R_a\|_q^{q-1}}.
+\tag{9.3}
+\]
+
+Here \(v_a\) is the unique positive-evaluation normer. This follows from
+the dual formula and equality in Hölder\textquotesingle s inequality, as
+in Section 6; the best-approximation formula itself is credited to
+{[}GS, Theorem 2 and Corollary 1{]}.
+
+The residual has at least \(n\) sign changes. Otherwise the polynomial
+having its sign-change points as roots, with a suitable sign, has degree
+at most \(n-1\) and gives a strictly positive integral against \(f_a\),
+contradicting (6.5). Neither polynomial piece of \(R_a\) vanishes
+identically: smooth matching would make the other a nonzero multiple of
+\((t-a)^m\), of constant sign on its side, contradicting the constant
+moment. The one-knot zero count of Section 8.1 bounds the total number
+of zeros, with multiplicity, by \(n\). Its exceptional two-monomial case
+has only one distinct zero and is excluded. Thus \(R_a\) has exactly
+\(n\) simple interior zeros, and its endpoint values are nonzero.
+
+Repeated Rolle counting shows that \(u_a\) has no interior zero and
+\(u_a'\) has exactly one simple interior zero. Indeed, \(u_a\in C^n\)
+has endpoint zeros of multiplicity \(n\). An additional interior zero
+would force at least \(n+1\) distinct zeros of \(f_a\) after \(n\)
+differentiations. Applied to \(u_a'\), whose endpoint multiplicities are
+\(n-1\), the same count excludes either two distinct interior zeros or a
+degenerate zero. Consequently \(u_a>0\) in \((0,1)\) and its unique peak
+\(s(a)\) satisfies
+
+\[
+u_a''(s(a))<0,\qquad
+f_a(0)>0,\qquad (-1)^nf_a(1)>0.
+\tag{9.4}
+\]
+
+The last two signs follow from the endpoint Taylor expansions.
+
+\subsection{9.2. Differentiation through the residual
+zeros}\label{differentiation-through-the-residual-zeros}
+
+The preceding simple-root result removes the restriction to exponents
+near two in the regularity argument. Fix \(q>1\) and \(a\in(0,1)\). The
+residual is \(C^1\) in \(t\), since \(m\ge2\). Its roots are transverse
+even if one equals the kernel knot. In a small neighborhood of the
+minimizing polynomial coefficients and evaluation point, there remain
+exactly \(n\) simple roots with inverse slopes uniformly bounded. For
+\(1<q<2\), this gives the locally uniform estimate
+
+\[
+\int_{\{|R|<h\}}|R|^{q-2}\,dt\le C h^{q-1}.
+\tag{9.5}
+\]
+
+It follows by changing variables from \(t\) to \(R(t)\) in disjoint
+monotone neighborhoods of the roots; outside them \(|R|\) is bounded
+below. For \(q\ge2\) the weight has no singularity. Differentiating the
+normal equations in \(a\) and the polynomial coefficients is therefore
+justified by the same sublevel splitting as in Section 6.3. The
+coefficient Jacobian is
+
+\[
+-(q-1)\left[\int_0^1|R_a|^{q-2}t^{i+j}\,dt\right]_{i,j=0}^{n-1},
+\tag{9.6}
+\]
+
+a negative definite Gram matrix. The implicit function theorem and
+uniqueness give a \(C^1\) minimizing coefficient map for every fixed
+\(q>1\).
+
+The same estimate shows that \(a\mapsto f_a\) is continuously
+differentiable as a map into \(L^1\). Its derivative is
+\((q-1)|R_a|^{q-2}\dot R_a\). As a function of \(t\), \(f_a\) is
+absolutely continuous, with derivative \((q-1)|R_a|^{q-2}R_a'\).
+Integration gives continuous differentiability of \(a\mapsto u_a\) into
+\(C^{n-1}\), as well as \(u_a\in W^{n+1,1}\). The nondegenerate peak in
+(9.4) therefore depends continuously differentiably on \(a\). In what
+follows, a dot denotes the \(a\) derivative and a prime the \(t\)
+derivative.
+
+\subsection{9.3. A weighted comparison for peak
+motion}\label{a-weighted-comparison-for-peak-motion}
+
+Fix \(a\) and abbreviate \(u=u_a\), \(R=R_a\), \(f=f_a\), and
+\(s=s(a)\). Define
+
+\[
+\ell=\frac{\dot u(s)}{u(s)},\qquad
+W=\dot u+u'-\ell u,\qquad H=\dot R+R'.
+\tag{9.7}
+\]
+
+The identity \(\partial_aK_a+\partial_tK_a=0\) makes \(H\) a polynomial
+of degree at most \(n-1\). Almost everywhere,
+
+\[
+D^nW=|R|^{q-2}T,\qquad T=(q-1)H-\ell R.
+\tag{9.8}
+\]
+
+The function \(T\) is a degree-at-most-\(n-1\) spline with one simple
+knot. If both pieces are nonzero, Section 8.1 bounds its isolated zeros
+by \(n\), with the two-monomial exception having only one distinct zero.
+The weight in (9.8) is positive almost everywhere and integrable.
+
+The function \(W\in W^{n,1}\subset C^{n-1}\) satisfies
+
+\[
+\begin{aligned}
+W^{(j)}(0)&=W^{(j)}(1)=0 &&(0\le j\le n-2),\\
+W^{(n-1)}(0)&=f(0)>0,\qquad W^{(n-1)}(1)=f(1),\\
+W(s)&=0.
+\end{aligned}
+\tag{9.9}
+\]
+
+In particular, \(W\) is positive near zero and negative near one. We
+claim
+
+\[
+W'(s)<0.
+\tag{9.10}
+\]
+
+Here is a zero-count proof that includes the possible singularities of
+the weight. If \(W'(s)>0\), the opposite endpoint signs force another
+root on each side of \(s\). If \(W'(s)=0\) and \(W''(s)\ne0\), there is
+a double root and another root. If \(W'(s)=W''(s)=0\), there is a root
+of multiplicity at least three. These derivatives exist because
+\(n\ge3\). Thus failure of (9.10) supplies interior zeros of total
+multiplicity at least three, besides the two endpoint zeros of
+multiplicity \(n-1\).
+
+Apply ordinary Rolle\textquotesingle s theorem \(n-1\) times. It yields
+at least \(n+2\) distinct zeros of \(W^{(n-1)}\): the initial count is
+at least \(2n+1\), and all retained multiplicities are exhausted by this
+stage. On each of the \(n+1\) intervening disjoint intervals, the
+integral of \(|R|^{q-2}T\) is zero. If both pieces of \(T\) are nonzero,
+it is not identically zero on any interval. Positivity of the weight
+then forces a sign change of \(T\) on each interval, contradicting its
+zero bound.
+
+If one piece of \(T\) vanishes identically, smooth matching makes the
+other a constant multiple of \((t-a)^{n-1}\). Then \(W^{(n-1)}\) is the
+nonzero constant \(f(0)\) or \(f(1)\) on the zero side and is strictly
+monotone on the other side. It has at most one zero, again a
+contradiction. If both pieces vanish, it is constant nonzero and has
+none. This proves (9.10).
+
+Differentiate \(u_a'(s(a))=0\). Equations (9.7) and (9.10) give
+
+\[
+W'(s)=u_a''(s)\{1-s'(a)\}<0.
+\tag{9.11}
+\]
+
+Since \(u_a''(s)<0\), we obtain \(s'(a)<1\) for every \(a\in(0,1)\).
+
+\Needspace{10\baselineskip}\subsection{9.4. Strict midpoint maximization and the remaining
+gap}\label{strict-midpoint-maximization-and-the-remaining-gap}
+
+Reflection and uniqueness give \(s(1/2)=1/2\). Thus \(s(a)-a\) is
+strictly decreasing, positive before the midpoint and negative after it.
+The envelope identity is
+
+\[
+A_{n,p}'(a)=\frac{u_a'(a)}{\|R_a\|_q^{q-1}}.
+\tag{9.12}
+\]
+
+The strict single-peak signs of \(u_a\) prove the stated monotonicity.
+Any height extremizer must attain its absolute maximum at \(1/2\);
+uniqueness of the midpoint normer gives all equality cases, and
+reflection gives its symmetry. This proves Theorem 10. \(\square\)
+
+Two useful boundary identities follow from the same cancellation. With
+\(J(a)=\int_0^1|R_a|^q\), integration by parts and the normal equations
+give
+
+\[
+\begin{aligned}
+J'(a)&=|R_a(0)|^q-|R_a(1)|^q,\\
+((n-1)q+1)J(a)&=a|R_a(0)|^q+(1-a)|R_a(1)|^q.
+\end{aligned}
+\tag{9.13}
+\]
+
+For the second identity use \((a-t)R_a'=-mR_a\) plus a polynomial of
+degree at most \(m\). The theorem therefore also proves the strict
+ordering of the endpoint residual magnitudes on either side of the
+midpoint.
+
+This argument classifies height extremizers for every finite exponent.
+It does not imply that every variation maximizer has a single peak. Its
+dual residual in (6.6) comes from \(H_g\), which may have many changes
+of polynomial piece when \(g=\operatorname{sign}(u')\). The one-knot
+bound in (9.8) is then unavailable. This is the remaining obstruction to
+the full variation conjecture.
+
+\Needspace{8\baselineskip}\section{10. Remaining questions}\label{remaining-questions}
 
 The full all-exponent form of {[}NS, Conjecture 4.14{]} remains
-unresolved. Theorem 9 completes the measure endpoint in every order,
-including strict midpoint maximization, unique symmetric extremizers and
-ordinary nonattainment. Theorem 5 proves an order-dependent open
-interval about two. Extending the identity and symmetry through the
-remaining exponents requires a new global argument: compactness alone
-does not exclude competing variation maximizers. The contact-motion
-proof uses uniform approximation and atomic moment circuits and does not
-automatically extend to a finite dual exponent. The stronger centroid
-and knot-reflection inequalities explored in the research notes are not
-required or proved by Theorem 9.
+unresolved. Theorem 9 completes its measure endpoint, and Theorem 5
+proves an order-dependent open interval about two. Theorem 10 settles
+midpoint symmetry and height-extremizer uniqueness for every finite
+exponent, completing the k=0, target-L-infinity slice of Conjecture 4.3
+together with the endpoint results. What remains for Conjecture 4.14 is
+to prove the variation identity and exclude competing multiple-peak
+variation maximizers at the other exponents. Compactness alone does not
+do this. The stronger centroid and knot-reflection inequalities in the
+research notes remain unproved and are not needed for Theorems 9 and 10.
 
 \clearpage\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 
@@ -1518,5 +1770,12 @@ on 1D Steklov Type Inequalities}, Proceedings of the Steklov Institute
 of Mathematics \textbf{331} (2025), 134-\/-147; published online March
 19, 2026. \href{https://doi.org/10.1134/S0081543825601509}{DOI}.
 \href{https://arxiv.org/abs/2101.10752}{Latest author preprint}.
+
+{[}W{]} K. Watanabe, Y. Kametaka, A. Nagai, H. Yamagishi and K.
+Takemura, \emph{Symmetrization of Functions and the Best Constant of
+1-DIM \(L^p\) Sobolev Inequality}, Journal of Inequalities and
+Applications \textbf{2009}, Article 874631, 12 pp.
+\href{https://doi.org/10.1155/2009/874631}{DOI}, Theorem 1.1, Lemma 1.3
+and Remark 1.4.
 
 \end{document}

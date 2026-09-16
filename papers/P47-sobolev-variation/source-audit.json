@@ -76,9 +76,10 @@
       "Kalyabin Theorem 2 point-evaluation norm"
     ],
     "unresolved": [
-      "General-p conjecture outside the proved interval near two and the completed measure endpoint",
-      "Closed-form optimal knot coordinates and constants in general order",
-      "Independent expert verification, absolute priority and exceptional significance"
+      "Full all-p variation identity and classification of arbitrary variation maximizers outside the established exponent interval",
+      "Full Conjecture 4.3 for other derivative and target exponents",
+      "Closed-form constants in general order and exponent",
+      "Independent expert verification and exhaustive priority"
     ],
     "latest_note": "manuscript.md",
     "draft": "manuscript.md",
@@ -134,5 +135,16 @@
     "priority": "Bounded, noisy searches; no matching primary solution identified; not exhaustive",
     "full_all_p_conjecture_solved": false,
     "independent_review": false
+  },
+  "revision_1_4": {
+    "date": "2026-09-16",
+    "result": "Strict midpoint evaluation profile and unique symmetric height extremizers in every order and every 1<p<infinity",
+    "conjecture_scope": "NS Conjecture 4.3: k=0, target exponent infinity; combined with endpoint results gives all input p for n>=2",
+    "primary_source_comparison": "NS final Section4; Watanabe2009 Theorem1.1, Lemma1.3, Remark1.4, publisher PDF pp1-3; GS2024 Theorem2 and Corollary1",
+    "proof": "Elementary weighted zero count after integrating the cancellation identity; no Foucart dependency for this finite-p step",
+    "diagnostics": "24 floating-point cases, not proof",
+    "full_variation_conjecture_solved": false,
+    "independent_review": false,
+    "priority_certified": false
   }
 }

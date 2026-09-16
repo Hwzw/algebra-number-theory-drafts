@@ -162,5 +162,21 @@
     "bytes": 6479,
     "sha256": "ff6d5900d55dafd67963d44c6a1363755e24e79da617037747d2db02ab5bf85d",
     "note": "Research-workspace file; not redistributed"
+  },
+  {
+    "file": "finite-exponent-audit/watanabe-2009.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1155/2009/874631.pdf",
+    "sha256": "f1cfe5debefcce9671ec356e9761f2805ee4f6855466d611ebac82c52723af65",
+    "bytes": 200674,
+    "date": "2026-09-16",
+    "note": "Research-workspace source; not redistributed"
+  },
+  {
+    "file": "finite-exponent-audit/survey-final.html",
+    "url": "https://link.springer.com/article/10.1134/S0081543825601509",
+    "sha256": "5856628e55e7f0633655e51505359d662dc62a0655599df8d64d68eee04d3e95",
+    "bytes": 473958,
+    "date": "2026-09-16",
+    "note": "Research-workspace source; not redistributed"
   }
 ]
