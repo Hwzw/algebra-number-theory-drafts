@@ -6,7 +6,7 @@ September 16, 2026
 
 ## Abstract
 
-We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. Affine dilation also excludes midpoint-symmetric three-switch maximizers and restricts the geometry of remaining three-switch candidates. The full all-exponent variation conjecture remains open.
+We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. Affine dilation also excludes midpoint-symmetric three-switch maximizers and restricts the geometry of remaining three-switch candidates. An explicit rational certificate shows that the analogous identity fails for arbitrary positive derivative weights, even for smooth weights in order three; this rules out an unrestricted weighted Hilbert shortcut. The full all-exponent variation conjecture remains open.
 
 ## 1. The sharp inequality
 
@@ -1429,9 +1429,148 @@ contradicting maximality and completing the proof of Theorem 14. $\square$
 
 The theorem does not establish symmetry of arbitrary variation maximizers. For a nonsymmetric three-switch candidate, it remains to exclude the response-minimum locations $z<a$ and $z>c$, or find another positive Hessian direction. Configurations with at least four switches also remain open.
 
-## 14. Remaining questions
+## 14. A limitation of weighted Hilbert reduction
 
-The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. Theorem 14 excludes midpoint-symmetric three-switch maximizers and imposes a response-minimum condition on any remaining three-switch candidate. The remaining finite-exponent task is to exclude nonsymmetric three-switch maximizers and configurations with at least four switches. The endpoint p=infinity also remains to be addressed for the full variation statement. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
+The constant derivative weight in Theorem 1 cannot be replaced by an arbitrary positive weight. This matters for a possible reduction of the remaining finite-exponent problem. For a positive bounded weight $a$ bounded away from zero, put
+
+$$
+C(a)=\sup_{u\ne0}\frac{\|u\|_\infty}{E_a(u)^{1/2}},\qquad
+V(a)=\sup_{u\ne0}\frac{\|u'\|_1}{E_a(u)^{1/2}},\qquad
+E_a(u)=\int_0^1a(t)|u'''(t)|^2\,dt,
+\tag{14.1}
+$$
+
+where the suprema run over $W_0^{3,2}(0,1)$.
+
+**Theorem 15 (failure of the arbitrary-weight extension).** There exists a positive bounded piecewise-constant weight $a$, bounded away from zero, such that
+
+$$
+V(a)^2>\frac{967}{10^6},\qquad
+4C(a)^2<\frac{900}{10^6}.
+\tag{14.2}
+$$
+
+Such weights also exist in $C^\infty([0,1])$. In particular, the arbitrary-weight version of $V=2C$ and the assertion that every weighted variation maximizer is single-peaked are false. This is a weighted counterexample; it does not disprove [NS, Conjecture 4.14].
+
+### 14.1. Dual formulas and an explicit weight
+
+Write $\rho=1/a$ and $\langle f,h\rangle_\rho=\int_0^1\rho fh$. Let $P_\rho$ be the orthogonal projection onto $\mathcal P_2$ in this inner product. The endpoint conditions on $u$ are equivalent to the three moments $\int_0^1t^j u'''(t)\,dt=0$, $0\le j\le2$. Weighted Hilbert duality therefore gives
+
+$$
+4C(a)^2=\max_{0\le x\le1}D(x),\qquad
+D(x)=\|(I-P_\rho)h_x\|_\rho^2,\qquad h_x(t)=(x-t)_+^2.
+\tag{14.3}
+$$
+
+For a sign load with switches $b<c$ and successive signs $+,-,+$, integration of the load against the derivative kernel gives $h_b-h_c$ modulo $\mathcal P_2$. Hence
+
+$$
+V(a)^2\ge J,\qquad J=\|(I-P_\rho)(h_b-h_c)\|_\rho^2.
+\tag{14.4}
+$$
+
+These formulas have no numerical approximation. For example, if $R=(I-P_\rho)(h_b-h_c)$ and $u'''=\rho R$ with zero initial derivatives, the moment equations give the right endpoint conditions, $E_a(u)=J$, and $\int gu'=J$. Thus $\|u'\|_1/E_a(u)^{1/2}\ge\sqrt J$.
+
+Take $b=3/7$, $c=6/7$ and
+
+$$
+\rho(t)=\frac1{100}+\sum_{j=1}^6\frac{m_j}{2\varepsilon}
+\mathbf1_{[c_j-\varepsilon,c_j+\varepsilon]}(t),\qquad
+\varepsilon=\frac1{1000},
+\tag{14.5}
+$$
+
+with
+
+$$
+(c_1,\ldots,c_6)=\frac1{100}(3,6,13,85,87,97),\qquad
+(m_1,\ldots,m_6)=(1,1,1,1000,3000,5).
+\tag{14.6}
+$$
+
+In particular $1/100\le\rho\le1500000+1/100$, so $a=1/\rho$ satisfies all the hypotheses in (14.1).
+
+### 14.2. A rational certificate on the entire evaluation interval
+
+Here the explicit counterexample is proved by finite exact polynomial arithmetic, not by testing finitely many evaluation points. We give the formulas and a positive Bernstein certificate covering every $x\in[0,1]$.
+
+Let $A_{ij}=\int_0^1\rho(t)t^{i+j}\,dt$, $0\le i,j\le2$, and let $B_i(x)=\int_0^1\rho(t)t^i h_x(t)\,dt$. Then
+
+$$
+D(x)=\int_0^1\rho(t)h_x(t)^2\,dt-B(x)^T A^{-1}B(x).
+\tag{14.7}
+$$
+
+The matrix $A$ is positive definite. All its entries and the required polynomial coefficients are rational. For full reproducibility, define
+
+$$
+F_{k,r}(x,z)=\sum_{j=0}^r(-1)^j\binom rj
+\frac{x^{r-j}z^{k+j+1}}{k+j+1}.
+\tag{14.8}
+$$
+
+On a constant-weight interval $[l,s]$ lying to the left of $x$, its contribution to $\int\rho t^k(x-t)_+^r\,dt$ is $\rho\{F_{k,r}(x,s)-F_{k,r}(x,l)\}$. On the interval containing $x$, replace $s$ by $x$. Intervals to the right contribute zero. Use $(k,r)=(0,2),(1,2),(2,2),(0,4)$ in (14.7). On each of the thirteen constant-weight intervals, $D$ is thus a polynomial of degree at most ten.
+
+For $Q(x)=9/10000-D(x)$, write on a subinterval $[l,s]$
+
+$$
+Q(l+(s-l)y)=\sum_{k=0}^{10}q_k y^k
+=\sum_{i=0}^{10}\beta_i\binom{10}{i}y^i(1-y)^{10-i},\qquad
+\beta_i=\sum_{k=0}^i q_k\frac{\binom ik}{\binom{10}k}.
+\tag{14.9}
+$$
+
+A polynomial of lower degree is padded by zero coefficients. The following table gives rational lower bounds: on each row every $\beta_i$ is at least the displayed integer divided by $10^9$. The only added subdivision of a constant-weight interval is at $49/100$.
+
+| $1000l$ | $1000s$ | Lower bound numerator |
+| ---: | ---: | ---: |
+| 0 | 29 | 899999 |
+| 29 | 31 | 899999 |
+| 31 | 59 | 899579 |
+| 59 | 61 | 899452 |
+| 61 | 129 | 863685 |
+| 129 | 131 | 860777 |
+| 131 | 490 | 96932 |
+| 490 | 849 | 88748 |
+| 849 | 851 | 339729 |
+| 851 | 869 | 337888 |
+| 869 | 871 | 480234 |
+| 871 | 969 | 511776 |
+| 969 | 971 | 899999 |
+| 971 | 1000 | 899999 |
+
+The Bernstein basis is nonnegative and sums to one on $[0,1]$. Every entry is positive, so the table proves $D(x)<9/10000$ on the entire closed interval. Exact integration and the same moment projection give
+
+$$
+J=\frac{8182370250764298579352352052564188484681}
+{8455630511289484805583272519708405000000000}
+>\frac{967}{10^6}.
+\tag{14.10}
+$$
+
+Equations (14.3)--(14.4) now prove (14.2). The accompanying [certificate generator](certify_counterexample.py) computes the piecewise polynomials and their exact Bernstein coefficients. A separate [interpolation checker](check_certificate_independent.py) evaluates the integrals at eleven rational points per interval, reconstructs the degree-at-most-ten polynomial, and verifies every printed bound and the exact fraction (14.10). Interpolation is exact here because the degree bound is already proved. Both programs use rational arithmetic for all decisive comparisons. The initial floating-point search is not part of this proof.
+
+### 14.3. Smooth weights and the limit of freezing
+
+Extend $\rho$ by $1/100$ outside $[0,1]$ and convolve with nonnegative smooth approximate identities. The resulting $\rho_\delta$ are smooth, obey the same positive lower and upper bounds, and converge to $\rho$ in $L^1(0,1)$. The moment matrices converge to $A$, so their inverses converge. The kernels $h_x$ are uniformly bounded for $0\le x,t\le1$; therefore all moments in (14.7), and hence $D_\delta(x)$, converge uniformly in $x$. The fixed two-switch energy $J_\delta$ also converges to $J$. The strict gaps in (14.2) persist for sufficiently small $\delta$. Taking $a_\delta=1/\rho_\delta$ proves the smooth assertion. Weighted variation maximizers exist by the compact embedding of the equivalent Hilbert norm into $C^1[0,1]$. A single-peaked function vanishing at both endpoints has variation twice its height, so none can maximize when $V(a)>2C(a)$. $\square$
+
+The counterexample closes one tempting route to the original problem. If $1<p<2$ and $u$ is a norm-one global maximizer with $f=u^{(n)}$, define $a=|f|^{p-2}$ away from its finite zero set. For every clamped $h$ with finite weighted energy, Holder's inequality gives
+
+$$
+\int_0^1|h^{(n)}|^p
+\le\left(\int_0^1a|h^{(n)}|^2\right)^{p/2}
+\left(\int_0^1|f|^p\right)^{(2-p)/2}
+=\left(\int_0^1a|h^{(n)}|^2\right)^{p/2}.
+\tag{14.11}
+$$
+
+Thus $u$ also maximizes variation in this weighted Hilbert problem. However, a general weighted single-peak theorem is false by Theorem 15. Any successful use of (14.11) must exploit the special relation between the weight and the original maximizer. Our example is not shown to have this relation. The corresponding transfer for $p>2$ is not established by (14.11).
+
+The recent weighted result of Hindov and Lokharu [HL, Theorem 1] places a weight on the function's $L^1$ norm and leaves the derivative energy unweighted. It has no additional mean constraint of the kind obtained by setting $v=u'$. It therefore supplies neither the arbitrary derivative-weight assertion disproved here nor the missing constrained variation theorem.
+
+## 15. Remaining questions
+
+The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. Theorem 14 excludes midpoint-symmetric three-switch maximizers and imposes a response-minimum condition on any remaining three-switch candidate. The remaining finite-exponent task is to exclude nonsymmetric three-switch maximizers and configurations with at least four switches. The endpoint p=infinity also remains to be addressed for the full variation statement. Theorem 15 rules out a reduction that assumes the same identity for arbitrary derivative weights. The special weights generated by an actual maximizer remain a possible restricted route. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 
 ## References
 
@@ -1448,6 +1587,8 @@ The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 
 [GHW] R. J. Gardner, D. Hug and W. Weil, *The Orlicz-Brunn-Minkowski theory: A general framework, additions, and inequalities*, Journal of Differential Geometry **97** (2014), no. 3. [DOI](https://doi.org/10.4310/jdg/1406033976). [Author text](https://arxiv.org/abs/1301.5267).
 
 [GS] T. A. Garmanova and I. A. Sheipak, *Sharp Estimates of High-Order Derivatives in Sobolev Spaces*, Moscow University Mathematics Bulletin **79** (2024), 1--10. [DOI](https://doi.org/10.3103/S0027132224700013).
+
+[HL] R. Hindov and E. Lokharu, *On a class of sharp Sobolev type estimates with weights*, arXiv:2605.25637v1 (2026). [Author preprint](https://arxiv.org/abs/2605.25637), Theorem 1.
 
 [HNOR] R. Hindov, S. Nitzan, J.-F. Olsen and E. Rydhe, *A sharp higher order Sobolev embedding*, Mathematika **71** (2025), e70012. [DOI](https://doi.org/10.1112/mtk.70012). [Author preprint](https://arxiv.org/abs/2411.10201).
 

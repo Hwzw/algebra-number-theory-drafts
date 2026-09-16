@@ -187,5 +187,13 @@
     "sha256": "2925b4fdc9295b4e2a845f65d8ff9d069ec12f89ba3ae22aab4f4ea1e424da1b",
     "actual_pdf_pages": 27,
     "note": "Research-workspace comparison source; not redistributed; initial formulation and main theorem reviewed, not the full proof"
+  },
+  {
+    "file": "weighted-frontier-audit/hindov-lokharu-v1.html",
+    "url": "https://arxiv.org/html/2605.25637v1",
+    "date": "2026-09-16",
+    "bytes": 138097,
+    "sha256": "9fe26325a371e7720bd472587ac654f0c5087c4e13e73aae4ffa0a4bdf6a6efd",
+    "note": "Primary arXiv HTML archived in research workspace; formulation and main theorem compared; no PDF visual or full proof certification; not redistributed in publication package"
   }
 ]

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "method": "Exact integral evaluations at 11 rational points per interval, Vandermonde interpolation, degree10 Bernstein coefficients; separate exact mixed-kernel integration",
+  "subintervals": 14,
+  "all_printed_lower_bounds_verified": true,
+  "exact_two_switch_energy_matches": true,
+  "two_switch_energy_gt_967_over_million": true,
+  "independent_expert_review": false
+}

@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.8",
-  "pdf_pages": 32,
-  "pdf_text_characters": 80869,
+  "revision": "1.9",
+  "pdf_pages": 35,
+  "pdf_text_characters": 87794,
   "replacement_characters": 0,
-  "equation_tags": 124,
+  "equation_tags": 135,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1130,
+  "mathjax_expressions": 1215,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -44,15 +44,18 @@
       29,
       30,
       31,
-      32
+      32,
+      33,
+      34,
+      35
     ],
     "resolution_dpi": 108,
-    "outcome": "All 32 final pages rendered and inspected in eight contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The affine cancellation, endpoint response, closed-interval exclusion criterion and symmetric three-switch proof are legible. The remaining-questions section and references are readable on separate final pages."
+    "outcome": "All 35 final pages rendered and inspected in nine contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new weighted counterexample, rational certificate table, exact fraction and smoothing argument are legible. The remaining-questions section and references are readable on separate final pages."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "afdaa24af59f06d1204f631d9f15f44309b6b31a9d7b15864c9ff313463c8c44",
-    "manuscript.tex": "ea9709894250512f0ba93d76d5c596cf25d80e9148477a116b5d35cac1a44fd3",
-    "manuscript.pdf": "2b42f053c5652db8b3a368bcd87a5d1dd5fcd374f5789d6f8ee3f8592c0ccd4f"
+    "manuscript.md": "6729b4a9d37718cc9fe62c5552c5f4452e757258e5f4e1811696bfcc5b69064d",
+    "manuscript.tex": "de04f81d459304511bbf64947491e9df652dc41367cc99b8a6c86f0c07e2d345",
+    "manuscript.pdf": "78c122f50a42b8201df34c43f8b4bdac452a615cbd6482e41f18e4ce40a639ed"
   }
 }

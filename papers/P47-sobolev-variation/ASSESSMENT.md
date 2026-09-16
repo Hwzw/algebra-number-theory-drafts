@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.8, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.9, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,14 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.9: the arbitrary derivative-weight extension is false
+
+Theorem15 gives an explicit positive bounded piecewise-constant derivative weight in order3 for which V(a)^2>967/10^6 while4C(a)^2<900/10^6. A rational Bernstein certificate covers the entire evaluation interval; it is an exact finite polynomial proof, not an extrapolation from sampled points. Two separately implemented calculations verify the printed coefficient bounds and the exact two-switch energy. The gap persists under smoothing, so positive smooth derivative weights also give counterexamples.
+
+This closes the unrestricted weighted Hilbert shortcut proposed in the revision1.8 research notes. The Holder freezing transfer for1<p<2 remains correct, but any successful application must use the special self-consistent relation between the original maximizer and the weight. The example has not been shown to satisfy that relation and does not disprove the original Nazarov-Shcheglova conjecture. It also does not alter the constant-weight two-switch exclusion theorem.
+
+Hindov and Lokharu, arXiv:2605.25637v1, Theorem1, study a weight on the function's L1 norm with an unweighted derivative energy. The present variation problem also has an extra mean constraint after passing to u'. A formulation-level primary-source comparison therefore does not provide the missing weighted shortcut. Bounded searches do not establish exhaustive priority. The broad conjecture goal remains active; this remains one paper.
 
 ## Revision 1.8: affine motion and symmetric three-switch exclusion
 

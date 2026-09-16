@@ -32,6 +32,7 @@ preamble=r'''\documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{needspace}
+\usepackage{longtable,booktabs,array}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
 \setlength{\emergencystretch}{3em}
 \setlength{\parskip}{0.35em}
