@@ -1,0 +1,20 @@
+{
+  "status": "Finite dimensional exact consistency checks; not a universal proof",
+  "checks": [
+    {
+      "dimension": 3,
+      "k2": "4*j*(j**2 - 6)/135",
+      "k3": "-16*j*(j**4 - 9*j**2 + 9)/8505",
+      "boundary_jet_zero": true,
+      "matches_general_hand_formula": true
+    },
+    {
+      "dimension": 4,
+      "k2": "j*(j**2 - 10)/64",
+      "k3": "-j*(j**2 - 12)*(3*j**2 - 8)/3072",
+      "boundary_jet_zero": true,
+      "matches_general_hand_formula": true
+    }
+  ],
+  "script_sha256": "b8f877c8f9a17ffc72aea502079742c4a1305a71bec28cde95007c0fa793def4"
+}

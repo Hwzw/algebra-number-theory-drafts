@@ -1,0 +1,22 @@
+{
+  "date_local": "2026-09-16",
+  "pages": 25,
+  "nonempty_text_all_pages": true,
+  "extracted_text_characters": 57038,
+  "author_byline_in_pdf": true,
+  "replacement_characters": 0,
+  "missing_glyph_or_overfull_warning": false,
+  "equation_tags": 127,
+  "unresolved_numbered_references": [],
+  "math_expressions": 765,
+  "math_errors": 0,
+  "rendered_pages": 25,
+  "all_final_pages_visually_inspected": true,
+  "visual_findings": "All 25 exact final pages inspected in seven contact sheets. Overlong formulas reflowed; final pages show no clipping, overlap or missing glyphs.",
+  "independent_review": false,
+  "mathematical_correctness_certified": false,
+  "manuscript_md_sha256": "399288911524a3f933fcff4596796f301c1bfbc25c2347575dba57cd04b3fec9",
+  "manuscript_pdf_sha256": "1aa21703616ac55cf60c642558468ee8c926923205cbb1f702ef1e2c657a9214",
+  "manuscript_tex_sha256": "70c865a99a4948cb142e8fbc1d1016e89fba94cc24b104ca0af0e76a55b6605c",
+  "final_whitespace_cleanup_same_pandoc_latex": true
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-16",
+  "status": "Focused final-source endpoint and bifurcation comparison; complete priority/significance assessment remains open",
+  "primary_source": {
+    "authors": "Vincenzo Amato, Carlo Nitsch, Cristina Trombetti, Federico Villone",
+    "title": "On Some Functionals Involving Torsional Rigidity, Principal Eigenvalue and Perimeter",
+    "doi": "10.1007/s11118-026-10328-2",
+    "final_publication_date": "2026-08-28",
+    "final_pdf_pages": 36,
+    "final_pdf_read_scope": "Introduction/main statements; Section 4 convex existence/C1 arguments; Sections 5.3/5.4 and final Section 6.3, with strict higher-mode inequalities rechecked; pages 4-6 and 27 visually inspected. Beginning of Sections 2.2 and 5.1 read, but not a complete audit of those two sections.",
+    "open_statement": "Page 4 after Proposition 1.3",
+    "arxiv": "2601.09592v1",
+    "history": "Only v1, submitted 2026-01-14, in inspected official history"
+  },
+  "search_queries": [
+    "open problem 2026 torsion convex arxiv",
+    "2601.09592 2026 maximizer",
+    "torsional rigidity perimeter Amato conjecture",
+    "Kohler-Jobin fourth",
+    "torsional rigidity degenerate ball eigenvalue",
+    "On some functionals involving torsional rigidity critical saddle",
+    "\"torsional rigidity\" \"bifurcation\" eigenvalue product critical domains",
+    "\"Kohler-Jobin\" bifurcation nonspherical",
+    "\"eigenvalue\" \"torsional rigidity\" \"critical domains\"",
+    "\"Kohler\" \"Jobin\" \"critical exponent\" ball saddle",
+    "\"torsion\" \"eigenvalue\" \"non-spherical\" stationary",
+    "\"torsional rigidity\" \"eigenvalue\" \"critical shapes\" bifurcation",
+    "\"On some functionals for which the ball is a saddle shape\"",
+    "\"bifurcation\" \"trace-free symmetric\" matrices O(n)",
+    "\"bifurcation\" \"two eigenvalues\" \"O(n)\"",
+    "\"eigenvalue\" \"torsional rigidity\" \"bifurcation\" \"2026\"",
+    "\"eigenvalue\" \"torsion\" \"endpoint\" \"critical domains\"",
+    "\"Steady-State bifurcation\" \"Chossat\" pdf"
+  ],
+  "later_resolution_found_in_initial_search": false,
+  "absence_of_search_hit_proves_novelty": false,
+  "global_problem_solved": false,
+  "next_comparisons": [
+    "Human expert proof and priority assessment remains outstanding; provisional internal admission does not certify either.",
+    "Older general symmetry sources have not received a complete theorem-level audit; methods are explicitly credited as classical."
+  ],
+  "no_researcher_contact": true,
+  "auxiliary_open_statement": "Final Remark 5.15, page 27, explicitly leaves local optimality at q_star undecided; inspected visually.",
+  "latest_review": "notes/0250-q63-proof-review-and-publication-decision.md",
+  "followup_retrieval": "sources/q63/retrieval-followup.json",
+  "auxiliary_proof_note": "notes/0248-q63-balanced-fourth-order-proof.md",
+  "auxiliary_priority_certified": false,
+  "followup_sources": [
+    {
+      "source": "Bucur-Lamboley-Nahon-Prunier",
+      "version": "Author-hosted 54-page copy; official arXiv latest v2 October 29, 2025",
+      "scope": "Introduction/main statements, Proposition 4.1 statement and Section 6.2 proof; full regularity proof and final journal comparison incomplete",
+      "prior_result": "Global reverse Kohler-Jobin ball maximization for sufficiently large exponent"
+    },
+    {
+      "source": "Briani-Buttazzo-Guarino Lo Bianco",
+      "version": "Final EMS 2024 article, 18 pages",
+      "scope": "Introduction and page-3 footnote; full proof comparison incomplete"
+    },
+    {
+      "source": "Henrot-Lucardesi-Philippin",
+      "version": "1702.01258v1, 15 pages",
+      "scope": "Introduction and Corollary 3.7 triangle-versus-disk calculation; full proof/final comparison incomplete"
+    },
+    {
+      "source": "Lorch-Muldoon",
+      "version": "Final 1995 article, 10 pages; public EMIS journal mirror",
+      "doi": "10.1155/S0161171295000706",
+      "scope": "Introduction statement of classical Siegel theorem read and page 1 visually inspected. Original Siegel proof not audited.",
+      "dependency": "Nonzero Bessel zeros of rational order are transcendental",
+      "local_pdf": "sources/q63/lorch-muldoon-1995.pdf"
+    },
+    {
+      "source": "Celentano-Nitsch-Trombetti",
+      "version": "Final 2024 article, 12 pages; official arXiv history only v1 February 15, 2024",
+      "doi": "10.1007/s00032-024-00405-9",
+      "scope": "Introduction, Theorem 1.2, Corollary 1.3 and its proof, and Section 2.2 first-variation formulas. Full moving-plane proof not audited.",
+      "comparison": "Rigidity condition a*b<=0 excludes current positive-exponent volume branches.",
+      "local_pdf": "sources/q63/celentano-nitsch-trombetti-final-2024.pdf"
+    },
+    {
+      "source": "Crandall-Rabinowitz",
+      "version": "JFA 8 (1971), 321-340; publisher metadata/abstract checked",
+      "doi": "10.1016/0022-1236(71)90015-2",
+      "scope": "Primary record, not full original proof. Classical mechanism credited; note 0245 supplies the local reduction directly."
+    },
+    {
+      "source": "Masiello-Paoli-Salerno",
+      "version": "arXiv:2609.17083v1, September 15, 2026; only v1 in official history inspected September 16",
+      "url": "https://arxiv.org/abs/2609.17083",
+      "scope": "Introduction and Theorems 1.1-1.4; complete proof not audited",
+      "comparison": "Different k-Hessian torsion/quermassintegral and curvature functionals; second-order saddle mechanism. Does not state current eigenvalue-torsion endpoint/classification.",
+      "local_html": "sources/q63/masiello-paoli-salerno-v1.html"
+    },
+    {
+      "source": "Gilbarg-Trudinger",
+      "version": "Second edition, Classics in Mathematics, Springer 2001",
+      "doi": "10.1007/978-3-642-61798-0",
+      "scope": "Publisher bibliographic record checked; standard elliptic and Schauder theory used as established background, not a new full-book audit"
+    },
+    {
+      "source": "Chossat-Lauterbach-Melbourne",
+      "version": "Archive for Rational Mechanics and Analysis 113 (1991), 313-376",
+      "doi": "10.1007/BF00374697",
+      "scope": "Primary publisher record and bibliography read September 16, 2026; full text subscription-restricted, no theorem-level full-text comparison",
+      "comparison": "Classical spherical equivariant bifurcation background; no new general equivariant principle claimed"
+    },
+    {
+      "source": "Sattinger",
+      "version": "Bulletin AMS 3(2) (1980), 779-819",
+      "doi": "10.1090/S0273-0979-1980-14823-5",
+      "scope": "Bibliographic lead only; official AMS PDF returned 403, full text not read",
+      "comparison": "Unresolved background comparison; not used as a theorem dependency"
+    }
+  ],
+  "additional_proof_notes": [
+    "notes/0244-q63-all-dimensional-endpoints.md",
+    "notes/0246-q63-local-global-gap-and-checkpoint.md",
+    "notes/0247-q63-full-local-classification.md",
+    "notes/0248-q63-balanced-fourth-order-proof.md"
+  ],
+  "consolidated_manuscript": "drafts/Q63-critical-eigenvalue-torsion/manuscript.md"
+}

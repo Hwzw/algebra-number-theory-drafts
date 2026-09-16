@@ -1,0 +1,21 @@
+{
+  "status": "Exact algebra checks only; hand proof and classical transcendence dependency are in note 0244",
+  "notation": "x=j_(n/2-1,1)^2/n; coefficient formulas multiply mean(h^2) or mean(h^3)",
+  "q_volume": "(2*x - 2)/(n + 2)",
+  "q_perimeter": "(-2*n + x*(4*n - 4) + 6)/((n + 2)*(3*n - 1))",
+  "eigen_cubic_half_coefficient": "-(n**2 - 4*n*x - n + 6*x**2 - 6*x)/6",
+  "volume_quadratic": "-n*q - 2*q + 2*x - 2",
+  "perimeter_quadratic": "(-3*n**2*q - 5*n*q + 4*n*x - 2*n + 2*q - 4*x + 6)/(2*(n - 1))",
+  "volume_critical_cubic": "-2*(-n*x + 3*x**2 - 8*x + 4)/3",
+  "perimeter_critical_cubic": "-2*(-3*n**2*x + 9*n*x**2 - 22*n*x + 10*n - 3*x**2 + 9*x - 6)/(3*(3*n - 1))",
+  "both_cubic_polynomials_leading_coefficient": -2,
+  "chosen_h_third_moment": "8*(n - 2)*(n - 1)/(n**3*(n + 2)*(n + 4))",
+  "planar_perimeter_normalized": "(8*b**2*t**4 - 3*b*t**4 - t**4 + 2*t**2 + 2)/2",
+  "planar_perimeter_critical_quartic": "-(1264*b**2*j**4 - 8960*b**2*j**2 + 9216*b**2 + 120*b*j**6 - 2776*b*j**4 + 13760*b*j**2 - 9984*b + 35*j**8 - 510*j**6 + 2691*j**4 - 5560*j**2 + 1824)/(640*(j**2 - 6))",
+  "planar_Q0_shifted_at_23_over_4": "35*y**4 + 295*y**3 + 6693*y**2/8 + 22659*y/16 + 33003/256",
+  "planar_Q1_shifted_at_23_over_4": "35*y**4 + 415*y**3 + 11157*y**2/8 + 11691*y/16 - 55413/256",
+  "planar_Q1_at_29_over_5": "-22048/125",
+  "planar_quartic_b0_positive_b1_negative": true,
+  "source_diagnostic_sha256": "9031ac26570e4fb97580a6ff3d96f841313927a610683e49f94346d3856f7564",
+  "script_sha256": "4684303c2862dea4913836cf98782ee49a6b98418f7960227a7f20f7db2f6378"
+}

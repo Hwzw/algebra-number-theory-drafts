@@ -1,0 +1,2048 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{amsmath,amssymb,mathrsfs,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.3em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{Endpoint saddles and the local classification of eigenvalue--torsion critical domains}
+\author{Henry Zweiman}
+\date{September 16, 2026}
+\begin{document}
+\maketitle
+\Needspace{8\baselineskip}\section{Abstract}\label{abstract}
+
+We study the scale-invariant products of the first Dirichlet eigenvalue
+and a positive power of torsional rigidity, normalized by either volume
+or perimeter. At each upper local stability threshold identified by
+Amato, Nitsch, Trombetti and Villone, we obtain a nonlinear saddle among
+smooth strictly convex domains. We also classify every sufficiently
+near-ball critical domain, up to similarities, into finitely many
+analytic branches indexed by the multiplicities of two eigenvalues of a
+trace-free symmetric matrix. Unbalanced branches cross the threshold.
+Balanced branches have nonzero quadratic parameter variation; in the
+plane the unique nonball branch lies above the threshold. Consequently
+the ball is isolated among critical domains at the endpoint despite
+being a saddle, and an interval of strict local but nonglobal ball
+maximality follows. The argument combines explicit third- and
+fourth-order PDE expansions, an analytic boundary equation, and a
+finite-dimensional symmetry reduction. A classical transcendence theorem
+for rational-order Bessel zeros excludes exceptional dimensions. The
+global convex perimeter maximization problem remains unresolved.
+
+\Needspace{8\baselineskip}\section{1. Introduction and main
+results}\label{introduction-and-main-results}
+
+For a bounded domain \(\Omega\subset\mathbb R^n\), let
+\(\lambda_1(\Omega)\) be the first Dirichlet eigenvalue of \(-\Delta\),
+and let \(T(\Omega)=\int_\Omega w\) where \(-\Delta w=1\) in \(\Omega\)
+and \(w=0\) on its boundary. Let \(V(\Omega)=|\Omega|\) and
+\(P(\Omega)=\mathcal H^{n-1}(\partial\Omega)\). We consider
+
+\[
+F_q(\Omega)=\frac{\lambda_1(\Omega)T(\Omega)^q}{V(\Omega)^{\alpha_q}},
+\qquad \alpha_q=\frac{(n+2)q-2}{n},
+\qquad
+G_q(\Omega)=\frac{\lambda_1(\Omega)T(\Omega)^q}{P(\Omega)^{\beta_q}},
+\qquad \beta_q=\frac{(n+2)q-2}{n-1}.
+\tag{1.1}
+\]
+
+Both are invariant under translations and positive dilations. We write
+\(B=B_1\), \(\nu=n/2-1\), \(j=j_{\nu,1}\), \(s=j^2\) and \(x=s/n\).
+Their upper local stability thresholds are
+
+\[
+q_V=\frac{2(x-1)}{n+2},
+\qquad q_P=\frac{4(n-1)x-2n+6}{(n+2)(3n-1)}.
+\tag{1.2}
+\]
+
+These thresholds and their Hessians are established in
+\href{https://doi.org/10.1007/s11118-026-10328-2}{Amato-Nitsch-Trombetti-Villone},
+Theorems 1.6 and 6.3 and Corollaries 5.14 and 6.7. At each threshold the
+Hessian is negative off the degree-two harmonics, after removing
+translations and dilations, and vanishes on that finite-dimensional
+kernel. Their Remark 5.15 leaves the nonlinear volume endpoint
+undecided. For parameters strictly above the thresholds, their results
+give strict local ball maximality in the stated smooth topology. We use
+this established spectral and stability information; the results below
+concern the nonlinear endpoint and the complete nearby critical set.
+
+\Needspace{6\baselineskip}\textbf{Theorem A (endpoint saddles).} In every dimension \(n\ge2\), the
+ball is a saddle for \(F_{q_V}\) and \(G_{q_P}\), even among smooth
+strictly convex domains. The first assertion holds at exactly fixed
+volume and the second at exactly fixed perimeter. In dimensions at least
+three the two signs occur along opposite directions of a degree-two
+deformation. In the plane they occur along two paths with the same first
+velocity and different second-order corrections.
+
+\Needspace{6\baselineskip}\textbf{Theorem B (local classification).} Fix \(n\ge2\), an integer
+\(k\ge4\) and \(0<\gamma<1\). For either family, near its parameter
+\(q_*\) and near the ball in \(C^{k,\gamma}\), all unrestricted critical
+domains, up to similarities, are the ball and the analytic branches
+
+\[
+R_{p,t}(\omega)=1+tH_p(\omega)+O(t^2),\qquad
+H_p(\omega)=\sum_{i=1}^p\omega_i^2-\frac pn,\qquad
+1\le p\le\lfloor n/2\rfloor.
+\tag{1.3}
+\]
+
+The domains on the \(p\)th branch have \(O(p)\times O(n-p)\) symmetry
+and are strictly convex. With \(m_{r,p}=\langle H_p^r\rangle\), their
+parameter slopes for \(p<n/2\) are
+
+\[
+q_p'(0)=-\frac{3C_*m_{3,p}}{2\,\partial_qe_2\,m_{2,p}}\ne0,
+\tag{1.4}
+\]
+
+where the explicitly computed cubic coefficients \(C_*\) and the known
+Hessian multipliers \(e_2\) are given below. In even dimensions the
+balanced branch \(p=n/2\) instead satisfies
+\(q_p(t)=q_*+\eta_nt^2+O(t^4)\) with an explicit nonzero \(\eta_n\). The
+opposite signs of \(t\) on that balanced branch are congruent. In
+dimension two, \(\eta_2>0\) for both families.
+
+\Needspace{6\baselineskip}\textbf{Corollary C (isolated endpoint criticality).} At \(q=q_*\) the
+ball is the only critical domain in a sufficiently small neighborhood,
+up to similarities. In the plane, for each \(q>q_*\) sufficiently close
+to \(q_*\) there is exactly one nearby nonball similarity class, and for
+\(q\le q_*\) sufficiently close there is none. In odd dimensions there
+are \((n-1)/2\) nonball classes for either sign of sufficiently small
+\(q-q_*\). In even dimensions at least four, the \(n/2-1\) unbalanced
+classes occur on both sides and the balanced class occurs on the side
+determined by \(\eta_n\). A common sign for \(\eta_n\) in every higher
+even dimension is not asserted.
+
+\Needspace{6\baselineskip}\textbf{Corollary D (separation of local and global maximality).} For
+each family and dimension there is \(\varepsilon_n>0\) such that, for
+\(q_*<q<q_*+\varepsilon_n\), the ball is a strict local maximizer but
+not a global maximizer, even among smooth strictly convex domains. No
+explicit value of \(\varepsilon_n\) is claimed.
+
+The volume branch lies in a different sign regime from the rigidity
+theorem of
+\href{https://doi.org/10.1007/s00032-024-00405-9}{Celentano-Nitsch-Trombetti},
+whose Corollary 1.3 assumes nonpositive product of the exponents in
+\(T^a\lambda_1^b\). Here both exponents are positive. The argument does
+not contradict that result.
+
+The general implicit-function and symmetry methods are classical. The
+background includes Crandall-Rabinowitz\textquotesingle s simple-kernel
+bifurcation theory and the literature on spherical symmetry, including
+\href{https://doi.org/10.1007/BF00374697}{Chossat-Lauterbach-Melbourne}.
+We supply the reduction rather than invoke a new general bifurcation
+principle or claim a new general classification of equivariant
+equations. The shape-dependent content is the explicit nonlinear
+expansion, the verification of the analytic boundary map and its
+complement inverse, and the nonvanishing of the coefficients in every
+dimension. The latter uses the classical Siegel theorem as stated by
+\href{https://doi.org/10.1155/S0161171295000706}{Lorch-Muldoon}: a
+nonzero zero of a Bessel function of rational order is transcendental.
+
+The recent preprint of
+\href{https://arxiv.org/abs/2609.17083}{Masiello-Paoli-Salerno}, posted
+September 15, 2026, concerns saddle shapes for \(k\)-Hessian torsion
+under quermassintegral constraints and for curvature integrals. Its
+Theorems 1.1-1.4 concern different functionals and a second-order saddle
+mechanism. No claim that ball saddles or shape bifurcations are new
+phenomena in general is made here.
+
+The perimeter problem at \(q=1\), including the planar conjecture
+\(\lambda_1(\Omega)T(\Omega)/P(\Omega)^2\le j_{0,1}^2/(32\pi)\) for
+convex \(\Omega\), is outside our conclusion. Local endpoint instability
+and critical-domain classification do not settle that global inequality.
+
+\Needspace{8\baselineskip}\section{2. Analytic boundary equation and
+Hessian}\label{analytic-boundary-equation-and-hessian}
+
+\subsection{2.1. The analytic boundary
+equation}\label{the-analytic-boundary-equation}
+
+Let \(R=1+h\). Write \(u\) for the positive first Dirichlet
+eigenfunction normalized by \(\int_{\Omega_h}u^2=1\), \(w\) for the
+torsion function, and \(\kappa\) for the sum of the outward principal
+curvatures. Put \(E_F=\log F_q\) and \(E_G=\log G_q\). The Hadamard
+formulas give their shape densities
+
+\[
+\begin{aligned}
+\psi_F&=-\frac{u_\nu^2}{\lambda_1}+q\frac{w_\nu^2}{T}-\frac{\alpha_q}{V},\\
+\psi_G&=-\frac{u_\nu^2}{\lambda_1}+q\frac{w_\nu^2}{T}-\frac{\beta_q}{P}\kappa.
+\end{aligned}
+\tag{2.1}
+\]
+
+Normal derivatives are outward; only their squares enter. For a radial
+variation \(v\), the product of its normal speed and the surface
+Jacobian is \(vR^{n-1}\). Thus, with normalized spherical average as
+inner product,
+
+\[
+D_hE(q,h)[v]=\langle Z(q,h),v\rangle,
+\qquad Z=|S^{n-1}|R^{n-1}\psi.
+\tag{2.2}
+\]
+
+The PDE normalizations in (2.1) matter: the eigenvalue term uses an
+\(L^2\)-normalized eigenfunction. First-variation formulas are also
+stated in Theorems 2.7-2.8 of Celentano-Nitsch-Trombetti,
+\href{https://doi.org/10.1007/s00032-024-00405-9}{final 2024 article}.
+
+Let \(K=O(n-1)\times\{\pm1\}\) act by rotations on the last \(n-1\)
+coordinates and reversal of the first. For \(n=2\) this is reflection in
+both coordinate axes. Set
+
+\[
+\begin{aligned}
+X&=\{h\in C^{k,\gamma}(S^{n-1})^K:\langle h\rangle=0\},\\
+Y_F&=C^{k-1,\gamma}(S^{n-1})^K\cap\{\langle f\rangle=0\},\\
+Y_G&=C^{k-2,\gamma}(S^{n-1})^K\cap\{\langle f\rangle=0\}.
+\end{aligned}
+\tag{2.3}
+\]
+
+Define \(\Psi(q,h)=Z(q,h)-\langle Z(q,h)\rangle\), using the appropriate
+\(Y\). These are real-analytic maps on an open neighborhood of
+\((q_*,0)\) in \(\mathbb R\times X\).
+
+Here are the analytic details. Choose a fixed smooth radial cutoff
+\(\chi\) equal to zero near the origin and to one near \(r=1\). The map
+\(r\omega\mapsto r(1+\chi(r)h(\omega))\omega\) is a \(C^{k,\gamma}\)
+diffeomorphism from the ball to \(\Omega_h\) when \(h\) is small.
+Pulling the Dirichlet equations back to the fixed ball gives
+second-order operators whose coefficients are analytic functions of
+\(h\), its first and second derivatives, and the inverse of a matrix
+close to the identity. They act boundedly from zero-boundary
+\(C^{k,\gamma}\) to \(C^{k-2,\gamma}\).
+
+The Dirichlet Laplacian is invertible on these spaces by the classical
+Schauder existence and estimate theorem. The torsion solution therefore
+depends analytically on \(h\), by the analytic implicit-function
+theorem. For the first eigenpair use the equation together with \(L^2\)
+normalization, with the pulled-back volume density included. Its
+linearization in \((u,\lambda)\) is invertible: projection onto the
+simple ground state determines \(\lambda\), the normalization determines
+the ground-state component of \(u\), and the Dirichlet resolvent
+determines its orthogonal component. The same implicit-function argument
+gives analytic dependence. Continuity of the spectrum and positivity
+select the first eigenpair. The pulled-back normal derivatives are
+analytic in \(C^{k-1,\gamma}\), and the curvature is analytic in
+\(C^{k-2,\gamma}\). Integration, logarithms of positive quantities, and
+multiplication preserve analyticity. These observations prove the
+mapping assertions without assuming a formal shape Taylor series
+converges.
+
+The ball satisfies \(\Psi(q,0)=0\) for every nearby \(q\). Further,
+\(\Psi(q,h)=0\) is equivalent to unrestricted criticality on this
+symmetry class. Indeed \(Z\) is \(K\)-invariant, so \(\Psi=0\) makes it
+a constant. Scale invariance gives
+
+\[
+0=D_hE(q,h)[1+h]=\langle Z,1+h\rangle=Z,
+\tag{2.4}
+\]
+
+because \(\langle h\rangle=0\). Thus \(Z=0\) pointwise, and (2.2), or
+(2.1) for arbitrary normal speeds, yields every first-variation
+equation. Conversely unrestricted criticality implies \(Z=0\). There is
+no residual Lagrange multiplier or restriction to symmetric test
+variations in this conclusion.
+
+\subsection{2.2. Linearization and the complement
+inverse}\label{linearization-and-the-complement-inverse}
+
+For a spherical harmonic of degree \(\ell\ge2\), put
+
+\[
+c_\ell=j\frac{J_{\nu+\ell+1}(j)}{J_{\nu+\ell}(j)},
+\qquad d_\ell=\ell-c_\ell.
+\tag{2.5}
+\]
+
+The denominator cannot vanish because the first Dirichlet eigenspace is
+radial and simple. The normalized regular radial Helmholtz extension of
+a degree-\(\ell\) boundary harmonic has outward derivative \(d_\ell\).
+
+For a single harmonic \(H_\ell\) the coefficient of
+\(t^2\langle H_\ell^2\rangle\) in the logarithmic functional along
+\(h=tH_\ell\) is
+
+\[
+\begin{aligned}
+e^F_\ell(q)&=2d_\ell+2(n-1)-(n+2)q(\ell-1),\\
+e^G_\ell(q)&=2d_\ell+n-1+\frac{(n+2)q(n+1-2\ell)}2\\
+&\hspace{1cm}-\frac{\beta_q}{2}\{\ell(\ell+n-2)+(n-1)(n-2)\}.
+\end{aligned}
+\tag{2.6}
+\]
+
+For completeness, the eigenvalue\textquotesingle s normalized quadratic
+coefficient is \(2d_\ell+n-1\), by the second-order compatibility
+calculation of Section 3 with degree two replaced by \(\ell\). The
+torsion coefficient is \((n+2)((n+1)/2-\ell)\): its first correction is
+\(r^\ell H_\ell/n\), its second boundary value is
+\((1/2-\ell)H_\ell^2/n\), and the signed shell integral contributes
+\(|S|\langle H_\ell^2\rangle/(2n)\). The volume coefficient is
+\(n(n-1)/2\). The perimeter coefficient is
+\([\ell(\ell+n-2)+(n-1)(n-2)]/2\). Combining them proves (2.6).
+Polarization and orthogonality show that \(L=D_h\Psi(q_*,0)\) acts on
+each harmonic as multiplication by \(2e_\ell(q_*)\).
+
+The source\textquotesingle s Corollaries 5.14 and 6.7 and their proofs
+give
+
+\[
+e_2(q_*)=0,\qquad e_\ell(q_*)<0\quad(\ell\ge3).
+\tag{2.7}
+\]
+
+This spectral information is an established input, not a new endpoint
+conclusion. The \(K\)-invariant harmonics of degree two form exactly a
+line, spanned by \(H=\omega_1^2-1/n\) for \(n\ge3\), or by
+\(H=\cos2\theta\) for \(n=2\). The invariance eliminates degree one.
+Thus \(\ker L=\mathbb RH\). Directly from (2.6),
+
+\[
+\partial_q e^F_2=-(n+2),\qquad
+\partial_q e^G_2=-\frac{(n+2)(3n-1)}{2(n-1)}.
+\tag{2.8}
+\]
+
+We also need a bounded inverse on the complement in the actual Hölder
+spaces, not merely nonzero formal multipliers. Let \(D\) denote the
+Laplace Dirichlet-to-Neumann map on the sphere. On mean-zero functions
+it is an isomorphism \(C^{k,\gamma}\to C^{k-1,\gamma}\): the inverse is
+the harmonic Neumann solution with its constant fixed to have mean-zero
+trace. This follows from the Neumann Schauder theorem.
+
+The difference between the Helmholtz and Laplace Dirichlet-to-Neumann
+maps is compact as a map from \(C^{k,\gamma}\) to \(C^{k-1,\gamma}\) on
+mean-zero traces. Indeed the harmonic extension \(v\) has zero spherical
+mean at every radius. The equation
+
+\[
+(-\Delta-j^2)z=j^2v,\qquad z|_S=0,
+\tag{2.9}
+\]
+
+has a unique solution with zero spherical mean, since the only resonant
+eigenspace is radial. The Dirichlet Schauder estimate on this complement
+bounds \(z\) in \(C^{k+2,\gamma}\) by the boundary trace in
+\(C^{k,\gamma}\). The normal derivative of \(z\) lies in
+\(C^{k+1,\gamma}\), whose inclusion in \(C^{k-1,\gamma}\) is compact.
+The sum \(v+z\) is the Helmholtz extension. Thus the operator with
+multipliers \(c_\ell\) is compact at the required orders.
+
+For \(F\), (2.6) now expresses \(L\) as a compact perturbation of
+
+\[
+2[2-(n+2)q_V]D:X\longrightarrow Y_F.
+\tag{2.10}
+\]
+
+For \(G\), it expresses \(L\) as a compact perturbation of
+
+\[
+-\beta_{q_P}(-\Delta_S):X\longrightarrow Y_G.
+\tag{2.11}
+\]
+
+Both leading operators are invertible on mean-zero invariant functions.
+In fact \(j^2>2n\) (the standard Bessel-zero bound also used in source
+Remark 1.7) gives \(q_V,q_P>2/(n+2)\), so the coefficient in (2.10) is
+nonzero and \(\beta_{q_P}>0\). Hence \(L\) is Fredholm of index zero.
+Harmonic testing in (2.6) shows its range is orthogonal to \(H\); the
+codimension is exactly one by its index and kernel. If
+
+\[
+X_\perp=\{h\in X:\langle hH\rangle=0\},\qquad
+Y_\perp=\{f\in Y:\langle fH\rangle=0\},
+\tag{2.12}
+\]
+
+then \(L:X_\perp\to Y_\perp\) is a bounded isomorphism.
+
+\Needspace{8\baselineskip}\section{3. Cubic endpoint expansion in every
+dimension}\label{cubic-endpoint-expansion-in-every-dimension}
+
+\subsection{3.1. A cubic expansion along a degree-two
+harmonic}\label{a-cubic-expansion-along-a-degree-two-harmonic}
+
+Let \(h\) be a real spherical harmonic of degree two on \(S^{n-1}\),
+write \(\langle\cdot\rangle\) for normalized spherical average, and set
+
+\[
+\Omega_t=\{r\omega:0\le r<1+t h(\omega)\},\quad
+m_2=\langle h^2\rangle,\quad m_3=\langle h^3\rangle.
+\tag{3.1}
+\]
+
+Here \(\langle h\rangle=0\) and \(-\Delta_S h=2nh\). Put
+
+\[
+d=x-n,\qquad a=d+\frac{n-1}{2},\qquad
+B=-x^2+\frac{2n+3}{3}x-\frac{n(n-1)}6.
+\tag{3.2}
+\]
+
+The necessary expansions are
+
+\[
+\begin{aligned}
+\frac{\lambda_1(\Omega_t)}{j^2}
+ &=1+2a m_2t^2+2B m_3t^3+O(t^4),\\
+\frac{T(\Omega_t)}{T(B_1)}
+ &=1+\frac{(n+2)(n-3)}2m_2t^2
++\frac{(n+2)(n^2-5n+12)}6m_3t^3+O(t^4),\\
+\frac{|\Omega_t|}{|B_1|}
+ &=1+\frac{n(n-1)}2m_2t^2+\frac{n(n-1)(n-2)}6m_3t^3+O(t^4),\\
+\frac{P(\Omega_t)}{P(B_1)}
+ &=1+\frac{n^2-n+2}{2}m_2t^2
++\frac{(n-3)(n^2+2)}6m_3t^3+O(t^4).
+\end{aligned}
+\tag{3.3}
+\]
+
+The eigenvalue and torsion remainders will be justified in Section 3.2.
+The volume formula follows by expanding \((1+th)^n\). For perimeter,
+expand
+
+\[
+\frac{P(\Omega_t)}{P(B_1)}
+=\left\langle(1+th)^{n-1}
+\sqrt{1+\frac{t^2|\nabla_Sh|^2}{(1+th)^2}}\right\rangle.
+\tag{3.4}
+\]
+
+Use \(\langle|\nabla_Sh|^2\rangle=2nm_2\) and
+\(\langle h|\nabla_Sh|^2\rangle=nm_3\). The latter follows by
+integrating \(\nabla_S(h^2)\cdot\nabla_Sh=-h^2\Delta_Sh\).
+
+Taking logarithms in (3.3), no cross terms enter before order four. The
+quadratic coefficients of \(\log(F_q(\Omega_t)/F_q(B_1))\) and
+\(\log(G_q(\Omega_t)/G_q(B_1))\) are, respectively,
+
+\[
+[2x-2-(n+2)q]m_2,
+\qquad
+\left[2x-1+\frac2{n-1}
+-\frac{(n+2)(3n-1)}{2(n-1)}q\right]m_2.
+\tag{3.5}
+\]
+
+They vanish at (1.2). At their respective critical exponents the cubic
+coefficients are
+
+\[
+\begin{aligned}
+C_V(n,x)&=-2x^2+\frac{2(n+8)}3x-\frac83,\\
+C_P(n,x)&=-2x^2+
+\frac{2(3n^2+22n-9)}{3(3n-1)}x
+-\frac{4(5n-3)}{3(3n-1)}.
+\end{aligned}
+\tag{3.6}
+\]
+
+Thus the two logarithmic variations equal \(C_V(n,x)m_3t^3+O(t^4)\) and
+\(C_P(n,x)m_3t^3+O(t^4)\).
+
+\subsection{3.2. Derivation of the PDE expansions and their
+remainders}\label{derivation-of-the-pde-expansions-and-their-remainders}
+
+\subsubsection{3.2.1. Eigenvalue}\label{eigenvalue}
+
+Let \(u_0(r)=r^{-\nu}J_\nu(jr)\), interpreted smoothly at zero,
+\(p=u_0'(1)\ne0\), and \(I=\int_{B_1}u_0^2\). The standard Rellich
+identity, obtained by testing the eigenvalue equation against
+\(r\partial_ru_0\), gives
+
+\[
+p^2|S^{n-1}|=2j^2 I.
+\tag{3.7}
+\]
+
+Let \(H_2\) be the regular radial solution of the degree-two Helmholtz
+equation at \(j^2\), normalized by \(H_2(1)=1\). Then
+
+\[
+H_2(r)=\frac{r^{-\nu}J_{\nu+2}(jr)}{J_{\nu+2}(j)},\quad
+H_2'(1)=d=\frac{j^2}{n}-n,\quad
+H_2''(1)=-(n-1)d-j^2+2n.
+\tag{3.8}
+\]
+
+The recurrence \(J_{\nu+2}(j)=nJ_{\nu+1}(j)/j\) and the derivative
+recurrence prove the middle identity. The denominator is nonzero;
+otherwise a degree-two eigenfunction would belong to the first
+eigenspace of the ball, contradicting its simplicity. The last identity
+is the radial ODE at \(r=1\). The radial equation also gives
+
+\[
+u_0''(1)=-(n-1)p,\qquad
+u_0'''(1)=[n(n-1)-j^2]p.
+\tag{3.9}
+\]
+
+We construct a finite expansion \(U_t=u_0+tu_1+t^2u_2+t^3u_3\) and
+\(\ell_t=j^2+\lambda_2t^2+\lambda_3t^3\). Let \(L=-\Delta-j^2\). Set
+
+\[
+u_1=-pH_2h,
+\tag{3.10}
+\]
+
+so \(Lu_1=0\) and \(u_1|_S=-ph\). At second order the equations are
+
+\[
+Lu_2=\lambda_2u_0,\qquad
+u_2|_S=-h\partial_ru_1-\frac12h^2u_0''(1)=pa h^2.
+\tag{3.11}
+\]
+
+Green\textquotesingle s formula for a function with boundary value \(g\)
+gives \(\int_{B_1}u_0 Lu=\int_S pg\). Therefore the Fredholm
+compatibility condition for (3.11) is
+
+\[
+\lambda_2 I=p^2a|S^{n-1}|m_2,
+\qquad \lambda_2=2j^2a m_2.
+\tag{3.12}
+\]
+
+The degree-two part of \(u_2\) is \(paH_2\Pi_2(h^2)\), where \(\Pi_2\)
+is orthogonal projection onto degree-two harmonics. Its remaining parts
+have degrees zero and four. Orthogonality implies
+
+\[
+\langle h\partial_ru_2\rangle=pa d\,m_3.
+\tag{3.13}
+\]
+
+This is independent of the arbitrary addition of a multiple of \(u_0\)
+to \(u_2\).
+
+At order three choose \(u_3\) to satisfy
+
+\[
+Lu_3=\lambda_2u_1+\lambda_3u_0,\qquad
+u_3|_S=-h\partial_ru_2-\frac12h^2\partial_r^2u_1
+-\frac16h^3u_0'''(1).
+\tag{3.14}
+\]
+
+Since \(\int u_0u_1=0\), compatibility and (3.7)-(3.13) give
+
+\[
+\lambda_3=2j^2\left[-ad+\frac{H_2''(1)}2
+-\frac{n(n-1)-j^2}{6}\right]m_3=2j^2B m_3.
+\tag{3.15}
+\]
+
+This proves the asserted coefficient algebra without assuming that the
+formal series is already an eigenfunction.
+
+Here is the remainder argument. The compatibility conditions ensure that
+(3.11) and (3.14) have smooth solutions on the ball. All their data
+involve finitely many spherical harmonics (degrees at most six);
+separation of variables gives regular radial ODE solutions. These extend
+smoothly to a fixed ball of radius \(1+\varepsilon\), because the radial
+ODE coefficients are smooth at \(r=1\). Thus the finite \(U_t\) is
+defined on \(\Omega_t\) and satisfies
+
+\[
+(-\Delta-\ell_t)U_t=O(t^4),\qquad
+U_t(1+th,\omega)=O(t^4)
+\tag{3.16}
+\]
+
+in fixed sufficiently strong norms. The first statement follows by
+multiplying the finite polynomials in \(t\) and using (3.10)-(3.14); the
+second follows from Taylor expansion at \(r=1\) and the boundary
+conditions imposed at each order.
+
+Use an angular boundary lift, supported in \(r>(1+th)/2\), of the second
+residual. Its \(H^1\) norm is \(O(t^4)\). Subtracting it produces
+\(v_t\in H^1_0(\Omega_t)\) with weak eigenvalue residual \(O(t^4)\).
+Domain inclusion between balls of radii \(1\pm C|t|\), compactness of
+the positive normalized first eigenfunctions, and simplicity of the
+disk/ball ground state show that their pairing with \(v_t\) converges to
+a nonzero constant. Testing the residual against that first
+eigenfunction gives
+
+\[
+\lambda_1(\Omega_t)=\ell_t+O(t^4).
+\tag{3.17}
+\]
+
+The compactness and pairing argument is written explicitly in Section
+4.4 and is dimension-independent. This completes the eigenvalue part of
+(3.3).
+
+\subsubsection{3.2.2. Torsion}\label{torsion}
+
+Let \(\mathcal H\) be harmonic extension from \(S^{n-1}\) into \(B_1\)
+and \(D=\partial_r\mathcal H|_S\); \(D\) acts by multiplication by the
+degree on each spherical harmonic. The torsion coefficients are
+
+\[
+w_0=\frac{1-r^2}{2n},\qquad
+w_1=\frac{r^2h}{n},\qquad
+w_2=-\frac{3}{2n}\mathcal H(h^2),
+\tag{3.18}
+\]
+
+and \(w_3\) is the harmonic extension of
+
+\[
+w_3|_S=\frac{3}{2n}hD(h^2)-\frac1n h^3.
+\tag{3.19}
+\]
+
+These follow by cancelling the boundary values of
+\(w_0+tw_1+t^2w_2+t^3w_3\) at \(r=1+th\) order by order. The sum has
+Laplacian exactly \(-1\). Orthogonality and \(Dh=2h\) give
+
+\[
+\langle hD(h^2)\rangle=2m_3,
+\qquad \langle w_3|_S\rangle=\frac2n m_3.
+\tag{3.20}
+\]
+
+For any harmonic extension, its integral over the ball is
+\(|S^{n-1}|/n\) times its boundary average. To include the moving
+boundary, integrate the coefficients over \(B_1\) and expand the signed
+shell integrals from \(1\) to \(1+th\). At order two the shell
+contributes \(|S^{n-1}|m_2/(2n)\). At order three it contributes
+\(|S^{n-1}|(n-5)m_3/(6n)\). In detail, the three cubic shell terms,
+divided by \(|S^{n-1}|m_3\), are
+
+\[
+-\frac{2n-1}{6n}\quad(w_0),\qquad
+\frac{n+1}{2n}\quad(tw_1),\qquad
+-\frac3{2n}\quad(t^2w_2).
+\tag{3.21}
+\]
+
+Adding the ball integrals and dividing by
+\(T(B_1)=|S^{n-1}|/[n^2(n+2)]\) gives the second line of (3.3). All
+harmonic terms are finite harmonic polynomials and extend across the
+sphere. The uncancelled boundary value is \(O(t^4)\); the maximum
+principle bounds the actual torsion correction by \(O(t^4)\) uniformly,
+and hence also in its integral. This supplies the remainder claimed in
+(3.3).
+
+\subsection{3.3. Nonvanishing and the higher-dimensional
+saddle}\label{nonvanishing-and-the-higher-dimensional-saddle}
+
+For each fixed integer \(n\ge3\), both expressions in (3.6) are nonzero
+quadratic polynomials in \(x\) with rational coefficients; each has
+leading coefficient \(-2\). The classical theorem of Siegel says that
+every nonzero zero of \(J_\nu\) is transcendental for rational \(\nu\).
+The applicable statement is given in the introduction of Lorch and
+Muldoon, \emph{Transcendentality of zeros of higher derivatives of
+functions involving Bessel functions}, International Journal of
+Mathematics and Mathematical Sciences 18(3) (1995), 551-560,
+\href{https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171295000706}{published
+PDF},
+\href{https://www.maths.tcd.ie/EMIS/journals/HOA/IJMMS/Volume18_3/647167.pdf}{public
+journal mirror}.
+
+Since \(\nu=n/2-1\) is rational, \(j\) is transcendental. Consequently
+\(x=j^2/n\) is transcendental: an algebraic value of \(x\) would make
+\(j\) algebraic as a root of \(z^2-nx\). Thus
+
+\[
+C_V(n,x)\ne0,\qquad C_P(n,x)\ne0.
+\tag{3.22}
+\]
+
+No claim that these coefficients have a common sign across dimensions is
+needed.
+
+Choose
+
+\[
+h(\omega)=\omega_1^2-\frac1n.
+\tag{3.23}
+\]
+
+This is a degree-two harmonic because its homogeneous extension is
+\(z_1^2-|z|^2/n\). The spherical moments
+\(\langle\omega_1^2\rangle=1/n\),
+\(\langle\omega_1^4\rangle=3/[n(n+2)]\), and
+\(\langle\omega_1^6\rangle=15/[n(n+2)(n+4)]\) give
+
+\[
+m_3=\frac{8(n-1)(n-2)}{n^3(n+2)(n+4)}>0.
+\tag{3.24}
+\]
+
+These moment identities follow, for example, by integrating the
+first-coordinate marginal with density proportional to
+\((1-z^2)^{(n-3)/2}\) and applying the beta-integral recurrence. From
+(3.6), (3.22) and (3.24), each critical logarithmic variation has a
+nonzero cubic leading term. Taking \(t\) of opposite signs proves the
+saddle property for each functional. The smooth radial hypersurfaces are
+strictly convex for small \(|t|\), since their second fundamental forms
+converge uniformly to that of the unit sphere.
+
+For exact constraints use \([|B_1|/|\Omega_t|]^{1/n}\Omega_t\) for \(F\)
+and \([P(B_1)/P(\Omega_t)]^{1/(n-1)}\Omega_t\) for \(G\). Both scalar
+factors tend to 1, preserve strict convexity and preserve the
+scale-invariant functional values. This proves the theorem for all
+\(n\ge3\).
+
+\Needspace{8\baselineskip}\section{4. The planar volume
+endpoint}\label{the-planar-volume-endpoint}
+
+\subsection{4.1. Planar normalization and the two
+paths}\label{planar-normalization-and-the-two-paths}
+
+Write \(B\) for the unit disk, \(j=j_{0,1}\), \(s=j^2\), and
+
+\[
+q_* = \frac{s-2}{4},\qquad
+F_q(\Omega)=\frac{\lambda_1(\Omega)T(\Omega)^q}{|\Omega|^{2q-1}}.
+\tag{4.1}
+\]
+
+Here \(-\Delta w=1\) with zero Dirichlet data and \(T=\int w\). This
+normalization is important: the exponent in the area denominator is
+\(2q-1\).
+
+\textbf{Planar endpoint assertion.} The disk is a saddle for \(F_{q_*}\)
+among smooth strictly convex planar domains, including under an exact
+area constraint. More precisely, set
+
+\[
+\Omega_{t,b}=\{(r,\theta):0\le r<1+t\cos(2\theta)+bt^2\cos(4\theta)\},
+\qquad b\in\{0,1\}.
+\tag{4.2}
+\]
+
+For all sufficiently small nonzero \(t\),
+
+\[
+F_{q_*}(\Omega_{t,0})>F_{q_*}(B),\qquad
+F_{q_*}(\Omega_{t,1})<F_{q_*}(B).
+\tag{4.3}
+\]
+
+Both paths have the same first normal velocity \(\cos(2\theta)\). Their
+values differ first at fourth order. Multiplication by
+\((\pi/|\Omega_{t,b}|)^{1/2}\) imposes exact area \(\pi\) and preserves
+the inequalities by scale invariance. These scaled paths still have the
+same first normal velocity. In particular, a nonpositive Hessian does
+not imply a local maximum at this endpoint.
+
+The domain boundaries are positive radial graphs and converge in every
+fixed \(C^k\) norm to the circle. The numerator of their signed
+curvature is \(R^2+2(R')^2-RR''\), which converges uniformly to 1. Thus
+these are strictly convex smooth domains for small \(|t|\). The unscaled
+radial graph perturbations also have zero mean and zero first harmonics,
+as in the source\textquotesingle s local class.
+
+\subsection{4.2. Exact expansions and the signs that
+suffice}\label{exact-expansions-and-the-signs-that-suffice}
+
+For each fixed real \(b\), the expansions used below are
+
+\[
+\begin{aligned}
+\frac{|\Omega_{t,b}|}{\pi}&=1+\frac{t^2}{2}+\frac{b^2t^4}{2},\\
+\frac{T(\Omega_{t,b})}{\pi/8}
+ &=1-t^2+\left(\frac{15}{8}+3b-5b^2\right)t^4+O(t^5),\\
+\sqrt{\lambda_1(\Omega_{t,b})}
+ &=j+k_2t^2+k_4t^4+O(t^5),\qquad
+k_2=\frac{j(s-3)}4,\\
+k_4&=\frac{j K_b(s)}{256(s-6)},
+\end{aligned}
+\tag{4.4}
+\]
+
+where
+
+\[
+\begin{aligned}
+K_b(s)={}&16b^2s^2-576b^2s+2688b^2
+-24bs^3+440bs^2-1792bs+384b\\
+&-7s^4+110s^3-703s^2+2072s-1920.
+\end{aligned}
+\tag{4.5}
+\]
+
+All remainders are as \(t\to0\) for fixed \(b\); no uniform-in-\(b\)
+assertion is needed. Sections 4.3 and 4.4 prove the error estimates and
+specify a finite recurrence for checking every coefficient.
+
+Taking logarithms in (4.4), the quadratic coefficient in
+\(\log(F_q(\Omega_{t,b})/F_q(B))\) is
+
+\[
+\frac{s-3}{2}-q-\frac{2q-1}{2}=\frac{s-2-4q}{2}.
+\tag{4.6}
+\]
+
+It vanishes at \(q=q_*\). The quartic coefficient there is
+
+\[
+\begin{aligned}
+128(6-s)C_b(s)={}&176b^2s^2-1024b^2s+24bs^3\\
+&-536bs^2+2560bs-1536b\\
+&+7s^4-102s^3+555s^2-1280s+768.
+\end{aligned}
+\tag{4.7}
+\]
+
+Consequently
+
+\[
+\log\frac{F_{q_*}(\Omega_{t,b})}{F_{q_*}(B)}
+= C_b(s)t^4+O(t^5).
+\tag{4.8}
+\]
+
+In particular, with
+
+\[
+\begin{aligned}
+P_0(x)&=7x^4-102x^3+555x^2-1280x+768,\\
+P_1(x)&=7x^4-78x^3+195x^2+256x-768,
+\end{aligned}
+\tag{4.9}
+\]
+
+we have \(C_0(s)=P_0(s)/(128(6-s))\) and \(C_1(s)=P_1(s)/(128(6-s))\).
+
+Here is an exact sign proof without numerical Bessel evaluation. The
+Bessel power series and alternating remainder bounds give
+
+\[
+J_0(\sqrt{23/4})\ge\sum_{k=0}^{5}\frac{(-23/16)^k}{(k!)^2}
+=\frac{17997619}{5033164800}>0,
+\tag{4.10}
+\]
+
+and
+
+\[
+J_0(\sqrt{29/5})\le\sum_{k=0}^{4}\frac{(-29/20)^k}{(k!)^2}
+=-\frac{42533}{30720000}<0.
+\tag{4.11}
+\]
+
+The terms after the first decrease in magnitude at these arguments,
+which is sufficient for the stated tail bounds. Moreover for
+\(0<z\le\sqrt{29/5}\), setting \(v=z^2/4\), the series for \(J_1\) has
+decreasing alternating terms and yields
+
+\[
+J_1(z)\ge\frac z2\left(1-\frac v2\right)>0.
+\tag{4.12}
+\]
+
+Thus \(J_0'=-J_1<0\) on this interval. Its first positive zero satisfies
+
+\[
+\frac{23}{4}<s<\frac{29}{5}<6.
+\tag{4.13}
+\]
+
+For \(y=x-23/4\) one computes
+
+\[
+\begin{aligned}
+P_0(23/4+y)&=7y^4+59y^3+\frac{1473}{8}y^2+\frac{4935}{16}y+\frac{4719}{256},\\
+P_1(23/4+y)&=7y^4+83y^3+\frac{1905}{8}y^2+\frac{1359}{16}y-\frac{6513}{256}.
+\end{aligned}
+\tag{4.14}
+\]
+
+The first is positive for \(y\ge0\). The second is increasing there, and
+its value at \(x=29/5\) is \(-12868/625<0\). Equations (4.13)-(4.14)
+prove \(C_0(s)>0>C_1(s)\). Formula (4.8) therefore proves (4.3).
+
+\subsection{4.3. Torsion expansion with a controlled
+remainder}\label{torsion-expansion-with-a-controlled-remainder}
+
+Let \(R=1+t\cos2\theta+bt^2\cos4\theta\) and use \(\rho\) as an interior
+radial coordinate. Seek
+
+\[
+W_t(\rho,\theta)=\frac{1-\rho^2}{4}
++c_0(t)+\sum_{n\in\{2,4,6,8\}}c_n(t)\rho^n\cos(n\theta).
+\tag{4.15}
+\]
+
+This function satisfies \(-\Delta W_t=1\) exactly. The following
+coefficients cancel its boundary values through degree four in \(t\):
+
+\[
+\begin{aligned}
+c_0(t)&=-\frac38t^2-\frac{14b^2-16b-3}{16}t^4,\\
+c_2(t)&=\frac12t-\frac{10b-3}{8}t^3,\\
+c_4(t)&=\frac{4b-3}{8}t^2+\frac{3(8b-3)}8t^4,\\
+c_6(t)&=-\frac{5(2b-1)}8t^3,\\
+c_8(t)&=-\frac{7(2b^2-8b+3)}{16}t^4.
+\end{aligned}
+\tag{4.16}
+\]
+
+These identities can be checked by substituting \(\rho=R\) in (4.15),
+expanding powers of \(R\), and using
+\(2\cos a\cos b=\cos(a+b)+\cos(a-b)\). Since only finite polynomials are
+involved, the uncancelled boundary value is \(O(t^5)\) uniformly in
+\(\theta\). The actual torsion function \(w_t-W_t\) is harmonic with
+boundary data \(-W_t\). The maximum principle gives
+\(\|w_t-W_t\|_\infty=O(t^5)\). The areas are uniformly bounded, so their
+integrals differ by \(O(t^5)\).
+
+Writing \(\langle f\rangle=(2\pi)^{-1}\int_0^{2\pi}f\,d\theta\), direct
+integration of (4.15) gives
+
+\[
+\frac{1}{2\pi}\int_{\Omega_{t,b}}W_t
+=\left\langle\frac{R^2}{8}-\frac{R^4}{16}
++\sum_{n\in\{0,2,4,6,8\}}\frac{c_n(t)}{n+2}R^{n+2}\cos(n\theta)\right\rangle.
+\tag{4.17}
+\]
+
+Inserting (4.16) and keeping terms through degree four proves the
+torsion line of (4.4). The area identity follows directly from
+\(|\Omega|=\pi\langle R^2\rangle\).
+
+\subsection{4.4. Eigenvalue expansion with a controlled
+remainder}\label{eigenvalue-expansion-with-a-controlled-remainder}
+
+Set \(k(t)=j+k_2t^2+k_4t^4\) and consider the finite Bessel sum
+
+\[
+\begin{aligned}
+U_t(\rho,\theta)={}&J_0(k(t)\rho)
++(A_{21}t+A_{23}t^3)J_2(k(t)\rho)\cos2\theta\\
+&+(A_{42}t^2+A_{44}t^4)J_4(k(t)\rho)\cos4\theta\\
+&+A_{63}t^3J_6(k(t)\rho)\cos6\theta
++A_{84}t^4J_8(k(t)\rho)\cos8\theta.
+\end{aligned}
+\tag{4.18}
+\]
+
+It is smooth at the origin and satisfies \(-\Delta U_t=k(t)^2U_t\)
+exactly. Put
+
+\[
+\begin{aligned}
+A_{21}&=s/2,\\
+A_{42}&=-\frac{s^2(4b-s+3)}{32(s-6)},\\
+A_{23}&=-\frac{s(20bs^2-288bs+960b+7s^3-89s^2+416s-768)}{128(s-6)}.
+\end{aligned}
+\tag{4.19}
+\]
+
+The remaining coefficients \(A_{63},A_{44},A_{84}\) are uniquely
+specified by cancelling the degree-three mode 6 and degree-four modes 4
+and 8 in \(U_t(R,\theta)\). Their explicit expanded rational expressions
+are unnecessary for the constant equation. Existence here does not
+assume a solution of an infinite system: each coefficient first enters
+its indicated harmonic multiplied by \(J_n(j)\ne0\), and there are just
+these three scalar equations.
+
+For completeness, nonvanishing follows from the Bessel series: for every
+integer \(n\ge1\) and \(0<z\le\sqrt{29/5}\),
+
+\[
+J_n(z)\ge \frac{(z/2)^n}{n!}
+\left(1-\frac{z^2}{4(n+1)}\right)>0.
+\tag{4.20}
+\]
+
+The alternating terms decrease, since their successive magnitude ratio
+is \((z^2/4)/((k+1)(n+k+1))<1\).
+
+Here is a reproducible finite coefficient calculation. Normalize
+\(B_n=J_n(j)/J_1(j)\), with
+
+\[
+B_0=0,\quad B_1=1,\quad B_{n+1}=\frac{2n}{j}B_n-B_{n-1},\quad
+J_n^{(d)}(j)=2^{-d}\sum_{a=0}^d(-1)^a\binom da J_{n-d+2a}(j),
+\tag{4.21}
+\]
+
+using \(J_{-n}=(-1)^nJ_n\). Expand the argument increment as
+
+\[
+k(t)R-j=j t c+(k_2+jbd)t^2+k_2c t^3+(k_4+k_2bd)t^4+O(t^5),
+\quad c=\cos2\theta,\ d=\cos4\theta.
+\tag{4.22}
+\]
+
+At order one, mode 2 yields \(A_{21}\). At order two, modes 0 and 4
+yield \(k_2,A_{42}\). At order three, modes 2 and 6 yield
+\(A_{23},A_{63}\). At order four, modes 0, 4 and 8 yield
+\(k_4,A_{44},A_{84}\). No other modes occur at these orders. In
+particular, the mean equation at order two is
+
+\[
+-J_1(j)k_2+\frac{jJ_1(j)}4+\frac{A_{21}jJ_2'(j)}2=0,
+\tag{4.23}
+\]
+
+which gives (4.4). The mean equation at order four is
+
+\[
+\begin{aligned}
+0={}&-J_1(j)k_4
++\frac{J_0''(j)}2\left(k_2^2+\frac{j^2b^2}{2}+jk_2\right)
++J_0'''(j)\left(\frac{j^2k_2}{4}+\frac{j^3b}{8}\right)
++\frac{j^4J_0''''(j)}{64}\\
+&+A_{21}\left(\frac{k_2J_2'(j)}2
++J_2''(j)\left(\frac{jk_2}{2}+\frac{j^2b}{4}\right)
++\frac{j^3J_2'''(j)}{16}\right)
++\frac{A_{23}jJ_2'(j)}2\\
+&+A_{42}\left(\frac{jbJ_4'(j)}2+\frac{j^2J_4''(j)}8\right).
+\end{aligned}
+\tag{4.24}
+\]
+
+It uses \(\langle c^2\rangle=1/2\), \(\langle c^4\rangle=3/8\), and
+\(\langle c^2d\rangle=1/4\). Substitution of (4.19) and (4.21) gives
+exactly (4.5). This displays the scalar calculation determining the
+decisive fourth-order coefficient, rather than relying on a numerical
+eigensolver.
+
+After all these choices, \(g_t(\theta)=U_t(R,\theta)=O(t^5)\) in \(C^1\)
+(indeed in every fixed \(C^k\) norm), by Taylor\textquotesingle s
+theorem for finitely many smooth functions. Choose a smooth fixed cutoff
+\(\chi\) that vanishes for arguments at most \(1/2\) and equals 1 near
+1. The function
+
+\[
+E_t(\rho,\theta)=\chi(\rho/R(\theta))g_t(\theta)
+\tag{4.25}
+\]
+
+has trace \(g_t\) and \(H^1(\Omega_{t,b})\) norm \(O(t^5)\), since \(R\)
+and its derivatives are uniformly controlled and \(R\) stays bounded
+away from zero. Thus \(v_t=U_t-E_t\in H^1_0(\Omega_{t,b})\), and for
+every \(\phi\in H^1_0(\Omega_{t,b})\),
+
+\[
+\left|\int\nabla v_t\cdot\nabla\phi-k(t)^2\int v_t\phi\right|
+\le C|t|^5\|\phi\|_{H^1}.
+\tag{4.26}
+\]
+
+Let \(\phi_t\) be the positive \(L^2\)-normalized first eigenfunction.
+Inclusion between disks of radii \(1\pm C|t|\) gives
+\(\lambda_1(\Omega_{t,b})\to j^2\) and a uniform \(H^1\) bound on
+\(\phi_t\). Their zero extensions are bounded in \(H^1_0(B_2)\);
+compactness gives strong \(L^2\) subsequential convergence. Every limit
+vanishes outside \(B\), has norm 1, belongs to \(H^1_0(B)\), and has
+energy at most \(j^2\). The Rayleigh principle and positivity identify
+it uniquely as the normalized first disk eigenfunction. Hence the whole
+family converges to that eigenfunction. Also \(v_t\), extended by zero,
+converges in \(L^2\) to \(J_0(j\rho)\) on \(B\) and zero outside. It
+follows that \(\int v_t\phi_t\) converges to a positive constant.
+
+Taking \(\phi=\phi_t\) in (4.26) therefore gives
+
+\[
+|\lambda_1(\Omega_{t,b})-k(t)^2|=O(t^5).
+\tag{4.27}
+\]
+
+This proves the eigenvalue line of (4.4), including the remainder.
+Together with Sections 4.2 and 4.3 it completes the proof of (4.3).
+
+\Needspace{8\baselineskip}\section{5. The planar perimeter
+endpoint}\label{the-planar-perimeter-endpoint}
+
+For \(n=2\), every degree-two harmonic has zero cubic moment, so Section
+3.3 does not settle the endpoint. Section 4 already proves the volume
+endpoint by a fourth-order calculation. The same paths also settle the
+perimeter endpoint.
+
+Write \(s=j_{0,1}^2\), \(q_P=(s+1)/10\), and use \(\Omega_{t,b}\) from
+Section 4, with radial function \(R=1+t\cos2\theta+bt^2\cos4\theta\).
+Direct expansion of \(\langle\sqrt{R^2+(R')^2}\rangle\) gives
+
+\[
+\frac{P(\Omega_{t,b})}{2\pi}
+=1+t^2+\left(4b^2-\frac32b-\frac12\right)t^4+O(t^5).
+\tag{5.1}
+\]
+
+Combine this with the eigenvalue and torsion expansions proved in
+Section 4. The quadratic coefficient of
+\(\log(G_q(\Omega_{t,b})/G_q(B_1))\) is \((s+1-10q)/2\), which vanishes
+at \(q_P\). At that exponent the quartic coefficient is
+
+\[
+\begin{aligned}
+640(6-s)D_b(s)={}&1264b^2s^2-8960b^2s+9216b^2\\
+&+120bs^3-2776bs^2+13760bs-9984b\\
+&+35s^4-510s^3+2691s^2-5560s+1824.
+\end{aligned}
+\tag{5.2}
+\]
+
+For \(b=0,1\) the numerator becomes, respectively,
+
+\[
+\begin{aligned}
+Q_0(s)&=35s^4-510s^3+2691s^2-5560s+1824,\\
+Q_1(s)&=35s^4-390s^3+1179s^2-760s+1056.
+\end{aligned}
+\tag{5.3}
+\]
+
+Section 4 gives the exact bracket \(23/4<s<29/5<6\). Setting
+\(y=s-23/4\),
+
+\[
+\begin{aligned}
+Q_0(23/4+y)&=35y^4+295y^3+\frac{6693}{8}y^2+\frac{22659}{16}y+\frac{33003}{256},\\
+Q_1(23/4+y)&=35y^4+415y^3+\frac{11157}{8}y^2+\frac{11691}{16}y-\frac{55413}{256}.
+\end{aligned}
+\tag{5.4}
+\]
+
+The first polynomial is positive for \(y\ge0\). The second is increasing
+there and is negative even at the upper endpoint, where
+\(Q_1(29/5)=-22048/125\). Thus \(D_0(s)>0>D_1(s)\). The remainder is
+\(O(t^5)\) by the PDE estimates in Section 4 and
+Taylor\textquotesingle s theorem for the perimeter integrand. These
+opposite quartic signs prove the planar perimeter saddle. Rescaling by
+\(2\pi/P(\Omega_{t,b})\) enforces exact perimeter without changing
+\(G_q\). This completes Theorem A in every dimension.
+
+\Needspace{8\baselineskip}\section{6. Local bifurcation and branch
+directions}\label{local-bifurcation-and-branch-directions}
+
+The planar branch directions proved in this section are
+
+\[
+q_F(t)=q_V+c_Vt^2+O(t^4),\qquad
+q_G(t)=q_P+\frac25c_Pt^2+O(t^4),
+\qquad c_V>0,\ c_P>0.
+\tag{6.1}
+\]
+
+\subsection{6.1. Solving the nonlinear
+equation}\label{solving-the-nonlinear-equation}
+
+Let \(m_2=\langle H^2\rangle\) and let
+\(\Pi f=\langle fH\rangle H/m_2\). Write \(h=tH+w\) with
+\(w\in X_\perp\). The analytic implicit-function theorem applied to
+
+\[
+(I-\Pi)\Psi(q,tH+w)=0
+\tag{6.2}
+\]
+
+gives a unique analytic solution \(w=w(q,t)\) near \((q_*,0)\). Since
+the ball solves the equation for all \(q\), uniqueness gives
+\(w(q,0)=0\). Moreover \(D_h\Psi(q,0)H\) is a multiple of \(H\) for
+every \(q\). Differentiating (6.2) at \(t=0\) therefore gives
+\(w_t(q,0)=0\), so \(w=O(t^2)\) uniformly for nearby \(q\).
+
+The remaining scalar equation is
+
+\[
+\phi(q,t)=\frac{\langle\Psi(q,tH+w(q,t)),H\rangle}{m_2}=0.
+\tag{6.3}
+\]
+
+Since \(\phi(q,0)=0\), the function
+
+\[
+\widetilde\phi(q,t)=\int_0^1\partial_t\phi(q,\tau t)\,d\tau
+\tag{6.4}
+\]
+
+is analytic and satisfies \(\phi=t\widetilde\phi\). At \((q_*,0)\) it
+vanishes, and
+
+\[
+\partial_q\widetilde\phi(q_*,0)=2\partial_q e_2(q_*)\ne0.
+\tag{6.5}
+\]
+
+The scalar implicit-function theorem gives a unique analytic \(q=q(t)\),
+and hence \(h(t)=tH+w(q(t),t)\). Together with the ball branch, these
+exhaust the solutions in the indicated symmetry class near \((q_*,0)\).
+Equation (2.4) proves unrestricted criticality. Since
+\(h(t)/t\to H\ne0\) and its mean is zero, the domains are not centered
+balls. Their symmetry forces the center of any ball to be the origin, so
+they are not translated balls either. Strict convexity follows from
+convergence in \(C^2\) to the sphere.
+
+\subsection{\texorpdfstring{6.2. Direction of the branches for
+\(n\ge3\)}{6.2. Direction of the branches for n\textbackslash ge3}}\label{direction-of-the-branches-for-nge3}
+
+Let \(C_*=C_V(n,x)\) or \(C_P(n,x)\) from Section 3. On the complement
+solution (6.2), define the reduced energy
+\(\mathcal E(q,t)=E(q,tH+w(q,t))-E(q,0)\). Because \(L H=0\) at
+\(q=q_*\) and \(w=O(t^2)\), its cubic coefficient at the critical
+parameter is unchanged by eliminating \(w\). More explicitly the
+quadratic form has no \(H\)-\(w\) cross term for any \(q\), by (2.6),
+and the \(w\)-\(w\) term has order four. Therefore
+
+\[
+\mathcal E(q,t)=e_2(q)m_2t^2+C_*m_3t^3
++O(t^4+|q-q_*|\,|t|^3),\qquad m_3=\langle H^3\rangle.
+\tag{6.6}
+\]
+
+The range equation and \(\langle H,w_t\rangle=0\) imply
+\(\partial_t\mathcal E=m_2\phi\). Differentiating (6.6) and inserting
+\(q(t)\) gives
+
+\[
+q'(0)=-\frac{3C_*m_3}{2\partial_q e_2\,m_2}.
+\tag{6.7}
+\]
+
+For the chosen \(H\), Section 3 and the fourth spherical moment give
+
+\[
+m_2=\frac{2(n-1)}{n^2(n+2)},\qquad
+m_3=\frac{8(n-1)(n-2)}{n^3(n+2)(n+4)}>0.
+\tag{6.8}
+\]
+
+The two cubic coefficients are nonzero by the classical transcendence
+theorem explained in Section 3. Consequently \(q'(0)\ne0\). In explicit
+form,
+
+\[
+q_F'(0)=\frac{3C_Vm_3}{2(n+2)m_2},\qquad
+q_G'(0)=\frac{3(n-1)C_Pm_3}{(n+2)(3n-1)m_2}.
+\tag{6.9}
+\]
+
+Thus the nonspherical curves cross the threshold rather than only
+touching it. Nonvanishing uses a theorem for every rational Bessel
+order; it is not extrapolated from a finite-dimensional computation.
+
+\subsection{6.3. The planar fourth-order
+reduction}\label{the-planar-fourth-order-reduction}
+
+Now \(H=\cos2\theta\) and \(m_2=1/2\). Rotation through \(\pi/2\)
+preserves the reflection-invariant spaces and sends \(H\) to \(-H\).
+Uniqueness in the preceding reduction gives \(q(-t)=q(t)\) and relates
+\(h(-t)\) to the rotated \(h(t)\). In particular \(q'(0)=0\).
+
+At the critical parameter the quadratic term in \(w(q_*,t)\) contains
+only the mode \(\cos4\theta\). To justify the mode selection, the second
+derivative of the full rotation-equivariant boundary map is bilinear.
+Applied twice to \(\cos2\theta\), its complex Fourier weights can only
+be \(0,4,-4\). Projection onto mean-zero functions eliminates weight
+zero, and reflection symmetry eliminates the sine term. The inverse
+complement linearization preserves the remaining mode. Thus
+
+\[
+w(q_*,t)=b_*t^2\cos4\theta+O(t^3).
+\tag{6.10}
+\]
+
+Let \(C_b(s)\) be the quartic polynomial in \(b\) in Section 4, and
+\(D_b(s)\) the one in Section 5, with \(s=j_{0,1}^2\). The fourth-order
+coefficient of the reduced energy is respectively \(C_{b_*}\) or
+\(D_{b_*}\). An \(O(t^3)\) remainder in (6.10) cannot change this
+coefficient: in the quadratic Taylor term it would pair with \(H\),
+which is in the Hessian kernel, or enter at order five; the cubic and
+higher Taylor terms likewise first change at order five.
+
+The mode-four component of (6.2) at order \(t^2\) is exactly the
+derivative of this quartic polynomial with respect to \(b\). For example
+\(\partial_b E(q_*,tH+bt^2\cos4\theta)=t^2D_hE[\cos4\theta]\); dividing
+its leading order \(t^4\) identifies the equation. Therefore
+
+\[
+b_F=\mathop{\rm argmax}_{b\in\mathbb R}C_b(s),\qquad
+b_G=\mathop{\rm argmax}_{b\in\mathbb R}D_b(s),
+\quad c_V=C_{b_F}(s),\quad c_P=D_{b_G}(s).
+\tag{6.11}
+\]
+
+These maximizers are unique. The \(b^2\) coefficients are
+\(e_4(q_*)\langle\cos^24\theta\rangle<0\) by (2.7). Equivalently they
+can be read directly from the displayed polynomials. The strict
+positivity proved in Sections 4 and 5 at \(b=0\) gives
+
+\[
+c_V\ge C_0(s)>0,\qquad c_P\ge D_0(s)>0.
+\tag{6.12}
+\]
+
+For a fully explicit specification,
+
+\[
+\begin{aligned}
+b_F&=-\frac{3s^3-67s^2+320s-192}{4s(11s-64)},\\
+b_G&=-\frac{15s^3-347s^2+1720s-1248}{4(79s^2-560s+576)}.
+\end{aligned}
+\tag{6.13}
+\]
+
+The denominators are nonzero by the strictly negative degree-four
+Hessian. From (2.6) the planar quadratic terms are \(-2(q-q_V)t^2\) and
+\(-5(q-q_P)t^2\). The reduced critical equation consequently reads
+
+\[
+-4(q-q_V)t+4c_Vt^3+O(t^5)=0,
+\qquad
+-10(q-q_P)t+4c_Pt^3+O(t^5)=0
+\tag{6.14}
+\]
+
+along the corresponding even analytic branch. In writing the remainders
+we used \(q(t)-q_*=O(t^2)\) and rotation symmetry. Dividing by \(t\)
+gives precisely (6.1). The planar branches lie strictly on the \(q>q_*\)
+side for small nonzero \(t\).
+
+\Needspace{8\baselineskip}\section{7. Classification without a symmetry
+assumption}\label{classification-without-a-symmetry-assumption}
+
+\subsection{7.1. A slice for translations and
+dilations}\label{a-slice-for-translations-and-dilations}
+
+Write \(\langle\cdot\rangle\) for normalized spherical average.
+Normalize a near-ball domain by moving its centroid to zero and then
+making the mean of its radial function equal to one. These operations
+preserve criticality because both functionals are translation and scale
+invariant. A sufficiently small \(C^{k,\gamma}\) perturbation of the
+sphere remains star-shaped after this centering. The new radial function
+is still \(C^{k,\gamma}\) and close to one: transversality of rays to
+the nearby boundary and the implicit-function theorem in local sphere
+charts give this assertion. No differentiability in a translation
+parameter as an operator on the same Hölder space is needed here.
+
+Define
+
+\[
+\mathcal X=\{\zeta\in C^{k,\gamma}(S^{n-1}):
+\langle\zeta\rangle=0,\ \langle\zeta\omega\rangle=0\}.
+\tag{7.1}
+\]
+
+For \(\zeta\) small, the centroid condition can be imposed by an
+analytic vector \(a=a(\zeta)\in\mathbb R^n\):
+
+\[
+R(\zeta)=1+\zeta+a(\zeta)\cdot\omega,
+\qquad \langle R(\zeta)^{n+1}\omega\rangle=0.
+\tag{7.2}
+\]
+
+At \((\zeta,a)=(0,0)\) the derivative of the second expression with
+respect to \(a\) is \((n+1)I/n\). Its derivative in
+\(\zeta\in\mathcal X\) is zero. The finite-dimensional implicit-function
+theorem with Banach parameters yields a unique analytic \(a\), with
+\(a(0)=0\) and \(Da(0)=0\). The construction is \(O(n)\)-equivariant. If
+\(\zeta\) is centrally even, then \(a(\zeta)=0\) by uniqueness.
+
+Set \(\mathcal E(q,\zeta)=\log F_q(\Omega_{R(\zeta)})\) or
+\(\log G_q(\Omega_{R(\zeta)})\). The analytic construction in Section
+2.1 applies without a symmetry restriction. Its gradient on the slice is
+an analytic map to the corresponding space
+\(\mathcal Y=C^{k-r,\gamma}\cap\{\ell=0,1\text{ modes vanish}\}\), where
+\(r=1\) for \(F\) and \(r=2\) for \(G\).
+
+To see the gradient assertion explicitly, let \(Z\) be the radial
+gradient in (2.2). Differentiating (7.2) expresses \(Da(\zeta)[v]\) as
+the inverse of the finite matrix
+
+\[
+(n+1)\langle R^n\omega\otimes\omega\rangle
+\tag{7.3}
+\]
+
+applied to \(-(n+1)\langle R^n v\omega\rangle\). Thus
+\(D_\zeta\mathcal E[v]=\langle Z,v+Da[v]\cdot\omega\rangle\) is
+represented by \(Z\) plus a finite-rank analytic correction with
+\(C^{k,\gamma}\) coefficients. Projection away from degrees zero and one
+gives the claimed analytic gradient \(\mathcal G\) with no loss beyond
+\(r\) derivatives.
+
+Zero gradient on this slice is equivalent to unrestricted criticality.
+Indeed annihilating the tangent space to the two constraints means that
+the radial derivative is a linear combination of the derivative of mean
+radius and of the centroid moment \(M(\Omega)=\int_\Omega x\,dx\). At a
+centered normalized domain, dilation has mean-radius derivative one and
+moment derivative \((n+1)M=0\). Scale invariance therefore makes the
+mean-radius multiplier zero. Translation by a vector \(v\) has moment
+derivative \(|\Omega|v\). Translation invariance then makes every moment
+multiplier zero. Hence the unrestricted first variation vanishes.
+Conversely unrestricted criticality plainly implies slice criticality.
+
+\subsection{7.2. Reduction to trace-free symmetric
+matrices}\label{reduction-to-trace-free-symmetric-matrices}
+
+The linearization of \(\mathcal G\) at the ball has precisely the
+harmonic multipliers from (2.6) in Section 2.2, since \(Da(0)=0\) and
+the ball is unrestricted critical. At \(q=q_*\) its kernel is the entire
+space \(\mathcal H_2\) of degree-two harmonics; every degree
+\(\ell\ge3\) has a strictly negative multiplier. The complement
+isomorphism proof in Section 2.2 works on all harmonics of degrees at
+least three, not just invariant ones: the same Dirichlet-to-Neumann
+compact perturbation, index-zero argument and harmonic testing apply.
+
+Identify \(\mathcal H_2\) with the space \(\mathrm{Sym}_0(n)\) of real
+trace-free symmetric matrices via
+
+\[
+H_A(\omega)=\omega^TA\omega.
+\tag{7.4}
+\]
+
+Let \(\Pi_2\) be the harmonic projection and solve
+
+\[
+(I-\Pi_2)\mathcal G(q,H_A+w)=0,\qquad w\perp\mathcal H_2.
+\tag{7.5}
+\]
+
+The analytic implicit-function theorem supplies a unique \(w=w(q,A)\),
+with \(w(q,0)=0\), \(D_Aw(q,0)=0\), and \(w=O(|A|^2)\). Uniqueness makes
+\(w\) equivariant under the action of \(O(n)\). In particular, the
+transformation \(-I\) fixes every \(A\), so \(w(q,A)\) is centrally
+even. Consequently the centroid correction \(a(H_A+w)\) vanishes
+identically on the reduced family. The slice used to remove translations
+therefore does not alter any coefficient computed on the even paths in
+the preceding calculations.
+
+Define the reduced energy
+
+\[
+\mathscr E(q,A)=\mathcal E(q,H_A+w(q,A))-\mathcal E(q,0).
+\tag{7.6}
+\]
+
+Its critical points correspond exactly to the unrestricted critical
+domains near the ball. The implication follows by differentiating (7.6):
+the complement gradient vanishes by (7.5), and \(D_Aw\) is orthogonal to
+\(\mathcal H_2\). It is \(O(n)\)-invariant under conjugation of \(A\).
+
+The spherical moments are
+
+\[
+\langle H_A^2\rangle=\frac{2\operatorname{tr}A^2}{n(n+2)},
+\qquad
+\langle H_A^3\rangle=\frac{8\operatorname{tr}A^3}{n(n+2)(n+4)}.
+\tag{7.7}
+\]
+
+They follow by diagonalizing \(A\), expanding the powers, and using the
+moments of squared sphere coordinates; the terms containing
+\(\operatorname{tr}A\) vanish. The endpoint calculations of Section 3,
+valid for every degree-two harmonic, and the kernel property imply
+
+\[
+\begin{gathered}
+\mathscr E(q,A)=\kappa_2 e_2(q)\operatorname{tr}A^2
++\kappa_3 C_*\operatorname{tr}A^3
++O(|A|^4+|q-q_*||A|^3),\\
+\kappa_2=\frac2{n(n+2)},\quad
+\kappa_3=\frac8{n(n+2)(n+4)}.
+\end{gathered}
+\tag{7.8}
+\]
+
+Here \(C_*\) is \(C_V(n,j^2/n)\) or \(C_P(n,j^2/n)\). For \(n\ge3\) it
+is nonzero by the classical Bessel-zero transcendence result explained
+in Section 3. Equation (7.8) is an analytic Taylor expansion, so its
+derivatives have the corresponding differentiated orders. The cubic
+coefficient is unchanged by the complement correction because the
+Hessian vanishes on \(\mathcal H_2\) and \(w=O(|A|^2)\).
+
+\subsection{7.3. Excluding three distinct matrix
+eigenvalues}\label{excluding-three-distinct-matrix-eigenvalues}
+
+We give the finite-dimensional argument explicitly; no novel general
+invariant-theory theorem is being claimed. Extend the reduced energy to
+diagonal matrices of arbitrary trace by setting
+
+\[
+f(q,z_1,\ldots,z_n)=\mathscr E(q,\operatorname{diag}(z_i-\bar z)),
+\qquad \bar z=\frac1n\sum_i z_i.
+\tag{7.9}
+\]
+
+It is analytic and symmetric in the \(z_i\). Let
+\(g_i=\partial_{z_i}f\). Symmetry implies that \(g_i-g_j\) vanishes on
+\(z_i=z_j\), and analytic division by that linear coordinate gives
+
+\[
+g_i-g_j=(z_i-z_j)B_{ij}(q,z).
+\tag{7.10}
+\]
+
+For trace-zero \(z\), equation (7.8) gives
+
+\[
+B_{ij}=2\kappa_2e_2(q)+3\kappa_3C_*(z_i+z_j)+R_{ij},
+\tag{7.11}
+\]
+
+where \(R_{ij}=O(|z|^2+|q-q_*||z|)\). These are analytic remainders, not
+just pointwise estimates. The quotient is symmetric in \(i,j\) and
+equivariant under permutations. Thus \(R_{ij}-R_{i\ell}\) vanishes
+whenever \(z_j=z_\ell\). A second analytic division yields
+
+\[
+B_{ij}-B_{i\ell}=(z_j-z_\ell)
+\big[3\kappa_3C_*+O(|z|+|q-q_*|)\big].
+\tag{7.12}
+\]
+
+The remainder order can also be read term by term from the convergent
+analytic expansion: the higher energy terms have degree at least four in
+\(z\), or have a factor \(q-q_*\) and degree at least three; one
+differentiation and two divisions lower these degrees by three. If
+desired, each analytic division is justified directly by the integral
+formula for the difference of an analytic function at two values of one
+coordinate.
+
+At a critical trace-free matrix, \(g_i=0\) for every \(i\). Indeed the
+derivative on the trace-free diagonal subspace vanishes and
+\(\sum_i g_i=0\) by construction. If three eigenvalues
+\(z_i,z_j,z_\ell\) were distinct, (7.10) would give
+\(B_{ij}=B_{i\ell}=0\). Equation (7.12) would contradict \(C_*\ne0\)
+once \((q,z)\) is sufficiently close to \((q_*,0)\). Hence every nonzero
+critical matrix has at most two distinct eigenvalues.
+
+This proves the necessary exclusion for \(n\ge3\). For \(n=2\) every
+trace-free symmetric matrix already has at most two eigenvalues, so no
+cubic argument is required. A nonzero trace-free matrix cannot have only
+one eigenvalue in any dimension.
+
+\subsection{7.4. The finite list of branches and their
+slopes}\label{the-finite-list-of-branches-and-their-slopes}
+
+Every trace-free matrix with exactly two eigenvalues is orthogonally
+conjugate to
+
+\[
+A=t\left(\operatorname{diag}(I_p,0)-\frac pn I_n\right)
+\tag{7.13}
+\]
+
+for some \(1\le p\le n-1\) and \(t\ne0\). Exchanging the two blocks
+replaces \((p,t)\) by \((n-p,-t)\), so the list may be restricted to
+\(p\le\lfloor n/2\rfloor\). Its isotropy group contains
+\(K_p=O(p)\times O(n-p)\). Equivariance of the unique complement
+solution makes the full radial graph \(K_p\)-invariant.
+
+The fixed subspace of \(\mathcal H_2\) under \(K_p\) is exactly the line
+spanned by \(H_p\). Moreover the reduced gradient at \(tH_p\) belongs to
+this fixed line. Thus unrestricted criticality there is equivalent to
+its scalar equation along \(t\). The construction of Sections 2.2 and
+6.1 applies with \(K\) replaced by \(K_p\); the kernel remains
+one-dimensional and \(\partial_q e_2\ne0\). It gives a unique analytic
+curve \(q_p(t)\) and no other nontrivial solution near the origin in
+this class. Because every critical matrix has the form (7.13), this list
+exhausts all nearby critical domains.
+
+For the moments one can use the beta distribution of
+\(\sum_{i=1}^p\omega_i^2\), whose parameters are \(p/2,(n-p)/2\). It
+gives
+
+\[
+m_{2,p}=\frac{2p(n-p)}{n^2(n+2)},\qquad
+m_{3,p}=\frac{8p(n-p)(n-2p)}{n^3(n+2)(n+4)}.
+\tag{7.14}
+\]
+
+The slope formula from Section 6 is therefore
+
+\[
+q_p'(0)=-\frac{3C_*m_{3,p}}{2\partial_qe_2\,m_{2,p}},
+\tag{7.15}
+\]
+
+which is nonzero for \(p<n/2\). When \(p=n/2\), an orthogonal
+transformation exchanges the equal-sized coordinate blocks and sends
+\(H_p\) to \(-H_p\). Uniqueness makes \(q_p(t)\) even and identifies the
+two signs of \(t\) geometrically. Section 8 proves
+
+\[
+q_p(t)=q_*+\eta_nt^2+O(t^4),\qquad \eta_n\ne0,
+\tag{7.16}
+\]
+
+by an explicit fourth-order calculation. For \(n=2\),
+\(H_1=\tfrac12\cos2\theta\), so the planar amplitude in Section 6 equals
+half the parameter used here. Its positive coefficients therefore yield
+\(\eta_2>0\) for both functionals.
+
+\subsection{7.5. Consequences and precise
+limits}\label{consequences-and-precise-limits}
+
+Using the balanced calculation in Section 8, the ball is an isolated
+critical domain at \(q=q_*\) modulo similarities, even though it is a
+nonlinear saddle at that parameter. For unbalanced branches this follows
+from (7.15); for the balanced branch it follows from (7.16). Finitely
+many branches allow one common sufficiently small neighborhood.
+
+In the plane, for every fixed \(q>q_*\) sufficiently close to \(q_*\),
+there is exactly one nearby nonball critical domain up to similarities.
+For \(q\le q_*\) sufficiently close there is none. Indeed the even
+analytic curve has the form \(q(t)=Q(t^2)\) with \(Q'(0)>0\), so it is
+invertible as a function of \(t^2\ge0\); the two signs represent
+rotations of the same shape.
+
+In odd dimensions there are \((n-1)/2\) nearby nonball similarity
+classes at each sufficiently close \(q\ne q_*\). In even dimensions at
+least four, the \(n/2-1\) unbalanced classes occur on both sides, and
+the balanced class adds one on the side determined by the nonzero
+coefficient \(\eta_n\). No universal sign of that balanced coefficient
+in dimensions at least four is asserted here. Different \(p<n/2\) give
+distinct eigenvalue multiplicities in their degree-two projections and
+hence cannot be similar after normalization.
+
+\Needspace{8\baselineskip}\section{8. Balanced fourth-order
+expansion}\label{balanced-fourth-order-expansion}
+
+\subsection{8.1. The balanced harmonic}\label{the-balanced-harmonic}
+
+Let \(n\ge2\) be even, \(s=j_{n/2-1,1}^2\), and set
+
+\[
+\begin{gathered}
+h=\sum_{i=1}^{n/2}\omega_i^2-\frac12,\qquad Q=h^2-m_2,\\
+m_2=\langle h^2\rangle=\frac1{2(n+2)},\qquad
+m_4=\langle h^4\rangle=\frac3{4(n+2)(n+6)},\\
+N=\langle Q^2\rangle=\frac{n}{2(n+2)^2(n+6)}.
+\end{gathered}
+\tag{8.1}
+\]
+
+The beta distribution with parameters \(n/4,n/4\) proves these moments.
+All odd moments vanish. Direct differentiation gives
+
+\[
+-\Delta_Sh=2nh,\qquad |\nabla_Sh|^2=1-4h^2,\qquad
+-\Delta_SQ=4(n+2)Q.
+\tag{8.2}
+\]
+
+Thus \(h\) and \(Q\) have harmonic degrees two and four. Consider
+
+\[
+R=1+th+bt^2Q.
+\tag{8.3}
+\]
+
+Block exchange sends \(t\) to \(-t\), so the scalar functionals are
+even. We compute the critical quartic coefficients \(K_V(b)\) and
+\(K_P(b)\) of the two logarithmic functionals. Their quadratic
+coefficients in \(b\) are negative. Their maxima \(c_V(n),c_P(n)\) are
+nonzero for every even \(n\). Hence the balanced critical curves satisfy
+
+\[
+q(t)=q_*+\eta_nt^2+O(t^4),\qquad
+\eta_n=-\frac{2c_*(n)}{\partial_qe_2\,m_2}\ne0.
+\tag{8.4}
+\]
+
+Only nonvanishing is proved for all even dimensions; the planar sign is
+positive by Section 6.
+
+\subsection{8.2. Eigenvalue jet and its analytic
+remainder}\label{eigenvalue-jet-and-its-analytic-remainder}
+
+Let \(f_0\) be the regular radial ground state at eigenvalue \(s\),
+normalized by \(f_0(1)=0,f_0'(1)=1\). For \(\ell>0\), let \(f_\ell\) be
+the regular degree-\(\ell\) radial Helmholtz solution, normalized by
+\(f_\ell(1)=1\). Its boundary value is nonzero before normalization
+because the first eigenspace is radial. Write
+
+\[
+d_2=\frac sn-n,\qquad
+d_4=-n-2+\frac{s[n(n+2)-s]}{(n+2)[n(n+4)-2s]}.
+\tag{8.5}
+\]
+
+These equal \(f_2'(1),f_4'(1)\) by the Bessel recurrence. Denote higher
+derivatives at one by \(f_{\ell r}\). The radial ODE gives
+
+\[
+\begin{aligned}
+f_{02}&=-(n-1),\qquad f_{03}=n(n-1)-s,\\
+f_{04}&=(n-1)[2s-n(n+1)],\\
+f_{22}&=-(n-1)d_2-s+2n,\\
+f_{23}&=-(n-1)f_{22}+(3n-1-s)d_2-4n,\\
+f_{42}&=-(n-1)d_4-s+4(n+2).
+\end{aligned}
+\tag{8.6}
+\]
+
+Set
+
+\[
+a=d_2+\frac{n-1}{2},\quad A=am_2,\quad a_4=a-b,
+\tag{8.7}
+\]
+
+\[
+c=-A(1+f_{02}-d_2)
+-[b(f_{02}-d_2)+a_4d_4]\frac{N}{m_2}
+-\left(\frac{f_{03}}6-\frac{f_{22}}2\right)\frac{m_4}{m_2},
+\tag{8.8}
+\]
+
+and define \(B\) by
+
+\[
+\begin{aligned}
+-B={}&\frac{f_{02}}2(b^2N+A^2+2Am_2)
++\frac{f_{03}}2(bN+Am_2)+\frac{f_{04}}{24}m_4\\
+&-d_2Am_2-f_{22}(bN+Am_2)-\frac{f_{23}}6m_4
++a_4\left(d_4b+\frac{f_{42}}2\right)N+cd_2m_2.
+\end{aligned}
+\tag{8.9}
+\]
+
+Then
+
+\[
+\log\frac{\lambda_1(\Omega_t)}s
+=2At^2+(2B-A^2)t^4+O(t^6).
+\tag{8.10}
+\]
+
+To prove this, put \(\rho=(1+At^2+Bt^4)r\) and construct a finite sum
+beginning with
+
+\[
+U=f_0(\rho)-tf_2(\rho)h+t^2a_4f_4(\rho)Q
++t^3[cf_2(\rho)h+f_6(\rho)H_6]+t^4U_4.
+\tag{8.11}
+\]
+
+Here \(H_6\) is a degree-six harmonic and \(U_4\) is a sum of
+degree-four and degree-eight regular Helmholtz modes. At the moving
+boundary,
+
+\[
+\rho-1=th+t^2(bQ+A)+At^3h+t^4(B+AbQ)+O(t^5).
+\tag{8.12}
+\]
+
+The constant and degree-four equations at order two give (8.7). At order
+three only degrees two and six occur. Projecting onto degree two, using
+\(\Pi_2(hQ)=(N/m_2)h\) and \(\Pi_2(h^3)=(m_4/m_2)h\), gives (8.8); the
+remaining equation determines \(H_6\).
+
+At order four, take the boundary average. The three terms in the first
+line of (8.9) come from \(f_0\). The first three terms of the second
+line come from \(-tf_2h\). The last two come from the degree-four and
+corrected degree-two terms. The degree-six term pairs with \(h\) to
+zero. Hence the mean equation gives (8.9). The remaining modes at this
+order have degrees four and eight and are cancelled by \(U_4\).
+
+Every term solves the Helmholtz equation exactly at eigenvalue
+\(s(1+At^2+Bt^4)^2\). The remaining Dirichlet data are \(O(t^5)\) in a
+fixed smooth norm. Subtract an \(H^1\) boundary lift of that order and
+test against the normalized first eigenfunction on \(\Omega_t\). The
+pairing has a nonzero limit, as in Section 4, so the eigenvalue error is
+\(O(t^5)\). Analytic dependence from Section 2.1 and block symmetry make
+the eigenvalue an even function of \(t\), improving the scalar remainder
+to \(O(t^6)\). Taking logarithms proves (8.10). This argument justifies
+the jet analytically, not just formally.
+
+\subsection{8.3. Torsion and geometric
+jets}\label{torsion-and-geometric-jets}
+
+Write the normalized torsion, volume and perimeter as
+\(1+X_2t^2+X_4t^4+O(t^6)\). Their quadratic coefficients are
+
+\[
+T_2=\frac{(n+2)(n-3)}2m_2,\quad
+V_2=\frac{n(n-1)}2m_2,\quad
+P_2=\frac{n^2-n+2}2m_2.
+\tag{8.13}
+\]
+
+Their quartic coefficients are
+
+\[
+\begin{aligned}
+T_4=(n+2)\bigg\{&
+\left[\frac{n-7}2b^2+\frac{n^2-7n+16}2b
+-\frac{3(n-1)(n-4)}4\right]N\\
+&+\frac{48+n^3+10n^2-27n}{24}m_4-\frac{3n(n-1)}4m_2^2\bigg\},\\
+V_4={}&\frac{n(n-1)}2b^2N+\frac{n(n-1)(n-2)}2bN
++\frac{n(n-1)(n-2)(n-3)}{24}m_4,\\
+P_4={}&\left[\frac{(n-1)(n-2)}2+2(n+2)\right]b^2N\\
+&+\left[\frac{(n-1)(n-2)(n-3)}2+2(n-3)(n+1)\right]bN\\
+&+\left[\frac{(n-1)(n-2)(n-3)(n-4)}{24}
++\frac{n(n-3)(n-4)}6\right]m_4
+-\frac{1-8m_2+16m_4}{8}.
+\end{aligned}
+\tag{8.14}
+\]
+
+Here is a derivation of the torsion formula. The first corrections are
+
+\[
+w_0=\frac{1-r^2}{2n},\quad w_1=\frac{r^2h}{n},\quad
+w_2=\frac{(b-3/2)r^4Q-(3/2)m_2}{n},
+\quad
+w_3|_S=\frac{(6-5b)hQ-h^3}{n}.
+\tag{8.15}
+\]
+
+They cancel the moving boundary through order three. At order four,
+harmonic orthogonality gives
+\(\langle h\partial_rw_3\rangle=2[(6-5b)N-m_4]/n\), and the mean
+boundary correction becomes
+
+\[
+\langle w_4|_S\rangle
+=\frac{(-7b^2/2+8b-3)N+2m_4}{n}.
+\tag{8.16}
+\]
+
+The fourth-order signed shell integral, divided by \(|S^{n-1}|\), is
+
+\[
+\frac1n\left\{\left[\frac{b^2}2+\frac{n-7}2b+\frac{15-3n}4\right]N
++\frac{n^2+10n-27}{24}m_4-\frac{3(n-1)}4m_2^2\right\}.
+\tag{8.17}
+\]
+
+For verification, the four contributions before collection, multiplied
+by \(n/|S|\), are \(-b^2N/2-(2n-1)bN/2-(n-1)^2m_4/8\) from \(w_0\);
+\((n+1)bN+n(n+1)m_4/6\) from \(tw_1\);
+\((b-3/2)bN+(b-3/2)(n+3)N/2-3(n-1)m_2^2/4\) from \(t^2w_2\); and
+\((6-5b)N-m_4\) from \(t^3w_3\). Adding the ball integral
+\(|S|\langle w_4|_S\rangle/n\) and dividing by \(T(B)=|S|/[n^2(n+2)]\)
+gives \(T_4\).
+
+The corrections are finite harmonic polynomials. Their sum has Laplacian
+exactly \(-1\) and uncancelled boundary value \(O(t^5)\). The maximum
+principle controls the true torsion error. Analyticity and evenness
+improve the scalar integral remainder to \(O(t^6)\).
+
+Volume follows by expanding \(\langle R^n\rangle\). For perimeter expand
+\(\langle R^{n-1}\sqrt{1+|\nabla R|^2/R^2}\rangle\) and use
+
+\[
+\begin{gathered}
+\langle|\nabla Q|^2\rangle=4(n+2)N,\quad
+\langle h\nabla h\cdot\nabla Q\rangle=2(n+2)N,\quad
+\langle Q|\nabla h|^2\rangle=-4N,\\
+\langle h^2|\nabla h|^2\rangle=\frac{2n}3m_4,\qquad
+\langle|\nabla h|^4\rangle=1-8m_2+16m_4.
+\end{gathered}
+\tag{8.18}
+\]
+
+These identities follow from (8.2) and integration by parts. In
+particular the final negative term of \(P_4\) comes from the quartic
+term in the square-root expansion.
+
+\subsection{8.4. Complement elimination and an explicit rational
+coefficient}\label{complement-elimination-and-an-explicit-rational-coefficient}
+
+Use \(q_V,q_P\) from (1.2), \(\alpha_V=((n+2)q_V-2)/n\) and
+\(\beta_P=((n+2)q_P-2)/(n-1)\). The two critical quartics are explicitly
+specified by
+
+\[
+\begin{aligned}
+K_V(b)&=2B-A^2+q_V(T_4-T_2^2/2)-\alpha_V(V_4-V_2^2/2),\\
+K_P(b)&=2B-A^2+q_P(T_4-T_2^2/2)-\beta_P(P_4-P_2^2/2).
+\end{aligned}
+\tag{8.19}
+\]
+
+The coefficient of \(b^2\) is \(e_4(q_*)N<0\) by the established
+degree-four Hessian. In this balanced symmetry class, the quadratic
+complement term must be a multiple of \(Q\): products of two degree-two
+harmonics have only degrees zero, two and four; block exchange excludes
+degree two here, and the mean-radius normalization excludes zero. The
+complement equation selects the unique maximum of \(K_*\).
+
+Writing \(K_*=u_*b^2+v_*b+w_*\), the reduced coefficient is therefore
+
+\[
+b_*=-\frac{v_*}{2u_*},\qquad c_*(n)=w_*-\frac{v_*^2}{4u_*}.
+\tag{8.20}
+\]
+
+Higher complement terms do not affect this quartic coefficient because
+the first velocity belongs to the Hessian kernel. This is the same
+argument as in Section 6.
+
+To prove nonvanishing without a dimension-by-dimension numerical test,
+define
+
+\[
+\begin{aligned}
+D_V&=-2n^3-16n^2-24n+(5n+12)s,\\
+D_P&=(15n^2+43n+12)s^2
+-(6n^4+52n^3+116n^2+72n)s+12n^4+72n^3+96n^2.
+\end{aligned}
+\tag{8.21}
+\]
+
+Rational simplification of (8.5)-(8.20) gives
+
+\[
+c_V(n)=\frac{N_V(n,s)}{4n^3s(n+2)^2(n+6)D_V},\qquad
+c_P(n)=\frac{N_P(n,s)}{4n^3(n+2)^2(n+6)(3n-1)D_P}.
+\tag{8.22}
+\]
+
+Here \(N_*=\sum_{r=0}^5 a_{*,r}s^r\), with coefficients
+
+\[
+\begin{aligned}
+a_{V,0}&=-16n^6(n+2)(n+4),\\
+a_{V,1}&=16n^5(n+2)(3n+16),\\
+a_{V,2}&=-2n^3(n^4+34n^3+208n^2+136n-288),\\
+a_{V,3}&=n^2(17n^3+94n^2-512n-1152),\\
+a_{V,4}&=-2n(2n^3+3n^2-214n-360),\\
+a_{V,5}&=8(n^2-10n-18),
+\end{aligned}
+\tag{8.23}
+\]
+
+and
+
+\[
+\begin{aligned}
+a_{P,0}&=-4n^5(n+2)(n+4)(9n^3-6n^2+49n-36),\\
+a_{P,1}&=4n^4(n+2)(66n^4+269n^3-565n^2-548n+108),\\
+a_{P,2}&=-n^3(18n^6+471n^5+1980n^4-4895n^3-19470n^2-8596n+4608),\\
+a_{P,3}&=n^2(117n^5+168n^4-8229n^3-18886n^2-4958n+3960),\\
+a_{P,4}&=-2n(3n-1)(6n^4-5n^3-753n^2-1622n-648),\\
+a_{P,5}&=8(3n-1)(3n^3-31n^2-68n-18).
+\end{aligned}
+\tag{8.24}
+\]
+
+These algebra identities follow by substitution in (8.19) and completing
+the square as in (8.20).
+
+\subsection{8.5. Nonvanishing and the critical
+curve}\label{nonvanishing-and-the-critical-curve}
+
+For each integer \(n\ge2\), both polynomials \(N_V(n,s)\) and
+\(N_P(n,s)\) are nonzero rational polynomials in \(s\). Their constant
+terms in (8.23)-(8.24) suffice: the first is negative, and in the second
+\(9n^3-6n^2+49n-36=n^2(9n-6)+(49n-36)>0\).
+
+The classical Siegel theorem, whose applicable statement is documented
+in Section 3, makes the nonzero Bessel zero \(j_{n/2-1,1}\)
+transcendental. Its square \(s\) is also transcendental. Thus neither
+numerator in (8.22) can vanish. Neither denominator can vanish: its
+nonconstant factors are nonzero rational polynomials in \(s\), since
+\(5n+12>0\) and \(15n^2+43n+12>0\). The intermediate denominator in
+(8.5) is also nonzero, consistently with spectral simplicity.
+
+Consequently \(c_V(n)c_P(n)\ne0\). Differentiating the reduced energy
+\(e_2(q)m_2t^2+c_*t^4+\cdots\) and using \(\partial_qe_2\ne0\) proves
+(8.4). This completes the balanced nondegeneracy step in Theorem B and
+Corollary C.
+
+For \(n=2\), \(h=\cos2\theta/2\), \(Q=\cos4\theta/8\). Substituting
+\(t_{\rm planar}=t/2\) and \(b_{\rm planar}=b/2\) recovers the earlier
+planar eigenvalue, torsion and perimeter jets exactly. The reduced
+quartic is one sixteenth of the earlier one, so it is positive. The sign
+in every higher even dimension is left open.
+
+\Needspace{8\baselineskip}\section{9. Local versus global
+maximality}\label{local-versus-global-maximality}
+
+For either \(F_q\) or \(G_q\) of Section 3, let \(q_*\) be its upper
+local stability threshold. In every dimension \(n\ge2\), there is
+\(\varepsilon_n>0\) such that for every
+
+\[
+q_*<q<q_*+\varepsilon_n
+\tag{9.1}
+\]
+
+the ball is a strict local maximizer, modulo its Euclidean and scaling
+symmetries, but is not a global maximizer even among smooth strictly
+convex domains. The local topology here is the \(C^{2,\gamma}\) topology
+used in the primary source. The constant can differ for the two
+functionals. No numerical size is asserted.
+
+\textbf{Proof.} The endpoint theorem proved in Sections 3-5 supplies a
+fixed smooth strictly convex domain \(\Omega_*\) with
+
+\[
+\log\frac{F_{q_*}(\Omega_*)}{F_{q_*}(B)}>0
+\quad\text{or}\quad
+\log\frac{G_{q_*}(\Omega_*)}{G_{q_*}(B)}>0,
+\tag{9.2}
+\]
+
+as appropriate. Choose a sufficiently small but nonzero deformation from
+that proof, then keep it fixed. For this domain the logarithmic ratio is
+an affine, hence continuous, function of \(q\). Its strict positivity
+persists for all \(q\) in an interval containing \(q_*\). This proves
+failure of global optimality in (9.1). Local strict maximality for every
+\(q>q_*\) is already Theorem 1.6 or Theorem 6.3 of
+Amato-Nitsch-Trombetti-Villone,
+\href{https://doi.org/10.1007/s11118-026-10328-2}{final article}.
+Combining that established result with (9.2) proves the assertion. This
+argument does not assert a neighborhood uniform as \(q\downarrow q_*\).
+The competitor is fixed, and need not belong to the shrinking
+neighborhood on which local maximality holds. \(\square\)
+
+\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  V. Amato, C. Nitsch, C. Trombetti and F. Villone, \emph{On Some
+  Functionals Involving Torsional Rigidity, Principal Eigenvalue and
+  Perimeter}, Potential Analysis 65, article 25 (2026).
+  \href{https://doi.org/10.1007/s11118-026-10328-2}{DOI}.
+\item
+  A. Celentano, C. Nitsch and C. Trombetti, \emph{On a Serrin Type
+  Overdetermined Problem}, Milan Journal of Mathematics 92 (2024),
+  579-590. \href{https://doi.org/10.1007/s00032-024-00405-9}{DOI}.
+\item
+  M. G. Crandall and P. H. Rabinowitz, \emph{Bifurcation from simple
+  eigenvalues}, Journal of Functional Analysis 8 (1971), 321-340.
+  \href{https://doi.org/10.1016/0022-1236(71)90015-2}{DOI}.
+\item
+  L. Lorch and M. E. Muldoon, \emph{Transcendentality of zeros of higher
+  derivatives of functions involving Bessel functions}, International
+  Journal of Mathematics and Mathematical Sciences 18 (1995), 551-560.
+  \href{https://doi.org/10.1155/S0161171295000706}{DOI}.
+\item
+  D. Gilbarg and N. S. Trudinger, \emph{Elliptic Partial Differential
+  Equations of Second Order}, second edition, Classics in Mathematics,
+  Springer (2001).
+  \href{https://doi.org/10.1007/978-3-642-61798-0}{Publisher}. Classical
+  Schauder theory and elliptic solvability are used as established
+  background.
+\item
+  A. L. Masiello, G. Paoli and F. Salerno, \emph{On some functionals for
+  which the ball is a saddle shape}, arXiv:2609.17083v1 (September 15,
+  2026). \href{https://arxiv.org/abs/2609.17083}{Primary record}.
+\item
+  P. Chossat, R. Lauterbach and I. Melbourne, \emph{Steady-state
+  bifurcation with O(3)-symmetry}, Archive for Rational Mechanics and
+  Analysis 113 (1991), 313-376.
+  \href{https://doi.org/10.1007/BF00374697}{DOI}.
+\end{enumerate}
+
+\end{document}

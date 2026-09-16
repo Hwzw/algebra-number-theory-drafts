@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and note its unreviewed preprint status."
+type: article
+title: "Endpoint saddles and the local classification of eigenvalue-torsion critical domains"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+date-released: 2026-09-16
+version: 1.0.0
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P53-critical-eigenvalue-torsion"
+abstract: "Nonlinear endpoint saddles and all-dimensional local classification for volume- and perimeter-normalized eigenvalue-torsion functionals. AI-assisted unreviewed preprint."

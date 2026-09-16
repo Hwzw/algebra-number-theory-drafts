@@ -1,0 +1,19 @@
+{
+  "status": "Exact algebra diagnostics only; analytic bifurcation proof is note 0245",
+  "degree_two_volume_coefficient": "-n*q - 2*q + 2*x - 2",
+  "degree_two_perimeter_coefficient": "(-3*n**2*q - 5*n*q + 4*n*x - 2*n + 2*q - 4*x + 6)/(2*(n - 1))",
+  "both_critical_coefficients_zero": true,
+  "volume_transversality": "-n - 2",
+  "perimeter_transversality": "-(n + 2)*(3*n - 1)/(2*(n - 1))",
+  "quartic_b_squared_matches_degree_four_hessian": true,
+  "both_quartic_b_squared_coefficients_strictly_negative_on_certified_interval": true,
+  "planar_volume_b": "(-3*s**3 + 67*s**2 - 320*s + 192)/(4*s*(11*s - 64))",
+  "planar_perimeter_b": "(-15*s**3 + 347*s**2 - 1720*s + 1248)/(316*s**2 - 2240*s + 2304)",
+  "volume_reduced_quartic": "-(17*s**5 - 190*s**4 + 416*s**3 + 1104*s**2 - 2816*s + 1536)/(32*s*(11*s - 64))",
+  "perimeter_reduced_quartic": "-(127*s**5 - 1712*s**4 + 7045*s**3 - 8172*s**2 + 128*s + 4224)/(32*(79*s**2 - 560*s + 576))",
+  "source_report_sha256": {
+    "endpoint_expansion.json": "9031ac26570e4fb97580a6ff3d96f841313927a610683e49f94346d3856f7564",
+    "dimensional_endpoint_check.json": "9bcb65e60953d15cff3e75423fda2b084b781039cca291a5416408b6d5cc229b"
+  },
+  "script_sha256": "5f85b222fc3840e28b77da64343bf76eed8ffcc46d7a425272926f19f0ec0c61"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "Finite exact checks; not a universal proof or independent review",
+  "checks": [
+    {
+      "dimension": 4,
+      "all_boundary_modes_zero_through_order_four": true,
+      "frequency_A_matches_general_formula": true,
+      "frequency_B_matches_general_formula": true
+    },
+    {
+      "dimension": 6,
+      "all_boundary_modes_zero_through_order_four": true,
+      "frequency_A_matches_general_formula": true,
+      "frequency_B_matches_general_formula": true
+    }
+  ],
+  "script_sha256": "f0d3ee9aa55045b76503b12a5804801a0eff32de92f4298704dbe57e5a2b3ccc"
+}

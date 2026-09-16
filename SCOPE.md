@@ -76,3 +76,8 @@ The claimed results give a uniform L2 bounded-difference operator expansion for 
 ## P52: complete fixed-center planar Robin splitting
 
 For a bounded connected planar Lipschitz domain, a prescribed interior point and a fixed nonzero real Robin parameter on both boundaries, the claimed theorem constructs one area-preserving analytic strictly convex hole shape near a disk that completely splits every fixed limiting eigenvalue cluster for sufficiently small hole size. Every positive nodal order is identified through an exterior energy matrix and its successive Schur complements. The nonnodal direction has a separate signed first-order scale. Quantitative correctors and second coefficients belong to the same paper. The size threshold depends on the spectral window; no common positive threshold for the entire infinite spectrum, mixed nonnodal Neumann theorem or parameter-uniform statement is proved. Corrected Dirichlet matrix theory, generic simplicity and shape differentiation are credited prior work. See [the assessment](papers/P52-planar-robin-splitting/ASSESSMENT.md) for source-access and internal-admission limits.
+
+
+## P53: eigenvalue–torsion endpoints and local classification
+
+[P53](papers/P53-critical-eigenvalue-torsion/README.md) gives proposed endpoint saddles and a full local classification of critical domains for both normalized spectral products in every dimension. Classical Hessians, elliptic theory, symmetry reduction and Bessel transcendence are prior inputs. The original global convex perimeter inequality and a universal balanced-branch sign remain unresolved. The paper is internally assessed, with older full-text comparison limits disclosed; no independent certification is claimed.

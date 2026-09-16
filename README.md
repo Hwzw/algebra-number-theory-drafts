@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 52 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 53 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Endpoint saddles and nearby spectral critical domains
+
+[**P53: Endpoint saddles and the local classification of eigenvalue–torsion critical domains**](papers/P53-critical-eigenvalue-torsion/README.md), by **Henry Zweiman**, gives proposed nonlinear ball saddles at the volume and perimeter stability endpoints in every dimension and classifies all nearby critical domains up to similarities. The [25-page PDF](papers/P53-critical-eigenvalue-torsion/manuscript.pdf), [complete Markdown](papers/P53-critical-eigenvalue-torsion/manuscript.md) and [LaTeX](papers/P53-critical-eigenvalue-torsion/manuscript.tex) contain the proofs, including balanced even-dimensional nondegeneracy and exact local branch counts.
+
+The [assessment](papers/P53-critical-eigenvalue-torsion/ASSESSMENT.md) compares the final August 2026 endpoint question and a September 15 preprint. The [review](papers/P53-critical-eigenvalue-torsion/REVIEW.md) checks analytic boundary maps, full-kernel reduction, finite PDE jets and all-dimensional nonvanishing. Established Hessians, equivariant bifurcation methods and Bessel transcendence are credited. The original global convex perimeter conjecture remains open. This is one internally assessed, unreviewed preprint.
 
 ## Complete splitting by a single planar Robin hole
 
@@ -248,7 +254,7 @@ The [source assessment](papers/P15-countable-semiring-partitions/ASSESSMENT.md) 
 
 Its [source assessment](papers/P14-scalar-power-repair/ASSESSMENT.md), [internal proof audit](papers/P14-scalar-power-repair/REVIEW.md), and [artifact manifest](papers/P14-scalar-power-repair/manifest.json) state the evidence and limits. The originating agent performed the audit; no separate-agent or human review is claimed. Historical novelty and journal-level significance remain provisional. It is one consolidated contribution, not several papers counted by theorem. The original collection manifest continues to describe the earlier thirteen drafts; P14 has its own manifest.
 
-The active research target is 45 substantial distinct papers. This repository does not claim to contain 45 verified solutions, and the five stronger revisions do not increase its distinct-paper count.
+The original research target was 45 algebra/number-theory papers. The revised target is 20 qualifying papers across mathematics and applied mathematics. Historical archive size does not establish completion, and revisions do not increase the distinct-paper count.
 
 ## Original thirteen drafts
 
