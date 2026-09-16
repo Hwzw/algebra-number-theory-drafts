@@ -2240,7 +2240,7 @@ This is strictly below the value in (17.1) of the admissible two-interval profil
 
 ### 17.6. The two-interval profile and complete equality
 
-Only $N=2$ remains, since $N=1$ contradicts zero mean. Reflection exchanges the signs and sends $c$ to $-c$, so $G_2$ is even. Its unique minimum is at zero, and the unique depth vector has equal entries. The residual is antisymmetric and has three simple roots $a,1/2,1-a$. Its third derivative has the four signs in (17.2).
+Only $N=2$ remains, since $N=1$ contradicts zero mean. Reflection exchanges the signs and sends $c$ to $-c$, so $G_2$ is even. Its unique minimum is at zero, and the unique depth vector has equal entries. The residual is antisymmetric and has three simple roots $a,1/2,1-a$. The third derivative of the maximizing function has the four signs in (17.2).
 
 The first moment condition, after using antisymmetry, is
 

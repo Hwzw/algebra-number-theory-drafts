@@ -3,7 +3,7 @@
   "author": "Henry Zweiman",
   "revision": "1.12",
   "pdf_pages": 48,
-  "pdf_text_characters": 118155,
+  "pdf_text_characters": 118182,
   "replacement_characters": 0,
   "equation_tags": 186,
   "equation_tags_expected": true,
@@ -63,12 +63,12 @@
       48
     ],
     "resolution_dpi": 108,
-    "outcome": "All 48 pages rendered and inspected in twelve contact sheets. The final introductory paragraph placement changed pages 1 through 14, which were re-inspected in contact sheets; pages 15 through 48 have unchanged PNG hashes. Pages 1, 2 and 44 through 47 were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading remains. The arbitrary-maximizer endpoint argument, regularity, endpoint action derivatives, count comparison and explicit equality classification are legible."
+    "outcome": "All 48 pages rendered and inspected in twelve contact sheets. The final introductory paragraph placement changed pages 1 through 14, which were re-inspected in contact sheets; pages 15 through 48 have unchanged PNG hashes. Pages 1, 2 and 44 through 47 were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading remains. The arbitrary-maximizer endpoint argument, regularity, endpoint action derivatives, count comparison and explicit equality classification are legible. A final pronoun clarification changed only page 47; it was re-inspected individually after rendering, with all other page hashes unchanged."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "b827ad2e543cd9c4dbca9d8ddc04fa7d6c76cdac67b9927d52a6014f0b727a93",
-    "manuscript.tex": "83c051f629bc36dd42633dd36f5616544bf345b5081a19e8549095ddb65347db",
-    "manuscript.pdf": "6b44c0ddbf9c72d86f1e941f9fe453d49b41869b468c1e12de18fd05c8da165d"
+    "manuscript.md": "75c45beb821eede3245d910ddccfb1831399a723872c26e9e185302afde43559",
+    "manuscript.tex": "a1be63d23150aa5c63b76418d86c905195dae38c1ed5c8fbaf8f9d44dbb87c7f",
+    "manuscript.pdf": "3c978ea804d71e5c977c930d1098c81f0147570896cc6833553cfea2a3c6acea"
   }
 }
