@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-15",
+  "files": [
+    {
+      "file": "amato-barbato-2026.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00526-026-03362-w.pdf",
+      "bytes": 544920,
+      "sha256": "18dcbad4b8b7d1c770e73686c7f57180f1fa3d265ae173446e096ed4929580df"
+    },
+    {
+      "file": "cito-2026.pdf",
+      "url": "https://cvgmt.sns.it/media/doc/paper/7102/cito26.pdf",
+      "bytes": 663809,
+      "sha256": "26259d0b7cc2e269c19c1e5ad8236100a49f68b03bf8b4d1eb3a7ae372706a98"
+    },
+    {
+      "file": "arxiv-history.html",
+      "url": "https://arxiv.org/abs/2506.07592",
+      "bytes": 39316,
+      "sha256": "b85a278780072cd3d5356058818833c204ee64c73a4534892e9fb8712db52ae3"
+    },
+    {
+      "file": "brasco-de-philippis-velichkov-2015.pdf",
+      "url": "https://cvgmt.sns.it/media/doc/paper/2161/fkstability_final_rev.pdf",
+      "bytes": 1465371,
+      "sha256": "94867fd8fbe5acb21b7c8a636df2b6a5ed93978fb0654a877bb9326fe08962fe"
+    },
+    {
+      "file": "brasco-duality-2022.pdf",
+      "url": "https://aimspress.com/aimspress-data/mine/2022/4/PDF/mine-04-04-032.pdf",
+      "bytes": 405431,
+      "sha256": "0c23177a0f734fa0dd92bebe4d7842a24099763ae70301b043806a1f8a470adf"
+    },
+    {
+      "file": "barbato-salerno-local-2026.html",
+      "url": "https://arxiv.org/html/2606.27031v1",
+      "bytes": 616908,
+      "sha256": "e79a4681840c28e152a755a0d8be6bd69133d1092c577a1345a3e40886ea1abd"
+    },
+    {
+      "file": "cavallina-two-phase.pdf",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2082-02.pdf",
+      "bytes": 1595704,
+      "sha256": "e5dee1531b2da8e3f747a61d6e3779a149b3a34a48fd8de5c269aa4557dba0a9"
+    },
+    {
+      "file": "guerra-machado-ramos-2026.html",
+      "url": "https://arxiv.org/html/2609.07772v1",
+      "bytes": 833817,
+      "sha256": "4f16916318822451b2fa412946698e509c13097895227b398e275c4086005df3"
+    },
+    {
+      "file": "guerra-machado-ramos-history.html",
+      "url": "https://arxiv.org/abs/2609.07772",
+      "bytes": 39622,
+      "sha256": "fa7326b38a57b7edaa44a5ba3384da69bd72cdc7f38dcc0c4e0b5fca984619c4"
+    },
+    {
+      "file": "hensel-laux-2026.html",
+      "url": "https://arxiv.org/html/2606.17172v1",
+      "bytes": 902373,
+      "sha256": "2387e5887336f692b1385d6d4b7675560e2af0e7194214080de8d949566fb6c2"
+    },
+    {
+      "file": "hensel-laux-history.html",
+      "url": "https://arxiv.org/abs/2606.17172",
+      "bytes": 38595,
+      "sha256": "62bbf9a3fdd99b2aac2867801d1fb378e0d3c40e3f7be8bf9a0b20fcab9812ec"
+    },
+    {
+      "file": "barbato-salerno-robin-v2.html",
+      "url": "https://arxiv.org/html/2504.06103v2",
+      "bytes": 653356,
+      "sha256": "5ddb2ba7bc3a93622af9771266f5c8b9ba010f898f457bd3c553171f94e090d9"
+    },
+    {
+      "file": "barbato-salerno-robin-history.html",
+      "url": "https://arxiv.org/abs/2504.06103",
+      "bytes": 40039,
+      "sha256": "ec726906326b5d16ecbf7b1d626cd4aad8e452444567b3962260125c15723330"
+    },
+    {
+      "file": "cito-history.html",
+      "url": "https://arxiv.org/abs/2504.21607",
+      "bytes": 40012,
+      "sha256": "f9bde9977fdbdc5122fb288571127249aeabb3dd0d7cefcc4a034810340c5766"
+    }
+  ]
+}

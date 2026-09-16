@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-15",
+  "complete_feeds": 6,
+  "unique_entries": 253,
+  "queries": [
+    {
+      "key": "annular-torsion",
+      "query": "(all:annulus OR all:annular OR all:\"multiply connected\") AND (all:torsion OR all:torsional) AND (all:stability OR all:quantitative)",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3Aannulus+OR+all%3Aannular+OR+all%3A%22multiply+connected%22%29+AND+%28all%3Atorsion+OR+all%3Atorsional%29+AND+%28all%3Astability+OR+all%3Aquantitative%29&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 5,
+      "returned": 5,
+      "truncated": false
+    },
+    {
+      "key": "amato-barbato",
+      "query": "au:Amato AND au:Barbato",
+      "url": "https://export.arxiv.org/api/query?search_query=au%3AAmato+AND+au%3ABarbato&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 5,
+      "returned": 5,
+      "truncated": false
+    },
+    {
+      "key": "sharp-torsion",
+      "query": "all:torsion AND (all:sharp OR all:stability) AND submittedDate:[202501010000 TO 202609152359]",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3Atorsion+AND+%28all%3Asharp+OR+all%3Astability%29+AND+submittedDate%3A%5B202501010000+TO+202609152359%5D&start=0&max_results=200&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 146,
+      "returned": 146,
+      "truncated": false
+    },
+    {
+      "key": "moment-stability",
+      "query": "(all:\"Diaz-Weinstein\" OR all:\"D\u00edaz-Weinstein\" OR all:\"polar moment\") AND (all:torsion OR all:torsional)",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22Diaz-Weinstein%22+OR+all%3A%22D%C3%ADaz-Weinstein%22+OR+all%3A%22polar+moment%22%29+AND+%28all%3Atorsion+OR+all%3Atorsional%29&start=0&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 0,
+      "returned": 0,
+      "truncated": false
+    },
+    {
+      "key": "calibration-torsion",
+      "query": "(all:calibration OR all:calibrated) AND (all:torsion OR all:torsional OR all:annular OR all:annulus)",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3Acalibration+OR+all%3Acalibrated%29+AND+%28all%3Atorsion+OR+all%3Atorsional+OR+all%3Aannular+OR+all%3Aannulus%29&start=0&max_results=200&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 99,
+      "returned": 99,
+      "truncated": false
+    },
+    {
+      "key": "recent-physical-torsion",
+      "query": "(all:\"physical torsion\" OR all:\"multiply connected\") AND (all:stability OR all:quantitative) AND submittedDate:[202501010000 TO 202609152359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22physical+torsion%22+OR+all%3A%22multiply+connected%22%29+AND+%28all%3Astability+OR+all%3Aquantitative%29+AND+submittedDate%3A%5B202501010000+TO+202609152359%5D&start=0&max_results=200&sortBy=lastUpdatedDate&sortOrder=descending",
+      "total": 4,
+      "returned": 4,
+      "truncated": false
+    }
+  ],
+  "raw_records": [
+    "searches/arxiv-search.json",
+    "searches/successor-search.json"
+  ],
+  "significance": "Discovery of September 7 GMR paper materially changed proof strategy; no exhaustive historical priority claim",
+  "limitations": "Finite query coverage, including a noisy calibration feed; no exhaustive priority claim. Cito and Barbato-Salerno final publisher bodies unavailable; primary author versions compared."
+}

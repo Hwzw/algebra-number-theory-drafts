@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q57",
+  "status": "Complete proposed global quadratic proof; originating-assistant audit and bounded primary-literature assessment support provisional admission as P49, pending public verification",
+  "primary": {
+    "title": "On the stability of the annulus for the torsion of multiply connected domains",
+    "authors": [
+      "Vincenzo Amato",
+      "Luca Barbato"
+    ],
+    "doi": "10.1007/s00526-026-03362-w",
+    "final_pages": 32,
+    "read_scope": "Introduction, variational definition, main statements, Theorem 2.12, concluding proof paragraphs and Section 7",
+    "open_question": "Optimal exponents in Theorems 1.2 and 1.3, final page 30",
+    "final_theorem_1_2_area_ratio": "2/3, correcting preliminary 3/4 lead",
+    "arxiv_latest_version_observed": "2506.07592v2, 2026-06-04"
+  },
+  "comparison": {
+    "title": "Optimality and stability of the radial shapes for the Sobolev trace constant",
+    "author": "Simone Cito",
+    "read_scope": "Introduction/main theorems and final open problems via primary CVGMT PDF",
+    "difference": "Exterior trace optimization with convexity, perimeter-volume constraints and Neumann holes; no direct physical-torsion area-area implication identified",
+    "final_doi": "10.1016/j.na.2026.114086",
+    "final_body_read": false,
+    "latest_arxiv_observed": "2504.21607v2, 2026-02-12"
+  },
+  "proof_progress": "Complete manuscript: exact plateau deficit, smooth calibration center transfer, global area-window transport, universal individual-asymmetry constants and analytic sharpness",
+  "remaining": [
+    "Independent mathematical and priority review",
+    "Best constants and singular area-ratio limits",
+    "Nonlinear and higher-dimensional counterparts"
+  ],
+  "paper_count": 1,
+  "additional_primary_comparisons": [
+    {
+      "source": "Brasco-De Philippis-Velichkov, Duke Math J 2015, author final PDF",
+      "read_scope": "Main theorem and proof strategy, pages 3-5",
+      "assessment": "Sharp Dirichlet torsion stability; selection/free-boundary regularity does not directly handle constant physical holes"
+    },
+    {
+      "source": "Brasco, Convex duality for principal frequencies, Mathematics in Engineering 2022",
+      "read_scope": "Section 6.1 and pages 21-22",
+      "assessment": "Classical moment/duality background; no new claim for moment identity"
+    },
+    {
+      "source": "Cavallina, RIMS Kokyuroku 2082 (2018), pages 7-20",
+      "read_scope": "Abstract and introduction/functional",
+      "assessment": "Finite-conductivity two-phase torsion with fixed outer ball; no novelty asserted for a limiting inner-boundary calculation"
+    },
+    {
+      "source": "Barbato-Salerno arXiv:2606.27031v1",
+      "read_scope": "Abstract, introduction, Theorem 1.2",
+      "assessment": "Local Dirichlet integral functionals near balls; not the physical annular theorem"
+    },
+    {
+      "source": "Guerra-Machado-Ramos arXiv:2609.07772v1",
+      "read_scope": "History, introduction, Section 2, Section 3 through Proposition 3.6; targeted closing-section searches",
+      "assessment": "Credit level-set velocity/deficit strategy prominently; proposed adaptation uses fixed-center compact smooth calibration and plateau jumps"
+    },
+    {
+      "source": "Hensel-Laux arXiv:2606.17172v1",
+      "read_scope": "History, introduction, Theorems 1-2 and Lemma 3; Section 4.6 global proof",
+      "assessment": "Global Theorem 1 plus Lemma 3 is an essential external input; confined Theorem 2 alone is insufficient"
+    },
+    {
+      "source": "Barbato-Salerno arXiv:2504.06103v2",
+      "read_scope": "Current history, introduction and Section 5 qualitative optimization",
+      "assessment": "Robin physical p-torsion comparison, no sharp quantitative physical-torsion estimate identified",
+      "final_doi": "10.1016/j.jmaa.2026.130847",
+      "final_body_read": false
+    }
+  ],
+  "search_summary": "search-summary.json",
+  "latest_proof_note": "REVIEW.md",
+  "published_as": "P49",
+  "proof_review": "Originating-assistant self-audit; no independent expert verification"
+}
