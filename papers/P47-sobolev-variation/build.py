@@ -25,6 +25,7 @@ body=body.replace(r'\section{',r'\Needspace{8\baselineskip}\section{')
 body=re.sub(r'(?=\\textbf\{(?:Theorem|Lemma|Proposition|Corollary) )',lambda _:r'\Needspace{6\baselineskip}',body)
 for phrase, lines in [('Put \\(K_x', 8), ('Substitute (7.7)', 12)]:
     body=body.replace(phrase, r'\Needspace{'+str(lines)+r'\baselineskip}'+phrase)
+body=body.replace(r'\subsection{8.1. A zero count', r'\Needspace{12\baselineskip}\subsection{8.1. A zero count')
 preamble=r'''\documentclass[11pt]{article}
 \usepackage[margin=0.88in]{geometry}
 \usepackage{amsmath,amssymb,lmodern}

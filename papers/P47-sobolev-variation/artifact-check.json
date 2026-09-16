@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.2",
-  "pdf_pages": 16,
-  "pdf_text_characters": 38804,
+  "revision": "1.3",
+  "pdf_pages": 20,
+  "pdf_text_characters": 49635,
   "replacement_characters": 0,
-  "equation_tags": 63,
+  "equation_tags": 78,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 514,
+  "mathjax_expressions": 650,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -28,15 +28,19 @@
       13,
       14,
       15,
-      16
+      16,
+      17,
+      18,
+      19,
+      20
     ],
     "resolution_dpi": 108,
-    "outcome": "All 16 final pages rendered and inspected in four contact sheets after the last edit. No clipping, overlap or missing glyphs found. Long knot and coefficient displays split; contact and equation introductions kept together; references begin on a separate page."
+    "outcome": "All 20 pages rendered and inspected in five contact sheets. After the final downstream page-break adjustment, pages 13-20 were rendered and inspected again; pages 1-12 were unaffected. No clipping, overlap or missing glyphs found. Section 8.1 starts on a fresh page and all displays fit."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "95bd60366d2d39bee40992935f29bfc7dbfcf05fb6569d765c7053ed29635849",
-    "manuscript.tex": "53ac979e6a8b9062291985ecd03f8fe34f23c23858ac3b99d35dd4215976a2a1",
-    "manuscript.pdf": "f8f5f1481bddd4f762f5870a67b18a91eafc3565100766e83fd73c43c8ac3387"
+    "manuscript.md": "ddee3d6a5957acb48222b5816f3e5738020b394b76db9874ac6f551b059e063a",
+    "manuscript.tex": "7162ead65874b8cbd335bf0ef9280703e68e947e3112f65473b277d5fb3ab2e9",
+    "manuscript.pdf": "a56abdb6344e8f395e2992f0d7410ded490c8df01044610428a7bb009cfbbe2c"
   }
 }

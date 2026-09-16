@@ -66,7 +66,7 @@
     "Semantic Scholar citation API returned 429; no exhaustive citation-chain search claimed."
   ],
   "proof_state": {
-    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment.",
+    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment. Revision 1.3 completes the all-order measure endpoint by contact motion and B-spline peak monotonicity.",
     "standard_dependencies": [
       "Genocchi-Hermite divided differences (de Boor, formula 52)",
       "Brunn-Minkowski",
@@ -76,9 +76,9 @@
       "Kalyabin Theorem 2 point-evaluation norm"
     ],
     "unresolved": [
-      "General-p conjecture beyond the proved exponents",
-      "p=1 midpoint symmetry and explicit knot classification for orders at least five",
-      "Independent expert verification and absolute priority; journal suitability remains a judgment"
+      "General-p conjecture outside the proved interval near two and the completed measure endpoint",
+      "Closed-form optimal knot coordinates and constants in general order",
+      "Independent expert verification, absolute priority and exceptional significance"
     ],
     "latest_note": "manuscript.md",
     "draft": "manuscript.md",
@@ -122,5 +122,17 @@
     "unused_unproved_route": "Strict reflection of height under averaging reflected knot sets",
     "independent_human_review": false,
     "full_conjecture_solved": false
+  },
+  "revision_1_3": {
+    "date": "2026-09-16",
+    "result": "Strict midpoint point-profile maximum and unique symmetric normalized measure extremizer in every order; complete p=1 identity/coincidence/symmetry and ordinary nonattainment",
+    "new_argument": "One-knot zero count, contact regularity and t_i velocity <1, peak motion, envelope identity",
+    "Foucart_dependency": "Author preprint February 24 2005, Sections 2-3, Lemma 3, Formulae 5, Proposition 6. Interior-knot monotonicity credited; endpoint extension proved in manuscript.",
+    "Foucart_final_metadata": "JAT 135(1), 1-21, July 2005, DOI 10.1016/j.jat.2005.03.001; Crossref and author list agree",
+    "final_body_limit": "Final publisher body unavailable; author PDF 24 pages versus published 21 pages; no body comparison claimed",
+    "de_Boor_comparison": "Primary 2003 course notes p74 explicitly contain the symmetric cubic example; added reference and priority qualification in Section 7",
+    "priority": "Bounded, noisy searches; no matching primary solution identified; not exhaustive",
+    "full_all_p_conjecture_solved": false,
+    "independent_review": false
   }
 }

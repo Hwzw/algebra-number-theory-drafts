@@ -145,5 +145,22 @@
     "sha256": "32b4f039a26da69d986bed288048976e025b2fb2fefea82b32a041c8ef17ad4c",
     "date": "2026-09-16",
     "note": "Research-workspace source snapshot; not redistributed. Publisher page reopened during revision 1.2; snapshot was saved during the preceding endpoint audit."
+  },
+  {
+    "file": "contact-motion-audit/foucart-author.pdf",
+    "url": "https://foucart.github.io/publi/tbsm2.pdf",
+    "date": "2026-09-16",
+    "bytes": 241154,
+    "sha256": "f4c9f326a7488c353657ed6c1bec175d83f58831f33754d23a0678af67a64451",
+    "note": "Research-workspace file; not redistributed",
+    "actual_pdf_pages": 24
+  },
+  {
+    "file": "contact-motion-audit/foucart-crossref.json",
+    "url": "https://api.crossref.org/works/10.1016/j.jat.2005.03.001",
+    "date": "2026-09-16",
+    "bytes": 6479,
+    "sha256": "ff6d5900d55dafd67963d44c6a1363755e24e79da617037747d2db02ab5bf85d",
+    "note": "Research-workspace file; not redistributed"
   }
 ]

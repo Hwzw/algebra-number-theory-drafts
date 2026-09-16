@@ -1,14 +1,28 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.2, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.3, developed as Q55.
 
 ## Contribution and internal decision
 
-The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conjecture 4.14, for every derivative order n>=2: the sharp derivative-L1 norm is twice the sharp point norm, with precisely the same midpoint-symmetric extremizers. It also proves the constant identity and coincidence of maximizing sets for the relaxed measure endpoint p=1. Revision 1.1 extends this to an order-dependent open interval around p=2; Revision 1.2 settles endpoint symmetry, the sharp constants and all knots in order four. The other exponents and endpoint symmetry in orders at least five remain unresolved.
+The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conjecture 4.14, for every derivative order n>=2: the sharp derivative-L1 norm is twice the sharp point norm, with precisely the same midpoint-symmetric extremizers. It also proves the constant identity and coincidence of maximizing sets for the relaxed measure endpoint p=1. Revision 1.1 extends this to an order-dependent open interval around p=2; Revision 1.2 settles endpoint symmetry, the sharp constants and all knots in order four. Revision 1.3 completes the measure endpoint in every order. The full all-exponent conjecture remains unresolved.
 
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.3: all-order endpoint symmetry
+
+Section 8 settles the endpoint symmetry question left open after revision 1.2 in every derivative order. The point-evaluation profile is strictly increasing to the midpoint and strictly decreasing thereafter. Its normalized maximizing measure is unique up to sign, with a positive symmetric B-spline potential. Together with Theorem 4, this gives the full constant identity, coincidence and symmetry assertions at p=1 and rules out ordinary Sobolev attainment. General closed-form knot coordinates and constants are not supplied; the fourth-order formula remains the explicit example.
+
+The main new step is a contact-motion inequality. A zero count makes all contacts regular. Differentiating the uniform-approximation equations produces a one-knot spline with prescribed zeros and endpoint signs; a multiplicity and parity argument gives t_i'(x)<1. The peak of the optimizing B-spline then moves strictly more slowly than evaluation, proving the midpoint comparison. No finite-order extrapolation, numerical global certificate, conjectured centroid bound or generic knot-reflection inequality is used.
+
+Foucart's 2005 B-spline peak monotonicity is a credited dependency. Its primary author preprint, dated February 24, 2005, was accessed and the relevant statements and proof in Sections 2-3 were read, specifically Lemma 3, Formulae 5 and Proposition 6. The cited theorem concerns interior knots. The manuscript explicitly proves the needed endpoint extension and accounts for differentiation of the support-length factor. Crossref and the author's publication list confirm Journal of Approximation Theory 135(1), 1-21, DOI 10.1016/j.jat.2005.03.001. The 24-page author preprint was read for the dependency; the 21-page final publisher body was not obtained (403 / access errors). No final-body equivalence audit is claimed.
+
+The preceding source search also found de Boor's 2003 course notes, printed page 74, containing the centered cubic Chebyshev-spline example. The reference is now added explicitly: the symmetric dual cubic itself is prior work. The fourth-order contribution claimed here is unrestricted sharpness and equality classification. The new all-order argument has different scope from that example and from the published B-spline interlacing theorem alone.
+
+Bounded searches combined the source authors, endpoint Sobolev symmetry, truncated-power approximation, contact motion and B-spline interlacing. No matching all-order endpoint solution was identified in the primary statements inspected. The searches were noisy and do not establish exhaustive priority. The originating assistant audited the full written argument, including the zero-at-knot exception and endpoint monotonicity extension. Eight high-precision contact-system checks support algebraic consistency only. Independent expert review has not occurred.
+
+This is a substantially broader resolution of a manuscript open question than the previous single-order extension. It completes one endpoint of the named conjecture, not the full all-p statement. Exceptional significance and journal suitability remain judgments requiring external assessment; the active goal is not marked complete merely on this internally audited endpoint result. The revision remains part of P47 and adds no distinct paper.
 
 ## Revision 1.2: the fourth-order measure endpoint
 
@@ -48,4 +62,4 @@ Eleven arXiv API feeds were screened, with totals and truncation flags retained 
 
 ## Scope and review limits
 
-All functions and measures are real. No theorem for every p or endpoint symmetry and optimal knot classification for orders at least five is claimed. In order four, ordinary endpoint attainment is ruled out. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.
+All functions and measures are real. No theorem for every p or closed-form knot coordinates in every order is claimed. Measure-endpoint symmetry and ordinary nonattainment are proved in every order. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.

@@ -6,7 +6,7 @@ September 16, 2026
 
 ## Abstract
 
-We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. The endpoint symmetry problem in higher orders and the full all-exponent conjecture remain open.
+We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. The full all-exponent conjecture remains open.
 
 ## 1. The sharp inequality
 
@@ -494,7 +494,7 @@ The remaining task is to exclude such competing branches or to find a counterexa
 
 ## 7. Complete symmetry at the fourth-order measure endpoint
 
-The remaining endpoint symmetry problem can be settled in order four by a finite alternation argument. The theorem below concerns the measure class (21); its constants also apply to the ordinary clamped Sobolev space by Theorem 4.
+We first settle the endpoint symmetry problem explicitly in order four by a finite alternation argument. The theorem below concerns the measure class (21); its constants also apply to the ordinary clamped Sobolev space by Theorem 4.
 
 **Theorem 8 (fourth-order endpoint).** One has
 
@@ -514,7 +514,7 @@ $$
 
 Their potentials are even about $1/2$. No nonzero extremizer exists in the ordinary $W_0^{4,1}$ class. Thus the full constant, coincidence and symmetry assertions in [NS, Conjecture 4.14] hold for $n=4$, $p=1$, with the endpoint understood in the measure sense.
 
-The theorem does not assert symmetry at $p=1$ for every derivative order. The point estimates for orders two and three are already included in [NS, Theorem 4.5]; those cases are not new here.
+The all-order symmetry assertion is proved separately in Section 8. The point estimates for orders two and three are already included in [NS, Theorem 4.5]; those cases are not new here.
 
 ### 7.1. Extreme measures and a dual cubic
 
@@ -674,7 +674,7 @@ Thus every globally maximizing extreme measure has precisely these nodes. This c
 
 ### 7.3. Constants and all equality cases
 
-The weights in (7.3), normalized to total variation one at (7.18), are exactly (7.2). Their potential is
+The symmetric dual cubic, after normalization, is the centered cubic Chebyshev spline already described in [dB03, p. 74]. The new issue in this section is unrestricted global optimality and its equality classification. The weights in (7.3), normalized to total variation one at (7.18), are exactly (7.2). Their potential is
 
 $$
 U_*(x)=\frac16\left[
@@ -689,9 +689,187 @@ It is symmetric and unimodal by Section 5. Substitution at $x=1/2$ gives $U_*(1/
 For an arbitrary norm-one height maximizer, expose a face by evaluation at one of its maximum-height points, with the appropriate sign. Every extreme point of that face is a height-maximizing extreme measure and therefore equals $\mu_*$ or $-\mu_*$. Only one of these two signs can belong to the chosen face, because the exposed value is positive. Krein-Milman makes the face a singleton. This proves the stated equality classification, and Theorem 4 transfers it to variation. An ordinary Sobolev extremizer would have an absolutely continuous fourth derivative, whereas (7.2) is atomic. Hence ordinary attainment is impossible. The approximation argument in Theorem 4 still recovers both sharp constants. $\square$
 
 
-## 8. Remaining questions
+## 8. Symmetry in every order at the measure endpoint
 
-The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. For each order, Theorem 5 proves an open interval about two, while Theorem 4 proves the constant identity and coincidence at the measure endpoint. Theorem 8 completes the symmetry and knot classification for the fourth-order measure endpoint. The endpoint symmetry problem for orders at least five is still open here. Further continuation in the exponent requires excluding competing maximizers or finding a counterexample; the compactness argument alone does not do that. The argument in Section 7 classifies global maximizers directly and does not establish a reflection inequality for every knot configuration.
+The fourth-order calculation can be replaced by an all-order comparison. The key is to follow the contacts of the best uniform polynomial approximation as the evaluation point moves. Their velocities are strictly less than one. The monotonicity of B-spline peaks then compares the evaluation point with the peak of its own optimizing potential.
+
+**Theorem 9 (all-order measure endpoint).** For every $n\ge2$, the point-evaluation norm
+
+$$
+A_n(x)=\sup_{\mu\in\mathcal M_n}U_\mu(x)
+$$
+
+is strictly increasing on $(0,1/2)$ and strictly decreasing on $(1/2,1)$. There is a unique measure $\mu_n$ of total variation one attaining positive evaluation at $1/2$. Its potential is positive in $(0,1)$, symmetric about $1/2$, and has exactly one peak. The normalized relaxed height and variation extremizers are precisely $\mu_n$ and $-\mu_n$. In particular, all assertions of [NS, Conjecture 4.14] hold at $p=1$ for every order, with the endpoint interpreted in the measure sense. The sharp constants in the ordinary clamped Sobolev class agree with the relaxed constants, but no nonzero ordinary extremizer exists.
+
+The full conjecture at the other exponents is not asserted here. The B-spline peak monotonicity used below is credited to Foucart [F]; the endpoint dependence needed here is supplied explicitly.
+
+### 8.1. A zero count and regular contacts
+
+We first record an elementary zero-count fact. Suppose $f$ is polynomial of degree at most $d$ on each side of a single knot $x$ and belongs to $C^{d-1}$, with neither polynomial piece identically zero. Then the number of isolated zeros, counted with polynomial multiplicity away from $x$ and the order of the first nonzero common derivative at $x$, is at most $d+1$. The only case where no common derivative through order $d-1$ is nonzero at a knot zero is
+
+$$
+f(t)=a_-(t-x)^d\quad(t<x),\qquad
+f(t)=a_+(t-x)^d\quad(t>x),
+$$
+
+with $a_-a_+\ne0$; this case has just one distinct zero.
+
+Here is a proof of the count, including missing coefficients. Write the common Taylor coefficients through degree $d-1$ as $a_0,\ldots,a_{d-1}$ and the two top coefficients as $a_d^-,a_d^+$. If the first nonzero common coefficient has index $r$, factor $(t-x)^r$. Descartes' rule of signs bounds the zeros on the right and left by the sign variations in the remaining coefficient list and the list with signs alternating according to degree. For successive nonzero common coefficients whose degrees differ by $h$, the sum of the two variation contributions is at most $h$: it is one for odd $h$, and zero or two for even $h$. Their total is at most $d-r-1$. The two independently chosen top coefficients add at most two. Adding the knot multiplicity $r$ gives $d+1$. If all common coefficients vanish, the displayed monomial case applies. Endpoint zeros of the interval under consideration are among the roots counted by this argument.
+
+Fix $n\ge3$, put $m=n-1$, and write
+
+$$
+K_x(t)=\frac{(x-t)_+^m}{m!},\qquad
+R_x(t)=K_x(t)-P_x(t),\qquad
+A=A_n(x)=\|R_x\|_\infty,
+\tag{8.1}
+$$
+
+where $P_x$ is a best uniform polynomial of degree at most $m$. The moment duality in Section 7 applies in every order. A maximizing evaluation face has an extreme measure supported on $n+1$ distinct nodes, and the signed weights force $n+1$ alternating contacts of $R_x$.
+
+Neither piece of $R_x$ can be constant: smooth matching at $x$ would make the other a constant plus a multiple of $(t-x)^m$, yielding at most two alternating contacts. Thus the contact set is finite. Every interior contact is a strict local extremum. Applying the zero count to $R_x'$ with $d=n-2$ shows that it has at most $n-1$ zeros counting multiplicity. Since there are already at least $n-1$ interior contacts, the contact set is exactly
+
+$$
+0=t_0(x)<t_1(x)<\cdots<t_{n-1}(x)<t_n(x)=1,
+\qquad R_x(t_i)=(-1)^iA.
+\tag{8.2}
+$$
+
+All interior critical points are simple, and the endpoint derivatives are nonzero. For $n=3$, a contact cannot equal $x$: the two linear pieces of $R_x'$ would otherwise have their common zero at $x$, and a second critical point would force one piece to vanish identically. For $n\ge4$, a multiple critical point at $x$ also violates the same zero count. Consequently, in every case,
+
+$$
+\operatorname{sgn}R_x''(t_i)=(-1)^{i+1}\quad(1\le i<n),
+\qquad R_x'(0)<0,\qquad
+\operatorname{sgn}R_x'(1)=(-1)^n.
+\tag{8.3}
+$$
+
+Every measure maximizing positive evaluation at $x$ is supported on this contact set, by equality in the dual norm inequality. Vandermonde rank gives a one-dimensional nullspace for the $n$ moment conditions on $n+1$ nodes. Positive evaluation and total variation one fix its sign and magnitude. Denote this unique measure by $\mu_x$. Its potential is the positive normalized B-spline on these nodes.
+
+The contacts, polynomial coefficients and $A_n$ are $C^1$ functions of $x$. Indeed, differentiate the $n+1$ contact-value equations and $n-1$ critical-point equations. The contact-value block in the polynomial coefficients and $A$ is invertible: a nonzero polynomial of degree at most $n-1$ cannot take nonzero alternating values at $n+1$ ordered points. The remaining diagonal block consists of the nonzero numbers $R_x''(t_i)$. The implicit function theorem applies. Its equations are $C^1$ even when $x$ equals a contact for $n\ge4$; the case $n=3$ was excluded above. To identify this local branch with the actual optimizer, use uniqueness and compactness: best polynomial coefficients are locally bounded and their subsequential limits are best approximants; the norming measures converge to the unique norming measure, whose $n+1$ nonzero atoms prevent contact coalescence.
+
+### 8.2. Every contact moves more slowly than evaluation
+
+A dot denotes differentiation with respect to $x$; a prime denotes differentiation with respect to $t$. Put $\ell=A_n'(x)/A_n(x)$ and define
+
+$$
+V(t)=\dot R_x(t)+R_x'(t)-\ell R_x(t).
+\tag{8.4}
+$$
+
+The identity $\partial_xK_x+\partial_tK_x=0$ shows that $V$ is again a degree-at-most-$m$ spline with one simple knot: it is a polynomial minus $\ell K_x$. Differentiating (8.2) and using $R_x'(t_i)=0$ at interior contacts gives
+
+$$
+V(t_i)=0\quad(1\le i<n),\qquad
+V(0)=R_x'(0)<0,\qquad V(1)=R_x'(1).
+\tag{8.5}
+$$
+
+Neither piece of $V$ vanishes identically, since its endpoint values are nonzero. The zero count gives at most $n$ zeros counting multiplicity. The $n-1$ prescribed interior zeros must therefore all be simple and there can be no additional zero. To see the parity step explicitly, the endpoint signs in (8.5) require the parity of the number of crossings to be $n-1$. An additional simple zero or one double prescribed zero would reverse this parity; restoring it costs another zero and exceeds the bound $n$. A prescribed zero of multiplicity at least three already exceeds that bound. At a knot zero where the first $m$ common coefficients vanish, both pieces would be monomials and there would be only one distinct zero, contrary to the $n-1\ge2$ prescribed zeros. Thus this exception does not interfere with the parity argument.
+
+It follows that $V'(t_i)$ has sign $(-1)^{i+1}$, the same as $R_x''(t_i)$. Differentiating the critical-point equation yields
+
+$$
+\dot R_x'(t_i)+R_x''(t_i)t_i'(x)=0,
+\qquad
+V'(t_i)=R_x''(t_i)\{1-t_i'(x)\}.
+$$
+
+Hence
+
+$$
+t_i'(x)<1\qquad(1\le i<n).
+\tag{8.6}
+$$
+
+No lower bound on these velocities is needed.
+
+### 8.3. The dependence of a B-spline peak on all its knots
+
+Let $B_{\mathbf t}$ be the conventional positive B-spline of degree $m\ge2$ on $m+2$ simple knots and let $s(\mathbf t)$ be its unique peak. Foucart [F, Proposition 6] proves
+
+$$
+\frac{\partial s}{\partial t_j}>0
+\quad\text{for every interior knot }t_j.
+\tag{8.7}
+$$
+
+The peak is nondegenerate and depends differentiably on the knots. We need the same inequality for the two support endpoints. We prove this extension using the same divided-difference identities, keeping its scope separate from the cited statement.
+
+By affine scaling take the support to be $[0,1]$, and let $B_j$ be the degree-$m+1$ B-spline obtained by repeating the endpoint $t_j$. The knot-insertion identity in [F, Lemma 3 and Formulae 5] gives
+
+$$
+B_j(y)=\frac{y-t_j}{m+1}B_j'(y)+B_{\mathbf t}(y).
+\tag{8.8}
+$$
+
+At $s=s(\mathbf t)$, differentiating once and eliminating $B_j'(s)$ yields
+
+$$
+(s-t_j)^2B_j''(s)
+=m(m+1)\{B_j(s)-B_{\mathbf t}(s)\}.
+\tag{8.9}
+$$
+
+For the left endpoint $t_j=0$, integrating (8.8) with $B_j(1)=0$ gives
+
+$$
+B_j(s)=(m+1)s^{m+1}\int_s^1B_{\mathbf t}(y)y^{-m-2}\,dy
+\le B_{\mathbf t}(s)(1-s^{m+1})<B_{\mathbf t}(s).
+\tag{8.10}
+$$
+
+For the right endpoint, the reflected formula gives the same strict inequality. Thus $B_j''(s)<0$. Differentiation of the divided difference defining $B_{\mathbf t}$ with respect to an endpoint gives
+
+$$
+\partial_{t_j}B_{\mathbf t}'(s)=-\frac1{m+1}B_j''(s)>0.
+\tag{8.11}
+$$
+
+The derivative of the support-length normalization contributes a multiple of $B_{\mathbf t}'(s)=0$, so it contributes nothing to (8.11). Since $B_{\mathbf t}''(s)<0$, implicit differentiation of $B_{\mathbf t}'(s)=0$ proves (8.7) for the endpoints too.
+
+Translation equivariance now gives
+
+$$
+\sum_{j=0}^{m+1}\frac{\partial s}{\partial t_j}=1,
+\qquad \frac{\partial s}{\partial t_j}>0\quad\text{for every }j.
+\tag{8.12}
+$$
+
+### 8.4. Strict midpoint comparison and equality
+
+Let $s(x)=s(t_0(x),\ldots,t_n(x))$ be the peak of $U_{\mu_x}$. The normalizing factor of this potential does not affect its peak. Equations (8.6) and (8.12), together with $t_0'=t_n'=0$, show that
+
+$$
+s'(x)=\sum_{i=1}^{n-1}\frac{\partial s}{\partial t_i}t_i'(x)
+<\sum_{i=1}^{n-1}\frac{\partial s}{\partial t_i}<1.
+\tag{8.13}
+$$
+
+Reflection and uniqueness of the positive-evaluation norming measure at $1/2$ give $s(1/2)=1/2$. Therefore $s(x)-x$ is strictly decreasing and
+
+$$
+s(x)>x\quad(x<1/2),\qquad s(x)<x\quad(x>1/2).
+\tag{8.14}
+$$
+
+Finally, uniqueness and weak-star continuity of $\mu_x$, together with joint continuity of $\partial_xK_x$ for $n\ge3$, give the envelope identity
+
+$$
+A_n'(x)=U_{\mu_x}'(x).
+\tag{8.15}
+$$
+
+It follows directly by testing the optimizer at each of two neighboring points in the other evaluation problem and taking the two difference quotients. The B-spline potential is strictly increasing before its unique peak and strictly decreasing after it. Equation (8.14) therefore proves the asserted strict monotonicity of $A_n$.
+
+Every global height maximizer must consequently attain its absolute height at $1/2$. The unique norming measure there, up to the sign of evaluation, is $\mu_n$. Its potential is symmetric by reflection and positive by the moment-circuit formula. Theorem 4 transfers the complete classification to variation. The ordinary constants agree by the recovery argument there; an ordinary extremizer would have an absolutely continuous highest derivative, whereas the unique relaxed one is a nonzero atomic circuit. This rules out ordinary attainment.
+
+For $n=2$, the direct formula $A_2(x)=x(1-x)/2$ and its unique three-point norming measure give the same conclusions. This completes the proof. $\square$
+
+
+## 9. Remaining questions
+
+The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes the measure endpoint in every order, including strict midpoint maximization, unique symmetric extremizers and ordinary nonattainment. Theorem 5 proves an order-dependent open interval about two. Extending the identity and symmetry through the remaining exponents requires a new global argument: compactness alone does not exclude competing variation maximizers. The contact-motion proof uses uniform approximation and atomic moment circuits and does not automatically extend to a finite dual exponent. The stronger centroid and knot-reflection inequalities explored in the research notes are not required or proved by Theorem 9.
 
 ## References
 
@@ -700,6 +878,10 @@ The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. For each
 [BH] A. Burchard and H. Hajaiej, *Rearrangement inequalities for functionals with monotone integrands*, Journal of Functional Analysis **233** (2006), 561--582. [DOI](https://doi.org/10.1016/j.jfa.2005.08.010). [Final revised author version](https://arxiv.org/abs/math/0506336).
 
 [dB] C. de Boor, *Divided Differences*, Surveys in Approximation Theory **1** (2005), 46--69. [Author text](https://arxiv.org/abs/math/0502036), formulas (47)--(48) and (52).
+
+[dB03] C. de Boor, *Math/CS 887 course notes*, Spring 2003, TeX version November 21, 2009. [Author notes](https://pages.cs.wisc.edu/~deboor/887/notes.pdf), p. 74, centered cubic Chebyshev-spline example.
+
+[F] S. Foucart, *Interlacing property for B-splines*, Journal of Approximation Theory **135** (2005), no. 1, 1--21. [DOI](https://doi.org/10.1016/j.jat.2005.03.001). [Author preprint, February 24, 2005](https://foucart.github.io/publi/tbsm2.pdf), Lemma 3, Formulae 5 and Proposition 6.
 
 [GHW] R. J. Gardner, D. Hug and W. Weil, *The Orlicz-Brunn-Minkowski theory: A general framework, additions, and inequalities*, Journal of Differential Geometry **97** (2014), no. 3. [DOI](https://doi.org/10.4310/jdg/1406033976). [Author text](https://arxiv.org/abs/1301.5267).
 
