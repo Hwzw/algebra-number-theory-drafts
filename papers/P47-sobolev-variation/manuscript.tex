@@ -43,8 +43,10 @@ measure-endpoint conjecture. A weighted zero-count extension proves
 strict midpoint point-evaluation maximization and unique symmetric
 height extremizers for every finite exponent. This completes the
 function-height case of the broader symmetry conjecture when combined
-with the endpoint results. The full all-exponent variation conjecture
-remains open.
+with the endpoint results. Finally, compactness of arbitrary variation
+maximizers at the unique measure endpoint proves the full variation
+statement on an order-dependent interval immediately above one. The full
+all-exponent variation conjecture remains open.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -1702,18 +1704,204 @@ of polynomial piece when \(g=\operatorname{sign}(u')\). The one-knot
 bound in (9.8) is then unavailable. This is the remaining obstruction to
 the full variation conjecture.
 
-\Needspace{8\baselineskip}\section{10. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{10. Variation continuation from the measure
+endpoint}\label{variation-continuation-from-the-measure-endpoint}
+
+The unique endpoint measure also controls arbitrary variation maximizers
+as the input exponent decreases to one. Two issues require care:
+ordinary highest derivatives develop concentration, and in order three
+weak measure convergence does not directly give uniform
+second-derivative convergence.
+
+\Needspace{6\baselineskip}\textbf{Theorem 11 (continuation above one).} For every \(n\ge3\) there
+exists \(\eta_n>0\) such that, for \(1<p<1+\eta_n\),
+
+\[
+V_{n,p}=2C_{n,p}.
+\tag{10.1}
+\]
+
+The nonzero extremizers in the two inequalities are exactly the scalar
+multiples of the unique positive norm-one midpoint normer. They are
+symmetric and strictly unimodal up to sign. The interval width is not
+estimated, and overlap with the interval in Theorem 5 is not asserted.
+The case \(n=2\) is already known for all \(p\) by {[}NS, Remark
+4.15{]}.
+
+\subsection{10.1. Compactness of arbitrary endpoint
+sequences}\label{compactness-of-arbitrary-endpoint-sequences}
+
+Fix \(n\ge3\). Let \(p_j>1\) tend to one and let \(u_j\) be any norm-one
+variation maximizers, whose existence was proved in Section 6. Write
+\(f_j=u_j^{(n)}\) and \(\mu_j=f_j\,dt\). Since the interval has length
+one,
+
+\[
+\|\mu_j\|_{\mathrm{TV}}=\|f_j\|_1\le\|f_j\|_{p_j}=1.
+\]
+
+A subsequence converges weak-star to some \(\mu\in\mathcal M_n\). For
+\(n\ge3\) the potential kernel and its first derivative are jointly
+continuous on the square. Their integrals over the unit measure ball are
+uniformly equicontinuous. Pointwise weak-star convergence and this
+equicontinuity therefore give \(u_j\to U_\mu\) in \(C^1[0,1]\).
+
+The constants satisfy \(V_{n,p_j}\le V_{n,1}\). Conversely, given
+\(\delta>0\), the recovery argument in Theorem 4 supplies one nonzero
+smooth clamped function \(v\) with
+
+\[
+\frac{\|v'\|_1}{\|v^{(n)}\|_1}>V_{n,1}-\delta.
+\]
+
+Its highest-derivative \(L^{p_j}\) norm tends to its \(L^1\) norm.
+Testing this fixed function and then letting \(\delta\) decrease to zero
+proves \(V_{n,p_j}\to V_{n,1}\). Thus \(U_\mu\) maximizes endpoint
+variation. Theorems 4 and 9 identify \(\mu\) with \(\mu_n\) or
+\(-\mu_n\). After choosing the common sign along the subsequence, we
+have
+
+\[
+\mu_j\stackrel{*}{\rightharpoonup}\mu_n,\qquad
+u_j\longrightarrow U_{\mu_n}\quad\hbox{in }C^1,
+\qquad \|\mu_j\|_{\mathrm{TV}}\longrightarrow1.
+\tag{10.2}
+\]
+
+The last limit follows from lower semicontinuity and the upper bound
+one.
+
+We also need convergence of the absolute measures:
+
+\[
+|\mu_j|\stackrel{*}{\rightharpoonup}|\mu_n|.
+\tag{10.3}
+\]
+
+Indeed, any weak-star limit \(\nu\) of a subsequence of \(|\mu_j|\)
+dominates \(|\mu_n|\). To see this, for nonnegative continuous \(h\) and
+continuous \(\phi\) with \(|\phi|\le h\), pass to the limit in
+\(|\int\phi\,d\mu_j|\le\int h\,d|\mu_j|\) and use the dual description
+of variation. Both \(\nu\) and \(|\mu_n|\) have mass one by (10.2), so
+they agree. Every subsequence has this same limit, proving (10.3).
+
+\subsection{10.2. The limiting dual residual fixes the endpoint
+signs}\label{the-limiting-dual-residual-fixes-the-endpoint-signs}
+
+Put \(U=U_{\mu_n}\) and let \(g_j=\operatorname{sign}(u_j')\), with any
+choice in \([-1,1]\) where \(u_j'=0\). The strict signs of \(U'\) imply
+pointwise convergence except at \(0,1/2,1\) to the midpoint sign
+function \(g_*\), which is positive before \(1/2\) and negative after
+it. Dominated convergence gives \(g_j\to g_*\) in \(L^1\). Hence
+\(H_j=H_{g_j}\) converges uniformly to
+
+\[
+H_*(t)=2K_{1/2}(t)-\frac{(1-t)^{n-1}}{(n-1)!}.
+\tag{10.4}
+\]
+
+Let \(P_j\) minimize \(\|H_j-P\|_{q_j}\) over polynomials of degree at
+most \(n-1\), where \(q_j=p_j/(p_j-1)\to\infty\). The bound
+\(\|P_j\|_1\le\|P_j\|_{q_j}\le2\|H_j\|_\infty\) and finite-dimensional
+norm equivalence give bounded polynomial coefficients. Take any
+subsequential coefficient limit \(P_\infty\). For each fixed finite
+\(r\), each polynomial \(P\) in the same space, and all sufficiently
+large \(j\),
+
+\[
+\|H_j-P_j\|_r\le\|H_j-P_j\|_{q_j}
+\le\|H_j-P\|_{q_j}\le\|H_j-P\|_\infty.
+\tag{10.5}
+\]
+
+First let \(j\) tend to infinity, using uniform convergence, and then
+let \(r\) tend to infinity. Thus \(P_\infty\) is a best uniform
+approximant to \(H_*\). Uniqueness of best uniform polynomial
+approximation and (10.4) identify
+
+\[
+R_j:=H_j-P_j\longrightarrow2R_{1/2}quad\hbox{uniformly},
+\qquad
+f_j=\operatorname{sign}(R_j)
+\left|\frac{R_j}{V_{n,p_j}}\right|^{q_j-1}.
+\tag{10.6}
+\]
+
+Here \(R_{1/2}\) is the truncated-power residual in Section 8; every
+subsequence has the same limit. The second identity is the dual
+optimality equation (6.6).
+
+The endpoint residual values in (8.2) are nonzero, positive at zero and
+of sign \((-1)^n\) at one. Uniform convergence therefore fixes these
+signs for \(R_j\) on small endpoint neighborhoods, independently of
+\(j\) once it is large. Equation (10.6) fixes the same strict signs for
+\(f_j\), although its magnitude need not remain bounded. Integration
+from the clamped endpoints gives \(u_j'>0\) near zero and \(u_j'<0\)
+near one. On compact sets separated from the endpoints and midpoint,
+uniform convergence of \(u_j'\) to \(U'\) preserves the required signs
+as well.
+
+\subsection{10.3. Curvature at the midpoint and
+completion}\label{curvature-at-the-midpoint-and-completion}
+
+For \(n\ge4\), the twice-differentiated potential kernel is jointly
+continuous. The compactness argument above then gives \(u_j''\to U''\)
+uniformly. The B-spline peak is nondegenerate, as used in Section 8 and
+{[}F, Proposition 6{]}. Thus \(u_j''<0\) on a fixed central interval for
+all sufficiently large \(j\).
+
+For \(n=3\), the unique symmetric measure has four distinct knots
+\(0,a,1-a,1\), with \(a<1/2\). The midpoint lies in a knot-free
+interval, where \(U''\) is a strictly negative constant. Choose a closed
+central subinterval \(I=[c,d]\) entirely inside this gap. Equation
+(10.3) and \(|\mu_n|(I)=0\) imply \(|\mu_j|(I)\to0\). Also
+\(\mu_j([0,c])\to\mu_n([0,c])\): continuous approximation of the
+interval indicator, together with (10.3), justifies this passage because
+its relative boundary \(\{c\}\) has zero limiting variation mass. The
+endpoint atom at zero is included on both sides. Since
+\(u_j''(x)=\mu_j([0,x])\), we obtain
+
+\[
+\begin{split}
+\sup_{x\in I}|u_j''(x)-U''(x)|
+&\le |\mu_j([0,c])-\mu_n([0,c])|+|\mu_j|(I)\\
+&\longrightarrow0.
+\end{split}
+\tag{10.7}
+\]
+
+Hence the middle curvature is strictly negative in order three too.
+
+Combine this curvature with the derivative signs already proved near the
+endpoints and on the intervening compact intervals. Each \(u_j\) has
+exactly one critical point for large \(j\), with positive derivative
+before it and negative derivative after it. Because the original
+sequence consisted of arbitrary variation maximizers, a
+contradiction-sequence argument supplies \(\eta_n>0\) for which every
+normalized maximizer has this geometry, up to sign, whenever
+\(1<p<1+\eta_n\).
+
+Such a maximizer has variation twice its height, so
+\(V_{n,p}\le2C_{n,p}\). The reverse bound always holds. A variation
+maximizer is therefore a height maximizer, and a height maximizer is a
+variation maximizer. Theorem 10 gives the midpoint symmetry and unique
+equality class. This proves Theorem 11. \(\square\)
+
+\Needspace{8\baselineskip}\section{11. Remaining questions}\label{remaining-questions}
 
 The full all-exponent form of {[}NS, Conjecture 4.14{]} remains
-unresolved. Theorem 9 completes its measure endpoint, and Theorem 5
-proves an order-dependent open interval about two. Theorem 10 settles
-midpoint symmetry and height-extremizer uniqueness for every finite
-exponent, completing the k=0, target-L-infinity slice of Conjecture 4.3
-together with the endpoint results. What remains for Conjecture 4.14 is
-to prove the variation identity and exclude competing multiple-peak
-variation maximizers at the other exponents. Compactness alone does not
-do this. The stronger centroid and knot-reflection inequalities in the
-research notes remain unproved and are not needed for Theorems 9 and 10.
+unresolved. Theorem 9 completes its measure endpoint. Theorems 5 and 11
+give order-dependent exponent intervals around two and immediately above
+one, respectively. Their widths are not estimated, and their overlap is
+not established. Theorem 10 settles midpoint symmetry and
+height-extremizer uniqueness for every finite exponent, completing the
+k=0, target-L-infinity slice of Conjecture 4.3 together with endpoint
+results. What remains for Conjecture 4.14 is the variation identity and
+exclusion of competing multiple-peak variation maximizers at the other
+exponents. Compactness of a known branch alone does not exclude
+coexistence with such a maximizer. The stronger centroid and
+knot-reflection inequalities in the research notes remain unproved and
+are not needed for Theorems 9-\/-11.
 
 \clearpage\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 

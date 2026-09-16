@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.4.**
+**Henry Zweiman. September 16, 2026. Revision 1.5.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -12,8 +12,10 @@ Revision 1.3 proves that the optimal point-evaluation profile has its unique max
 
 Revision 1.4 proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent, in every order. Section 9 integrates a one-knot spline against a positive weight and bounds the velocity of the optimizing peak. This settles the k=0, target-L-infinity case of the broader symmetry conjecture, together with the endpoint results. The variation identity at the remaining exponents is still open.
 
+Revision 1.5 proves the full variation identity and midpoint-symmetric equality classification on an order-dependent interval immediately above p=1. It treats arbitrary maximizing sequences, controls their limiting absolute measures and dual residuals, and proves persistence of a single peak despite concentration of the highest derivative. The interval width is not estimated; overlap with the interval around two is not established.
+
 - [Full Markdown manuscript](manuscript.md)
-- [Twenty-three-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [Twenty-five-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

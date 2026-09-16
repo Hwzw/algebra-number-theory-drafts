@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.4",
-  "pdf_pages": 23,
-  "pdf_text_characters": 58433,
+  "revision": "1.5",
+  "pdf_pages": 25,
+  "pdf_text_characters": 64755,
   "replacement_characters": 0,
-  "equation_tags": 91,
+  "equation_tags": 98,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 775,
+  "mathjax_expressions": 871,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -35,15 +35,17 @@
       20,
       21,
       22,
-      23
+      23,
+      24,
+      25
     ],
     "resolution_dpi": 108,
-    "outcome": "All 23 pages rendered and inspected in six contact sheets. After the final frontier-text edit, page 12 was inspected again; all other final page PNGs match the previously inspected PNGs byte-for-byte. No clipping, overlap or missing glyphs found. Section 9.4 and its first equation are kept together."
+    "outcome": "All 25 final pages rendered and inspected in seven contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new theorem, measure limits, endpoint residual argument and order-three curvature bound are legible; references occupy a separate page."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "56c0ff9f267ab0f86df8816a8e1a5a216751576f3d47921ca9fe28b99ee355f5",
-    "manuscript.tex": "eb1b39f93377a932452a3d672fd9a206850e150895cce5795016a33285f70c92",
-    "manuscript.pdf": "98fe8474a75d6dc5f50bd85054b4b0570dfaf16d1f91873046f0d72c46bc045f"
+    "manuscript.md": "1fdb37ad48c77b1a6f51980ca3075672bfb67d564f69b424c5892ce37c8fb85c",
+    "manuscript.tex": "4e0e9210efac422c9dece1dbd8130decf48f4666068b9dd199816c2b22a2446d",
+    "manuscript.pdf": "e11ed18ef34c59ca31ea261ca87a01d4483d16e4733f9904c72779c2a8c24226"
   }
 }

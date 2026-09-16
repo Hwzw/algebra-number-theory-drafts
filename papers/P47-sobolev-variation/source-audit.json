@@ -76,7 +76,7 @@
       "Kalyabin Theorem 2 point-evaluation norm"
     ],
     "unresolved": [
-      "Full all-p variation identity and classification of arbitrary variation maximizers outside the established exponent interval",
+      "Full all-p variation identity and classification outside the established intervals immediately above one and around two",
       "Full Conjecture 4.3 for other derivative and target exponents",
       "Closed-form constants in general order and exponent",
       "Independent expert verification and exhaustive priority"
@@ -143,6 +143,18 @@
     "primary_source_comparison": "NS final Section4; Watanabe2009 Theorem1.1, Lemma1.3, Remark1.4, publisher PDF pp1-3; GS2024 Theorem2 and Corollary1",
     "proof": "Elementary weighted zero count after integrating the cancellation identity; no Foucart dependency for this finite-p step",
     "diagnostics": "24 floating-point cases, not proof",
+    "full_variation_conjecture_solved": false,
+    "independent_review": false,
+    "priority_certified": false
+  },
+  "revision_1_5": {
+    "date": "2026-09-16",
+    "result": "Full variation identity and complete equality classification on an order-dependent interval 1<p<1+eta_n",
+    "main_inputs": "Theorems4,9,10; arbitrary-maximizer compactness; absolute-measure limit; varying-q uniform approximation; residual endpoint signs; central curvature",
+    "source_refresh": "NS final Conjecture4.14 and Remark4.15; Foucart author Proposition6 and its nondegenerate peak statement",
+    "new_computation": "None required; no finite diagnostic is used as universal proof evidence",
+    "interval_width_estimated": false,
+    "overlap_with_near_two_proved": false,
     "full_variation_conjecture_solved": false,
     "independent_review": false,
     "priority_certified": false

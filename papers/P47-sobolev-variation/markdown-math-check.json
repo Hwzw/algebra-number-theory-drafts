@@ -1,9 +1,9 @@
 {
   "file": "manuscript_extensions/P47-sobolev-variation/publish-ready/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "56c0ff9f267ab0f86df8816a8e1a5a216751576f3d47921ca9fe28b99ee355f5",
+  "markdown_sha256": "1fdb37ad48c77b1a6f51980ca3075672bfb67d564f69b424c5892ce37c8fb85c",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
-  "expressions": 775,
+  "expressions": 871,
   "errors": [],
   "local_svg_preview_created": false,
   "local_visual_inspection": false,

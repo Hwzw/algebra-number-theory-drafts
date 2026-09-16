@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.4, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.5, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,18 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.5: variation continuation immediately above one
+
+Theorem 11 proves the full variation identity and unique midpoint-symmetric extremizer classification for 1<p<1+eta_n, with eta_n>0 depending on the derivative order. This extends the completed measure endpoint into the ordinary Sobolev range and complements the earlier neighborhood of two. Neither radius is estimated, and overlap is not established; the all-p conjecture remains open.
+
+The proof starts with arbitrary normalized variation maximizers as p tends to one. Sharp-constant convergence follows from the measure bound and a fixed smooth recovery function. The unique endpoint equality class identifies every measure limit. Equality of the limiting total masses also gives weak-star convergence of the absolute measures. The loads determined by derivative signs converge to the midpoint sign load, and varying-exponent best approximation converges to the unique uniform residual. Its nonzero endpoint values fix the highest-derivative signs in endpoint neighborhoods despite concentration.
+
+For n>=4, continuous twice-differentiated kernels give uniform curvature convergence at the nondegenerate B-spline peak. For n=3, the symmetric four-knot measure has a knot-free central interval; convergence of absolute measures gives uniform convergence of the cumulative signed measures there. These two arguments supply the curvature control that C1 convergence alone would not provide. A contradiction-sequence argument then forces every nearby variation maximizer to be single-peaked. Theorem 10 completes symmetry and all equality cases.
+
+The primary survey's final Conjecture 4.14 and Remark 4.15 were refreshed. The B-spline peak nondegeneracy used in the proof was rechecked in Foucart's author text at Proposition 6, retaining the existing author-version versus final-publisher-body qualification. The remaining inputs are proved in this manuscript or supplied directly by elementary compactness and duality arguments. Bounded successor searches were noisy and found no matching primary continuation theorem in the inspected results. This does not certify priority. No numerical experiment is used as evidence for the new universal statement, and no independent expert review has occurred.
+
+This is a further interval of the named conjecture, not a resolution at every exponent. The goal remains active. The next global issue is to exclude a different multiple-peak variation maximizer at an interior boundary of the set of valid exponents; compactness of the known branch is insufficient. No distinct paper is added.
 
 ## Revision 1.4: finite-exponent height symmetry
 
