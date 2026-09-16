@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.9, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.10, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,14 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.10: an explicit nodal-length restriction in order three
+
+Theorem 16 proves that a normalized variation maximizer in W0^(3,p), for every finite p>1, has at most two nodal intervals of u' with energy per unit length below (3p-1)/(p^2-1). For 1<p<3 these intervals occupy more than p(3-p)/(3p-1) of the domain. Thus the total length outside two intervals is explicitly O(p-1) as p decreases to one.
+
+The proof is a direct finite-dimensional variation: stretch each nodal interval and rescale its amplitude to preserve u'' at the joins, impose total length and zero signed area, and use the constrained Hessian. The positive rank-one term and the second derivative of the signed-area constraint are retained. A dimension argument permits at most two positive diagonal coefficients. No new external theorem is imported beyond the manuscript's finite-switch theorem and elementary Sobolev gluing and constrained calculus.
+
+This quantitatively restricts possible remaining maximizers in order three. It does not exclude extra short intervals, bound their number, establish a new full exponent interval, or solve the full variation conjecture. In the exponent intervals already covered by the manuscript the complete single-peak theorem is stronger. No claim of optimality of the new length bound is made. Bounded literature discovery does not certify priority; internal proof review is not independent verification. The broader conjecture goal remains active and this remains one paper.
 
 ## Revision 1.9: the arbitrary derivative-weight extension is false
 

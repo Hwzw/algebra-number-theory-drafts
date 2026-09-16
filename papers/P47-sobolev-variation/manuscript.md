@@ -6,7 +6,7 @@ September 16, 2026
 
 ## Abstract
 
-We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. Affine dilation also excludes midpoint-symmetric three-switch maximizers and restricts the geometry of remaining three-switch candidates. An explicit rational certificate shows that the analogous identity fails for arbitrary positive derivative weights, even for smooth weights in order three; this rules out an unrestricted weighted Hilbert shortcut. The full all-exponent variation conjecture remains open.
+We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. For each fixed derivative order, we further prove the full variation identity and midpoint-symmetric equality classification on an open interval of exponents around two. A dual optimality equation gives compactness through the highest derivative; polynomial sublevel bounds control the point-evaluation profile on both sides of the Hilbert exponent. At the measure endpoint in derivative order four, we also determine the exact sharp constant and unique symmetric extremizer by a cubic alternation argument and an explicit algebraic exclusion of asymmetric maximizers. An all-order contact-motion argument then proves strict midpoint maximization and the unique symmetric measure extremizer in every order, completing the measure-endpoint conjecture. A weighted zero-count extension proves strict midpoint point-evaluation maximization and unique symmetric height extremizers for every finite exponent. This completes the function-height case of the broader symmetry conjecture when combined with the endpoint results. Finally, compactness of arbitrary variation maximizers at the unique measure endpoint proves the full variation statement on an order-dependent interval immediately above one. We also prove that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, and derive its switching Hessian. A translation cancellation then excludes every two-switch variation maximizer, without a symmetry assumption. Affine dilation also excludes midpoint-symmetric three-switch maximizers and restricts the geometry of remaining three-switch candidates. An explicit rational certificate shows that the analogous identity fails for arbitrary positive derivative weights, even for smooth weights in order three; this rules out an unrestricted weighted Hilbert shortcut. In order three, a nodal-length variation also proves that two intervals of constant sign of the first derivative cover more than $p(3-p)/(3p-1)$ of the domain for $1<p<3$. The full all-exponent variation conjecture remains open.
 
 ## 1. The sharp inequality
 
@@ -1568,9 +1568,145 @@ Thus $u$ also maximizes variation in this weighted Hilbert problem. However, a g
 
 The recent weighted result of Hindov and Lokharu [HL, Theorem 1] places a weight on the function's $L^1$ norm and leaves the derivative energy unweighted. It has no additional mean constraint of the kind obtained by setting $v=u'$. It therefore supplies neither the arbitrary derivative-weight assertion disproved here nor the missing constrained variation theorem.
 
-## 15. Remaining questions
+## 15. Nodal-length concentration in order three
 
-The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. Theorem 14 excludes midpoint-symmetric three-switch maximizers and imposes a response-minimum condition on any remaining three-switch candidate. The remaining finite-exponent task is to exclude nonsymmetric three-switch maximizers and configurations with at least four switches. The endpoint p=infinity also remains to be addressed for the full variation statement. Theorem 15 rules out a reduction that assumes the same identity for arbitrary derivative weights. The special weights generated by an actual maximizer remain a possible restricted route. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
+In derivative order three, independent changes to the lengths of the nodal intervals of $u'$ give another necessary condition. The changes preserve $u''$ at the joins, so they remain admissible even though they need not preserve higher derivatives.
+
+**Theorem 16 (two dominant nodal intervals).** Let $1<p<\infty$ and let $u\in W_0^{3,p}(0,1)$ be a global variation maximizer, normalized by $\|u'''\|_p=1$. Let $I_j$ be the finitely many intervals of constant nonzero sign of $u'$, and put
+
+$$
+L_j=|I_j|,\qquad E_j=\int_{I_j}|u'''|^p.
+\tag{15.1}
+$$
+
+At most two intervals satisfy
+
+$$
+\frac{E_j}{L_j}<\frac{3p-1}{p^2-1}.
+\tag{15.2}
+$$
+
+If $1<p<3$, there is a set $S$ of at most two intervals such that
+
+$$
+\sum_{j\in S}L_j>\frac{p(3-p)}{3p-1},\qquad
+\sum_{j\notin S}L_j<\frac{p^2-1}{3p-1}.
+\tag{15.3}
+$$
+
+Thus the total length outside two intervals tends to zero at an explicit rate as $p\downarrow1$. Additional short intervals are not excluded by this theorem.
+
+### 15.1. An admissible finite-dimensional family
+
+Put $v=u'$, so $v\in W_0^{2,p}(0,1)$ and $\int_0^1v=0$. Theorem 12 supplies finitely many nondegenerate interior zeros of $v$. Let $\sigma_j$ be its sign on $I_j=(t_j,t_{j+1})$, and write
+
+$$
+A_j=\int_{I_j}|v|>0,\qquad M_j=\sigma_jA_j,
+\qquad \sum_jA_j=V,\quad \sum_jM_j=0,
+\quad \sum_jE_j=\sum_jL_j=1,
+\tag{15.4}
+$$
+
+where $V=V_{3,p}$. Every $E_j$ is positive: if $v''=0$ on $I_j$, the zero endpoint values would make $v$ identically zero there.
+
+Choose $s_j>0$ with $\sum_jL_js_j=1$, and concatenate intervals of lengths $L_js_j$ in their original order. If $\widetilde t_j$ is the new left endpoint, set on the $j$th interval
+
+$$
+v_s(x)=s_jv\left(t_j+\frac{x-\widetilde t_j}{s_j}\right).
+\tag{15.5}
+$$
+
+At every join, $v_s=0$ and the one-sided values of $v_s'$ agree with the same original value of $v'$. Hence $v_s\in W^{2,p}$ and $v_s=v_s'=0$ at the outer endpoints. The second derivative on this interval is $v''/s_j$. If also $\sum_jM_js_j^2=0$, integration gives an admissible $u_s\in W_0^{3,p}$.
+
+The functionals are exactly
+
+$$
+\begin{aligned}
+T(s)&=\sum_jA_js_j^2,&\quad E(s)&=\sum_jE_js_j^{1-p},\\
+M(s)&=\sum_jM_js_j^2,&\quad L(s)&=\sum_jL_js_j,
+\end{aligned}
+\qquad F(s)=T(s)E(s)^{-1/p}.
+\tag{15.6}
+$$
+
+The point $s=\mathbf1$ is a local maximum of $F$ on $L(s)=1$, $M(s)=0$. These two constraints have independent gradients: the vector $(L_j)$ is strictly positive, while $(M_j)$ has both signs. Their tangent space is therefore
+
+$$
+\sum_jL_jx_j=0,\qquad \sum_jM_jx_j=0.
+\tag{15.7}
+$$
+
+Only the explicit smooth finite-dimensional functionals in (15.6) are differentiated. Differentiability of $s\mapsto u_s$ in a Sobolev norm is not needed.
+
+### 15.2. The constrained second variation
+
+Put $q=p/(p-1)$ and $d=2q+1$. Lagrange multipliers $\eta,\nu$ give
+
+$$
+2A_j+\frac VqE_j-2\eta M_j-\nu L_j=0,
+\qquad \nu=\frac dqV,
+\qquad
+2(A_j-\eta M_j)=\frac Vq(dL_j-E_j).
+\tag{15.8}
+$$
+
+The value of $\nu$ follows by summing and using (15.4). On the tangent space (15.7), the same equation yields
+
+$$
+\sum_jA_jx_j=-\frac{V}{2q}\sum_jE_jx_j.
+\tag{15.9}
+$$
+
+The Hessian of $F-\eta M-\nu(L-1)$, restricted to that tangent space, is
+
+$$
+Q(x)=\frac Vq\left\{
+\sum_j\bigl[dL_j-(p+1)E_j\bigr]x_j^2
++\frac{p-1}{q}\left(\sum_jE_jx_j\right)^2
+\right\}\le0.
+\tag{15.10}
+$$
+
+Before applying (15.9), the two contributions to the rank-one term are
+
+$$
+\frac4q\left(\sum_j A_jx_j\right)\left(\sum_j E_jx_j\right)
+\quad\text{and}\quad
+\frac{V(p+1)}{q^2}\left(\sum_j E_jx_j\right)^2.
+$$
+
+Their sum becomes $V(p-1)(\sum_jE_jx_j)^2/q^2$. The diagonal part is
+
+$$
+\sum_j\bigl[2(A_j-\eta M_j)-V(p-1)E_j\bigr]x_j^2.
+$$
+
+Substituting (15.8) gives (15.10).
+
+If three indices had $dL_j-(p+1)E_j>0$, a nonzero vector supported on those three indices could satisfy the two equations (15.7). Its diagonal contribution in (15.10) would be strictly positive, and the rank-one contribution is nonnegative. This contradicts $Q(x)\le0$ and proves (15.2), since $d/(p+1)=(3p-1)/(p^2-1)$.
+
+For $1<p<3$, let $S$ consist of the indices in (15.2). It is nonempty, because
+
+$$
+\sum_j[dL_j-(p+1)E_j]=d-(p+1)>0.
+\tag{15.11}
+$$
+
+It contains at most two indices. On its complement, $E_j\ge dL_j/(p+1)$, so
+
+$$
+\frac{d}{p+1}\sum_{j\notin S}L_j
+\le\sum_{j\notin S}E_j<1.
+\tag{15.12}
+$$
+
+The strict inequality uses the positive energy on the nonempty set $S$. Since $1-(p+1)/d=p(3-p)/(3p-1)$, this proves (15.3). $\square$
+
+Theorem 16 gives a quantified restriction on the geometry of any remaining maximizer in order three. For example, the two selected intervals cover more than $9/14$ of the domain at $p=3/2$, and more than $2/5$ at $p=2$. It does not bound the number of additional short intervals. The direct rescaling argument does not extend to higher derivative orders, because preserving $v'$ at the joins does not preserve all the additional derivatives then required.
+
+## 16. Remaining questions
+
+The full all-exponent form of [NS, Conjecture 4.14] remains unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and 11 give exponent intervals around two and immediately above one. Their widths and overlap are not established. Theorem 10 proves height symmetry and uniqueness at every finite exponent. Theorem 12 now proves that every finite-exponent variation maximizer has finitely many nondegenerate critical points and simple dual-residual zeros, so the stability matrix (11.10) applies without a regularity assumption. Theorem 13 excludes every two-switch maximizer. Theorem 14 excludes midpoint-symmetric three-switch maximizers and imposes a response-minimum condition on any remaining three-switch candidate. The remaining finite-exponent task is to exclude nonsymmetric three-switch maximizers and configurations with at least four switches. The endpoint p=infinity also remains to be addressed for the full variation statement. Theorem 15 rules out a reduction that assumes the same identity for arbitrary derivative weights. The special weights generated by an actual maximizer remain a possible restricted route. In order three, Theorem 16 gives an explicit concentration bound for the nodal-interval lengths, but still permits additional short intervals. A necessary matrix condition and finite examples are not a universal exclusion theorem. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 
 ## References
 

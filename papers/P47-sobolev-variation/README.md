@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.9.**
+**Henry Zweiman. September 16, 2026. Revision 1.10.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -22,9 +22,11 @@ Revision 1.8 derives the response to every affine switch motion and excludes mid
 
 Revision 1.9 disproves the arbitrary positive derivative-weight extension in order three, even for smooth weights. Theorem 15 gives an explicit continuous weight, a rational certificate covering the entire evaluation interval, and a strict two-switch lower bound. This closes the unrestricted weighted Hilbert shortcut; the original constant-weight conjecture remains open.
 
+Revision 1.10 proves an explicit nodal-length restriction in order three. For 1<p<3, at most two intervals of constant sign of the first derivative cover more than p(3-p)/(3p-1) of the domain. Theorem 16 uses an admissible stretching family and a constrained second variation. Additional short intervals remain possible under this necessary condition; the full conjecture remains open.
+
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [35-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [37-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

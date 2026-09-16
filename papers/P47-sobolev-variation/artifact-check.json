@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.9",
-  "pdf_pages": 35,
-  "pdf_text_characters": 87794,
+  "revision": "1.10",
+  "pdf_pages": 37,
+  "pdf_text_characters": 92305,
   "replacement_characters": 0,
-  "equation_tags": 135,
+  "equation_tags": 147,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1215,
+  "mathjax_expressions": 1292,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -47,15 +47,17 @@
       32,
       33,
       34,
-      35
+      35,
+      36,
+      37
     ],
     "resolution_dpi": 108,
-    "outcome": "All 35 final pages rendered and inspected in nine contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new weighted counterexample, rational certificate table, exact fraction and smoothing argument are legible. The remaining-questions section and references are readable on separate final pages."
+    "outcome": "All 37 final pages rendered and inspected in ten contact sheets after the final manuscript edit, with additional full-page inspection of pages 34 and 35. No clipping, overlap or missing glyphs found. The nodal-length theorem, constrained Hessian and displayed algebra are legible. The remaining-questions section and references are readable."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "6729b4a9d37718cc9fe62c5552c5f4452e757258e5f4e1811696bfcc5b69064d",
-    "manuscript.tex": "de04f81d459304511bbf64947491e9df652dc41367cc99b8a6c86f0c07e2d345",
-    "manuscript.pdf": "78c122f50a42b8201df34c43f8b4bdac452a615cbd6482e41f18e4ce40a639ed"
+    "manuscript.md": "0e7d3c6ef79675a3eda3800390bd0af122bd454dbdbbf29c77ba688789fba26e",
+    "manuscript.tex": "5201b8ee74701edcae451d008fe7f8c6a4bda7637d1348b554ae398226b8824e",
+    "manuscript.pdf": "e467fdab73ac158033b23eb6e76a79cccff9fccb84dee2bc7af3648680462c6d"
   }
 }
