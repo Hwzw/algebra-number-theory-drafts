@@ -118,3 +118,17 @@ No remaining gap was identified in Section 10's written proof. This review is by
 11. **Scope:** The result addresses constant positive Robin parameter and zero potential on full-dimensional convex polyhedra in d>=4. It leaves dimensions two and three and a quantitative h threshold open. It does not assert an actual crossing, a smooth-domain example, or failure of first-eigenvalue concavity. The qualitative convergence is proved here; no external Airy or thin-domain asymptotic is assumed.
 
 No remaining gap was identified in the written Section 11 proof by the originating assistant. Independent expert review has not occurred.
+
+
+## Revision 4.1: Section 12 internal proof audit
+
+- Geometry: the triangle has base 2/H, height H, area one, and perimeter 2H sqrt(1+H^-4)+2/H. The parameter is alpha divided by that complete perimeter.
+- Disk: phi=1-a r^2, a=alpha/(4 pi+alpha), is positive and exactly satisfies the unit-disk Robin condition with coefficient alpha/(2 pi). The ground-state transform gives a strict lower bound; multiplication by area pi gives the invariant functional. No Bessel approximation is used.
+- Positive lower limit: lateral arclength exceeds projected dx. Its sign permits replacing it by dx only for positive alpha. The base and longitudinal energy are nonnegative and may be dropped. The interval condition holds uniformly over all nonzero slices for large H. The resulting lower bound tends to alpha/2.
+- Positive upper limit: the piecewise linear trial is in H1, with exact norm delta(4-delta)/6, energy (2-delta)/(delta H^2), side mass 2 delta H sqrt(1+H^-4)/3 and base mass 2/H. First H tends to infinity at fixed delta, then delta tends to zero. No interchange of those limits is assumed.
+- Explicit witness: H=10 and delta=1/2 give norm 7/24 and energy 3/100. Writing b=sqrt(10001)>100 gives the boundary numerator (b+6)/(6(b+1)). Division by the norm bounds the quotient by 123/175. The disk lower bound exceeds 12/13 using only pi>3.
+- Negative trial: in coordinates s=H-x, both sloping outward normals have s component -1/sqrt(H^4+1). The exponential derivative therefore supplies the positive outward normal derivative that cancels the negative Robin coefficient. The base residual is negative. Green's identity gives the claimed upper bound without dropping a boundary term of the wrong sign.
+- Scope: all triangles are full-dimensional bounded convex Lipschitz domains for fixed H. The negative-parameter sequence varies H, and does not contradict a fixed smooth-domain asymptotic. The positive small-alpha expansion is not uniform in H. No unscaled Bareket conclusion follows.
+- Source scope: the exact preprint Conjecture D is contradicted. The inaccessible final journal wording and the discrepancy with the final Freitas--Laugesen Section 3 are disclosed. These affect priority assessment, not the written variational inequalities.
+
+The originating assistant found no remaining gap in this written section. This is an internal AI-assisted audit, not independent verification or expert review.

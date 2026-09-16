@@ -204,5 +204,13 @@
   "revision_4_0_notes": [
     "Local archive: concavity-audit. Laugesen and Oberwolfach copies are archived in prior audit folders.",
     "No third-party PDFs or HTML source texts are republished."
-  ]
+  ],
+  "revision_4_1": {
+    "Freitas_Laugesen_final": {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8FC567395CD94ED07344A5461D91F0DE/S0008414X19000154a.pdf/from_steklov_to_neumann_and_beyond_via_robin_the_szego_way.pdf",
+      "sha256": "3d584655c86cfedc2deda641a23da1673b3ecb5ede08fe040da15d15beeccb89",
+      "bytes": 1048232
+    },
+    "Laugesen_final": "DOI and Crossref metadata checked; AIP final PDF returned HTTP 403; metadata-only Silverchair page inspected; no final full-text reading claimed"
+  }
 }

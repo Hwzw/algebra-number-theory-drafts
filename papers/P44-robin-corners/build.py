@@ -19,7 +19,7 @@ title,s=s.split('\n',1)
 s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 15, 2026\n','\n',1)
 s=re.sub(r'^(#{2,}) ',lambda m:m.group(1)[1:]+' ',s,flags=re.M)
 body=subprocess.check_output([executable('pandoc'),'-f','markdown+tex_math_dollars-smart','-t','latex','--top-level-division=section'],input=s,text=True)
-body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}')
+body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}').replace('ő',r'\H{o}')
 body=body.replace(r'\section{References}',r'\sloppy\section{References}')
 body=re.sub(r'(?=\\textbf\{(?:Theorem|Lemma|Proposition|Corollary) )',lambda _:r'\Needspace{6\baselineskip}',body)
 preamble=r'''\documentclass[11pt]{article}

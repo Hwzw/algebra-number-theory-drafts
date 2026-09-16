@@ -1,9 +1,9 @@
 {
   "file": "manuscript_extensions/P44-quasiconcavity/publish-ready/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "9afe2bdf9b07f9b5b958f373105a2219e9199afdda15e1c263981ac65c8b4302",
+  "markdown_sha256": "808865840c40995cab3c8f871a6bf8f697e61e5da8deb8c953f1f320b95c8257",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
-  "expressions": 1234,
+  "expressions": 1310,
   "errors": [],
   "local_svg_preview_created": false,
   "local_visual_inspection": false,

@@ -1,6 +1,6 @@
 # P44: Robin ground states on convex polyhedra: concavity and vanishing spectral gaps
 
-Henry Zweiman. September 15, 2026. Revision 4.0.
+Henry Zweiman. September 15, 2026. Revision 4.1.
 
 **AI-assisted research preprint. Not peer reviewed or independently verified.**
 
@@ -10,10 +10,12 @@ Revision 3.1 adds a distinct counterexample to Laugesen's spectral-ratio monoton
 
 Revision 4.0 adds a counterexample to the second-eigenvalue concavity conjecture, Laugesen C. A convex asymmetric thin domain has two end regions with limiting ground energies that exchange order. Section 11 proves the required spectral convergence by forms, compactness and min--max, then obtains a strict midpoint violation on one fixed domain. This completes the manuscript's answers to the separate positive-parameter conjectures A, B and C in dimensions at least four.
 
+Revision 4.1 adds a planar first-eigenvalue result for the parameter divided by perimeter. On area-one triangles of increasing aspect ratio the positive-parameter value tends to alpha/2, while the disk has a larger value for 0 < alpha <= 4 pi. An explicit triangle at alpha=1 has value below 123/175, while the disk exceeds 12/13. For each negative alpha the functional is unbounded below even among convex triangles. Section 12 disproves the exact Conjecture D formulation in Laugesen's arXiv v1. The final journal wording was not accessible and historical priority remains qualified explicitly.
+
 The manuscript also retains its discrete-exception disproof of eventual polygonal log-concavity and full proof of the ACH small-parameter polyhedral quasiconcavity conjecture. The new gap proof is independent of those regularity arguments.
 
 - [Full Markdown manuscript](manuscript.md)
-- [Thirty-five-page revised PDF](manuscript.pdf)
+- [Thirty-eight-page revised PDF](manuscript.pdf)
 - [Portable LaTeX](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)

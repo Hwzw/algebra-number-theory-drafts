@@ -1,38 +1,38 @@
 {
   "date": "2026-09-15",
-  "revision": "4.0",
+  "revision": "4.1",
   "author": "Henry Zweiman",
-  "pdf_pages": 35,
-  "pdf_text_characters": 89031,
+  "pdf_pages": 38,
+  "pdf_text_characters": 95835,
   "pdf_text_replacement_characters": 0,
-  "mathjax_expressions": 1234,
+  "mathjax_expressions": 1310,
   "mathjax_errors": 0,
-  "display_tag_count": 164,
+  "display_tag_count": 181,
   "display_tags_match": true,
-  "visual_inspection": "All 35 final PDF pages rendered at 1.5x with PyMuPDF and inspected in nine contact sheets after the final build; no clipping, overlap or missing glyphs.",
+  "visual_inspection": "All 38 final PDF pages rendered at 1.5x with PyMuPDF and inspected in ten contact sheets after the final build; no clipping, overlap or missing glyphs.",
   "tex_log": "No warnings, overfull or underfull boxes, or missing characters",
   "independent_human_review": false,
   "github_live_render_inspected": false,
   "files": {
     "manuscript.md": {
-      "bytes": 107573,
-      "sha256": "9afe2bdf9b07f9b5b958f373105a2219e9199afdda15e1c263981ac65c8b4302"
+      "bytes": 115708,
+      "sha256": "808865840c40995cab3c8f871a6bf8f697e61e5da8deb8c953f1f320b95c8257"
     },
     "manuscript.tex": {
-      "bytes": 114200,
-      "sha256": "cba14f552a91d12891d4cae7a7c448e2059772b57f71c26b8b3f7c5c02e1b252"
+      "bytes": 122849,
+      "sha256": "5567ecb2e0f2602d9ead2d661e6f24cc5cee134df3aba0ffb70e8303cb383036"
     },
     "manuscript.pdf": {
-      "bytes": 240892,
-      "sha256": "3cfecc31dbf1196bbe7a4ad1a47f167c1d94bb506b5598a1e2fd4b89f5f41469"
+      "bytes": 257406,
+      "sha256": "8b1e3b23748ef7b6e11697505ac0f7e2723fa37003351bff9a627966833b6dab"
     },
     "build.py": {
-      "bytes": 1969,
-      "sha256": "9a575fbfd170ae3251fbb6bf9792b8911e22b46fcc7ccac29d12940ac3c9f14e"
+      "bytes": 1992,
+      "sha256": "60ad9653176c52d2db096e31735661226327dd504f6575e5b1013dcf0eecf830"
     },
     "markdown-math-check.json": {
       "bytes": 448,
-      "sha256": "c4012909b20a96dcaf4267644d44ffbb7304a82b275e94f7abeec3a77a06d700"
+      "sha256": "bc2b1e9de1ef2ab4b972c2ee2df2302997830edfe887b8c1c3cb38b80a1fd1df"
     }
   }
 }

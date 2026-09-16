@@ -51,7 +51,7 @@
       "limitation": "Final journal full text not successfully opened. Polimi public PDF is labeled AAM by repository, but visible first page says arXiv v1, so it is not a verified final-text comparison. No proof dependency on this paper."
     }
   ],
-  "proof_progress": "Revision 4.0 adds a complete written counterexample to Laugesen Conjecture C, with a self-contained variational spectral convergence proof; independent expert verification remains outstanding.",
+  "proof_progress": "Revision 4.1 adds a complete elementary planar perimeter-scaled first-eigenvalue comparison, with exact preprint scope and historical-source limitations disclosed.",
   "next_obligation": "Publication and artifact receipts record verification separately; independent expert proof and priority review remain outstanding.",
   "priority_search": {
     "date": "2026-09-15",
@@ -239,5 +239,16 @@
     "priority_result": "No competing counterexample found in bounded inspected primary sources; not exhaustive certification",
     "independent_human_review": false,
     "remaining": "Dimensions 2 and 3; smooth strictly convex examples; explicit geometric threshold; renewed exceptional-significance goal remains active"
+  },
+  "revision_4_1": {
+    "date": "2026-09-15",
+    "target": "Exact Conjecture D in arXiv:1905.07658v1 p.9",
+    "primary_read": "PDF exact conjecture and surrounding discussion; HTML; final journal metadata, abstract and references; author publication list",
+    "final_journal_full_text_accessible": false,
+    "Freitas_Laugesen": "Final CJM 72 (2020) 1024-1043, complete Section 3 pp.1029-1031 read; no first-eigenvalue perimeter-scaled minimization conjecture there despite attribution in Laugesen v1",
+    "proof": "Disk polynomial ground-state transform; exact triangle Rayleigh integrals and sliced interval lower bound; exact negative-parameter exponential trial",
+    "priority": "No competing statement found in bounded searches; final-wording discrepancy and exhaustive priority unresolved",
+    "independent_human_review": false,
+    "goal": "Exceptional-significance goal remains active"
   }
 }

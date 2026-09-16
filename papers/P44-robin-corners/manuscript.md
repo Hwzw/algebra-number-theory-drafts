@@ -6,7 +6,7 @@ September 15, 2026
 
 ## Abstract
 
-We disprove the universal positive-Robin fundamental-gap conjecture: in every dimension at least four, for each fixed positive Robin parameter and each fixed diameter, the infimum of the gap over bounded convex polyhedra is zero. An explicit four-dimensional family has three-dimensional cross-sections whose surface-area-to-volume ratio is larger in the middle than at the ends. Elementary variational estimates force the ground-state mass toward the two ends; an odd ground-state multiple and nested cutoffs give an exponentially small gap. A concrete member disproves both the convex-domain Robin gap monotonicity conjecture and Laugesen's spectral-ratio monotonicity conjecture. An asymmetric modification also disproves his conjecture that the second Robin eigenvalue is concave in the positive parameter: a fully proved limit to two half-line operators gives a strict midpoint violation on a fixed convex polyhedron. For the latter, we prove that the Robin ratio lies strictly below the Dirichlet ratio on the same fixed domain, using the established Dirichlet fundamental-gap theorem. Independently, we prove that the positive parameters with a log-concave ground state form a locally finite set on every convex polygon that is neither tangential nor rectangular, disproving the general eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer. We also prove their full small-parameter polyhedral quasiconcavity conjecture by a global Hessian-norm rigidity argument for the Neumann first variation. The gap proof is independent of the corner regularity arguments and leaves dimensions two and three open.
+We disprove the universal positive-Robin fundamental-gap conjecture: in every dimension at least four, for each fixed positive Robin parameter and each fixed diameter, the infimum of the gap over bounded convex polyhedra is zero. An explicit four-dimensional family has three-dimensional cross-sections whose surface-area-to-volume ratio is larger in the middle than at the ends. Elementary variational estimates force the ground-state mass toward the two ends; an odd ground-state multiple and nested cutoffs give an exponentially small gap. A concrete member disproves both the convex-domain Robin gap monotonicity conjecture and Laugesen's spectral-ratio monotonicity conjecture. An asymmetric modification also disproves his conjecture that the second Robin eigenvalue is concave in the positive parameter: a fully proved limit to two half-line operators gives a strict midpoint violation on a fixed convex polyhedron. The ratio comparison uses the established Dirichlet fundamental-gap theorem. We also derive the perimeter-scaled first-eigenvalue limit on area-one thin triangles, give an explicit positive-parameter triangle below the disk, and prove negative-parameter unboundedness below, refuting the precise preprint formulation of Laugesen's Conjecture D. Independently, we prove that the positive parameters with a log-concave ground state form a locally finite set on every convex polygon that is neither tangential nor rectangular, disproving the general eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer. We also prove their full small-parameter polyhedral quasiconcavity conjecture by a global Hessian-norm rigidity argument for the Neumann first variation. The gap proof is independent of the corner regularity arguments and leaves dimensions two and three open.
 
 **Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation; quasiconcavity; fundamental gap; eigenvalue ratio; spectral geometry.
 
@@ -1817,6 +1817,186 @@ Finally fix one sufficiently small $h$ and set $a=D/\operatorname{diam}(H_h)$, $
 
 The construction uses positive parameters, constant boundary coefficient and zero interior potential. Its universal counterexample starts in dimension four; dimensions two and three remain unresolved here. It gives an existence theorem for sufficiently small $h$, not an explicit numerical threshold or a smooth strictly convex example. The first eigenvalue remains concave, and the ball and rectangular-box results of [L] remain valid. Sections 9, 10 and 11 answer, respectively, the separate parameter conjectures A, B and C of [L].
 
+## 12. Perimeter-scaled first eigenvalues on thin triangles
+
+The preceding sections vary the Robin parameter on one fixed domain. A different question lets the domain vary and divides the parameter by its perimeter. Write $A(G)$ and $P(G)$ for planar area and perimeter, and define
+
+$$
+\mathcal F_\alpha(G)=A(G)E_0(G;\alpha/P(G)).
+\tag{12.1}
+$$
+
+This functional is invariant under dilations. Conjecture D in the explicitly cited preprint [L, arXiv v1, p.9] proposes that the disk minimizes (12.1) among bounded convex planar domains for every real $\alpha$. We refute that precise formulation for positive parameters as well as negative ones. The proof is independent of Sections 2--10 and uses only the elementary interval bound (11.27), whose proof was included above.
+
+**Theorem 12.1.** For $H>0$, let
+
+$$
+T_H=\left\{(x,y):0<x<H,\quad |y|<\frac{1-x/H}{H}\right\}.
+\tag{12.2}
+$$
+
+These are bounded convex triangles of area one. For every fixed $\alpha>0$,
+
+$$
+\lim_{H\to\infty}\mathcal F_\alpha(T_H)=\frac\alpha2.
+\tag{12.3}
+$$
+
+If $B$ is the area-one disk, then
+
+$$
+\mathcal F_\alpha(B)>\frac{4\pi\alpha}{4\pi+\alpha}
+\quad(\alpha>0).
+\tag{12.4}
+$$
+
+Consequently, for each $0<\alpha\le4\pi$, sufficiently large $H$ gives $\mathcal F_\alpha(T_H)<\mathcal F_\alpha(B)$. A completely explicit witness is
+
+$$
+\mathcal F_1(T_{10})<\frac{123}{175}<\frac34
+<\frac{12}{13}<\mathcal F_1(B).
+\tag{12.5}
+$$
+
+For every fixed $\alpha<0$,
+
+$$
+\mathcal F_\alpha(T_H)\le-\frac{\alpha^2H^2}{16},
+\qquad
+\inf_{G\text{ bounded convex planar}}\mathcal F_\alpha(G)=-\infty.
+\tag{12.6}
+$$
+
+### 12.1. A rigorous disk lower bound
+
+Work first on the unit-radius disk $D$. Its perimeter-scaled Robin coefficient is $\gamma=\alpha/(2\pi)$. Put
+
+$$
+a=\frac\gamma{2+\gamma}=\frac\alpha{4\pi+\alpha},
+\qquad \phi(z)=1-a|z|^2.
+\tag{12.7}
+$$
+
+For $\alpha>0$, this smooth function is strictly positive on the closed disk and satisfies $\partial_\nu\phi+\gamma\phi=0$ on its boundary. Integration by parts gives, for every real $v\in H^1(D)$,
+
+$$
+q_{D,\gamma}[v]
+=\int_D\phi^2\left|\nabla\!\left(\frac v\phi\right)\right|^2
++\int_D\frac{4a}{1-a|z|^2}v^2.
+\tag{12.8}
+$$
+
+One first proves the identity for smooth $v$ and then uses density; $\phi$ and $1/\phi$ have bounded derivatives. The potential in the last integral is strictly larger than $4a$ almost everywhere. Applying (12.8) to a nonzero ground eigenfunction gives $E_0(D;\gamma)>4a$. Since $A(D)=\pi$ and (12.1) is dilation invariant, (12.4) follows. In particular, $4\pi/(4\pi+1)>12/13$ because $\pi>3$. This argument uses no numerical Bessel roots.
+
+### 12.2. The positive-parameter triangular limit
+
+Direct geometry gives
+
+$$
+A(T_H)=1,\qquad
+P_H:=P(T_H)=2H\sqrt{1+H^{-4}}+\frac2H,
+\qquad \beta_H=\frac\alpha{P_H}.
+\tag{12.9}
+$$
+
+Let $w_H(x)=2(1-x/H)/H$ be the vertical slice length. Along each sloping side the arclength factor relative to $dx$ is $\sqrt{1+H^{-4}}\ge1$. When $\alpha>0$, discarding the nonnegative base-boundary and longitudinal-gradient terms therefore gives
+
+$$
+q_{T_H,\beta_H}[v]
+\ge\int_0^H\left\{
+\int_{-w_H(x)/2}^{w_H(x)/2}|\partial_yv|^2\,dy
++\beta_H\bigl(|v(x,-w_H(x)/2)|^2+|v(x,w_H(x)/2)|^2\bigr)
+\right\}\,dx.
+\tag{12.10}
+$$
+
+For sufficiently large $H$, every slice satisfies $\beta_Hw_H(x)\le1/4$. Applying (11.27) to each nondegenerate slice, and using $w_H(x)\le2/H$, proves
+
+$$
+E_0(T_H;\beta_H)\ge \beta_H H-8\beta_H^2
+\longrightarrow\frac\alpha2.
+\tag{12.11}
+$$
+
+The slicing calculation can first be made for restrictions of smooth functions to the triangle. Density in $H^1(T_H)$ and continuity of the boundary trace then give (12.10)--(12.11) for the variational problem. No estimate at the apex, which is a set of zero boundary measure, is needed.
+
+For the matching upper bound fix $0<\delta<1$ and use
+$v(x,y)=(1-x/(\delta H))_+$. Elementary integration gives
+
+$$
+\begin{split}
+\int_{T_H}v^2&=\frac{\delta(4-\delta)}6,\\
+\int_{T_H}|\nabla v|^2&=\frac{2-\delta}{\delta H^2},\\
+\int_{\partial T_H}v^2&=\frac{2\delta H}{3}\sqrt{1+H^{-4}}+\frac2H.
+\end{split}
+\tag{12.12}
+$$
+
+The last term includes the entire base. Thus the Rayleigh quotient and (12.9) imply
+
+$$
+\limsup_{H\to\infty}E_0(T_H;\beta_H)
+\le\frac{2\alpha}{4-\delta}.
+\tag{12.13}
+$$
+
+Letting $\delta\downarrow0$ after this limit proves (12.3). For $0<\alpha\le4\pi$, the strict disk bound (12.4) exceeds $\alpha/2$, including at the endpoint $\alpha=4\pi$. The asserted strict disk comparison follows.
+
+For the finite witness take $H=10$, $\delta=1/2$, $\alpha=1$ and write $b=\sqrt{10001}>100$. Formula (12.12) gives
+
+$$
+\int_{T_{10}}v^2=\frac7{24},\qquad
+\int_{T_{10}}|\nabla v|^2=\frac3{100},\qquad
+\beta_{10}\int_{\partial T_{10}}v^2
+=\frac{b+6}{6(b+1)}.
+\tag{12.14}
+$$
+
+Since $(b+6)/(b+1)=1+5/(b+1)<21/20$, its Rayleigh quotient is strictly below
+$18/175+3/5=123/175$. Combining this with (12.4) proves (12.5). All constants are exact; (12.5) is not a numerical eigenvalue calculation.
+
+### 12.3. Negative parameters and the acute vertex
+
+Now fix $\alpha<0$, so $\beta_H<0$. Set $s=H-x$, so the triangle has the description $0<s<H$, $|y|<s/H^2$. With
+
+$$
+k=|\beta_H|\sqrt{H^4+1},\qquad u(s,y)=e^{-ks},
+\tag{12.15}
+$$
+
+we have $-\Delta u=-k^2u$. On both sloping sides,
+$\partial_\nu u=k u/\sqrt{H^4+1}=-\beta_Hu$.
+At the base $s=H$, the outward normal is in the increasing-$s$ direction and
+$\partial_\nu u+\beta_Hu=(-k+\beta_H)u<0$.
+Integration by parts therefore yields
+
+$$
+q_{T_H,\beta_H}[u]
+=-k^2\int_{T_H}u^2
++(-k+\beta_H)\int_{s=H}u^2
+\le-k^2\int_{T_H}u^2.
+\tag{12.16}
+$$
+
+The exponential is smooth and positive on the closed triangle, so this is an admissible test without any limiting or corner regularity assumption. Writing $c=\sqrt{H^4+1}>1$, (12.9) implies
+
+$$
+k^2=\frac{\alpha^2H^2}{4}\left(\frac c{c+1}\right)^2
+\ge\frac{\alpha^2H^2}{16}.
+\tag{12.17}
+$$
+
+Rayleigh's principle proves (12.6). The fixed disk has a finite ground eigenvalue, while these convex triangular values tend to negative infinity. ∎
+
+### 12.4. Scope and the order of limits
+
+For each fixed triangle, the derivative of $\mathcal F_\alpha(T_H)$ at $\alpha=0$ is one. The same is true for the disk. Nevertheless, (12.3) has slope one half in $\alpha>0$: the small-parameter expansion is not uniform as $H\to\infty$. At positive parameter the trial functions concentrate near the widest part of a long triangle. At negative parameter the exponential in (12.15) concentrates near its acute vertex. Neither mechanism is captured by the constant-width rectangular model.
+
+The reference to Conjecture D is specifically to the statement in arXiv:1905.07658v1. The final journal metadata and the author's publication list were checked, but the full final journal text was not accessible in this audit; no assertion that its wording is identical is required for Theorem 12.1. In particular, the final Freitas--Laugesen paper [FL, Section 3] does not contain the first-eigenvalue minimization conjecture that [L, v1] attributes to it. This source discrepancy is recorded rather than silently resolved in favor of a broader novelty claim. Theorem 12.1 supplies a self-contained planar spectral comparison and disproves the precise preprint formulation. A complete historical priority certificate is not claimed.
+
+No assertion about the minimizing shape for every positive $\alpha$, a sharp lower bound over all convex domains, or a fixed smooth-domain negative-parameter asymptotic follows from this theorem. The unscaled Bareket problem fixes the Robin coefficient while varying the domain, so (12.6) does not address its proposed upper bound. Nor does this first-eigenvalue comparison settle any of the remaining two- or three-dimensional gap, ratio-monotonicity, or second-eigenvalue concavity questions.
+
+
 ## References
 
 [ACH] B. Andrews, J. Clutterbuck and D. Hauer, *Non-concavity of the Robin ground state*, Cambridge Journal of Mathematics **8** (2020), no. 2, 243-310. [Final journal article](https://doi.org/10.4310/CJM.2020.v8.n2.a1). [arXiv:1711.02779v2](https://arxiv.org/abs/1711.02779v2).
@@ -1850,3 +2030,5 @@ The construction uses positive parameters, constant boundary coefficient and zer
 [DS] G. Dai and Y. Sun, *Upper bound estimation for the ratio of the first two eigenvalues of Robin Laplacian*, [arXiv:2511.20988v3](https://arxiv.org/abs/2511.20988v3), December 20, 2025, Theorem 1.3. The revised title, theorem numbering and hypotheses are those of v3.
 
 [OW] *Geometric Spectral Theory*, Oberwolfach Reports **36/2023**, meeting August 20--25, 2023, problem section, p.2099. [Report](https://doi.org/10.4171/OWR/2023/36). [Full text](https://ems.press/content/serial-article-files/47475).
+
+[FL] P. Freitas and R. S. Laugesen, *From Steklov to Neumann and beyond, via Robin: the Szegő way*, Canadian Journal of Mathematics **72** (2020), no. 4, 1024-1043. [Final journal article](https://doi.org/10.4153/S0008414X19000154), Section 3.

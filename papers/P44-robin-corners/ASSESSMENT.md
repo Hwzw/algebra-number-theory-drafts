@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 15, 2026. P44 revision 4.0.
+Henry Zweiman. September 15, 2026. P44 revision 4.1.
 
 ## Current internal assessment
 
@@ -9,6 +9,16 @@ Revision 4.0 adds a complete written counterexample to Laugesen's Conjecture C: 
 Revision 3.0 adds a complete elementary proof that, for every fixed positive Robin parameter and fixed diameter, the infimum of the fundamental gap over convex polyhedra is zero in every dimension at least four. This disproves the universal positive-Robin fundamental-gap conjecture. A fixed explicit four-dimensional member also disproves the positive-parameter gap monotonicity conjecture recorded by Laugesen and attributed to Smits. The new proof is independent of the earlier corner and quasiconcavity regularity arguments.
 
 The manuscript retains the discrete-exception polygonal log-concavity result and the full small-parameter polyhedral quasiconcavity proof from revision 2.0. The originating assistant found no remaining gap in the stated results. This is an internal assessment of an AI-assisted preprint, not independent expert verification, peer review, an absolute priority certificate, or a journal-acceptance prediction.
+
+## New in revision 4.1: perimeter-scaled triangular limits
+
+Section 12 proves a positive-parameter limit alpha/2 on area-one thin triangles and an explicit strict triangle-versus-disk comparison at alpha=1. A positive polynomial on the disk satisfies its Robin boundary condition exactly and supplies a strict ground-state lower bound by integration by parts. Piecewise linear triangle trials include the base-boundary term; vertical slicing and the earlier elementary interval estimate give the matching lower limit. A separate exponential trial satisfies both sloping Robin conditions exactly for negative alpha and gives unboundedness below. There is no numerical eigenvalue computation, asymptotic corner theorem, or unproved spectral convergence input in this section.
+
+The exact target is [Laugesen, arXiv:1905.07658v1, Conjecture D, p.9](https://arxiv.org/abs/1905.07658v1), including its all-real-parameter quantifier and surrounding smooth-domain asymptotic discussion. Both the PDF wording and HTML were checked. The final Journal of Mathematical Physics DOI 10.1063/1.5116253, publication metadata, references and the [author's publication list](https://publish.illinois.edu/rlaugesen/research/) were inspected, but the full final journal text was not accessible. The result is therefore attributed to the exact preprint formulation, without asserting that the final journal version retains it.
+
+There is a concrete source discrepancy: the preprint says that this minimization conjecture is also stated in Freitas--Laugesen's Szego-way paper. The complete Section 3, printed pp.1029--1031, of the [final Canadian Journal of Mathematics article](https://doi.org/10.4153/S0008414X19000154) was read. Its Conjectures 1 and 2 concern second eigenvalues; its first-eigenvalue discussion states different unscaled optimization problems. It does not reproduce the first-eigenvalue perimeter-scaled minimization conjecture. This prevents treating that paper as corroboration of the precise target or a certificate that the target remained open after publication.
+
+Focused September 15 searches covered the exact Conjecture D, perimeter-scaled Robin first eigenvalues, convex counterexamples, negative parameters and thin triangles. No competing result was found in the inspected primary statements. This bounded search and inaccessible final wording leave a stronger historical novelty claim uncertified. The mathematical comparison itself is fully written and internally checked. Its simplicity, and the absence of corroborated sustained study of this exact formulation, also mean that this revision does not satisfy the renewed goal's exceptional-significance threshold by itself. The goal remains active.
 
 ## New in revision 4.0: second-eigenvalue concavity
 
