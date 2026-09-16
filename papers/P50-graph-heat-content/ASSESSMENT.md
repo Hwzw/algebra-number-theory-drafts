@@ -2,7 +2,7 @@
 
 Henry Zweiman. September 15, 2026. Developed as Q58.
 
-**Current version: 1.3.** Earlier sections below retain the assessment history; the final section records the current general-measure theorem and remaining significance/source limits.
+**Current version: 1.4.** Earlier sections below retain the assessment history; the final section records the current nonlinear general-measure theorem and remaining significance/source limits.
 
 ## Contribution and decision
 
@@ -77,3 +77,19 @@ The expanded source search checked potential/measure optimization and Robin eige
 The final OT publisher route again failed to expose the theorem body. The publisher-supplied preview on ResearchGate contains only page one, confirming the June 24, 2026 publication date and a discussion of possible Kohler-Jobin inequalities in its abstract. No final theorem number or exact final open-question wording is attributed. The MP final Dirichlet theorem, BCS final Robin-domain questions and O26 nonlinear Dirichlet scope remain the audited comparisons described above.
 
 The improvement is substantial within graph spectral optimization: both constraints are sharp and the result covers the full finite nonnegative-measure class. The currently assembled literature evidence does not establish an extraordinary-significance assessment or absolute priority, and no independent review was obtained. The broader user goal remains active. Further source assessment and genuinely significant manuscript extensions should continue; ordinary proof or artifact completion alone is not substituted for that goal.
+
+## Revision 1.4: nonlinear measure killing for every 1 < p < infinity
+
+September 16, 2026. Theorem 9.1 gives both sharp joint comparisons for the p-Laplacian with any finite nonnegative killing measure of fixed positive mass. At fixed length and killing mass, the endpoint-killed interval uniquely minimizes the product of the first eigenvalue and the appropriate power of torsion mass. At fixed torsion mass and killing mass, it uniquely minimizes the first eigenvalue. Lemma 9.2 and Proposition 9.3 supply the variational, rigidity and distribution estimates, including singular measures.
+
+The extension was a stated next frontier in P50 revision 1.3's checkpoint. It is a further theorem in P50, not a separately counted paper or a named extraordinary conjecture located in an external source. The existing all-times heat-content theorem remains linear. The nonlinear stationary result does not assert a nonlinear evolution comparison.
+
+The new proof uses the homogeneous composition inequality g(t)^p <= t^(p-1) integral_0^t g'^p to control all killing terms. Its scalar inverse-integral comparison fixes the factors of p-1 explicitly. The proof is given for finite atomic measures, then passed to arbitrary measures by compactness and uniform coercivity. Equality is proved from the limiting torsion extremum, rather than from an equality assertion along approximations.
+
+### Expanded source reading
+
+Özcan's arXiv:2607.12333v2 remains the latest version observed on September 16, 2026 (July 15, 2026). Beyond the earlier scope check, the introduction, variational setup, torsion existence proof and entire Section 5.2 were read, including Theorem 5.2 and Lemmas 5.3-5.5 with their proofs. This establishes the credited nonlinear Dirichlet graph comparison and its modified-torsion mechanism. Its torsion convention is T_p=(integral w)^(p-1), and its boundary class has nonempty Dirichlet vertices. Our finite-strength measure theorem is a different assertion; the Dirichlet theorem and method are not claimed anew.
+
+Additional primary-source screening covered van den Berg-Bucur's nonlinear Robin torsion definitions and bounds, Briani-Buttazzo-Prinari's Dirichlet-domain eigenvalue/torsion optimization, and Paoli-Piscitelli-Trani's Robin/Neumann annular comparison with volume and perimeter constraints. Only returned definitions, introductions or abstracts were inspected for these sources, not their complete proofs. Their respective constraints differ from finite killing mass on a compact metric graph. Search-summary.json and source-audit.json record this bounded screening and its limits. The final Özcan-Täufer theorem body remains unread.
+
+No unresolved gap was identified by the originating assistant's hand-proof audit. This is internal review, and no independent expert certification or exhaustive priority determination is claimed. The result substantially broadens the stationary theorem within P50; current evidence still does not establish the user's extraordinary-significance completion condition. That broader goal remains active. Quantitative stability, nonlinear heat concentration, and a broader significance and successor-literature assessment remain directions for further work.

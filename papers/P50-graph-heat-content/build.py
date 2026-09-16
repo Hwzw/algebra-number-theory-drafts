@@ -22,7 +22,7 @@ body=subprocess.check_output([executable('pandoc'),'-f','markdown+tex_math_dolla
 body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}')
 body=body.replace(r'\section{References}',r'\raggedright\section{References}')
 body=body.replace(r'\section{',r'\Needspace{8\baselineskip}\section{')
-body=body.replace(r'\subsection{8.',r'\Needspace{9\baselineskip}\subsection{8.')
+body=re.sub(r'(?=\\subsection\{[89]\.)',lambda _:r'\Needspace{9\baselineskip}',body)
 body=body.replace('For a regular ',r'\Needspace{5\baselineskip}For a regular ')
 body=body.replace(r'\textbf{{[}',r'\Needspace{6\baselineskip}\textbf{{[}')
 body=re.sub(r'(?=\\textbf\{(?:Theorem|Lemma|Proposition|Corollary) )',lambda _:r'\Needspace{6\baselineskip}',body)

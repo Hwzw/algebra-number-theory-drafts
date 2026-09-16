@@ -97,5 +97,15 @@
       "Dai Shi PPW Robin journal"
     ],
     "result": "No matching fixed-total-killing graph joint inequality found in inspected primary material. Scope comparisons and unread bodies are recorded; search is not exhaustive."
+  },
+  "nonlinear_measure_search": {
+    "date": "2026-09-16",
+    "queries": [
+      "\"Kohler-Jobin\" \"p\" \"Robin\" \"graph\"",
+      "\"torsional rigidity\" \"measure\" \"p-Laplacian\" Robin",
+      "\"p-Laplacian\" \"metric graphs\" \"Robin\" torsion",
+      "\"Kohler-Jobin\" \"killing\" nonlinear"
+    ],
+    "result": "No matching finite-strength nonnegative-measure graph joint comparison found in inspected primary material. Expanded O26 proof reading and partial screenings recorded in source-audit.json. Bounded search; no exhaustive priority certificate."
   }
 }

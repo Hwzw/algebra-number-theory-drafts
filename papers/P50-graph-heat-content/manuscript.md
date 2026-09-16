@@ -6,7 +6,7 @@ September 16, 2026
 
 ## Abstract
 
-Among finite compact connected metric graphs of prescribed total length with a nonempty Dirichlet vertex set and standard conditions elsewhere, the interval with one Dirichlet and one Neumann endpoint maximizes heat content at every positive time. Equality at a single positive time characterizes this interval, up to subdivision. This answers the all-times question of Bifulco and Täufer. We prove the stronger statement that heat evolution on any such graph is dominated in cumulative decreasing rearrangement by mixed-boundary interval evolution of the rearranged initial datum. The argument combines the classical metric-graph level-set inequality with the zero-order elliptic concentration comparison and implicit-time iteration of parabolic symmetrization. The rigidity proof uses the half-time energy identity and strict edgewise concavity of the heat evolution of the constant function. No arithmetic condition on the edge lengths is imposed. We also prove that, among graphs of fixed length carrying a finite nonnegative killing measure of fixed positive mass, the interval with all killing at one endpoint maximizes heat content at every time. This comparison allows singular measures and arbitrary nonnegative initial data, and equality at a single positive time characterizes the interval and its endpoint measure. For the same general killing measures we prove sharp Kohler-Jobin inequalities at fixed length and total killing, and at fixed torsion and total killing. A ground-state distribution estimate controls the potential terms and compares the resulting scalar differential inequality with the cosine profile; both equality cases characterize the endpoint-killed interval.
+Among finite compact connected metric graphs of prescribed total length with a nonempty Dirichlet vertex set and standard conditions elsewhere, the interval with one Dirichlet and one Neumann endpoint maximizes heat content at every positive time. Equality at a single positive time characterizes this interval, up to subdivision. This answers the all-times question of Bifulco and Täufer. We prove the stronger statement that heat evolution on any such graph is dominated in cumulative decreasing rearrangement by mixed-boundary interval evolution of the rearranged initial datum. The argument combines the classical metric-graph level-set inequality with the zero-order elliptic concentration comparison and implicit-time iteration of parabolic symmetrization. The rigidity proof uses the half-time energy identity and strict edgewise concavity of the heat evolution of the constant function. No arithmetic condition on the edge lengths is imposed. We also prove that, among graphs of fixed length carrying a finite nonnegative killing measure of fixed positive mass, the interval with all killing at one endpoint maximizes heat content at every time. This comparison allows singular measures and arbitrary nonnegative initial data, and equality at a single positive time characterizes the interval and its endpoint measure. For the same general killing measures we prove sharp Kohler-Jobin inequalities at fixed length and total killing, and at fixed torsion and total killing. A ground-state distribution estimate controls the potential terms and compares the resulting scalar differential inequality with the cosine profile; both equality cases characterize the endpoint-killed interval. The stationary joint comparisons also extend to the nonlinear $p$-Laplacian for every $1<p<\infty$, with explicit finite-strength constants and the same rigidity.
 
 **Keywords:** metric graph; heat content; rearrangement; concentration comparison; Faber-Krahn inequality; rigidity.
 
@@ -935,7 +935,287 @@ $$
 
 Hence (74) gives $k^3T\ge B(y)=y^3/3+y^2/b$, proving (72). The interval of length $y/k$ with strength $\kappa$ has first eigenvalue $k^2$ and torsion $k^{-3}B(y)$. Interval torsion is strictly increasing with length, whereas its first eigenvalue is strictly decreasing; the latter also follows from $k_\ell\ell=\arctan(\kappa/k_\ell)$. Thus (72) is equivalent to (71). Equality forces $kL=y$ and again $T=L^3/3+L^2/\kappa$, giving the same rigidity by Corollary 7.2. This proves both theorems. $\square$
 
-The two general-measure questions left open in revision 1.2 are therefore settled by (70)-(72). Quantitative stability of these inequalities and of the heat-content comparison remains open. Signed killing measures, discontinuous vertex couplings, weighted edge forms and the Euclidean Robin domain problem are outside the present assertions.
+The two general-measure questions left open in revision 1.2 are therefore settled by (70)-(72). Quantitative stability of these inequalities and of the heat-content comparison remains open. Section 9 extends the stationary joint comparisons to nonlinear killing. Signed killing measures, discontinuous vertex couplings, weighted edge forms and the Euclidean Robin domain problem are outside the present assertions.
+
+## 9. Nonlinear killing and the $p$-Laplacian
+
+The distribution argument extends to the full range $1<p<\infty$. Fix a finite compact connected metric graph $\Gamma$ of length $L$, without Dirichlet conditions, and a finite nonnegative Borel measure $\nu$ with $\nu(\Gamma)=\kappa>0$. On the continuous space $W^{1,p}(\Gamma)$ set
+
+$$
+E_{p,\nu}[u]=\int_\Gamma|u'|^p\,dx+\int_\Gamma|u|^p\,d\nu,
+\qquad
+\lambda_p=\inf_{u\ne0}\frac{E_{p,\nu}[u]}{\int_\Gamma|u|^p\,dx}.
+\tag{89}
+$$
+
+Let $w$ minimize $E_{p,\nu}[u]/p-\int_\Gamma u\,dx$, and distinguish its mass from the customary homogeneous torsional rigidity:
+
+$$
+S_p=\int_\Gamma w\,dx,\qquad T_p=S_p^{p-1},
+\qquad p'=\frac p{p-1},\qquad d_p=p'+1.
+\tag{90}
+$$
+
+This convention for $T_p$ agrees with [O26]. In particular, the scale-invariant product is $\lambda_p S_p^{p/d_p}=\lambda_p T_p^{p/(2p-1)}$. The energy includes nonlinear point interactions as well as distributed killing. The results below concern stationary variational problems; no nonlinear heat-concentration theorem is asserted.
+
+We specify the one-dimensional functions to avoid a normalization ambiguity. Define
+
+$$
+A_p(t)=\int_0^t\frac{v^{p-2}}{1+v^p}\,dv,
+\qquad a_p=A_p(\infty)=\frac{\pi}{p\sin(\pi/p)},
+\qquad \tau_p=A_p^{-1}:[0,a_p)\longrightarrow[0,\infty).
+\tag{91}
+$$
+
+Thus $\tau_2=\tan$. For $\sigma>0$, let $\theta_p(\sigma)\in(0,a_p)$ be the unique solution of
+
+$$
+\theta_p(\sigma)\tau_p(\theta_p(\sigma))
+=\sigma^{1/(p-1)}.
+\tag{92}
+$$
+
+**Theorem 9.1 (nonlinear joint comparisons).** For every $1<p<\infty$ and every graph and measure above, put $\sigma=\kappa L^{p-1}$ and $\theta=\theta_p(\sigma)$. Then
+
+$$
+\lambda_p S_p^{p/d_p}
+\ge(p-1)\theta^p
+\left(\frac1{d_p}+\sigma^{-1/(p-1)}\right)^{p/d_p}.
+\tag{93}
+$$
+
+Furthermore, if $\ell>0$ is chosen by
+
+$$
+\frac{\ell^{d_p}}{d_p}
++\ell^{p'}\kappa^{-1/(p-1)}=S_p,
+\tag{94}
+$$
+
+then $\lambda_p\ge\lambda_p(I_\ell,\kappa\delta_\ell)$. Equality in either comparison holds exactly when $\Gamma$ is a path and all killing is at one endpoint, up to subdivision and reflection.
+
+The nonlinear Dirichlet graph Kohler-Jobin inequality and its normalization are due to [O26, Theorem 5.2], following the nonlinear modified-torsion strategy of Kohler-Jobin and Brasco. Its level-set flux inequality and modified-torsion test are established ingredients [O26, Lemma 5.3]. Here the Hölder composition estimate below includes all finite killing terms, and the scalar comparison retains the finite Robin parameter. Thus the new assertion concerns nonnegative measure killing; the Dirichlet theorem is credited, not claimed anew.
+
+### 9.1. Variational facts and interval rigidity
+
+We first justify the variational objects and the separate interval comparisons. Path integration and Hölder's inequality give, uniformly over measures of mass $\kappa$,
+
+$$
+\|u\|_p^p
+\le 2^{p-1}L^p\int_\Gamma|u'|^p\,dx
+ +\frac{2^{p-1}L}{\kappa}\int_\Gamma|u|^p\,d\nu.
+\tag{95}
+$$
+
+Indeed, $|u(x)|\le |u(y)|+L^{1/p'}\|u'\|_p$; raise to the power $p$ and integrate over $x$ with length measure and over $y$ with $\nu/\kappa$. Consequently $E_{p,\nu}$ controls the $W^{1,p}$ norm. The compact embedding into $C(\Gamma)$, the direct method and strict convexity give a unique torsion minimizer $w\ge0$, a positive minimum eigenvalue and a nonnegative normalized ground state. Strict convexity follows because equality in the gradient term makes two functions differ by a constant, while the positive mass of $\nu$ excludes a nonzero constant difference.
+
+The torsion Euler equation and its variational value are
+
+$$
+\begin{aligned}
+\int_\Gamma|w'|^{p-2}w'v'\,dx
+ +\int_\Gamma w^{p-1}v\,d\nu&=\int_\Gamma v\,dx,\\
+(p-1)S_p&=\sup_v\left(p\int_\Gamma v\,dx-E_{p,\nu}[v]\right).
+\end{aligned}
+\tag{96}
+$$
+
+Testing with $w$ gives $E_{p,\nu}[w]=S_p$. The minimizer is not zero, since a small positive constant makes $E_{p,\nu}[u]/p-\int u$ negative. Optimizing scalar multiples of a test function also gives $T_p=\sup_{v\ne0}(\int|v|)^p/E_{p,\nu}[v]$.
+
+For the endpoint-killed interval, direct integration gives
+
+$$
+w_I(x)=\frac{L^{p'}-x^{p'}}{p'}
+ +\left(\frac L\kappa\right)^{1/(p-1)},
+\qquad
+S_{p,I}=\frac{L^{d_p}}{d_p}+L^{p'}\kappa^{-1/(p-1)}.
+\tag{97}
+$$
+
+To compute its eigenvalue, put $c_p(x)=(1+\tau_p(x)^p)^{-1/p}$. Differentiation of (91) gives $c_p'=-\tau_pc_p$ and
+
+$$
+-(|c_p'|^{p-2}c_p')'=(p-1)c_p^{p-1},
+\qquad c_p(0)=1,\qquad c_p'(0)=0.
+\tag{98}
+$$
+
+A positive interval ground state decreases from its Neumann endpoint; its flux equation and initial value therefore identify it, after normalization, with $c_p(kx)$, where $\lambda_p=(p-1)k^p$. Its Robin condition is $k^{p-1}\tau_p(kL)^{p-1}=\kappa$, so
+
+$$
+\lambda_p(I_L,\kappa\delta_L)
+=(p-1)\frac{\theta_p(\kappa L^{p-1})^p}{L^p}.
+\tag{99}
+$$
+
+**Lemma 9.2 (separate comparisons).** One has $\lambda_p\ge\lambda_p(I_L,\kappa\delta_L)$ and $S_p\le S_{p,I}$. Equality in the torsion comparison holds exactly for the endpoint-killed interval.
+
+**Proof.** The graph rearrangement inequality extends to $p$-energy:
+
+$$
+\int_0^L|(u^*)'|^p\,ds\le\int_\Gamma|u'|^p\,dx,
+\qquad
+E_{p,\nu}[u]\ge E_{p,\kappa\delta_L}[u^*]
+\quad(u\ge0).
+\tag{100}
+$$
+
+For a continuous piecewise affine function, coarea and Hölder give $\alpha_pb^{p-1}\ge N^p\ge1$, where $\alpha_p(t)=\sum_{u=t}|u'|^{p-1}$ and $b(t)=\sum_{u=t}|u'|^{-1}$. Integrating gives the gradient inequality. Piecewise affine approximation, the $L^p$ contraction of rearrangement and weak lower semicontinuity extend it to $W^{1,p}$, including constant pieces. The killing term is at least $\kappa(\min u)^p$, and the continuous representative of $u^*$ has endpoint value $\min u$. This proves (100). The Rayleigh and torsion variational principles give the two comparisons.
+
+If $S_p=S_{p,I}$, uniqueness of the interval torsion minimizer gives $w^*=w_I$. Both nonnegative energy defects in (100) vanish, and $\nu$ is supported where $w=\min w$. We explain why the graph is a path even for singular measures. On each edge the distributional equation is
+
+$$
+(|w'|^{p-2}w')'=w^{p-1}\nu-dx.
+\tag{101}
+$$
+
+The flux is of bounded variation, hence bounded; therefore $w'$ is bounded and $w$ is Lipschitz. Its rearrangement $w_I$ is strictly decreasing, with nonzero derivative on $(0,L]$. Its distribution is absolutely continuous between endpoint values and has no atoms. The one-dimensional area formula makes the image of the critical and nondifferentiability set of $w$ null. Absolute continuity of the distribution then shows that this set has zero length. Thus the coarea energy identities and inverse differentiation apply without losing mass, as in Section 7.4. Equality in (100) forces $N(t)=1$ at almost every level.
+
+There are no constant edge pieces, since they would create atoms in the distribution. At a vertex with at least three incidences, two disjoint incident germs have overlapping value intervals on the same side of the vertex value; those levels have at least two preimages. A cycle likewise has two arcs joining a minimum to a maximum. Hence the connected graph has no branch and no cycle, and is a path. A nonmonotone continuous function on a path would have repeated levels on an interval, so $w$ is strictly monotone. Its minimum is one endpoint, where all of $\nu$ is concentrated. Formula (97) proves the converse. $\square$
+
+### 9.2. The distribution bound with nonlinear killing
+
+Define, continuously at the endpoints,
+
+$$
+B_p(x)=\frac{x^{d_p}}{d_p}+\frac{x^{p'}}{\tau_p(x)}
+\quad(0<x<a_p),\qquad
+B_p(0)=0,\qquad B_p(a_p)=\frac{a_p^{d_p}}{d_p}.
+\tag{102}
+$$
+
+**Proposition 9.3.** With $k=(\lambda_p/(p-1))^{1/p}$,
+
+$$
+S_p\ge k^{-d_p}B_p(\min\{kL,a_p\}).
+\tag{103}
+$$
+
+**Proof for atomic measures.** Subdivide at every atom. A nonnegative first eigenfunction $\psi$ is strictly positive. Indeed, at a zero minimum every outgoing flux is nonnegative and their sum is zero. On an adjacent edge, the conserved quantity $(p-1)|\psi'|^p+\lambda_p\psi^p$ is then zero, forcing that edge solution to vanish; connectedness propagates this contradiction. The same argument excludes an interior zero. On each edge the flux derivative is $-\lambda_p\psi^{p-1}<0$, so the derivative is strictly decreasing and there is at most one critical point. In particular there are no constant edge pieces. Write $m=\min\psi>0$, $M=\max\psi$, and
+
+$$
+\mu(t)=|\{\psi>t\}|,
+\qquad H(t)=\lambda_p\int_{\{\psi>t\}}\psi^{p-1}\,dx,
+\qquad
+ g(t)=\int_0^t\left(\frac{\mu(r)}{H(r)}\right)^{1/(p-1)}dr.
+\tag{104}
+$$
+
+Since $H\ge\lambda_p m^{p-1}\mu$, the function $g$ is Lipschitz on $[0,M]$. Put $G(t)=\int_0^t g'(r)^p\,dr$. Hölder gives $g(t)^p\le t^{p-1}G(t)$. Testing the weak eigenvalue equation with $G(\psi)$, and using the nonnegativity of $\nu$, gives
+
+$$
+\begin{aligned}
+E_{p,\nu}[g(\psi)]
+&\le\int_\Gamma g'(\psi)^p|\psi'|^p\,dx
+       +\int_\Gamma\psi^{p-1}G(\psi)\,d\nu\\
+&=\lambda_p\int_\Gamma\psi^{p-1}G(\psi)\,dx
+ =\int_0^M H(t)g'(t)^p\,dt.
+\end{aligned}
+\tag{105}
+$$
+
+These compositions are in $W^{1,p}$ and all chain rules are justified by their Lipschitz bounds and the finite exceptional set. Equations (96) and (105), together with Cavalieri's formula, yield
+
+$$
+S_p\ge\int_0^M\frac{\mu(t)^{p'}}{H(t)^{1/(p-1)}}\,dt.
+\tag{106}
+$$
+
+Indeed the integrand before maximizing is $(p\mu g'-H(g')^p)/(p-1)$, and (104) attains its pointwise maximum.
+
+Let $q=\psi^*$ and $U(s)=\int_0^s q(r)^{p-1}\,dr$. The path argument of Section 8 makes $q$ positive and Lipschitz. On regular levels, total flux, including killing, equals $H$. Hölder's coarea inequality $\alpha_pb^{p-1}\ge1$ therefore implies
+
+$$
+0\le-q'(s)\le(\lambda_p U(s))^{1/(p-1)}
+\quad\text{almost everywhere on }(0,L).
+\tag{107}
+$$
+
+Including the levels $0<t<m$ in (106), changing to the rank variable and integrating by parts gives
+
+$$
+\begin{aligned}
+\lambda_p^{1/(p-1)}
+ \int_0^M\frac{\mu(t)^{p'}}{H(t)^{1/(p-1)}}dt
+&=\frac{mL^{p'}}{U(L)^{1/(p-1)}}
+ +\int_0^L\frac{s^{p'}}{U(s)^{1/(p-1)}}(-q'(s))\,ds\\
+&=\int_0^L F_p(z(s))\,ds,\\
+z(s)&=\left(\frac{s q(s)^{p-1}}{U(s)}\right)^{1/(p-1)},
+\qquad F_p(z)=\frac{pz-z^p}{p-1}.
+\end{aligned}
+\tag{108}
+$$
+
+The term at $L$ cancels the first term. The term at zero vanishes because $U(s)/s\to M^{p-1}$.
+
+Put $r(s)=U(s)/q(s)^{p-1}$, so $r\ge s$, $r(0)=0$ and $z=(s/r)^{1/(p-1)}\in(0,1]$. From (107),
+
+$$
+r'\le1+(p-1)\lambda_p^{1/(p-1)}r^{p'}
+=1+((p-1)kr)^{p'}.
+\tag{109}
+$$
+
+For $R=(p-1)kr$, integration of $R'/(1+R^{p'})\le(p-1)k$ gives $\int_0^{R(s)}du/(1+u^{p'})\le(p-1)ks$. Substituting $u=v^{p-1}$ in this integral and using (91) shows that, for $ks<a_p$,
+
+$$
+r(s)\le\frac{\tau_p(ks)^{p-1}}{(p-1)k},
+\qquad
+z(s)\ge\frac{((p-1)ks)^{1/(p-1)}}{\tau_p(ks)}.
+\tag{110}
+$$
+
+The right side belongs to $(0,1]$: the model ratio $U/q^{p-1}$ is at least the rank variable, or equivalently $\tau_p(x)^{p-1}\ge(p-1)x$, which follows directly from (91).
+
+The function $F_p$ is nonnegative and increasing on $[0,1]$. Differentiating (102), using $\tau_p'=\tau_p^{2-p}(1+\tau_p^p)$, gives
+
+$$
+B_p'(x)=\frac{p'x^{1/(p-1)}}{\tau_p(x)}
+ -\frac{x^{p'}}{\tau_p(x)^p}
+=(p-1)^{-1/(p-1)}
+ F_p\left(\frac{((p-1)x)^{1/(p-1)}}{\tau_p(x)}\right)>0.
+\tag{111}
+$$
+
+The endpoint values in (102) follow from (91), in particular $\tau_p(x)\sim((p-1)x)^{1/(p-1)}$ as $x\downarrow0$. Equations (106)-(111), with $a=\min\{kL,a_p\}$, imply
+
+$$
+S_p\ge\lambda_p^{-1/(p-1)}\int_0^{a/k}F_p(z(s))\,ds
+\ge k^{-d_p}\int_0^a B_p'(x)\,dx
+=k^{-d_p}B_p(a).
+\tag{112}
+$$
+
+Only the interval before the pole of $\tau_p$ is compared. The remaining integrand, when present, is nonnegative. This proves the atomic case.
+
+**Passage to arbitrary measures.** Approximate $\nu$ weakly on the fixed graph by finite atomic measures $\nu_j$ of the same mass $\kappa$. Compactness of the $W^{1,p}$ unit ball in $C(\Gamma)$ implies uniform convergence of $\int |u|^p\,d\nu_j$ to $\int |u|^p\,d\nu$ on bounded $W^{1,p}$ sets. The bound (95) is uniform in $j$. Testing Rayleigh quotients with a limiting ground state gives the eigenvalue limsup inequality; compactness of normalized minimizing ground states, convergence in $C$ and weak lower semicontinuity of the gradient energy give the liminf inequality. Thus $\lambda_{p,j}\to\lambda_p>0$.
+
+For torsion, the minimizing values of $E_{p,\nu_j}/p-\int u$ are uniformly coercive by (95) and Young's inequality. Every subsequence of minimizers has a further subsequence converging weakly in $W^{1,p}$ and strongly in $C$. Lower semicontinuity and comparison with any fixed test function show that the limit minimizes $E_{p,\nu}/p-\int u$. Uniqueness identifies it with $w$, so $S_{p,j}\to S_p$. Continuity of the right side of (103), including at $kL=a_p$, completes the proof. $\square$
+
+### 9.3. Proof of the joint comparisons
+
+Lemma 9.2 and (99) give $kL\ge\theta$. Since $B_p$ is strictly increasing,
+
+$$
+\lambda_p S_p^{p/d_p}
+\ge(p-1)B_p(\min\{kL,a_p\})^{p/d_p}
+\ge(p-1)B_p(\theta)^{p/d_p}.
+\tag{113}
+$$
+
+By (92), $B_p(\theta)=\theta^{d_p}(1/d_p+\sigma^{-1/(p-1)})$, so (113) is (93). Equality forces $kL=\theta<a_p$ and $S_p=S_{p,I}$; Lemma 9.2 gives the stated rigidity.
+
+For the second comparison put $b=\kappa^{1/(p-1)}/k$ and $y=A_p(b)$. If $kL\ge a_p$, (103) gives $k^{d_p}S_p>B_p(y)$. Otherwise (99) and the monotonicity of $x\tau_p(x)$ imply $k\tau_p(kL)\ge\kappa^{1/(p-1)}$, hence $kL\ge y$. Therefore in all cases
+
+$$
+k^{d_p}S_p\ge B_p(y)
+=\frac{y^{d_p}}{d_p}+\frac{y^{p'}}b.
+\tag{114}
+$$
+
+The interval of length $y/k$ with killing mass $\kappa$ has eigenvalue $(p-1)k^p=\lambda_p$ and torsion mass $k^{-d_p}B_p(y)$. At fixed $\kappa$, (97) strictly increases with length, while the eigenvalue strictly decreases, as is also seen from $k\ell=A_p(\kappa^{1/(p-1)}/k)$. Thus (114) is equivalent to the comparison with the interval in (94). Equality forces $kL=y$ and again $S_p=S_{p,I}$, proving rigidity. The endpoint interval attains equality in both statements. $\square$
+
+At $p=2$, all definitions and constants reduce exactly to Section 8. As $\sigma\to\infty$, the sharp constant in (93) tends to $(p-1)a_p^p d_p^{-p/d_p}$, the nonlinear Dirichlet graph constant in [O26, equation (5.4)]. Quantitative stability, nonlinear heat concentration and signed-measure analogues remain outside these results.
 
 ## References
 
@@ -957,7 +1237,7 @@ The two general-measure questions left open in revision 1.2 are therefore settle
 
 **[BCS]** G. Buttazzo, S. Cito and F. Solombrino, *Relations Between Principal Eigenvalue and Torsional Rigidity with Robin Boundary Conditions*, Milan Journal of Mathematics **94** (2026), 369-386. [DOI: 10.1007/s00032-026-00438-2](https://doi.org/10.1007/s00032-026-00438-2). See Section 5 for domain product questions with fixed Robin parameter and volume.
 
-**[O26]** S. Özcan, *On the p-torsional rigidity of compact metric graphs: a sharp Kohler-Jobin inequality*, arXiv:2607.12333v2 (July 15, 2026). [Preprint and version history](https://arxiv.org/abs/2607.12333). The introduction specifies a nonempty Dirichlet set and nonlinear Kirchhoff conditions.
+**[O26]** S. Özcan, *On the p-torsional rigidity of compact metric graphs: a sharp Kohler-Jobin inequality*, arXiv:2607.12333v2 (July 15, 2026). [Preprint and version history](https://arxiv.org/abs/2607.12333). Theorem 5.2 gives the nonlinear Dirichlet graph inequality; Lemmas 5.3-5.4 develop its modified-torsion proof. The paper assumes a nonempty Dirichlet set and nonlinear Kirchhoff conditions.
 
 ## Research transparency
 

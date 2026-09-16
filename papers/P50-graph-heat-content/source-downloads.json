@@ -117,7 +117,7 @@
       "MP": "Final introduction, Theorem 5.8, Definitions 5.9 and 5.12, Lemmas 5.10-5.11 and 5.15-5.17, proof of Theorem 5.8",
       "BCS": "Final metadata, introduction, Section 2 scaling/form conventions, Section 5 questions; selected Section 4 comparison statements. Perforation proof not audited.",
       "Bifulco thesis": "Extracted Chapter 5.4 introductory scope and principal statements; concerns combinatorial Dirichlet graphs with zero potential, not a metric Robin theorem.",
-      "O26": "Latest v2 metadata/history, introduction and boundary assumptions; searched full HTML for Robin and delta terms; nonlinear theorem proof not audited."
+      "O26": "Latest v2 metadata/history, introduction and boundary assumptions; searched full HTML for Robin and delta terms; nonlinear theorem proof not audited. Historical revision 1.2 scope; expanded revision 1.4 reading recorded separately below."
     },
     "final_OT_body_read": false
   },
@@ -169,5 +169,56 @@
       "https://www.esaim-cocv.org/articles/cocv/abs/2014/02/cocv130065/cocv130065.html"
     ],
     "coverage": "Bounded primary-source comparison; no absolute novelty or independent correctness certificate."
+  },
+  "nonlinear_measure_kohler_jobin": {
+    "date": "2026-09-16",
+    "revision": "1.4",
+    "sources": [
+      {
+        "file": "ozcan-2026-v2.html",
+        "url": "https://arxiv.org/html/2607.12333v2",
+        "bytes": 556844,
+        "sha256": "03492b087cd8a7952a79987ffa06923c643591464d2bc0d68d22d4631fc2b508",
+        "snapshot_origin": "Preserved v2 HTML downloaded during revision 1.2; source reopened and expanded reading performed for revision 1.4",
+        "read_scope": "Introduction, assumptions and variational setup; Definition 3.1, Theorem 3.2 and existence proof; complete Section 5.2, Theorem 5.2, Lemmas 5.3-5.5 and their proofs, including main inequality and rigidity; references. Not every Section 3 or 4 proof was read.",
+        "latest_version_observed": "v2, July 15, 2026; arXiv history refreshed September 16, 2026",
+        "comparison": "Nonlinear Dirichlet-Kirchhoff graph result and modified-torsion ingredients; no finite-strength killing-measure theorem in the inspected source."
+      }
+    ],
+    "additional_screening": [
+      {
+        "doi": "10.1016/j.jfa.2013.07.007",
+        "authors": "van den Berg-Bucur",
+        "read_scope": "Returned primary-source nonlinear Robin torsion definitions and introductory bound descriptions only; full Section 4 proofs unread.",
+        "comparison": "Euclidean Robin/Dirichlet torsion bounds, distinct setting and constraints.",
+        "access_limit": "Subsequent direct DOI opening failed."
+      },
+      {
+        "doi": "10.1007/s00526-021-02129-9",
+        "authors": "Briani-Buttazzo-Prinari",
+        "read_scope": "Final abstract and introduction snippets only; full proofs unread.",
+        "comparison": "Dirichlet domain p-Laplacian optimization; not finite graph killing mass."
+      },
+      {
+        "doi": "10.1051/cocv/2020033",
+        "authors": "Paoli-Piscitelli-Trani",
+        "read_scope": "Abstract only.",
+        "comparison": "Robin outer and Neumann inner boundaries; fixed volume and exterior perimeter, distinct constraints."
+      },
+      {
+        "doi": "10.1007/s00023-021-01077-6",
+        "read_scope": "Primary search excerpts of Section 5 p-Laplacian variational setup and nodal-count statement only.",
+        "comparison": "Graph nodal counts; not a torsion comparison or proof dependency."
+      },
+      {
+        "doi": "10.1002/mana.202300239",
+        "authors": "Mugnolo",
+        "read_scope": "Primary abstract and search excerpts only.",
+        "comparison": "Nonlinear landscape bounds; full proof not read and not a dependency."
+      }
+    ],
+    "final_OT_body_read": false,
+    "independent_review": false,
+    "priority_certified": false
   }
 }
