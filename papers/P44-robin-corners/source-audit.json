@@ -51,8 +51,8 @@
       "limitation": "Final journal full text not successfully opened. Polimi public PDF is labeled AAM by repository, but visible first page says arXiv v1, so it is not a verified final-text comparison. No proof dependency on this paper."
     }
   ],
-  "proof_progress": "Complete manuscript: fixed-boundary gauge, analytic H2 graph-space upgrade, explicit Lp-continuous angular coefficient, corner positivity by a weighted weak maximum principle, semiconcavity implies zero coefficient, nonzero Neumann derivative, analytic identity theorem.",
-  "next_obligation": "Artifact and public verification for revision, then continue full-conjecture research. Independent review outstanding.",
+  "proof_progress": "Revision 2.0 adds a complete written global rigidity proof of full polyhedral small-parameter quasiconcavity conjecture; prior analytic-persistence and cone results retained.",
+  "next_obligation": "Final artifact and public-byte verification; independent expert proof/priority review outstanding; exceptional-significance goal remains active.",
   "priority_search": {
     "date": "2026-09-15",
     "queries": [
@@ -99,5 +99,43 @@
       "Full ACH Conjecture 2 remains open"
     ],
     "priority": "Bounded targeted search did not identify a competing weighted cone result; not comprehensive certification"
+  },
+  "revision_2_0": {
+    "date": "2026-09-15",
+    "target": "Full ACH Section 10 Conjecture 2",
+    "final_conjecture": "CJM 8 (2020), printed p.307; exact quantifiers checked in final publisher PDF",
+    "ACH_dependencies": [
+      "arXiv v2 Proposition 4.4 cone expansion",
+      "Final Theorem 9.1 spectral bound and linear equality modes",
+      "Section 9 inconsistent-normal and planar transverse arguments",
+      "Final Corollaries 8.2-8.3 quadratic classification",
+      "Proposition 3.1 uniform Robin perturbation"
+    ],
+    "avoided_dependency": "No use of general ACH Theorem 9.4 for the new edge lemma; direct degree-two classification and Taylor/reflection proof supplied",
+    "Mazya": {
+      "doi": "10.1016/j.crma.2009.03.001",
+      "read": "Complete 4-page final note and complete 8-page arXiv:0809.2514v2 preprint",
+      "distinction": "Final note states the theorem but omits full proof; longer preprint proof checked"
+    },
+    "Edelen_Li": {
+      "url": "https://arxiv.org/abs/2608.17194v1",
+      "current_history": "v1 only",
+      "read": "Complete introduction; Theorem 1.2 and assertions; Lemma 2.5 full cutoff proof; Lemma 3.3 product proof; Theorem 3.5 regularity statement",
+      "comparison": "Non-obtuse-angle spectral/regularity theorem; related bounded-tensor cutoff method acknowledged; no full Robin quasiconcavity theorem stated",
+      "limitation": "Full proof not independently audited; no dependency on sharp spectral theorem"
+    },
+    "new_proof": "Continuous gradient; removal of open-edge singular modes; uniform conic patch and thin-tube energy; Hessian-norm defect identity; quadraticity; uniform perturbation witness",
+    "priority_queries": [
+      "Robin quasiconcavity conjecture polyhedra",
+      "Neumann quasiconcave quadratic",
+      "Robin ground state Conjecture 2",
+      "polyhedron Hessian codimension quasiconcavity",
+      "Andrews Clutterbuck Hauer quasiconcavity 2025 2026",
+      "circumsolids quasiconcave",
+      "Neumann quadratic codimension polyhedral",
+      "Sharp Neumann eigenvalue estimates polyhedral"
+    ],
+    "priority_result": "No competing full solution located in bounded primary-source search; no absolute priority certificate",
+    "independent_human_review": false
   }
 }

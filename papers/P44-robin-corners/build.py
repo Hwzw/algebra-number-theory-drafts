@@ -17,7 +17,7 @@ def executable(name):
 s=(HERE/'manuscript.md').read_text()
 title,s=s.split('\n',1)
 s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 15, 2026\n','\n',1)
-s=re.sub(r'^## ', '# ',s,flags=re.M)
+s=re.sub(r'^(#{2,}) ',lambda m:m.group(1)[1:]+' ',s,flags=re.M)
 body=subprocess.check_output([executable('pandoc'),'-f','markdown+tex_math_dollars-smart','-t','latex','--top-level-division=section'],input=s,text=True)
 body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}')
 body=body.replace(r'\section{References}',r'\sloppy\section{References}')
@@ -32,7 +32,7 @@ preamble=r'''\documentclass[11pt]{article}
 \setlength{\parskip}{0.35em}
 \setcounter{secnumdepth}{0}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\title{Corner singularities obstruct eventual log-concavity of Robin ground states}
+\title{Corner singularities and quasiconcavity rigidity for Robin ground states}
 \author{Henry Zweiman}
 \date{September 15, 2026}
 \begin{document}

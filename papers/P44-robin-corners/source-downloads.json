@@ -80,6 +80,34 @@
       "url": "https://arxiv.org/html/2006.07192v1",
       "bytes": 747106,
       "sha256": "8b3cb8b43baaaa3f66d2773f94ec9a15a0596bde773f3574f02d9aa8b63d3aca"
+    },
+    {
+      "file": "mazya-gradient.pdf",
+      "url": "https://arxiv.org/pdf/0809.2514v2",
+      "bytes": 157198,
+      "sha256": "3565b6b47461c64f4f37c6c0a68329269dbd010e0ca7113b3dd80e4d6475b05f",
+      "local_folder": "manuscript_extensions/P44-quasiconcavity/full-conjecture"
+    },
+    {
+      "file": "mazya-gradient-final.pdf",
+      "url": "https://www.numdam.org/item/10.1016/j.crma.2009.03.001.pdf",
+      "bytes": 124650,
+      "sha256": "3605726d2690ba1ad52649fd5140aa0a26bc4465cac0640bc3d0c9b67a1ce3dd",
+      "local_folder": "manuscript_extensions/P44-quasiconcavity/full-conjecture"
+    },
+    {
+      "file": "edelen-li-v1.html",
+      "url": "https://arxiv.org/html/2608.17194v1",
+      "bytes": 541570,
+      "sha256": "985781cc43916f334250c8f2293bc0d2dcc0a05ee49b4e442ebc6df735ee3050",
+      "local_folder": "manuscript_extensions/P44-quasiconcavity/full-conjecture"
+    },
+    {
+      "file": "edelen-li-history.html",
+      "url": "https://arxiv.org/abs/2608.17194",
+      "bytes": 41109,
+      "sha256": "fc974cc2194944856c30e302e152b7781d50ad00e91a44de5a6805912f5c7308",
+      "local_folder": "manuscript_extensions/P44-quasiconcavity/full-conjecture"
     }
   ]
 }

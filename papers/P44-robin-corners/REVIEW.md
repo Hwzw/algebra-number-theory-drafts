@@ -46,3 +46,24 @@ This is an originating-assistant audit, not an independent review. The full ACH 
 9. The exact matrix (7.16) shows the sign step fails in the remaining angle range. It is not a counterexample to the full conjecture.
 
 This is an originating-assistant proof audit. The full conjecture, independent human review, and broad priority certification remain outside the established result.
+
+
+## Revision 2.0: full polyhedral quasiconcavity proof
+
+The following is an originating-assistant hand-proof audit, not independent review. Earlier revision sections are historical and their full-conjecture limitations are superseded by Section 8.
+
+- **Quantifiers:** Theorems 1.3 and 8.1 cover every bounded full-dimensional convex polyhedron in every dimension d >= 3 outside products of circumsolids, for all sufficiently small positive alpha. No angle, vertex simplicity, mode nonvanishing, or symmetry hypothesis survives.
+- **Inconsistent normals:** The existing ACH Section 9 argument immediately contradicts quasiconcavity. Consistency is therefore derived, not silently assumed.
+- **C1 regularity:** Compatible affine subtraction and a radial quadratic correction give a harmonic homogeneous-Neumann problem. The spherical spectrum has only linear degree-one modes and a positive next-degree gap. The written Moser iteration, polynomial counting, radial-cutoff Maz'ya estimate, and Cauchy--Schwarz series bound give uniform convergence of gradients. Continuity on the compact closure gives the modulus used later. No global uniform Hölder exponent is inferred from a single corner.
+- **Open-edge modes:** Tangential differentiation preserves the weak Neumann problem, with H1 regularity supplied by convex H2. A degree in (1,2) differentiates to a forbidden degree in (0,1), so the mode is planar. Its odd nonaffine slice has a positive Hessian direction for either sign. The actual gradient may have an edge component, but the chosen normal-plane transverse direction is still perpendicular to it. The tangent correction gives a strict midpoint witness.
+- **Edge Hessian bound:** All degree-two modes on wedge times Euclidean space are proved quadratic by differentiating in the Euclidean directions. Uniform local coefficient bounds and the gap above two give a Taylor remainder of order 2+delta. A ball at distance r from the edge crosses at most one face; even reflection and an interior harmonic estimate bound the Hessian. No general degree-two tameness assertion or abbreviated regularity theorem is needed.
+- **Conic patches:** A vertex-weight argument proves the uniform face-distance bound. A finite growing-threshold construction finds a nearby conic patch of radius comparable to epsilon. It avoids the false assumption that every point of the higher-codimension skeleton has one common cone radius.
+- **Thin-tube energy:** The affine tangent subtraction has zero normal data on each incident facet. Its gradient is bounded by the modulus and its value by radius times the modulus. A radial cutoff and the convex H2 estimate give a per-ball bound R^d + R^(d-2) omega^2. At most O(epsilon^(-(d-3))) balls cover the tube. The resulting energy is O(epsilon^3 + epsilon omega^2) = o(epsilon).
+- **Face identity:** Mixed Hessian entries vanish on each facet, while the normal derivatives of its other entries vanish. Thus H:partial_nu H and partial_nu |H| both vanish. This does not require a sign assumption on the normal Hessian entry.
+- **Codimension-two passage:** Bounded H away from the deeper skeleton and explicit logarithmic cutoffs give local L2 control of grad H. Their vanishing energy then justifies both integration identities, with no omitted edge measure.
+- **Codimension-three passage:** The two cutoff energies satisfy A <= C(epsilon + omega^2/epsilon) and B <= C epsilon. Only sqrt(A B) must vanish. The argument does not assert global H3 regularity or that A itself vanishes.
+- **Rigidity:** The nonzero constant trace bounds q=|H| below, so the norm Laplacian is a sum of nonnegative Cauchy--Schwarz defects. Their integral vanishes. Equality makes each partial_k H proportional to H; the nonzero fixed trace forces the proportionality to vanish. H is constant.
+- **Robin transfer:** The published quadratic classification excludes quasiconcavity of v on the target domains. Continuity supplies a strict three-point witness; the uniform small-alpha expansion preserves it for an entire positive interval.
+- **Priority:** The full final conjecture statement was checked. Maz'ya final versus preprint proof scope, current Edelen--Li angle restrictions, and the previously checked smooth-domain results are documented. The new paper does not claim discovery of the elementary cutoff or tangential differentiation techniques.
+
+No finite computations are used as proof. The unrestricted local cone statement and the sharp Robin gap remain open in this manuscript. Artifact validation is recorded separately in artifact-check.json.

@@ -1,4 +1,4 @@
-# Corner singularities obstruct eventual log-concavity of Robin ground states
+# Corner singularities and quasiconcavity rigidity for Robin ground states
 
 Henry Zweiman
 
@@ -6,7 +6,7 @@ September 15, 2026
 
 ## Abstract
 
-Let $P$ be a bounded convex polygon that is neither tangential nor a rectangle. We prove that the positive Robin parameters for which the first eigenfunction is log-concave form a locally finite set. In fact, at one fixed obtuse vertex, the eigenfunction and its logarithm fail to be semiconcave on every corner neighborhood for every parameter outside the zero set of a nontrivial real-analytic function. The proof continues a corner singularity of the first variation at the Neumann limit. An explicit angular projection gives an analytic singular coefficient without requiring analytic dependence of a full corner expansion. This disproves the eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer for general bounded convex domains. A single nonrhombic, nonrectangular parallelogram gives a counterexample, and products give examples in every dimension at least two. An interval-lifting argument further gives fixed convex prisms in every dimension at least three whose ground states have nonconvex superlevel sets outside the same discrete parameter set. A weighted Neumann argument also proves transverse nonconcavity of homogeneous modes on a specified class of higher-dimensional cones, supplying a conditional small-parameter Robin consequence. The result is compatible with eventual concavity on smooth uniformly convex domains.
+We prove two results on the concavity of Robin ground states on convex polyhedra. First, for every bounded convex polygon that is neither tangential nor a rectangle, the positive parameters with a log-concave ground state form a locally finite set. An explicitly extracted real-analytic corner coefficient continues the first-variation obstruction through the finite parameter axis, disproving the general eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer. Second, on every bounded convex polyhedron in dimension at least three that is not a product of circumsolids, the ground state has a nonconvex superlevel set for every sufficiently small positive parameter. This proves their polyhedral quasiconcavity conjecture. The new global rigidity argument shows that a quasiconcave solution of the first-variation Neumann problem must be quadratic: quasiconcavity removes the open-edge singularities, continuity of the gradient controls energy near the higher-codimension faces, and a Hessian-norm identity forces a constant Hessian. We also retain the discrete-exception prism consequence and an independent transverse-cone theorem under explicit angle conditions. The results are compatible with eventual concavity on smooth uniformly convex domains.
 
 **Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation; quasiconcavity.
 
@@ -66,7 +66,11 @@ does not have an eventual log-concavity threshold. There are bounded convex poly
 
 The new point is the continuation of a regularity obstruction through the entire finite Robin parameter axis. The first-variation classification in [ACH] supplies the initial nonzero corner mode. We extract its continuation by a bounded functional on a fixed Sobolev space, then use the identity theorem for real-analytic functions. Thus the argument does not extrapolate a small-parameter asymptotic estimate to large parameters.
 
-We do not determine whether log-concavity occurs at any of the exceptional parameters. Nor do we prove a classification for tangential polygons. Section 6 gives nonconvex superlevel sets on fixed prisms in every dimension at least three for all parameters outside the same discrete set. It does not resolve [ACH, Section 10, Conjecture 2], which concerns every convex polyhedron that is not a product of circumsolids for sufficiently small parameters, or the sharp Robin fundamental-gap problem.
+We do not determine whether log-concavity occurs at any of the exceptional parameters. Nor do we prove a classification for tangential polygons. Section 6 gives nonconvex superlevel sets on fixed prisms in every dimension at least three for all parameters outside the same discrete set. Section 8 proves the full small-parameter result in [ACH, Section 10, Conjecture 2]:
+
+**Theorem 1.3 (polyhedral quasiconcavity conjecture).** On every bounded convex polyhedron $\Omega\subset\mathbb R^d$, $d\ge3$, which is not a product of circumsolids, the first Robin eigenfunction has a nonconvex superlevel set for every sufficiently small positive Robin parameter.
+
+A product of circumsolids is an orthogonal Cartesian product of polyhedra each circumscribed about a ball. Theorem 1.3 follows from a new global rigidity statement for the Neumann first variation, proved as Theorems 8.1--8.2. Its proof uses the spherical spectral lower bound and inconsistent-normal obstruction of [ACH], but does not assume their proposed higher-dimensional transverse-cone lemma. Section 7 gives an independent restricted result on that local question. The sharp Robin fundamental-gap problem remains outside this paper.
 
 ## 2. Analytic dependence and local regularity
 
@@ -470,7 +474,7 @@ Lemma 6.1 shows that $u_\alpha(x)g_\alpha(t)$ has a nonconvex superlevel set alr
 
 In particular, the explicit parallelogram (1.5) gives a fixed prism in each dimension $d\ge3$ with nonconvex ground-state superlevel sets for arbitrarily large Robin parameters. The small-parameter conclusion for these product domains follows already from the planar result in [ACH] and restriction to a slice. The additional conclusion here is persistence outside a discrete set over the entire positive parameter axis. No novelty is asserted for the elementary level-set criterion or separation of variables.
 
-This extension answers the eventual-quasiconcavity question for these fixed prisms negatively. It leaves [ACH, Section 10, Conjecture 2] unresolved on general polyhedra. The proof uses both bounded gradient and unbounded positive Hessian near a polygonal corner; failure of log-concavity alone would not imply the interval-lifting conclusion. No single smooth uniformly convex domain with arbitrarily large bad parameters is constructed here.
+This extension answers the eventual-quasiconcavity question for these fixed prisms negatively. The extension is restricted to prisms; Section 8 treats the general small-parameter polyhedral conjecture. The proof uses both bounded gradient and unbounded positive Hessian near a polygonal corner; failure of log-concavity alone would not imply the interval-lifting conclusion. No single smooth uniformly convex domain with arbitrarily large bad parameters is constructed here.
 
 ## 7. A weighted obstruction on higher-dimensional cones
 
@@ -632,7 +636,323 @@ H=\begin{pmatrix}1&-\sqrt3&0\\-\sqrt3&-1&0\\0&0&0\end{pmatrix},
 \tag{7.16}
 $$
 
-we have $\operatorname{tr}H=0$, $H|_{e^\perp}\preceq0$, and $H\nu=2\nu$. The normal second derivative is positive and the desired face-flux sign reverses. This matrix is an obstruction to that algebraic proof step, not a counterexample to the cone conjecture. The borderline angle, the larger-angle range, and cones without the strict-dual property require further arguments. The general [ACH, Section 10, Conjecture 2] remains unresolved here.
+we have $\operatorname{tr}H=0$, $H|_{e^\perp}\preceq0$, and $H\nu=2\nu$. The normal second derivative is positive and the desired face-flux sign reverses. This matrix is an obstruction to that algebraic proof step, not a counterexample to the cone conjecture. The borderline angle, the larger-angle range, and cones without the strict-dual property require further arguments. Section 8 resolves the general polyhedral conjecture by a different, global argument.
+
+## 8. Quasiconcavity forces quadraticity on every convex polyhedron
+
+We now remove the geometric restrictions from the small-parameter result. A *product of circumsolids* has the meaning in [ACH]: after a rigid motion, the domain is an orthogonal Cartesian product of convex polyhedra, each of which contains a ball tangent to all its facets. Intervals are allowed as factors.
+
+**Theorem 8.1.** Let $\Omega\subset\mathbb R^d$, $d\ge3$, be a bounded convex polyhedron with nonempty interior. If $\Omega$ is not a product of circumsolids, then there exists $\alpha_0>0$ such that its first Robin eigenfunction has a nonconvex superlevel set for every $0<\alpha<\alpha_0$.
+
+This is [ACH, Section 10, Conjecture 2]. Its proof uses global rigidity rather than an unrestricted version of the transverse cone theorem in Section 7. The analytic statement behind it is the following.
+
+**Theorem 8.2.** Put $\mu=|\partial\Omega|/|\Omega|$, and let $v\in H^1(\Omega)$ solve
+
+$$
+\Delta v=-\mu\quad\text{in }\Omega,
+\qquad \partial_\nu v=-1\quad\text{on }\partial\Omega.
+\tag{8.1}
+$$
+
+If $v$ is quasiconcave, then $v$ is a quadratic polynomial.
+
+Here quasiconcavity means that every superlevel set in the open domain is convex. The additive constant in $v$ is immaterial. We first establish three regularity and energy facts, keeping their hypotheses separate.
+
+### 8.1. Continuous gradients from compatible face data
+
+At $z\in\partial\Omega$, call the incident normals *consistent* if there is a vector $\gamma_z$ with $\gamma_z\cdot\nu_i=-1$ on every incident facet. We use two standard analytic inputs. On a bounded convex domain, a weak homogeneous-Neumann solution with Laplacian in $L^2$ belongs to $H^2$ and satisfies
+
+$$
+\|D^2 f\|_{L^2}\le\|\Delta f\|_{L^2}.
+\tag{8.2}
+$$
+
+The scalar approximation argument is recalled in [T, Section 4]. Maz'ya's gradient estimate [M] also gives $\|\nabla f\|_\infty\le C\|\Delta f\|_{L^q}$ for each fixed bounded convex domain and $q>d$; the additive mean of $f$ does not affect this estimate. Both facts apply on convex cones truncated by balls. Radial cutoffs have zero normal derivative on the planar cone faces and can be chosen to vanish near the spherical boundary.
+
+**Lemma 8.3.** If all boundary points have consistent normals, the solution of (8.1) belongs to $H^2(\Omega)$ and its gradient extends continuously to $\overline\Omega$.
+
+*Proof.* Fix $z$ and a conic neighborhood of radius $R_z$. In coordinates centered at $z$, the function
+
+$$
+h(x)=v(z+x)+\frac{\mu}{2d}|x|^2-\gamma_z\cdot x
+\tag{8.3}
+$$
+
+is harmonic with homogeneous Neumann data. Applying (8.2) to a radial cutoff of $h$ proves local $H^2$ regularity. The cutoff forcing is in $L^2$ because $h\in H^1$. Finitely many such neighborhoods, together with interior neighborhoods, prove the global assertion.
+
+We spell out why the homogeneous expansion also controls the gradient uniformly up to the cone faces. For a fixed cone $\Gamma$, set $A=\Gamma\cap\mathbb S^{d-1}$ and take an orthonormal Neumann eigenbasis $\Phi_j$ on $A$. Write
+
+$$
+\lambda_j=\beta_j(\beta_j+d-2),\qquad
+\psi_j(r\theta)=r^{\beta_j}\Phi_j(\theta).
+\tag{8.4}
+$$
+
+The cone expansion of a weak harmonic Neumann function contains only these nonnegative-degree terms; see [ACH, arXiv v2, Proposition 4.4]. By [ACH, Theorem 9.1], every positive degree is at least one, and every degree-one mode is linear. Discreteness gives a positive gap between one and the next degree.
+
+For clarity, the spectral bounds used below need only have some polynomial exponent. The Sobolev inequality on the fixed Lipschitz spherical domain, tested in the eigenfunction equation with $|\Phi|^{p-2}\Phi$, gives
+
+$$
+\|\Phi\|_{p\kappa}
+ \le [C p^2(1+\lambda)]^{1/p}\|\Phi\|_p
+\quad(p\ge2)
+\tag{8.5}
+$$
+
+for some fixed $\kappa>1$. Iterating $p=2\kappa^m$ proves an $L^\infty$ bound polynomial in $1+\lambda$. There is also a polynomial counting bound for the eigenvalues. One way to see this without a sharp Weyl law is to use an $H^1$ extension in finitely many spherical coordinate charts. The resulting map into a finite sum of cube spaces is injective, has an $L^2$ lower bound, and is bounded in $H^1$. Its restriction to the spectral subspace with eigenvalues at most $\Lambda$ has Rayleigh quotient at most $C(1+\Lambda)$. The min-max principle and the explicit Neumann spectra of cubes bound the dimension of that subspace by a polynomial in $1+\Lambda$.
+
+Apply [M] to a radial cutoff of $\psi_j$ on $\Gamma\cap B_2$, equal to one on $B_1$ and zero near the outer sphere. Since $\partial_r\psi_j=\beta_jr^{\beta_j-1}\Phi_j$, its Laplacian involves no angular derivative of $\Phi_j$. For a sufficiently large fixed exponent $N$, the preceding bounds imply
+
+$$
+\|\Phi_j\|_\infty\le C(1+\beta_j)^N,
+\qquad
+\|\nabla\psi_j\|_{L^\infty(\Gamma\cap B_1)}
+ \le C(1+\beta_j)^N2^{\beta_j}.
+\tag{8.6}
+$$
+
+Choose an almost-everywhere reference radius at which the spherical trace of $h$ is in $L^2$, and rescale it to one. The expansion coefficients then satisfy $\sum_j|a_j|^2<\infty$. Remove the constant and linear terms and put $\delta=\min_{\beta_j>1}(\beta_j-1)>0$. Homogeneity, (8.6), and Cauchy--Schwarz give, for $0<r\le1/8$,
+
+$$
+\sup_{\Gamma\cap B_r}
+ \left|\nabla\sum_{\beta_j>1}a_j\psi_j\right|
+ \le C r^\delta
+ \left(\sum_j|a_j|^2\right)^{1/2}.
+\tag{8.7}
+$$
+
+Indeed, after factoring $r^\delta$ from each term, the remaining squared series is bounded by a polynomially weighted geometric series in $\beta_j$, with ratio controlled by $2r\le1/4$. The counting bound makes it summable uniformly in $r$. The same estimate proves convergence of the derivative series in $L^\infty$; its sum agrees with the weak derivative and with the classical interior derivative.
+
+Thus the interior gradient has a limit at every $z$, equal to the linear coefficient in (8.3) plus $\gamma_z$. Interior regularity and this limit define a continuous gradient on the closure. Continuity along the boundary follows as well: approximate a boundary point approaching $z$ by an interior point where the gradient is arbitrarily close to that boundary limit. Compactness now gives a modulus
+
+$$
+\omega(t)=\sup_{\substack{x,y\in\overline\Omega\\|x-y|\le t}}
+ |\nabla v(x)-\nabla v(y)|\longrightarrow0
+ \quad(t\downarrow0).
+\tag{8.8}
+$$
+
+Finally, continuity from a relative facet interior shows that $\nabla v(z)\cdot\nu_i=-1$ on every incident facet. No uniform corner exponent is needed. ∎
+
+### 8.2. Quasiconcavity removes the open-edge singularities
+
+Let $S$ be the union of the closed faces of codimension at least three. It has dimension at most $d-3$.
+
+**Lemma 8.4.** If $v$ is quasiconcave, all its boundary normals are consistent, and $D^2v$ is locally bounded on $\overline\Omega\setminus S$.
+
+*Proof.* The inconsistent-normal argument in [ACH, Section 9, inconsistent-normal case] produces a nonconvex superlevel set of $v$ whenever a boundary point has inconsistent normals. Hence Lemma 8.3 applies.
+
+At a relative interior point of a codimension-two face, the tangent cone is $W\times\mathbb R^{d-2}$, where $W$ is a planar wedge of angle $\vartheta\in(0,\pi)$. We first classify its homogeneous harmonic Neumann modes of degree $\beta\in(1,2]$. For a direction $t$ in the linear factor, $\partial_t\psi$ is a weak harmonic Neumann function, by tangential difference quotients. It is locally $H^1$ by (8.2), and is homogeneous of degree $\beta-1$.
+
+If $1<\beta<2$, the spectral lower bound [ACH, Theorem 9.1] forces this derivative to vanish. The mode is therefore planar. The only possible degree in this range is $\beta=\pi/\vartheta$, with $\vartheta>\pi/2$, and in bisector coordinates it is a nonzero multiple of
+
+$$
+\psi(r\cos\theta,r\sin\theta,t)
+   =r^\beta\sin(\beta\theta),
+\qquad -\vartheta/2<\theta<\vartheta/2.
+\tag{8.9}
+$$
+
+On a line perpendicular to the inward bisector this is odd and nonaffine, so neither sign is concave. To check nonaffinity, affinity would, by oddness and homogeneity, give $c x^{\beta-1}y$ in bisector coordinates. For $c\ne0$ this is harmonic only when $\beta=1$ or $2$.
+
+The normal-plane projection of $\gamma=\nabla v(z)$ is the inward bisector of length $1/\sin(\vartheta/2)$. Its possible component along the edge does not affect a normal-plane direction $\xi$ perpendicular to that bisector. Thus (8.9), with either sign, gives an interior cone point $x$ and such a $\xi$ with $D^2\psi(x)[\xi,\xi]>0$. We may choose $x$ with zero edge component and then scale it so that $\gamma\cdot x>0$ is fixed.
+
+If a nonzero mode (8.9) occurred in the expansion of $v$ at $z$, it would be the leading nonlinear mode below degree two. At $z+rx$, the expansion gives $\nabla v=\gamma+o(1)$ and
+
+$$
+D^2v=r^{\beta-2}\bigl(D^2\psi(x)+o(1)\bigr),
+\tag{8.10}
+$$
+
+with its nonzero coefficient absorbed into $\psi$. Replace $\xi$ by $\xi+c(r)x$, choosing $c(r)=o(1)$ so that it is exactly perpendicular to $\nabla v(z+rx)$. Its Hessian value is positive for small $r$. The two nearby points in opposite directions then have values strictly larger than the midpoint, contradicting quasiconcavity. This is the tangent correction of [ACH, Lemma 9.5]. Consequently every degree in $(1,2)$ is absent at every open edge point.
+
+We give the local bounded-Hessian argument explicitly. Degree-two modes on $W\times\mathbb R^{d-2}$ are quadratic. Indeed, their derivatives in the linear-factor directions have degree one and hence are linear Neumann functions, whose gradients lie in that linear factor. Integrating gives
+
+$$
+\psi(y,t)=\tfrac12 t^T B t+\phi(y),\qquad
+\Delta_y\phi=-\operatorname{tr}B.
+\tag{8.11}
+$$
+
+Here $B$ is symmetric and $\phi$ is homogeneous of degree two with Neumann ray data. After adding $(\operatorname{tr}B)|y|^2/4$, it is a planar harmonic mode of degree two. Such a mode is either zero or, when $\vartheta=\pi/2$, a harmonic quadratic. Thus (8.11) is quadratic in all cases.
+
+On a compact portion of an open edge, choose one fixed conic radius. The spherical $L^2$ norms of the local harmonic functions (8.3) are uniformly bounded, since $v$ and its gradient are continuous on the closure. The spectral $L^\infty$ bound in (8.6), the counting bound, absence of degrees in $(1,2)$, and the quadraticity just proved show that at every edge center $z$ there is a quadratic polynomial $Q_z$, with uniformly bounded coefficients, such that
+
+$$
+|v(z+x)-Q_z(x)|\le C|x|^{2+\delta_2}
+\tag{8.12}
+$$
+
+for a fixed $\delta_2>0$. Here the polynomial includes the particular solution in (8.3); the remainder is harmonic with homogeneous Neumann data on the two faces. The estimate follows by summing the degrees strictly greater than two, exactly as for (8.7), now without differentiating. The first such degree has a positive gap above two.
+
+For an interior point at distance $r$ from the edge, project to an edge center $z$. A ball of radius $c(\vartheta)r$ about the point meets at most one of the two faces. If it meets a face, even reflection of the harmonic remainder across that face gives the interior harmonic estimate. Using (8.12) on the original and reflected points yields
+
+$$
+|D^2v-D^2Q_z|\le Cr^{\delta_2}.
+\tag{8.13}
+$$
+
+This proves local boundedness at the open edges. Relative facet interiors are smooth by even reflection after subtracting the normal affine term. These neighborhoods cover $\overline\Omega\setminus S$. In particular, no higher-dimensional regularity criterion for unspecified degree-two modes is being assumed. ∎
+
+### 8.3. Energy near the higher-codimension faces
+
+**Lemma 8.5.** Under the hypotheses of Lemma 8.3, with $H=D^2v$, there are constants $C$ and $\varepsilon_0>0$ such that
+
+$$
+\int_{\{\operatorname{dist}(x,S)<\varepsilon\}}|H|^2\,dx
+ \le C\bigl(\varepsilon^3+
+       \varepsilon\,\omega(C\varepsilon)^2\bigr)
+\quad(0<\varepsilon<\varepsilon_0).
+\tag{8.14}
+$$
+
+All integrals in this subsection are over $\Omega$. In particular the left side is $o(\varepsilon)$.
+
+*Proof.* A finite union of bounded faces of dimension at most $d-3$ has an $\varepsilon$-net of at most $C\varepsilon^{-(d-3)}$ points, and its $\varepsilon$-tube has volume at most $C\varepsilon^3$. We need a uniform conic patch near each net point; a fixed cone radius at all points of $S$ would not be valid.
+
+Write the polytope by unit facet inequalities $\nu_j\cdot x\le b_j$, $1\le j\le m$, and put $s_j(x)=b_j-\nu_j\cdot x$. For every feasible nonempty subset $J$, let $F_J$ be the nonempty face where all its inequalities are equalities. There is a constant $C_0$, independent of $J$, such that
+
+$$
+\operatorname{dist}(z,F_J)
+ \le C_0\max_{j\in J}s_j(z),
+\qquad z\in\overline\Omega.
+\tag{8.15}
+$$
+
+To prove it, write $z$ as a convex combination of the finitely many vertices. Each vertex outside $F_J$ has a positive total $J$-slack. The minimum of these positive totals, over the finitely many choices, is positive. Thus the total weight of vertices outside $F_J$ is bounded by a constant times $\max_{j\in J}s_j(z)$. Move that weight to any vertex of $F_J$ and use the diameter bound. For infeasible $J$, compactness instead gives $\min_z\max_{j\in J}s_j(z)>0$.
+
+Fix $z\in S$ and a small $\varepsilon$. Set $A_0=4$ and $A_{\ell+1}=10(C_0+1)A_\ell$. Among $m+2$ consecutive sets
+
+$$
+J_\ell=\{j:s_j(z)\le A_\ell\varepsilon\}
+\tag{8.16}
+$$
+
+two adjacent sets coincide. Call the common set $J$. For uniformly small $\varepsilon$, it is feasible by the infeasible-set lower bounds. Choose $w\in F_J$ with $|w-z|\le C_0A_\ell\varepsilon$. The set $J$ includes the facets incident to $z$, so $w\in S$. Put $R=2(C_0+1)A_\ell\varepsilon$. Then $B_{2\varepsilon}(z)\subset B_R(w)$. For $j\notin J$, its supporting plane is farther than
+
+$$
+[10(C_0+1)-C_0]A_\ell\varepsilon>2R
+\tag{8.17}
+$$
+
+from $w$. Hence inside $B_{2R}(w)$ the domain is exactly its tangent cone at $w$. There are only finitely many threshold levels, so $R$ is comparable to $\varepsilon$ with constants depending only on the fixed polytope.
+
+Subtract the affine tangent at $w$, writing $g(x)=v(x)-v(w)-\nabla v(w)\cdot(x-w)$. It has homogeneous Neumann data on the incident facets, by Lemma 8.3. On this conic patch, convexity and (8.8) imply
+
+$$
+|\nabla g|\le\omega(C\varepsilon),\qquad
+|g|\le CR\omega(C\varepsilon).
+\tag{8.18}
+$$
+
+Take a radial cutoff $\rho$ equal to one on $B_R(w)$ and supported strictly inside $B_{2R}(w)$, with derivatives bounded by $C/R$ and $C/R^2$. Apply (8.2) to $\rho g$ on the cone truncated at radius $2R$. Since
+
+$$
+\Delta(\rho g)=-\mu\rho+2\nabla\rho\cdot\nabla g+g\Delta\rho,
+\tag{8.19}
+$$
+
+we obtain
+
+$$
+\int_{\Omega\cap B_R(w)}|H|^2
+ \le C\bigl(R^d+R^{d-2}\omega(C\varepsilon)^2\bigr).
+\tag{8.20}
+$$
+
+The balls $B_{2\varepsilon}(z)$ for the net points cover the $\varepsilon$-tube of $S$. Sum (8.20) over at most $C\varepsilon^{-(d-3)}$ balls to get (8.14). Overlaps only enlarge this upper bound. ∎
+
+### 8.4. A Hessian-norm identity and the proof of rigidity
+
+*Proof of Theorem 8.2.* Assume $v$ is quasiconcave. Lemmas 8.3--8.5 apply. In the interior, every component of $H=D^2v$ is harmonic, since $\Delta v=-\mu$ is constant. At a relative facet interior, subtract an affine function with normal derivative $-1$ and reflect the result evenly. The Hessian transforms by orthogonal conjugation. Consequently, on that facet,
+
+$$
+H:\partial_\nu H=0,
+\qquad \partial_\nu |H|=0.
+\tag{8.21}
+$$
+
+In coordinates with the normal as the last axis, the mixed normal-tangential entries of $H$ vanish, while the normal derivatives of the other entries vanish. This also verifies (8.21) directly.
+
+Since $\operatorname{tr}H=-\mu\ne0$, the Frobenius norm $q=|H|$ satisfies $q\ge\mu/\sqrt d>0$. Its interior Laplacian is
+
+$$
+D:=\Delta q=
+\sum_{k=1}^d\left(
+ \frac{|\partial_kH|^2}{q}
+ -\frac{(H:\partial_kH)^2}{q^3}\right)\ge0.
+\tag{8.22}
+$$
+
+For any Lipschitz cutoff $\chi$ vanishing on a neighborhood of $S$, integration by parts gives
+
+$$
+\int_\Omega\chi^2|\nabla H|^2
+ \le4\int_\Omega|\nabla\chi|^2|H|^2,
+\tag{8.23}
+$$
+
+and
+
+$$
+\int_\Omega\chi^2D
+ =-2\int_\Omega\chi\nabla\chi\cdot\nabla q.
+\tag{8.24}
+$$
+
+Here is the justification at the open edges. On each compact set away from $S$, Lemma 8.4 bounds $H$. Around a codimension-two affine face, a cutoff increasing logarithmically from zero at distance $\delta^2$ to one at distance $\delta$ has squared gradient integral $O(1/|\log\delta|)$. Products of finitely many such cutoffs remove the edges. First integrate the harmonic equations for $H$ against $\chi^2H$ times the square of this auxiliary cutoff. The facet boundary terms vanish by (8.21). Cauchy--Schwarz gives (8.23) with the auxiliary cutoff; boundedness of $H$ makes its cutoff-energy error tend to zero. Fatou first gives local $L^2$ control of $\nabla H$ up to those edges. One can then pass in the identity itself: all terms containing the auxiliary cutoff gradient tend to zero by Cauchy--Schwarz and its vanishing $L^2$ norm. Applying the same argument to $\Delta q=D$, with $|\nabla q|\le|\nabla H|$, proves (8.24). The integrand $D$ is locally integrable there since $q$ is bounded below and $D\le |\nabla H|^2/q$. Thus no edge measure or uncomputed boundary term is discarded.
+
+Choose $\chi_\varepsilon$ to be zero when $\operatorname{dist}(x,S)\le\varepsilon$ and one when that distance is at least $2\varepsilon$, with $|\nabla\chi_\varepsilon|\le C/\varepsilon$. Define
+
+$$
+A_\varepsilon=\int_\Omega|\nabla\chi_\varepsilon|^2|H|^2,
+\qquad B_\varepsilon=\int_\Omega|\nabla\chi_\varepsilon|^2.
+\tag{8.25}
+$$
+
+The tube-volume bound and Lemma 8.5 imply
+
+$$
+A_\varepsilon\le C\left(\varepsilon+
+  \frac{\omega(C\varepsilon)^2}{\varepsilon}\right),
+\qquad B_\varepsilon\le C\varepsilon.
+\tag{8.26}
+$$
+
+Although $A_\varepsilon$ need not tend to zero, its product with $B_\varepsilon$ does. Combining (8.23)--(8.26) yields
+
+$$
+0\le\int_\Omega\chi_\varepsilon^2D
+ \le4\sqrt{A_\varepsilon B_\varepsilon}
+ \le C\bigl(\varepsilon+\omega(C\varepsilon)\bigr)
+ \longrightarrow0.
+\tag{8.27}
+$$
+
+Fatou's lemma gives $D=0$ in the interior. Each summand in (8.22) is nonnegative, so equality in Cauchy--Schwarz gives $\partial_kH=a_kH$ pointwise for some scalar $a_k$. Taking traces gives $0=-\mu a_k$, hence $a_k=0$. Thus $H$ is constant, and $v$ is quadratic on the connected domain. This argument neither assumes global $H^3$ regularity nor infers bounded Hessians from continuity of the gradient. ∎
+
+*Proof of Theorem 8.1.* The quadratic classification [ACH, Corollaries 8.2--8.3] says that a quadratic solution of (8.1) can exist only on a product of circumsolids. Thus Theorem 8.2 implies that $v$ is not quasiconcave when $\Omega$ is not such a product. There are interior points $x,y$, their midpoint $m$, and $a,\tau\in\mathbb R$ with $\tau>0$ such that
+
+$$
+v(x),v(y)>a+\tau,
+\qquad v(m)<a-\tau.
+\tag{8.28}
+$$
+
+Indeed, continuity makes midpoint quasiconcavity equivalent to quasiconcavity, by dyadic subdivision. The normalized first eigenfunction has the perturbation expansion [ACH, Proposition 3.1]
+
+$$
+u_\alpha=1+\alpha v+o(\alpha)
+\quad\text{uniformly on }\overline\Omega.
+\tag{8.29}
+$$
+
+For all sufficiently small positive $\alpha$, (8.28)--(8.29) put $x,y$ in $\{u_\alpha>1+\alpha a\}$ and exclude $m$. This proves the asserted nonconvexity for the entire interval $(0,\alpha_0)$. ∎
+
+The recent work of Edelen and Li [EL] proves sharp Neumann spectral and regularity results under non-obtuse dihedral-angle hypotheses. Their Lemma 2.5 uses logarithmic cutoffs to justify a tensor energy identity when the tensor is bounded. The open-edge cutoff step above is of the same standard type. The additional estimate (8.14) and the use of the norm rather than its square allow the higher-codimension part to remain potentially unbounded, while quasiconcavity supplies the needed edge regularity even at obtuse edges. We do not use the spectral-gap theorem of [EL].
+
+The unrestricted transverse-cone assertion suggested by [ACH, Remark 9.6] remains a separate local question. Theorem 8.1 resolves their polyhedral quasiconcavity conjecture through the global Neumann problem. It gives no assertion about large parameters on every polyhedron, or about the sharp Robin fundamental gap.
+
 
 ## References
 
@@ -645,3 +965,7 @@ we have $\operatorname{tr}H=0$, $H|_{e^\perp}\preceq0$, and $H\nu=2\nu$. The nor
 [YZ] D. Ye and D. Zhang, *Concavity Properties of Robin Solutions on $C^{3,1}$ Uniformly Convex Domains*, [arXiv:2609.06223v1](https://arxiv.org/abs/2609.06223v1), September 5, 2026.
 
 [T] P. Tolksdorf, *The Stokes resolvent problem: optimal pressure estimates and remarks on resolvent estimates in convex domains*, Calculus of Variations and Partial Differential Equations **59** (2020), article 154. [Final journal article](https://doi.org/10.1007/s00526-020-01811-8), Section 4.
+
+[M] V. Maz'ya, *Boundedness of the gradient of a solution to the Neumann--Laplace problem in a convex domain*, Comptes Rendus Mathematique **347** (2009), 517-520. [Final journal article](https://doi.org/10.1016/j.crma.2009.03.001). [Longer preprint, arXiv:0809.2514v2](https://arxiv.org/abs/0809.2514v2).
+
+[EL] N. Edelen and C. Li, *Sharp Neumann eigenvalue estimates and $C^2$ elliptic regularity in non-obtuse polyhedral domains*, [arXiv:2608.17194v1](https://arxiv.org/abs/2608.17194v1), August 17, 2026.
