@@ -1,0 +1,87 @@
+{
+  "all_passed": true,
+  "date": "2026-09-16",
+  "literal_tuples_checked": 17568,
+  "nonzero_residuals_verified_on_two_independent_equalities": 223,
+  "candidate_sum_periods_tested": 12,
+  "r_values_tested": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "exact_candidate_sum_holdouts": 864,
+  "known_r2_residues_checked": 12,
+  "coefficients": [
+    {
+      "r": 1,
+      "low": "0",
+      "high": "0",
+      "negative": "1/2",
+      "gamma": "3/8",
+      "beta": "-1/8"
+    },
+    {
+      "r": 2,
+      "low": "19/1296",
+      "high": "1/48",
+      "negative": "5/24",
+      "gamma": "-11/192",
+      "beta": "-1193/5184"
+    },
+    {
+      "r": 3,
+      "low": "211/233280",
+      "high": "1/640",
+      "negative": "3/160",
+      "gamma": "-21/2560",
+      "beta": "-45697/1866240"
+    },
+    {
+      "r": 4,
+      "low": "2059/94058496",
+      "high": "29/645120",
+      "negative": "1/1440",
+      "gamma": "-163/516096",
+      "beta": "-253537/268738560"
+    },
+    {
+      "r": 5,
+      "low": "19171/65303470080",
+      "high": "13/18579456",
+      "negative": "1/72576",
+      "gamma": "-319/53084160",
+      "beta": "-137464367/7313988648960"
+    },
+    {
+      "r": 6,
+      "low": "175099/68960464404480",
+      "high": "281/40874803200",
+      "negative": "1/5913600",
+      "gamma": "-251/3633315840",
+      "beta": "-2208660271/9654465016627200"
+    },
+    {
+      "r": 7,
+      "low": "1586131/102688400631398400",
+      "high": "17/364369674240",
+      "negative": "1/711659520",
+      "gamma": "-2477/4637432217600",
+      "beta": "-1542130171/821507205051187200"
+    },
+    {
+      "r": 8,
+      "low": "14316139/204744872643526656000",
+      "high": "9949/42849873690624000",
+      "negative": "1/118879488000",
+      "gamma": "-39203/13184576520192000",
+      "beta": "-825997193069/74527133642243702784000"
+    }
+  ],
+  "scope": "Finite diagnostics; the all-r coefficient formula is established by the manuscript hand proof.",
+  "script_sha256": "742a9637229ec43aaff30ac49e1baf0673fd9d21fe5c1017bc3621c9dc6f420b"
+}

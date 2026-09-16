@@ -1,20 +1,22 @@
 {
-  "pdf_sha256": "868b0d2594b049972d8282111ab51b175703c1aa50f0733e02a74b08cd458f8a",
-  "tex_sha256": "2637a62898663364e79758b0d07491972f306b361c8e60fc2e1c19745d82e48e",
-  "pages": 6,
-  "rendered": true,
-  "visually_reviewed": true,
-  "note": "All six final pages individually inspected; no clipping, overlap, missing glyphs or TeX warnings.",
-  "reviewed_pages": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6
+  "date": "2026-09-16",
+  "revision": "1.1",
+  "pages": 9,
+  "pdf_sha256": "ee33f6addfa40bbbf2fbc70b0b31e225d27d3558d12dc7ddfbb5dccb597fabf9",
+  "tex_sha256": "39047489ea6d68b6601251788abf3eb394b2221f531ad09ff41ac539713810dd",
+  "markdown_sha256": "242803dbf134d5ed58d18903b3ed501d3b04f6590da82356537dd6779321ecfc",
+  "all_final_pdf_pages_visually_reviewed": true,
+  "new_proof_pages_inspected_individually": [
+    6,
+    7,
+    8
   ],
-  "date": "2026-09-09",
-  "markdown_full": true,
-  "markdown_math_expressions": 229,
-  "markdown_math_errors": 0
+  "equation_labels": 29,
+  "missing_equation_numbers": [],
+  "math_expressions": 355,
+  "math_errors": 0,
+  "tex_warnings": 0,
+  "text_replacement_characters": 0,
+  "semantic_roundtrip_equal": true,
+  "github_live_render_inspected": false
 }

@@ -1,42 +1,28 @@
 {
   "paper": "P34",
   "author": "Henry Zweiman",
-  "date": "2026-09-09",
+  "date": "2026-09-16",
+  "revision": "1.1",
   "files": [
     {
-      "file": "README.md",
-      "bytes": 1919,
-      "sha256": "d8fe94993324dccb36a1409ed1ed946b33ac5298edf19cd0d78806b90cedb442"
+      "file": "ASSESSMENT.md",
+      "bytes": 5905,
+      "sha256": "ec7483b699482d137fbea3d248df180ab4d38a0076ac7191eed7cb79213fa7d8"
     },
     {
-      "file": "ASSESSMENT.md",
-      "bytes": 4412,
-      "sha256": "161cd007ad9547446ed0a2c67be14e135ae6c924dd4522fe6550ff313d251275"
+      "file": "README.md",
+      "bytes": 2476,
+      "sha256": "78a5b287e1ab94eb5a8b5efc0d961e2520c48136ac3de89e5c9bde1a24ff0d66"
     },
     {
       "file": "REVIEW.md",
-      "bytes": 4622,
-      "sha256": "4bbb240fd31ea065d10f956962fb09d5facfada62f30b3f56f4c3fc6a3d38d4f"
+      "bytes": 4945,
+      "sha256": "80408e49f676d8b8695220522266b7c991cbaefbb4b8810f122b42ef3b536a40"
     },
     {
-      "file": "manuscript.tex",
-      "bytes": 18923,
-      "sha256": "2637a62898663364e79758b0d07491972f306b361c8e60fc2e1c19745d82e48e"
-    },
-    {
-      "file": "manuscript.md",
-      "bytes": 19942,
-      "sha256": "404cc0a803cd00b32d220cd2d2ad65081bcf2df586ac2684ac2f7b7b218903d9"
-    },
-    {
-      "file": "manuscript.pdf",
-      "bytes": 84785,
-      "sha256": "868b0d2594b049972d8282111ab51b175703c1aa50f0733e02a74b08cd458f8a"
-    },
-    {
-      "file": "check.py",
-      "bytes": 5134,
-      "sha256": "47948adb155c3e7d3ac9a65b101853c4c7676679f64b29887c03fe58557d6627"
+      "file": "artifact-qa.json",
+      "bytes": 679,
+      "sha256": "b01021c373c12c235ba716b1774f1dff6791fa00136774a7038fdfb2a2f52fa9"
     },
     {
       "file": "check-results.json",
@@ -44,19 +30,49 @@
       "sha256": "aa420fcf4ca9a7d1bde406880c596e3e92be75ce6da531cb9fca606b97c66ae9"
     },
     {
+      "file": "check.py",
+      "bytes": 5134,
+      "sha256": "47948adb155c3e7d3ac9a65b101853c4c7676679f64b29887c03fe58557d6627"
+    },
+    {
+      "file": "check_second.py",
+      "bytes": 5018,
+      "sha256": "742a9637229ec43aaff30ac49e1baf0673fd9d21fe5c1017bc3621c9dc6f420b"
+    },
+    {
+      "file": "manuscript.md",
+      "bytes": 30343,
+      "sha256": "242803dbf134d5ed58d18903b3ed501d3b04f6590da82356537dd6779321ecfc"
+    },
+    {
+      "file": "manuscript.pdf",
+      "bytes": 105824,
+      "sha256": "ee33f6addfa40bbbf2fbc70b0b31e225d27d3558d12dc7ddfbb5dccb597fabf9"
+    },
+    {
+      "file": "manuscript.tex",
+      "bytes": 28811,
+      "sha256": "39047489ea6d68b6601251788abf3eb394b2221f531ad09ff41ac539713810dd"
+    },
+    {
       "file": "markdown-conversion.json",
-      "bytes": 3226,
-      "sha256": "70d4b4743bb89cbeae6addd19248f0f79d45ead80794343ff2706293f900d0e7"
+      "bytes": 4019,
+      "sha256": "6f392c104694b7f9f87826861867f711c01aa5ed98efe33dcc73d8234197e114"
     },
     {
       "file": "markdown-math-check.json",
-      "bytes": 438,
-      "sha256": "faf24f4bfdef5dbb1202fe58a4a18066604dd5922e9033acfc436913cf647f9a"
+      "bytes": 444,
+      "sha256": "b402cff7160a625c04f1962a4a8b77a27c60fb57ad82a785473cf1191c987a8a"
     },
     {
-      "file": "artifact-qa.json",
-      "bytes": 527,
-      "sha256": "50307970c1d16c7ca6290d70e61adc2b97092c76628dea04e0b8eaee01dbfe3f"
+      "file": "second-coefficient-checks.json",
+      "bytes": 2056,
+      "sha256": "7714de52fab256c59737ab0bfbffa809be7fd43ec558f644cbc401c955985c0e"
+    },
+    {
+      "file": "second-coefficient-review.md",
+      "bytes": 3597,
+      "sha256": "9cb943c07d8bba2cc5ceac4766e8f5da7f41b0bf30bc0e20e9b61d2cc996201c"
     }
   ]
 }

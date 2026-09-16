@@ -1,10 +1,10 @@
 # Quasipolynomiality and eventual growth at fixed ordinarization number
 
-September 9, 2026
+September 16, 2026; revised version 1.1
 
 ## Abstract
 
-Let $`n_{g,r}`$ count numerical semigroups of genus $`g`$ and ordinarization number $`r`$. For every fixed positive integer $`r`$, we prove that $`n_{g,r}`$ is a quasipolynomial for all positive integers $`g`$, answering a question of Cyrusian and Kaplan. Its leading coefficient is $`1/(2(2r)!)+1/(2\cdot4^r(r!)^2)`$. We determine the oscillation of the next coefficient: its exact period is two, and its even value is smaller than its odd value by $`1/(4^r r!(r-1)!)`$. This gives explicit positive leading terms for $`n_{g+1,r}-n_{g,r}`$ in both parities and proves eventual strict monotonicity for every fixed $`r`$. The proof separates a binomial-sum bulk from exceptional additive relations. Those relations lie in linear hyperplanes through the origin, which prevents them from introducing periodicity in the next coefficient.
+Let $`n_{g,r}`$ count numerical semigroups of genus $`g`$ and ordinarization number $`r`$. For every fixed positive integer $`r`$, we prove that $`n_{g,r}`$ is a quasipolynomial for all positive integers $`g`$, answering a question of Cyrusian and Kaplan. Its leading coefficient is $`1/(2(2r)!)+1/(2\cdot4^r(r!)^2)`$. We determine the complete next coefficient in closed form, including its constant part and its oscillation: its exact period is two, and its even value is smaller than its odd value by $`1/(4^r r!(r-1)!)`$. This gives explicit positive leading terms for $`n_{g+1,r}-n_{g,r}`$ in both parities and proves eventual strict monotonicity for every fixed $`r`$. The proof separates a binomial-sum bulk from exceptional additive relations. Those relations lie in linear hyperplanes through the origin, which prevents them from introducing periodicity in the next coefficient.
 
 ## 1. Introduction and main results
 
@@ -34,7 +34,7 @@ For every positive integer $`r`$, the function $`g\mapsto n_{g,r}`$ is a quasipo
  \qquad C_r=\frac{1}{4^r r!(r-1)!}.
 ```
 
-There is a rational number $`\beta_r`$ such that
+With the explicit rational number $`\beta_r`$ given in Theorem [5.1](#label-thm-second), we have
 
 <a id="label-eq-main"></a>
 
@@ -385,15 +385,208 @@ Using $`2rA_r=r/(2r)!+C_r`$ gives [(3)](#label-eq-increment). Both parity consta
 
 <!-- end proof-6 -->
 
-## 5. Consequences, checks, and remaining questions
+## 5. The complete second coefficient
+
+We now evaluate the constant left implicit in the preceding argument. This also answers the question about $`\beta_r`$ in the first version of this paper.
+
+<a id="theorem-2"></a>
+
+**Theorem 5.1.**
+
+<a id="label-thm-second"></a>
+
+For every $`r\ge1`$, the constant in [(2)](#label-eq-main) is
+
+<a id="label-eq-beta-explicit"></a>
+
+```math
+\tag{18}
+\begin{split}
+\beta_r={}&-\frac{r^2+7r-10}{8(2r-1)!}
+-\frac{4r^2-4r+3}{2(2r-1)}C_r\\
+&-\frac{3(r-1)}{(2r-1)9^r r!(r-1)!}.
+\end{split}
+```
+
+In particular, $`\beta_1=-1/8`$, $`\beta_2=-1193/5184`$, and $`\beta_r<0`$ for every positive $`r`$. Moreover,
+
+<a id="label-eq-coefficient-scale"></a>
+
+```math
+\tag{19}
+\frac{\beta_r}{A_r}\sim-\frac{r^3}{2}\qquad(r\longrightarrow\infty).
+```
+
+The last statement concerns the coefficients as functions of $`r`$. It does not make the error in [(2)](#label-eq-main) uniform in $`r`$, and does not give a threshold for the counting conjecture.
+
+<!-- end theorem-2 -->
+
+### The three exceptional contributions
+
+All dimensions in the next argument refer to the $`2r`$ coordinates $`(A,B)`$ at fixed real $`g>0`$. Enlarge the equality arrangement used in Section 3 to include all equations
+```math
+b_i+b_j=b_k,\qquad a_h-b_i=a_j,\qquad b_i+b_j=a_h.
+```
+Delete equations with no solutions in the strict ordering region, and identify equations defining the same hyperplane. Two distinct hyperplanes in this arrangement have an intersection of dimension at most $`2r-2`$. Their bounded integer sections consequently contribute $`O_r(g^{2r-2})`$: choose two coordinates with independent coefficients and fix the other $`2r-2`$ coordinates; at most one solution remains. We may therefore compute the coefficient of $`g^{2r-1}`$ away from such intersections. Boundary faces of each resulting region do not affect its leading lattice volume.
+
+Suppose first that a valid tuple is outside the bulk because $`2m\le g`$, where $`m=b_1`$. Closure forces $`2m\in B`$. Away from the discarded intersections this is its only additive equality. Thus $`3m>g`$, every other element of $`B\setminus\{m,2m\}`$ exceeds $`g-m`$, and $`\max A\le g+m`$. For example, $`3m\le g`$ would force a second equality for $`m+2m`$; any other $`b\le g-m`$ would force a second equality for $`m+b`$. Conversely, these inequalities make all low sums except $`m+m`$ exceed $`g`$, and make all hole-minus-low-element differences at most $`g`$. Excluding sums in $`A`$ costs only the discarded intersections. After scaling $`g=1`$, the leading contribution is therefore
+
+<a id="label-eq-kappa-low"></a>
+
+```math
+\tag{20}
+\ell_r=\frac{1}{(r-2)!r!}\int_{1/3}^{1/2}m^{2r-2}\,dm
+=\frac{2^{-(2r-1)}-3^{-(2r-1)}}{(2r-1)(r-2)!r!},
+\quad r\ge2.
+```
+
+Indeed, the $`r-2`$ free low elements lie in $`(1-m,1)`$, of length $`m`$, and the $`r`$ holes lie in $`(1,1+m)`$, also of length $`m`$. The forced low element $`2m`$ is in the first interval. Dividing by the factorials counts unordered sets. Eliminating the coordinate equal to $`2m`$ preserves the integer lattice; no Euclidean surface-area factor enters this volume.
+
+The second positive contribution comes from a valid tuple with $`2m>g`$ and $`a_r>g+m`$. Closure forces $`a_r-m=a_h`$ for some $`h<r`$. Write $`a=a_h`$. Away from multiple equalities, all the other holes are at most $`g+m`$ and all elements of $`B\setminus\{m\}`$ are at least $`a+m-g`$. These conditions are also sufficient away from the discarded intersections. At $`g=1`$, $`1/2<m<1`$ and $`1<a<2-m`$. The free holes occupy an interval of length $`m`$; the free low elements occupy an interval of length $`2-a-m`$. Hence
+
+<a id="label-eq-kappa-high"></a>
+
+```math
+\tag{21}
+\begin{split}
+u_r&=\frac{1}{(r-2)!(r-1)!}
+ \int_{1/2}^1\int_1^{2-m}m^{r-2}(2-a-m)^{r-1}\,da\,dm\\
+&=\frac{1}{(r-2)!r!}\int_{1/2}^1m^{r-2}(1-m)^r\,dm,
+\quad r\ge2.
+\end{split}
+```
+
+Here the eliminated coordinate is $`a_r=a+m`$, again an integral graph. Tuples violating both bulk inequalities have two distinct equalities and are already in the discarded set.
+
+For the negative contribution, a bulk tuple is invalid exactly when a sum $`b_i+b_j`$ is a hole. Distinct such equalities overlap only on discarded intersections, so their leading contributions add. Fix $`m\in(1/2,1)`$ and put $`L=1-m`$. For each low set $`B`$, the $`r`$ unordered pairs involving its minimum, including $`(m,m)`$, always have sum in $`(1,1+m)`$. The other low elements lie in $`(m,1)`$. Among their doubled elements, the permitted interval has half its full length. Among two distinct such elements, the permitted unordered region is a triangle of area $`L^2/4`$. Relative to the volume $`L^{r-1}/(r-1)!`$ of all choices of the free low elements, these three contributions have factors
+```math
+r,\qquad \frac{r-1}{2},\qquad \frac{(r-1)(r-2)}4.
+```
+Their sum is $`r(r+3)/4`$. Once a sum is forced to be a hole, the other $`r-1`$ holes have volume $`m^{r-1}/(r-1)!`$. Consequently the magnitude of the negative coefficient is
+
+<a id="label-eq-kappa-negative"></a>
+
+```math
+\tag{22}
+d_r=\frac{r(r+3)}{4((r-1)!)^2}
+ \int_{1/2}^1m^{r-1}(1-m)^{r-1}\,dm
+=\frac{r(r+3)}{8(2r-1)!}.
+```
+
+The last equality uses symmetry and the beta integral. Each sum-hole hyperplane eliminates a hole coordinate with coefficient one, so the same lattice normalization applies. We have proved, for $`r\ge2`$,
+
+<a id="label-eq-kappa-split"></a>
+
+```math
+\tag{23}
+\kappa_r=\ell_r+u_r-d_r.
+```
+
+### Evaluation and the bulk average
+
+For $`r\ge2`$, reflection about $`1/2`$ and an elementary antiderivative give
+```math
+\begin{align*}
+&\int_{1/2}^1\bigl(m^r(1-m)^{r-2}+m^{r-2}(1-m)^r\bigr)\,dm
+ =\frac{r!(r-2)!}{(2r-1)!},\\
+&\int_{1/2}^1\bigl(m^r(1-m)^{r-2}-m^{r-2}(1-m)^r\bigr)\,dm
+ =\frac{1}{(r-1)4^{r-1}}.
+\end{align*}
+```
+The second integrand is $`(2m-1)m^{r-2}(1-m)^{r-2}`$, the negative derivative of $`m^{r-1}(1-m)^{r-1}/(r-1)`$. Thus
+```math
+u_r=\frac{1}{2(2r-1)!}-2C_r.
+```
+Substituting this and [(20)](#label-eq-kappa-low) into [(23)](#label-eq-kappa-split) yields
+
+<a id="label-eq-kappa-explicit"></a>
+
+```math
+\tag{24}
+\kappa_r=-\frac{(r+4)(r-1)}{8(2r-1)!}
+-\frac{2r}{2r-1}C_r
+-\frac{3(r-1)}{(2r-1)9^r r!(r-1)!}.
+```
+
+We also make the polynomial $`h_r`$ in [(16)](#label-eq-summand) explicit:
+```math
+h_r(x)=-\frac{(r-1)(r-2)x^r(1-x)^{r-2}
+ +r(r-1)x^{r-1}(1-x)^{r-1}}{2r!(r-1)!}.
+```
+The mean of the two lower-endpoint terms in [(17)](#label-eq-EM) is $`-f_r(1/2)/4=-C_r/2`$. Since $`f_r(1)=0`$ for $`r\ge2`$, the preceding integrals give
+
+<a id="label-eq-gamma-explicit"></a>
+
+```math
+\tag{25}
+\gamma_r=\int_{1/2}^1h_r(x)\,dx-\frac{C_r}{2}
+=-\frac{2r-3}{4(2r-1)!}-\left(r-\frac32\right)C_r.
+```
+
+Adding [(24)](#label-eq-kappa-explicit) and [(25)](#label-eq-gamma-explicit) proves [(18)](#label-eq-beta-explicit) for $`r\ge2`$.
+
+For $`r=1`$, no valid tuple is outside the bulk: either violated bulk inequality would force $`m=0`$. A bulk pair $`(a,m)`$ fails only at $`a=2m`$, so $`n_{g,1}-M_1(g)=-\lceil g/2\rceil`$. Hence $`\kappa_1=-1/2`$ and, using $`\gamma_1=3/8`$, we obtain $`\beta_1=-1/8`$. Formulas [(24)](#label-eq-kappa-explicit), [(25)](#label-eq-gamma-explicit), and [(18)](#label-eq-beta-explicit) have these same values at $`r=1`$. For $`r\ge2`$, all three summands of [(18)](#label-eq-beta-explicit) are negative, proving the asserted sign.
+
+Finally, $`\binom{2r}{r}/4^r\sim1/\sqrt{\pi r}`$ implies
+```math
+A_r\sim\frac{1}{4r(2r-1)!},\qquad
+\beta_r\sim-\frac{r^2}{8(2r-1)!}.
+```
+The remaining terms in [(18)](#label-eq-beta-explicit) are smaller by the same central-binomial estimate and the exponential factor $`(4/9)^r`$. Taking the ratio proves [(19)](#label-eq-coefficient-scale) and completes the proof of Theorem [5.1](#label-thm-second).
+
+### Exact sums for reproducing the leading volumes
+
+The three regions above admit convenient finite counting formulas. These count candidates, with multiplicity for the negative contribution; they are not exact formulas for the correction $`n_{g,r}-M_r(g)`$. For $`r\ge2`$, put
+
+<a id="label-eq-low-sum"></a>
+
+<a id="label-eq-high-sum"></a>
+
+```math
+\begin{align}
+L_r(g)&=\sum_{\lfloor g/3\rfloor<m\le\lfloor g/2\rfloor}
+ \binom{m-1}{r-2}\binom mr,\tag{26}\\
+U_r(g)&=\sum_{\lfloor g/2\rfloor<m\le g}
+ \binom{m-1}{r-2}\binom{g-m+1}{r}.\tag{27}
+\end{align}
+```
+The first formula removes the forced element $`2m`$ from the $`m`$ possible free-low positions. For the second, sum over the lower forced hole $`a`$: the number of available other low elements is $`2g-a-m+1`$. The hockey-stick identity then sums their binomial coefficients. For every $`r\ge1`$, define
+
+<a id="label-eq-negative-sum"></a>
+
+```math
+\tag{28}
+\begin{split}
+D_r(g)=\sum_{m=\lfloor g/2\rfloor+1}^{g}\binom{m-1}{r-1}
+\biggl[&r\binom{g-m}{r-1}
++\left\lfloor\frac{g-m}{2}\right\rfloor\binom{g-m-1}{r-2}\\
+&+\left\lfloor\frac{(g-m-1)^2}{4}\right\rfloor
+ \binom{g-m-2}{r-3}\biggr].
+\end{split}
+```
+
+A binomial coefficient in these formulas is zero unless its two indices are integers with $`0\le k\le n`$. The last term counts distinct unordered $`u,v\in[1,g-m]`$ with $`u+v\le g-m`$. There are $`\lfloor(g-m-1)^2/4\rfloor`$ such pairs. Set $`L_1=U_1=0`$.
+
+The equality-arrangement argument proves
+
+<a id="label-eq-signed-approx"></a>
+
+```math
+\tag{29}
+n_{g,r}-M_r(g)=L_r(g)+U_r(g)-D_r(g)+O_r(g^{2r-2}).
+```
+
+In particular their leading coefficients are $`\ell_r,u_r,d_r`$, respectively. Formula [(29)](#label-eq-signed-approx) retains a remainder from multiple additive equalities. It must not be used as an exact identity or as a uniform estimate with $`r`$ increasing.
+
+## 6. Consequences, checks, and remaining questions
 
 The first three leading coefficients are $`A_1=3/8`$, $`A_2=11/384`$, and $`A_3=7/7680`$. The first two agree with the exact formulas of [\[2, Proposition 2.1 and Theorem 3.5\]](#ref-CK). These small values illustrate the general coefficient formula; our contribution concerns arbitrary fixed $`r`$.
 
 The homogeneous description is also effective in principle. For a specified $`r`$, form the finite arrangement in the proof of Proposition [2.3](#label-prop-quasi), enumerate its rational cells, and compute their Ehrhart quasipolynomials. A common multiple of the vertex denominators bounds a period. The argument gives no efficient bound for this enumeration. Once the finitely many constituents are obtained, eventual positivity of [(3)](#label-eq-increment) reduces the full monotonicity question for that particular $`r`$ to finitely many genera.
 
-The accompanying Python script compares literal closure with Lemma [2.1](#label-lem-closure) on all $`66\,187`$ tuples through genus $`9`$, checking all $`584`$ exceptional tuples. Independently generated semigroup trees through genus $`16`$ contain $`11\,770`$ semigroups in total; their counts agree with the tuple counts and the known $`r=1,2`$ formulas on the overlapping ranges. Exact rational interpolation tests the bulk’s two leading coefficients for $`1\le r\le12`$, with $`936`$ additional evaluations beyond the interpolation data. These finite diagnostics do not replace the general proofs.
+The accompanying Python script compares literal closure with Lemma [2.1](#label-lem-closure) on all $`66\,187`$ tuples through genus $`9`$, checking all $`584`$ exceptional tuples. Independently generated semigroup trees through genus $`16`$ contain $`11\,770`$ semigroups in total; their counts agree with the tuple counts and the known $`r=1,2`$ formulas on the overlapping ranges. Exact rational interpolation tests the bulk’s two leading coefficients for $`1\le r\le12`$, with $`936`$ additional evaluations beyond the interpolation data. For the revised second-coefficient formula, a separate script checks all $`17\,568`$ tuples through genus $`8`$, verifies that all $`223`$ nonzero signed residuals satisfy two independent additive equalities, and checks the candidate-sum formulas. Exact rational interpolation of those sums for $`1\le r\le8`$ has $`864`$ holdout evaluations; the resulting coefficients also agree with every residue of the cited exact $`r=2`$ formula. These finite diagnostics do not replace the general proofs.
 
-Several questions remain. One can seek an explicit formula for the constant $`\beta_r`$ by evaluating the top-dimensional exceptional cells, determine the full period of $`n_{g,r}`$, and find bounds for the onset of strict growth. The stronger conjecture asks for monotonicity at every genus and every ordinarization number. The present argument controls the top two coefficients for fixed $`r`$ and leaves those further questions open.
+Several questions remain. Theorem [5.1](#label-thm-second) evaluates the previously undetermined constant $`\beta_r`$. One can next determine the full period of $`n_{g,r}`$, evaluate the lower-dimensional multiple-equality contributions, and find bounds for the onset of strict growth. The stronger conjecture asks for monotonicity at every genus and every ordinarization number. The present argument now evaluates the top two coefficients completely for fixed $`r`$ and leaves those further questions open. The coefficient ratio in [(19)](#label-eq-coefficient-scale) records growth of the correction with $`r`$; it supplies no uniform remainder bound and does not settle either total monotonicity or the full Bras-Amorós Fibonacci inequality.
 
 ## References
 

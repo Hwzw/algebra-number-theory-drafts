@@ -1,6 +1,6 @@
 {
   "environments": {
-    "theorem": 1,
+    "theorem": 2,
     "corollary": 1,
     "lemma": 4,
     "proof": 6,
@@ -63,9 +63,16 @@
       "number": "4.1",
       "id": "lemma-4",
       "source_label": "lem:asymp"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 2,
+      "number": "5.1",
+      "id": "theorem-2",
+      "source_label": "thm:second"
     }
   ],
-  "references": 40,
+  "references": 60,
   "citations": 6,
   "cited_keys": [
     "BR",
@@ -92,7 +99,19 @@
     "eq:H3",
     "eq:bulkexp",
     "eq:summand",
-    "eq:EM"
+    "eq:EM",
+    "eq:beta-explicit",
+    "eq:coefficient-scale",
+    "eq:kappa-low",
+    "eq:kappa-high",
+    "eq:kappa-negative",
+    "eq:kappa-split",
+    "eq:kappa-explicit",
+    "eq:gamma-explicit",
+    "eq:low-sum",
+    "eq:high-sum",
+    "eq:negative-sum",
+    "eq:signed-approx"
   ],
   "label_numbers": {
     "thm:main": "1.1",
@@ -119,19 +138,32 @@
     "lem:asymp": "4.1",
     "eq:bulkexp": "15",
     "eq:summand": "16",
-    "eq:EM": "17"
+    "eq:EM": "17",
+    "thm:second": "5.1",
+    "eq:beta-explicit": "18",
+    "eq:coefficient-scale": "19",
+    "eq:kappa-low": "20",
+    "eq:kappa-high": "21",
+    "eq:kappa-negative": "22",
+    "eq:kappa-split": "23",
+    "eq:kappa-explicit": "24",
+    "eq:gamma-explicit": "25",
+    "eq:low-sum": "26",
+    "eq:high-sum": "27",
+    "eq:negative-sum": "28",
+    "eq:signed-approx": "29"
   },
   "bibliography_numbers": {
     "BR": "1",
     "CK": "2"
   },
   "tables": [],
-  "source_tex_sha256": "2637a62898663364e79758b0d07491972f306b361c8e60fc2e1c19745d82e48e",
-  "source_pdf_sha256": "868b0d2594b049972d8282111ab51b175703c1aa50f0733e02a74b08cd458f8a",
-  "markdown_sha256": "404cc0a803cd00b32d220cd2d2ad65081bcf2df586ac2684ac2f7b7b218903d9",
-  "markdown_bytes": 19942,
-  "source_math_expressions_verified": 223,
-  "markdown_math_expressions": 229,
+  "source_tex_sha256": "39047489ea6d68b6601251788abf3eb394b2221f531ad09ff41ac539713810dd",
+  "source_pdf_sha256": "ee33f6addfa40bbbf2fbc70b0b31e225d27d3558d12dc7ddfbb5dccb597fabf9",
+  "markdown_sha256": "242803dbf134d5ed58d18903b3ed501d3b04f6590da82356537dd6779321ecfc",
+  "markdown_bytes": 30343,
+  "source_math_expressions_verified": 349,
+  "markdown_math_expressions": 355,
   "custom_macros_expanded": [
     "Z",
     "Q",
@@ -139,10 +171,10 @@
     "relint"
   ],
   "output_name": "manuscript.md",
-  "source_environment_markers_verified": 55,
-  "semantic_roundtrip_sha256": "632e7d2892d78294c53119e5714a80935b2c1aae519a70a2d591aa2532631638",
+  "source_environment_markers_verified": 70,
+  "semantic_roundtrip_sha256": "93a39023071f028a448711897733ce6423c2627a1359f985ff35e221aad5e394",
   "roundtrip_content_equal": true,
-  "standalone_anchor_targets": 41,
+  "standalone_anchor_targets": 55,
   "warnings": [],
   "github_live_render_inspected": false,
   "math_layout_normalizations": {}

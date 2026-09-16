@@ -1,5 +1,11 @@
 # P34: internal proof review
 
+## Revision 1.1
+
+The current proof and artifact audit is in [second-coefficient-review.md](second-coefficient-review.md). The original review below is retained as a historical record; its statement that beta_r was not evaluated and its six-page artifact counts refer to version 1.
+
+## Original-version review (historical)
+
 Date: September 9, 2026. Reviewer: the originating AI agent. No separate-agent or human review has occurred.
 
 ## Mathematical obligations
