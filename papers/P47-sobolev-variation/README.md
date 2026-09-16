@@ -1,20 +1,22 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 15, 2026. Revision 1.1.**
+**Henry Zweiman. September 16, 2026. Revision 1.2.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
 Revision 1.1 proves the identity and complete midpoint-symmetric extremizer classification for every p in an order-dependent open interval around two. Section 6 obtains convergence of maximizers through the highest derivative, proves persistence of their single peak, and controls the evaluation profile using polynomial sublevel estimates. The interval is not explicit and need not be uniform in the derivative order.
 
+Revision 1.2 settles the fourth-order measure endpoint: C(4,1)=1/1296 and V(4,1)=1/648, with a unique normalized extremizing measure up to sign. Its five knots are 0, 1/6, 1/2, 5/6 and 1. Section 7 gives a complete alternation and polynomial-elimination proof, including symmetry and nonattainment in the ordinary Sobolev class.
+
 - [Full Markdown manuscript](manuscript.md)
-- [Twelve-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [Sixteen-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)
 - [Artifact checks](artifact-check.json), [MathJax checks](markdown-math-check.json), and [hashes](SHA256SUMS.txt)
 - [Exact normalization diagnostic](check_jacobi.py) and [recorded results](jacobi-exact-check.json)
 
-The full all-p conjecture and p=1 midpoint symmetry remain unresolved. The point-evaluation constant, spherical rearrangement theorem and spline identities are credited prior work. All results here form one paper.
+The full all-p conjecture and p=1 midpoint symmetry for orders at least five remain unresolved. The point-evaluation constant, spherical rearrangement theorem and spline identities are credited prior work. All results here form one paper.
 
 Prepared with OpenAI Codex. This is an internally audited, unreviewed preprint; no independent human verification, absolute priority certification or journal acceptance is claimed.
 

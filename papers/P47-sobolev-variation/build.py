@@ -16,13 +16,15 @@ def executable(name):
     raise SystemExit(f'Install {name} and add it to PATH.')
 s=(HERE/'manuscript.md').read_text()
 title,s=s.split('\n',1)
-s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 15, 2026\n','\n',1)
+s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 16, 2026\n','\n',1)
 s=re.sub(r'^(#{2,}) ',lambda m:m.group(1)[1:]+' ',s,flags=re.M)
 body=subprocess.check_output([executable('pandoc'),'-f','markdown+tex_math_dollars-smart','-t','latex','--top-level-division=section'],input=s,text=True)
 body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}')
-body=body.replace(r'\section{References}',r'\raggedright\section{References}')
+body=body.replace(r'\section{References}',r'\clearpage\raggedright\section{References}')
 body=body.replace(r'\section{',r'\Needspace{8\baselineskip}\section{')
 body=re.sub(r'(?=\\textbf\{(?:Theorem|Lemma|Proposition|Corollary) )',lambda _:r'\Needspace{6\baselineskip}',body)
+for phrase, lines in [('Put \\(K_x', 8), ('Substitute (7.7)', 12)]:
+    body=body.replace(phrase, r'\Needspace{'+str(lines)+r'\baselineskip}'+phrase)
 preamble=r'''\documentclass[11pt]{article}
 \usepackage[margin=0.88in]{geometry}
 \usepackage{amsmath,amssymb,lmodern}
@@ -35,7 +37,7 @@ preamble=r'''\documentclass[11pt]{article}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \title{Sharp total variation bounds from spherical rearrangement}
 \author{Henry Zweiman}
-\date{September 15, 2026}
+\date{September 16, 2026}
 \begin{document}
 \maketitle
 '''

@@ -1,14 +1,24 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 15, 2026. P47 revision 1.1, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.2, developed as Q55.
 
 ## Contribution and internal decision
 
-The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conjecture 4.14, for every derivative order n>=2: the sharp derivative-L1 norm is twice the sharp point norm, with precisely the same midpoint-symmetric extremizers. It also proves the constant identity and coincidence of maximizing sets for the relaxed measure endpoint p=1. Revision 1.1 extends this to an order-dependent open interval around p=2; the other exponents and endpoint symmetry remain unresolved.
+The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conjecture 4.14, for every derivative order n>=2: the sharp derivative-L1 norm is twice the sharp point norm, with precisely the same midpoint-symmetric extremizers. It also proves the constant identity and coincidence of maximizing sets for the relaxed measure endpoint p=1. Revision 1.1 extends this to an order-dependent open interval around p=2; Revision 1.2 settles endpoint symmetry, the sharp constants and all knots in order four. The other exponents and endpoint symmetry in orders at least five remain unresolved.
 
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.2: the fourth-order measure endpoint
+
+Section 7 proves C(4,1)=1/1296 and V(4,1)=1/648. The unique normalized extremizing measure, up to sign, has weights (1/9,-1/4,5/18,-1/4,1/9) at (0,1/6,1/2,5/6,1). The ordinary clamped W(4,1) constants agree, but are unattained. This answers the order-four endpoint symmetry question left open in the earlier manuscript. It is an additional case of the larger conjecture, not an all-order endpoint solution or a distinct paper.
+
+The proof classifies every global maximizing extreme measure by uniform best-approximation duality. Alternating contact at five knots, stationarity of the potential and an explicit elimination reduce all possibilities to the symmetric knot set. A short polynomial sign estimate excludes the asymmetric alternatives. Krein-Milman then classifies every maximizing measure, not just the extreme ones. The derivation and sign estimate are in the manuscript; the research workspace's symbolic check merely corroborates the displayed algebra. A stronger reflection inequality proposed during exploration is still unproved and is not a proof input.
+
+The final Nazarov-Shcheglova publisher statement was refreshed on September 16. Theorem 4.5 already includes the lower-order point cases, and Remark 4.15 credits the full order-two variation result. The final Garmanova-Sheipak highest-derivative result has different scope. Targeted searches for the fourth-order L1 sharp constant, the value 1296 and the survey authors found no matching primary result in the inspected material. These searches were noisy and bounded; no exhaustive citation-chain or priority certification is claimed. The proof uses no new unread source theorem.
+
+The originating assistant checked the global-maximizer reduction, possible peak at the middle knot, all divisions, exclusion of the other algebraic root, constants and extension from extreme points. This is internal review. The significance of one further endpoint order does not by itself establish that the renewed exceptional-conjecture goal has been met. That goal remains active.
 
 ## Revision 1.1: local continuation in the exponent
 
@@ -38,4 +48,4 @@ Eleven arXiv API feeds were screened, with totals and truncation flags retained 
 
 ## Scope and review limits
 
-All functions and measures are real. No theorem for every p, p=1 symmetry theorem, optimal knot classification, or ordinary W0(n,1) attainment is claimed. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.
+All functions and measures are real. No theorem for every p or endpoint symmetry and optimal knot classification for orders at least five is claimed. In order four, ordinary endpoint attainment is ruled out. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.

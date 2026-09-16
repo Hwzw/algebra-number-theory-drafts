@@ -1,6 +1,6 @@
 # Internal proof review
 
-Henry Zweiman. September 15, 2026.
+Henry Zweiman. September 16, 2026.
 
 This is the originating assistant's audit of its own argument, not independent peer review. No subagents or outside mathematicians were used in this stage.
 
@@ -15,7 +15,7 @@ This is the originating assistant's audit of its own argument, not independent p
 9. **Endpoint coincidence.** Extreme points of the exposed maximizing face are extreme in the original moment ball. Scaling a shorter support to the full interval increases height by L^(1-n) at fixed derivative-measure norm. All resulting full-support splines share orientation by their initial derivative signs. Root concavity gives strictly signed derivatives outside the maximum interval; disjoint maximum intervals contradict the common norming load. Pairwise intersecting closed intervals have a common point, and weak-star continuity of evaluation extends this point to the face.
 10. **Recovery.** Mollification of the zero extension and compression with amplitude (1+2 epsilon)^(1-n) preserve the bound on the nth derivative's L1 norm. Smooth endpoint jets vanish, while the height and variation converge. This proves equality of ordinary and relaxed constants, without asserting ordinary attainment.
 
-No mathematical gap was identified in this audit. The 42 exact rational normalization cases are corroborating evidence, not a substitute for any all-order argument. Broader exponents and endpoint symmetry remain open. Artifact checks are recorded separately in artifact-check.json.
+No mathematical gap was identified in this audit. The 42 exact rational normalization cases are corroborating evidence, not a substitute for any all-order argument. At the original revision, broader exponents and endpoint symmetry remained open; subsequent advances are audited below. Artifact checks are recorded separately in artifact-check.json.
 
 
 ## Revision 1.1: local continuation audit
@@ -29,3 +29,17 @@ No mathematical gap was identified in this audit. The 42 exact rational normaliz
 7. Profile regularity: the residual has nonzero polynomial pieces near the base point. Lagrange interpolation proves a uniform sublevel estimate, which makes negative powers uniformly integrable when q is near two. This justifies differentiating the normal equations and applying the implicit function theorem. Multiple residual zeros are allowed.
 8. Symmetry: the Hilbert diagonal has a unique, nondegenerate midpoint maximum. Uniform convergence excludes distant maxima and continuous negative second derivative excludes competing nearby maxima. Reflection gives the unique maximum at the midpoint; strict convexity gives the unique normalized extremizer and its symmetry.
 9. Scope: no uniform-in-order interval, explicit radius, full all-p result, or measure-endpoint symmetry is claimed. Local continuation is not promoted to a global theorem. No numerical proof substitute or independent review is asserted.
+
+
+## Revision 1.2: fourth-order endpoint audit
+
+1. **Global existence and reduction.** The measure ball is weak-star compact; its potential map is uniformly continuous. A maximizing evaluation exposes a compact face with an extreme point. The earlier moment argument forces exactly five nodes. Stretching a shorter support strictly increases height, so the outer nodes are 0 and 1.
+2. **Orientation and peak location.** The divided-difference weights give a positive cubic spline. Its derivatives at the first and last inner knots have strict opposite signs. Reflection permits a<x<=b<c, including a peak exactly at b.
+3. **Dual contact.** Hahn-Banach and Riesz identify the evaluation norm with distance to the cubic polynomials. A best polynomial exists. Equality against every nonzero signed atomic weight forces the alternating values. The residual is C2 even at x, so derivative contact remains valid when x=b.
+4. **Right cubic.** Its derivative has roots b and c and positive leading factor. Equal values at b and 1 force b=1-3h/2 and c=1-h/2. Neither a cubic of lower degree nor a vanishing factor can satisfy the alternating values.
+5. **Left contact and peak stationarity.** Both equations in (7.8) follow by direct integration. Dividing by positive factors yields 3/2<v<=2. Independently U'(x)=0 gives (7.10); R(0)=R(1) gives (7.11). Only the two leftmost nodes contribute to U'(x), also when x=b.
+6. **Elimination.** Equations (7.12)-(7.14) preserve solutions because a,h,v and v-1 are positive. The L,M,N subtraction proves (7.15) without a black-box resultant. Ordinary expansion verifies its factorization and (7.17) excludes every zero of Pi in the allowed interval. At v=2 the second root h=2/3 violates a>0.
+7. **Sharpness.** The proof identifies all global maximizing extreme measures, whose existence was established first. Thus the computed height is the unrestricted optimum. It is not inferred from local stationarity or optimization inside symmetric knots.
+8. **All equality cases.** Every extreme point of an exposed height-maximizing face is one of the two signed measures. The face's positive exposed value permits only one sign; Krein-Milman makes it a singleton. The earlier coincidence theorem transfers the classification to variation.
+9. **Ordinary endpoint.** The unique relaxed derivative measure is atomic. It cannot be the absolutely continuous fourth derivative of a nonzero ordinary Sobolev extremizer. Mollification and rescaling still recover both sharp constants.
+10. **Limits.** The all-p conjecture, higher-order endpoint symmetry and the stronger knot-reflection inequality remain open. The exact symbolic checks are algebra diagnostics only. No independent referee review or exhaustive priority audit has occurred.

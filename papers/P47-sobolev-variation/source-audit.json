@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "candidate": "Q55",
   "counts_as_paper": true,
   "target": "Nazarov-Shcheglova final Conjecture 4.14: lambda_3(n,1,p,1)=2 lambda_3(n,0,p,infinity), with coincident symmetric extremizers",
@@ -66,7 +66,7 @@
     "Semantic Scholar citation API returned 429; no exhaustive citation-chain search claimed."
   ],
   "proof_state": {
-    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures.",
+    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment.",
     "standard_dependencies": [
       "Genocchi-Hermite divided differences (de Boor, formula 52)",
       "Brunn-Minkowski",
@@ -77,7 +77,7 @@
     ],
     "unresolved": [
       "General-p conjecture beyond the proved exponents",
-      "p=1 midpoint symmetry and explicit knot classification",
+      "p=1 midpoint symmetry and explicit knot classification for orders at least five",
       "Independent expert verification and absolute priority; journal suitability remains a judgment"
     ],
     "latest_note": "manuscript.md",
@@ -101,6 +101,25 @@
     "Kazimirov_Sheipak": "MathNet primary abstract and metadata only; point L-infinity result; full proof not read and not used",
     "new_argument": "Dual extremizer compactness through highest derivative; strict single peak; sublevel estimates for best polynomial residuals; IFT and midpoint profile",
     "priority": "Bounded search, no matching result identified; not exhaustive",
+    "independent_human_review": false,
+    "full_conjecture_solved": false
+  },
+  "revision_1_2": {
+    "date": "2026-09-16",
+    "target": "Final NS Conjecture 4.14 restricted to n=4, p=1, in the measure sense",
+    "result": "C(4,1)=1/1296; V(4,1)=1/648; unique normalized signed five-knot measure; ordinary nonattainment",
+    "source_refresh": "Final publisher HTML reopened; previously read Theorem 4.5, Conjecture 4.14 and Remark 4.15 remain scope reference",
+    "queries": [
+      "Sobolev sharp constant \"1296\" fourth derivative",
+      "\"Nazarov\" \"Shcheglova\" \"symmetry\" \"2026\" Sobolev",
+      "\"fourth\" \"derivative\" \"L1\" \"sharp constant\" clamped",
+      "\"Sobolev\" \"1296\" \"constant\"",
+      "\"clamped\" \"fourth derivative\" \"sharp\"",
+      "\"Sobolev\" \"L_1\" \"fourth\" embedding constant"
+    ],
+    "priority": "No matching primary result identified in bounded, noisy search; no exhaustive priority certification",
+    "proof": "Moment-circuit extreme points, best uniform approximation, alternating cubic contact, exact polynomial elimination and sign estimate, exposed-face equality",
+    "unused_unproved_route": "Strict reflection of height under averaging reflected knot sets",
     "independent_human_review": false,
     "full_conjecture_solved": false
   }
