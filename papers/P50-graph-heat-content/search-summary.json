@@ -85,5 +85,17 @@
       "Kohler-Jobin one-point"
     ],
     "result": "Located and checked MP final proof, BCS 2026 domain questions, and Ozcan 2607.12333v2 nonlinear Dirichlet scope. No matching one-point Robin comparison found; not an exhaustive priority certificate."
+  },
+  "general_measure_search": {
+    "date": "2026-09-16",
+    "queries": [
+      "Kohler-Jobin potential",
+      "Kohler-Jobin Robin graph measure",
+      "eigenvalue torsional rigidity potential quasiconcavity measure optimization",
+      "torsion eigenfunction distribution Robin Kohler",
+      "Chiti reverse Holder inequality eigenfunctions Robin graph rearrangement",
+      "Dai Shi PPW Robin journal"
+    ],
+    "result": "No matching fixed-total-killing graph joint inequality found in inspected primary material. Scope comparisons and unread bodies are recorded; search is not exhaustive."
   }
 }

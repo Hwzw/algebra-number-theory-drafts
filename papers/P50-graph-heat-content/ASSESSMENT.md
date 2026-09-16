@@ -2,6 +2,8 @@
 
 Henry Zweiman. September 15, 2026. Developed as Q58.
 
+**Current version: 1.3.** Earlier sections below retain the assessment history; the final section records the current general-measure theorem and remaining significance/source limits.
+
 ## Contribution and decision
 
 Provisionally admit this as one research preprint under the revised standard, conditional on completing publication and public artifact verification. The complete proposed proof answers the all-times heat-content question in Bifulco-Täufer's **final** Electronic Journal of Probability 30 (2025), paper 158, Remark 2.9. It removes both the time restriction and the rational-edge-length assumption of their Theorem 2.6. The stronger theorem compares cumulative decreasing rearrangements for arbitrary nonnegative L2 initial data. Equality in heat content at a single positive time forces the mixed Dirichlet-Neumann interval. These statements constitute one paper.
@@ -59,3 +61,19 @@ The proof uses the established modified-torsion construction of Mugnolo-Plümer 
 Additional primary checks: Mugnolo-Plumer's final relevant construction and theorem were read; Buttazzo-Cito-Solombrino's June 2026 final introduction, scaling conventions and Section 5 questions concern Euclidean domains with fixed Robin parameter and volume. Ozcan's July 15, 2026 arXiv:2607.12333v2 introduction specifies nonlinear Dirichlet-Kirchhoff conditions; it does not state a finite-strength Robin theorem. Its nonlinear proof was not audited. The final Ozcan-Taufer theorem body remains inaccessible, so claims about the explicit question and theorem numbering refer to the inspected preprint.
 
 No matching one-point Robin joint comparison was found in the bounded searches. This remains a provisional priority assessment. The 216 finite-element diagnostic cases provided no counterexample to candidate comparisons, but their eigenvalue and torsion approximation errors have opposite directions and give no certified ratio bound. They are not proof dependencies. The published results rely on the hand proofs and internal audit only; independent review remains outstanding.
+
+## Revision 1.3: full nonnegative-measure Kohler-Jobin comparisons
+
+September 16, 2026. Theorems 8.1-8.2 now prove both previously open P50 comparisons for every finite nonnegative killing measure of prescribed positive total mass. Thus the restriction to one killing point is removed completely, including singular continuous measures. The fixed-length product and fixed-torsion spectral comparison both have the endpoint-killed interval as their unique optimizer.
+
+The central estimate is Proposition 8.3. A weak eigenvalue test with G(psi), where G'=g'^2 and g(0)=0, controls the whole potential energy by g(t)^2<=tG(t). Choosing g'=mu/H gives a torsion lower bound. In decreasing rank coordinates, that bound becomes an integral of 2z-z^2, with z=sq/integral_0^s q. The coarea differential inequality compares z to ks cot(ks). This avoids the uncontrolled killing terms in the preceding modified-torsion transplant and works for every finite atomic measure; a proved common-domain form limit covers arbitrary measures. The complete proof, constants, constraints and equality cases were audited internally.
+
+### Source and significance assessment
+
+OT's inspected preprint Section 8.3 asks what a delta-vertex Kohler-Jobin inequality should look like and identifies the obstacle in adapting Dirichlet symmetrization. It does not state (70) or (72) as a numbered conjecture. Our statements provide sharp formulations and resolve the two precise general-measure questions posed in P50 revision 1.2. This is a full answer within P50's stated measure class, not a claim to solve the Euclidean Robin domain problem. The latter has different constraints.
+
+The expanded source search checked potential/measure optimization and Robin eigenfunction rearrangement. Dai-Shi's arXiv:1402.2338v1, introduction, Theorem 3.1 statement, and Lemma 3.2 with proof were read: its differential inequality is a classical Chiti-type mechanism on interior superlevels of Robin domains. This is credited in the manuscript; no new general eigenfunction rearrangement method is claimed. Bucur-Buttazzo-Velichkov's arXiv:1310.1568 introduction and the final SIAM abstract concern capacitary measures in Euclidean space with a torsion constraint or inverse-power potential constraints, not fixed finite killing mass on a compact metric graph. Their full proofs were not audited. The 2026 fractional graph torsion article was screened only by its final abstract; it imposes Dirichlet vertices and is not a proof dependency.
+
+The final OT publisher route again failed to expose the theorem body. The publisher-supplied preview on ResearchGate contains only page one, confirming the June 24, 2026 publication date and a discussion of possible Kohler-Jobin inequalities in its abstract. No final theorem number or exact final open-question wording is attributed. The MP final Dirichlet theorem, BCS final Robin-domain questions and O26 nonlinear Dirichlet scope remain the audited comparisons described above.
+
+The improvement is substantial within graph spectral optimization: both constraints are sharp and the result covers the full finite nonnegative-measure class. The currently assembled literature evidence does not establish an extraordinary-significance assessment or absolute priority, and no independent review was obtained. The broader user goal remains active. Further source assessment and genuinely significant manuscript extensions should continue; ordinary proof or artifact completion alone is not substituted for that goal.

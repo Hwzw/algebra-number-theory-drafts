@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.2.0",
+  "revision": "1.3.0",
   "pdf_pages": 19,
-  "pdf_text_characters": 48567,
+  "pdf_text_characters": 49525,
   "replacement_characters": 0,
-  "equation_tags": 92,
+  "equation_tags": 88,
   "equation_tags_sequential": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 560,
+  "mathjax_expressions": 576,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -34,12 +34,12 @@
       19
     ],
     "resolution_dpi": 108,
-    "outcome": "All 19 final pages inspected after the last layout adjustment. No clipping, overlap or missing glyphs; equation (88) stays with its introductory line; references and transparency fit on page 19."
+    "outcome": "All 19 pages inspected. After the final reference-layout edit, pages 1-17 rendered byte-identically to the inspected images; changed pages 18-19 were inspected again at full size. Section introductions stay with their displays, reference entries are intact, and no clipping, overlap or missing glyphs was found."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "08745c8f93c4c895b45489bac248ab3d03a0559d17397f6d6d20f439760d1f1f",
-    "manuscript.tex": "3c5831a789c8396ee1103147ef2100306673030510170cf544e9382c3f931166",
-    "manuscript.pdf": "6e094169b45aa02047d7cbeea8be95438315a02b54506c88b37e0c621f6f4df1"
+    "manuscript.md": "c382b7ce32e38da20f9eb89576aa5ddcbdebf6daa640ece24f2185144337fb1a",
+    "manuscript.tex": "13a9ab5c658eb953a79a7a6d3a20215b4c38613523c7b27598f51b7e07e84c9c",
+    "manuscript.pdf": "02b40d2b110016329e2bd17de4a7a1f6f7ab52134c9c4879395ec15eccdf084a"
   }
 }

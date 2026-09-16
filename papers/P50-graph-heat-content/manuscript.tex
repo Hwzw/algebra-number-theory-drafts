@@ -34,10 +34,12 @@ nonnegative killing measure of fixed positive mass, the interval with
 all killing at one endpoint maximizes heat content at every time. This
 comparison allows singular measures and arbitrary nonnegative initial
 data, and equality at a single positive time characterizes the interval
-and its endpoint measure. For one-point killing we additionally prove
-sharp Kohler-Jobin inequalities at fixed length and strength, and at
-fixed torsion and strength, by restoring the positive minimum after
-modified-torsion transplantation.
+and its endpoint measure. For the same general killing measures we prove
+sharp Kohler-Jobin inequalities at fixed length and total killing, and
+at fixed torsion and total killing. A ground-state distribution estimate
+controls the potential terms and compares the resulting scalar
+differential inequality with the cosine profile; both equality cases
+characterize the endpoint-killed interval.
 
 \textbf{Keywords:} metric graph; heat content; rearrangement;
 concentration comparison; Faber-Krahn inequality; rigidity.
@@ -1189,33 +1191,30 @@ case \(\kappa=0\) is excluded: every graph then retains the constant
 temperature and has heat content \(L\), so rigidity fails. Quantitative
 stability and arbitrary vertex couplings remain outside the result. The
 two separate extremal comparisons do not settle the product problem
-discussed in {[}OT, Section 8.3{]}. Section 8 supplies a joint
-inequality for one-point killing; the general measure problem remains
-open.
+discussed in {[}OT, Section 8.3{]}. Section 8 supplies the required
+joint argument for arbitrary finite nonnegative killing measures.
 
-\Needspace{8\baselineskip}\section{8. Kohler-Jobin inequalities for one-point
-killing}\label{kohler-jobin-inequalities-for-one-point-killing}
+\Needspace{8\baselineskip}\section{8. Kohler-Jobin inequalities for general killing
+measures}\label{kohler-jobin-inequalities-for-general-killing-measures}
 
-We now consider the joint torsion/eigenvalue problem for a single
-killing point. Let \(\Gamma\) be a finite compact connected metric graph
-of length \(L>0\), let \(p\in\Gamma\), and let \(\nu=\kappa\delta_p\)
-with \(\kappa>0\). Insert a degree-two vertex if \(p\) is in an edge
-interior. Write
+Let \(\Gamma\) be a finite compact connected metric graph of length
+\(L>0\), without Dirichlet conditions, and let \(\nu\) be any finite
+nonnegative Borel measure of mass \(\kappa>0\). The form domain is the
+continuous space \(H^1(\Gamma)\), as in Section 7. Set
 
 \[
-\lambda=\lambda_1(A_{\kappa\delta_p}),\qquad
-T=\int_\Gamma A_{\kappa\delta_p}^{-1}1\,dx,
-\qquad s=\kappa L.
+\lambda=\lambda_1(A_\nu),\qquad
+T=\int_\Gamma A_\nu^{-1}1\,dx,\qquad s=\kappa L.
 \tag{69}
 \]
 
-For \(z>0\), denote by \(\vartheta(z)\in(0,\pi/2)\) the unique solution
-of \(\vartheta\tan\vartheta=z\). The Robin interval of length \(L\) has
-first eigenvalue \(\vartheta(s)^2/L^2\) and torsion
-\(L^3/3+L^2/\kappa\).
+For \(z>0\), let \(\vartheta(z)\in(0,\pi/2)\) solve
+\(\vartheta\tan\vartheta=z\). The interval \(I_L\) with Neumann
+condition at \(0\) and killing \(\kappa\delta_L\) has eigenvalue
+\(\vartheta(s)^2/L^2\) and torsion \(L^3/3+L^2/\kappa\).
 
-\Needspace{6\baselineskip}\textbf{Theorem 8.1 (one-point Robin Kohler-Jobin inequality).} Under
-the preceding hypotheses,
+\Needspace{6\baselineskip}\textbf{Theorem 8.1 (fixed length and total killing).} Under these
+hypotheses,
 
 \[
 \lambda T^{2/3}\ge
@@ -1224,15 +1223,11 @@ the preceding hypotheses,
 \tag{70}
 \]
 
-Equality holds if and only if \(\Gamma\) is a path and \(p\) is an
-endpoint, up to subdivision. Thus the endpoint-killed interval minimizes
-this product among graphs of fixed length and fixed single-point killing
-strength.
+Equality holds if and only if \(\Gamma\) is a path and \(\nu\) is
+concentrated at one endpoint, up to subdivision and reflection.
 
-There is also a comparison with torsion prescribed instead of length.
-
-\Needspace{6\baselineskip}\textbf{Theorem 8.2 (fixed torsion and strength).} Let \(\ell>0\) be the
-unique number satisfying \(\ell^3/3+\ell^2/\kappa=T\). Then
+\Needspace{6\baselineskip}\textbf{Theorem 8.2 (fixed torsion and total killing).} Let \(\ell>0\)
+satisfy \(\ell^3/3+\ell^2/\kappa=T\). Then
 
 \[
 \lambda\ge\lambda_1(A_{I_\ell,\kappa}).
@@ -1242,294 +1237,294 @@ unique number satisfying \(\ell^3/3+\ell^2/\kappa=T\). Then
 Equivalently, with \(b=\kappa/\sqrt\lambda\) and \(y=\arctan b\),
 
 \[
-\lambda^{3/2}T\ge\frac{y^3}{3}+\frac{y^2}{b}.
+\lambda^{3/2}T\ge \frac{y^3}{3}+\frac{y^2}{b}.
 \tag{72}
 \]
 
-Equality has the same characterization as in Theorem 8.1.
+The equality case is the same as in Theorem 8.1. Both theorems include
+point interactions, integrable nonnegative potentials and singular
+continuous killing measures.
 
-These theorems address the single-point case of the Robin/delta
-joint-optimization direction discussed in {[}OT, Section 8.3 of the
-cited preprint{]}. The corresponding Dirichlet graph theorem is due to
-Mugnolo and Plümer {[}MP, Theorem 5.8{]}, using the modified-torsion
-transplantation of Kohler-Jobin and Brasco. We use that established
-strategy, supplying its one-dimensional construction below. The new
-steps are a rescaling of the positive boundary value and Robin strength,
-followed by two scalar comparisons. Özcan {[}O26{]} gives the nonlinear
-Dirichlet graph counterpart; those boundary conditions differ from the
-finite-strength Robin regime here. Neither theorem here covers arbitrary
-distributed killing measures. The domain Robin product questions in
-{[}BCS, Section 5{]} have a different geometric constraint and remain
-outside these conclusions.
+These results give sharp fixed-constraint formulations of the
+Robin/delta joint-optimization direction discussed in {[}OT, Section 8.3
+of the cited preprint{]}, extending the one-point statements of the
+preceding revision. The Dirichlet graph Kohler-Jobin theorem is due to
+Mugnolo and Plümer {[}MP, Theorem 5.8{]}; its nonlinear Dirichlet
+extension is considered in {[}O26{]}. Modified-torsion and level-set
+methods are established tools in this subject. Our proof uses a
+ground-state distribution functional in which Cauchy-Schwarz absorbs all
+killing terms. It then compares a scalar differential inequality with
+the cosine profile. Eigenfunction distribution inequalities of this kind
+belong to the classical Chiti comparison method; {[}DS, Lemma 3.2{]}
+treats Robin domains on the range of interior superlevel sets. Here
+connectedness and nonnegative killing give (79) over the full range of
+regular levels. The Euclidean domain Robin questions in {[}BCS, Section
+5{]} impose different constraints and are not resolved here.
 
-\subsection{8.1. Transplanting the part above the
-minimum}\label{transplanting-the-part-above-the-minimum}
+\Needspace{9\baselineskip}\subsection{8.1. A ground-state distribution
+estimate}\label{a-ground-state-distribution-estimate}
 
-Choose a positive first eigenfunction \(\psi\). Its strict positivity,
-including at \(p\), follows from the one-dimensional maximum principle:
-a zero minimum at a vertex would make all outgoing derivatives
-nonnegative and their sum zero, and the edge equation and uniqueness
-would force the eigenfunction to vanish identically. On every edge
-\(\psi''=-\lambda\psi<0\). An interior point cannot be a minimum. At a
-standard vertex a minimum would similarly force all outgoing derivatives
-to vanish, whereupon the negative second derivative contradicts a
-minimum. Consequently the unique minimum is attained at \(p\). Set
+Define the continuous increasing function
 
 \[
-m=\psi(p)>0,\qquad h=\psi-m,
-\qquad M=\max h.
+B(x)=\frac{x^3}{3}+x^2\cot x\quad(0<x<\pi/2),
+\qquad B(0)=0,\qquad B(\pi/2)=\frac{\pi^3}{24}.
 \tag{73}
 \]
 
-The existence of a nonnegative first eigenfunction follows by taking the
-absolute value in the form minimization; the preceding argument makes it
-positive. In particular \(M>0\) and \(h>0\) away from \(p\).
-
-For a regular level \(0<t<M\) define
+\Needspace{6\baselineskip}\textbf{Proposition 8.3.} For every graph and measure above, with
+\(k=\sqrt\lambda\),
 
 \[
-\mu(t)=|\{h>t\}|,\qquad
-a(t)=\sum_{h=t}|h'|,\qquad b(t)=\sum_{h=t}|h'|^{-1}.
+T\ge k^{-3}B\bigl(\min\{kL,\pi/2\}\bigr).
 \tag{74}
 \]
 
-There are only finitely many exceptional critical and vertex values. The
-killing point is outside every superlevel set, so flux integration and
-coarea give
+\textbf{Proof for finitely supported measures.} Subdivide the graph at
+the atoms and write \(\nu=\sum_p\beta_p\delta_p\), where
+\(\beta_p\ge0\). Choose a positive first eigenfunction \(\psi\), and put
+\(m=\min\psi>0\) and \(M=\max\psi\). Positivity follows by taking the
+absolute value in the form minimization and applying edgewise
+uniqueness: at a zero minimum the nonnegative outgoing derivatives sum
+to zero, and propagation along the connected graph would give the zero
+function. On each open edge, \(\psi''=-\lambda\psi<0\). Thus no edge
+piece is constant, there are finitely many critical and vertex values,
+and \(m<M\).
+
+For \(0\le t<M\), define
 
 \[
-a(t)=\lambda\int_{\{h>t\}}\psi\,dx,
-\qquad -\mu'(t)=b(t),\qquad a(t)b(t)\ge1,
-\qquad \frac{\mu(t)}{a(t)}\le\frac1{\lambda m}.
+\mu(t)=|\{\psi>t\}|,\qquad
+H(t)=\lambda\int_{\{\psi>t\}}\psi\,dx,
+\qquad g(t)=\int_0^t\frac{\mu(r)}{H(r)}\,dr.
 \tag{75}
 \]
 
-Put
+The positive minimum gives \(0\le g'\le1/(\lambda m)\), so \(g\) extends
+to a Lipschitz function on \([0,M]\), with \(g(0)=0\). Set
+\(G(t)=\int_0^t g'(r)^2\,dr\). Cauchy-Schwarz gives \(g(t)^2\le tG(t)\).
+Testing the weak eigenvalue equation with \(G(\psi)\) therefore yields
 
 \[
-\tau(t)=\int_t^M\frac{\mu(c)^2}{a(c)}\,dc,
-\qquad r(t)=(3\tau(t))^{1/3},
-\qquad R=r(0).
+\begin{aligned}
+\mathfrak a_\nu[g(\psi)]
+&=\int_\Gamma g'(\psi)^2|\psi'|^2\,dx
+  +\int_\Gamma g(\psi)^2\,d\nu\\
+&\le\int_\Gamma g'(\psi)^2|\psi'|^2\,dx
+  +\int_\Gamma\psi G(\psi)\,d\nu\\
+&=\lambda\int_\Gamma\psi G(\psi)\,dx
+ =\int_0^M H(t)g'(t)^2\,dt.
+\end{aligned}
 \tag{76}
 \]
 
-Here \(0<R\le L\). Indeed \(ab\ge1\) yields
+Every test function here belongs to \(H^1(\Gamma)\). The chain rules
+hold almost everywhere; the finitely many critical points cause no
+ambiguity. Cavalieri\textquotesingle s formula and the torsion
+variational principle now give
 
 \[
-\tau(t)\le\int_t^M\mu(c)^2b(c)\,dc
-=\frac{\mu(t)^3}{3},
-\qquad r(t)\le\mu(t).
+\begin{aligned}
+T&=\sup_{v\in H^1(\Gamma)}
+ \left(2\int_\Gamma v\,dx-\mathfrak a_\nu[v]\right)\\
+&\ge\int_0^M\bigl(2\mu g'-H(g')^2\bigr)\,dt
+ =\int_0^M\frac{\mu(t)^2}{H(t)}\,dt.
+\end{aligned}
 \tag{77}
 \]
 
-The change of variables is legitimate on the finitely many intervals
-between exceptional levels, and then by monotone limits at the
-endpoints. Continuity and the absence of constant edge pieces give
-\(\mu(0)=L\) and \(\mu(M)=0\).
+In particular, killing away from a ground-state minimum is included in
+(76); it has not been dropped from the energy.
 
-The torsion variational principle gives the additional estimate
+Let \(q=\psi^*\) be the decreasing rearrangement on \([0,L]\), and put
+\(U(s)=\int_0^s q(r)\,dr\). The function \(q\) is positive and
+Lipschitz, with \(q(0)=M\) and \(q(L)=m\). To justify Lipschitz
+continuity, let \(D_0=\max_\Gamma|\psi'|\). A path crossing two levels
+\(t_1<t_2\) spends length at least \((t_2-t_1)/D_0\) between them. Hence
+\(\mu(t_1)-\mu(t_2)\ge(t_2-t_1)/D_0\), which gives the asserted inverse
+bound. All level and inverse substitutions can also be made on the
+finitely many intervals of regular values and then passed to their
+endpoints.
+
+\Needspace{5\baselineskip}For a regular \(t\in(m,M)\), flux integration gives
 
 \[
-T\ge\frac{L^2}{\kappa}+\tau(0)
-=\frac{L^2}{\kappa}+\frac{R^3}{3}.
+a(t)+\sum_{\psi(p)>t}\beta_p\psi(p)=H(t),
+\qquad
+ a(t)=\sum_{\psi=t}|\psi'|,\qquad
+ b(t)=\sum_{\psi=t}|\psi'|^{-1}=-\mu'(t).
 \tag{78}
 \]
 
-To see this directly, let \(g(0)=0\) and \(g'(t)=\mu(t)/a(t)\). This is
-Lipschitz by (75). For \(v=L/\kappa+g(h)\), its value at the killing
-point is \(L/\kappa\). Cavalieri and coarea give
+Connectedness implies that a regular level has at least one preimage, so
+\(a(t)b(t)\ge1\). Since the killing coefficients are nonnegative,
+\(a(t)\le H(t)\). Using \(H(t)=\lambda U(\mu(t))\) and inverting the
+distribution function gives
 
 \[
-\begin{aligned}
-2\int_\Gamma v\,dx-\mathfrak a_{\kappa\delta_p}[v]
-&=\frac{L^2}{\kappa}
-+\int_0^M\bigl(2\mu g'-a(g')^2\bigr)\,dt\\
-&=\frac{L^2}{\kappa}+\tau(0).
-\end{aligned}
+0\le-q'(s)\le\lambda U(s)\quad\text{for almost every }s\in(0,L).
 \tag{79}
 \]
 
-The supremum of the expression on the left over the form domain is
-\(T\): completing the square about \(A_{\kappa\delta_p}^{-1}1\) proves
-this variational principle.
-
-Define a decreasing function \(w\) on \((0,R)\) by
-
-\[
-w(r(t))=P(t),\qquad
-P(t)=\int_0^t\frac{\mu(c)}{r(c)}\,dc.
-\tag{80}
-\]
-
-It has \(w(R)=0\). Differentiation gives \(r'=-\mu^2/(ar^2)\) and
-\(w'(r(t))=-ar/\mu\). Thus
-
-\[
-\int_0^R|w'|^2\,dx=\int_0^M a(t)\,dt
-=\int_\Gamma|h'|^2\,dx.
-\tag{81}
-\]
-
-These identities initially hold away from the exceptional levels and the
-maximum. Truncation and (81), together with \(w(R)=0\), give the uniform
-bound \(|w(x)|\le\sqrt R\,\|h'\|_2\). They yield a bounded monotone
-extension at \(0\) and \(w\in H^1(0,R)\), justifying the full limiting
-identity. Since \(P'(t)r(t)=\mu(t)\) and \(P(t)\ge t\) by (77), layer
-integration gives
+The interval \(0<t<m\) in (77) has \(\mu(t)=L\) and
+\(H(t)=\lambda U(L)\). Substitution on the remaining levels, followed by
+integration by parts, yields
 
 \[
 \begin{aligned}
-\int_0^R w\,dx&=\int_0^M\mu(t)\,dt=\int_\Gamma h\,dx,\\
-\int_0^R w^2\,dx&=2\int_0^M P(t)\mu(t)\,dt
-\ge2\int_0^M t\mu(t)\,dt=\int_\Gamma h^2\,dx.
+\lambda\int_0^M\frac{\mu(t)^2}{H(t)}\,dt
+&=\frac{mL^2}{U(L)}
+   +\int_0^L\frac{s^2}{U(s)}(-q'(s))\,ds\\
+&=\int_0^L\left(2\frac{s q(s)}{U(s)}
+             -\frac{s^2q(s)^2}{U(s)^2}\right)ds.
+\end{aligned}
+\tag{80}
+\]
+
+The term at \(L\) cancels exactly, and \(s^2q(s)/U(s)\to0\) at zero
+because \(U(s)/s\to M\). Including the interval below the positive
+minimum is essential.
+
+Put \(r(s)=U(s)/q(s)\), with \(r(0)=0\). Since \(q\) is decreasing,
+\(r(s)\ge s\). Equation (79) gives
+
+\[
+r'(s)=1-\frac{U(s)q'(s)}{q(s)^2}
+\le1+k^2r(s)^2,
+\qquad
+\frac{d}{ds}\arctan(kr(s))\le k.
+\tag{81}
+\]
+
+Consequently \(r(s)\le\tan(ks)/k\) for \(0<s<\min\{L,\pi/(2k)\}\). Thus
+\(z(s)=s/r(s)\) lies in \((0,1]\) everywhere and satisfies
+\(z(s)\ge ks\cot(ks)\) on this initial interval. The function \(2z-z^2\)
+is nonnegative and increasing for \(0\le z\le1\). Combining (77)-(81)
+gives, with \(a=\min\{kL,\pi/2\}\),
+
+\[
+\begin{aligned}
+T&\ge k^{-2}\int_0^L(2z(s)-z(s)^2)\,ds\\
+&\ge k^{-3}\int_0^a(2x\cot x-x^2\cot^2x)\,dx
+ = k^{-3}B(a).
 \end{aligned}
 \tag{82}
 \]
 
-This is the classical modified-torsion transplantation. The positive
-minimum can now be restored while preserving its energy cost. Set
+The last identity follows by differentiation of (73). This proves (74)
+for finite atomic measures.
+
+\textbf{Passage to arbitrary measures.} Choose finite atomic measures
+\(\nu_j\rightharpoonup\nu\) of mass \(\kappa\) on the same graph. The
+compact embedding \(H^1(\Gamma)\hookrightarrow C(\Gamma)\) and bounded
+total masses give
 
 \[
-v=w+m\sqrt{L/R},\qquad \alpha=\kappa R/L.
+\epsilon_j:=\sup_{\|u\|_{H^1},\|v\|_{H^1}\le1}
+\left|\int_\Gamma uv\,d(\nu_j-\nu)\right|\longrightarrow0.
 \tag{83}
 \]
 
-Equations (81)-(83) show
+Indeed, products of two unit-ball functions form a relatively compact
+subset of \(C(\Gamma)\), so weak convergence is uniform on that set by a
+finite-net argument. The coercivity estimate in Section 7 is uniform in
+\(j\). If \(w_j=A_{\nu_j}^{-1}1\) and \(w=A_\nu^{-1}1\), subtracting the
+form equations and testing with \(w_j-w\) therefore gives \(w_j\to w\)
+in \(H^1\) and \(T_j\to T\).
+
+For completeness, the first eigenvalues converge as well. Testing with a
+normalized ground state of \(A_\nu\) gives
+\(\limsup\lambda_j\le\lambda\). Conversely, normalized ground states for
+\(A_{\nu_j}\) have uniformly bounded \(H^1\) norms; a subsequence
+converges weakly in \(H^1\) and strongly in \(C\) and \(L^2\). Its limit
+has norm one, and weak lower semicontinuity together with (83) gives
+\(\lambda\le\liminf\lambda_j\). Thus \(\lambda_j\to\lambda>0\). The
+continuity of the right side of (74) completes the proof. \(\square\)
+
+\Needspace{9\baselineskip}\subsection{8.2. Recovering the prescribed constraints and
+equality}\label{recovering-the-prescribed-constraints-and-equality}
+
+We also need the familiar first-eigenvalue comparison
 
 \[
-\mathfrak a_{I_R,\alpha}[v]
-=\int_\Gamma|\psi'|^2+\kappa m^2
-=\mathfrak a_{\kappa\delta_p}[\psi],
-\qquad
-\|v\|_{L^2(0,R)}^2\ge\|\psi\|_{L^2(\Gamma)}^2.
+\lambda\ge\lambda_1(A_{I_L,\kappa})
+=\frac{\vartheta(\kappa L)^2}{L^2}.
 \tag{84}
 \]
 
-For the norm inequality, the constant terms on both sides equal
-\(m^2L\), the cross term increases because \(\sqrt{L/R}\ge1\), and the
-squared nonconstant term increases by (82). Therefore the Rayleigh
-principle yields
+Here is a direct form proof that fixes the direction. For a nonnegative
+\(u\in H^1(\Gamma)\), the graph energy rearrangement proved in Section 7
+and the minimum bound give
 
 \[
-\lambda\ge\lambda_1(A_{I_R,\kappa R/L}),
-\qquad
-T\ge R^3/3+L^2/\kappa,
-\qquad 0<R\le L.
+\mathfrak a_\nu[u]
+\ge\int_0^L|(u^*)'|^2\,ds+\kappa u^*(L)^2
+\ge\lambda_1(A_{I_L,\kappa})\|u\|_2^2.
 \tag{85}
 \]
 
-The strength in this intermediate interval has changed. Keeping it equal
-to \(\kappa\) in (83) would invalidate the energy identity. The
-following scalar arguments account for this change.
+Taking absolute values first handles arbitrary \(u\), and minimization
+proves (84).
 
-\subsection{8.2. The fixed-length
-product}\label{the-fixed-length-product}
-
-Write \(\rho=R/L\in(0,1]\) and \(s=\kappa L\). From (85),
+\Needspace{5\baselineskip}For \(0<x<\pi/2\), differentiation shows
 
 \[
-\lambda T^{2/3}\ge
-F_s(\rho):=
-\frac{\vartheta(s\rho^2)^2}{\rho^2}
-\left(\frac{\rho^3}{3}+\frac1s\right)^{2/3}.
+B'(x)=x\cot x\,(2-x\cot x)>0,
 \tag{86}
 \]
 
-We claim that \(F_s\) is strictly decreasing on \((0,1]\). Put
-\(x=\vartheta(s\rho^2)\) and \(D(x)=1+x/(\sin x\cos x)\). Implicit
-differentiation of \(x\tan x=s\rho^2\) gives \(\rho x'/x=2/D(x)\). Hence
+because \(0<x\cot x<1\). For Theorem 8.1, put
+\(\theta=\vartheta(\kappa L)\). Equation (84) gives \(kL\ge\theta\).
+Therefore (74) and strict monotonicity give
 
 \[
-\frac{d}{d\rho}\log F_s(\rho)^{3/2}
-=\frac1\rho\left(\frac6{D(x)}-\frac9{s\rho^3+3}\right).
+\lambda T^{2/3}
+\ge B(\min\{kL,\pi/2\})^{2/3}
+\ge B(\theta)^{2/3}
+=\theta^2\left(\frac13+\frac1{\kappa L}\right)^{2/3}.
 \tag{87}
 \]
 
-\Needspace{5\baselineskip}For \(0<x<\pi/2\),
+If equality holds, \(\theta<\pi/2\) and strict monotonicity force
+\(kL=\theta\). Equality in (87) then gives \(T=L^3/3+L^2/\kappa\).
+Corollary 7.2 characterizes the equality case as the endpoint-killed
+interval. Conversely, that interval attains equality.
+
+For Theorem 8.2, let \(b=\kappa/k\) and \(y=\arctan b\). If
+\(kL\ge\pi/2\), (74) is strictly stronger than (72). If \(kL<\pi/2\),
+(84) and monotonicity of \(x\tan x\) imply
 
 \[
-x(1+2\cos^2x)>3\sin x\cos x.
+kL\tan(kL)\ge\kappa L,
+\qquad kL\ge\arctan(\kappa/k)=y.
 \tag{88}
 \]
 
-Indeed, the difference vanishes at zero and has derivative
-\(4\sin x(\sin x-x\cos x)>0\), since \(\tan x>x\). Rearranging (88)
-yields
+Hence (74) gives \(k^3T\ge B(y)=y^3/3+y^2/b\), proving (72). The
+interval of length \(y/k\) with strength \(\kappa\) has first eigenvalue
+\(k^2\) and torsion \(k^{-3}B(y)\). Interval torsion is strictly
+increasing with length, whereas its first eigenvalue is strictly
+decreasing; the latter also follows from
+\(k_\ell\ell=\arctan(\kappa/k_\ell)\). Thus (72) is equivalent to (71).
+Equality forces \(kL=y\) and again \(T=L^3/3+L^2/\kappa\), giving the
+same rigidity by Corollary 7.2. This proves both theorems. \(\square\)
 
-\[
-D(x)>2+\frac23x\tan x
-=2+\frac23s\rho^2
-\ge2+\frac23s\rho^3.
-\tag{89}
-\]
-
-Thus (87) is negative. Taking \(\rho\le1\) in (86) proves (70). If
-equality holds, strict monotonicity forces \(R=L\). Equations (78) and
-(68) then give \(T=L^3/3+L^2/\kappa\), so Corollary 7.2 forces
-\(\Gamma\) to be the endpoint-killed path. Conversely that interval
-gives equality. This proves Theorem 8.1. \(\square\)
-
-\subsection{8.3. The fixed-torsion
-comparison}\label{the-fixed-torsion-comparison}
-
-Let \(k^2=\lambda_1(A_{I_R,\kappa R/L})\), and put \(x=kR\) and
-\(K=\kappa/k\). Its boundary equation gives
-
-\[
-K=(L/R)\tan x\ge\tan x,
-\qquad y=\arctan K\ge x.
-\tag{90}
-\]
-
-The interval of length \(y/k\) with strength \(\kappa\) has first
-eigenvalue \(k^2\) and torsion \(k^{-3}(y^3/3+y^2/K)\). Meanwhile,
-
-\[
-k^3\left(\frac{R^3}{3}+\frac{L^2}{\kappa}\right)
-=H_K(x),
-\qquad H_K(u):=\frac{u^3}{3}+K u^2\cot^2u.
-\tag{91}
-\]
-
-The function \(H_K\) is strictly decreasing for \(0<u\le\arctan K\).
-Indeed \(\cot u-u\csc^2u<0\) and \(K\ge\tan u\) imply
-
-\[
-H_K'(u)\le
--\frac{u}{\sin^2u}
-\bigl(u(1+\cos^2u)-2\sin u\cos u\bigr)<0.
-\tag{92}
-\]
-
-The last bracket vanishes at zero and has derivative
-\(\sin u(3\sin u-2u\cos u)>0\). Consequently
-\(H_K(x)\ge H_K(y)=y^3/3+y^2/K\). By (78), the torsion \(T\) is at least
-that of the strength-\(\kappa\) interval whose eigenvalue is \(k^2\). At
-fixed \(\kappa\), interval torsion is strictly increasing with length
-and its first eigenvalue strictly decreasing with length. It follows
-that \(\lambda_1(A_{I_\ell,\kappa})\le k^2\le\lambda\), proving (71).
-
-If equality holds, (92) forces \(x=y\), hence \(R=L\) by (90), and the
-equality argument following (89) applies. Formula (72) is (71) rewritten
-using the length \(\arctan(\kappa/\sqrt\lambda)/\sqrt\lambda\) of the
-strength-\(\kappa\) interval with eigenvalue \(\lambda\). This proves
-Theorem 8.2. \(\square\)
-
-\subsection{8.4. What remains open}\label{what-remains-open}
-
-The one-point hypothesis is essential to this proof: it puts every
-killing term at the minimum of the ground state, so that \(g(h)\)
-vanishes on the killing support in (79). For general measures, an
-additional term \(\int g(h)^2d\nu\) and its cross term appear, and (78)
-does not follow from the same trial function. The full
-fixed-total-measure analogues of (70) and (71) remain unproved here. The
-finite diagnostics in the research notes only guide this frontier; they
-are not used in either proof. Quantitative stability remains open as
-well.
+The two general-measure questions left open in revision 1.2 are
+therefore settled by (70)-(72). Quantitative stability of these
+inequalities and of the heat-content comparison remains open. Signed
+killing measures, discontinuous vertex couplings, weighted edge forms
+and the Euclidean Robin domain problem are outside the present
+assertions.
 
 \raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 
-\textbf{{[}BT{]}} P. Bifulco and M. Täufer, \emph{Faber-Krahn inequality
+\Needspace{6\baselineskip}\textbf{{[}DS{]}} Q. Dai and F. Shi, \emph{PPW and Chiti type
+inequalities for the eigenvalue problem of Robin Laplacian}, preprint
+(2014), \href{https://arxiv.org/abs/1402.2338v1}{arXiv:1402.2338v1}. The
+arXiv abstract record uses the variant title \emph{PPW and Chitti type
+inequalities for the Robin Laplacian operator}.
+
+\Needspace{6\baselineskip}\textbf{{[}BT{]}} P. Bifulco and M. Täufer, \emph{Faber-Krahn inequality
 for the heat content on quantum graphs via random walk expansion},
 Electronic Journal of Probability \textbf{30} (2025), paper no. 158,
 1-19. \href{https://doi.org/10.1214/25-EJP1414}{DOI:
@@ -1537,21 +1532,21 @@ Electronic Journal of Probability \textbf{30} (2025), paper no. 158,
 arXiv:2501.09693}. The final Theorem 2.6 and Remark 2.9 specify the
 prior result and the all-times question.
 
-\textbf{{[}BM{]}} P. Bifulco and D. Mugnolo, \emph{On the Heat Content
+\Needspace{6\baselineskip}\textbf{{[}BM{]}} P. Bifulco and D. Mugnolo, \emph{On the Heat Content
 of Compact Quantum Graphs}, Annales Henri Poincaré (2026), published
 online September 9, 2026.
 \href{https://doi.org/10.1007/s00023-026-01755-3}{DOI:
 10.1007/s00023-026-01755-3}.
 \href{https://arxiv.org/abs/2502.09461}{Preprint arXiv:2502.09461}.
 
-\textbf{{[}F{]}} L. Friedlander, \emph{Extremal properties of
+\Needspace{6\baselineskip}\textbf{{[}F{]}} L. Friedlander, \emph{Extremal properties of
 eigenvalues for a metric graph}, Annales de l\textquotesingle Institut
 Fourier \textbf{55} (2005), no. 1, 199-211.
 \href{https://doi.org/10.5802/aif.2095}{DOI: 10.5802/aif.2095}. Lemma 3
 and its proof contain the energy rearrangement and level-multiplicity
 argument used here.
 
-\textbf{{[}V{]}} J. L. Vázquez, \emph{Symmetrization and Mass Comparison
+\Needspace{6\baselineskip}\textbf{{[}V{]}} J. L. Vázquez, \emph{Symmetrization and Mass Comparison
 for Degenerate Nonlinear Parabolic and Related Elliptic Equations},
 Advanced Nonlinear Studies \textbf{5} (2005), no. 1, 87-131.
 \href{https://doi.org/10.1515/ans-2005-0107}{DOI:
@@ -1560,7 +1555,7 @@ Advanced Nonlinear Studies \textbf{5} (2005), no. 1, 87-131.
 manuscript, November 25, 2004}, Sections 5.2 and 7, especially Theorems
 5.2 and 7.3.
 
-\textbf{{[}OT{]}} S. Özcan and M. Täufer, \emph{Torsional Rigidity on
+\Needspace{6\baselineskip}\textbf{{[}OT{]}} S. Özcan and M. Täufer, \emph{Torsional Rigidity on
 Metric Graphs with Delta-Vertex Conditions}, arXiv:2410.18545v1 (2024).
 \href{https://arxiv.org/abs/2410.18545}{Preprint and version history},
 especially Theorem 8.2 and Section 8.3. Final publication: Journal of
@@ -1569,27 +1564,27 @@ Mathematical Physics \textbf{67} (2026), 061508,
 theorem numbering used here is that of the inspected preprint; the final
 body was not accessed.
 
-\textbf{{[}KS{]}} P. Kurasov and A. Serio, \emph{Optimal Potentials for
+\Needspace{6\baselineskip}\textbf{{[}KS{]}} P. Kurasov and A. Serio, \emph{Optimal Potentials for
 Quantum Graphs}, Annales Henri Poincaré \textbf{20} (2019), 1517-1542.
 \href{https://doi.org/10.1007/s00023-019-00783-6}{DOI:
 10.1007/s00023-019-00783-6}. Cited for the distinct optimization problem
 described in its final abstract.
 
-\textbf{{[}MP{]}} D. Mugnolo and M. Plümer, \emph{On torsional rigidity
+\Needspace{6\baselineskip}\textbf{{[}MP{]}} D. Mugnolo and M. Plümer, \emph{On torsional rigidity
 and ground-state energy of compact quantum graphs}, Calculus of
 Variations and Partial Differential Equations \textbf{62} (2023),
 article 27. \href{https://doi.org/10.1007/s00526-022-02363-9}{DOI:
 10.1007/s00526-022-02363-9}. Theorem 5.8 and the modified-torsion
 construction in Lemmas 5.15-5.17.
 
-\textbf{{[}BCS{]}} G. Buttazzo, S. Cito and F. Solombrino,
+\Needspace{6\baselineskip}\textbf{{[}BCS{]}} G. Buttazzo, S. Cito and F. Solombrino,
 \emph{Relations Between Principal Eigenvalue and Torsional Rigidity with
 Robin Boundary Conditions}, Milan Journal of Mathematics \textbf{94}
 (2026), 369-386. \href{https://doi.org/10.1007/s00032-026-00438-2}{DOI:
 10.1007/s00032-026-00438-2}. See Section 5 for domain product questions
 with fixed Robin parameter and volume.
 
-\textbf{{[}O26{]}} S. Özcan, \emph{On the p-torsional rigidity of
+\Needspace{6\baselineskip}\textbf{{[}O26{]}} S. Özcan, \emph{On the p-torsional rigidity of
 compact metric graphs: a sharp Kohler-Jobin inequality},
 arXiv:2607.12333v2 (July 15, 2026).
 \href{https://arxiv.org/abs/2607.12333}{Preprint and version history}.

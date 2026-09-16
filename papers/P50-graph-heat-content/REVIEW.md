@@ -50,7 +50,9 @@ September 16, 2026. Audit by the originating assistant, not independent review.
 
 No unresolved proof gap was identified in this internal audit. Independent review and a broader successor-literature audit remain outside the evidence obtained here.
 
-## Revision 1.2 internal proof audit: Section 8
+## Revision 1.2 internal proof audit: historical Section 8
+
+This section audits the archived one-point proof at commit de0bb20. Its equation numbers refer to revision 1.2, superseded by the general proof below.
 
 1. The first eigenfunction can be chosen nonnegative by form minimization; edge ODE uniqueness and the zero-vertex flux argument make it positive. Strict concavity excludes a minimum at every point except the single killing vertex. Thus m>0 and h=psi-m vanishes exactly there. Cutting at that point need not leave a connected graph; no such hypothesis is used.
 2. Superlevel sets exclude the killing point. Flux integration therefore gives a=lambda integral psi, and mu/a <= 1/(lambda m). Analytic nonconstant edge profiles have finitely many critical values. The coarea bound ab>=1 proves tau(t)<=mu(t)^3/3 directly.
@@ -62,3 +64,23 @@ No unresolved proof gap was identified in this internal audit. Independent revie
 8. Equality in either scalar comparison forces R=L. The torsion lower bound then meets the already proved sharp upper bound in Corollary 7.2; its equality characterization gives the endpoint-killed interval. Reflection/subdivision gives the converse.
 9. Equation (72) has the correct dimensions: b=kappa/sqrt(lambda) is dimensionless, and the interval with that eigenvalue has length arctan(b)/sqrt(lambda). The one-point hypothesis, fixed constraints and general-measure frontier are explicit throughout.
 10. Source methods are credited. The numerical diagnostic is not used in either theorem. No unresolved gap was found in this originating-assistant audit; it is not independent mathematical certification.
+
+## Revision 1.3 internal proof audit: general-measure Section 8
+
+September 16, 2026. The originating assistant rederived the proof; this is not independent review.
+
+1. **Scope and regularization.** The coarea proof is first made only for finite atomic measures, after subdivision. The positive ground state is strictly concave on every open edge, so it has finitely many critical points and no positive-length level sets. The extension to arbitrary measures uses common-domain form convergence, not a false assertion of concavity for a ground state with distributed potential.
+2. **Composition test.** For g(0)=0 and G(t)=integral_0^t (g')^2, Cauchy-Schwarz gives g(t)^2 <= t G(t). Nonnegative killing makes the corresponding inequality valid after integrating against nu. The weak eigenvalue test G(psi) identifies the enlarged energy with lambda integral psi G(psi). Fubini gives integral H(g')^2. This is precisely the term missing in the earlier one-point route.
+3. **Admissibility.** The bound H(t)>=lambda m mu(t) makes g and G Lipschitz. Their compositions belong to the continuous H1 form domain. Critical level preimages have zero length in the atomic case, so the Sobolev chain rules are legitimate. No auxiliary massless edge construction is needed in the final proof.
+4. **Torsion direction.** The functional 2 integral v - a[v] is maximized by A^-1 1. Replacing the trial energy by an upper bound produces a lower bound for this functional and hence for T. Choosing g'=mu/H yields (77). No separate torsion upper bound is multiplied by a spectral lower bound.
+5. **Full flux.** Physical level flux plus sum beta_p psi(p) over superlevel vertices equals H. The physical flux alone is at most H. Together with a b>=1 this gives -q'<=lambda U in (79), including levels that pass below killing values. This is the essential sign.
+6. **Positive-minimum term.** Integration over 0<t<m contributes m L^2/(lambda U(L)). The integration-by-parts term at L cancels it; omitting this term would produce an incorrect Dirichlet assertion at small killing. At zero, s^2 q/U tends to zero.
+7. **Scalar comparison.** r=U/q is at least s and satisfies r'<=1+lambda r^2. Integrating the arctangent inequality gives r<=tan(ks)/k only before pi/(2k). Accordingly, z=s/r is between zero and one, and z>=ks cot(ks) on that initial interval. The increasing nonnegative function 2z-z^2 permits dropping the remaining interval. The proof never continues the tangent past its pole.
+8. **Primitive and constants.** The derivative of B(x)=x^3/3+x^2 cot(x) is 2x cot(x)-x^2 cot(x)^2. B(pi/2)=pi^3/24, whose two-thirds power equals the classical graph Dirichlet Kohler-Jobin constant pi^2/24^(2/3). B is strictly increasing because 0<x cot(x)<1.
+9. **Atomic limit.** Weak convergence of measures is uniform against the relatively compact set of products of H1-unit-ball functions. Uniform coercivity gives H1 convergence of torsion solutions. The Rayleigh limsup and compact ground-state liminf prove convergence of the lowest eigenvalues. The scalar bound is continuous at kL=pi/2, so no regularity of a singular-measure ground state is required.
+10. **Fixed constraints.** Rearrangement and potential >= kappa times minimum squared give the independent eigenvalue lower bound (84). For fixed length, kL>=theta then monotonicity of B yields the exact product constant. For fixed torsion, either kL>=pi/2 gives a strictly stronger bound, or k tan(kL)>=kappa gives kL>=arctan(kappa/k). The comparison interval has the original total killing kappa.
+11. **Equality.** Both equalities force kL to equal the appropriate interval angle, hence T=L^3/3+L^2/kappa. Corollary 7.2 then supplies rigidity for arbitrary measures. Thus equality is not inferred by passing equality through an approximation sequence. The endpoint interval verifies every constant directly.
+12. **Boundary checks.** For uniform killing density c, lambda=c and T=L/c; the bound has the correct direction. For an endpoint Robin interval the composition g is linear below its positive minimum, so the Cauchy-Schwarz step is an equality. The weak-killing expansion B(x)=x-x^5/45+O(x^7) is compatible with lambda T approaching L, while the strong-killing limit recovers the Dirichlet constant.
+13. **Evidence distinction.** Reusing 216 saved FEM cases for the new intermediate bound gave no violation. These remain uncertified approximations, with no role in the hand proof. An independent exact limiting example in the research notes disproves a proposed quasiconcavity shortcut; it does not contradict the proved comparison.
+
+No unresolved mathematical gap was identified in this audit. The source comparison credits the classical level-set and Chiti mechanisms, and distinguishes the newly proved general-measure statement from the inaccessible final OT theorem body and the separate Euclidean Robin problem. Publication and artifact checks do not constitute independent certification.
