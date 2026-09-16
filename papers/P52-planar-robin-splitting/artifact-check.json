@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-09-16",
+  "pages": 20,
+  "nonempty_text_all_pages": true,
+  "extracted_text_characters": 47104,
+  "author_byline_in_pdf": true,
+  "missing_glyph_or_overfull_warning": false,
+  "equation_tags": 75,
+  "unresolved_numbered_references": [],
+  "math_identical_to_review_draft": true,
+  "rendered_pages": 20,
+  "all_final_pages_visually_inspected": true,
+  "independent_review": false,
+  "mathematical_correctness_certified": false,
+  "manuscript_md_sha256": "eae7f7fd59da32e0fef39768b332dc4cc21282718f8c8058352a9127966a323a",
+  "manuscript_pdf_sha256": "fda69fbdbbe18a70c50a7afd3b8730a67f2b8a9401b9def78cdc30a88ab9bcf1",
+  "manuscript_tex_sha256": "8aafa4056b50f3523ad733cb00af39d9e7df42414a0f6c0e001ee51ebf791125",
+  "visual_findings": "All 20 exact final PDF pages inspected in five contact sheets; no clipping, overlap, lost formulas or missing glyphs observed.",
+  "math_expressions": 598,
+  "math_errors": 0
+}

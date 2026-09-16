@@ -1,0 +1,203 @@
+{
+  "status": "finite coefficient consistency only",
+  "precision_decimal_digits": 90,
+  "multiplicity_caveat": "The full disk eigenvalue has angular multiplicity two. We work in one fixed\ncosine angular sector, which remains invariant for concentric holes. These\nare consistency checks of the coefficients, not examples of the theorem's\nfull-domain simplicity hypothesis.",
+  "cases": [
+    {
+      "k": 1,
+      "alpha": "0.7",
+      "unperturbed_root": "2.26954647088159969528551",
+      "leading_coefficient": "19.2357421251076315748841",
+      "next_coefficient": "26.9300389751506842048377",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "second_coefficient_ratio": "0.977698204173667912998219",
+          "determinant_residual": "3.91912e-92"
+        },
+        {
+          "epsilon": "0.003",
+          "second_coefficient_ratio": "0.986532072736000276102324",
+          "determinant_residual": "3.01051e-92"
+        },
+        {
+          "epsilon": "0.001",
+          "second_coefficient_ratio": "0.993465236354407584272802",
+          "determinant_residual": "3.89384e-92"
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "alpha": "0.7",
+      "unperturbed_root": "3.39885666655153184365556",
+      "leading_coefficient": "108.553308517787056192497",
+      "next_coefficient": "75.9873159624509393347479",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "second_coefficient_ratio": "1.02399897689703159134757",
+          "determinant_residual": "5.32349e-92"
+        },
+        {
+          "epsilon": "0.003",
+          "second_coefficient_ratio": "1.00720180119752299205315",
+          "determinant_residual": "2.12598e-92"
+        },
+        {
+          "epsilon": "0.001",
+          "second_coefficient_ratio": "1.00240060646419035481751",
+          "determinant_residual": "2.1886e-92"
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "alpha": "0.7",
+      "unperturbed_root": "4.50315882361798698411056",
+      "leading_coefficient": "415.307240191706940693063",
+      "next_coefficient": "193.810045422796572323429",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "second_coefficient_ratio": "1.06086014120735190529735",
+          "determinant_residual": "8.70217e-93"
+        },
+        {
+          "epsilon": "0.003",
+          "second_coefficient_ratio": "1.01829596304198769577891",
+          "determinant_residual": "4.25014e-93"
+        },
+        {
+          "epsilon": "0.001",
+          "second_coefficient_ratio": "1.00610203038801743001651",
+          "determinant_residual": "2.87188e-92"
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "alpha": "-0.5",
+      "unperturbed_root": "1.35660202743632882721501",
+      "leading_coefficient": "10.9022366969800785170255",
+      "next_coefficient": "-10.9022366969800785170255",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "second_coefficient_ratio": "0.996273092717579399786669",
+          "determinant_residual": "5.39329e-93"
+        },
+        {
+          "epsilon": "0.003",
+          "second_coefficient_ratio": "1.0022313221898061814671",
+          "determinant_residual": "3.27156e-92"
+        },
+        {
+          "epsilon": "0.001",
+          "second_coefficient_ratio": "1.00175265323730371807449",
+          "determinant_residual": "1.60453e-92"
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "alpha": "-0.5",
+      "unperturbed_root": "2.72926005622383656728257",
+      "leading_coefficient": "62.6413101972872634421262",
+      "next_coefficient": "-31.3206550986436317210631",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "second_coefficient_ratio": "0.977678240444192856865414",
+          "determinant_residual": "1.92626e-92"
+        },
+        {
+          "epsilon": "0.003",
+          "second_coefficient_ratio": "0.993301969251900210504812",
+          "determinant_residual": "2.83481e-92"
+        },
+        {
+          "epsilon": "0.001",
+          "second_coefficient_ratio": "0.997767126521450181472115",
+          "determinant_residual": "1.79418e-92"
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "alpha": "-0.5",
+      "unperturbed_root": "3.93474382501070507181123",
+      "leading_coefficient": "243.739657268229845007829",
+      "next_coefficient": "-81.2465524227432816692763",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "second_coefficient_ratio": "0.933816538544054114237234",
+          "determinant_residual": "8.72608e-93"
+        },
+        {
+          "epsilon": "0.003",
+          "second_coefficient_ratio": "0.980168529392371194925626",
+          "determinant_residual": "2.0756e-92"
+        },
+        {
+          "epsilon": "0.001",
+          "second_coefficient_ratio": "0.993391948581627341106069",
+          "determinant_residual": "1.90268e-92"
+        }
+      ]
+    }
+  ],
+  "nonnodal_radial_cases": [
+    {
+      "alpha": "0.7",
+      "positive_radial_root": "1.08725428906452066859045",
+      "first_coefficient": "1.87986892655704716011362",
+      "log_coefficient": "-1.31590824858993301207953",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "logarithmic_coefficient_ratio": "0.562075062156700815803686",
+          "determinant_residual": "2.4929e-92"
+        },
+        {
+          "epsilon": "0.0001",
+          "logarithmic_coefficient_ratio": "0.785679306506795868274124",
+          "determinant_residual": "3.49066e-92"
+        },
+        {
+          "epsilon": "0.00000001",
+          "logarithmic_coefficient_ratio": "0.893038209058358088608459",
+          "determinant_residual": "5.32929e-92"
+        }
+      ],
+      "last_two_logarithmic_slope_ratio": "1.00039711160992030894279",
+      "initial_check_history": "An initial raw-ratio tolerance 0.3 at epsilon=1e-8 failed for alpha=-0.5. The raw deviations times log(1/epsilon) approached a nonzero constant, consistent with the O(epsilon^2) remainder. Replaced that unsuitable criterion with the displayed divided-difference diagnostic; no theorem changed."
+    },
+    {
+      "alpha": "-0.5",
+      "positive_radial_root": "3.69971453233975909542759",
+      "first_coefficient": "-6.16206343736979726591133",
+      "log_coefficient": "-3.08103171868489863295566",
+      "samples": [
+        {
+          "epsilon": "0.01",
+          "logarithmic_coefficient_ratio": "-5.42125828203139586901373",
+          "determinant_residual": "3.83523e-93"
+        },
+        {
+          "epsilon": "0.0001",
+          "logarithmic_coefficient_ratio": "-2.12555450337276946396566",
+          "determinant_residual": "2.18428e-92"
+        },
+        {
+          "epsilon": "0.00000001",
+          "logarithmic_coefficient_ratio": "-0.561773214030222647999681",
+          "determinant_residual": "9.16652e-93"
+        }
+      ],
+      "last_two_logarithmic_slope_ratio": "1.0020080753123241679663",
+      "initial_check_history": "An initial raw-ratio tolerance 0.3 at epsilon=1e-8 failed for alpha=-0.5. The raw deviations times log(1/epsilon) approached a nonzero constant, consistent with the O(epsilon^2) remainder. Replaced that unsuitable criterion with the displayed divided-difference diagnostic; no theorem changed."
+    }
+  ]
+}

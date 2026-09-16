@@ -1,0 +1,132 @@
+{
+  "date": "2026-09-16",
+  "third_party_full_texts_redistributed": false,
+  "description": "Local source and retrieval evidence; filenames identify the internal archive, not files included in this public bundle. Read scope and URLs are in source-audit.json.",
+  "files": [
+    {
+      "file": "alm-corrigendum-history.html",
+      "sha256": "7defe81391563cae9f57f7d21032e15442ccce24dc19178c25fdccb199e030b1",
+      "bytes": 39696
+    },
+    {
+      "file": "alm-corrigendum-v1.html",
+      "sha256": "24ae1d3e58ce6c0e33d177b7a192e44d641656cbde87dd0def52c00c56ca27cf",
+      "bytes": 557928
+    },
+    {
+      "file": "alm-corrigendum-v1.txt",
+      "sha256": "c4066a7051017e1f60fbccfb29bc85475cfe10954f07b7f11f4b6a286993120f",
+      "bytes": 71058
+    },
+    {
+      "file": "corrigendum-retrieval.json",
+      "sha256": "626ae36ca37715a2c2608ca3bd4714c8e27614da935057d042af062049774c69",
+      "bytes": 363
+    },
+    {
+      "file": "dabrowski-2017-37.pdf",
+      "sha256": "ee1ab9b2b2e37620a23291cd1aeb60688ca0a12de5aee06f0fd2ad24cb6ca706",
+      "bytes": 1630698
+    },
+    {
+      "file": "dabrowski-2017-37.txt",
+      "sha256": "1228b1304589ca3d3e7ece7380d6269b780e03ac200366a6889c8c0f17572ee2",
+      "bytes": 45590
+    },
+    {
+      "file": "dabrowski-retrieval.json",
+      "sha256": "05962ce9139526d8eeab08a961705b9be16b93672252e1be5d5cf896d23728d7",
+      "bytes": 209
+    },
+    {
+      "file": "gpt-retrieval.json",
+      "sha256": "dfb540d9badbf31a64212ce71d01f0887216e4eaf8d968164209177279a73348",
+      "bytes": 189
+    },
+    {
+      "file": "hai-history.html",
+      "sha256": "ccff746ed758899002b5380709436a5f200c37d943e5b6e6a902b93757b37382",
+      "bytes": 39423
+    },
+    {
+      "file": "hai-v1.html",
+      "sha256": "89c8a205373e97790d73caed60ae2d4552db930b455c87dbc034ad95fe119c82",
+      "bytes": 1008593
+    },
+    {
+      "file": "lanza-2012-preview.html",
+      "sha256": "5773b41901d5894412dc08b02b77399117312e71cbe24c113be92e5b0e7811c4",
+      "bytes": 270042
+    },
+    {
+      "file": "lim-publications.html",
+      "sha256": "38c5facd4eaf5ae2d7097e9c9be22d3c1028ae3e7df7a138505ca8af96df0768",
+      "bytes": 15286
+    },
+    {
+      "file": "neumann-history.html",
+      "sha256": "743aa1bf2e3da14b75959f7d8c7bdd7a4c8f1ccecdf8e40313fa385964869399",
+      "bytes": 43453
+    },
+    {
+      "file": "neumann-v3.html",
+      "sha256": "f1c6bd38d2fcff697c43c01a700c957ae551c74c9e4e91d0cf2651b4c253a352",
+      "bytes": 1436221
+    },
+    {
+      "file": "ozawa-1992-I.pdf",
+      "sha256": "a7fcc1b8239c14f5d2427cacfa35bf5a15bbee938418216d7075746d87c4d7a5",
+      "bytes": 908000
+    },
+    {
+      "file": "ozawa-roppongi-1992-II.pdf",
+      "sha256": "2ff66393aa9bf21421e6822740c33aab758fdc805a8a18f3d15477e89670d57e",
+      "bytes": 1234723
+    },
+    {
+      "file": "ozawa-roppongi-1992-II.txt",
+      "sha256": "2820075576b2d45c53414efa7d29b4b707dd3aa9528afe170fcd4124f79dfb54",
+      "bytes": 23309
+    },
+    {
+      "file": "priority-retrieval-2.json",
+      "sha256": "0fa76e0c5af7ec039ab5c444eccb547d82aa6e0cd0b43a68d6f29bff6672ee4f",
+      "bytes": 403
+    },
+    {
+      "file": "priority-retrieval-3.json",
+      "sha256": "dd4430e9d2d89024b6046331de3e155e70836741b7f28dcbabfb6e2fa3da0c1a",
+      "bytes": 426
+    },
+    {
+      "file": "retrieval.json",
+      "sha256": "257072afa69408f8b3fde1edb48ad57ba1f9f4b4a6ce5e39edc10775bd3749ad",
+      "bytes": 3015
+    },
+    {
+      "file": "robin-final-extracted.txt",
+      "sha256": "da1928af39bfb4136c6ab2d607440790a03d396e7de79ec4f1b3543258e28d10",
+      "bytes": 162365
+    },
+    {
+      "file": "robin-final.html",
+      "sha256": "e5d2e0160dd3c6ba697eec9bb0fa563100c2983961866d2a1fcf33a1b542d3eb",
+      "bytes": 601568
+    },
+    {
+      "file": "robin-history.html",
+      "sha256": "9397919febf2246f953b995ae43f0f1801b7106cf44f1c11cdd7119d9ffab6cc",
+      "bytes": 40437
+    },
+    {
+      "file": "splitting-history.html",
+      "sha256": "e3fcc8e1508a82be4dfa4b36513406154b6ee637a3e11ca9cbe9307edc75e265",
+      "bytes": 39943
+    },
+    {
+      "file": "splitting-v1.html",
+      "sha256": "ac1e21fa54da9aa17147235044e58c900922e1ad970f85c60bbb0a38062bb0cb",
+      "bytes": 779139
+    }
+  ]
+}

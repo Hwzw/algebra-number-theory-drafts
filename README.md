@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 51 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 52 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Complete splitting by a single planar Robin hole
+
+[**P52: Complete splitting of planar Robin eigenvalues by a single shrinking hole**](papers/P52-planar-robin-splitting/README.md), by **Henry Zweiman**, gives proposed all-order asymptotics and complete splitting at a prescribed interior point. One analytic strictly convex hole shape near a disk works across every finite spectral window, for either sign of a fixed nonzero Robin parameter. The size threshold depends on the window. The [20-page PDF](papers/P52-planar-robin-splitting/manuscript.pdf), [complete Markdown](papers/P52-planar-robin-splitting/manuscript.md) and [LaTeX](papers/P52-planar-robin-splitting/manuscript.tex) contain the hand proofs.
+
+The [assessment](papers/P52-planar-robin-splitting/ASSESSMENT.md) compares the final June 2026 Robin frontier, the current Neumann splitting paper and corrected Dirichlet matrix theory. The [review](papers/P52-planar-robin-splitting/REVIEW.md) checks weighted remainders, signed branches, planar normalization and the one-shape construction. Existing Schur-complement and polarization-tensor methods are credited. Older full-text access limits remain disclosed. No common positive threshold for the entire infinite spectrum or independent expert verification is claimed. This is one provisionally admitted, unreviewed preprint.
 
 ## Uniform magnetic Steklov transitions and geometric comparison
 
@@ -72,7 +78,7 @@ The [assessment](papers/P42-anisotropic-persistence/ASSESSMENT.md) compares the 
 
 [**P41: Torsion transplantation and a uniform reverse Kohler-Jobin inequality for Robin problems**](papers/P41-robin-reverse-kohler-jobin/README.md), by **Henry Zweiman**, proposes an affirmative answer to the planar reverse Robin question of Buttazzo, Cito and Solombrino. Balls uniquely maximize the competing eigenvalue-torsion product for sufficiently large exponents among all bounded planar Lipschitz sets of fixed area. The exponent is uniform in the positive Robin parameter and area. A nonlinear extension and equivalent product/torsion deficits belong to the same proof. The [eight-page PDF](papers/P41-robin-reverse-kohler-jobin/manuscript.pdf), [full Markdown](papers/P41-robin-reverse-kohler-jobin/manuscript.md) and [LaTeX](papers/P41-robin-reverse-kohler-jobin/manuscript.tex) are included.
 
-The [assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md) records the current primary-source comparison and the essential prior Talenti and Faber-Krahn inputs. The [review](papers/P41-robin-reverse-kohler-jobin/REVIEW.md) audits the boundary correction, global threshold and parameter limits. The linear problem in dimensions at least three and the optimal exponent remain unresolved. P40 through P49 are the ten manuscripts internally assessed and provisionally admitted under the revised September 15 standard; the earlier 39 remain pending reassessment. This is not independent certification of correctness, novelty or journal suitability.
+The [assessment](papers/P41-robin-reverse-kohler-jobin/ASSESSMENT.md) records the current primary-source comparison and the essential prior Talenti and Faber-Krahn inputs. The [review](papers/P41-robin-reverse-kohler-jobin/REVIEW.md) audits the boundary correction, global threshold and parameter limits. The linear problem in dimensions at least three and the optimal exponent remain unresolved. P40 through P52 are the thirteen manuscripts internally assessed and provisionally admitted under the revised September 15 standard; the earlier 39 remain pending reassessment. This is not independent certification of correctness, novelty or journal suitability.
 
 ## Boundary selection for logarithmic Sobolev constants
 

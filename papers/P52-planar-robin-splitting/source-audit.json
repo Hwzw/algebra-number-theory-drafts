@@ -1,0 +1,169 @@
+{
+  "date": "2026-09-16",
+  "status": "Bounded primary-source comparison completed for provisional publication assessment; exact access limitations retained",
+  "global_open_status_certified": false,
+  "publication_ready": "Internally assessed for an unreviewed preprint; not independently certified",
+  "independent_review": false,
+  "sources": [
+    {
+      "id": "FRS2026",
+      "title": "Quantitative spectral stability for the Robin Laplacian",
+      "authors": "Veronica Felli; Prasun Roychowdhury; Giovanni Siclari",
+      "url": "https://doi.org/10.1007/s00208-026-03523-4",
+      "arxiv": "2504.05994v1",
+      "history": "Only v1 in official history checked 2026-09-16",
+      "final_publication_date": "2026-06-30",
+      "access": "Full final HTML downloaded",
+      "read_scope": "Introduction; main results; Section 3 functional setting; Section 4 corrector and spectral expansion/proof; Section 5 statements; Section 6 coefficient comparison",
+      "gap": "Sharp general planar nodal-hole coefficient not proved; Theorem 2.4 loses an arbitrary power, Theorem 2.8 treats disks. Remark 2.10 leaves multiplicities for future research.",
+      "existing_ingredients_used": "Uniform H1 extension, small-hole trace bound, coercive shift, spectral convergence.",
+      "normalization_concern": "Derivative-based Theorem 2.8 needs comparison with explicit harmonic-polynomial coefficients; no public correction claim made."
+    },
+    {
+      "id": "FLO2025",
+      "title": "Quantitative spectral stability for the Neumann Laplacian in domains with small holes",
+      "url": "https://doi.org/10.1016/j.jfa.2024.110817",
+      "arxiv": "2311.05999v3",
+      "history": "v1 2023-11-10; v2 2024-12-19; v3 2025-03-04. Latest comment clarifies connected complement.",
+      "access": "Latest author full HTML downloaded",
+      "read_scope": "Introduction and main theorems, relevant blow-up statements",
+      "comparison": "General sharp scaling-hole blow-up theorem assumes dimension at least three; planar explicit theorem treats round holes. Neumann analogue and perturbative method require attribution."
+    },
+    {
+      "id": "FLO2026",
+      "title": "On the splitting of Neumann eigenvalues in perforated domains",
+      "url": "https://arxiv.org/abs/2601.13129",
+      "arxiv": "2601.13129v1",
+      "history": "Only v1, 2026-01-19, in inspected official history",
+      "access": "Full HTML downloaded",
+      "read_scope": "Introduction and all main statements reread, including Theorems 1.1, 1.3 and 1.6; earlier pertinent reduction statements",
+      "comparison": "Generic-center multiplicity reduction for a spherical Neumann hole and complete splitting of double eigenvalues are prior work. General planar all-order Robin coefficients and fixed-center arbitrary-multiplicity complete splitting are the present claim."
+    },
+    {
+      "id": "Hai2024",
+      "title": "An Asymptotic Formula for Eigenvalues of the Neumann Laplacian in Domains with a Small Star-shaped Hole",
+      "url": "https://arxiv.org/abs/2406.02284",
+      "arxiv": "2406.02284v1",
+      "history": "Only v1, 2024-06-04, in inspected official history",
+      "access": "Full HTML downloaded",
+      "read_scope": "Boundary conditions, Theorem 2.1, Remark 2.2; proof only partly inspected",
+      "comparison": "Outer Dirichlet, hole Neumann, smooth star-shaped hole. Theorem 2.1 displays an area-only coefficient. Proposed ellipse coefficient differs; a complete spectral counterexample in matching hypotheses has not been established in this investigation."
+    },
+    {
+      "id": "Ozawa1992I",
+      "title": "Singular variation of domain and spectra of the Laplacian with small Robin conditional boundary I",
+      "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/7188/ojm29_04_10.pdf",
+      "access": "Final PDF downloaded, 15 PDF pages including repository cover",
+      "read_scope": "Printed pages 837-838 visually inspected; wider extraction read selectively",
+      "comparison": "Smooth planar outer Dirichlet domain, circular hole, condition u+kappa*epsilon^sigma*normal_derivative(u)=0, kappa>0. Fixed positive Robin corresponds to sigma=0, with stated leading term and O(epsilon^(1+beta)) remainder, beta<1. Not a stated arbitrary-hole nodal two-term formula.",
+      "full_proof_audited": false
+    },
+    {
+      "id": "OzawaRoppongi1992II",
+      "title": "Singular variation of domain and spectra of the Laplacian with small Robin conditional boundary II",
+      "url": "https://www.jstage.jst.go.jp/article/kodaimath1978/15/3/15_3_403/_pdf",
+      "access": "Final PDF downloaded, 27 pages",
+      "read_scope": "Printed pages 403-405 visually inspected; first several proof sections text-screened",
+      "comparison": "Same circular-hole, outer-Dirichlet setting; Theorems 1-2 treat sigma>=1 and sigma<0. The fixed Robin sigma=0 case is referred to Part I.",
+      "full_proof_audited": false
+    },
+    {
+      "id": "Lanza2012",
+      "title": "Simple Neumann eigenvalues for the Laplace operator in a domain with a small hole",
+      "url": "https://doi.org/10.1007/s13163-011-0081-8",
+      "access": "Publisher abstract/metadata only; institution repository lists restricted PDF",
+      "comparison": "Abstract establishes analytic dependence in epsilon and epsilon log epsilon in even dimensions. Full coefficient and scope comparison remains necessary; no claim of priority over it."
+    },
+    {
+      "id": "AmmariEtAl2010",
+      "title": "Layer potential techniques in spectral analysis. Part I: Complete asymptotic expansions for eigenvalues of the Laplacian in domains with small inclusions",
+      "url": "https://doi.org/10.1090/S0002-9947-10-04695-7",
+      "access": "AMS journal-path PDF 403, CiteSeer direct retrieval timeout; preserved in priority-retrieval-2.json; full text unread",
+      "comparison": "Author-uploaded abstract and introductory indexed text describe arbitrary-shape conductivity inclusions and complete expansions, with Neumann outer boundary. General expansion methods are credited. Full theorem comparison remains incomplete; no separate novelty claim for the logarithmic scalar coefficient."
+    },
+    {
+      "id": "Dabrowski2022",
+      "title": "Asymptotic behavior of repeated eigenvalues of perturbed self-adjoint elliptic operators",
+      "url": "https://doi.org/10.3233/ASY-201669",
+      "access": "Publisher abstract/bibliography; ETH API route returned 429 and alternate bitstream download route returned 500; full theorem comparison pending",
+      "comparison": "Final article still unread. Related 2017 SAM report inspected separately; its leading matrix applications do not give the all-order fixed-center Robin construction. No assertion that report and final text are identical."
+    },
+    {
+      "id": "ALM2026corrigendum",
+      "title": "Corrigendum to Ramification of multiple eigenvalues for the Dirichlet-Laplacian in perforated domains",
+      "authors": "Laura Abatangelo; Corentin Lena; Paolo Musolino",
+      "url": "https://arxiv.org/abs/2606.03996",
+      "arxiv": "2606.03996v1",
+      "history": "Only v1 in official history checked 2026-09-16; displayed submission date 2026-05-07 differs from identifier month and is preserved as displayed.",
+      "access": "Full author HTML and official history downloaded with hashes",
+      "read_scope": "Sections 1-5, including finite-dimensional proofs and corrected two-order example",
+      "comparison": "The vanishing-order filtration, projection reduction and Schur-complement correction are prior work. Proposed Robin extension must establish its own weighted PDE estimates; no novelty claimed for the matrix mechanism.",
+      "full_proof_audited": "Read and compared by originating assistant; not independent review"
+    },
+    {
+      "id": "AKLZ2012GPT",
+      "title": "The generalized polarization tensors for resolved imaging. Part I: Shape reconstruction of a conductivity inclusion",
+      "authors": "Habib Ammari; Hyeonbae Kang; Mikyoung Lim; Habib Zribi",
+      "url": "https://people.math.inha.ac.kr/~hbkang/paper/AKLZ_PT_july20.pdf",
+      "publication": "Mathematics of Computation 81 (2012), 367-386",
+      "access": "Author-hosted abstract and indexed primary excerpts; direct PDF TLS handshake timeout",
+      "read_scope": "Abstract and indexed shape-derivative discussion only",
+      "comparison": "Shape derivatives of generalized polarization tensors and Fourier mode selectivity are prior work. Complete fixed-center Robin spectral splitting is the candidate application; full text not compared."
+    },
+    {
+      "id": "Gadylshin1993",
+      "title": "Splitting a multiple eigenvalue in the boundary value problem for a membrane clamped on a small part of the boundary",
+      "url": "https://www.mathnet.ru/php/archive.phtml?jrnid=smj&option_lang=eng&paperid=1651&wshow=paper",
+      "publication": "Siberian Mathematical Journal 34 (1993), 433-450",
+      "access": "Primary abstract only",
+      "comparison": "Prior complete splitting under a shrinking Dirichlet patch on a Neumann boundary; full text not compared."
+    },
+    {
+      "id": "Dabrowski2017",
+      "title": "A variational principle for the perturbation of repeated eigenvalues and applications",
+      "url": "https://www.sam.math.ethz.ch/sam_reports/reports_final/reports2017/2017-37.pdf",
+      "access": "Full 20-page ETH report downloaded",
+      "read_scope": "Introduction, abstract variational principle and its proof, stability/genericity statements, all application statements and discussion in Sections 4.2-4.5; final bibliography inspected",
+      "comparison": "Grounded-hole application has one leading evaluation branch. Conductivity application has a gradient polarization matrix, leaving vanishing leading directions in the remainder. Boundary deformation is also considered. These applications do not construct a fixed-center homothetic Robin hole splitting every finite cluster. Final 2022 article is not assumed identical."
+    }
+  ],
+  "priority_questions": [
+    "Does prior layer-potential or analytic-expansion theory already give the arbitrary Lipschitz planar Robin nodal coefficient and the explicit second term?",
+    "How much novelty is in the sharp nodal-order identification, as opposed to an application of an existing full expansion?",
+    "Is the nonnodal epsilon^2 log epsilon coefficient already explicit for fixed-sign Robin holes of general shape?",
+    "Resolve coefficient-normalization and anisotropy consistency concerns before using them as arguments for novelty.",
+    "Determine whether the proposed arbitrary-Lipschitz planar Robin all-branch law, after attribution of the 2026 corrected Dirichlet matrix mechanism, is a distinct substantial contribution.",
+    "Is the fixed-center, one-shape, all-finite-window complete Robin splitting consequence already proved in singular-perturbation or polarization-tensor literature?"
+  ],
+  "significance_assessment": "Provisionally favorable for the combined all-order planar PDE law and one-shape fixed-center complete splitting; see ASSESSMENT.md. Target-journal suitability and priority remain revisable.",
+  "search_log": [
+    "Quantitative spectral stability for the Robin Laplacian arxiv",
+    "Robin nodal holes eigenvalues 2026 Felli",
+    "Robin non-spherical nodal asymptotics holes",
+    "Robin splitting perforated eigenvalues",
+    "Robin eigenvalue hole log asymptotic expansion two-dimensional",
+    "Robin eigenvalues small hole second asymptotic",
+    "Neumann arbitrary two-dimensional small hole eigenvalues asymptotic",
+    "Simple Neumann eigenvalues Lanza 2012",
+    "Layer potential techniques Part I eigenvalues Ammari 2009",
+    "Asymptotic behavior of repeated eigenvalues Dabrowski pdf arxiv",
+    "Robin small hole eigenvalues vanishing order multiple eigenvalues 2026 Schur",
+    "Robin ramification eigenvalues holes",
+    "Layer potential techniques in spectral analysis Part I pdf",
+    "Simple Neumann eigenvalues Lanza pdf",
+    "eigenvalue splitting small hole shape fixed point generic simplicity Robin",
+    "Neumann small hole full splitting eigenvalues arbitrary multiplicity shape perturbation",
+    "polarization tensors shape derivative Ammari Kang Lim Zribi",
+    "complete splitting Robin hole",
+    "hole vanishing orders shape splitting eigenvalues",
+    "Dabrowski repeated eigenvalues pdf",
+    "Robin complete splitting hole eigenvalues",
+    "small hole fixed simplicity Robin eigenvalues",
+    "Ammari Zribi 04695 pdf",
+    "Besson small holes multiple eigenvalues"
+  ],
+  "no_contact_made": true,
+  "no_institutional_access_assumed": true,
+  "current_arxiv_histories_rechecked": "2026-09-16: FRS v1, FLO2025 v3, FLO2026 v1, ALM corrigendum v1; no later versions displayed",
+  "priority_questions_status": "Historical questions retained as search provenance. Publication relies on the combined main theorem, not an isolated scalar coefficient or novelty of Schur complements or shape differentiation."
+}

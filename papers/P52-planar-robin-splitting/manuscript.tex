@@ -1,0 +1,1774 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{amsmath,amssymb,mathrsfs,lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{needspace}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.3em}
+\setcounter{secnumdepth}{0}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title{Complete splitting of planar Robin eigenvalues by a single shrinking hole}
+\author{Henry Zweiman}
+\date{September 16, 2026}
+\begin{document}
+\maketitle
+\textbf{AI-assisted research preprint, version 1.0.} Prepared with
+OpenAI Codex. The proofs and literature comparison were checked by the
+originating assistant; they have not been independently verified by
+human experts or peer reviewed. Source-access limits are stated in
+Section 20.
+
+\Needspace{8\baselineskip}\section{Abstract}\label{abstract}
+
+We study planar Robin eigenvalues when a scaled interior hole shrinks to
+a prescribed point, with the same fixed nonzero real Robin parameter on
+the outer and inner boundaries. We establish a complete multiscale
+description of every branch of a multiple limiting eigenvalue for
+arbitrary Lipschitz holes with connected exterior. The leading
+coefficients are Schur complements of an exterior harmonic energy matrix
+on the vanishing-order filtration. A nonnodal direction, when present,
+moves at first order with the sign of the Robin parameter; all nodal
+directions move down at even powers determined by their orders. We then
+construct an area-preserving analytic family of strictly convex holes
+near a disk. Outside a countable exceptional set of shape parameters, a
+single selected shape separates every fixed eigenvalue cluster,
+including at common nodal points. The smallness threshold for the hole
+size depends on the spectral window. Quantitative correctors, a two-term
+nodal formula and a nonnodal logarithmic correction accompany the
+splitting result.
+
+\Needspace{8\baselineskip}\section{1. Introduction and
+attribution}\label{introduction-and-attribution}
+
+Small holes constitute a singular domain perturbation. A complete
+splitting theorem needs estimates that remain effective for
+eigenfunctions vanishing to different orders at the concentration point;
+one leading unweighted matrix estimate can miss entire branches. In the
+plane, the exterior Neumann corrector also requires a normalization
+modulo constants because a homogeneous Sobolev estimate does not control
+them.
+
+The main result is stated in Section 2. Its proof uses the
+arbitrary-hole planar asymptotics in Sections 3-15 and an explicit
+variation of the exterior energy coefficients in Sections 16-19. The
+hole center remains fixed. The selected hole shape is independent of the
+spectral window, whereas its size threshold may depend on that window.
+We do not claim a uniform threshold for the entire infinite spectrum.
+
+Felli-Roychowdhury-Siclari {[}FRS26{]} establish Robin spectral
+stability for either sign of the parameter and sharp simple-eigenvalue
+asymptotics, with a planar restriction to round holes for their nodal
+coefficient. Their final Remark 2.10 leaves multiple Robin eigenvalues
+and splitting for future work. Their perturbative framework, uniform
+extension and trace estimates are prior work. We include the needed
+compactness arguments and derive quantitative cutoff residuals to make
+the planar remainder explicit.
+
+Felli-Liverani-Ognibene {[}FLO26{]} obtain generic reduction of
+multiplicity under removal of a spherical Neumann hole as its center
+varies, and complete splitting for double eigenvalues. Their
+arbitrary-hole leading matrix is proved in dimensions at least three;
+their planar theorem treats disks. Their earlier work {[}FLO25{]}
+supplies the related simple-eigenvalue analysis.
+
+Abatangelo-Léna-Musolino {[}ALM26{]} correct the multiple-eigenvalue
+coefficients in the Dirichlet-hole theory of {[}ALM22{]}. Their
+corrected vanishing-order and matrix analysis is essential prior work:
+the projection method, filtration, and Schur-complement interaction are
+not claimed new here. The present calculations establish the Robin PDE
+coefficients and handle the possible coexistence of positive and
+negative shifts.
+
+Shape differentiation of generalized polarization tensors and its
+Fourier interpretation are also prior work {[}AKLZ12{]}. Full splitting
+for other singular perturbations occurs in
+Gadyl\textquotesingle shin\textquotesingle s boundary-patch problem
+{[}Gad93{]}. The distinction pursued here is the fixed-center,
+single-hole Robin conclusion with arbitrary finite multiplicity and
+explicit behavior at all nodal orders. Earlier expansion and
+repeated-eigenvalue frameworks {[}AKLZ10, LdC12, Dab17, Dab22{]} remain
+relevant. The inspected report {[}Dab17{]} gives leading matrix laws for
+grounded and conductivity inclusions; its stated applications do not
+give the fixed-center all-order Robin conclusion. The source-access
+limits of this comparison are disclosed in Section 20.
+
+\Needspace{8\baselineskip}\section{2. Main splitting theorem}\label{main-splitting-theorem}
+
+Fix a bounded connected Lipschitz planar domain \(\Omega\), an interior
+point \(x_0\), and a nonzero real Robin parameter \(\alpha\). Translate
+\(x_0\) to zero. Put
+
+\[
+ f(\theta)=\sum_{n=1}^{\infty}e^{-n^2}\cos(2n\theta),
+ \qquad
+ \widetilde\Sigma_t=\{(r,\theta):0\le r<1+t f(\theta)\},
+ \qquad
+ \Sigma_t=\left(\frac{\pi}{|\widetilde\Sigma_t|}\right)^{1/2}
+                      \widetilde\Sigma_t.
+ \tag{H1}
+\]
+
+For all \(|t|<t_*\), with an absolute sufficiently small \(t_*>0\),
+these are strictly convex real-analytic, centrally symmetric holes of
+area \(\pi\). They contain zero and have connected exteriors. They
+converge to the unit disk in every fixed \(C^q\) norm as \(t\to0\).
+Indeed, the Fourier series and all its derivatives converge on each
+complex strip, \(f\) has zero average, and strict positivity of
+curvature persists in a small \(C^2\) neighborhood of the circle. The
+area normalization factor is \(1+O(t^2)\).
+
+\Needspace{6\baselineskip}\textbf{Theorem 2.1 (complete fixed-center splitting).} There is a
+countable set \(\mathcal N\subset(-t_*,t_*)\), depending on
+\(\Omega,x_0,\alpha\), such that the following holds. For every
+\(t\notin\mathcal N\) and every eigenvalue \(\lambda\) of the
+unperforated Robin problem, there is \(\varepsilon_\lambda(t)>0\) such
+that every branch converging to \(\lambda\) is simple for
+
+\[
+ 0<\varepsilon<\varepsilon_\lambda(t)
+\]
+
+in \(\Omega\setminus\varepsilon\overline\Sigma_t\), with the same Robin
+parameter on both boundaries. In particular, for each finite \(M\),
+there is \(\varepsilon_M(t)>0\) such that the first \(M\) perturbed
+eigenvalues are simple whenever \(0<\varepsilon<\varepsilon_M(t)\).
+
+The center is fixed and may be a common nodal point of an eigenspace.
+The shape is fixed before \(\varepsilon\to0\), and can be chosen
+arbitrarily close to a disk. The threshold can depend on the spectral
+window. \textbf{No common positive threshold for the entire infinite
+spectrum is asserted.} The theorem is not uniform in \(\alpha\), in the
+center, or in the outer domain. For a single eigenvalue cluster, every
+sufficiently small nonzero \(t\) works, rather than merely all \(t\)
+outside a countable set.
+
+The finite-window assertion also holds with any prescribed area in place
+of \(\pi\), by a fixed scaling. The unperforated simple eigenvalues
+require no splitting argument: convergence and a spectral gap already
+give an isolated one-dimensional perturbed cluster.
+
+\Needspace{8\baselineskip}\section{3. Geometry and the simple nodal
+branch}\label{geometry-and-the-simple-nodal-branch}
+
+Let \(\Omega\subset\mathbb R^2\) be a bounded connected Lipschitz domain
+containing zero. Let \(\Sigma\) be a nonempty bounded Lipschitz open set
+with \(\overline\Sigma\subset B_R\), and suppose
+\(B_R\setminus\overline\Sigma\) is connected. We do not require that
+zero lie in \(\Sigma\). Put
+
+\[
+ D=\mathbb R^2\setminus\overline\Sigma,
+ \qquad \Omega_\varepsilon=\Omega\setminus\varepsilon\overline\Sigma.
+\]
+
+Fix \(\alpha\in\mathbb R\). Impose \(\partial_\nu u+\alpha u=0\) on
+every boundary component. The normal on a hole points into the hole. Let
+\(\lambda\) be a simple eigenvalue in \(\Omega\), with real
+eigenfunction \(u\) normalized by \(\|u\|_{L^2(\Omega)}=1\). Assume
+\(u(0)=0\), and write its interior Taylor expansion as
+
+\[
+ u(x)=P_k(x)+O(|x|^{k+1}),\qquad
+ \nabla u(x)=\nabla P_k(x)+O(|x|^k),\qquad k\ge1.
+\]
+
+Here \(P_k\) is a nonzero homogeneous harmonic polynomial. Let \(W_k\)
+be the exterior harmonic function determined by
+
+\[
+ \partial_\nu W_k=\partial_\nu P_k\quad\hbox{on }\partial\Sigma,
+ \qquad W_k(y)=O(|y|^{-1})\quad (|y|\longrightarrow\infty).
+ \tag{S1}
+\]
+
+Define
+
+\[
+ E_k=\int_D|\nabla W_k|^2,
+ \qquad C_k=E_k+\int_\Sigma|\nabla P_k|^2.
+ \tag{S2}
+\]
+
+\Needspace{6\baselineskip}\textbf{Theorem 3.1 (simple nodal branch).} Let \(\lambda_\varepsilon\)
+be the eigenvalue converging to \(\lambda\). Then
+
+\[
+ \lambda_\varepsilon
+ =\lambda-C_k\varepsilon^{2k}
+   +O(\varepsilon^{2k+1}).
+ \tag{S3}
+\]
+
+In particular \(C_k>0\) and the eigenvalue decreases for sufficiently
+small holes, for either sign of \(\alpha\). If \(u_\varepsilon\) is
+normalized with positive overlap with \(u\), and
+\(\chi\in C_c^\infty(\Omega)\) equals one near zero, then for every
+\(\eta\in(0,1/2)\),
+
+\[
+ \left\|u_\varepsilon-u+
+   \varepsilon^k\chi W_k(\cdot/\varepsilon)\right\|_{H^1(\Omega_\varepsilon)}
+ =O_\eta(\varepsilon^{k+1-\eta}).
+ \tag{S4}
+\]
+
+Consequently, for each fixed \(S\) with \(\overline\Sigma\subset B_S\),
+
+\[
+ \varepsilon^{-k}u_\varepsilon(\varepsilon\,\cdot)
+ \longrightarrow P_k-W_k
+ \quad\hbox{in }H^1(B_S\setminus\overline\Sigma),
+ \tag{S5}
+\]
+
+and
+
+\[
+ \varepsilon^{-2k}\|u_\varepsilon-u\|_{H^1(\Omega_\varepsilon)}^2
+ \longrightarrow E_k.
+ \tag{S6}
+\]
+
+Constants can depend on the fixed geometry, eigenvalue, \(\alpha\),
+cutoff and \(\eta\). No uniformity over families of domains or
+eigenvalues is claimed.
+
+\Needspace{8\baselineskip}\section{4. Uniform estimates and spectral
+convergence}\label{uniform-estimates-and-spectral-convergence}
+
+The facts in this section are established in {[}FRS26{]}. We include
+their elementary scaling and compactness proofs to specify exactly which
+geometry and parameter assumptions are needed. The fixed-domain trace,
+extension, Sobolev and compact embedding theorems for bounded Lipschitz
+domains are used in their usual forms.
+
+Let \(A=B_R\setminus\overline\Sigma\) be connected, and fix a bounded
+extension from \(H^1(A)\) to \(H^1(B_R)\) that agrees with the original
+function on \(A\). For \(v\in H^1(\Omega_\varepsilon)\) apply this
+extension after rescaling to \(v(\varepsilon\cdot)\) and subtracting its
+mean on \(A\). Restore the mean after extension.
+Poincaré\textquotesingle s inequality on \(A\) gives an extension
+\(\mathscr E_\varepsilon v\in H^1(\Omega)\), equal to \(v\) off the
+hole, such that
+
+\[
+ \int_{\varepsilon\Sigma}|\nabla\mathscr E_\varepsilon v|^2
+       \le C\int_{\varepsilon A}|\nabla v|^2,
+ \qquad
+ \int_{\varepsilon\Sigma}|\mathscr E_\varepsilon v|^2
+       \le C\int_{\varepsilon A}|v|^2
+                  +C\varepsilon^2\int_{\varepsilon A}|\nabla v|^2.
+ \tag{F1}
+\]
+
+The gluing across the hole boundary is valid because the traces agree.
+Hence the extension is uniformly bounded in \(H^1\). The connectedness
+hypothesis is used in the Poincaré estimate; no connectedness of
+\(\Sigma\) itself is needed.
+
+The fixed annular trace inequality, rescaled, yields
+
+\[
+ \|v\|_{L^2(\partial(\varepsilon\Sigma))}^2
+ \le C\varepsilon^{-1}\|v\|_{L^2(\varepsilon A)}^2
+        +C\varepsilon\|\nabla v\|_{L^2(\varepsilon A)}^2.
+ \tag{F2}
+\]
+
+Given \(0<\eta<1/2\), apply planar Sobolev embedding to
+\(\mathscr E_\varepsilon v\) with exponent \(p=2/\eta\) and then
+Hölder\textquotesingle s inequality on \(\varepsilon A\). This gives
+
+\[
+ \|v\|_{L^2(\varepsilon A)}^2
+    \le C_\eta\varepsilon^{2-2\eta}
+                         \|v\|_{H^1(\Omega_\varepsilon)}^2,
+ \qquad
+ \|v\|_{L^2(\partial(\varepsilon\Sigma))}^2
+    \le C_\eta\varepsilon^{1-2\eta}
+                         \|v\|_{H^1(\Omega_\varepsilon)}^2.
+ \tag{F3}
+\]
+
+A fixed outer-boundary collar misses the hole. The trace inequality on
+this collar, with an arbitrarily small coefficient of the gradient term,
+implies that for every \(\delta>0\)
+
+\[
+ \|v\|_{L^2(\partial\Omega)}^2
+    \le\delta\|\nabla v\|_{L^2(\Omega_\varepsilon)}^2
+       +C_\delta\|v\|_{L^2(\Omega_\varepsilon)}^2.
+ \tag{F4}
+\]
+
+One can obtain this by multiplying by a fixed cutoff equal to one near
+\(\partial\Omega\) and applying the compact trace inequality on
+\(\Omega\); the cutoff vanishes near the hole. Combining (F3)-(F4) gives
+constants \(c,a,b>0\), independent of sufficiently small
+\(\varepsilon\), for which
+
+\[
+ a\|v\|_{H^1(\Omega_\varepsilon)}^2
+ \le q_\varepsilon(v,v)
+ :=\int_{\Omega_\varepsilon}(|\nabla v|^2+cv^2)
+           +\alpha\int_{\partial\Omega_\varepsilon}v^2
+ \le b\|v\|_{H^1(\Omega_\varepsilon)}^2.
+ \tag{F5}
+\]
+
+This holds for either sign of the fixed real \(\alpha\). Choose the
+constants so that the analogous form on \(\Omega\) is also coercive. The
+associated operators are positive self-adjoint with compact resolvent.
+
+\Needspace{6\baselineskip}\textbf{Lemma 4.1 (spectral convergence).} Each ordered Robin eigenvalue
+of \(\Omega_\varepsilon\) converges, counting multiplicity, to the
+corresponding eigenvalue of \(\Omega\).
+
+\textbf{Proof.} For the upper bound in the minmax principle, restrict
+the first \(j\) eigenfunctions of \(\Omega\) to \(\Omega_\varepsilon\).
+They are analytic near zero, so the removed volume and inner-boundary
+terms tend to zero uniformly on their finite-dimensional span. Their
+mass matrix tends to the identity. Thus
+\(\limsup\lambda_j(\Omega_\varepsilon)\le\lambda_j(\Omega)\).
+
+For the reverse inequality take an orthonormal collection of the first
+\(j\) perforated-domain eigenfunctions. Their shifted energies are
+uniformly bounded by the upper bound and (F5). Their extensions are
+uniformly bounded in \(H^1(\Omega)\) by (F1); along a subsequence they
+converge weakly in \(H^1\) and strongly in \(L^2\) to functions
+\(v_1,\ldots,v_j\). The extension mass inside the shrinking hole tends
+to zero by the uniform \(L^4\) bound and its vanishing area. Therefore
+the limits are orthonormal.
+
+On a fixed outer collar the trace converges strongly in
+\(L^2(\partial\Omega)\), by compactness of the trace map. The
+inner-boundary quadratic term tends to zero by (F3), even when
+\(\alpha<0\). For any fixed coefficient vector \(z\), weak lower
+semicontinuity on \(\Omega\setminus\overline B_\rho\), followed by
+\(\rho\downarrow0\), gives
+
+\[
+ q_0\left(\sum_{l=1}^jz_lv_l,\sum_{l=1}^jz_lv_l\right)
+ \le\liminf q_\varepsilon\left(\sum_{l=1}^jz_lv_l^\varepsilon,
+                                    \sum_{l=1}^jz_lv_l^\varepsilon\right).
+ \tag{F6}
+\]
+
+Here the mass and outer-boundary terms converge; excluding a fixed disk
+before taking the limit avoids charging the artificial
+extension\textquotesingle s gradient energy to the original form. Choose
+the subsequence to realize the lower limit of the \(j\)th eigenvalue.
+The right side of (F6) is at most
+\(\liminf(\lambda_j(\Omega_\varepsilon)+c)\,|z|^2\). Minmax on the
+\(j\)-dimensional limiting span proves the lower bound. This argument
+also proves convergence along the full sequence. \(\square\)
+
+For any isolated limiting eigenvalue, its full finite-dimensional
+cluster is consequently separated by a uniform gap from the
+complementary spectrum. This is the only spectral convergence input
+needed below. Interior analyticity follows from the constant-coefficient
+equation \(-\Delta u=\lambda u\), regardless of the regularity of the
+outer boundary.
+
+\Needspace{8\baselineskip}\section{5. The normalized exterior
+problem}\label{the-normalized-exterior-problem}
+
+Consider the Hilbert space
+
+\[
+ X=\{v\in H^1(D\cap B_S)\text{ for every sufficiently large }S:
+       \nabla v\in L^2(D)\}/\mathbb R,
+ \qquad \|[v]\|_X=\|\nabla v\|_{L^2(D)}.
+\]
+
+Completeness follows by selecting representatives with zero average on
+\(A=B_R\setminus\overline\Sigma\). Poincaré inequalities on each
+connected \(B_S\setminus\overline\Sigma\), with this fixed average, turn
+a gradient-Cauchy sequence into an \(H^1\)-Cauchy sequence on every
+bounded truncation.
+
+If \(g\in L^2(\partial\Sigma)\) has integral zero, the functional
+
+\[
+ [v]\longmapsto\int_{\partial\Sigma}gv
+\]
+
+is well defined and bounded on \(X\): subtract the average on \(A\), and
+apply the trace and Poincaré inequalities on \(A\). Lax-Milgram gives a
+unique class \([W]\) satisfying
+
+\[
+ \int_D\nabla W\cdot\nabla v
+ =\int_{\partial\Sigma}gv\qquad([v]\in X).
+ \tag{S7}
+\]
+
+For clarity, compactly supported \(H^1\) test functions are dense in
+this gradient norm. First truncate a representative at heights
+\(\pm M\); the gradient error tends to zero as \(M\to\infty\). For fixed
+\(M\), multiply by a radial cutoff equal to one on \(B_L\), zero outside
+\(B_{L^2}\), and linear in \(\log r\) between these radii. Its squared
+gradient integral is \(2\pi/\log L\). The cutoff error tends to zero by
+boundedness of the truncated function and the integrability of its
+gradient. Local smoothing in Lipschitz charts gives the corresponding
+density for smooth tests up to the boundary.
+
+The solution is harmonic outside a fixed disk. Its Fourier expansion
+there has the constant mode, a possible logarithmic mode, and the modes
+\(r^{\pm j}\cos(j\theta)\) and \(r^{\pm j}\sin(j\theta)\). Finite
+Dirichlet energy excludes the logarithmic and growing modes. The
+remaining expansion shows that a unique representative satisfies
+
+\[
+ W(y)=O(|y|^{-1}),\qquad \nabla W(y)=O(|y|^{-2}).
+ \tag{S8}
+\]
+
+One may obtain the estimates by expanding on a circle outside the hole
+and using convergence of the decaying Fourier series beyond twice that
+radius. This removes the additive constant, which cannot be controlled
+by a homogeneous Sobolev inequality in dimension two.
+
+For \(g=\partial_\nu P_k\), the compatibility condition follows from
+
+\[
+ \int_{\partial\Sigma}\partial_\nu P_k
+ =-\int_\Sigma\Delta P_k=0.
+\]
+
+Thus (S1) exists and is unique. Its energy is
+\(E_k=\int_{\partial\Sigma}(\partial_\nu P_k)W_k\). It is nonzero:
+otherwise \(W_k\) is constant, hence \(g=0\); testing \(g\) against the
+trace of \(P_k\) would give
+
+\[
+ 0=\int_{\partial\Sigma}(\partial_\nu P_k)P_k
+   =-\int_\Sigma|\nabla P_k|^2,
+\]
+
+impossible for a nonconstant polynomial on a nonempty open set. In
+particular \(C_k>0\).
+
+\Needspace{8\baselineskip}\section{6. Quantitative cutoff
+correctors}\label{quantitative-cutoff-correctors}
+
+Choose \(c>0\) so that, for all small \(\varepsilon\),
+
+\[
+ q_\varepsilon(v,w)=
+ \int_{\Omega_\varepsilon}(\nabla v\cdot\nabla w+cvw)
+ +\alpha\int_{\partial\Omega_\varepsilon}vw
+\]
+
+is uniformly equivalent to the \(H^1\) inner product. This follows from
+the fixed outer-boundary trace inequality and the small-hole trace
+estimate in Section 4 (see also {[}FRS26{]}). Set \(\mu=\lambda+c>0\).
+For every fixed \(\eta\in(0,1/2)\), the latter estimate is
+
+\[
+ \|v\|_{L^2(\partial(\varepsilon\Sigma))}
+ \le C_\eta\varepsilon^{1/2-\eta}\|v\|_{H^1(\Omega_\varepsilon)}.
+ \tag{S9}
+\]
+
+Define \(V_\varepsilon\) by
+
+\[
+ q_\varepsilon(V_\varepsilon,v)=L_\varepsilon(v),\qquad
+ L_\varepsilon(v)=
+ \int_{\partial(\varepsilon\Sigma)}(\partial_\nu u+\alpha u)v.
+ \tag{S10}
+\]
+
+The explicit approximate corrector is
+
+\[
+ A_\varepsilon(x)=\varepsilon^k\chi(x)W_k(x/\varepsilon).
+ \tag{S11}
+\]
+
+The cutoff equals one on the entire hole for small \(\varepsilon\). On
+its boundary, the discrepancy between the data in (S10) and
+\(\partial_\nu A_\varepsilon+\alpha A_\varepsilon\) has \(L^2\) norm
+\(O(\varepsilon^{k+1/2})\). Indeed, the leading normal derivative is
+exactly \(\varepsilon^{k-1}\partial_\nu P_k\), the Taylor remainder is
+\(O(\varepsilon^k)\), \(u=O(\varepsilon^k)\) there, and the trace of
+\(W_k\) on \(\partial\Sigma\) belongs to \(L^2\).
+
+From (S8), scaling and the compact support of \(\chi\),
+
+\[
+ \|A_\varepsilon\|_{L^2(\Omega_\varepsilon)}
+ \le C\varepsilon^{k+1}\sqrt{1+|\log\varepsilon|},
+ \qquad
+ \|\nabla A_\varepsilon\|_{L^2(\Omega_\varepsilon)}=O(\varepsilon^k).
+ \tag{S12}
+\]
+
+On the support of \(\nabla\chi\), both
+\(\varepsilon^kW_k(x/\varepsilon)\) and its \(x\)-gradient are
+\(O(\varepsilon^{k+1})\). Since \(W_k\) is harmonic,
+
+\[
+ \|(-\Delta+c)A_\varepsilon\|_{L^2(\Omega_\varepsilon)}
+ \le C\varepsilon^{k+1}\sqrt{1+|\log\varepsilon|}.
+\]
+
+Integration by parts, (S9), and the boundary discrepancy therefore give
+
+\[
+ |L_\varepsilon(v)-q_\varepsilon(A_\varepsilon,v)|
+ \le C_\eta\varepsilon^{k+1-\eta}
+       \|v\|_{H^1(\Omega_\varepsilon)}.
+\]
+
+The boundary integration is valid weakly for the exterior solution; no
+\(H^2\) regularity at a Lipschitz corner is required. Uniform coercivity
+and (S10) imply
+
+\[
+ \|V_\varepsilon-A_\varepsilon\|_{H^1(\Omega_\varepsilon)}
+ \le C_\eta\varepsilon^{k+1-\eta}.
+ \tag{S13}
+\]
+
+In particular
+
+\[
+ \|V_\varepsilon\|_{L^2}=O_\eta(\varepsilon^{k+1-\eta}),\qquad
+ T_\varepsilon:=q_\varepsilon(V_\varepsilon,V_\varepsilon)
+ =\varepsilon^{2k}E_k+O(\varepsilon^{2k+1}).
+ \tag{S14}
+\]
+
+For the energy estimate, the discarded far-field gradient energy in
+(S11) is \(O(\varepsilon^{2k+2})\); the mass term is
+\(O(\varepsilon^{2k+2}(1+|\log\varepsilon|))\); the inner-boundary term
+is \(O(\varepsilon^{2k+1})\); and the outer-boundary term vanishes. For
+the cross term, write \(R_\varepsilon=V_\varepsilon-A_\varepsilon\) and
+use the exact identity
+
+\[
+ q_\varepsilon(R_\varepsilon,A_\varepsilon)
+ =L_\varepsilon(A_\varepsilon)-q_\varepsilon(A_\varepsilon,A_\varepsilon).
+\]
+
+The boundary residual paired with \(A_\varepsilon\) is
+\(O(\varepsilon^{2k+1})\) by their boundary \(L^2\) norms. The bulk
+residual paired with \(A_\varepsilon\) is
+\(O(\varepsilon^{2k+2}(1+|\log\varepsilon|))\) by (S12). Finally
+\(q_\varepsilon(R_\varepsilon,R_\varepsilon)
+=O_\eta(\varepsilon^{2k+2-2\eta})=o(\varepsilon^{2k+1})\). This
+establishes the sharper error in (S14) without discarding cancellation
+in the cross term.
+
+\Needspace{8\baselineskip}\section{7. Simple-eigenvalue reduction and
+normalization}\label{simple-eigenvalue-reduction-and-normalization}
+
+Write \(f_\varepsilon=u-V_\varepsilon\), with \(u\) restricted to the
+perforated domain. The weak equation and (S10) give
+
+\[
+ q_\varepsilon(f_\varepsilon,v)=\mu\langle u,v\rangle,
+ \qquad
+ (\mathcal A_\varepsilon-\mu)f_\varepsilon=\mu V_\varepsilon,
+ \tag{S15}
+\]
+
+where \(\mathcal A_\varepsilon\) is the positive operator associated
+with \(q_\varepsilon\). The second equality holds in \(L^2\), since the
+first places \(f_\varepsilon\) in its operator domain.
+
+Spectral convergence and simplicity give a uniform gap between \(\mu\)
+and every eigenvalue of \(\mathcal A_\varepsilon\) except
+\(\mu_\varepsilon=\lambda_\varepsilon+c\). Let \(\Pi_\varepsilon\) be
+the orthogonal projection onto that eigenspace, and put
+\(r_\varepsilon=(I-\Pi_\varepsilon)f_\varepsilon\). Expanding (S15) in
+an orthonormal eigenbasis gives
+
+\[
+ \|r_\varepsilon\|_{H^1}
+ \le C\|V_\varepsilon\|_{L^2}.
+ \tag{S16}
+\]
+
+The bound follows because
+\(\sup_{j\ne n}\mu_j^\varepsilon/(\mu_j^\varepsilon-\mu)^2\) is
+uniformly finite, including the large eigenvalues.
+
+The useful exact identity is
+
+\[
+ \mu\langle u,V_\varepsilon\rangle
+ =L_\varepsilon(u)-T_\varepsilon,
+ \tag{S17}
+\]
+
+obtained by interchanging the two arguments in \(q_\varepsilon\) and
+using (S10). Further,
+
+\[
+ L_\varepsilon(u)=
+ -\int_{\varepsilon\Sigma}(|\nabla u|^2-\lambda u^2)
+ +\alpha\int_{\partial(\varepsilon\Sigma)}u^2.
+ \tag{S18}
+\]
+
+Hence \(L_\varepsilon(u)=O(\varepsilon^{2k})\) and
+\(\langle u,V_\varepsilon\rangle=O(\varepsilon^{2k})\). Consequently
+
+\[
+ \|f_\varepsilon\|_{L^2}^2
+ =1-\int_{\varepsilon\Sigma}u^2
+    -2\langle u,V_\varepsilon\rangle+\|V_\varepsilon\|_{L^2}^2
+ =1+O(\varepsilon^{2k}).
+\]
+
+Equations (S14) and (S16) show
+\(\|\Pi_\varepsilon f_\varepsilon\|_{L^2}=1+O(\varepsilon^{2k})\).
+Normalize this projection with its positive overlap with \(u\). Its
+\(H^1\) norm is uniformly bounded, so
+
+\[
+ \|u_\varepsilon-f_\varepsilon\|_{H^1}
+ =O_\eta(\varepsilon^{k+1-\eta})+O(\varepsilon^{2k})
+ =O_\eta(\varepsilon^{k+1-\eta}).
+ \tag{S19}
+\]
+
+This proves (S4) by (S13). It also avoids an unjustified passage from a
+global little-oh estimate to local rescaled \(L^2\) convergence.
+
+For the eigenvalue, calculate using (S15) and (S17):
+
+\[
+ q_\varepsilon(f_\varepsilon,f_\varepsilon)
+   -\mu\|f_\varepsilon\|_{L^2}^2
+ = L_\varepsilon(u)-T_\varepsilon-\mu\|V_\varepsilon\|_{L^2}^2.
+\]
+
+The contribution of \(r_\varepsilon\) to the left side has absolute
+value \(O(\|V_\varepsilon\|_{L^2}^2)\) by (S16). Thus
+
+\[
+ (\lambda_\varepsilon-\lambda)
+       \|\Pi_\varepsilon f_\varepsilon\|_{L^2}^2
+ =L_\varepsilon(u)-T_\varepsilon
+       +O(\|V_\varepsilon\|_{L^2}^2).
+ \tag{S20}
+\]
+
+Taylor expansion in (S18) yields
+
+\[
+ L_\varepsilon(u)
+ =-\varepsilon^{2k}\int_\Sigma|\nabla P_k|^2
+    +O(\varepsilon^{2k+1}).
+\]
+
+Insert this and (S14) in (S20). The extra errors are
+\(O_\eta(\varepsilon^{2k+2-2\eta})\) and \(O(\varepsilon^{4k})\); both
+are smaller than the error in (S3). This proves (S3).
+
+For (S5), uniform extension into the hole and planar Sobolev embedding
+imply, for fixed \(S\),
+
+\[
+ \|v(\varepsilon\,\cdot)\|_{L^2(B_S\setminus\overline\Sigma)}
+ \le C_{\eta,S}\varepsilon^{-\eta}
+             \|v\|_{H^1(\Omega_\varepsilon)}.
+ \tag{S21}
+\]
+
+Indeed, apply Hölder with exponent \(p=2/\eta\) on a set of area
+\(O(\varepsilon^2)\) after extension. Applying (S21) to the error in
+(S4) and dividing by \(\varepsilon^k\) gives
+\(O(\varepsilon^{1-2\eta})\). The rescaled gradient error is
+\(O(\varepsilon^{1-\eta})\). The Taylor expansion completes (S5).
+Finally, (S4), (S12), and the energy calculation following (S14) prove
+(S6).
+
+\Needspace{8\baselineskip}\section{8. The second nodal
+coefficient}\label{the-second-nodal-coefficient}
+
+Let \(P_{k+1}\) denote the homogeneous Taylor term of degree \(k+1\) in
+\(u\), allowing \(P_{k+1}=0\). It is harmonic, since the right side of
+\(-\Delta u=\lambda u\) begins at degree \(k\). Denote its decaying
+exterior corrector by \(W_{k+1}\), with the same definition as (S1). Put
+
+\[
+ \mathcal C(P_k,P_{k+1})=
+ \int_\Sigma\nabla P_k\cdot\nabla P_{k+1}
+ +\int_D\nabla W_k\cdot\nabla W_{k+1}.
+\]
+
+The two-term refinement is
+
+\[
+ \begin{aligned}
+ \lambda_\varepsilon-\lambda
+ ={}&-C_k\varepsilon^{2k}\\
+ &+\varepsilon^{2k+1}\left[
+    \alpha\int_{\partial\Sigma}(P_k-W_k)^2
+       -2\mathcal C(P_k,P_{k+1})\right]
+    +o(\varepsilon^{2k+1}).
+ \end{aligned}
+ \tag{S22}
+\]
+
+Here is the remainder calculation. With \(A_\varepsilon\) and
+\(R_\varepsilon\) as above, (S13) gives
+\(q_\varepsilon(R_\varepsilon,R_\varepsilon)=o(\varepsilon^{2k+1})\).
+Consequently the exact identity
+
+\[
+ T_\varepsilon
+ =2L_\varepsilon(A_\varepsilon)
+       -q_\varepsilon(A_\varepsilon,A_\varepsilon)
+       +q_\varepsilon(R_\varepsilon,R_\varepsilon)
+\]
+
+can be expanded to the next order using only the known corrector
+\(W_k\):
+
+\[
+ \begin{aligned}
+ L_\varepsilon(A_\varepsilon)
+ ={}&\varepsilon^{2k}E_k
+ +\varepsilon^{2k+1}
+   \int_{\partial\Sigma}(\partial_\nu P_{k+1}+\alpha P_k)W_k
+ +O(\varepsilon^{2k+2}),\\
+ q_\varepsilon(A_\varepsilon,A_\varepsilon)
+ ={}&\varepsilon^{2k}E_k
+ +\alpha\varepsilon^{2k+1}\int_{\partial\Sigma}W_k^2
+ +O(\varepsilon^{2k+2}(1+|\log\varepsilon|)).
+ \end{aligned}
+\]
+
+Meanwhile (S18) gives
+
+\[
+ \begin{aligned}
+ L_\varepsilon(u)
+ ={}&-\varepsilon^{2k}\int_\Sigma|\nabla P_k|^2\\
+ &+\varepsilon^{2k+1}
+   \left[-2\int_\Sigma\nabla P_k\cdot\nabla P_{k+1}
+               +\alpha\int_{\partial\Sigma}P_k^2\right]
+   +O(\varepsilon^{2k+2}).
+ \end{aligned}
+\]
+
+The \(L^2\) spectral error in (S20) is
+\(O_\eta(\varepsilon^{2k+2-2\eta})=o(\varepsilon^{2k+1})\); the
+normalization error is \(O(\varepsilon^{4k})=o(\varepsilon^{2k+1})\).
+Finally, (S7) implies
+
+\[
+ \int_{\partial\Sigma}(\partial_\nu P_{k+1})W_k
+ =\int_D\nabla W_{k+1}\cdot\nabla W_k.
+\]
+
+Substituting these identities into (S20) gives (S22).
+
+If \(\Sigma=-\Sigma\), uniqueness and the far-field normalization imply
+\(W_j(-y)=(-1)^jW_j(y)\). The mixed term in (S22) then vanishes by
+parity. For a centrally symmetric hole the next coefficient is therefore
+exactly \(\alpha\int_{\partial\Sigma}(P_k-W_k)^2\).
+
+\Needspace{8\baselineskip}\section{9. The nonnodal logarithmic
+coefficient}\label{the-nonnodal-logarithmic-coefficient}
+
+Now assume \(u_0:=u(0)\ne0\) and \(\alpha\ne0\). Let
+
+\[
+ p=\mathcal H^1(\partial\Sigma),\qquad
+ h(y)=\nabla u(0)\cdot\nu(y)+\alpha u_0,
+ \qquad m=\int_{\partial\Sigma}h=\alpha u_0p.
+\]
+
+Choose a point \(y_*\in\Sigma\) and put \(F(y)=-(m/(2\pi))\log|y-y_*|\).
+The normal convention gives \(\int_{\partial\Sigma}\partial_\nu F=m\).
+The zero-mean argument of Section 5 supplies a decaying harmonic \(W\)
+with boundary data \(h-\partial_\nu F\). Thus \(U=F+W\) solves
+\(\partial_\nu U=h\) and
+
+\[
+ U(y)=-\frac m{2\pi}\log|y|+O(|y|^{-1}).
+\]
+
+Take the cutoff approximation
+
+\[
+ B_\varepsilon(x)=\varepsilon\chi(x)
+ \left[U(x/\varepsilon)-\frac m{2\pi}\log\varepsilon\right].
+ \tag{S23}
+\]
+
+The subtraction is essential: on a fixed physical annulus the bracket is
+\(-(m/(2\pi))\log|x|+O(\varepsilon/|x|)\), with no growing constant. It
+follows by direct integration that
+
+\[
+ \|B_\varepsilon\|_{L^2}=O(\varepsilon),\qquad
+ q_\varepsilon(B_\varepsilon,B_\varepsilon)
+ =\frac{m^2}{2\pi}\varepsilon^2\log(1/\varepsilon)
+      +O(\varepsilon^2).
+ \tag{S24}
+\]
+
+To check the remainder in the energy: the harmonic logarithm contributes
+\(m^2/(2\pi)\) per unit logarithmic radial length; its cross integral
+with the decaying part has a convergent tail; the fixed cutoff region
+contributes \(O(\varepsilon^2)\); and the inner Robin term is
+\(O(\varepsilon^3\log^2\varepsilon)=o(\varepsilon^2)\).
+
+The bulk residual of (S23) is \(O(\varepsilon)\) in \(L^2\). Its
+boundary discrepancy in (S10) has \(L^2\) norm
+\(O(\varepsilon^{3/2}(1+|\log\varepsilon|))\). Estimate (S9) makes its
+dual norm \(o(\varepsilon)\), for any fixed \(\eta<1/2\). Coercivity
+gives
+
+\[
+ \|V_\varepsilon-B_\varepsilon\|_{H^1}=O(\varepsilon),\qquad
+ \|V_\varepsilon\|_{L^2}=O(\varepsilon).
+\]
+
+For the energy cross term, write
+\(S_\varepsilon=V_\varepsilon-B_\varepsilon\) and use
+\(q_\varepsilon(S_\varepsilon,B_\varepsilon)
+=L_\varepsilon(B_\varepsilon)-q_\varepsilon(B_\varepsilon,B_\varepsilon)\).
+The bulk residual pairs with \(B_\varepsilon\) to give
+\(O(\varepsilon^2)\); the boundary pairing is
+\(O(\varepsilon^3(1+|\log\varepsilon|)^2)\). Also
+\(q_\varepsilon(S_\varepsilon,S_\varepsilon)=O(\varepsilon^2)\).
+Therefore
+
+\[
+ T_\varepsilon
+ =\frac{m^2}{2\pi}\varepsilon^2\log(1/\varepsilon)
+   +O(\varepsilon^2).
+ \tag{S25}
+\]
+
+Equations (S16)-(S20) remain valid. This time
+\(L_\varepsilon(u)=\alpha p u_0^2\varepsilon+O(\varepsilon^2)\),
+\(\langle u,V_\varepsilon\rangle=O(\varepsilon)\), and
+\(\|\Pi_\varepsilon f_\varepsilon\|_{L^2}^2=1+O(\varepsilon)\). It
+follows that
+
+\[
+ \lambda_\varepsilon-\lambda
+ =\alpha p u_0^2\varepsilon
+ -\frac{\alpha^2p^2u_0^2}{2\pi}\varepsilon^2\log(1/\varepsilon)
+ +O(\varepsilon^2).
+ \tag{S26}
+\]
+
+The first term is established in {[}FRS26{]}. Earlier small-Robin-hole
+and logarithmic-expansion results must also be compared before a
+priority claim for the second term.
+
+\Needspace{8\baselineskip}\section{10. Disk and ellipse
+coefficients}\label{disk-and-ellipse-coefficients}
+
+For \(\Sigma=B_r\) and
+\(P_k(\rho,\theta)=\rho^k(A\cos k\theta+B\sin k\theta)\),
+
+\[
+ W_k(\rho,\theta)=-r^{2k}\rho^{-k}
+                         (A\cos k\theta+B\sin k\theta),
+ \qquad
+ C_k=2k\pi r^{2k}(A^2+B^2).
+ \tag{S27}
+\]
+
+The coefficients use the homogeneous Taylor polynomial itself, including
+its factorial normalization.
+
+For an ellipse with semiaxes \(a,b>0\), use exterior conformal
+coordinates
+
+\[
+ z=\frac{a+b}{2}\left(w+\frac{a-b}{a+b}w^{-1}\right),\qquad |w|>1.
+\]
+
+For \(P_1=x\), the exterior solution is \(W_1=-b\rho^{-1}\cos\theta\) in
+\(w=\rho e^{i\theta}\) coordinates. For \(P_1=y\) it is
+\(W_1=-a\rho^{-1}\sin\theta\). The common conformal metric factor
+cancels from the normal-data equality; Dirichlet energy is conformally
+invariant. Thus for \(P_1=\xi x+\zeta y\),
+
+\[
+ C_1=\pi b(a+b)\xi^2+\pi a(a+b)\zeta^2.
+ \tag{S28}
+\]
+
+This is a useful check that arbitrary-hole coefficients need not depend
+only on area. It is not counted as an independent discovery or paper.
+
+\Needspace{8\baselineskip}\section{11. Multiple eigenvalues and their vanishing
+orders}\label{multiple-eigenvalues-and-their-vanishing-orders}
+
+Use the geometry and normal convention of Section 3 and the estimates of
+Section 4. Fix \(\alpha\ne0\). Let \(\lambda\) be an eigenvalue of
+multiplicity \(m\) on \(\Omega\), and let \(E\) be its real eigenspace
+with the \(L^2(\Omega)\) inner product. Write
+\(p=\mathcal H^1(\partial\Sigma)\) and
+
+\[
+ E^+=\{u\in E:u(0)=0\}.
+\]
+
+If evaluation at zero is nonzero on \(E\), choose the unit vector
+\(u_0\) orthogonal to \(E^+\) with \(a=u_0(0)>0\). Otherwise set
+\(E^+=E\) and omit \(u_0\).
+
+For integers \(k\ge1\), let \(F_k\subset E^+\) consist of functions
+whose derivatives of every order below \(k\) vanish at zero. Thus
+\(F_1=E^+\). Set \(H_k=F_k\ominus F_{k+1}\), using the \(L^2\)
+orthogonal complement inside \(F_k\). Discard zero spaces and enumerate
+the remaining degrees as
+
+\[
+ 1\le k_1<\cdots<k_s,\qquad d_r=\dim H_{k_r}.
+\]
+
+This list is finite and \(E^+=\bigoplus_{r=1}^s H_{k_r}\). Indeed, the
+descending finite-dimensional filtration eventually stabilizes; its
+intersection is zero by interior analyticity and unique continuation.
+Any nonzero vector of \(H_{k_r}\) has exactly order \(k_r\), and the map
+taking it to its homogeneous leading Taylor polynomial is injective. In
+two dimensions this gives \(d_r\le2\).
+
+Choose an orthonormal basis \(u_i\) adapted to these spaces. Denote its
+orders by \(\kappa_i\) (in increasing groups) and its leading harmonic
+polynomials by \(P_i\). For a nonconstant harmonic polynomial \(P\), let
+\(W(P)\) be the decaying exterior solution of
+
+\[
+ \Delta W=0\ \text{in }D,\qquad
+ \partial_\nu W=\partial_\nu P\ \text{on }\partial\Sigma.
+\]
+
+Define the bilinear form and its matrix
+
+\[
+ \mathcal C(P,Q)=\int_\Sigma\nabla P\cdot\nabla Q
+                 +\int_D\nabla W(P)\cdot\nabla W(Q),
+ \qquad C_{ij}=\mathcal C(P_i,P_j).
+ \tag{M1}
+\]
+
+The matrix \(C\) is positive definite. To see this, a zero quadratic
+form forces \(\sum_i t_iP_i\) to be constant on an open set, hence
+constant everywhere. Its homogeneous terms have positive degrees, so it
+is zero. Within each degree, injectivity of the leading-polynomial map
+gives all \(t_i=0\).
+
+Partition \(C\) by the groups \(H_{k_r}\). Let \(C_{<r,<r}\) denote its
+principal block containing all smaller orders. Define
+
+\[
+ S_1=C_{11},\qquad
+ S_r=C_{rr}-C_{r,<r}C_{<r,<r}^{-1}C_{<r,r}\quad(r>1).
+ \tag{M2}
+\]
+
+Every \(S_r\) is positive definite. Its eigenvalues
+\(s_{r,1},\ldots,s_{r,d_r}\) are independent of the orthonormal bases
+chosen in each \(H_{k_r}\).
+
+\Needspace{6\baselineskip}\textbf{Theorem 11.1 (all nodal branches).} The perturbed cluster admits
+a labeling with one branch for each pair \((r,j)\), satisfying
+
+\[
+ \lambda_{r,j}(\varepsilon)
+ =\lambda-s_{r,j}\varepsilon^{2k_r}
+       +o(\varepsilon^{2k_r}).
+ \tag{M3}
+\]
+
+If evaluation on \(E\) is identically zero these are all \(m\) branches.
+Otherwise they are \(m-1\) branches, and the remaining branch satisfies
+
+\[
+ \lambda_0(\varepsilon)=\lambda+\alpha p a^2\varepsilon+o(\varepsilon).
+ \tag{M4}
+\]
+
+Thus for sufficiently small holes, every nodal branch decreases. If
+evaluation is nonzero, positive \(\alpha\) gives exactly one increasing
+branch and \(m-1\) decreasing branches; negative \(\alpha\) gives \(m\)
+decreasing branches. These assertions concern shifts relative to the
+limiting \(\lambda\), not monotonicity as a function of hole size. For
+\(E^+=0\), only (M4) occurs. No claim of complete simplicity is made
+when a block \(S_r\) has repeated eigenvalues.
+
+The all-nodal assertion also holds for \(\alpha=0\), using Neumann
+spectral convergence. The mixed Neumann case is excluded: its nonnodal
+branch has a different scale and can couple with degree-one data at
+leading order.
+
+\Needspace{8\baselineskip}\section{12. Weighted reduction for a full
+cluster}\label{weighted-reduction-for-a-full-cluster}
+
+Fix a coercive shift \(c\) and let \(\mu=\lambda+c>0\). All scalar
+products below are over \(\Omega_\varepsilon\). For any \(u\in E\) put
+
+\[
+ L_u(v)=\int_{\partial(\varepsilon\Sigma)}
+             (\partial_\nu u+\alpha u)v,
+ \qquad q_\varepsilon(V_u,v)=L_u(v),\qquad f_u=u-V_u.
+ \tag{M5}
+\]
+
+Let \(\Pi_\varepsilon\) be the orthogonal projection onto the full
+\(m\)-dimensional cluster converging to \(\lambda\), for the shifted
+operator. Define \(g_u=\Pi_\varepsilon f_u\) and \(r_u=f_u-g_u\).
+Spectral convergence gives a uniform gap to the complementary spectrum.
+As in Section 7,
+
+\[
+ (\mathcal A_\varepsilon-\mu)f_u=\mu V_u,
+ \qquad \|r_u\|_{H^1}\le C\|V_u\|_{L^2}.
+ \tag{M6}
+\]
+
+Since \(f_u\to u\) and \(r_u\to0\) in \(L^2\) uniformly on the unit
+sphere of the fixed finite-dimensional space \(E\), \(u\mapsto g_u\) is
+an isomorphism onto the cluster for small \(\varepsilon\).
+
+In the selected basis, the cluster shifts are exactly the generalized
+eigenvalues of the symmetric pair
+
+\[
+ A_{ij}=q_\varepsilon(g_{u_i},g_{u_j})-\mu\langle g_{u_i},g_{u_j}\rangle,
+ \qquad G_{ij}=\langle g_{u_i},g_{u_j}\rangle,
+ \qquad G\longrightarrow I.
+ \tag{M7}
+\]
+
+Write \(b_\varepsilon=q_\varepsilon-\mu\langle\cdot,\cdot\rangle\). The
+following exact identity, rather than an unweighted norm estimate, keeps
+the information at every vanishing order:
+
+\[
+ A_{ij}=L_{u_i}(u_j)-q_\varepsilon(V_{u_i},V_{u_j})
+       -\mu\langle V_{u_i},V_{u_j}\rangle
+       -b_\varepsilon(r_{u_i},r_{u_j}).
+ \tag{M8}
+\]
+
+To verify it, symmetry and the eigenfunction equation give
+
+\[
+ \mu\langle u_j,V_{u_i}\rangle
+ =L_{u_i}(u_j)-q_\varepsilon(V_{u_i},V_{u_j}).
+\]
+
+Expand \(b_\varepsilon(f_{u_i},f_{u_j})\) and subtract the complementary
+spectral contribution. The cross terms between the cluster and its
+complement vanish for both \(q_\varepsilon\) and the mass inner product.
+Also
+
+\[
+ L_{u_i}(u_j)
+ =-\int_{\varepsilon\Sigma}
+       (\nabla u_i\cdot\nabla u_j-\lambda u_i u_j)
+      +\alpha\int_{\partial(\varepsilon\Sigma)}u_i u_j.
+ \tag{M9}
+\]
+
+For a nodal basis vector define
+
+\[
+ Z_i=\varepsilon^{\kappa_i}\chi W(P_i)(\cdot/\varepsilon),
+ \qquad R_i=V_{u_i}-Z_i.
+\]
+
+Section 6, whose corrector estimates did not use simplicity, gives for
+fixed \(0<\eta<1/2\)
+
+\[
+ \|Z_i\|_{H^1}=O(\varepsilon^{\kappa_i}),\quad
+ \|R_i\|_{H^1}=O_\eta(\varepsilon^{\kappa_i+1-\eta}),\quad
+ \|V_{u_i}\|_{L^2}=O_\eta(\varepsilon^{\kappa_i+1-\eta}).
+ \tag{M10}
+\]
+
+Scaling the two leading terms in (M8), and using Cauchy-Schwarz on their
+remainders, yields for any two nodal indices
+
+\[
+ A_{ij}=-\varepsilon^{\kappa_i+\kappa_j}
+             (C_{ij}+o(1)).
+ \tag{M11}
+\]
+
+For example the energy cross remainder is
+\(O_\eta(\varepsilon^{\kappa_i+\kappa_j+1-\eta})\); the mass and
+complementary terms in (M8) are
+\(O_\eta(\varepsilon^{\kappa_i+\kappa_j+2-2\eta})\). The finitely many
+entrywise errors in (M11) are uniform. In particular, with
+\(D_\varepsilon=\operatorname{diag}(\varepsilon^{\kappa_i})\), the whole
+nodal block is
+
+\[
+ A_{++}=-D_\varepsilon(C+o(1))D_\varepsilon.
+ \tag{M12}
+\]
+
+This stronger statement cannot be replaced by a single unweighted
+\(o(\varepsilon^{2k_1})\) bound.
+
+\Needspace{8\baselineskip}\section{13. The nonnodal direction in a multiple
+cluster}\label{the-nonnodal-direction-in-a-multiple-cluster}
+
+Assume \(u_0\) is present. The logarithmic corrector in Section 9 gives
+
+\[
+ \|V_{u_0}\|_{L^2}=O(\varepsilon),\qquad
+ \|V_{u_0}\|_{H^1}=O(\varepsilon\sqrt{1+|\log\varepsilon|}),
+ \qquad A_{00}=\alpha p a^2\varepsilon+o(\varepsilon).
+ \tag{M13}
+\]
+
+For a nodal index \(j\), equation (M9) gives
+\(L_{u_0}(u_j)=O(\varepsilon^{\kappa_j+1})\). For the mixed corrector
+energy, use its defining equation to obtain the sharper bound
+
+\[
+ q_\varepsilon(V_{u_0},V_{u_j})
+ =L_{u_0}(Z_j)+q_\varepsilon(V_{u_0},R_j)
+ =O(\varepsilon^{\kappa_j+1}).
+ \tag{M14}
+\]
+
+Indeed the first boundary integral has data of order one, trace
+\(\varepsilon^{\kappa_j}W(P_j)\) and length of order \(\varepsilon\).
+The second term is
+\(O_\eta(\varepsilon^{\kappa_j+2-\eta}\sqrt{1+|\log\varepsilon|})\),
+which is smaller. The remaining two terms in (M8) are bounded by
+\(O_\eta(\varepsilon^{\kappa_j+2-\eta})\). Hence
+
+\[
+ A_{0j}=O(\varepsilon^{\kappa_j+1}).
+ \tag{M15}
+\]
+
+Put \(d=A_{00}\) and \(v=(A_{0j})\). For small \(\varepsilon\),
+\(d\ne0\). The change of basis
+
+\[
+ T_0=\begin{pmatrix}1&-d^{-1}v\\0&I\end{pmatrix}
+\]
+
+tends to the identity and gives the exact congruence
+
+\[
+ T_0^TAT_0=
+ \begin{pmatrix}d&0\\0&A_{++}-d^{-1}v^Tv\end{pmatrix}.
+ \tag{M16}
+\]
+
+The correction in its nodal block has entries
+\(O(\varepsilon^{\kappa_i+\kappa_j+1})\). Thus it does not change the
+limiting matrix \(C\) in (M12), for either sign of \(d\). The
+transformed mass matrix still tends to \(I\).
+
+\Needspace{8\baselineskip}\section{14. Schur complements and signed
+shifts}\label{schur-complements-and-signed-shifts}
+
+For completeness we prove the finite-dimensional step, in a block form
+of the method already supplied by {[}ALM26{]}. Let
+\(C(\varepsilon)\to C>0\). Gaussian block elimination in increasing
+order gives an upper block-triangular matrix \(U(\varepsilon)\), with
+identity diagonal blocks, for which
+
+\[
+ U(\varepsilon)^TC(\varepsilon)U(\varepsilon)
+  =\operatorname{diag}(S_1(\varepsilon),\ldots,S_s(\varepsilon)),
+ \qquad S_r(\varepsilon)\longrightarrow S_r.
+ \tag{M17}
+\]
+
+All matrices depend continuously on \(C(\varepsilon)\) because its
+principal blocks are uniformly positive definite. Completing the square
+in the preceding blocks shows that the limiting \(S_r\) is exactly (M2).
+
+Set \(T_1=D_\varepsilon^{-1}U(\varepsilon)D_\varepsilon\). Its block
+above the diagonal, in row \(r\) and column \(t>r\), is
+\(\varepsilon^{k_t-k_r}U_{rt}(\varepsilon)\), so \(T_1\to I\). It
+transforms the nodal matrix in (M12), or in (M16), exactly into
+
+\[
+ -\operatorname{diag}\big(
+   \varepsilon^{2k_1}S_1(\varepsilon),\ldots,
+   \varepsilon^{2k_s}S_s(\varepsilon)\big).
+ \tag{M18}
+\]
+
+After both transformations the mass matrix is \(I+o(1)\), whereas the
+stiffness matrix is the direct sum of (M18) and, if present, \(d\). The
+ordinary eigenvalues of this block matrix have exactly the asymptotics
+(M3)-(M4).
+
+Here is a justification that replacing \(I\) by \(I+o(1)\) preserves
+those asymptotics even when the matrix is indefinite. For a positive
+definite mass matrix \(B\) with \((1-\delta)I\le B\le(1+\delta)I\),
+consider a negative eigenvalue \(h_j<0\) of a real symmetric matrix
+\(H\). The number of generalized eigenvalues below \(-t\) is the
+negative inertia of \(H+tB\). Since
+
+\[
+ H+t(1-\delta)I\le H+tB\le H+t(1+\delta)I,
+\]
+
+monotonicity of eigenvalues in the matrix order, or its minmax proof,
+bounds the corresponding negative generalized eigenvalue \(\theta_j\) by
+
+\[
+ \frac{h_j}{1-\delta}\le\theta_j\le\frac{h_j}{1+\delta}.
+ \tag{M19}
+\]
+
+Multiplicity is handled by allowing equality and then approaching
+thresholds from either side. Applying the same statement to \(-H\)
+bounds the positive eigenvalues. Congruence preserves inertia, so there
+is no unaccounted change in their numbers. Letting \(\delta\to0\) proves
+multiplicative equivalence separately for every nonzero eigenvalue,
+however small its scale. This proves Theorem 11.1.
+
+\Needspace{8\baselineskip}\section{15. Common-order clusters at second
+order}\label{common-order-clusters-at-second-order}
+
+Suppose every nonzero \(u\in E\) has the same positive order \(k\). Thus
+evaluation vanishes identically, \(s=1\), and \(m\le2\). Write
+
+\[
+ u_i=P_i+Q_i+O(|x|^{k+2}),
+\]
+
+where \(P_i\) and \(Q_i\) are the homogeneous Taylor polynomials of
+degree \(k\) and \(k+1\). Both are harmonic, and \(Q_i\) may be zero.
+Define
+
+\[
+ B_{ij}=\alpha\int_{\partial\Sigma}
+        (P_i-W(P_i))(P_j-W(P_j))
+       -\mathcal C(P_i,Q_j)-\mathcal C(Q_i,P_j).
+ \tag{M20}
+\]
+
+\Needspace{6\baselineskip}\textbf{Theorem 15.1 (common-order second coefficient).} For each
+eigenvalue \(c_*\) of \(C\), let \(\mathcal E_{c_*}\) be its Euclidean
+eigenspace, and let \(b_1,\ldots,b_q\) be the eigenvalues of the
+compression of \(B\) to \(\mathcal E_{c_*}\). The corresponding branches
+satisfy
+
+\[
+ \lambda_j(\varepsilon)
+ =\lambda-c_*\varepsilon^{2k}
+           +b_j\varepsilon^{2k+1}+o(\varepsilon^{2k+1}).
+ \tag{M21}
+\]
+
+To prove this, use the bilinear energy identity
+
+\[
+ q_\varepsilon(V_{u_i},V_{u_j})
+ =L_{u_i}(Z_j)+L_{u_j}(Z_i)
+       -q_\varepsilon(Z_i,Z_j)+q_\varepsilon(R_i,R_j).
+ \tag{M22}
+\]
+
+Its last term is
+\(O_\eta(\varepsilon^{2k+2-2\eta})=o(\varepsilon^{2k+1})\); expanding
+the first three terms gives, exactly as in the two-term calculation of
+Section 8,
+
+\[
+ A=\varepsilon^{2k}(-C+\varepsilon B+o(\varepsilon)).
+ \tag{M23}
+\]
+
+In more detail, the terms containing \(Q_i,Q_j\) are the two mixed
+interior energies from (M9) plus their exterior energies, using
+\(\int_{\partial\Sigma}(\partial_\nu Q_i)W(P_j)
+ =\int_D\nabla W(Q_i)\cdot\nabla W(P_j)\). The Robin terms combine as
+the boundary square in (M20). Bulk mass, cutoff and complementary
+projection terms are all smaller than \(\varepsilon^{2k+1}\).
+
+We also need more than \(G\to I\) here. The exact identity preceding
+(M9) gives \(\langle u_i,V_{u_j}\rangle=O(\varepsilon^{2k})\). Expanding
+\(\langle f_{u_i},f_{u_j}\rangle\) and subtracting
+\(\langle r_{u_i},r_{u_j}\rangle\) gives
+
+\[
+ G=I+O(\varepsilon^{2k})=I+o(\varepsilon).
+ \tag{M24}
+\]
+
+Conjugating (M23) by \(G^{-1/2}\) therefore leaves its first two
+coefficients unchanged. Finally diagonalize \(C\). In a fixed eigenspace
+of \(C\), the first perturbation is the compression of \(B\); the
+coupling to the orthogonal complement contributes \(O(\varepsilon^2)\)
+after a block elimination across the fixed spectral gaps of \(C\).
+Equivalently, the Schur complement of \(-C+\varepsilon B-zI\) at
+\(z=-c_*+\varepsilon b\) is
+\(\varepsilon(B|_{\mathcal E_{c_*}}-bI)+o(\varepsilon)\). Continuity of
+the eigenvalues of these finite symmetric matrices gives (M21).
+
+For a centrally symmetric hole, the two mixed terms in (M20) vanish by
+parity. This does not automatically split a repeated \(c_*\): the
+compressed boundary form must itself have distinct eigenvalues.
+
+\Needspace{8\baselineskip}\section{16. Analytic dependence on hole
+shape}\label{analytic-dependence-on-hole-shape}
+
+For a harmonic polynomial \(P\) without a constant term, let \(W_{t,P}\)
+solve the exterior problem of Section 5 on
+\(D_t=\mathbb R^2\setminus\overline\Sigma_t\). Thus \(W_{t,P}\) decays
+at infinity and its normal derivative into the hole equals that of
+\(P\). Define
+
+\[
+ \mathcal C_t(P,Q)=\int_{\Sigma_t}\nabla P\cdot\nabla Q
+       +\int_{D_t}\nabla W_{t,P}\cdot\nabla W_{t,Q}.
+ \tag{H2}
+\]
+
+For each fixed pair \(P,Q\), this is a real-analytic function of \(t\)
+on a sufficiently small fixed interval \((-t_*,t_*)\).
+
+Here are details that address the two-dimensional constant ambiguity.
+Choose a smooth diffeomorphism \(\Phi_t\) of the plane, mapping \(D_0\)
+to \(D_t\), equal to the radial boundary displacement in a collar of the
+circle, and equal to the identity outside \(B_R\). The area-normalized
+displacement is real analytic in \(t\) with coefficients smooth in
+space; a radial cutoff supplies such a map, uniformly invertible after
+decreasing \(t_*\). Pull back the weak problem to
+
+\[
+ X=\{v\in H^1_{\mathrm{loc}}(\overline D_0):\nabla v\in L^2(D_0)\}/\mathbb R.
+\]
+
+The notation means \(H^1\) on every bounded exterior truncation,
+including its inner boundary. Its norm is the gradient norm. The
+pulled-back form has coefficient
+
+\[
+ A_t=|\det D\Phi_t|\,(D\Phi_t)^{-1}(D\Phi_t)^{-T}.
+\]
+
+It is uniformly coercive and real analytic as a bounded operator on
+\(X\). The boundary functional is
+
+\[
+ \ell_{t,P}(v)=\int_{\partial\Sigma_t}
+                    (\partial_{\nu_t}P)(v\circ\Phi_t^{-1})\,ds.
+\]
+
+It has integral-zero data, since \(P\) is harmonic. Subtracting a fixed
+annular average and using the trace bound makes it a bounded functional
+on \(X\). In the pulled-back boundary parametrization its coefficients
+are analytic in \(t\) in every finite smooth norm, so it is analytic in
+\(X^*\). The inverse of the coercive operator is locally analytic by its
+norm-convergent Neumann series. This proves analytic dependence of the
+solution class.
+
+Because \(\Phi_t\) is the identity outside \(B_R\), every representative
+is harmonic there. Subtract its mean on one fixed exterior circle.
+Finite Dirichlet energy excludes growing modes and a logarithm; this
+subtraction selects exactly the decaying representative. The circle mean
+is a bounded functional on anchored representatives, so this
+normalization preserves analytic dependence on bounded truncations. The
+energy in (H2) can be written as the pulled-back bilinear form applied
+to the solution classes; the interior integral follows by change of
+variables. This proves the asserted analyticity of \(\mathcal C_t\)
+without a planar homogeneous Sobolev inequality.
+
+We will differentiate a boundary equation at \(t=0\). This is justified
+by pulling it back to the fixed smooth circle: the differentiated weak
+solution satisfies a smooth, uniformly elliptic problem in a fixed
+collar. Difference quotients converge in \(H^1\), and local Neumann
+regularity upgrades this convergence in each fixed finite Sobolev order
+after applying the differentiated equation. Equivalently one may
+differentiate the coefficients and boundary data in the pulled-back
+variational equation first. Outside \(B_R\) the Fourier coefficients are
+continuous linear functionals of the solution traces and therefore
+analytic as well.
+
+\Needspace{8\baselineskip}\section{17. Shape variation at the
+disk}\label{shape-variation-at-the-disk}
+
+It suffices to differentiate the unnormalized radial family: its
+normalization changes the shape only at order \(t^2\). Put
+
+\[
+ U_{t,P}=P-W_{t,P}.
+\]
+
+This has zero normal derivative on the hole, with
+\(U_{t,P}-P=O(|x|^{-1})\) at infinity. For
+
+\[
+ P(r,\theta)=r^k p(\theta),\qquad
+ p(\theta)=a\cos k\theta+b\sin k\theta,
+\]
+
+the disk solution is
+
+\[
+ U_{0,P}(r,\theta)=(r^k+r^{-k})p(\theta).
+ \tag{H3}
+\]
+
+Let \(\dot U_P\) be the Eulerian derivative at zero. It is harmonic for
+\(r>1\) and decays at infinity. Differentiate the zero normal derivative
+on the radial graph. Multiplying by the harmless normalizing factor,
+that equation reads
+
+\[
+ \partial_r U_{t,P}(1+tf,\theta)
+   -\frac{t f'}{(1+tf)^2}\partial_\theta U_{t,P}(1+tf,\theta)=0.
+\]
+
+Using \(\partial_{rr}U_{0,P}(1,\theta)=2k^2p(\theta)\) and
+\(\partial_\theta U_{0,P}(1,\theta)=2p'(\theta)\) gives
+
+\[
+ \partial_r\dot U_P(1,\theta)
+       =-2k^2 f p+2f'p'=2(fp')'.
+ \tag{H4}
+\]
+
+The right-hand side has mean zero, so it has a unique decaying exterior
+Neumann solution. Notice that the radial derivative here points out of
+the hole; the zero condition itself is independent of that sign choice.
+
+We now relate a decaying multipole to (H2), to avoid assuming a
+shape-derivative formula. If \(Q\) is harmonic and \(P=r^k p\),
+Green\textquotesingle s identity on \(B_R\setminus\overline\Sigma_t\)
+yields
+
+\[
+ \mathcal C_t(P,Q)
+ =\int_{\partial B_R}
+        (P\partial_r W_{t,Q}-W_{t,Q}\partial_rP)\,ds.
+ \tag{H5}
+\]
+
+Indeed the corresponding inner-boundary integral is
+\(-\int_{\Sigma_t}\nabla P\cdot\nabla Q
+ -\int_{D_t}\nabla W_{t,P}\cdot\nabla W_{t,Q}\). The second equality
+uses the exterior variational identity; all functions have the required
+zero-mean data and finite energy. If the \(k\)th decaying Fourier mode
+of \(W_{t,Q}\) is \(r^{-k}w_k(\theta)\), (H5) becomes
+
+\[
+ \mathcal C_t(P,Q)=-2k\int_0^{2\pi}p(\theta)w_k(\theta)\,d\theta.
+ \tag{H6}
+\]
+
+For \(P\) and \(Q\) of the same degree \(k\), write \(Q=r^kq(\theta)\).
+The \(k\)th Fourier mode of \(\dot U_Q\) on the circle is
+\(-k^{-1}\operatorname{proj}_k[2(fq')']\), by (H4). Since
+\(\dot W_Q=-\dot U_Q\), differentiation of (H6) and integration by parts
+give
+
+\[
+ \left.\frac{d}{dt}\mathcal C_t(P,Q)\right|_{t=0}
+   =-4\int_0^{2\pi}p(fq')'
+   =4\int_0^{2\pi}f p'q'.
+ \tag{H7}
+\]
+
+This is the familiar tangential-energy shape variation in this setting.
+It is derived here for the needed disk case; shape differentiation of
+generalized polarization tensors is established prior literature and is
+not claimed new.
+
+Only the constant and \(2k\) Fourier components of \(f\) contribute to
+(H7). For a zero-mean \(f\) with \(2k\) component
+\(A_k\cos2k\theta+B_k\sin2k\theta\), the derivative matrix in the
+polynomial basis \((r^k\cos k\theta,r^k\sin k\theta)\) is
+
+\[
+ 2\pi k^2
+ \begin{pmatrix}-A_k&-B_k\\-B_k&A_k\end{pmatrix}.
+ \tag{H8}
+\]
+
+For (H1), \(A_k=e^{-k^2}>0\) and \(B_k=0\). Its two eigenvalues are
+opposite and nonzero, for every positive integer \(k\).
+
+\Needspace{8\baselineskip}\section{18. Complete splitting of every Schur
+block}\label{complete-splitting-of-every-schur-block}
+
+Fix an unperforated eigenspace \(E\) and use the orthogonal
+vanishing-order decomposition of Section 11. This basis is fixed in
+\(\Omega\) and does not depend on \(t\). Let \(C(t)\) be the matrix with
+entries \(\mathcal C_t(P_i,P_j)\), and let \(S_r(t)\) be its Schur
+blocks, eliminating smaller positive orders first. Analyticity and
+positive definiteness of \(C(t)\) imply that every \(S_r(t)\) is
+positive definite and analytic on the whole small interval under
+consideration.
+
+At \(t=0\) the matrix \(C(0)\) has no cross terms between distinct
+degrees, by orthogonality of Fourier modes on the disk and on its
+exterior. Consequently
+
+\[
+ S_r(0)=C_{rr}(0),\qquad S_r'(0)=C_{rr}'(0).
+ \tag{H9}
+\]
+
+The second identity follows by differentiating
+\(C_{rr}-C_{r,<r}C_{<r,<r}^{-1}C_{<r,r}\): both outer factors of the
+correction vanish at zero.
+
+A block of dimension one is already simple. For a block of dimension
+two, let \(k\) be its order and write its two leading polynomials in the
+standard harmonic basis using an invertible real coefficient matrix
+\(M\). At the disk,
+
+\[
+ C_{rr}(0)=2k\pi M^TM.
+ \tag{H10}
+\]
+
+If this matrix has distinct eigenvalues, they stay distinct for
+sufficiently small \(t\). Otherwise it equals \(cI\) for some \(c>0\),
+so \(M=\sqrt{c/(2k\pi)}\,O\) with \(O\) orthogonal. Equations (H8)-(H10)
+then give
+
+\[
+ S_r'(0)=c k e^{-k^2}\,
+           O^T\begin{pmatrix}-1&0\\0&1\end{pmatrix}O.
+ \tag{H11}
+\]
+
+The eigenvalue difference of \(S_r(t)\) is therefore
+
+\[
+ 2c k e^{-k^2}|t|+o(|t|).
+ \tag{H12}
+\]
+
+In particular, it is positive for every sufficiently small nonzero
+\(t\). There are finitely many blocks in \(E\), so all become simple for
+every sufficiently small nonzero \(t\). The nonnodal direction, when
+present, is one-dimensional and moves at order \(\varepsilon\), while
+all positive-order blocks move at distinct even powers of
+\(\varepsilon\). Thus it cannot collide with them for sufficiently small
+\(\varepsilon\). Within a block, distinct positive Schur coefficients
+give distinct leading eigenvalue shifts by Theorem 11.1. This proves the
+assertion for a fixed eigenspace and every sufficiently small nonzero
+\(t\).
+
+For a two-dimensional block define its discriminant
+
+\[
+ \Delta_r(t)=(\operatorname{tr}S_r(t))^2-4\det S_r(t).
+ \tag{H13}
+\]
+
+It is analytic and not identically zero, by (H10) or (H12). Its zero set
+in \((-t_*,t_*)\) is discrete, hence countable. Taking the finite union
+over the blocks of an eigenspace and then the countable union over the
+discrete unperforated spectrum gives a countable exceptional set
+\(\mathcal N\). For every \(t\) outside that set, every Schur block of
+every eigenspace has simple coefficients. Apply Theorem 11.1 separately
+to each cluster. For a finite spectral window, take the minimum of the
+finitely many thresholds and also ensure that different limiting
+clusters remain separated by their positive limiting gaps. This proves
+Theorem 2.1.
+
+If a finite window ends inside a multiple limiting cluster, include that
+entire cluster when taking this finite minimum. The result then implies
+simplicity for the requested first \(M\) eigenvalues.
+
+\Needspace{8\baselineskip}\section{19. An exact conformal coefficient
+calculation}\label{an-exact-conformal-coefficient-calculation}
+
+There is a useful independent coefficient check for every positive
+integer \(k\). Consider the exterior conformal map
+
+\[
+ z=\Psi_t(w)=w+t w^{-(2k-1)},\qquad |w|>1.
+ \tag{H14}
+\]
+
+For sufficiently small real \(t\), the boundary is a smooth simple
+perturbation of the circle and the map is univalent on its exterior. For
+example, the boundary is embedded and the derivative has no zeros for
+small \(t\); the argument principle, together with the simple pole at
+infinity, gives degree one on the unbounded complementary component. Its
+first normal displacement is \(\cos(2k\theta)\), though the boundary
+parametrization also has a tangential displacement. Its enclosed area is
+\(\pi(1-(2k-1)t^2)\) by the boundary area integral.
+
+For \(P=\operatorname{Re}z^k\) one has
+
+\[
+ \Psi_t(w)^k=w^k+k t w^{-k}
+           +\sum_{j=2}^k\binom{k}{j}t^j w^{-(2j-1)k}.
+ \tag{H15}
+\]
+
+In these conformal coordinates the zero-Neumann total field is
+\(\operatorname{Re}(w^k+w^{-k})\), since every growing mode is \(w^k\)
+and each boundary radial derivative must vanish. Therefore the
+pulled-back corrector is
+
+\[
+ W=\operatorname{Re}\left((kt-1)w^{-k}
+           +\sum_{j=2}^k\binom{k}{j}t^j w^{-(2j-1)k}\right).
+\]
+
+The exterior Dirichlet energy is the sum of \(\pi n\) times the squared
+decaying Fourier coefficients. Green\textquotesingle s identity on the
+hole gives the interior energy as \(\pi k\) minus that same weighted sum
+for the negative coefficients in (H15), namely the sum with \(kt\)
+rather than \(kt-1\) at the first mode. Adding the two energies cancels
+every higher mode and gives the exact formula
+
+\[
+ \mathcal C_t(\operatorname{Re}z^k,\operatorname{Re}z^k)
+       =2\pi k(1-kt).
+ \tag{H16}
+\]
+
+For \(P=\operatorname{Im}z^k\), the negative Laurent powers have the
+opposite sine sign on the boundary. The same calculation gives
+
+\[
+ \mathcal C_t(\operatorname{Im}z^k,\operatorname{Im}z^k)
+       =2\pi k(1+kt),\qquad
+ \mathcal C_t(\operatorname{Re}z^k,\operatorname{Im}z^k)=0.
+ \tag{H17}
+\]
+
+Scaling the hole to area \(\pi\) multiplies both coefficients by
+\((1-(2k-1)t^2)^{-k}\). Thus the two derivatives at zero are exactly
+\(-2\pi k^2\) and \(2\pi k^2\), agreeing with (H8). This is an exact
+harmonic calculation, not a numerical PDE test. This one-mode conformal
+family is used to check a fixed degree; the all-degree construction in
+(H1) remains the family used in the theorem.
+
+\Needspace{8\baselineskip}\section{20. Scope, source comparison and review
+status}\label{scope-source-comparison-and-review-status}
+
+The main assertion is one coherent result about a fixed shrinking-hole
+family. Its simple-eigenvalue formulas, multiple-eigenvalue reduction,
+shape derivative and splitting consequence are not counted as separate
+papers. The mixed nonnodal Neumann case is excluded from Theorem 11.1.
+Complete simplicity at one common positive hole size for the whole
+infinite spectrum is not proved. No parameter-uniform or
+geometry-uniform threshold is asserted.
+
+The source comparison uses the final June 2026 Robin article
+{[}FRS26{]}, the inspected arXiv versions of {[}FLO25, FLO26, ALM26{]},
+and the openly accessible older Robin-hole statements {[}Oza92, OR92{]}.
+The 2017 report {[}Dab17{]}, including its variational principle and all
+application statements, was also inspected. It is cited separately from
+{[}Dab22{]}, whose final text was unavailable. The full text of
+{[}AKLZ10, AKLZ12, LdC12, Dab22, Gad93{]} has not been completely
+compared in this investigation. Their abstracts or primary indexed
+excerpts establish relevant prior frameworks but do not suffice to
+exclude theorem-level overlap. No absence from a search is treated as
+proof of novelty.
+
+The originating assistant has checked the internal derivations,
+including the signs in the reduced matrix, the weighted remainders, the
+logarithmic normalization, and the countable-exception argument. This is
+not independent mathematical review. Markdown formula checks establish
+syntax only. The accompanying source audit records precisely which
+sources were read and which retrievals failed. The contribution is
+presented as one unreviewed preprint. The mathematical argument is a
+hand proof; the finite diagnostics are supplementary and are not proof
+dependencies. No guarantee of exhaustive priority or journal acceptance
+is made.
+
+\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
+
+{[}FRS26{]} V. Felli, P. Roychowdhury and G. Siclari, \emph{Quantitative
+spectral stability for the Robin Laplacian}, Mathematische Annalen 395,
+article 96 (2026).
+\href{https://doi.org/10.1007/s00208-026-03523-4}{Final article};
+\href{https://arxiv.org/abs/2504.05994v1}{arXiv:2504.05994v1}.
+
+{[}FLO25{]} V. Felli, L. Liverani and R. Ognibene, \emph{Quantitative
+spectral stability for the Neumann Laplacian in domains with small
+holes}, Journal of Functional Analysis 288 (2025), 110817.
+\href{https://doi.org/10.1016/j.jfa.2024.110817}{DOI};
+\href{https://arxiv.org/abs/2311.05999v3}{arXiv:2311.05999v3}.
+
+{[}FLO26{]} V. Felli, L. Liverani and R. Ognibene, \emph{On the
+splitting of Neumann eigenvalues in perforated domains},
+\href{https://arxiv.org/abs/2601.13129v1}{arXiv:2601.13129v1}, 2026.
+
+{[}ALM22{]} L. Abatangelo, C. Léna and P. Musolino, \emph{Ramification
+of multiple eigenvalues for the Dirichlet-Laplacian in perforated
+domains}, Journal of Functional Analysis 283 (2022), 109718.
+\href{https://doi.org/10.1016/j.jfa.2022.109718}{DOI}. See the
+coefficient correction {[}ALM26{]}.
+
+{[}ALM26{]} L. Abatangelo, C. Léna and P. Musolino, \emph{Corrigendum to
+``Ramification of multiple eigenvalues for the Dirichlet-Laplacian in
+perforated domains''},
+\href{https://arxiv.org/abs/2606.03996v1}{arXiv:2606.03996v1}, 2026.
+
+{[}AKLZ10{]} H. Ammari, H. Kang, M. Lim and H. Zribi, \emph{Layer
+potential techniques in spectral analysis. Part I: Complete asymptotic
+expansions for eigenvalues of the Laplacian in domains with small
+inclusions}, Transactions of the American Mathematical Society 362
+(2010), 2901-2922.
+\href{https://doi.org/10.1090/S0002-9947-10-04695-7}{DOI}.
+
+{[}AKLZ12{]} H. Ammari, H. Kang, M. Lim and H. Zribi, \emph{The
+generalized polarization tensors for resolved imaging. Part I: Shape
+reconstruction of a conductivity inclusion}, Mathematics of Computation
+81 (2012), 367-386.
+\href{https://people.math.inha.ac.kr/~hbkang/paper/AKLZ_PT_july20.pdf}{Author-hosted
+copy}.
+
+{[}LdC12{]} M. Lanza de Cristoforis, \emph{Simple Neumann eigenvalues
+for the Laplace operator in a domain with a small hole. A functional
+analytic approach}, Revista Matemática Complutense 25 (2012), 369-412.
+\href{https://doi.org/10.1007/s13163-011-0081-8}{DOI}.
+
+{[}Dab17{]} A. Dabrowski, \emph{A variational principle for the
+perturbation of repeated eigenvalues and applications}, ETH Seminar for
+Applied Mathematics Research Report 2017-37, July 2017.
+\href{https://www.sam.math.ethz.ch/sam_reports/reports_final/reports2017/2017-37.pdf}{Repository
+PDF}.
+
+{[}Dab22{]} A. D\k{a}browski, \emph{Asymptotic behavior of repeated
+eigenvalues of perturbed self-adjoint elliptic operators}, Asymptotic
+Analysis 126 (2022), 187-202.
+\href{https://doi.org/10.3233/ASY-201669}{DOI}.
+
+{[}Gad93{]} R. R. Gadyl\textquotesingle shin, \emph{Splitting a multiple
+eigenvalue in the boundary value problem for a membrane clamped on a
+small part of the boundary}, Siberian Mathematical Journal 34 (1993),
+433-450.
+\href{https://www.mathnet.ru/php/archive.phtml?jrnid=smj&option_lang=eng&paperid=1651&wshow=paper}{Primary
+record}.
+
+{[}Oza92{]} S. Ozawa, \emph{Singular variation of domain and spectra of
+the Laplacian with small Robin conditional boundary I}, Osaka Journal of
+Mathematics 29 (1992), 837-850.
+\href{https://ir.library.osaka-u.ac.jp/repo/ouka/all/7188/ojm29_04_10.pdf}{Repository
+PDF}.
+
+{[}OR92{]} S. Ozawa and S. Roppongi, \emph{Singular variation of domain
+and spectra of the Laplacian with small Robin conditional boundary II},
+Kodai Mathematical Journal 15 (1992), 403-429.
+\href{https://www.jstage.jst.go.jp/article/kodaimath1978/15/3/15_3_403/_pdf}{Journal
+PDF}.
+
+\end{document}
