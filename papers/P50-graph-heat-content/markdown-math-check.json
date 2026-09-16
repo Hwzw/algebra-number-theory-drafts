@@ -1,9 +1,9 @@
 {
-  "file": "continuation/papers/P50-graph-heat-content/manuscript.md",
+  "file": "manuscript_extensions/P50-graph-heat-content/publish-ready/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "31e9d1a9b23dda99f9008891f20774e11991c10cdb0c18879e0f2fa45c12ab0b",
+  "markdown_sha256": "f3eb8c54c95ca9c7311098e86527566d20915d8b256e740238b73ee4120f33aa",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
-  "expressions": 270,
+  "expressions": 444,
   "errors": [],
   "local_svg_preview_created": false,
   "local_visual_inspection": false,

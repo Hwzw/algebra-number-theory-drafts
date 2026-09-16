@@ -10,7 +10,7 @@
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \title{Heat-content maximization on compact metric graphs at every time}
 \author{Henry Zweiman}
-\date{September 15, 2026}
+\date{September 16, 2026}
 \begin{document}
 \maketitle
 \Needspace{8\baselineskip}\section{Abstract}\label{abstract}
@@ -28,7 +28,13 @@ metric-graph level-set inequality with the zero-order elliptic
 concentration comparison and implicit-time iteration of parabolic
 symmetrization. The rigidity proof uses the half-time energy identity
 and strict edgewise concavity of the heat evolution of the constant
-function. No arithmetic condition on the edge lengths is imposed.
+function. No arithmetic condition on the edge lengths is imposed. We
+also prove that, among graphs of fixed length carrying a finite
+nonnegative killing measure of fixed positive mass, the interval with
+all killing at one endpoint maximizes heat content at every time. This
+comparison allows singular measures and arbitrary nonnegative initial
+data, and equality at a single positive time characterizes the interval
+and its endpoint measure.
 
 \textbf{Keywords:} metric graph; heat content; rearrangement;
 concentration comparison; Faber-Krahn inequality; rigidity.
@@ -152,7 +158,11 @@ level-set Cauchy-Schwarz inequality nor implicit Euler iteration is
 asserted to be new. The contribution is the all-times graph comparison
 (5), its answer to {[}BT, Remark 2.9{]}, and the one-time rigidity
 theorem. The elementary consequences in Section 6 are included as
-applications of the same result.
+applications of the same result. Section 7 extends the concentration
+theorem to nonnegative killing measures of prescribed total mass, using
+a Robin interval comparator and a boundary inequality for cumulative
+resolvents. It includes delta-vertex conditions, nonnegative potentials
+and finite singular measures.
 
 \Needspace{8\baselineskip}\section{2. Graph forms and rearrangement
 preliminaries}\label{graph-forms-and-rearrangement-preliminaries}
@@ -665,7 +675,7 @@ inequalities followed by a limit. Such a limit could erase a positive
 defect. Instead, equality at the specified time produces the exact
 energy equality (37).
 
-\clearpage\section{6. Consequences and limits}\label{consequences-and-limits}
+\Needspace{8\baselineskip}\section{6. Consequences and limits}\label{consequences-and-limits}
 
 \Needspace{6\baselineskip}\textbf{Corollary 6.1 (convex temperature functionals).} Under the
 hypotheses of Theorem 1.2, for every convex nondecreasing function
@@ -732,14 +742,452 @@ the lifetime on the mixed interval. This is the direct probabilistic
 interpretation of the heat-content bound, using the Feynman-Kac
 representation in {[}BT, Proposition 3.2{]}.
 
-Our conclusions concern unweighted finite metric graphs with the stated
-Dirichlet and Kirchhoff conditions. They do not provide a heat-trace
-bound, pointwise heat-kernel domination, or a theorem for arbitrary
-vertex couplings. We prove no quantitative stability estimate. A useful
-next problem is to quantify the loss in (2) in terms of geometric
-distance from a path, with explicit control of the time scale and of
-edges whose lengths tend to zero. Such a statement requires additional
-work beyond the qualitative rigidity proved here.
+The conclusions of Sections 1-6 concern unweighted finite metric graphs
+with the stated Dirichlet and Kirchhoff conditions. Section 7 gives a
+separate theorem for nonnegative killing measures with continuous form
+domain. They do not provide a heat-trace bound, pointwise heat-kernel
+domination, or a theorem for arbitrary vertex couplings. We prove no
+quantitative stability estimate. A useful next problem is to quantify
+the loss in (2) in terms of geometric distance from a path, with
+explicit control of the time scale and of edges whose lengths tend to
+zero. Such a statement requires additional work beyond the qualitative
+rigidity proved here.
+
+\Needspace{8\baselineskip}\section{7. A fixed amount of nonnegative
+killing}\label{a-fixed-amount-of-nonnegative-killing}
+
+The comparison extends to a different boundary regime: there are no
+Dirichlet conditions, and killing is described by a finite nonnegative
+measure. Throughout this section, \(\Gamma\) is a finite compact
+connected metric graph of total length \(L\), and \(\nu\) is a
+nonnegative Radon measure on \(\Gamma\) with
+
+\[
+\nu(\Gamma)=\kappa>0.
+\tag{44}
+\]
+
+The measure \(\nu\) is distinct from the length measure \(dx\) used for
+heat content and rearrangement. In particular, \(\nu\) may charge
+vertices. On the space \(H^1(\Gamma)\) of continuous edgewise \(H^1\)
+functions, define
+
+\[
+\mathfrak a_\nu[u]=\int_\Gamma |u'|^2\,dx+\int_\Gamma |u|^2\,d\nu,
+\qquad S_\nu(t)=e^{-tA_\nu},
+\qquad Q_\nu(t)=\langle 1,S_\nu(t)1\rangle.
+\tag{45}
+\]
+
+Here \(A_\nu\) is the operator associated with the form. This includes
+nonnegative integrable potentials and nonnegative delta interactions,
+separately or together, as well as singular continuous killing measures.
+It does not include signed potentials or weighted continuity conditions.
+
+The comparison form on \(I_L=(0,L)\) is
+
+\[
+\mathfrak a_{I,\kappa}[v]=\int_0^L|v'|^2\,dx+\kappa|v(L)|^2,
+\qquad \mathcal D(\mathfrak a_{I,\kappa})=H^1(0,L).
+\tag{46}
+\]
+
+Its operator has \(v'(0)=0\) and \(v'(L)+\kappa v(L)=0\). Write
+\(S_{I,\kappa}\) and \(Q_{I,\kappa}\) for its semigroup and heat
+content.
+
+\Needspace{6\baselineskip}\textbf{Theorem 7.1 (fixed-total-killing comparison and rigidity).}
+Suppose \(\nu\) satisfies (44), \(0\le f\in L^2(\Gamma)\), and
+\(0\le g\in L^2(0,L)\) is nonincreasing with \(f\preccurlyeq g\). Then
+\(S_{I,\kappa}(t)g\) is nonnegative and nonincreasing, and
+
+\[
+\mathcal C_{S_\nu(t)f}(s)
+\le \int_0^s S_{I,\kappa}(t)g(r)\,dr
+\quad(0\le s\le L,\ t>0).
+\tag{47}
+\]
+
+In particular,
+
+\[
+Q_\nu(t)\le Q_{I,\kappa}(t)\qquad(t>0).
+\tag{48}
+\]
+
+Equality in (48) at one positive time holds if and only if \(\Gamma\) is
+a path of length \(L\) and \(\nu=\kappa\delta_p\) at one endpoint \(p\).
+Subdivision and reflection are immaterial. Thus the interval with all
+killing concentrated at one endpoint is the unique maximizer, as a
+metric space with killing measure, among the stated graphs and measures
+with fixed \(L\) and \(\kappa\).
+
+For killing supported on finitely many vertices, the time integral of
+(48) is the already known sharp torsion inequality of Özcan and Täufer
+{[}OT, Theorem 8.2 in the cited preprint{]}. Their proof already places
+all strength at a minimum and uses energy rearrangement. Our additional
+assertion is the all-times concentration comparison (47), its extension
+to arbitrary finite measures, and rigidity from equality at one time.
+The key extra ingredient is a boundary inequality for the cumulative
+resolvent, rather than an energy comparison alone. Generalized couplings
+are also discussed in {[}BM, Remark 4.11{]}; that discussion does not
+supply (47). The fixed-graph ground-state maximization problem of
+Kurasov and Serio {[}KS{]} concerns a different functional and
+optimization direction.
+
+\subsection{7.1. Form and interval
+preliminaries}\label{form-and-interval-preliminaries}
+
+The compact embedding \(H^1(\Gamma)\hookrightarrow C(\Gamma)\) makes the
+measure term in (45) continuous on \(H^1\). The form norm after adding
+\(\|u\|_2^2\) is equivalent to the \(H^1\) norm, so the form is closed
+and has compact resolvent. It is a Dirichlet form: real normal
+contractions decrease both terms. Its semigroup and resolvents are
+therefore positivity preserving and sub-Markovian.
+
+The spectrum is strictly positive. Indeed, choose \(x_0\in\Gamma\) with
+\(|u(x_0)|^2\le\kappa^{-1}\int|u|^2d\nu\), using continuity and the
+minimum of \(|u|\). A simple path of length at most \(L\) from \(x_0\)
+to \(x\) gives
+
+\[
+\|u\|_2^2\le 2L^2\int_\Gamma|u'|^2dx
++\frac{2L}{\kappa}\int_\Gamma|u|^2d\nu.
+\tag{49}
+\]
+
+In this section Lemma 2.1 has the following version without Dirichlet
+vertices: a continuous edgewise \(K\)-Lipschitz function has a
+\(K\)-Lipschitz decreasing rearrangement with \(u^*(L)=\min_\Gamma u\).
+Use a simple path from a maximum to a minimum in the proof of (11); only
+levels between these two values are needed.
+
+Fix \(h>0\) and let \(B_{h,\kappa}=(1+hA_{I,\kappa})^{-1}\). For
+nonnegative nonincreasing \(g\), the function \(v=B_{h,\kappa}g\) is
+nonnegative and nonincreasing. For smooth \(g\), its derivative
+satisfies (14), now with \(q(L)=-\kappa v(L)\le0\); the same
+positive-part argument applies. Monotone smooth approximation proves the
+assertion for \(L^2\) data. For \(V(s)=\int_0^s v\) and
+\(G(s)=\int_0^s g\) one has
+
+\[
+-hV''+V=G,\qquad V(0)=0,
+\qquad V(L)+h\kappa V'(L)=G(L).
+\tag{50}
+\]
+
+The differential equation follows by integration from the Neumann
+endpoint, and its value at \(L\), together with \(v'(L)=-\kappa v(L)\),
+gives the last condition. This is a Robin condition for \(V\) with an
+inhomogeneous boundary value determined by the full integral of the
+datum.
+
+We shall use the following elementary comparison. If \(W\in H^2(0,L)\)
+satisfies
+
+\[
+-hW''+W\le0,\qquad W(0)=0,
+\qquad W(L)+h\kappa W'(L)\le0,
+\tag{51}
+\]
+
+then integration against \(W_+\) gives
+
+\[
+h\int_0^L|(W_+)'|^2+\int_0^L W_+^2
++\frac{W_+(L)^2}{\kappa}\le0.
+\tag{52}
+\]
+
+Thus \(W\le0\). In particular, (50) preserves cumulative order of
+decreasing data: if \(G_1\le G_2\) on \([0,L]\), their solutions satisfy
+\(V_1\le V_2\), including when \(G_1(L)<G_2(L)\).
+
+\subsection{7.2. Resolvent comparison for finitely many killing
+points}\label{resolvent-comparison-for-finitely-many-killing-points}
+
+First suppose \(\nu=\sum_p\beta_p\delta_p\), with finitely many
+\(\beta_p\ge0\) and \(\sum_p\beta_p=\kappa\). Insert degree-two vertices
+at interior atoms. The operator acts as \(-u''\) on each open edge and
+satisfies
+
+\[
+\sum_{e\sim p}\partial_{\mathrm{out},e}u(p)=\beta_pu(p).
+\tag{53}
+\]
+
+Here each derivative points from the vertex into its incident edge; this
+convention makes the derivative at the right endpoint of an interval
+equal to \(-u'(L)\). Vertices without an atom have \(\beta_p=0\).
+
+Take a strictly positive nonconstant polynomial load on each closed
+edge, and put \(u=(1+hA_\nu)^{-1}f\). As in Lemma 3.2, \(u\) is analytic
+and nonconstant on each edge. It is strictly positive everywhere. An
+interior zero contradicts \(-hu''+u=f>0\). At a zero vertex all outgoing
+derivatives are nonnegative and sum to zero by (53); each is zero, and
+\(u''(p)=-f(p)/h<0\) into each edge again contradicts nonnegativity.
+Thus \(m:=\min u>0\).
+
+For a level \(c\in(m,\max u)\) outside the finite set of critical and
+vertex values, use \(E_c,\mu,N,a,b\) as in (19). There is at least one
+level preimage, by a path from a maximum to a minimum. Integrating over
+the superlevel set, with the vertex condition (53), gives
+
+\[
+h\left(a(c)+\sum_{u(p)>c}\beta_pu(p)\right)
++U(\mu(c))=\int_{E_c}f\le F(\mu(c)),
+\tag{54}
+\]
+
+where \(U=\mathcal C_u\) and \(F=\mathcal C_f\). In particular, the
+vertex term has a positive sign. Discard it and use \(ab\ge N^2\ge1\)
+and \(U''(\mu(c))=-1/b(c)\) to obtain
+
+\[
+-hU''+U\le F\quad\text{almost everywhere on }(0,L).
+\tag{55}
+\]
+
+The rearrangement is Lipschitz by Section 7.1, and only finitely many
+ranks are exceptional; thus this is also a weak inequality. The new
+boundary information follows by testing the full resolvent equation
+against the constant function:
+
+\[
+U(L)+h\sum_p\beta_pu(p)=F(L),
+\qquad U'(L)=m.
+\tag{56}
+\]
+
+Since every \(u(p)\ge m\), (56) implies
+
+\[
+U(0)=0,\qquad U(L)+h\kappa U'(L)\le F(L).
+\tag{57}
+\]
+
+Equations (55) and (57), compared to (50) with datum \(f^*\), give
+\(U\le V\) by (51)-(52). The polynomial density argument and the
+rearrangement contraction (10) pass this inequality to every nonnegative
+\(L^2\) load. The last assertion following (52) then gives
+
+\[
+\mathcal C_{(1+hA_\nu)^{-1}f}(s)
+\le\int_0^s B_{h,\kappa}g(r)\,dr
+\quad\text{whenever } f\preccurlyeq g
+\tag{58}
+\]
+
+for nonnegative \(f\) and nonnegative decreasing \(g\).
+
+\subsection{7.3. General measures and
+evolution}\label{general-measures-and-evolution}
+
+Choose finite nonnegative atomic measures \(\nu_j\) converging weakly to
+\(\nu\), all with mass \(\kappa\); finite partitions into sets of
+diameter tending to zero give such measures. On the fixed graph, the set
+of products \(uv\) with \(\|u\|_{H^1},\|v\|_{H^1}\le1\) is relatively
+compact in \(C(\Gamma)\). Weak convergence and the uniform bound
+\(\|\nu_j-\nu\|_{\mathrm{TV}}\le2\kappa\) therefore imply
+
+\[
+\epsilon_j:=\sup_{\|u\|_{H^1},\|v\|_{H^1}\le1}
+\left|\int_\Gamma uv\,d(\nu_j-\nu)\right|\longrightarrow0.
+\tag{59}
+\]
+
+For clarity, take a finite uniform \(\epsilon\)-net of the compact
+closure of that product set. The integrals tend to zero on the net, and
+the error on the whole set is at most \(2\kappa\epsilon\). Then let
+\(\epsilon\) tend to zero.
+
+The bilinear forms \(\langle u,v\rangle+h\mathfrak a_{\nu_j}(u,v)\) are
+uniformly coercive on \(H^1\), with coercivity constant at least
+\(\min(1,h)\) for the usual norm. Subtracting their weak resolvent
+equations, testing with the difference, and applying (59) gives
+
+\[
+(1+hA_{\nu_j})^{-1}f\longrightarrow(1+hA_\nu)^{-1}f
+\quad\text{in }H^1(\Gamma)
+\tag{60}
+\]
+
+for every \(f\in L^2(\Gamma)\). For example, if \(u\) is the limiting
+resolvent solution, the norm of the difference is bounded by
+\(h\epsilon_j\|u\|_{H^1}/\min(1,h)\). Equation (9) now passes (58) to
+\(\nu\).
+
+Iterate this resolvent comparison with \(h=t/n\). All interval iterates
+stay decreasing and preserve cumulative order by (50)-(52). Spectral
+dominated convergence, exactly as in (28), gives (47). Taking \(f=g=1\)
+gives (48). This proves the inequality part of Theorem 7.1 without any
+regular-level assumption for the heat flow or for a singular measure.
+
+\subsection{7.4. Equality for an arbitrary killing
+measure}\label{equality-for-an-arbitrary-killing-measure}
+
+We give the additional details needed because strict edgewise concavity
+is generally false in the presence of a distributed potential.
+
+First, every nonnegative \(u\in H^1(\Gamma)\) satisfies the classical
+rearrangement inequality
+
+\[
+u^*\in H^1(0,L),\qquad
+\int_\Gamma|u'|^2\,dx\ge\int_0^L|(u^*)'|^2\,ds.
+\tag{61}
+\]
+
+One direct extension of the proof in Section 5 is to approximate \(u\)
+in \(H^1\) by nonnegative continuous piecewise linear functions on the
+edges. At every nonexceptional value their energy coarea formulas and
+\(ab\ge N^2\ge1\) prove (61); their finitely many constant pieces
+contribute zero energy on both sides. Rearrangement is continuous in
+\(L^2\) by (10). The rearranged approximants are bounded in \(H^1\), so
+weak compactness and lower semicontinuity pass the estimate to \(u\).
+Continuity and connectedness also give \(u^*(L)=\min u\) whenever the
+rearrangement has its continuous representative. Hence
+
+\[
+\mathfrak a_\nu[u]\ge
+\int_0^L|(u^*)'|^2\,ds+\kappa(\min u)^2
+=\mathfrak a_{I,\kappa}[u^*].
+\tag{62}
+\]
+
+Suppose now that equality in (48) holds at \(T>0\). Set
+\(u=S_\nu(T/2)1\) and \(z=S_{I,\kappa}(T/2)1\). The half-time identities
+(35), with the corresponding forms, and Lemma 5.2 give \(u^*=z\).
+Differentiating the nonnegative heat-content deficit at its zero gives
+
+\[
+\mathfrak a_\nu[u]=\mathfrak a_{I,\kappa}[z].
+\tag{63}
+\]
+
+The interval profile \(z\) is strictly positive on \([0,L]\) and
+strictly decreasing on \((0,L)\). To see strictness, the
+maximum-principle argument in Lemma 5.1 applies to the interval with its
+finite Robin endpoint: a zero there would have zero outward derivative
+and contradict the boundary point lemma. The semigroup is positivity
+improving, is sub-Markovian, and has strictly positive spectrum by (49).
+Thus \(A_{I,\kappa}S_{I,\kappa}(t)1>0\) on the open interval as in
+(31)-(32). Consequently \(z''<0\) and \(z'(0)=0\), so \(z'(s)<0\) for
+\(s>0\). In particular, its distribution has no atoms, including at its
+endpoint values.
+
+Equations (62)-(63) force equality separately in the gradient and
+killing terms:
+
+\[
+\int_\Gamma|u'|^2=\int_0^L|z'|^2,
+\qquad
+\int_\Gamma\bigl(u^2-m^2\bigr)\,d\nu=0,
+\qquad m=\min u=z(L)>0.
+\tag{64}
+\]
+
+Thus \(\nu\) is supported on the minimum set of \(u\). We next show that
+this set is a single endpoint of a path.
+
+Spectral smoothing gives \(u\in\mathcal D(A_\nu)\subset H^1(\Gamma)\).
+On each open edge the weak equation is
+
+\[
+u''=u\nu-(A_\nu u)\,dx
+\tag{65}
+\]
+
+as distributions, with the measure restricted to that edge. The right
+side is a finite signed measure. Thus \(u'\) has a representative of
+bounded variation and is bounded on the edge; \(u\) is edgewise
+Lipschitz. This assertion does not assert a sign for \(u''\).
+
+Put \(M=\max u=z(0)\). Since \(u^*=z\), its distribution
+\(\mu(c)=|\{u>c\}|\) equals \(z^{-1}(c)\) for \(m<c<M\), and is
+continuously differentiable there with \(-\mu'(c)>0\). The
+one-dimensional area formula now gives, at almost every such value,
+finite level multiplicity \(N(c)\) and
+
+\[
+b(c)=\sum_{u=c}|u'|^{-1}=-\mu'(c),
+\qquad
+\int_\Gamma|u'|^2=\int_m^M a(c)\,dc,
+\qquad
+\int_0^L|z'|^2=\int_m^M\frac{dc}{b(c)}.
+\tag{66}
+\]
+
+Here we may exclude vertex values, images of nondifferentiability points
+and images of points where \(u'=0\). These images have measure zero:
+Lipschitz maps preserve null sets, and the area formula makes the image
+of the zero-derivative set null. Moreover that set itself has length
+zero in this case. Its pushforward is supported on a null set of levels,
+whereas the distribution of \(u\), being that of \(z\), is absolutely
+continuous on \((m,M)\) and gives no mass to the endpoint levels. Thus
+the reciprocal-derivative formula loses no critical-set mass. Finite
+multiplicity almost everywhere follows from
+\(\int N(c)dc=\int_\Gamma|u'|dx<\infty\). These facts justify (66)
+without a finite-critical-points assertion.
+
+The gradient equality in (64) and \(ab\ge N^2\) yield
+
+\[
+0=\int_m^M\left(a(c)-\frac1{b(c)}\right)dc
+\ge\int_m^M\frac{N(c)^2-1}{b(c)}\,dc\ge0.
+\tag{67}
+\]
+
+Hence \(N(c)=1\) for almost every \(c\in(m,M)\). No edge subinterval is
+constant, because that would create an atom in the distribution of
+\(u\). At a vertex of degree at least three choose disjoint small
+neighborhoods of its incidences. On each neighborhood \(u\) takes a
+value different from the vertex value. By continuity, each incidence
+therefore covers an open interval of values either above or below the
+vertex value. Two of the three incidences cover overlapping intervals on
+the same side. This produces at least two distinct preimages on an open
+interval of levels, contrary to (67). All vertex degrees are at most
+two.
+
+A finite connected graph with these degrees is a path or a cycle. On a
+cycle, two arcs from a minimum to a maximum give at least two preimages
+of every intermediate value, so a cycle is impossible. On a path, a
+continuous function with no constant subinterval and almost everywhere
+single level multiplicity must be strictly monotone: a failure of
+monotonicity produces a strict rise followed by a fall, or a strict fall
+followed by a rise, giving two preimages on an open interval of values.
+Its minimum is therefore attained at one endpoint only. The support
+conclusion from (64) gives \(\nu=\kappa\delta_p\) there. Conversely,
+this measure on the path is the comparison problem, proving equality.
+Theorem 7.1 follows. \(\square\)
+
+\Needspace{6\baselineskip}\textbf{Corollary 7.2 (integrated comparison).} Under (44),
+
+\[
+\int_0^\infty Q_\nu(t)\,dt
+\le\frac{L^3}{3}+\frac{L^2}{\kappa},
+\tag{68}
+\]
+
+with equality exactly in the case of Theorem 7.1. More generally, the
+positive-time-weight and convex-temperature conclusions of Section 6
+hold with the Robin comparator.
+
+\textbf{Proof.} The positive spectral gap makes the unweighted time
+integral finite. The interval torsion function is
+\(v(x)=(L^2-x^2)/2+L/\kappa\), whose integral is the right side of (68).
+Integrate (48) and use its strictness; the other conclusions follow as
+in Section 6. \(\square\)
+
+For atomic vertex measures, (68) and its equality case are precisely
+prior work {[}OT, Theorem 8.2{]}, not additional new results. Theorem
+7.1 gives their all-times strengthening and allows general measures. The
+case \(\kappa=0\) is excluded: every graph then retains the constant
+temperature and has heat content \(L\), so rigidity fails. Quantitative
+stability, arbitrary vertex couplings, and a sharp Kohler-Jobin
+inequality relating torsion and the first eigenvalue remain outside the
+result. In particular, the two separate extremal comparisons do not
+settle the product problem discussed in {[}OT, Section 8.3{]}.
 
 \raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 
@@ -773,6 +1221,21 @@ Advanced Nonlinear Studies \textbf{5} (2005), no. 1, 87-131.
 \href{https://verso.mat.uam.es/~juanluis.vazquez/SymmJANS04.pdf}{Author
 manuscript, November 25, 2004}, Sections 5.2 and 7, especially Theorems
 5.2 and 7.3.
+
+\textbf{{[}OT{]}} S. Özcan and M. Täufer, \emph{Torsional Rigidity on
+Metric Graphs with Delta-Vertex Conditions}, arXiv:2410.18545v1 (2024).
+\href{https://arxiv.org/abs/2410.18545}{Preprint and version history},
+especially Theorem 8.2 and Section 8.3. Final publication: Journal of
+Mathematical Physics \textbf{67} (2026), 061508,
+\href{https://doi.org/10.1063/5.0301900}{DOI: 10.1063/5.0301900}. The
+theorem numbering used here is that of the inspected preprint; the final
+body was not accessed.
+
+\textbf{{[}KS{]}} P. Kurasov and A. Serio, \emph{Optimal Potentials for
+Quantum Graphs}, Annales Henri Poincaré \textbf{20} (2019), 1517-1542.
+\href{https://doi.org/10.1007/s00023-019-00783-6}{DOI:
+10.1007/s00023-019-00783-6}. Cited for the distinct optimization problem
+described in its final abstract.
 
 \Needspace{8\baselineskip}\section{Research transparency}\label{research-transparency}
 

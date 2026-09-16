@@ -16,13 +16,12 @@ def executable(name):
     raise SystemExit(f'Install {name} and add it to PATH.')
 s=(HERE/'manuscript.md').read_text()
 title,s=s.split('\n',1)
-s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 15, 2026\n','\n',1)
+s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 16, 2026\n','\n',1)
 s=re.sub(r'^(#{2,}) ',lambda m:m.group(1)[1:]+' ',s,flags=re.M)
 body=subprocess.check_output([executable('pandoc'),'-f','markdown+tex_math_dollars-smart','-t','latex','--top-level-division=section'],input=s,text=True)
 body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}')
 body=body.replace(r'\section{References}',r'\raggedright\section{References}')
 body=body.replace(r'\section{',r'\Needspace{8\baselineskip}\section{')
-body=body.replace(r'\Needspace{8\baselineskip}\section{6. Consequences and limits}',r'\clearpage\section{6. Consequences and limits}')
 body=re.sub(r'(?=\\textbf\{(?:Theorem|Lemma|Proposition|Corollary) )',lambda _:r'\Needspace{6\baselineskip}',body)
 preamble=r'''\documentclass[11pt]{article}
 \usepackage[margin=0.82in]{geometry}
@@ -36,7 +35,7 @@ preamble=r'''\documentclass[11pt]{article}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \title{Heat-content maximization on compact metric graphs at every time}
 \author{Henry Zweiman}
-\date{September 15, 2026}
+\date{September 16, 2026}
 \begin{document}
 \maketitle
 '''

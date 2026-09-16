@@ -55,5 +55,40 @@
       "bytes": 419951,
       "sha256": "ec269b251e1d9961edf8c9c3c14f3b8b6fbadf801cd8e88c6700a5e27e2f5180"
     }
-  ]
+  ],
+  "extension": {
+    "date": "2026-09-16",
+    "downloads": [
+      {
+        "file": "ozcan-taufer-arxiv.html",
+        "url": "https://arxiv.org/html/2410.18545v1",
+        "bytes": 658549,
+        "sha256": "4e1f1f9d0aaed3520ca3c014a9c4f6651d1ac2889c8f24b2484c895cd215e2c1",
+        "status": "saved"
+      },
+      {
+        "file": "ozcan-taufer-crossref.json",
+        "url": "https://api.crossref.org/works/10.1063/5.0301900",
+        "bytes": 13322,
+        "sha256": "ad3a704cdcfb55e5921c765941e2448f9c4b8d7dd25a2be8916f1f528a3db421",
+        "status": "saved"
+      },
+      {
+        "file": "bifulco-mugnolo-final.html",
+        "url": "https://link.springer.com/article/10.1007/s00023-026-01755-3",
+        "bytes": 713353,
+        "sha256": "fa8d7e62c7551d57264a0ac285186598464b1370b1b23b57da92d9f5ebe5ddab",
+        "status": "saved"
+      },
+      {
+        "file": "kurasov-serio-final.html",
+        "url": "https://link.springer.com/article/10.1007/s00023-019-00783-6",
+        "bytes": 276996,
+        "sha256": "6d8c5e0f3c00883c69d7dc3eb34e0bdbb86c9fa9a1707b46bafdbc302822096a",
+        "status": "saved"
+      }
+    ],
+    "body_read_scope": "arXiv sections 2, 8.2, 8.3; BM final Remark 4.11; KS final abstract only via web tool",
+    "ot_final_body_read": false
+  }
 }

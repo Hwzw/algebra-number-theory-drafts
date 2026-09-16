@@ -30,4 +30,22 @@ No matching resolution was found in the inspected primary literature. This does 
 
 ## Distinctness and scope
 
-This graph parabolic theorem is separate from P49's planar annular physical-torsion stability. General data, convex functionals, time weights and lifetime interpretation remain within this one paper. No separate count is assigned to them. Weighted graphs, general couplings, quantitative stability and heat-trace comparison are outside the claims.
+This graph parabolic theorem is separate from P49's planar annular physical-torsion stability. General data, convex functionals, time weights and lifetime interpretation remain within this one paper. No separate count is assigned to them. Weighted graphs, arbitrary couplings, quantitative stability and heat-trace comparison are outside the claims. The nonnegative continuous-form-domain killing measures treated in revision 1.1 form a specific additional class, described below.
+
+## Revision 1.1: nonnegative killing measures (September 16, 2026)
+
+Theorem 7.1 adds all-times heat-content and concentration maximization with fixed graph length and fixed positive mass of a finite nonnegative killing measure. It includes continuous potentials, point interactions and singular continuous measures. Equality at a single time characterizes a path with all mass at one endpoint. This is a natural extension of the existing paper, not a separate publication count or a newly certified extraordinary-conjecture solution.
+
+The new proof feature is the cumulative boundary inequality U(L) + h kappa U'(L) <= F(L). Together with the zero-order interior inequality, it gives resolvent concentration order and survives iteration. The equality proof treats measure-valued second derivatives and excludes critical-set mass using equimeasurability with the strictly monotone Robin interval profile. No independent mathematical review was obtained.
+
+### Additional source comparison
+
+- **Özcan-Täufer:** arXiv:2410.18545v1, Sections 2, 8.2 and 8.3 read. Theorem 8.2 already gives the sharp atomic torsion comparison and equality case. Its minimum-concentration and rearrangement ideas are credited. Final metadata identify Journal of Mathematical Physics 67 (2026), 061508, DOI 10.1063/5.0301900. The publisher landing information dates publication June 24, 2026. The attempted final PDF route returned only an abstract and references; the final theorem body and numbering were not read. The manuscript therefore identifies the inspected preprint explicitly. Section 8.3's Kohler-Jobin problem is left open here.
+- **Bifulco-Mugnolo:** final Remark 4.11 and equations (4.37) onward read in addition to the original comparison. These discuss positive semigroups for generalized delta/Robin couplings and possible path formulas. No fixed-total-killing comparison was found in that passage.
+- **Kurasov-Serio:** final abstract and publication metadata checked for DOI 10.1007/s00023-019-00783-6. The subject is maximizing ground-state energy on a fixed graph under integral constraints. Only this description is relied upon; the full theorem proofs were not read.
+
+Targeted searches combined heat content, Robin, delta, metric/quantum graphs, killing measures, rearrangement and total strength. They did not locate the same all-times fixed-mass theorem. These are bounded discovery searches, not exhaustive proof of novelty. The local extension notes retain source hashes and exact access limitations.
+
+### Decision and frontier
+
+Publish as revision 1.1 of the existing AI-assisted preprint, subject to final artifact and public-byte verification. The displayed proof supports the theorem internally. The extension improves the breadth of P50, but does not establish the user's extraordinary-significance threshold. The broader goal remains active. A sharp joint torsion/eigenvalue inequality for Robin or delta killing and a quantitative heat-content stability estimate remain open directions.

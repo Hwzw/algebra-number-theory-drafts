@@ -6,7 +6,7 @@
     "title": "Faber-Krahn inequality for the heat content on quantum graphs via random walk expansion",
     "authors": [
       "Patrizio Bifulco",
-      "Matthias T\u00e4ufer"
+      "Matthias Täufer"
     ],
     "arxiv": "2501.09693v1",
     "latest_version_observed": "v1, 2025-01-16; history refreshed September 15, 2026",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Symmetrization and Mass Comparison for Degenerate Nonlinear Parabolic and Related Elliptic Equations",
-      "author": "Juan Luis V\u00e1zquez",
+      "author": "Juan Luis Vázquez",
       "doi": "10.1515/ans-2005-0107",
       "read_scope": "Author manuscript dated 2004-11-25: introduction, Section 5.2 Theorem 5.2 and proof, Section 7 Theorems 7.2-7.3 and iteration proof, selected extensions and references",
       "final_body_read": false,
@@ -101,5 +101,48 @@
   ],
   "latest_proof_note": "papers/P50-graph-heat-content/manuscript.md",
   "screen_note": "../../notes/0195-q58-heat-content-screen.md",
-  "independent_human_review": false
+  "independent_human_review": false,
+  "revision": "1.1.0",
+  "revision_date": "2026-09-16",
+  "extension": {
+    "theorem": "7.1",
+    "claim": "Fixed-total-nonnegative-killing all-times concentration, heat-content maximization and one-time rigidity",
+    "new_comparisons": [
+      {
+        "authors": [
+          "Sedef Özcan",
+          "Matthias Täufer"
+        ],
+        "arxiv": "2410.18545v1",
+        "final_doi": "10.1063/5.0301900",
+        "final_published": "2026-06-24",
+        "final_body_read": false,
+        "read_scope": "Preprint Section 2, Section 8.2 Theorem 8.2 and proof, Section 8.3; final metadata, abstract and references only",
+        "difference": "Atomic torsion inequality and equality already proved; credited. No all-times claim found in inspected preprint sections. Final theorem body inaccessible.",
+        "access_limit": "DOI route errored; Crossref PDF route redirected to publisher minimal page with abstract and references."
+      },
+      {
+        "authors": [
+          "Patrizio Bifulco",
+          "Delio Mugnolo"
+        ],
+        "doi": "10.1007/s00023-026-01755-3",
+        "read_scope": "Additional final Remark 4.11, equations (4.37) onward",
+        "difference": "Positive generalized delta/Robin couplings; no fixed-total-killing comparison in inspected passage."
+      },
+      {
+        "authors": [
+          "Pavel Kurasov",
+          "Andrea Serio"
+        ],
+        "doi": "10.1007/s00023-019-00783-6",
+        "read_scope": "Final abstract and metadata only",
+        "full_body_read": false,
+        "difference": "Fixed-graph ground-state maximization with integral constraints; comparison of problem scope only."
+      }
+    ],
+    "proof_review": "Originating assistant only",
+    "priority_certified": false,
+    "extraordinary_goal_complete": false
+  }
 }

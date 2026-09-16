@@ -1,12 +1,14 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "pdf_pages": 10,
-  "pdf_text_characters": 24383,
+  "revision": "1.1.0",
+  "pdf_pages": 15,
+  "pdf_text_characters": 39494,
   "replacement_characters": 0,
-  "equation_tags": 43,
+  "equation_tags": 68,
   "equation_tags_sequential": true,
-  "mathjax_expressions": 270,
+  "all_tags_found_in_pdf": true,
+  "mathjax_expressions": 444,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -20,15 +22,20 @@
       7,
       8,
       9,
-      10
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
     ],
-    "resolution_dpi": 100,
-    "outcome": "All ten final pages inspected after final layout edit. No clipping, overlap or missing glyphs. Section 6 starts on page 9; references and transparency statement are together on page 10."
+    "resolution_dpi": 108,
+    "outcome": "All 15 exact final pages inspected after final layout edit. No clipping, overlap or missing glyphs. Unnecessary forced page breaks removed; references and transparency fit on page 15."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "31e9d1a9b23dda99f9008891f20774e11991c10cdb0c18879e0f2fa45c12ab0b",
-    "manuscript.tex": "14e176475b022cb8c95f2996df23e053e1ebccfd0e5755178b670e46ac2b4535",
-    "manuscript.pdf": "53ad90e70e15553e7e26b2351ffd5881e545a514c82c4290a54ed793c61c1512"
+    "manuscript.md": "f3eb8c54c95ca9c7311098e86527566d20915d8b256e740238b73ee4120f33aa",
+    "manuscript.tex": "f66bf39744b22367c59984f5fef40228c64005296b3b30d238f95d91ae60ae9f",
+    "manuscript.pdf": "79f5fcd7de06db0fc3a70d573f19d71472ab4110e30c04b9d34467fabc84da64"
   }
 }

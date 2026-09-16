@@ -5,7 +5,7 @@ title: "Heat-content maximization on compact metric graphs at every time"
 authors:
   - family-names: Zweiman
     given-names: Henry
-date-released: 2026-09-15
-version: 1.0.0
+date-released: 2026-09-16
+version: 1.1.0
 url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P50-graph-heat-content"
-abstract: "All-times heat-content maximization by the mixed interval, with general-data concentration comparison and one-time rigidity. AI-assisted unreviewed preprint."
+abstract: "All-times heat-content maximization by the mixed interval, with general-data concentration comparison and one-time rigidity. Extended to finite nonnegative killing measures of fixed mass, with the endpoint Robin interval as unique maximizer. AI-assisted unreviewed preprint."

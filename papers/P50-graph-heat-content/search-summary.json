@@ -50,5 +50,28 @@
     "https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/Ilaria/Abstracts/Ankuendigung_Mugnolo.pdf",
     "https://www.math.uni-augsburg.de/htdocs/VK/docs/2026/01/14_Mi_03_01.html"
   ],
-  "outcome": "No matching resolution identified in inspected primary sources and successful discovery results. This is a bounded search, with explicit failed follow-up requests; not absolute priority certification."
+  "outcome": "No matching resolution identified in inspected primary sources and successful discovery results. This is a bounded search, with explicit failed follow-up requests; not absolute priority certification.",
+  "extension_search": {
+    "date": "2026-09-16",
+    "queries": [
+      "heat content killing measure optimization",
+      "heat content quantum graphs Robin",
+      "heat content metric graphs potential",
+      "killing measure rearrangement",
+      "graph heat content total strength",
+      "Optimal Potentials for Quantum Graphs Kurasov Serio"
+    ],
+    "outcome": "No matching all-times fixed-mass result found in bounded searches and inspected primary passages. Absence of hits does not certify originality.",
+    "new_primary_urls": [
+      "https://arxiv.org/html/2410.18545v1",
+      "https://api.crossref.org/works/10.1063/5.0301900",
+      "https://aipp.silverchair-cdn.com/article-minimal/3396344",
+      "https://link.springer.com/article/10.1007/s00023-026-01755-3",
+      "https://link.springer.com/article/10.1007/s00023-019-00783-6"
+    ],
+    "unread_final_comparisons": [
+      "Ozcan-Taufer final theorem body",
+      "Kurasov-Serio theorem proofs"
+    ]
+  }
 }
