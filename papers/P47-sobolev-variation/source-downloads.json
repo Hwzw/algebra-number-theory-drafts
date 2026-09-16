@@ -203,5 +203,13 @@
     "bytes": 473958,
     "sha256": "b2526b41490ee2acedbddb253b9dd7bd8fcbf97803ca47e616fec08f8709caaa",
     "note": "Research-workspace HTML; current Conjecture 4.14, Remark 4.15 and height formulations refreshed; not redistributed"
+  },
+  {
+    "file": "uniform-equality-audit/survey-final.html",
+    "url": "https://link.springer.com/article/10.1134/S0081543825601509",
+    "date": "2026-09-16",
+    "bytes": 473992,
+    "sha256": "291e9ffce81c88c0b2aca271d5772a989657cc6bde41c582b38603c9a6bd770d",
+    "note": "Research-workspace HTML; Conjecture 4.14 and credited height Theorems 4.5 and 4.12 refreshed; not redistributed"
   }
 ]

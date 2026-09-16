@@ -45,10 +45,12 @@ their quadratic vertices. A positive action is strictly concave in the
 vertex depths and strictly convex after optimization in the mean
 parameter. Comparing its values for different nodal counts constructs a
 better competitor whenever there are at least four intervals; the
-earlier two-switch exclusion completes the proof. The constant identity
-also holds at \(p=\infty\) by passage to the limit. The full all-order
-variation conjecture and the uniform-endpoint variation equality
-classification remain open.
+earlier two-switch exclusion completes the proof. At the uniform
+endpoint, a duality and regularity argument extends the positive action
+and gives the complete equality classification with an explicit
+extremizer. Thus the order-three conjecture holds at every exponent,
+with the measure interpretation at one. The full all-order variation
+conjecture remains open for the remaining cases in orders at least four.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -61,7 +63,7 @@ u^{(j)}(0)=u^{(j)}(1)=0,\qquad 0\le j<n.
 \tag{1}
 \]
 
-Let \(C_{n,p}\) and \(V_{n,p}\) denote the sharp constants in
+\Needspace{6\baselineskip}Let \(C_{n,p}\) and \(V_{n,p}\) denote the sharp constants in
 
 \[
 \|u\|_\infty\le C_{n,p}\|u^{(n)}\|_p,
@@ -3355,32 +3357,344 @@ For any clamped \(u\) with \(\|u'''\|_\infty\le1\), Theorem 17 gives
 proves the upper bound in (16.25); the reverse bound follows from
 variation being at least twice the height. \(\square\)
 
-The corollary proves the endpoint constant identity. It does not
-classify every variation extremizer at \(p=\infty\). The measure
-endpoint and its equality classification were already settled by Theorem
-9. For derivative orders at least four, the remaining finite-exponent
-variation problem is still open.
+The corollary proves the endpoint constant identity. Section 17
+establishes the complete variation equality classification at this
+endpoint in order three. The measure endpoint and its equality
+classification were already settled by Theorem 9. For derivative orders
+at least four, the remaining finite-exponent variation problem is still
+open.
 
-\Needspace{8\baselineskip}\section{17. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{17. Complete equality at the uniform
+endpoint}\label{complete-equality-at-the-uniform-endpoint}
 
-The full all-order form of {[}NS, Conjecture 4.14{]} remains unresolved.
-Theorem 17 settles derivative order three at every finite exponent,
-including coincidence and midpoint symmetry of all extremizers. Its
-corollary proves the constant identity at the uniform endpoint, where
-the complete variation equality classification remains open. Theorem 9
-gives the complete measure endpoint in every order, and Theorems 5 and
-11 give exponent intervals around two and immediately above one. Their
-widths and overlap are not established. Theorem 10 proves height
-symmetry and uniqueness at every finite exponent.
+\Needspace{6\baselineskip}\textbf{Theorem 18 (uniform endpoint in order three).} One has
+
+\[
+V_{3,\infty}=2C_{3,\infty}=\frac{2-\sqrt2}{48}.
+\tag{17.1}
+\]
+
+Every nonzero variation extremizer is a scalar multiple of the following
+function. Put \(a=(1-1/\sqrt2)/2\), let \(f_*\) take the successive
+values \(+1,-1,+1,-1\) on the intervals cut out by \(0,a,1/2,1-a,1\),
+and define
+
+\[
+u_*(x)=\frac12\int_0^x(x-t)^2f_*(t)\,dt.
+\tag{17.2}
+\]
+
+The height and variation extremizers coincide and are symmetric about
+the midpoint. The height constant is credited prior work {[}NS, Theorems
+4.5 and 4.12{]}; the new step here is the classification of every
+variation maximizer. Together with Theorems 9 and 17, this completes
+{[}NS, Conjecture 4.14{]} in derivative order three for all exponents,
+with the measure interpretation at \(p=1\).
+
+\subsection{17.1. Duality for an arbitrary endpoint
+maximizer}\label{duality-for-an-arbitrary-endpoint-maximizer}
+
+The unit ball of clamped \(W^{3,\infty}\) is compact through the second
+derivative and weak-star closed in the third derivative, so the
+variation supremum is attained. Let \(u\) be any maximizer with
+\(\|u'''\|_\infty=1\), and set \(v=u'\), \(f=u'''\), and
+\(g=\operatorname{sign}v\), with sign zero defined to be zero. The third
+derivative annihilates every quadratic polynomial.
+
+The quotient-space Hahn-Banach formula identifies the norm of the linear
+load \(g\) on this annihilator with the distance of its integrated load
+\(H_g\) from the quadratics in \(L^1\). A best quadratic exists by
+finite-dimensional coercivity. For any such best quadratic \(P\), put
+\(R=H_g-P\). Since \(g\) supports this variation maximizer, equality in
+the dual pairing gives
+
+\[
+J:=\int_0^1|R|=\int_0^1|v|>0,
+\qquad f=\operatorname{sign}R\quad\hbox{a.e. on }\{R\ne0\},
+\qquad R''=g-c
+\tag{17.3}
+\]
+
+for a real constant \(c\). On the zero set of \(R\), only \(|f|\le1\) is
+initially known. No finite-switch or bang-bang assumption has been made.
+The pairing equality follows explicitly from
+\(\int Rf=\int H_gf=\int gv\) and the dual norm formula.
+
+\subsection{17.2. The mean parameter is strictly between minus and plus
+one}\label{the-mean-parameter-is-strictly-between-minus-and-plus-one}
+
+Suppose \(c\ge1\). Then \(R\) is concave. If it is positive somewhere,
+its positive set is an interval, and its zeros outside that set have
+measure zero. On the negative pieces reaching the outer endpoints,
+\(v''=-1\), hence \(v=-t^2/2\) on the left piece and \(v=-(1-t)^2/2\) on
+the right piece. On the positive interval, \(v''=1\) and \(v\) is convex
+with nonpositive endpoint values. Thus \(v\le0\) everywhere,
+contradicting its zero mean and nontriviality. This argument also covers
+a positive interval touching an outer endpoint, where the corresponding
+endpoint value of \(v\) is zero. A concave function positive somewhere
+cannot have a separate zero interval, since its derivative is
+nonincreasing.
+
+If instead \(R\le0\) everywhere, its zero set is an interval, a point,
+or empty. If that set has measure zero, \(v''=-1\) almost everywhere,
+contradicting the two zero endpoint values of \(v'\). Otherwise write
+the zero interval as \([\alpha,\beta]\). There \(R''=0\), so \(g=c\)
+almost everywhere. Necessarily \(c=1\) and \(v>0\) almost everywhere on
+its interior. But continuity at the left end gives
+\(v(\alpha)=-\alpha^2/2\), forcing \(\alpha=0\); the right end similarly
+forces \(\beta=1\). This would make \(R\) identically zero,
+contradicting \(J>0\). The case \(c\le-1\) follows by changing the signs
+of \(u,R,c\). Therefore
+
+\[
+-1<c<1.
+\tag{17.4}
+\]
+
+\subsection{17.3. The conserved quantity proves endpoint
+regularity}\label{the-conserved-quantity-proves-endpoint-regularity}
+
+The absolutely continuous function
+
+\[
+\mathcal H=R'v'-|v|+cv-|R|
+\tag{17.5}
+\]
+
+has derivative \(R'(f-\operatorname{sign}R)=0\) almost everywhere. On
+the zero set of \(R\), this uses the fact that an absolutely continuous
+function has derivative zero almost everywhere on a level set. Thus the
+argument does not differentiate the discontinuous sign function and does
+not assume that the zero set is finite.
+
+The endpoint traces and an integration by parts give
+
+\[
+\mathcal H=-A,\qquad A=|R(0)|=|R(1)|=3J>0.
+\tag{17.6}
+\]
+
+Indeed \(\int R'v'=-J\), \(\int(|v|-cv)=J\), and \(\int|R|=J\).
+
+At an interior maximum of \(|R|\), \(R'=0\), so (17.4)-(17.6) show
+\(|R|\le A\). Thus \(|R|\le A\) everywhere. If an interior zero of \(v\)
+also had \(v'=0\), (17.5) would give \(|R|=A\), and hence \(R'=0\)
+there. In a small neighborhood, \(R\) has one nonzero sign
+\(\varepsilon\), so \(v''=\varepsilon\) and
+\(v(t)=\varepsilon(t-t_0)^2/2\). Then \(R''=\varepsilon-c\) and
+
+\[
+R(t)=\varepsilon A+\frac{\varepsilon-c}{2}(t-t_0)^2,
+\]
+
+contradicting \(|R|\le A\). Every interior zero of \(v\) is therefore
+simple. The nonzero endpoint residuals also give a fixed quadratic sign
+of \(v\) near each outer endpoint. Compactness now rules out infinitely
+many interior zeros: an accumulation point would have both \(v=v'=0\).
+
+Finally, equality \(|R|=A\) at an interior point forces \(v=0\). At this
+simple zero, \(R'=0\) would combine with the two opposite nonzero
+curvatures to make \(R\) pass monotonically through that value, again
+contradicting its bound. Consequently
+
+\[
+|R(t)|<A\quad(0<t<1),\qquad R'v'=|R|-A<0
+\quad\hbox{at every interior zero of }v.
+\tag{17.7}
+\]
+
+Exactly as in Section 16, each of the finitely many nodal intervals of
+\(v\) has one residual vertex, of sign opposite to \(v\) and magnitude
+\(h_j\in(0,A)\). The opposite sign also follows from
+\(\int_I vv''=-\int_I(v')^2<0\). The alternating vertices and the two
+endpoint values imply exactly \(N+1\) simple residual roots when there
+are \(N\) nodal intervals. Thus \(f=\operatorname{sign}R\) almost
+everywhere on the whole domain, and \(v\) is \(C^{1,1}\). These
+conclusions were derived for an arbitrary endpoint maximizer.
+
+\subsection{17.4. The positive action extends to
+q=1}\label{the-positive-action-extends-to-q1}
+
+Normalize \(A=1\). Keep the half-lengths, outer action, edge action and
+total action of Section 16, with the integrand \(1-|r|\) in place of
+\(1-|r|^q\). On a nodal interval write \(P(y)=ay^2/2-h\), where
+\(a=1-c\sigma>0\), \(0<h<1\), and put \(r_0=\sqrt{2h/a}\). The exact
+scalar function is now
+
+\[
+\Psi(t)=\frac{1-h}{at}-\frac t2+
+\frac{(t-r_0)_+^2}{t},\qquad
+\Psi_t=\frac{|P(t)|-1}{at^2},\qquad
+\Psi_h=-\frac1{at}-\frac{2(t-r_0)_+}{a r_0t}<0.
+\tag{17.8}
+\]
+
+In particular, \(\Psi\) is continuously differentiable even when a
+residual root meets a nodal endpoint. Simply substituting \(q=1\) into
+(16.20) would omit the second term in \(\Psi_h\); formula (17.8) is the
+needed endpoint calculation.
+
+The action gradient is still the sum of the two \(\Psi\) values.
+Differentiation through \(|P|\) is justified by its Lipschitz bound and
+its simple zeros; (17.8) then gives the continuous second derivatives.
+The Hessian is negative definite by the same strict diagonal-dominance
+argument. Its off-diagonal entries come only from the matched
+half-lengths, whose own-depth and neighboring-depth derivatives agree;
+the strictly negative fixed-half-length derivative supplies the excess
+on the diagonal.
+
+The depth maximum is again interior. To check the zero-depth face, let
+\(t\) be either half-length, bounded above for fixed \(c\). If
+\(t<r_0\), then
+
+\[
+\Psi(t)\ge\frac{1-2h}{a r_0}>0\quad(h<1/2).
+\]
+
+If \(t\ge r_0\), then
+
+\[
+\Psi(t)=\frac{1+h}{at}+\frac t2-2r_0
+\ge\frac1{at}-2r_0>0
+\]
+
+uniformly for sufficiently small \(h\). The upper-depth face follows
+from \(\Psi(0+)=0\) at \(h=1\), strict decrease in \(t\), and the
+uniform positive lower bound on the half-lengths. This proves existence
+and uniqueness of the interior depth maximizer for each \(c\), just as
+before.
+
+The edge action remains a maximum over a fixed joining-value interval of
+positive integrals times \((1-c\sigma)^{-1/2}\). Therefore the optimized
+action \(G_N(c)\) is strictly convex and coercive for every \(N\ge2\).
+Its derivative is the signed area. Its unique minimum gives a
+reconstructed clamped \(W^{3,\infty}\) profile with zero mean of its
+first derivative and third derivative equal to the sign of its residual
+almost everywhere. The reconstruction matches the value and first
+derivative of \(v\) at every join; bounded second derivatives suffice
+here, and continuity of those second derivatives is not claimed.
+
+The normalized total length \(\Lambda_N\) and quotient are
+
+\[
+G_N=\frac23\Lambda_N,\qquad
+\mathcal V_N=\frac1{3\Lambda_N^2}.
+\tag{17.9}
+\]
+
+All ingredients of the two-interval insertion comparison remain valid.
+Thus for \(N\ge4\), minimizing after appending two copies of the last
+depth yields
+
+\[
+G_N(c_N)>G_{N-2}(c_{N-2}),
+\tag{17.10}
+\]
+
+and an actual admissible profile with \(N-2\) intervals has a strictly
+larger variation. No endpoint global maximizer has \(N\ge4\).
+
+\subsection{17.5. The three-interval profile is strictly
+worse}\label{the-three-interval-profile-is-strictly-worse}
+
+For \(N=3\), reflection preserves the alternating sign sequence
+\(+,-,+\) and the same parameter \(c\). The unique depth vector at that
+parameter is therefore reflection symmetric. Its residual and its third
+derivative \(f\) are symmetric about the midpoint. The four simple
+residual roots have the form \(b,d,1-d,1-b\), and \(f\) has successive
+signs \(+,-,+,-,+\).
+
+The zero moments of \(f\) give
+
+\[
+d-b=\frac14,\qquad
+\int_b^d(t-1/2)^2\,dt=\frac1{48},
+\qquad
+b=\frac{3-\sqrt5}{8},\quad d=b+\frac14.
+\tag{17.11}
+\]
+
+The first zero of \(v\) is \(\tau=(2+\sqrt2)b\), which lies between
+\(b\) and \(d\). On this interval,
+
+\[
+v(t)=\frac{t^2}{2}-(t-b)^2,\qquad
+u(t)=\frac{t^3}{6}-\frac{(t-b)^3}{3}.
+\]
+
+The symmetry of \(v\) and its zero mean make \(u\) antisymmetric. Its
+variation is therefore
+
+\[
+\mathcal V_3=4u(\tau)
+=4\left(1+\frac{2\sqrt2}{3}\right)b^3
+=\frac{(3+2\sqrt2)(9-4\sqrt5)}{48}.
+\tag{17.12}
+\]
+
+This is strictly below the value in (17.1) of the admissible
+two-interval profile verified below. An elementary rational comparison
+suffices: \(b<1/10\) because \(\sqrt5>11/5\), and \(1+2\sqrt2/3<2\)
+because \(\sqrt2<3/2\). Hence \(\mathcal V_3<1/125<1/96<(2-\sqrt2)/48\).
+The same inequalities show \(\tau<d\). Thus \(N=3\) is excluded without
+assuming the finite-exponent two-switch argument continues to the
+endpoint.
+
+\subsection{17.6. The two-interval profile and complete
+equality}\label{the-two-interval-profile-and-complete-equality}
+
+Only \(N=2\) remains, since \(N=1\) contradicts zero mean. Reflection
+exchanges the signs and sends \(c\) to \(-c\), so \(G_2\) is even. Its
+unique minimum is at zero, and the unique depth vector has equal
+entries. The residual is antisymmetric and has three simple roots
+\(a,1/2,1-a\). Its third derivative has the four signs in (17.2).
+
+The first moment condition, after using antisymmetry, is
+
+\[
+a^2-a+\frac18=0,
+\qquad a=\frac{1-1/\sqrt2}{2}.
+\tag{17.13}
+\]
+
+All three moments vanish for this control. On the first half, \(u_*'\)
+is positive until its zero at \(1/2=a(2+\sqrt2)\); the second half
+follows by reflection. Direct integration gives
+
+\[
+u_*(1/2)=\frac{2-\sqrt2}{96},\qquad
+\|u_*'\|_1=2u_*(1/2)=\frac{2-\sqrt2}{48}.
+\tag{17.14}
+\]
+
+Thus every normalized variation maximizer is \(u_*\) or \(-u_*\). Its
+height is half its variation. Conversely, any height maximizer has
+variation at least twice that height and at most \(V_{3,\infty}\), so it
+is a variation maximizer as well. This proves the complete equality
+classification and the endpoint constant formula. The scalar multiples
+include all nonzero extremizers; the zero function gives the trivial
+equality.
+
+\Needspace{8\baselineskip}\section{18. Remaining questions}\label{remaining-questions}
+
+The order-three case of {[}NS, Conjecture 4.14{]} is now complete at
+every exponent: Theorem 17 gives the finite-exponent identity and
+equality classification, Theorem 18 gives the complete uniform endpoint,
+and Theorem 9 supplies the measure endpoint. The full all-order
+conjecture remains unresolved. In every order, Theorems 5 and 11
+establish exponent intervals around two and immediately above one; their
+widths and overlap are not known. Theorem 10 proves height symmetry and
+uniqueness at every finite exponent.
 
 For orders \(n\ge4\), Theorem 12 supplies finite nondegenerate critical
 points and simple dual-residual zeros. Theorem 13 excludes every
 two-switch maximizer, and Theorem 14 excludes midpoint-symmetric
 three-switch maximizers and restricts every remaining three-switch
 candidate. Excluding nonsymmetric three-switch configurations and all
-higher counts remains the finite-exponent task in these orders. The
-positive action in Section 16 uses the quadratic residual pieces
-specific to order three; no higher-order extension is proved here.
+higher counts remains the finite-exponent task in those orders. The
+uniform-endpoint variation problem there also remains open. The positive
+action in Sections 16 and 17 uses the quadratic residual pieces specific
+to order three; no higher-order extension is proved here.
 
 Theorem 15 rules out a reduction using the same identity for arbitrary
 derivative weights. The special weights generated by an actual maximizer

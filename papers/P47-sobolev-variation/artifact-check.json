@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.11",
-  "pdf_pages": 44,
-  "pdf_text_characters": 107976,
+  "revision": "1.12",
+  "pdf_pages": 48,
+  "pdf_text_characters": 118155,
   "replacement_characters": 0,
-  "equation_tags": 172,
+  "equation_tags": 186,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1556,
+  "mathjax_expressions": 1714,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -56,15 +56,19 @@
       41,
       42,
       43,
-      44
+      44,
+      45,
+      46,
+      47,
+      48
     ],
     "resolution_dpi": 108,
-    "outcome": "All 44 pages rendered and inspected in eleven contact sheets. A final heading-placement edit changed only pages 42 and 43; all other page PNG hashes were unchanged. The changed pages and pages 40 and 41 were inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading remains. The conserved quantity, reconstruction, concavity, convexity, strict count comparison and endpoint corollary are legible."
+    "outcome": "All 48 pages rendered and inspected in twelve contact sheets. The final introductory paragraph placement changed pages 1 through 14, which were re-inspected in contact sheets; pages 15 through 48 have unchanged PNG hashes. Pages 1, 2 and 44 through 47 were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading remains. The arbitrary-maximizer endpoint argument, regularity, endpoint action derivatives, count comparison and explicit equality classification are legible."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "9471afe76af6a7bb085513c6e88767f14ba9876665ab48a1cdee392d46807c2b",
-    "manuscript.tex": "f9caba1ea8291e6fa5d13a05ca34ce7bc0fb337140e9ce982e682acc8ec14a41",
-    "manuscript.pdf": "32aaf13b2654163914a72fe87e6e0107d95645219d8f3723d84ea7c73a91ca2d"
+    "manuscript.md": "b827ad2e543cd9c4dbca9d8ddc04fa7d6c76cdac67b9927d52a6014f0b727a93",
+    "manuscript.tex": "83c051f629bc36dd42633dd36f5616544bf345b5081a19e8549095ddb65347db",
+    "manuscript.pdf": "6b44c0ddbf9c72d86f1e941f9fe453d49b41869b468c1e12de18fd05c8da165d"
   }
 }

@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.11, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.12, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,16 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.12: the complete order-three case at every exponent
+
+Theorem 18 classifies every variation extremizer at p=infinity in derivative order three. Its third derivative is, up to a scalar and null sets, the four-piece control +1,-1,+1,-1 with knots a,1/2,1-a, where a=(1-1/sqrt(2))/2. The sharp variation constant is (2-sqrt(2))/48 and the height constant is half that value. The height constant and its midpoint result are credited prior work; the new conclusion is the complete variation equality classification.
+
+The proof applies to an arbitrary endpoint maximizer. L1 quotient duality, a strict bound on the mean parameter and an absolutely continuous conserved quantity prove finite simple critical points and the sign control without assuming them. The positive action is extended to q=1 using a freshly calculated depth derivative and separate boundary-face estimates. It excludes every nodal count at least four. Reflection and exact moment equations handle the remaining three-interval profile and show its value is strictly smaller than the explicit one-peak competitor. The two-interval control is uniquely determined by its moments.
+
+Together with the complete measure endpoint in Theorem 9 and the finite-exponent result in Theorem 17, this closes the order-three case of Nazarov-Shcheglova Conjecture 4.14 for every exponent. Ordinary p=1 nonattainment retains the measure interpretation stated in the survey and manuscript. The all-order conjecture remains open for the remaining cases in n>=4. These revisions form one paper.
+
+The current final survey was refreshed at Conjecture 4.14 and Theorems 4.5 and 4.12. No new external theorem beyond standard quotient duality and the preceding manuscript results is needed. Exact computations are supplemental checks of displayed algebra, not a substitute for the hand proof. Internal review does not certify independent verification, exhaustive priority or extraordinary significance. The broader goal remains active.
 
 ## Revision 1.11: the full finite-exponent variation theorem in order three
 

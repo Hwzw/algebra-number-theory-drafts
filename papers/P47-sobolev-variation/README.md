@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.11.**
+**Henry Zweiman. September 16, 2026. Revision 1.12.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -26,9 +26,11 @@ Revision 1.10 proves an explicit nodal-length restriction in order three. For 1<
 
 Revision 1.11 proves the full variation identity and equality classification in derivative order three for every finite p>1. Theorem 17 reconstructs the stationary profiles from their quadratic residual vertices and compares a positive action across nodal counts. Every global maximizer has one peak and equals the unique midpoint height extremizer up to a scalar. The constant identity also holds at p=infinity; classification of all equality cases there remains open. The all-order conjecture remains unresolved for the remaining exponents in orders n>=4.
 
+Revision 1.12 completes the uniform-endpoint equality classification in order three. Every nonzero extremizer is a scalar multiple of the explicit one-peak function with third derivative +1,-1,+1,-1 at the knots (1-1/sqrt(2))/2, 1/2, and (1+1/sqrt(2))/2. The variation constant is (2-sqrt(2))/48. Together with Theorems 9 and 17, this completes the order-three conjecture at every exponent, with the measure interpretation at p=1. The remaining all-order cases in n>=4 are open.
+
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [44-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [48-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)
