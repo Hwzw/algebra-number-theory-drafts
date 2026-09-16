@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 53 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 54 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## A spherical Weinstock inequality at large perimeter
+
+[**P54: A spherical Weinstock inequality at large perimeter**](papers/P54-spherical-steklov-large-perimeter/README.md), by **Henry Zweiman**, gives a proposed ball-maximization theorem for all smooth convex domains in the unit sphere in every dimension at least three, throughout a uniform interval of perimeters adjacent to equatorial area. The [17-page PDF](papers/P54-spherical-steklov-large-perimeter/manuscript.pdf), [complete Markdown](papers/P54-spherical-steklov-large-perimeter/manuscript.md), and [LaTeX](papers/P54-spherical-steklov-large-perimeter/manuscript.tex) include the harmonic boundary center, quantitative endpoint stability, strict lune comparison, and collapsed-limit argument.
+
+The [assessment](papers/P54-spherical-steklov-large-perimeter/ASSESSMENT.md) and [proof review](papers/P54-spherical-steklov-large-perimeter/REVIEW.md) distinguish the claimed interval result from the full spherical conjecture, which remains open. The interval size is nonexplicit. Primary-source read scopes and final-text access limits are recorded; no independent verification or journal acceptance is claimed. These related results constitute one preprint.
 
 ## Endpoint saddles and nearby spectral critical domains
 

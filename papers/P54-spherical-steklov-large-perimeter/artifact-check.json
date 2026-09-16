@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-09-16",
+  "pages": 17,
+  "nonempty_text_all_pages": true,
+  "extracted_text_characters": 33607,
+  "author_byline_in_pdf": true,
+  "replacement_characters": 0,
+  "missing_glyph_or_overfull_warnings": [],
+  "equation_tags": 94,
+  "unresolved_numbered_references": [],
+  "math_expressions": 462,
+  "math_errors": 0,
+  "rendered_pages": 17,
+  "all_final_pages_visually_inspected": true,
+  "visual_findings": "All seventeen exact final pages inspected individually after final bibliography, equation numbering and main-theorem pagination edits. No clipping, overlap or missing glyph found.",
+  "independent_review": false,
+  "mathematical_correctness_certified": false,
+  "manuscript_md_sha256": "5cd5274bd8de862a6ad460aa0662867690228ff3b926866a468f4be91495b2d2",
+  "manuscript_pdf_sha256": "1b320271b3c731486cad8443d2d74d58acef4d164320371e71f96975757abbd4",
+  "manuscript_tex_sha256": "251dc48641cb38e095fb941bd386018866c9788ef91d7074fa45406676c49f68"
+}

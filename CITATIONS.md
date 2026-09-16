@@ -26,3 +26,7 @@ The [selected revision citations](selected_papers/CITATIONS.md) and [BibTeX](sel
 ## P53
 
 Henry Zweiman. *Endpoint saddles and the local classification of eigenvalue–torsion critical domains*. Version 1.0, September 16, 2026. AI-assisted unreviewed preprint. [Manuscript and citation metadata](papers/P53-critical-eigenvalue-torsion/README.md).
+
+## P54
+
+Henry Zweiman. *A spherical Weinstock inequality at large perimeter*. Version 1.0, September 16, 2026. AI-assisted unreviewed preprint. [Manuscript and citation metadata](papers/P54-spherical-steklov-large-perimeter/README.md).

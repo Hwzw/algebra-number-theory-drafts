@@ -83,3 +83,7 @@ For a bounded connected planar Lipschitz domain, a prescribed interior point and
 ## P53: eigenvalue–torsion endpoints and local classification
 
 [P53](papers/P53-critical-eigenvalue-torsion/README.md) gives proposed endpoint saddles and a full local classification of critical domains for both normalized spectral products in every dimension. Classical Hessians, elliptic theory, symmetry reduction and Bessel transcendence are prior inputs. The original global convex perimeter inequality and a universal balanced-branch sign remain unresolved. The paper is internally assessed, with older full-text comparison limits disclosed; no independent certification is claimed.
+
+## P54: spherical Steklov comparison near maximal perimeter
+
+P54 claims a uniform large-perimeter comparison for smooth proper convex domains in every dimension at least three. It does not solve the full spherical fixed-perimeter conjecture. The quantitative endpoint result, weighted center and treatment of singular maximal-perimeter limits form one connected contribution. See the paper's ASSESSMENT.md and source-audit.json for the provisional significance judgment and retained final-text access limits.

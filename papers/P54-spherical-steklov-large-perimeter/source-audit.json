@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-16",
+  "primary_open_question": "Colbois-Girouard-Gordon-Sher, final Open Question 4.27, spherical fixed-perimeter direction",
+  "primary_url": "https://doi.org/10.1007/s13163-023-00480-3",
+  "result_scope": "Smooth proper convex domains in S^n, n>=3, throughout a nonexplicit dimensional interval immediately below equatorial perimeter",
+  "full_spherical_question_solved": false,
+  "independent_review": false,
+  "priority_certified": false,
+  "search_queries": [
+    "spherical Weinstock inequality",
+    "Steklov spherical lune",
+    "Steklov sphere convex domains 2025 2026",
+    "spherical Steklov large perimeter",
+    "Steklov nearly hemispherical",
+    "Steklov hemisphere stability",
+    "spherical weighted boundary centroid",
+    "A quantitative Weinstock inequality for convex sets",
+    "Geometric inequalities involving three quantities in warped product manifolds"
+  ],
+  "absence_of_search_hits_proves_novelty": false,
+  "sources": [
+    {
+      "source": "Colbois-Girouard-Gordon-Sher",
+      "version": "Final RMC 37 (2024), 1-161",
+      "url": "https://doi.org/10.1007/s13163-023-00480-3",
+      "read_scope": "Final open-question statement and surrounding Euclidean fixed-perimeter discussion; full survey not audited",
+      "comparison": "Published source question; no claim of complete resolution"
+    },
+    {
+      "source": "Bucur-Ferone-Nitsch-Trombetti",
+      "version": "JDG 118 (2021), 1-21; arXiv:1710.04587",
+      "url": "https://arxiv.org/abs/1710.04587",
+      "read_scope": "Established Euclidean theorem via primary survey and bibliographic comparison; no fresh full proof audit",
+      "comparison": "Higher-dimensional Euclidean convex Weinstock inequality credited; not imported as a step in the spherical proof"
+    },
+    {
+      "source": "Gavitone-La Manna-Paoli-Trani",
+      "version": "arXiv:1903.04964v2, April 16, 2019; official history rechecked September 16, 2026",
+      "url": "https://arxiv.org/abs/1903.04964",
+      "final_doi": "10.1007/s00526-019-1642-9",
+      "read_scope": "Preprint Theorem 3.2 and Section 5; publisher abstract, bibliography, final title and article number checked. Complete final journal body not read; subscription preview only. IRIS full-text lead returned 403.",
+      "comparison": "Euclidean moment and low-harmonic stability method credited; final title is A quantitative Weinstock inequality for convex sets, Calc. Var. 59 (2020), article 2"
+    },
+    {
+      "source": "Kwong-Wei",
+      "version": "arXiv:2303.00930v1, sole version in official history checked September 16, 2026; Advances in Math. 430 (2023), 109213",
+      "url": "https://arxiv.org/abs/2303.00930",
+      "final_doi": "10.1016/j.aim.2023.109213",
+      "read_scope": "Preprint spherical Theorem 4.1/flow discussion and Euclidean Steklov applications. Final publisher metadata/preview and author publication record; complete final body not read. Publisher returned 403, ANU test record has no visible PDF.",
+      "comparison": "Broader weighted geometric predecessor. Common-center flow route not used in present proof. No inference that all final statements equal preprint statements"
+    },
+    {
+      "source": "Castillon-Ruffini",
+      "version": "Final Ann. Sc. Norm. Super. Pisa 19 (2019), 1359-1388",
+      "url": "https://journals.sns.it/index.php/annaliscienze/article/download/666/652/884",
+      "read_scope": "Main statements, spherical ball calculation and fixed-volume counterexample; downloaded final PDF",
+      "comparison": "Harmonic separation and failure of spherical fixed-volume maximization credited; different constraint"
+    },
+    {
+      "source": "Cabezas-Rivas-Scheuer",
+      "version": "Final Analysis & PDE 17 (2024), 3589-3621; arXiv:2211.17040v1 sole version in inspected history",
+      "url": "https://doi.org/10.2140/apde.2024.17.3589",
+      "open_final_pdf": "https://roderic.uv.es/bitstreams/ae658f6e-80a9-4ec2-b9ed-2f13df8495e7/download",
+      "read_scope": "Final Section 2 Crofton/quermassintegral definition, surface-area identity, first-variation convention; not the full flow proof",
+      "comparison": "Established geometric background. Local Crofton normalization and needed compactness consequences supplied directly in manuscript"
+    },
+    {
+      "source": "Basit-Hoehner-Langi-Ledford",
+      "version": "arXiv:2406.10614v3, January 22, 2025; history rechecked September 16, 2026",
+      "url": "https://arxiv.org/abs/2406.10614",
+      "read_scope": "Lemma 4.4 and ordinary centroid hemisphere argument; not full symmetrization theory",
+      "comparison": "Spherical volume centroid precedent in dimension two; different from center-dependent weighted boundary theorem"
+    },
+    {
+      "source": "Besau-Hack-Pivovarov-Schuster",
+      "version": "arXiv:1902.10614v1; author-hosted sphericalcent.pdf",
+      "url": "https://dmg.tuwien.ac.at/schuster/sphericalcent.pdf",
+      "read_scope": "Introduction and centroid definitions, not the complete paper",
+      "comparison": "Spherical centroid bodies and weighted volume centroids; limited background comparison"
+    },
+    {
+      "source": "Langi-Wang",
+      "version": "arXiv:2602.01159v1",
+      "url": "https://arxiv.org/abs/2602.01159",
+      "read_scope": "Definition 2.3, Remark 2.4 and Section 3",
+      "comparison": "Volume centroid setting; not a weighted boundary-center theorem in inspected sections"
+    },
+    {
+      "source": "Sheng-Wang",
+      "version": "arXiv:2508.04067v1; history rechecked September 16, 2026; DOI 10.4153/S0008414X26102223",
+      "url": "https://arxiv.org/abs/2508.04067",
+      "read_scope": "Introduction and local weighted-curvature main statements; no complete final-text proof audit",
+      "comparison": "Fixed-volume local weighted-curvature results distinguished from present fixed-perimeter global-shape interval"
+    },
+    {
+      "source": "Ding-Li",
+      "version": "arXiv:2403.07281v2, April 7, 2024; JMAA 551 (2025), 129689",
+      "url": "https://arxiv.org/abs/2403.07281",
+      "read_scope": "Corrected v2 relevant weighted geometric statements and version note; not a full final-body audit",
+      "comparison": "Superseded v1 errors not imported"
+    },
+    {
+      "source": "Gao-Wei-Zhou",
+      "version": "arXiv:2608.11841v1, August 12, 2026, sole version in official history checked September 16",
+      "url": "https://arxiv.org/html/2608.11841v1",
+      "read_scope": "Introduction and Theorems 1.1-1.2; not entire weak-flow proof",
+      "comparison": "Euclidean and hyperbolic outward-minimizing comparisons; inspected statements do not cover positive curvature"
+    },
+    {
+      "source": "Sun-Wang-Wang; Gu-Li-Wan",
+      "version": "arXiv:2608.10771v1 and 2608.11849v1",
+      "urls": [
+        "https://arxiv.org/abs/2608.10771",
+        "https://arxiv.org/abs/2608.11849"
+      ],
+      "read_scope": "Relevant main-statement screening and official histories in initial audit",
+      "comparison": "Recent hyperbolic comparisons, not used as dependencies"
+    },
+    {
+      "source": "Fall-Weth",
+      "version": "arXiv:1502.00594v1",
+      "url": "https://arxiv.org/abs/1502.00594",
+      "read_scope": "Small-volume profile comparison",
+      "comparison": "Volume constraint differs from fixed boundary measure"
+    },
+    {
+      "source": "Bucur-Nahon",
+      "version": "arXiv:2004.07784v2",
+      "url": "https://arxiv.org/abs/2004.07784",
+      "read_scope": "Planar stability/instability setting",
+      "comparison": "Boundary oscillation warns against assuming unrestricted spectral continuity; present convex fixed-trial limit proved directly"
+    },
+    {
+      "source": "Li-Wang-Wu; Hang Chen",
+      "version": "arXiv:2003.03093 and final DOI 10.1051/cocv/2024088; BLMS 56 (2024), 931-944, DOI 10.1112/blms.12974",
+      "read_scope": "Primary abstracts and bibliographic data only, no final full-text proof audit",
+      "comparison": "Nonpositive upper sectional curvature assumptions exclude current spherical case in inspected statements"
+    }
+  ],
+  "access_limits": [
+    "Final journal bodies of Kwong-Wei and Gavitone et al. unread; preprint comparisons and primary publisher/author records are explicitly distinguished",
+    "No claim that the finite search excludes all earlier or simultaneous work"
+  ],
+  "no_researcher_contact": true
+}
