@@ -1,25 +1,22 @@
-# P44: Corner singularities and quasiconcavity rigidity for Robin ground states
+# P44: Robin ground states on convex polyhedra: concavity and vanishing spectral gaps
 
-Henry Zweiman. September 15, 2026. Revision 2.0.
+Henry Zweiman. September 15, 2026. Revision 3.0.
 
 **AI-assisted research preprint. Not peer reviewed or independently verified.**
 
-The manuscript proves two results concerning conjectures of Andrews, Clutterbuck and Hauer:
+The new result disproves the universal positive-Robin fundamental-gap conjecture. For every dimension at least four, fixed diameter D, and fixed Robin parameter alpha > 0, the infimum of the first-to-second eigenvalue gap over bounded convex polyhedra is zero. Section 9 supplies a complete elementary variational proof and an explicit polytope with gap below 1/100 while the comparison interval has gap above one. The same fixed domain disproves the positive-parameter gap monotonicity conjecture attributed to Smits in Laugesen's survey.
 
-1. On every convex polygon that is neither tangential nor rectangular, the parameters with log-concave Robin ground state form a locally finite set. This disproves their general eventual log-concavity conjecture.
-2. On every convex polyhedron in dimension at least three that is not a product of circumsolids, the ground state has a nonconvex superlevel set for every sufficiently small positive parameter. This proves their polyhedral quasiconcavity conjecture.
-
-The second result is new in revision 2.0. The proof shows that a quasiconcave solution of the Neumann first-variation problem is quadratic. It combines the known inconsistent-normal obstruction with an open-edge mode argument, continuous-gradient regularity, a uniform energy estimate near the higher-codimension faces, and a Hessian-norm identity. The earlier prism and restricted transverse-cone results remain in the same manuscript.
+The manuscript also retains its discrete-exception disproof of eventual polygonal log-concavity and full proof of the ACH small-parameter polyhedral quasiconcavity conjecture. The new gap proof is independent of those regularity arguments.
 
 - [Full Markdown manuscript](manuscript.md)
-- [Twenty-page revised PDF](manuscript.pdf)
+- [Twenty-six-page revised PDF](manuscript.pdf)
 - [Portable LaTeX](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json), [download metadata](source-downloads.json), [artifact checks](artifact-check.json), and [checksums](SHA256SUMS.txt)
 
-The foundational Robin perturbation, spherical spectral bound, inconsistent-normal obstruction, planar mode argument, and quadratic classification are credited to Andrews, Clutterbuck and Hauer. Other inputs include Dauge's sector regularity, Maz'ya's convex Neumann gradient estimate, and the standard convex Neumann H2 estimate. The comparison includes the August 2026 Edelen--Li preprint on non-obtuse polyhedra and the September 2026 Ye--Zhang smooth-domain theorem.
+The gap proof derives uniform transverse estimates, includes the exact lateral-facet factors and end caps, bounds the ground-state mass in the middle, and uses an odd ground-state multiple to estimate the gap. Diameter normalization is exact. No numerical eigenvalues are used. Known Minkowski volume/surface phenomena, negative-Robin gap degeneration, interval and rectangular-box results are credited.
 
-The unrestricted local transverse-cone question, exceptional polygonal parameters, and the sharp Robin fundamental gap remain outside the proved results. This is a revision of P44, not a new paper. The assessment distinguishes the manuscript's theorem claims from independent review and from the broader research program's exceptional-significance threshold.
+The positive-gap and gap-monotonicity conjectures in dimensions two and three remain unresolved here, as do exceptional polygonal parameters and the unrestricted local transverse-cone question. This is a revision of P44, not a new paper. The assessment explains the significance judgment and the limits of internal review.
 
 To rebuild, install Pandoc and Tectonic on PATH and run `python3 build.py`. The authoritative source is manuscript.md. Formula parsing and PDF inspection establish artifact integrity, not proof correctness or historical priority.

@@ -109,5 +109,47 @@
       "sha256": "fc974cc2194944856c30e302e152b7781d50ad00e91a44de5a6805912f5c7308",
       "local_folder": "manuscript_extensions/P44-quasiconcavity/full-conjecture"
     }
+  ],
+  "revision_3_0_files": [
+    {
+      "file": "bebendorf-2003.pdf",
+      "url": "https://ems.press/content/serial-article-files/35407?nt=1",
+      "bytes": 182580,
+      "sha256": "98b82ddc3d0dcf68939022f7809dc1e249e9801ce87ee5f792dc4f88f545128a"
+    },
+    {
+      "file": "kielty-v2.pdf",
+      "url": "https://arxiv.org/pdf/2105.02323v2",
+      "bytes": 401824,
+      "sha256": "8350ae7443574319dce17a3231860f77fd781d6528103d25877a2cf258726fc3"
+    },
+    {
+      "file": "mixedvolumes-2003.pdf",
+      "url": "https://perso.math.u-pem.fr/fradelizi.matthieu/pdf/mixedvolumes.pdf",
+      "bytes": 3246415,
+      "sha256": "23f6464a5720b40be0bc49f9ea5b7628c70d65e731a38b7fa6373582ddb3d754"
+    },
+    {
+      "file": "eigenvalues-open-problems-2020.pdf",
+      "url": "https://publish.illinois.edu/eigenvalues2020/files/2020/04/Open-problems.pdf",
+      "bytes": 159837,
+      "sha256": "fc919131ef601c8312fb5e842abbef17da4de3feff9c9997807bf0165a0f1456"
+    },
+    {
+      "file": "zonoids-2022.pdf",
+      "url": "https://perso.math.u-pem.fr/fradelizi.matthieu/pdf/zonoids-arxiv-2022-06.pdf",
+      "bytes": 399933,
+      "sha256": "1bdcb1bb0aba8c54b7836bf74fa4b61578d8d284e806541752d845d7a6b50712"
+    },
+    {
+      "file": "ach-interval-v1.pdf",
+      "url": "https://arxiv.org/pdf/2002.06900v1",
+      "bytes": 182001,
+      "sha256": "c930a880a9176024ad62d6c73e1f959aba1079bf7e6c442a85533dcb7d9a8afb"
+    }
+  ],
+  "revision_3_0_notes": [
+    "Local source archive is gap-audit; third-party source PDFs are not republished.",
+    "Smits original article full/PDF retrieval returned no article text; attribution checked via Laugesen."
   ]
 }

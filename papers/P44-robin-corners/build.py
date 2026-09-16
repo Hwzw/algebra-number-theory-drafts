@@ -32,7 +32,7 @@ preamble=r'''\documentclass[11pt]{article}
 \setlength{\parskip}{0.35em}
 \setcounter{secnumdepth}{0}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\title{Corner singularities and quasiconcavity rigidity for Robin ground states}
+\title{Robin ground states on convex polyhedra: concavity and vanishing spectral gaps}
 \author{Henry Zweiman}
 \date{September 15, 2026}
 \begin{document}

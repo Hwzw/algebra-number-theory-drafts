@@ -20,19 +20,19 @@
     {
       "name": "Andrews-Clutterbuck-Hauer interval gap",
       "current_arxiv": "2002.06900v1, February 17, 2020; only listed version",
-      "read": "Abstract and submission history",
+      "read": "Revision 3.0: complete introduction and Theorems 1.1-1.4 of downloaded arXiv v1",
       "decision": "Convex-potential interval gap already solved"
     },
     {
       "name": "Laugesen rectangular theorems",
       "current_arxiv": "1905.07658v1, May 18, 2019; only listed version",
-      "read": "Abstract; Conjecture F, Theorem 3.8 and surrounding pp. 12-14",
+      "read": "Conjectures A and F, Theorem 3.8 and surrounding discussion",
       "decision": "Rectangular-box gap already solved",
-      "limitation": "Final journal comparison and complete relevant proof audit pending"
+      "limitation": "Final journal metadata checked; complete proof not independently audited; not a proof dependency"
     },
     {
       "name": "Kielty negative Robin parameter",
-      "read": "Final 2023 publisher abstract",
+      "read": "Final publisher abstract and corrected arXiv v2 introduction, main theorem, heuristic and literature section",
       "decision": "Negative-parameter counterexample is distinct from positive-parameter gap question"
     },
     {
@@ -51,8 +51,8 @@
       "limitation": "Final journal full text not successfully opened. Polimi public PDF is labeled AAM by repository, but visible first page says arXiv v1, so it is not a verified final-text comparison. No proof dependency on this paper."
     }
   ],
-  "proof_progress": "Revision 2.0 adds a complete written global rigidity proof of full polyhedral small-parameter quasiconcavity conjecture; prior analytic-persistence and cone results retained.",
-  "next_obligation": "Final artifact and public-byte verification; independent expert proof/priority review outstanding; exceptional-significance goal remains active.",
+  "proof_progress": "Revision 3.0 adds an independent elementary disproof of the universal positive-Robin gap conjecture in dimensions >=4 and a fixed-domain gap-monotonicity counterexample.",
+  "next_obligation": "Publication and artifact receipts record verification separately; independent expert proof and priority review remain outstanding.",
   "priority_search": {
     "date": "2026-09-15",
     "queries": [
@@ -137,5 +137,37 @@
     ],
     "priority_result": "No competing full solution located in bounded primary-source search; no absolute priority certificate",
     "independent_human_review": false
+  },
+  "revision_3_0": {
+    "date": "2026-09-15",
+    "target": [
+      "ACH final p.307 positive-Robin fundamental-gap conjecture",
+      "Laugesen Conjectures F and A",
+      "Kielty Conjecture 1"
+    ],
+    "ACH_final_read": "Exact final p.307 gap statement, including convex potential and all dimensions",
+    "Laugesen_read": "arXiv v1 Conjectures A and F, attribution of A to Smits 1996 Section 4, Theorem 3.8 and surrounding discussion; final journal metadata verified",
+    "Kielty_read": "Corrected arXiv v2, March 25 2022: full introduction, Conjecture 1, Theorem 2, heuristic and literature section; negative parameter only",
+    "interval_read": "Complete introduction and Theorems 1.1-1.4 in arXiv:2002.06900v1; final 149 (2021), 1481-1493 bibliographic data checked against Hauer conference abstract",
+    "geometry_read": "FGM final article first pages and main assertions; FMMZ complete relevant introduction pp.1-3; failure of volume/surface Minkowski monotonicity credited",
+    "conference_read": "Complete April 2020 sharp eigenvalue problem list, especially Open Problem 7",
+    "Smits_original": "Project Euclid DOI, full and PDF attempts returned inaccessible or non-PDF content; original wording not claimed directly audited; citation and attribution explicitly via Laugesen",
+    "Bebendorf": "Complete six-page note read during exploration. Final proof instead derives a coarse Poincare inequality directly and does not depend on this source.",
+    "new_proof": "Exact cross-section areas; segment Poincare; divergence trace; uniform transverse form estimate; exact lateral measure; cap-inclusive trial; mass barrier; odd ground-state identity; compact-parameter diameter normalization; product lifting; min-max continuity at zero.",
+    "queries": [
+      "Robin fundamental gap positive parameter convex domains 2026",
+      "Robin fundamental gap convex potential counterexample",
+      "positive Robin gap four dimensions",
+      "Robin spectral gap surface volume Minkowski",
+      "Robin thin domains localization",
+      "Robin gap monotonicity Smits counterexample"
+    ],
+    "priority_result": "No competing positive gap degeneration or convex-domain positive-parameter gap monotonicity counterexample found in bounded inspected primary sources",
+    "comparison_limits": "Not an exhaustive literature certificate. Full proofs of interval, rectangular and negative-parameter results not independently reconstructed, and not used as proof dependencies.",
+    "independent_human_review": false,
+    "remaining_dimensions": [
+      2,
+      3
+    ]
   }
 }

@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "Please cite the manuscript if you use this work."
-title: "Corner singularities and quasiconcavity rigidity for Robin ground states"
+title: "Robin ground states on convex polyhedra: concavity and vanishing spectral gaps"
 authors:
   - family-names: Zweiman
     given-names: Henry
 date-released: 2026-09-15
 type: manuscript
-version: "2.0"
+version: "3.0"
 url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P44-robin-corners"

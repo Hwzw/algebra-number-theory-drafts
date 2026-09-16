@@ -8,38 +8,37 @@
 \setlength{\parskip}{0.35em}
 \setcounter{secnumdepth}{0}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\title{Corner singularities and quasiconcavity rigidity for Robin ground states}
+\title{Robin ground states on convex polyhedra: concavity and vanishing spectral gaps}
 \author{Henry Zweiman}
 \date{September 15, 2026}
 \begin{document}
 \maketitle
 \section{Abstract}\label{abstract}
 
-We prove two results on the concavity of Robin ground states on convex
-polyhedra. First, for every bounded convex polygon that is neither
-tangential nor a rectangle, the positive parameters with a log-concave
-ground state form a locally finite set. An explicitly extracted
-real-analytic corner coefficient continues the first-variation
-obstruction through the finite parameter axis, disproving the general
-eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer.
-Second, on every bounded convex polyhedron in dimension at least three
-that is not a product of circumsolids, the ground state has a nonconvex
-superlevel set for every sufficiently small positive parameter. This
-proves their polyhedral quasiconcavity conjecture. The new global
-rigidity argument shows that a quasiconcave solution of the
-first-variation Neumann problem must be quadratic: quasiconcavity
-removes the open-edge singularities, continuity of the gradient controls
-energy near the higher-codimension faces, and a Hessian-norm identity
-forces a constant Hessian. We also retain the discrete-exception prism
-consequence and an independent transverse-cone theorem under explicit
-angle conditions. The results are compatible with eventual concavity on
-smooth uniformly convex domains.
+We disprove the universal positive-Robin fundamental-gap conjecture: in
+every dimension at least four, for each fixed positive Robin parameter
+and each fixed diameter, the infimum of the gap over bounded convex
+polyhedra is zero. An explicit four-dimensional family has
+three-dimensional cross-sections whose surface-area-to-volume ratio is
+larger in the middle than at the ends. Elementary variational estimates
+force the ground-state mass toward the two ends; an odd ground-state
+multiple gives a gap of order at most \(\varepsilon^{1/3}\). A concrete
+member also disproves the convex-domain Robin gap monotonicity
+conjecture. Independently, we prove that the positive parameters with a
+log-concave ground state form a locally finite set on every convex
+polygon that is neither tangential nor rectangular, disproving the
+general eventual log-concavity conjecture of Andrews, Clutterbuck and
+Hauer. We also prove their full small-parameter polyhedral
+quasiconcavity conjecture by a global Hessian-norm rigidity argument for
+the Neumann first variation. The gap proof is independent of the corner
+regularity arguments and leaves dimensions two and three open.
 
 \textbf{Keywords:} Robin eigenfunction; log-concavity; polygonal domain;
-corner singularity; analytic perturbation; quasiconcavity.
+corner singularity; analytic perturbation; quasiconcavity; fundamental
+gap; spectral geometry.
 
-\textbf{2020 Mathematics Subject Classification:} 35J25, 35B65, 35P05,
-47A55.
+\textbf{2020 Mathematics Subject Classification:} 35P15, 35J25, 35B65,
+35P05, 47A55.
 
 \section{1. Introduction}\label{introduction}
 
@@ -147,8 +146,25 @@ new global rigidity statement for the Neumann first variation, proved as
 Theorems 8.1-\/-8.2. Its proof uses the spherical spectral lower bound
 and inconsistent-normal obstruction of {[}ACH{]}, but does not assume
 their proposed higher-dimensional transverse-cone lemma. Section 7 gives
-an independent restricted result on that local question. The sharp Robin
-fundamental-gap problem remains outside this paper.
+an independent restricted result on that local question. Section 9
+resolves the separate universal fundamental-gap conjecture from the same
+final section of {[}ACH{]}:
+
+\Needspace{6\baselineskip}\textbf{Theorem 1.4 (positive Robin gaps).} For each \(d\ge4\), \(D>0\)
+and \(\alpha>0\), the infimum of \(E_1(G;\alpha)-E_0(G;\alpha)\) over
+bounded open convex polyhedra \(G\subset\mathbb R^d\) of diameter \(D\)
+is zero. Here \(E_0<E_1\) are the first two Robin eigenvalues with zero
+potential.
+
+Theorem 9.1 proves this assertion with an explicit thin-polyhedron
+construction. Corollary 9.3 gives a domain described by rational
+inequalities whose gap at parameter one is less than \(1/100\), while
+the comparison interval\textquotesingle s gap is greater than one.
+Corollary 9.4 also disproves the positive-parameter gap monotonicity
+conjecture recorded in {[}L, Conjecture A{]}. These results use
+elementary form estimates and symmetry, independently of Sections
+2-\/-8. The universal conjectures fail already in dimension four; their
+restrictions to dimensions two and three remain open here.
 
 \section{2. Analytic dependence and local
 regularity}\label{analytic-dependence-and-local-regularity}
@@ -1574,8 +1590,453 @@ of {[}EL{]}.
 The unrestricted transverse-cone assertion suggested by {[}ACH, Remark
 9.6{]} remains a separate local question. Theorem 8.1 resolves their
 polyhedral quasiconcavity conjecture through the global Neumann problem.
-It gives no assertion about large parameters on every polyhedron, or
-about the sharp Robin fundamental gap.
+It gives no assertion about large parameters on every polyhedron. The
+independent construction in the next section addresses the fundamental
+gap.
+
+\section{9. The positive-Robin fundamental gap can tend to
+zero}\label{the-positive-robin-fundamental-gap-can-tend-to-zero}
+
+This section is independent of the corner regularity and quasiconcavity
+arguments above. For a bounded connected Lipschitz domain \(G\), let
+
+\[
+E_0(G;\alpha)<E_1(G;\alpha)\le E_2(G;\alpha)\le\cdots,
+\qquad \gamma(G;\alpha)=E_1(G;\alpha)-E_0(G;\alpha)
+\tag{9.1}
+\]
+
+be the eigenvalues and fundamental gap of the quadratic form
+
+\[
+q_{G,\alpha}[u]=\int_G|\nabla u|^2+\alpha\int_{\partial G}|u|^2,
+\qquad u\in H^1(G).
+\tag{9.2}
+\]
+
+Thus our sign convention is \(\partial_\nu u+\alpha u=0\). The first
+eigenfunction is simple and can be chosen positive in \(G\). These
+standard facts also follow from compactness of the form embedding,
+replacement of a minimizer by its absolute value, and the interior
+strong maximum principle. All functions in the proof may be taken real.
+
+The Robin fundamental-gap conjecture in {[}ACH, final Section 10,
+p.307{]} predicts that a convex domain of diameter \(D\), with any
+convex potential, has gap at least that of the zero-potential interval
+of length \(D\) at the same positive Robin parameter. The zero-potential
+version is {[}L, Conjecture F{]} and {[}K, Conjecture 1{]}; it also
+appears in {[}OP, Open Problem 7{]}. The interval case with convex
+potential is proved in {[}ACHI{]}, and the rectangular-box case in {[}L,
+Theorem 3.8{]}. Kielty {[}K{]} proves gap degeneration for negative
+parameters on thin double cones. The following result concerns positive
+parameters and zero potential.
+
+\Needspace{6\baselineskip}\textbf{Theorem 9.1 (failure of every positive diameter-only gap
+bound).} For every integer \(d\ge4\), \(D>0\) and \(\alpha>0\),
+
+\[
+\inf\{\gamma(G;\alpha):G\subset\mathbb R^d
+\text{ is a bounded open convex polyhedron of diameter }D\}=0.
+\tag{9.3}
+\]
+
+In particular, the universal positive-Robin fundamental-gap conjecture
+is false. No convex potential is needed for a counterexample.
+
+We prove the theorem with explicit estimates. The geometry is a convex
+thin domain whose three-dimensional cross-sections have a larger
+surface-area-to-volume ratio in the middle than at the ends. Its
+ground-state mass therefore concentrates near the two ends. An odd
+multiple of the ground state then gives a second Rayleigh quotient
+arbitrarily close to the first.
+
+\subsection{9.1. Cross-sections with an increasing
+surface-area-to-volume
+ratio}\label{cross-sections-with-an-increasing-surface-area-to-volume-ratio}
+
+For \(0\le s\le1\), set
+
+\[
+K_s=\{(X,Y,Z)\in\mathbb R^3:
+ |X|+5|Y|<1,\quad |X|+|Z|<1+s\}.
+\tag{9.4}
+\]
+
+These are convex polyhedra, with \(K_s=K_0+[-s,s]e_Z\). Write
+\(V(s)=|K_s|\) and \(S(s)=|\partial K_s|\). The two families of facets,
+denoted by \(Y\) and \(Z\) according to their defining inequalities,
+have areas
+
+\[
+\begin{aligned}
+V(s)&=\frac45\left(\frac23+s\right),\\
+S_Y(s)&=\frac45\sqrt{26}(1+2s),\qquad
+S_Z(s)=\frac45\sqrt2,\\
+r(s):=\frac{S(s)}{V(s)}
+&=\frac{\sqrt{26}(1+2s)+\sqrt2}{2/3+s}.
+\end{aligned}
+\tag{9.5}
+\]
+
+For completeness, at fixed \(|X|=a<1\) the section is a rectangle with
+side lengths \(2(1-a)/5\) and \(2(1+s-a)\). Integrating its area gives
+\(V(s)=(8/5)\int_0^1(1-a)(1+s-a)\,da\). On each \(Y\) facet the graph
+factor is \(\sqrt{26}/5\); summing the two signs of \(Y\) and the two
+signs of \(X\) gives \(S_Y(s)=(8\sqrt{26}/5)\int_0^1(1+s-a)\,da\). On
+the \(Z\) facets the graph factor is \(\sqrt2\), which gives
+\(S_Z(s)=(8\sqrt2/5)\int_0^1(1-a)\,da\). Edges have zero surface
+measure, also at \(s=0\).
+
+In particular,
+
+\[
+0<r'(s)=\frac{\sqrt{26}/3-\sqrt2}{(2/3+s)^2}<1,
+\qquad r_0:=r(0)=\frac32(\sqrt{26}+\sqrt2).
+\tag{9.6}
+\]
+
+Positivity follows from \(26>18\). For the upper bound it suffices to
+evaluate the derivative at zero and use \(\sqrt{26}<26/5\) and
+\(\sqrt2>7/5\). The central barrier satisfies
+
+\[
+\delta:=r(1/2)-r_0
+=\frac3{14}(\sqrt{26}-3\sqrt2)>\frac17.
+\tag{9.7}
+\]
+
+Indeed, \(\sqrt{26}>5\) and \(\sqrt2<10/7\) give \(\delta>15/98>1/7\).
+
+The failure of monotonicity of volume divided by surface area under
+Minkowski addition in dimensions at least three is a known
+convex-geometric phenomenon; see {[}FGM{]} and the introduction of
+{[}FMMZ{]}. We do not claim that phenomenon as new. Formula (9.5)
+supplies the particular elementary family needed here, and its spectral
+consequence is proved below without an asymptotic spectral-convergence
+theorem.
+
+\subsection{9.2. A uniform transverse Robin
+estimate}\label{a-uniform-transverse-robin-estimate}
+
+\Needspace{6\baselineskip}\textbf{Lemma 9.2.} For \(0\le s\le1\) and \(0\le\beta\le1/4096\),
+
+\[
+E_0(K_s;\beta)\ge\beta r(s)-110000\beta^2.
+\tag{9.8}
+\]
+
+\emph{Proof.} We first give a coarse Poincaré estimate directly. If
+\(K\subset\mathbb R^3\) is convex with diameter \(L\) and \(w\) has mean
+zero, then
+
+\[
+\begin{aligned}
+\|w\|_{L^2(K)}^2
+&=\frac1{2|K|}\int_K\int_K|w(x)-w(y)|^2\,dx\,dy\\
+&\le\frac{L^2}{2|K|}\int_0^1\int_K\int_K
+ |\nabla w((1-t)x+ty)|^2\,dx\,dy\,dt\\
+&\le\frac32L^2\|\nabla w\|_{L^2(K)}^2.
+\end{aligned}
+\tag{9.9}
+\]
+
+To justify the last line, symmetry in \(x,y\) replaces the \(t\)
+integral by twice its integral over \([0,1/2]\). For fixed \(y\), the
+substitution \(z=(1-t)x+ty\) has Jacobian \((1-t)^3\), and convexity
+places its image inside \(K\). Therefore that integral is at most
+\(2|K|\|\nabla w\|_2^2\int_0^{1/2}(1-t)^{-3}\,dt
+=3|K|\|\nabla w\|_2^2\). The preceding line follows from the fundamental
+theorem of calculus and Cauchy-\/-Schwarz on each segment. Prove it
+first for smooth functions and then use density in \(H^1(K)\).
+
+Every \(K_s\) contains \(B_{1/6}(0)\) and is contained in \(B_3(0)\);
+its volume is at least \(1/2\) and its surface area is at most \(16\).
+These assertions follow immediately from (9.4)-\/-(9.5): the facet
+distances from zero are \(1/\sqrt{26}\) and \((1+s)/\sqrt2\), while
+\(|X|\le1\), \(|Y|\le1/5\), \(|Z|\le2\). Its diameter is at most six, so
+(9.9) gives, with \(g=\|\nabla w\|_2\),
+
+\[
+\|w\|_2\le8g.
+\tag{9.10}
+\]
+
+On almost every boundary point, \(x\cdot\nu\ge1/6\). Applying the
+divergence theorem to \(xw^2\) and using \(|x|\le3\) yields
+
+\[
+\begin{aligned}
+\int_{\partial K_s}w^2
+&\le6\left(3\|w\|_2^2+6\|w\|_2g\right)
+\le1440g^2\le1600g^2,\\
+\left|\int_{\partial K_s}w\right|&\le160g.
+\end{aligned}
+\tag{9.11}
+\]
+
+Again smooth approximation and trace continuity justify this calculation
+for \(H^1\) functions. Given \(f\in H^1(K_s)\), write \(f=m+w\), where
+\(m\) is its mean and \(w\) has mean zero. Dropping the nonnegative
+boundary integral of \(\beta w^2\) and completing a square gives
+
+\[
+\begin{aligned}
+q_{K_s,\beta}[f]
+&\ge g^2+\beta S(s)m^2-320\beta|m|g\\
+&\ge\tfrac12g^2+\beta S(s)m^2-51200\beta^2m^2.
+\end{aligned}
+\tag{9.12}
+\]
+
+Since \(r(s)\le32\), (9.10) and \(\beta\le1/4096\) imply
+\(\tfrac12g^2\ge\beta r(s)\|w\|_2^2\). Also
+\(\|f\|_2^2=V(s)m^2+\|w\|_2^2\) and \(m^2\le2\|f\|_2^2\). Consequently
+\(q_{K_s,\beta}[f]\ge(\beta r(s)-102400\beta^2)\|f\|_2^2\), which proves
+(9.8). \(\square\)
+
+\subsection{9.3. A convex domain with two end regions of low
+energy}\label{a-convex-domain-with-two-end-regions-of-low-energy}
+
+For \(0<\varepsilon\le1\), define the open polyhedron in \(\mathbb R^4\)
+
+\[
+\Omega_\varepsilon=\{(t,x,y,z):
+ |t|<1,\quad |x|+5|y|<\varepsilon,\quad
+ |x|+|z|+\varepsilon|t|<2\varepsilon\}.
+\tag{9.13}
+\]
+
+It is bounded, convex, full dimensional, and invariant under
+\(t\mapsto-t\). Its slice at \(t\) is \(\varepsilon K_{1-|t|}\). If
+\(D_\varepsilon\) is its diameter, then
+
+\[
+2\le D_\varepsilon\le\sqrt{4+36\varepsilon^2},
+\qquad D_\varepsilon\longrightarrow2.
+\tag{9.14}
+\]
+
+The lower bound follows by approaching \((\pm1,0,0,0)\), and the upper
+bound uses \(K_s\subset B_3\).
+
+Write \(s(t)=1-|t|\) and fix \(\alpha>0\). Suppose
+\(\alpha\varepsilon\le1/4096\). Scaling Lemma 9.2 gives
+
+\[
+E_0(\varepsilon K_s;\alpha)
+\ge\frac{\alpha r(s)}{\varepsilon}-110000\alpha^2.
+\tag{9.15}
+\]
+
+The lateral boundary element of \(\Omega_\varepsilon\) dominates \(dt\)
+times the transverse boundary element. On the \(Y\) facets the factor is
+exactly one; on the \(Z\) facets it is \(\sqrt{1+\varepsilon^2/2}\). For
+example, on a \(Z\) facet the graph of \(z\) has derivative of absolute
+value one in \(x\) and \(\varepsilon\) in \(t\), giving graph factor
+\(\sqrt{2+\varepsilon^2}\) instead of the transverse \(\sqrt2\). These
+formulas hold off the finitely many facet intersections, a set of
+surface measure zero. Dropping the nonnegative end-cap terms and
+applying (9.15) slice by slice therefore yields
+
+\[
+q_{\Omega_\varepsilon,\alpha}[u]\ge
+\int_{\Omega_\varepsilon}\left\{
+ |\partial_tu|^2+
+ \left(\frac{\alpha r(s(t))}{\varepsilon}-110000\alpha^2\right)|u|^2
+\right\}.
+\tag{9.16}
+\]
+
+Here \(\partial_t\) is the ambient derivative at fixed \((x,y,z)\). For
+smooth \(u\) this is Fubini\textquotesingle s theorem and the explicit
+facet calculation. Density in \(H^1(\Omega_\varepsilon)\) and continuity
+of the trace extend it to the form domain. No boundary is inserted at
+the middle slice.
+
+An upper bound on the first eigenvalue follows from the trial function
+
+\[
+\chi(t)=\left(1-\frac{1-t}{\ell}\right)_+,
+\qquad \ell=\varepsilon^{1/3}.
+\tag{9.17}
+\]
+
+It is supported on \(1-\ell<t<1\), where \(s(t)=1-t\le\ell\). Its
+squared norm is at least \(\varepsilon^3V(0)\ell/3\). Since
+\(V(1)/V(0)=5/2\), the gradient term divided by the squared norm is at
+most \((15/2)\ell^{-2}\). The part of the lateral boundary energy with
+factor one contributes at most \(\alpha(r_0+\ell)/\varepsilon\) by
+(9.6). The extra sloping-facet contribution is at most
+\(\alpha\varepsilon\), because
+
+\[
+\sqrt{1+\varepsilon^2/2}-1\le\varepsilon^2/4,
+\qquad \frac{S_Z}{4V(0)}<1.
+\tag{9.18}
+\]
+
+The cap at \(t=1\) contributes at most \(3\alpha/\ell\); the other cap
+contributes zero. We obtain
+
+\[
+E_0(\Omega_\varepsilon;\alpha)
+\le\frac{\alpha r_0}{\varepsilon}
+ +A_\alpha\varepsilon^{-2/3},
+\qquad A_\alpha=\frac{15}{2}+5\alpha.
+\tag{9.19}
+\]
+
+All three lower-order terms were bounded using \(\varepsilon\le1\).
+
+Let \(u_0\) be the positive ground state normalized by
+\(\int_{\Omega_\varepsilon}u_0^2=1\). Combining (9.16) and (9.19), and
+then using (9.7), bounds its mass in the middle:
+
+\[
+\begin{aligned}
+M_\varepsilon&:=\int_{\Omega_\varepsilon\cap\{|t|\le1/2\}}u_0^2\\
+&\le\frac{A_\alpha\varepsilon^{1/3}+110000\alpha^2\varepsilon}
+ {\alpha\delta}
+\le C_\alpha\varepsilon^{1/3},\qquad
+C_\alpha:=\frac{A_\alpha+110000\alpha^2}{\alpha\delta}.
+\end{aligned}
+\tag{9.20}
+\]
+
+\subsection{9.4. The gap estimate, diameter normalization, and an
+explicit
+example}\label{the-gap-estimate-diameter-normalization-and-an-explicit-example}
+
+By simplicity and reflection symmetry, \(u_0\) is even in \(t\). Let
+
+\[
+f(t)=\begin{cases}
+-1,&t\le-1/2,\\
+2t,&|t|<1/2,\\
+1,&t\ge1/2.
+\end{cases}
+\tag{9.21}
+\]
+
+Then \(f\) is odd and Lipschitz, \(u_0f\in H^1(\Omega_\varepsilon)\),
+and \(\int u_0(u_0f)=0\). Moreover, \(\|u_0f\|_2^2\ge1-M_\varepsilon\).
+Testing the weak ground-state equation with \(u_0f^2\) gives the exact
+identity
+
+\[
+q_{\Omega_\varepsilon,\alpha}[u_0f]
+ -E_0(\Omega_\varepsilon;\alpha)\|u_0f\|_2^2
+ =\int_{\Omega_\varepsilon}u_0^2|\nabla f|^2
+ \le4M_\varepsilon.
+\tag{9.22}
+\]
+
+Both products are valid test functions because \(f\) is bounded and
+Lipschitz. Expanding the gradients shows cancellation of the cross terms
+and of the Robin boundary term. The variational characterization on the
+orthogonal complement of \(u_0\) now proves, whenever
+\(C_\alpha\varepsilon^{1/3}<1\),
+
+\[
+0<\gamma(\Omega_\varepsilon;\alpha)
+\le\frac{4C_\alpha\varepsilon^{1/3}}
+ {1-C_\alpha\varepsilon^{1/3}}
+\longrightarrow0.
+\tag{9.23}
+\]
+
+The estimates are uniform when \(\alpha\) ranges in a compact
+subinterval of \((0,\infty)\): \(A_\alpha\) and \(C_\alpha\) are bounded
+there, and \(\alpha\varepsilon\le1/4096\) holds uniformly for
+sufficiently small \(\varepsilon\).
+
+\emph{Proof of Theorem 9.1.} In dimension four put
+\(a_\varepsilon=D/D_\varepsilon\). The domain
+\(a_\varepsilon\Omega_\varepsilon\) has diameter exactly \(D\),
+\(a_\varepsilon\to D/2\), and the change of scale in (9.2) gives
+
+\[
+\gamma(a_\varepsilon\Omega_\varepsilon;\alpha)
+=a_\varepsilon^{-2}
+ \gamma(\Omega_\varepsilon;a_\varepsilon\alpha)\longrightarrow0
+\tag{9.24}
+\]
+
+by the compact-parameter uniformity just proved. For \(d>4\) start with
+\(G_\varepsilon=\Omega_\varepsilon\times(0,\varepsilon)^{d-4}\). The
+Robin form separates on a Cartesian product: the tensor products of
+factor eigenfunctions form a complete eigenbasis and their eigenvalues
+add. Keeping every interval factor in its ground state and using the
+first two \(\Omega_\varepsilon\) eigenfunctions therefore gives
+\(\gamma(G_\varepsilon;\alpha)\le\gamma(\Omega_\varepsilon;\alpha)\).
+Also
+\(\operatorname{diam}(G_\varepsilon)^2=D_\varepsilon^2+(d-4)\varepsilon^2\to4\).
+The same scaling argument yields diameter exactly \(D\). Every gap is
+positive, so its infimum is zero. \(\square\)
+
+\Needspace{6\baselineskip}\textbf{Corollary 9.3 (a concrete counterexample).} Set \(\alpha=1\) and
+\(\varepsilon=10^{-30}\) in (9.13), and let \(I\) be an interval of
+length \(D_\varepsilon\). Then
+
+\[
+\gamma(\Omega_\varepsilon;1)<\frac1{100},
+\qquad \gamma(I;1)>1.
+\tag{9.25}
+\]
+
+\emph{Proof.} All smallness conditions above hold. From \(\delta>1/7\)
+and \(A_1=25/2\),
+
+\[
+M_\varepsilon\le7(110000+25/2)10^{-10}
+<\frac1{1000}.
+\tag{9.26}
+\]
+
+Thus (9.22) gives \(\gamma(\Omega_\varepsilon;1)<4/999<1/100\). By
+(9.14), \(2\le D_\varepsilon\le21/10\). On \(I\), positivity of the
+Robin boundary term and the min-\/-max principle give
+\(E_1(I;1)\ge E_1(I;0)=\pi^2/D_\varepsilon^2>100/49\). The constant
+trial function gives \(E_0(I;1)\le2/D_\varepsilon\le1\). Hence
+\(\gamma(I;1)>51/49>1\). \(\square\)
+
+\Needspace{6\baselineskip}\textbf{Corollary 9.4 (failure of Robin gap monotonicity).} On the fixed
+four-dimensional polyhedron in Corollary 9.3, the function
+\(\alpha\mapsto\gamma(\Omega_\varepsilon;\alpha)\) is not increasing on
+\((0,\infty)\). This disproves the convex-domain monotonicity conjecture
+attributed to Smits in {[}L, Conjecture A{]}.
+
+\emph{Proof.} The segment argument in (9.9), now in dimension four,
+gives for a mean-zero \(w\) on a convex set of diameter \(D\) the
+estimate
+
+\[
+\|w\|_2^2\le D^2\left(\int_0^{1/2}(1-t)^{-4}\,dt\right)\|\nabla w\|_2^2
+=\frac73D^2\|\nabla w\|_2^2.
+\tag{9.27}
+\]
+
+Thus \(\gamma(\Omega_\varepsilon;0)\ge3/(7D_\varepsilon^2)>1/20\), while
+Corollary 9.3 gives \(\gamma(\Omega_\varepsilon;1)<1/100\). The Robin
+eigenvalues are continuous at zero on this fixed Lipschitz domain. One
+can see this directly from the min-\/-max principle: for \(\alpha\ge0\)
+the eigenvalues are at least their Neumann values, and the span of the
+first \(j+1\) Neumann eigenfunctions gives an upper bound
+\(E_j(G;\alpha)\le E_j(G;0)+c_j\alpha\), since its unit sphere is finite
+dimensional and the trace is continuous. Therefore the gap is greater
+than \(1/20\) for some sufficiently small positive \(\alpha<1\), and
+cannot be increasing on \((0,\infty)\). \(\square\)
+
+The universal conjecture is therefore disproved by a polyhedron given
+entirely by explicit inequalities; no individual eigenvalue needs to be
+computed. Theorems 1.1 and 1.3 concern a fixed domain with varying
+parameter, whereas Theorem 9.1 fixes the positive parameter and varies
+the domain. These different orders of quantifiers matter: on every fixed
+domain the Robin eigenvalues still converge to their Neumann or
+Dirichlet limits as the parameter tends to zero or infinity. The
+degeneration above contradicts neither endpoint theorem. It uses a
+three-dimensional transverse family and leaves the positive-Robin gap
+conjecture in dimensions two and three unresolved.
 
 \sloppy\section{References}\label{references}
 
@@ -1620,5 +2081,43 @@ arXiv:0809.2514v2}.
 and \(C^2\) elliptic regularity in non-obtuse polyhedral domains},
 \href{https://arxiv.org/abs/2608.17194v1}{arXiv:2608.17194v1}, August
 17, 2026.
+
+{[}ACHI{]} B. Andrews, J. Clutterbuck and D. Hauer, \emph{The
+fundamental gap for a one-dimensional Schrödinger operator with Robin
+boundary conditions}, Proceedings of the American Mathematical Society
+\textbf{149} (2021), 1481-1493.
+\href{https://arxiv.org/abs/2002.06900}{arXiv:2002.06900}.
+
+{[}L{]} R. S. Laugesen, \emph{The Robin Laplacian-\/-\/-spectral
+conjectures, rectangular theorems}, Journal of Mathematical Physics
+\textbf{60} (2019), 121507.
+\href{https://doi.org/10.1063/1.5116253}{Final journal article}.
+\href{https://arxiv.org/abs/1905.07658v1}{arXiv:1905.07658v1},
+Conjectures A and F and Theorem 3.8.
+
+{[}K{]} D. Kielty, \emph{Degeneration of the spectral gap with negative
+Robin parameter}, Mathematische Nachrichten (2023).
+\href{https://doi.org/10.1002/mana.202200121}{Final journal article}.
+\href{https://arxiv.org/abs/2105.02323v2}{arXiv:2105.02323v2},
+Conjecture 1 and Theorem 2.
+
+{[}FGM{]} M. Fradelizi, A. Giannopoulos and M. Meyer, \emph{Some
+inequalities about mixed volumes}, Israel Journal of Mathematics
+\textbf{135} (2003), 157-179.
+\href{https://doi.org/10.1007/BF02776055}{Final journal article}.
+\href{https://perso.math.u-pem.fr/fradelizi.matthieu/pdf/mixedvolumes.pdf}{Author-posted
+text}.
+
+{[}FMMZ{]} M. Fradelizi, M. Madiman, M. Meyer and A. Zvavitch, \emph{On
+the volume of the Minkowski sum of zonoids},
+\href{https://arxiv.org/abs/2206.02123}{arXiv:2206.02123}. The
+introduction records the failure of monotonicity of volume divided by
+surface area under Minkowski addition in dimensions at least three.
+
+{[}OP{]} \emph{Open problems from the Miniconference on Sharp Eigenvalue
+Estimates for Partial Differential Operators}, April 2020, Open Problem
+7 (proposed by Richard Laugesen).
+\href{https://publish.illinois.edu/eigenvalues2020/files/2020/04/Open-problems.pdf}{Conference
+problem list}.
 
 \end{document}
