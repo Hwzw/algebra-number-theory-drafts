@@ -6,9 +6,9 @@ September 15, 2026
 
 ## Abstract
 
-We disprove the universal positive-Robin fundamental-gap conjecture: in every dimension at least four, for each fixed positive Robin parameter and each fixed diameter, the infimum of the gap over bounded convex polyhedra is zero. An explicit four-dimensional family has three-dimensional cross-sections whose surface-area-to-volume ratio is larger in the middle than at the ends. Elementary variational estimates force the ground-state mass toward the two ends; an odd ground-state multiple gives a gap of order at most $\varepsilon^{1/3}$. A concrete member also disproves the convex-domain Robin gap monotonicity conjecture. Independently, we prove that the positive parameters with a log-concave ground state form a locally finite set on every convex polygon that is neither tangential nor rectangular, disproving the general eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer. We also prove their full small-parameter polyhedral quasiconcavity conjecture by a global Hessian-norm rigidity argument for the Neumann first variation. The gap proof is independent of the corner regularity arguments and leaves dimensions two and three open.
+We disprove the universal positive-Robin fundamental-gap conjecture: in every dimension at least four, for each fixed positive Robin parameter and each fixed diameter, the infimum of the gap over bounded convex polyhedra is zero. An explicit four-dimensional family has three-dimensional cross-sections whose surface-area-to-volume ratio is larger in the middle than at the ends. Elementary variational estimates force the ground-state mass toward the two ends; an odd ground-state multiple and nested cutoffs give an exponentially small gap. A concrete member disproves both the convex-domain Robin gap monotonicity conjecture and Laugesen's spectral-ratio monotonicity conjecture. For the latter, we prove that the Robin ratio lies strictly below the Dirichlet ratio on the same fixed domain, using the established Dirichlet fundamental-gap theorem. Independently, we prove that the positive parameters with a log-concave ground state form a locally finite set on every convex polygon that is neither tangential nor rectangular, disproving the general eventual log-concavity conjecture of Andrews, Clutterbuck and Hauer. We also prove their full small-parameter polyhedral quasiconcavity conjecture by a global Hessian-norm rigidity argument for the Neumann first variation. The gap proof is independent of the corner regularity arguments and leaves dimensions two and three open.
 
-**Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation; quasiconcavity; fundamental gap; spectral geometry.
+**Keywords:** Robin eigenfunction; log-concavity; polygonal domain; corner singularity; analytic perturbation; quasiconcavity; fundamental gap; eigenvalue ratio; spectral geometry.
 
 **2020 Mathematics Subject Classification:** 35P15, 35J25, 35B65, 35P05, 47A55.
 
@@ -75,6 +75,12 @@ A product of circumsolids is an orthogonal Cartesian product of polyhedra each c
 **Theorem 1.4 (positive Robin gaps).** For each $d\ge4$, $D>0$ and $\alpha>0$, the infimum of $E_1(G;\alpha)-E_0(G;\alpha)$ over bounded open convex polyhedra $G\subset\mathbb R^d$ of diameter $D$ is zero. Here $E_0<E_1$ are the first two Robin eigenvalues with zero potential.
 
 Theorem 9.1 proves this assertion with an explicit thin-polyhedron construction. Corollary 9.3 gives a domain described by rational inequalities whose gap at parameter one is less than $1/100$, while the comparison interval's gap is greater than one. Corollary 9.4 also disproves the positive-parameter gap monotonicity conjecture recorded in [L, Conjecture A]. These results use elementary form estimates and symmetry, independently of Sections 2--8. The universal conjectures fail already in dimension four; their restrictions to dimensions two and three remain open here.
+
+Section 10 strengthens the localization estimate to an exponential upper bound and answers a different conjecture from the same survey:
+
+**Theorem 1.5 (failure of ratio monotonicity).** For each $d\ge4$, $D>0$ and $\alpha_*>0$, there is a bounded open convex polyhedron $G\subset\mathbb R^d$ of diameter $D$ whose ratio $E_1(G;\alpha_*)/E_0(G;\alpha_*)$ is strictly smaller than its Dirichlet eigenvalue ratio. Consequently the Robin ratio increases between some two positive parameters on that fixed domain, disproving [L, Conjecture B].
+
+The proof compares an exponentially small Robin relative gap with the Dirichlet relative gap, using the established theorem of Andrews and Clutterbuck [AC]. Proposition 10.4 gives an entirely explicit instance with rational bounds. The recent ball monotonicity theorem of Dai and Sun [DS] remains consistent with these polyhedral counterexamples. The different second-eigenvalue concavity conjecture [L, Conjecture C] is unresolved here.
 
 ## 2. Analytic dependence and local regularity
 
@@ -1277,6 +1283,226 @@ The Robin eigenvalues are continuous at zero on this fixed Lipschitz domain. One
 
 The universal conjecture is therefore disproved by a polyhedron given entirely by explicit inequalities; no individual eigenvalue needs to be computed. Theorems 1.1 and 1.3 concern a fixed domain with varying parameter, whereas Theorem 9.1 fixes the positive parameter and varies the domain. These different orders of quantifiers matter: on every fixed domain the Robin eigenvalues still converge to their Neumann or Dirichlet limits as the parameter tends to zero or infinity. The degeneration above contradicts neither endpoint theorem. It uses a three-dimensional transverse family and leaves the positive-Robin gap conjecture in dimensions two and three unresolved.
 
+## 10. Exponential gap bounds and failure of spectral-ratio monotonicity
+
+The gap and the ratio of the first two eigenvalues are different functions of the Robin parameter. The failure of gap monotonicity in Corollary 9.4 does not alone imply failure of ratio monotonicity, because the first eigenvalue also changes. This section strengthens the localization estimate enough to compare the Robin ratio with the Dirichlet ratio on the same fixed domain.
+
+Write
+
+$$
+\mathcal Q(G;\alpha)=\frac{E_1(G;\alpha)}{E_0(G;\alpha)},
+\qquad
+\mathcal Q_D(G)=\frac{\Lambda_1(G)}{\Lambda_0(G)},
+\tag{10.1}
+$$
+
+where $\Lambda_0<\Lambda_1$ are the first two Dirichlet eigenvalues. Laugesen [L, Conjecture B] conjectures that $\mathcal Q(G;\alpha)$ decreases for $\alpha>0$ on every bounded Lipschitz domain. The question also appears in [OP, Open Problem 7]. The recent revised preprint of Dai and Sun [DS, Theorem 1.3] proves the assertion on balls. Their Theorems 1.1--1.2 concern shape-dependent upper bounds and are separate from monotonicity on an arbitrary fixed domain. Here we give convex polyhedral counterexamples.
+
+**Theorem 10.1 (spectral-ratio counterexamples).** For every $d\ge4$, $D>0$ and $\alpha_*>0$, there is a bounded open convex polyhedron $G\subset\mathbb R^d$ of diameter $D$ such that
+
+$$
+\mathcal Q(G;\alpha_*)<\mathcal Q_D(G).
+\tag{10.2}
+$$
+
+Consequently, there is a finite $\alpha_2>\alpha_*$ with
+$\mathcal Q(G;\alpha_2)>\mathcal Q(G;\alpha_*)$. In particular, the spectral-ratio monotonicity conjecture is false, even within convex domains.
+
+We first prove a localization lemma for the family $\Omega_\varepsilon$ in (9.13). In this section $u_0$ always denotes its positive ground state with unit $L^2$ norm. Put
+
+$$
+\delta_*:=r(1/4)-r_0
+=\frac3{22}(\sqrt{26}-3\sqrt2)>\frac1{16},
+\qquad \kappa_\alpha:=\frac{\alpha\delta_*}{2}.
+\tag{10.3}
+$$
+
+The rational bounds used for (9.7) give $\delta_*>15/154>1/16$.
+For each fixed $\alpha>0$, take $\varepsilon$ small enough that
+
+$$
+\alpha\varepsilon\le\frac1{4096},\qquad
+A_\alpha\varepsilon^{1/3}+110000\alpha^2\varepsilon
+\le\frac{\alpha\delta_*}{2}.
+\tag{10.4}
+$$
+
+Equations (9.16) and (9.19) show that every form-domain function $v$ supported in $|t|\le3/4$ satisfies
+
+$$
+q_{\Omega_\varepsilon,\alpha}[v]
+-E_0(\Omega_\varepsilon;\alpha)\|v\|_2^2
+\ge\frac{\kappa_\alpha}{\varepsilon}\|v\|_2^2.
+\tag{10.5}
+$$
+
+This uses $s(t)\ge1/4$ on that support. No boundary condition is imposed on an artificial slice.
+
+**Lemma 10.2 (nested localization).** Define
+$M(a)=\int_{\Omega_\varepsilon\cap\{|t|\le a\}}u_0^2$.
+Under (10.4), for $0<a<b\le3/4$,
+
+$$
+M(a)\le\frac{\varepsilon}{\kappa_\alpha(b-a)^2}M(b).
+\tag{10.6}
+$$
+
+*Proof.* Let $\eta(t)$ be one on $|t|\le a$, vanish on $|t|\ge b$, and be linear on each intervening interval. Multiplication by this bounded Lipschitz function preserves $H^1$. Testing the ground-state equation with $u_0\eta^2$, as in (9.22), gives
+
+$$
+\frac{\kappa_\alpha}{\varepsilon}\int\eta^2u_0^2
+\le q_{\Omega_\varepsilon,\alpha}[u_0\eta]
+-E_0(\Omega_\varepsilon;\alpha)\|u_0\eta\|_2^2
+=\int u_0^2|\eta'|^2.
+\tag{10.7}
+$$
+
+The first inequality is (10.5), and $|\eta'|\le(b-a)^{-1}$ with derivative supported in $|t|\le b$. This proves (10.6). All Robin boundary terms are included in the identity and cancel exactly. ∎
+
+**Proposition 10.3 (exponentially small positive-Robin gaps).** For each fixed $\alpha>0$, there exist $c_\alpha>0$ and $\varepsilon_\alpha>0$ such that
+
+$$
+0<\gamma(\Omega_\varepsilon;\alpha)
+\le128\exp\left(-\frac{c_\alpha}{\sqrt\varepsilon}\right)
+\qquad(0<\varepsilon<\varepsilon_\alpha).
+\tag{10.8}
+$$
+
+The constants can be chosen uniformly when $\alpha$ ranges over a compact subinterval of $(0,\infty)$.
+
+*Proof.* Divide $[1/4,3/4]$ into $N$ equal subintervals and apply (10.6) successively. Since $M(3/4)\le1$,
+
+$$
+M(1/4)\le\left(\frac{4N^2\varepsilon}{\kappa_\alpha}\right)^N.
+\tag{10.9}
+$$
+
+For sufficiently small $\varepsilon$, choose
+$N=\lfloor\sqrt{\kappa_\alpha}/(4\sqrt\varepsilon)\rfloor\ge1$.
+The factor in parentheses is at most $1/4$, so
+
+$$
+M(1/4)\le4^{-N}
+\le4\exp\left(-\frac{(\log4)\sqrt{\kappa_\alpha}}
+ {4\sqrt\varepsilon}\right),
+\qquad M(1/4)\le\frac14.
+\tag{10.10}
+$$
+
+Choose an odd function $f$ equal to $4t$ on $|t|\le1/4$ and to $\operatorname{sgn}(t)$ outside. It is orthogonal to the even ground state after multiplication by $u_0$. The same variational argument as in (9.22) gives
+
+$$
+\gamma(\Omega_\varepsilon;\alpha)
+\le\frac{16M(1/4)}{1-M(1/4)}.
+\tag{10.11}
+$$
+
+Equations (10.10)--(10.11) prove (10.8), with
+$c_\alpha=(\log4)\sqrt{\kappa_\alpha}/4$, because $256/3<128$.
+On a compact positive parameter interval, (10.4) holds uniformly for small $\varepsilon$, and $\kappa_\alpha$ has a positive lower bound. This proves the last assertion. ∎
+
+Only an upper bound on the gap is asserted. The proof does not determine the exact tunneling rate or a matching exponential lower bound.
+
+### 10.1. An explicit domain whose Robin ratio lies below its Dirichlet ratio
+
+**Proposition 10.4.** For $\varepsilon=10^{-30}$, the polyhedron $\Omega_\varepsilon$ satisfies
+
+$$
+\mathcal Q(\Omega_\varepsilon;1)-1
+\le2^{23}\varepsilon^3
+<\frac{\varepsilon^2}{200}
+<\mathcal Q_D(\Omega_\varepsilon)-1.
+\tag{10.12}
+$$
+
+*Proof.* The stronger elementary inequality
+
+$$
+A_1\varepsilon^{1/3}+110000\varepsilon<\frac1{32}
+\tag{10.13}
+$$
+
+holds at this value of $\varepsilon$, with $A_1=25/2$.
+Since $\delta_*>1/16$, the proof of (10.5) permits the barrier constant $1/32$ in place of $\kappa_1$. Apply Lemma 10.2 first with $(a,b)=(1/2,3/4)$ and then with $(a,b)=(1/4,1/2)$. This gives
+$M(1/4)\le(512\varepsilon)^2<1/2$.
+Equation (10.11) therefore implies
+
+$$
+\gamma(\Omega_\varepsilon;1)
+\le32(512\varepsilon)^2=2^{23}\varepsilon^2.
+\tag{10.14}
+$$
+
+The global lower bound (9.16) gives
+$E_0(\Omega_\varepsilon;1)\ge r_0/\varepsilon-110000\ge1/\varepsilon$.
+For the last inequality, use $r_0>2$ and $110000\varepsilon<1$.
+This proves the first inequality in (10.12).
+
+We use the established Dirichlet fundamental-gap theorem of Andrews and Clutterbuck [AC, Corollary 1.4]:
+
+$$
+\Lambda_1(G)-\Lambda_0(G)\ge\frac{3\pi^2}{\operatorname{diam}(G)^2}
+\tag{10.15}
+$$
+
+for bounded convex domains. The theorem includes nonsmooth convex domains by approximation, as explicitly stated in [AC] after its main results. It is a prior theorem, not a conclusion of the present paper.
+
+The rectangular box
+
+$$
+B_\varepsilon=(-1/2,1/2)\times(-\varepsilon/12,\varepsilon/12)^3
+\subset\Omega_\varepsilon
+\tag{10.16}
+$$
+
+has first Dirichlet eigenvalue $\pi^2(1+108/\varepsilon^2)$. Domain monotonicity for Dirichlet eigenvalues consequently gives
+$\Lambda_0(\Omega_\varepsilon)\le109\pi^2/\varepsilon^2$.
+Also $D_\varepsilon^2\le5$ by (9.14). Dividing (10.15) by this upper bound gives
+
+$$
+\mathcal Q_D(\Omega_\varepsilon)-1
+\ge\frac{3\varepsilon^2}{545}
+>\frac{\varepsilon^2}{200}.
+\tag{10.17}
+$$
+
+Finally $200\cdot2^{23}\varepsilon<1$, proving the strict separation in (10.12). Every numerical comparison used here is a rational inequality; no eigenvalue computation is required. ∎
+
+### 10.2. The fixed-domain limit and proof of the ratio counterexample
+
+We recall the Robin-to-Dirichlet limit, including the short form argument to make the order of limits explicit. On a fixed bounded Lipschitz domain $G$,
+
+$$
+E_j(G;\alpha)\uparrow\Lambda_j(G)
+\qquad(\alpha\to+\infty)
+\tag{10.18}
+$$
+
+for each fixed $j$. Indeed, positivity of the boundary term makes $E_j$ increasing, and Dirichlet trial spaces bound it above by $\Lambda_j$. Write its limit as $L_j\le\Lambda_j$. Along any sequence $\alpha_k\to\infty$, the first $j+1$ orthonormal Robin eigenfunctions are uniformly bounded in $H^1$, and their squared boundary norms are at most $\Lambda_j/\alpha_k$. Take a subsequence converging weakly in $H^1$ and strongly in $L^2$. The limits are orthonormal and have zero trace, hence belong to $H_0^1(G)$. For each linear combination of these limits, weak lower semicontinuity bounds its gradient energy by $L_j$ times its squared norm: apply the bound on the corresponding combination in the Robin eigenspace before passing to the limit. The Dirichlet min--max principle gives $\Lambda_j\le L_j$, proving (10.18). In particular,
+$\mathcal Q(G;\alpha)\to\mathcal Q_D(G)$.
+
+*Proof of Theorem 10.1.* First take $d=4$ without diameter normalization. By (9.16), for small $\varepsilon$,
+$E_0(\Omega_\varepsilon;\alpha)\ge\alpha r_0/(2\varepsilon)$.
+Together with Proposition 10.3 this implies, uniformly on compact positive parameter intervals,
+
+$$
+\mathcal Q(\Omega_\varepsilon;\alpha)-1
+\le C\varepsilon e^{-c/\sqrt\varepsilon}.
+\tag{10.19}
+$$
+
+On the other hand, (10.17) gives a Dirichlet relative gap bounded below by a positive constant times $\varepsilon^2$. Exponential decay is smaller than every positive power of $\varepsilon$, so the Robin ratio is strictly below the Dirichlet ratio for sufficiently small $\varepsilon$.
+
+For $d>4$, let $G_\varepsilon=\Omega_\varepsilon\times(0,\varepsilon)^{d-4}$. Product separation gives
+$\gamma(G_\varepsilon;\alpha)\le\gamma(\Omega_\varepsilon;\alpha)$ and
+$E_0(G_\varepsilon;\alpha)\ge E_0(\Omega_\varepsilon;\alpha)$, since all additional factor ground eigenvalues are positive. Thus (10.19) remains an upper bound for its relative gap. Its diameter tends to two, while the inscribed product box gives
+$\Lambda_0(G_\varepsilon)\le(105+d)\pi^2/\varepsilon^2$ for $\varepsilon\le1$.
+Equation (10.15) again bounds the Dirichlet relative gap below by a positive dimension-dependent multiple of $\varepsilon^2$.
+
+Finally set $a_\varepsilon=D/\operatorname{diam}(G_\varepsilon)$ and $G=a_\varepsilon G_\varepsilon$. The Robin ratio on $G$ at $\alpha_*$ equals the ratio on $G_\varepsilon$ at $a_\varepsilon\alpha_*$, and the Dirichlet ratio is invariant under scaling. Since $a_\varepsilon\to D/2$, compact-parameter uniformity proves (10.2) for small $\varepsilon$. Having fixed one such full-dimensional domain, use (10.18) to choose a finite $\alpha_2>\alpha_*$ for which the ratio exceeds its value at $\alpha_*$. The geometry is held fixed during this last limit. ∎
+
+The conclusion refutes [L, Conjecture B] independently of the gap-monotonicity conjecture [L, Conjecture A]. It does not refute monotonicity of $\alpha\mathcal Q(G;\alpha)$, which is a theorem of [L], or the ball result of [DS]. The spectral-ratio conjecture restricted to dimensions two and three remains unresolved here. So does the different conjecture that the second eigenvalue itself is concave in the positive Robin parameter [L, Conjecture C].
+
 ## References
 
 [ACH] B. Andrews, J. Clutterbuck and D. Hauer, *Non-concavity of the Robin ground state*, Cambridge Journal of Mathematics **8** (2020), no. 2, 243-310. [Final journal article](https://doi.org/10.4310/CJM.2020.v8.n2.a1). [arXiv:1711.02779v2](https://arxiv.org/abs/1711.02779v2).
@@ -1295,7 +1521,7 @@ The universal conjecture is therefore disproved by a polyhedron given entirely b
 
 [ACHI] B. Andrews, J. Clutterbuck and D. Hauer, *The fundamental gap for a one-dimensional Schrödinger operator with Robin boundary conditions*, Proceedings of the American Mathematical Society **149** (2021), 1481-1493. [arXiv:2002.06900](https://arxiv.org/abs/2002.06900).
 
-[L] R. S. Laugesen, *The Robin Laplacian---spectral conjectures, rectangular theorems*, Journal of Mathematical Physics **60** (2019), 121507. [Final journal article](https://doi.org/10.1063/1.5116253). [arXiv:1905.07658v1](https://arxiv.org/abs/1905.07658v1), Conjectures A and F and Theorem 3.8.
+[L] R. S. Laugesen, *The Robin Laplacian---spectral conjectures, rectangular theorems*, Journal of Mathematical Physics **60** (2019), 121507. [Final journal article](https://doi.org/10.1063/1.5116253). [arXiv:1905.07658v1](https://arxiv.org/abs/1905.07658v1), Conjectures A--C and F and Theorems 2.2 and 3.8.
 
 [K] D. Kielty, *Degeneration of the spectral gap with negative Robin parameter*, Mathematische Nachrichten (2023). [Final journal article](https://doi.org/10.1002/mana.202200121). [arXiv:2105.02323v2](https://arxiv.org/abs/2105.02323v2), Conjecture 1 and Theorem 2.
 
@@ -1304,3 +1530,7 @@ The universal conjecture is therefore disproved by a polyhedron given entirely b
 [FMMZ] M. Fradelizi, M. Madiman, M. Meyer and A. Zvavitch, *On the volume of the Minkowski sum of zonoids*, [arXiv:2206.02123](https://arxiv.org/abs/2206.02123). The introduction records the failure of monotonicity of volume divided by surface area under Minkowski addition in dimensions at least three.
 
 [OP] *Open problems from the Miniconference on Sharp Eigenvalue Estimates for Partial Differential Operators*, April 2020, Open Problem 7 (proposed by Richard Laugesen). [Conference problem list](https://publish.illinois.edu/eigenvalues2020/files/2020/04/Open-problems.pdf).
+
+[AC] B. Andrews and J. Clutterbuck, *Proof of the fundamental gap conjecture*, Journal of the American Mathematical Society **24** (2011), 899-916. [Final journal article](https://doi.org/10.1090/S0894-0347-2011-00699-1). [arXiv:1006.1686v2](https://arxiv.org/abs/1006.1686v2), Corollary 1.4 and the subsequent convex-domain approximation statement.
+
+[DS] G. Dai and Y. Sun, *Upper bound estimation for the ratio of the first two eigenvalues of Robin Laplacian*, [arXiv:2511.20988v3](https://arxiv.org/abs/2511.20988v3), December 20, 2025, Theorem 1.3. The revised title, theorem numbering and hypotheses are those of v3.

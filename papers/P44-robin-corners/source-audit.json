@@ -51,7 +51,7 @@
       "limitation": "Final journal full text not successfully opened. Polimi public PDF is labeled AAM by repository, but visible first page says arXiv v1, so it is not a verified final-text comparison. No proof dependency on this paper."
     }
   ],
-  "proof_progress": "Revision 3.0 adds an independent elementary disproof of the universal positive-Robin gap conjecture in dimensions >=4 and a fixed-domain gap-monotonicity counterexample.",
+  "proof_progress": "Revision 3.1 adds a complete written counterexample to Laugesen Conjecture B and an exponential gap upper bound; independent expert verification is outstanding.",
   "next_obligation": "Publication and artifact receipts record verification separately; independent expert proof and priority review remain outstanding.",
   "priority_search": {
     "date": "2026-09-15",
@@ -169,5 +169,41 @@
       2,
       3
     ]
+  },
+  "revision_3_1": {
+    "date": "2026-09-15",
+    "target": "Laugesen Conjecture B: decreasing positive-Robin eigenvalue ratio on every bounded Lipschitz domain",
+    "Laugesen_read": "Exact Conjectures A, B and C and Theorems 2.1-2.3 in arXiv v1; final journal metadata previously verified",
+    "conference_read": "2020 list Open Problem 7, previously read completely",
+    "Andrews_Clutterbuck": {
+      "version": "1006.1686v2, January 11, 2011",
+      "read": "Complete introduction and main statements pp.1-5, including Corollary 1.4 and nonsmooth convex-domain approximation paragraph",
+      "use": "Established Dirichlet fundamental-gap bound; proof dependency, not independently reconstructed"
+    },
+    "Dai_Sun": {
+      "version": "2511.20988v3, December 20, 2025",
+      "title": "Upper bound estimation for the ratio of the first two eigenvalues of Robin Laplacian",
+      "read": "Version history, full introduction, Theorems 1.1-1.3",
+      "comparison": "Theorem 1.3 proves ball monotonicity. Theorems 1.1-1.2 are shape-dependent ratio upper bounds, with extra condition in the sharp case. Does not settle general-domain monotonicity.",
+      "limitation": "Full 42-page proof not audited; not a proof dependency"
+    },
+    "Oberwolfach_2023": {
+      "doi": "10.4171/OWR/2023/36",
+      "read": "Geometric Spectral Theory problem section, printed pp.2098-2099",
+      "scope": "Gap monotonicity and second-eigenvalue concavity; not cited for ratio B"
+    },
+    "proof": "Supported central barrier; exact ground-state identity; nested cutoffs; exponential localization; explicit two-cutoff relative gap; prior Dirichlet gap and inscribed box; min-max Robin limit; product and scaling",
+    "priority_queries": [
+      "Robin spectral ratio monotonicity conjecture counterexample positive parameter",
+      "Laugesen Conjecture B ratio Robin eigenvalues",
+      "Robin Conjecture B ratio counterexample",
+      "Robin spectral ratio non-monotonic",
+      "Robin spectral ratio monotonicity 2026 convex",
+      "Robin spectral ratio counterexample decreasing",
+      "Laugesen Conjecture B 2026"
+    ],
+    "priority_result": "No competing counterexample found in bounded inspected primary sources; not exhaustive certification",
+    "independent_human_review": false,
+    "remaining": "Dimensions 2 and 3; Laugesen Conjecture C; renewed exceptional-significance goal remains active"
   }
 }

@@ -151,5 +151,35 @@
   "revision_3_0_notes": [
     "Local source archive is gap-audit; third-party source PDFs are not republished.",
     "Smits original article full/PDF retrieval returned no article text; attribution checked via Laugesen."
+  ],
+  "revision_3_1_files": [
+    {
+      "file": "dai-sun-v3.pdf",
+      "url": "https://arxiv.org/pdf/2511.20988v3",
+      "bytes": 642528,
+      "sha256": "8c3b48592b639a3ca51571db82db86e3480965d22992022d208610c2cbd6e632"
+    },
+    {
+      "file": "andrews-clutterbuck-gap.pdf",
+      "url": "https://arxiv.org/pdf/1006.1686",
+      "bytes": 247145,
+      "sha256": "fd03aaf47f3d18c5e65923b5ad6a71181deafd173ab65ee5b5a59b3d82b69fce"
+    },
+    {
+      "file": "oberwolfach-2023.pdf",
+      "url": "https://ems.press/content/serial-article-files/47475",
+      "bytes": 1182028,
+      "sha256": "2d209e9c46fdf6fd1d80a8acff5ea86c7bedab5b5fdc01fdd4b856a3fbe06d62"
+    },
+    {
+      "file": "dai-sun-current.html",
+      "url": "https://arxiv.org/abs/2511.20988",
+      "bytes": 40797,
+      "sha256": "746c4a3d0fd66fb7a43138652470cc55798f3b3d5a4949f4ed24ee5c04e04251"
+    }
+  ],
+  "revision_3_1_notes": [
+    "Local archive: ratio-audit; third-party PDFs are not republished.",
+    "Andrews-Clutterbuck downloaded current PDF identifies arXiv v2. Dai-Sun version v3 verified from title and history."
   ]
 }

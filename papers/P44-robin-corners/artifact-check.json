@@ -1,30 +1,30 @@
 {
   "date": "2026-09-15",
-  "revision": "3.0",
+  "revision": "3.1",
   "author": "Henry Zweiman",
-  "pdf_pages": 26,
-  "pdf_text_characters": 63274,
+  "pdf_pages": 29,
+  "pdf_text_characters": 72994,
   "pdf_text_replacement_characters": 0,
-  "mathjax_expressions": 861,
+  "mathjax_expressions": 988,
   "mathjax_errors": 0,
-  "display_tag_count": 117,
+  "display_tag_count": 136,
   "display_tags_match": true,
-  "visual_inspection": "All twenty-six final PDF pages rendered at 1.5x with PyMuPDF and inspected in seven contact sheets after the final build; no clipping, overlap or missing glyphs.",
+  "visual_inspection": "All 29 final PDF pages rendered at 1.5x with PyMuPDF and inspected in eight contact sheets after the final build; no clipping, overlap or missing glyphs.",
   "tex_log": "No warnings, overfull or underfull boxes, or missing characters",
   "independent_human_review": false,
   "github_live_render_inspected": false,
   "files": {
     "manuscript.md": {
-      "bytes": 75936,
-      "sha256": "564fb3f0e4b7afbb8a73e8f1aef3d99442bcc4b46dc2cc4fcb10989c76aacd0b"
+      "bytes": 88355,
+      "sha256": "47d0b19a413701b2a2474d6c9548e06edaa7a0910b4f0e2cf95d17e5ce004827"
     },
     "manuscript.tex": {
-      "bytes": 80805,
-      "sha256": "612d7c893eec09654fe5503e3ee38b9985a659f449ed10651426d55fac060ba4"
+      "bytes": 94008,
+      "sha256": "98a4fa3e3a84319b86283dda7f4a0d0dc057d859853986b05249be408bbcb873"
     },
     "manuscript.pdf": {
-      "bytes": 188170,
-      "sha256": "9e61f7daa92126bec75ab566d4ddaf74b6489261c22653bf45fbe99110742963"
+      "bytes": 205004,
+      "sha256": "30376cfa5b153d0b60152c10db91d103974a885e8944f5a2477c96d690cc95ee"
     },
     "build.py": {
       "bytes": 1969,
@@ -32,7 +32,7 @@
     },
     "markdown-math-check.json": {
       "bytes": 447,
-      "sha256": "0fd48e5becbd60a3a874398863d4f274a8489e583f68acb384270bf15620faf5"
+      "sha256": "e9b3959dac120d1ff5fdfa13d50ceabc0f10006dc690fab686e64ca8a2f415a9"
     }
   }
 }
