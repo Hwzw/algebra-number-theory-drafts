@@ -1,3 +1,21 @@
+# Revision 1.2: convex-domain ground-state uniqueness
+
+Henry Zweiman. September 16, 2026.
+
+The new Theorem 1.5 resolves the ground-state uniqueness and ground-state identification questions explicitly left open by Gallo, Mosconi and Squassina in Remark 1.6 of their April 2026 Mathematische Annalen article. It applies in every dimension to every bounded convex domain, without smoothness assumptions on the boundary. Every positive log-concave solution has negative logarithmic Hessian strictly above the Gaussian value and is the unique positive ground state.
+
+The proof strengthens concavity through positive level sets and turns a strict local transport remainder in the logarithmic Sobolev inequality into a sharp variational inequality on all of H^1_0. The equality case is preserved by local remainders under strong approximation. These steps avoid unsupported boundary Hopf arguments, global quotient integrability and a uniform curvature gap. The [internal review](REVIEW.md) records the detailed checks; the [source audit](ground-state-source-audit.json) records the primary statements, erratum handling and later-work comparisons.
+
+This is a broad extension of the same manuscript. It upgrades the deformation counterexamples to ground-state counterexamples. GMS existence, Caffarelli contraction, the Gaussian logarithmic Sobolev inequality and interior elliptic regularity are essential credited inputs. The contribution is the new PDE Hessian bound and its variational rigidity consequence on arbitrary bounded convex domains. Neither the classical transport inequality nor ball uniqueness is claimed as new.
+
+The proof answers a substantial external open question, extending beyond radial geometry and perturbations. This supports the internal assessment that the completed and publicly verified revision meets the goal of solving a significant manuscript extension. It is an internally audited, AI-assisted preprint, not an independently refereed theorem, exhaustive priority certificate or assurance of journal acceptance. Publication verification must be complete before the goal is closed.
+
+Uniqueness among all positive solutions, the optimal ball power exponent's radius dependence, and the weaker small-rescaling half-log-concavity question remain open here.
+
+## Historical assessments of revisions 1.0 and 1.1
+
+The following assessments describe the earlier versions and their then-open frontiers. Their statements about goal completion or lack of a general-domain theorem are historical.
+
 # Revision 1.1: contribution and limits
 
 Henry Zweiman. September 16, 2026.

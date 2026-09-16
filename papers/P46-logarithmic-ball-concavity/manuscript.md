@@ -1,4 +1,4 @@
-# Sharp logarithmic concavity on balls and its instability under convex deformation
+# Ground-state uniqueness on convex domains and sharp logarithmic concavity on balls
 
 Henry Zweiman
 
@@ -6,11 +6,11 @@ September 16, 2026
 
 ## Abstract
 
-We study positive Dirichlet solutions of $-\Delta u=u\log u^2$ on a ball in any dimension. We prove that $-\log(u(r)/u(0))$ has a power series in $r^2$ with strictly positive coefficients and convergence radius equal to the square of the ball radius. The coefficients follow an explicit positive recurrence and are polynomials with nonnegative coefficients in the excess of the central logarithmic height above the Gaussian threshold. This structure proves concavity of $-\sqrt{-\log(u/\|u\|_\infty)}$, answering a question of Gallo, Mosconi and Squassina. The exponent $1/2$ is sharp among positive powers of the negative normalized logarithm. We also obtain a quantitative lower bound for its Hessian before taking the square root, positive power concavity of $u$ on every ball, and a comparison of normalized profiles. The argument gives an alternative proof of the known shooting order and ball uniqueness theorem. The essential step is to pass from a local positive recurrence to a convergent representation throughout the domain. We also show that the normalized square-root-log conclusion is unstable under smooth uniformly convex domain deformations. In every dimension at least two and near every ball, an explicit degree-three boundary deformation produces positive solutions that remain strictly log-concave but fail the stronger transformed concavity arbitrarily close to their unique maximum. A cubic-jet obstruction and an invertible ball linearization give a hand proof, including the boundary nonlinearity in the shape argument.
+We prove uniqueness of the positive Dirichlet ground state of $-\Delta u=u\log u^2$ on every bounded convex domain, without boundary smoothness assumptions. Every positive log-concave solution satisfies $D^2(-\log u)\succ I$ and is this ground state. A positive-level regularization gives the Hessian bound, while a local strict transport remainder in the logarithmic Sobolev inequality yields a sharp energy comparison on $H^1_0$ with equality precisely for multiples of the ground state. This answers the ground-state uniqueness and identification questions of Gallo, Mosconi and Squassina, whose log-concave existence theorem is an essential input. On balls, we prove a globally convergent positive radial series for $-\log(u/u(0))$, with an explicit recurrence. It yields concavity of $-\sqrt{-\log(u/\|u\|_\infty)}$, the sharp exponent $1/2$ among powers of the negative normalized logarithm, and positive power concavity of $u$. We also prove that the normalized square-root-log property fails under arbitrarily small smooth uniformly convex deformations near every ball in dimensions at least two. A degree-three shape derivative creates a cubic-jet obstruction at the moving maximum. The deformed solutions remain strictly log-concave and are therefore ground states. Uniqueness among all positive solutions remains open here.
 
 **Mathematics Subject Classification (2020).** 35B45, 35J61, 34B15, 26A51.
 
-**Keywords.** Logarithmic Schrödinger equation; concavity; radial solutions; positive power series; shooting method.
+**Keywords.** Ground-state uniqueness; convex domains; logarithmic Sobolev inequality; logarithmic Schrödinger equation; concavity; radial solutions; positive power series; shooting method.
 
 ## 1. Introduction and main results
 
@@ -27,7 +27,7 @@ where $u\in C^2(B_R)\cap C(\overline{B_R})$. All concavity statements about a lo
 
 Gallo, Mosconi and Squassina [GMS] establish existence of a solution with locally negative-definite logarithmic Hessian on every bounded convex domain. Their Theorem 6.5 gives radial symmetry and radial decrease of every positive solution on a ball. In Sections 6.2--6.3 they ask for stronger concavity in balls: positive power concavity of $u$, and concavity of the negative square root of its negative normalized logarithm. Their Theorem 6.6 proves both properties in dimension one. The second question remains explicitly stated on page 44 of the final article.
 
-Our main result is a positive-series representation that answers both questions in every dimension. Write $u(x)=U(r)$, $r=|x|$, and set
+The positive-series representation below answers both ball questions in every dimension. Theorem 1.5 additionally resolves the ground-state questions of [GMS, Remark 1.6] on every bounded convex domain. Write $u(x)=U(r)$, $r=|x|$, and set
 
 $$
 M=\log U(0),\qquad
@@ -107,11 +107,24 @@ is not concave in any neighborhood of that maximum. The domains converge to $B_R
 
 The normalization in this statement is essential. The scale-invariant notion of $1/2$-log-concavity permits a sufficiently small multiplicative factor in front of $u$; see [IST, Section 4.2]. Theorem 1.4 concerns the specific factor $1/\|u\|_\infty$, where the transform has its cusp at the maximum. It does not disprove the weaker rescaled property. It answers the controlled-deformation question posed in the earlier version of Section 7 and leaves the ball theorem unchanged.
 
+**Theorem 1.5 (Ground-state uniqueness on convex domains).** Let $\Omega\subset\mathbb R^N$ be nonempty, bounded, open and convex. The problem $-\Delta U=U\log U^2$ with zero Dirichlet boundary values has a unique positive ground state $U$. Every positive log-concave solution is this ground state, and
+
+$$D^2(-\log U)(x)\succ I_N\qquad(x\in\Omega).$$
+
+Let $Z=\int_\Omega U^2$. For every nonzero real $v\in H^1_0(\Omega)$,
+
+$$\int_\Omega|\nabla v|^2-\int_\Omega v^2\log v^2
++\|v\|_2^2\log\frac{\|v\|_2^2}{Z}\geq0,$$
+
+with equality exactly for the nonzero multiples of $U$. The real ground states are $\pm U$. No regularity of $\partial\Omega$ is required. Here a ground state minimizes the action $\mathcal J(v)=\frac12\int(|\nabla v|^2+v^2-v^2\log v^2)$ on its nonzero Nehari set; equivalently it is a nonzero solution of least action.
+
+This theorem does not assert uniqueness among all positive solutions. It identifies the solution constructed in [GMS] as the ground state and proves its uniqueness at least energy. Its proof in Section 8 uses interior level sets and a local strict entropy remainder to avoid assumptions on boundary derivatives or global integrability of quotients of solutions.
+
 ### 1.1. Prior results and the scope of the contribution
 
 The amplitude threshold, uniqueness in balls, and strict ordering of first zeros are prior results. For $k=1$ and $\beta=0$, Ben Chrouda [BC, Theorem 1.2 and Corollaries 1.3 and 1.5] proves these facts for $-\Delta v=v\log v$. The change $v(y)=u(y/\sqrt2)$ gives the normalization (1.1). The equality case in the amplitude threshold is excluded by the Gaussian solution and uniqueness of the central initial-value problem. We give new proofs of these particular consequences because they fit the recurrence argument, but do not claim their first discovery.
 
-Liu, Sun and Zou [LSZ] prove a broader shooting classification of whole-space nodal solutions; in particular, their argument establishes strict motion of zeros with the initial value. Gallo, Moraschi and Squassina [GMoS] develop parabolic concavity principles whose logarithmic example yields preservation of logarithmic concavity. Neither of these results supplies the positive radial series used here. Our priority claim concerns that structure and the resulting stronger concavity, rather than existence, radial symmetry, Gaussian ground-state classification, or shooting uniqueness. Current versions of these sources were compared on September 15, 2026.
+Liu, Sun and Zou [LSZ] prove a broader shooting classification of whole-space nodal solutions; in particular, their argument establishes strict motion of zeros with the initial value. Gallo, Moraschi and Squassina [GMoS] develop parabolic concavity principles whose logarithmic example yields preservation of logarithmic concavity. Neither of these results supplies the positive radial series used here. For the ball results, our priority claim concerns that structure and the resulting stronger concavity, rather than existence, radial symmetry, whole-space Gaussian ground-state classification, or shooting uniqueness. Current versions of these sources were compared on September 15, 2026. The convex-domain ground-state extension was checked against the final [GMS] article and later whole-space uniqueness results on September 16, 2026. Its contribution is the Hessian strengthening and the resulting variational rigidity on arbitrary bounded convex domains. Caffarelli contraction, Gaussian logarithmic Sobolev inequalities and interior elliptic regularity are classical inputs, credited in Section 8.
 
 The proof of Theorem 1.1 has three stages. An integrating factor puts the logarithmic radial derivative above its Gaussian value. Its equation then produces positive Taylor coefficients. Finally, positivity and a real-axis singularity argument show that the series represents the solution all the way to its first zero. Convexity of a Hilbert-space norm proves Theorem 1.2. A separate boundary argument, which accommodates the singular derivative of $u\log u^2$ at zero, completes Theorem 1.3. For Theorem 1.4, the ball Hessian bound and the classical weighted Poincare inequality make the linearized Dirichlet operator invertible. A degree-three shape derivative then violates a necessary cubic-jet condition at the moving maximum.
 
@@ -661,11 +674,212 @@ bound and $u=a d+O(d^2)$. The Schur complement is bounded below by
 $k/d-K^2/k$, hence is positive for smaller $d$. Combining collar and
 interior proves strict log-concavity throughout $\Omega_\varepsilon$.
 
-## 8. Further questions
+## 8. Ground-state uniqueness on every bounded convex domain
 
-Theorem 1.4 resolves the earlier question about persistence under arbitrary small smooth uniformly convex deformations: the normalized square-root conclusion fails along the explicit cubic deformation near every ball in dimensions at least two. Classifying the deformations that preserve it remains open. Vanishing of the cubic jet is necessary but is not asserted to be sufficient. We do not classify all positive solutions on the deformed domains.
+This section leaves the radial setting. Throughout, $\Omega\subset\mathbb R^N$ is nonempty, bounded, open and convex. By [GMS, Theorem 1.1], it admits a positive log-concave solution $U\in H^1_0(\Omega)\cap C(\overline\Omega)$ of
 
-The positive recurrence still depends on the radial equation and its particular coefficient structure. A classification of nonlinearities or radial potentials admitting a comparable recurrence would be useful. Formula (1.8) does not evaluate the optimal positive concavity exponent. Determining its dependence on the radius in dimensions $N\geq2$, especially its sharp limiting behavior, remains a further problem. All these questions belong to the same paper.
+$$-\Delta U=U\log U^2,\qquad U|_{\partial\Omega}=0.$$
+
+Interior elliptic regularity makes $U$ smooth wherever it is positive. We first strengthen its concavity, then compare its energy with every function in $H^1_0(\Omega)$. In this section $w=-\log U$ is unnormalized; this changes no Hessian.
+
+### 8.1. A Gaussian-strength Hessian bound without boundary regularity
+
+**Lemma 8.1.** Every positive log-concave solution $U$ as above satisfies
+
+$$D^2(-\log U)(x)\succ I_N\qquad(x\in\Omega).\tag{8.1}$$
+
+The strict inequality is pointwise. A uniform positive gap on all of $\Omega$ is not part of the assertion.
+
+**Proof.** Put $H=D^2w$ and $\mathcal L=\Delta-2\nabla w\cdot\nabla$. Direct differentiation gives
+
+$$\Delta w=|\nabla w|^2-2w,\qquad \mathcal L H=2H^2-2H.\tag{8.2}$$
+
+Initially $H\succeq0$. For a fixed unit vector $e$, the nonnegative function $h=e^THe$ satisfies
+
+$$\mathcal Lh=2|He|^2-2h\leq(2\operatorname{tr}H-2)h.$$
+
+On compact subsets the coefficients are bounded. The strong minimum principle for $\mathcal Lh-Ch\leq0$, with a sufficiently large nonnegative local constant $C$, and propagation through overlapping balls show that a zero of $h$ forces $h\equiv0$. Along a maximal segment parallel to $e$, the function $w$ would then be affine. The segment has finite boundary endpoints, while $w\to+\infty$ there because $U$ is continuous and zero on $\partial\Omega$. This is impossible. Hence $H\succ0$ throughout $\Omega$.
+
+For $0<t<\min\{1/2,\max U\}$ set
+
+$$\Omega_t=\{U>t\},\qquad v=U-t,\qquad w_t=-\log v.$$
+
+The strict convexity of $w$ gives a unique critical point, its minimum. Thus $\partial\Omega_t$ is a smooth regular level surface. Its second fundamental form is $D^2w/|\nabla w|$ on tangent vectors, so $\Omega_t$ is uniformly convex, and $\overline{\Omega_t}\Subset\Omega$. Moreover,
+
+$$H_t:=D^2w_t=\frac{U}{v}H+\frac{tU}{v^2}\nabla w\otimes\nabla w\succ0.\tag{8.3}$$
+
+On the boundary of this fixed level domain, $v$ has a nonzero normal derivative. In an inward distance collar write $v=d a$ with $a$ smooth and positive. Then
+
+$$D^2(-\log v)=\frac{\nabla d\otimes\nabla d}{d^2}-\frac{D^2d}{d}-D^2\log a.$$
+
+Uniform convexity bounds the tangential block below by $k/d$ and the normal block below by $k/d^2$ for small $d$, while the mixed block stays bounded. Thus $\lambda_{\min}(H_t)\to+\infty$ at $\partial\Omega_t$. In dimension one the normal estimate suffices. Its global minimum $\lambda_t>0$ is consequently attained at an interior point $x_t$.
+
+The equation for $w_t$ is
+
+$$\Delta w_t=|\nabla w_t|^2+B_t(w_t),\qquad
+B_t(s)=2(1+te^s)\log(e^{-s}+t).\tag{8.4}$$
+
+Writing $u=e^{-s}+t$ and $v=u-t$, we calculate
+
+$$B_t'(s)=-2+\frac{2t}{v}\log u,\qquad
+B_t''(s)=\frac{2t}{v}\left(\log u-\frac vu\right).\tag{8.5}$$
+
+Choose a unit eigenvector $e$ for $\lambda_t$ at $x_t$ and keep it fixed when differentiating. The scalar $e^TH_te$ has a minimum at $x_t$. Differentiating (8.4) twice and using $H_te=\lambda_te$ gives there
+
+$$0\leq2\lambda_t^2+B_t'\lambda_t+B_t''(\partial_e w_t)^2.\tag{8.6}$$
+
+If $U(x_t)\leq1$, (8.5) gives $B_t'\leq-2$ and $B_t''\leq0$. Since $\lambda_t>0$, (8.6) implies $\lambda_t\geq1$.
+
+Otherwise $x_t$ lies in the fixed compact set $K=\{U\geq1\}\Subset\Omega$. If $K$ is empty, the preceding case suffices. If it is nonempty, set $\delta=\min_K\lambda_{\min}(H)>0$. Equation (8.3) gives $\lambda_t\geq\delta$ at $x_t$. On $K$ we have $v\geq1/2$ and uniform bounds on $U$ and $\nabla U$, so
+
+$$|B_t'+2|\leq Ct,\qquad |B_t''|\leq Ct,\qquad |\nabla w_t|\leq C.$$
+
+When $\lambda_t<1$, (8.6) therefore gives $2\lambda_t(1-\lambda_t)\leq C't$, and hence $\lambda_t\geq1-C't/(2\delta)$. The constants are independent of $t$. Letting $t\downarrow0$ at each fixed interior point proves $H\succeq I_N$.
+
+To make the inequality strict, set $S=H-I_N\succeq0$. From (8.2),
+
+$$\mathcal LS=2S^2+2S.$$
+
+For $h=e^TSe\geq0$ this implies $\mathcal Lh\leq2(\operatorname{tr}S+1)h$. The same strong minimum principle shows that a zero forces $h\equiv0$. Then $w$ has second derivative exactly one along every segment parallel to $e$. It is quadratic along a maximal such segment and cannot tend to infinity at its finite endpoints. This contradiction proves (8.1). $\square$
+
+### 8.2. A local strict remainder in the logarithmic Sobolev inequality
+
+For a probability measure $\nu$, write
+
+$$\operatorname{Ent}_\nu(h^2)=\int h^2\log h^2\,d\nu-
+\left(\int h^2\,d\nu\right)\log\left(\int h^2\,d\nu\right).$$
+
+**Lemma 8.2.** Put $Z=\int_\Omega U^2$ and $d\mu=U^2dx/Z$. There are compact sets $K_j\Subset\Omega$, whose union has full Lebesgue measure in $\Omega$, and constants $\delta_j>0$ such that, for every $h\in C_c^\infty(\Omega)$,
+
+$$\int|\nabla h|^2\,d\mu-\operatorname{Ent}_\mu(h^2)
+\geq\delta_j\int_{K_j}|\nabla h|^2\,d\mu.\tag{8.7}$$
+
+**Proof.** Let $V=-2\log U+\log Z$. Lemma 8.1 gives $D^2V\succ2I_N$. Thus $W(y)=V(y)-|y|^2$, extended to $+\infty$ outside $\Omega$, is proper, lower semicontinuous and convex. Caffarelli's contraction theorem [Caf; DF, Theorem 1.1], with the Gaussian normalization
+
+$$d\gamma(x)=\pi^{-N/2}e^{-|x|^2}\,dx,$$
+
+gives a Brenier transport $T=\nabla\Phi$ from $\gamma$ to $\mu$ with
+
+$$0\preceq D^2\Phi\preceq I_N\quad\text{almost everywhere}.\tag{8.8}$$
+
+Here the theorem applies to an extended-valued convex perturbation. To see the extension explicitly, approximate $W$ by smooth convex functions using Moreau envelopes and mollification. Retain a common affine lower bound; the resulting densities have a common integrable Gaussian upper bound and converge almost everywhere to $e^{-V}$, including outside $\overline\Omega$. Normalize the densities. Their first moments are bounded. For the corresponding contraction maps $T_k$,
+
+$$|T_k(0)|\leq\int|T_k(x)|\,d\gamma(x)+\int|x|\,d\gamma(x).$$
+
+They therefore have a locally uniformly convergent subsequence. Its limit is a gradient of a convex function, transports $\gamma$ to $\mu$ and remains a contraction. Uniqueness of the Brenier map identifies the limit as $T$. This argument uses no regularity of $\partial\Omega$. The later formulation [DF] explicitly credits both the original theorem and its erratum [CafE].
+
+We justify the interior differentiations used next. Set $f=d\gamma/dx$ and $g=d\mu/dx$. The density $g$ is globally bounded, say by $M$. The almost-everywhere inverse property of Brenier maps and the area formula for the Lipschitz map $T$ give
+
+$$\det DT(x)=\frac{f(x)}{g(T(x))}\geq\frac{\min_{B}f}{M}>0
+\quad\text{for almost every }x\in B\tag{8.9}$$
+
+on any source ball $B$. All eigenvalues in (8.8) are at most one, so (8.9) bounds every eigenvalue below by the same positive constant on $B$. Consequently $\Phi$ is locally uniformly convex. Integrating its almost-everywhere Hessian bound, or first mollifying it, shows that $T$ is strictly monotone and injective, and has a locally Lipschitz inverse. Invariance of domain makes its image open. Continuity and the transport property put its image in $\overline\Omega$, so in fact it lies in $\Omega$. Its complement there has $\mu$-measure zero.
+
+The image of each compact source ball is compactly inside $\Omega$. On that ball, the equation
+
+$$\log\det D^2\Phi=-|x|^2+V(\nabla\Phi)+C\tag{8.10}$$
+
+is uniformly elliptic, and its right side is locally Lipschitz. The almost-everywhere equation for the $C^{1,1}$ convex potential also holds in the viscosity sense. Interior Evans--Krylov regularity and Schauder bootstrapping give $\Phi\in C^\infty$; see [CC] for the interior concave-equation regularity used here. For applying uniform ellipticity, one can extend $\log\det$ from the compact interval of positive Hessians supplied by (8.8)--(8.9) to a uniformly elliptic concave operator. No boundary regularity or pointwise surjectivity of $T$ is required.
+
+In fact $D^2\Phi\prec I_N$ everywhere. If $\Phi_{ee}(x_0)=1$ for a unit eigenvector $e$, the function $\Phi_{ee}\leq1$ has a maximum at $x_0$. Put $A=D^2\Phi$ and differentiate (8.10) twice in direction $e$:
+
+$$\begin{aligned}
+\operatorname{tr}(A^{-1}D^2\Phi_{ee})
+-\operatorname{tr}(A^{-1}(\partial_eA)A^{-1}(\partial_eA))
+&=-2+D^2V(T)[Ae,Ae]\\
+&\quad+\nabla V(T)\cdot\nabla\Phi_{ee}.
+\end{aligned}\tag{8.11}$$
+
+At $x_0$ the left side is nonpositive. On the right, $Ae=e$, $\nabla\Phi_{ee}=0$, and $D^2V\succ2I_N$, making it strictly positive. This contradiction proves the strict contraction. Let $K_j=T(\overline{B_j})$. These compact sets cover the image of $T$, a full-measure subset of $\Omega$, and for some $\delta_j>0$,
+
+$$I_N-DT(x)^2\succeq\delta_j I_N\qquad(x\in\overline{B_j}).\tag{8.12}$$
+
+The Gaussian logarithmic Sobolev inequality [Gross], in the chosen normalization, is
+
+$$\operatorname{Ent}_\gamma(q^2)\leq\int|\nabla q|^2\,d\gamma.\tag{8.13}$$
+
+Its constant can be checked by the Ornstein--Uhlenbeck semigroup $P_s$ with generator $\Delta-2x\cdot\nabla$. For smooth bounded positive $F$ bounded away from zero, invariance, integration by parts and the gradient commutation identity give
+
+$$\begin{aligned}
+\operatorname{Ent}_\gamma(F)&=\int_0^\infty\int
+\frac{|\nabla P_sF|^2}{P_sF}\,d\gamma\,ds,\\
+\frac{|\nabla P_sF|^2}{P_sF}&\leq e^{-4s}P_s\!\left(\frac{|\nabla F|^2}{F}\right).
+\end{aligned}$$
+
+Integration yields $\operatorname{Ent}_\gamma(F)\leq\frac14\int|\nabla F|^2/F\,d\gamma$. Applying this to $q^2+\varepsilon$ and using approximation proves (8.13), including bounded Lipschitz $q$. These are classical facts, recalled to fix the coefficient.
+
+Apply (8.13) to $q=h\circ T$ and use change of variables. By the chain rule and (8.12),
+
+$$\begin{aligned}
+\int|\nabla h|^2\,d\mu-\operatorname{Ent}_\mu(h^2)
+&\geq\int \nabla h(T)^T(I_N-DT^2)\nabla h(T)\,d\gamma\\
+&\geq\delta_j\int_{K_j}|\nabla h|^2\,d\mu.
+\end{aligned}$$
+
+The sets $K_j$ have full-measure union because $g>0$ in $\Omega$. This proves (8.7). $\square$
+
+### 8.3. A sharp energy inequality and its equality case
+
+For real $v\in H^1_0(\Omega)$ define
+
+$$\mathcal F(v)=\int_\Omega|\nabla v|^2-\int_\Omega v^2\log v^2,
+\qquad m(v)=\int_\Omega v^2,\tag{8.14}$$
+
+with $0\log0=0$. Both integrals are finite on a bounded domain.
+
+**Proposition 8.3.** For every nonzero real $v\in H^1_0(\Omega)$,
+
+$$\mathcal F(v)+m(v)\log\frac{m(v)}Z\geq0,\tag{8.15}$$
+
+with equality if and only if $v=cU$ for some nonzero real constant $c$.
+
+**Proof.** First let $\phi\in C_c^\infty(\Omega)$ and $h=\phi/U$. Testing the weak equation of $U$ with $\phi^2/U$ gives the ground-state identity
+
+$$\int_\Omega U^2|\nabla(\phi/U)|^2
+=\int_\Omega|\nabla\phi|^2-\int_\Omega\phi^2\log U^2.\tag{8.16}$$
+
+Writing $m=\int\phi^2$, the definition of entropy then gives exactly
+
+$$Z\left(\int|\nabla h|^2\,d\mu-\operatorname{Ent}_\mu(h^2)\right)
+=\mathcal F(\phi)+m\log(m/Z).\tag{8.17}$$
+
+Thus Lemma 8.2 proves, for every $j$,
+
+$$\mathcal F(\phi)+m\log(m/Z)
+\geq\delta_j\int_{K_j}U^2|\nabla(\phi/U)|^2.\tag{8.18}$$
+
+Now take $\phi_n\to v$ strongly in $H^1_0(\Omega)$. Choose a small $\eta>0$ with $2+\eta$ strictly below the Sobolev exponent. The bound
+
+$$|s^2\log s^2|\leq C_\eta\bigl(|s|^{2-\eta}+|s|^{2+\eta}\bigr)$$
+
+and strong Sobolev convergence show uniform integrability and hence convergence of the entropy integrals. The same argument uses any suitable finite Sobolev exponent when $N\leq2$. Consequently the left side of (8.18) converges to $\mathcal F(v)+m(v)\log(m(v)/Z)$. On a neighborhood of each $K_j$, division by the smooth positive $U$ is continuous in $H^1$, so the right side converges as well. Formula (8.18) holds for every $v\in H^1_0(\Omega)$.
+
+This passage does not assume that $v/U$ has finite global weighted Dirichlet energy or that $v^2\log U$ is integrable. Only the compactly supported identity (8.16) and convergence on compact subsets are used. In particular (8.15) holds. If its left side vanishes, (8.18) forces $\nabla(v/U)=0$ on every $K_j$, hence almost everywhere in $\Omega$. Since $v/U\in H^1_{\mathrm{loc}}(\Omega)$ and $\Omega$ is connected, $v=cU$.
+
+Conversely testing the equation with $U$ gives $\mathcal F(U)=0$. Direct scaling yields $\mathcal F(cU)=-c^2Z\log c^2$, so every nonzero multiple attains equality in (8.15). $\square$
+
+### 8.4. Ground states and the remaining uniqueness question
+
+The action corresponding to the equation is
+
+$$\mathcal J(v)=\frac12\mathcal F(v)+\frac12m(v).\tag{8.19}$$
+
+It is $C^1$ on $H^1_0(\Omega)$; its critical points are the weak solutions. The nonzero Nehari set is $\mathcal N=\{v\neq0:\mathcal F(v)=0\}$. On this set $\mathcal J(v)=m(v)/2$. This agrees with the ground-state definition in [GMS, Section 4.3], restricted there to nonnegative functions.
+
+By (8.15), every $v\in\mathcal N$ has $m(v)\geq Z$. The existing solution $U$ attains $Z$ and therefore minimizes the action on $\mathcal N$. If equality holds, Proposition 8.3 gives $v=cU$, and $\mathcal F(v)=0$ forces $c=\pm1$. Thus the real Nehari minimizers, and the real ground states, are precisely $U$ and $-U$. In particular the positive ground state is unique. This proves Theorem 1.5.
+
+The same proposition gives the equivalent constrained characterization
+
+$$\min_{\substack{v\in H^1_0(\Omega)\\ \|v\|_2=1}}\mathcal F(v)=\log Z,
+\qquad\operatorname{Argmin}=\{U/\sqrt Z,-U/\sqrt Z\}.\tag{8.20}$$
+
+Every positive log-concave solution satisfies Lemma 8.1 and the ensuing comparison, so every such solution is this unique ground state. In particular the solutions in Theorem 1.4 are ground states on their respective deformed domains. Their loss of normalized square-root-log concavity therefore occurs already among ground states.
+
+This answers the ground-state uniqueness and ground-state identification questions in [GMS, Remark 1.6]. The existence theorem of [GMS] remains an essential input. Uniqueness among all positive solutions would additionally require excluding positive solutions of greater action; nothing above supplies that exclusion.
+
+## 9. Further questions
+
+Uniqueness among all positive solutions on an arbitrary bounded convex domain remains open here: Theorem 1.5 rules out additional ground states, but does not exclude positive solutions of higher energy. The optimal positive-power exponent on balls in higher dimensions remains implicit, and its radius dependence is unresolved. Theorem 1.4 settles the normalized square-root-log deformation question negatively, now for ground states by Theorem 1.5; the weaker property allowing sufficiently small rescaling remains a separate question.
 
 ## References
 
@@ -681,6 +895,16 @@ The positive recurrence still depends on the radial equation and its particular 
 
 [KS] D. J. Knezevic and E. Suli, *Spectral Galerkin approximation of Fokker-Planck equations with unbounded drift*, ESAIM: Mathematical Modelling and Numerical Analysis **43** (2009), 445--485. [Primary journal PDF](https://www.numdam.org/article/M2AN_2009__43_3_445_0.pdf), Theorem 2.1. The classical Brascamp-Lieb inequality is credited; the needed ball boundary version is also proved above.
 
+[Caf] L. A. Caffarelli, *Monotonicity properties of optimal transportation and the FKG and related inequalities*, Communications in Mathematical Physics 214 (2000), 547--563. DOI: 10.1007/s002200000257.
+
+[CafE] L. A. Caffarelli, *Erratum: Commun. Math. Phys. 214, 547--563 (2000)*, Communications in Mathematical Physics 225 (2002), 449--450. DOI: 10.1007/s002200100560.
+
+[DF] G. De Philippis and A. Figalli, *Rigidity and stability of Caffarelli's log-concave perturbation theorem*, Nonlinear Analysis 154 (2017), 59--70. DOI: 10.1016/j.na.2016.10.006. Theorem 1.1 restates the contraction theorem, citing both [Caf] and [CafE].
+
+[Gross] L. Gross, *Logarithmic Sobolev inequalities*, American Journal of Mathematics 97 (1975), 1061--1083.
+
+[CC] L. A. Caffarelli and X. Cabré, *Fully Nonlinear Elliptic Equations*, American Mathematical Society Colloquium Publications 43, 1995.
+
 ## Preparation note
 
-This manuscript was prepared with OpenAI Codex assistance in literature searches, proof development and writing. It is a research preprint. No independent human verification or journal acceptance is claimed.
+Henry Zweiman. Revision 1.2, September 16, 2026. This revision adds Theorem 1.5 and Section 8, proving ground-state uniqueness on every bounded convex domain and identifying every log-concave solution as that ground state. The ball and deformation proof bodies in Sections 2--7 are retained. The argument is by hand; no finite computation is used as a proof of a universal claim. Proof and source checks are internal and do not constitute independent expert review, exhaustive priority certification or journal acceptance.

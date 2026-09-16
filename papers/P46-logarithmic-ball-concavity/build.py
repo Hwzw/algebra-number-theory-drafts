@@ -39,5 +39,6 @@ preamble=r'''\documentclass[11pt]{article}
 \begin{document}
 \maketitle
 '''
+preamble=preamble.replace('Sharp logarithmic concavity on balls and its instability under convex deformation',title.removeprefix('# ').strip())
 (HERE/'manuscript.tex').write_text(preamble+body+'\n\\end{document}\n')
 subprocess.run([executable('tectonic'),'--keep-logs','--outdir',str(HERE),str(HERE/'manuscript.tex')],check=True)

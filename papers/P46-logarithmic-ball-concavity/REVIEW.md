@@ -1,3 +1,42 @@
+# Internal proof review: convex-domain ground states
+
+Henry Zweiman. September 16, 2026.
+
+This is an internal audit by the same AI-assisted preparation process, not an independent referee report. No subagents or external reviewers were used for this revision.
+
+## Exact claim reviewed
+
+For every nonempty bounded open convex domain in every dimension, the positive Dirichlet logarithmic Schrodinger ground state is unique. Every positive log-concave solution is this ground state. The sharp energy inequality holds on all of H^1_0 with equality precisely for its real multiples. Positive solutions of greater energy are not excluded.
+
+## Adversarial checks and their resolutions
+
+1. **The Hessian minimum need not be interior on a rough domain.** The proof does not minimize on the original domain. It subtracts a positive level t and minimizes the logarithmic Hessian of U-t on {U>t}. These level domains have smooth uniformly convex boundaries compactly inside the original domain. Their smallest Hessian eigenvalue tends to infinity at the boundary.
+2. **Ordinary Hopf arguments can fail for a non-Lipschitz reaction at zero.** No such Hopf theorem is used in the new section. The normal derivative on {U=t} is nonzero because it is a regular positive level of the smooth strictly log-concave U. The earlier ball proof retains its separate boundary argument.
+3. **The shifted reaction has an extra Hessian term.** Both B_t' and B_t'' are retained in (8.6). Below U=1, both have the favorable sign. Above U=1, the minimizing point lies in a fixed compact set, where the original positive Hessian supplies a fixed lower bound delta and the error is O(t). Dividing by an uncontrolled lambda_t is avoided.
+4. **Strong minimum principles require the correct scalar inequality.** Positive-semidefinite matrix order gives |He|^2 <= tr(H) e^THe. The scalar inequality has the supersolution sign, with a locally bounded nonnegative zeroth-order coefficient after enlarging it. The same argument applies to H-I after obtaining nonnegativity. A zero then forces an affine, respectively quadratic, restriction to a finite maximal line segment, contradicting boundary blow-up.
+5. **The curvature bound is only pointwise strict.** No uniform global gap above I is claimed or used. Transport gives a strictly positive remainder separately on each compact image of a source ball.
+6. **Transport regularity cannot be imported from smooth domains with densities bounded away from zero at the boundary.** Contraction first gives a Lipschitz map. The bounded target density and positive source density give det(DT)>=c on each source ball. With eigenvalues <=1 this yields local uniform ellipticity, an injective open map with image in the interior, and then interior Evans-Krylov and Schauder regularity. Only a full-measure image is needed.
+7. **The transport theorem has an erratum.** The original Theorem 11 was read, the erratum's existence and DOI verified, and the precise contraction statement checked in the later primary paper of De Philippis and Figalli, Theorem 1.1, which explicitly cites both. The publisher did not provide the erratum's full text through the accessible page; this is recorded, rather than claiming to have read it. The proof uses the later verified formulation, not the original uncorrected proof alone.
+8. **Strict contraction must follow without a uniform curvature gap.** If a smooth transport Hessian has eigenvalue one at any source point, the corresponding fixed directional second derivative attains a global maximum. Twice differentiating log det gives a nonpositive left side and a strictly positive right side because the target Hessian exceeds 2I at that image point. This is a local contradiction.
+9. **The logarithmic Sobolev constant is normalization-sensitive.** The Gaussian is pi^(-N/2) exp(-|x|^2), whose coefficient for Ent(h^2) is one. The Ornstein-Uhlenbeck gradient decays as exp(-2s); integration of exp(-4s) yields 1/4 for positive F and coefficient one for h^2.
+10. **The ratio of two solutions need not have finite weighted energy.** The ground-state identity and entropy difference are used only for compactly supported competitors. Their combination is an ordinary H^1-continuous energy functional, and the retained right-hand side is local. Strong H^1 approximation extends the inequality and its local remainders without splitting possibly divergent global quotient integrals.
+11. **Equality may be lost in approximation.** It is not. Each fixed compact remainder passes to the limit. Zero total deficit forces a zero weak gradient of v/U on their full-measure union. Since v/U is H^1 locally, connectedness forces one constant across the whole domain.
+12. **Ground state means Nehari minimization in the source.** The proof compares every nonzero Nehari competitor, not just critical solutions. There the action is half its squared L^2 norm. The same equality case identifies the two real minimizers and the unique positive one.
+13. **The result must not become full positive-solution uniqueness.** The manuscript explicitly leaves positive higher-energy solutions open. Neither the new proof nor the prior shape branch supplies their exclusion.
+
+## Proof dependency chain
+
+GMS log-concave existence -> positive interior Hessian -> positive-level regularization -> Gaussian-strength Hessian -> Caffarelli contraction -> local ellipticity and strict contraction -> local strict logarithmic Sobolev remainder -> compactly supported ground-state identity -> strong H^1 approximation -> unique Nehari minimizer.
+
+Each arrow has an explicit argument or a named classical input in Section 8. No numerical experiment is used as proof. Source validation and PDF checks do not constitute a theorem verifier.
+
+## Internal assessment
+
+No unresolved mathematical gap was identified in these checks. The broad ground-state question in GMS Remark 1.6 is answered by the manuscript's hand proof, subject to normal external mathematical scrutiny. This is a substantial extension from balls and nearby domains to all bounded convex domains and all dimensions; it is not a new numbered paper. Priority searches found no matching earlier bounded-convex ground-state uniqueness theorem, but they do not certify absolute novelty. The preprint remains unreviewed.
+
+
+## Historical review of revisions 1.0 and 1.1
+
 # Internal review of the convex-deformation theorem
 
 Henry Zweiman. September 16, 2026. Originating-assistant review, not independent expert verification.

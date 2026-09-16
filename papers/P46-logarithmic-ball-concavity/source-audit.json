@@ -83,5 +83,6 @@
     "No explicit optimal positive-power exponent or radius-monotonicity theorem",
     "No independent correctness or exhaustive priority certification",
     "No third-party PDFs redistributed"
-  ]
+  ],
+  "revision_1_2_extension": "See ground-state-source-audit.json. Ground-state uniqueness on every bounded convex domain is now proved; all-positive-solution uniqueness remains open."
 }

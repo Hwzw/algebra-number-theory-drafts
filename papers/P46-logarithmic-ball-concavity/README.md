@@ -1,17 +1,19 @@
-# Sharp logarithmic concavity on balls and its instability under convex deformation
+# Ground-state uniqueness on convex domains and sharp logarithmic concavity on balls
 
-**Henry Zweiman. September 16, 2026. Revision 1.1.**
+**Henry Zweiman. September 16, 2026. Revision 1.2.**
 
-The positive radial series proves sharp normalized square-root-log concavity and positive power concavity on every ball. The new theorem shows that the normalized square-root-log property fails under arbitrarily small smooth uniformly convex deformations near every ball in dimensions at least two. An explicit degree-three boundary deformation gives positive solutions that remain strictly log-concave but fail the stronger property arbitrarily close to their unique maximum.
+The new theorem proves uniqueness of the positive logarithmic Schrodinger ground state on every bounded convex domain, in every dimension and without boundary smoothness assumptions. Every positive log-concave solution is that ground state. A Gaussian-strength logarithmic Hessian bound and a sharp energy inequality with a complete equality case answer the ground-state questions in Gallo-Mosconi-Squassina, Remark 1.6 (2026).
+
+The manuscript retains the positive radial series, sharp normalized square-root-log concavity and positive power concavity on balls. Its convex-deformation counterexamples are now identified as ground states.
 
 - [Complete Markdown manuscript](manuscript.md), [typeset PDF](manuscript.pdf), and [LaTeX](manuscript.tex).
-- [Priority and scope assessment](ASSESSMENT.md) and [internal proof review](REVIEW.md).
-- [Original source audit](source-audit.json), [deformation source comparison](deformation-source-audit.json), and [download provenance](source-downloads.json).
+- [Contribution and scope](ASSESSMENT.md) and [internal proof review](REVIEW.md).
+- [Ground-state source audit](ground-state-source-audit.json), [deformation source audit](deformation-source-audit.json), [original source audit](source-audit.json), and [download provenance](source-downloads.json).
 - [Artifact checks](artifact-check.json), [MathJax checks](markdown-math-check.json), and [hashes](SHA256SUMS.txt).
 
-The new result concerns the factor 1/maximum(u). It does not disprove the weaker half-log-concavity notion that permits sufficiently small rescaling. Ball uniqueness, the Gaussian threshold and shooting order remain credited prior work. The optimal positive-power exponent and its radius dependence in higher dimensions remain open. The implicit-function theorem gives a nearby solution branch, not a classification of all solutions on general domains.
+Uniqueness among all positive solutions remains open: the proof does not exclude positive solutions of greater energy. The optimal ball power exponent remains implicit. The deformation result concerns normalization by the maximum and does not disprove the weaker small-rescaling half-log-concavity property.
 
-This is one internally audited, unreviewed preprint. No independent expert verification, exhaustive priority certification or journal acceptance is claimed. The proof is by hand; no numerical PDE calculation is used as proof.
+This is one internally audited, AI-assisted, unreviewed preprint. It is a revision, not another distinct paper. No independent expert verification, exhaustive priority certification or journal acceptance is claimed. The proofs are by hand.
 
 ## Rebuild
 

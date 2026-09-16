@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-16",
+  "revision": "1.2",
+  "target": {
+    "source": "Gallo, Mosconi and Squassina, Mathematische Annalen 395, article 21 (2026)",
+    "url": "https://doi.org/10.1007/s00208-026-03452-2",
+    "publication_date": "2026-04-07",
+    "passages": [
+      "Theorem 1.1, final PDF page 4: positive locally strongly log-concave existence on bounded convex domains",
+      "Remark 1.6, final PDF page 6: ground-state uniqueness and identification left open",
+      "Section 4.3: action, Nehari minimization and squared L2 norm characterization"
+    ],
+    "conclusion": "The new theorem answers the ground-state questions, preserving all-positive-solution uniqueness as open."
+  },
+  "classical_inputs": [
+    {
+      "source": "Caffarelli 2000",
+      "url": "https://doi.org/10.1007/s002200000257",
+      "passage": "Theorem 11, printed page 559; Corollary 8, printed page 562",
+      "used": "Gaussian transport contraction and transfer of functional inequalities"
+    },
+    {
+      "source": "Caffarelli 2002 erratum",
+      "url": "https://doi.org/10.1007/s002200100560",
+      "status": "Publisher metadata verified; full text not accessible through the publisher page. No claim that its contents were read. The contraction statement was cross-checked in the later primary DF source, which explicitly credits the erratum."
+    },
+    {
+      "source": "De Philippis and Figalli 2017",
+      "url": "https://doi.org/10.1016/j.na.2016.10.006",
+      "passage": "Theorem 1.1 and following transfer argument, author PDF pages 1-2",
+      "used": "Post-erratum precise contraction statement. The present proof supplies its own local strictness and rough-support regularity details."
+    },
+    {
+      "source": "Gross 1975",
+      "url": "https://www.mathlab.cornell.edu/m/People/bynetid/lg35",
+      "used": "Original Gaussian logarithmic Sobolev attribution; the constant is independently derived by the classical semigroup computation in the manuscript."
+    },
+    {
+      "source": "Caffarelli and Cabre, Fully Nonlinear Elliptic Equations, AMS Colloquium Publications 43 (1995)",
+      "url": "https://web.ma.utexas.edu/users/caffarel/pubs.html",
+      "used": "Classical interior Evans-Krylov regularity for uniformly elliptic concave equations, followed by Schauder bootstrapping."
+    }
+  ],
+  "priority_checks": [
+    {
+      "source": "Existence and uniqueness of positive ground state solutions of general logarithmic Schrodinger equations, JDE 422 (2025), 57-77",
+      "url": "https://doi.org/10.1016/j.jde.2024.12.012",
+      "scope": "Publisher abstract concerns R^N, not arbitrary bounded convex domains."
+    },
+    {
+      "source": "Liu-Sun-Zou, arXiv:2606.19077v2",
+      "url": "https://arxiv.org/abs/2606.19077",
+      "scope": "Current earlier P46 audit verifies whole-space nodal shooting classification; not the bounded convex ground-state claim."
+    },
+    {
+      "source": "Gallo-Moraschi-Squassina, arXiv:2504.09494",
+      "url": "https://arxiv.org/abs/2504.09494",
+      "scope": "Earlier P46 source audit concerns parabolic log-concavity, not the new strict energy comparison."
+    }
+  ],
+  "searches": [
+    "logarithmic Schrodinger convex unique ground state 2026",
+    "logarithmic convex domain unique ground state",
+    "logarithmic Schrodinger Hessian concavity",
+    "Gallo Mosconi uniqueness 2026 logarithmic"
+  ],
+  "search_limit": "No matching earlier result identified; search absence does not prove absolute novelty. No independent expert review.",
+  "downloads": [
+    {
+      "file": "gms-final.pdf",
+      "url": "https://www.dmf.unicatt.it/~squassin/papers/lavori/GMSlog.pdf",
+      "bytes": 1578218,
+      "sha256": "b56a82ee8eb48cd2c7dcbb5800ffe46f8b8d32bfea32d53f06d2afb37cf41db7"
+    },
+    {
+      "file": "caffarelli-2000.pdf",
+      "url": "https://www.ceremade.dauphine.fr/~carlier/Caffarelli-Contraction",
+      "bytes": 113014,
+      "sha256": "6f7a2707f810db5db09b5e17dd0b3f9f0004d6d1083c2c157fd0575754b4eb2f"
+    },
+    {
+      "file": "de-philippis-figalli.pdf",
+      "url": "https://people.math.ethz.ch/~afigalli/papers-pdf/Rigidity-and-stability-of-Caffarelli-log-concave-perturbation-theorem.pdf",
+      "bytes": 339772,
+      "sha256": "d24212a0eaedab8810fd2dcea4b44d215f21c0be21db7e7bb237bb85487d5395"
+    }
+  ]
+}
