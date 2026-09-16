@@ -1,0 +1,426 @@
+{
+  "status": "all exact rational checks passed",
+  "meaning": "finite normalization checks only; universal proof is in the manuscript",
+  "cases": [
+    {
+      "m": 1,
+      "k": 0,
+      "eigenvalue": "2",
+      "inverse_eigenvalue": "1/2",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 1,
+      "k": 1,
+      "eigenvalue": "6",
+      "inverse_eigenvalue": "1/6",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 1,
+      "k": 2,
+      "eigenvalue": "12",
+      "inverse_eigenvalue": "1/12",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 1,
+      "k": 3,
+      "eigenvalue": "20",
+      "inverse_eigenvalue": "1/20",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 1,
+      "k": 4,
+      "eigenvalue": "30",
+      "inverse_eigenvalue": "1/30",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 1,
+      "k": 5,
+      "eigenvalue": "42",
+      "inverse_eigenvalue": "1/42",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 1,
+      "k": 6,
+      "eigenvalue": "56",
+      "inverse_eigenvalue": "1/56",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 0,
+      "eigenvalue": "24",
+      "inverse_eigenvalue": "1/24",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 1,
+      "eigenvalue": "120",
+      "inverse_eigenvalue": "1/120",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 2,
+      "eigenvalue": "360",
+      "inverse_eigenvalue": "1/360",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 3,
+      "eigenvalue": "840",
+      "inverse_eigenvalue": "1/840",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 4,
+      "eigenvalue": "1680",
+      "inverse_eigenvalue": "1/1680",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 5,
+      "eigenvalue": "3024",
+      "inverse_eigenvalue": "1/3024",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 2,
+      "k": 6,
+      "eigenvalue": "5040",
+      "inverse_eigenvalue": "1/5040",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 0,
+      "eigenvalue": "720",
+      "inverse_eigenvalue": "1/720",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 1,
+      "eigenvalue": "5040",
+      "inverse_eigenvalue": "1/5040",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 2,
+      "eigenvalue": "20160",
+      "inverse_eigenvalue": "1/20160",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 3,
+      "eigenvalue": "60480",
+      "inverse_eigenvalue": "1/60480",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 4,
+      "eigenvalue": "151200",
+      "inverse_eigenvalue": "1/151200",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 5,
+      "eigenvalue": "332640",
+      "inverse_eigenvalue": "1/332640",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 3,
+      "k": 6,
+      "eigenvalue": "665280",
+      "inverse_eigenvalue": "1/665280",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "eigenvalue": "40320",
+      "inverse_eigenvalue": "1/40320",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 1,
+      "eigenvalue": "362880",
+      "inverse_eigenvalue": "1/362880",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 2,
+      "eigenvalue": "1814400",
+      "inverse_eigenvalue": "1/1814400",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 3,
+      "eigenvalue": "6652800",
+      "inverse_eigenvalue": "1/6652800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 4,
+      "eigenvalue": "19958400",
+      "inverse_eigenvalue": "1/19958400",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 5,
+      "eigenvalue": "51891840",
+      "inverse_eigenvalue": "1/51891840",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 4,
+      "k": 6,
+      "eigenvalue": "121080960",
+      "inverse_eigenvalue": "1/121080960",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 0,
+      "eigenvalue": "3628800",
+      "inverse_eigenvalue": "1/3628800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 1,
+      "eigenvalue": "39916800",
+      "inverse_eigenvalue": "1/39916800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 2,
+      "eigenvalue": "239500800",
+      "inverse_eigenvalue": "1/239500800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 3,
+      "eigenvalue": "1037836800",
+      "inverse_eigenvalue": "1/1037836800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 4,
+      "eigenvalue": "3632428800",
+      "inverse_eigenvalue": "1/3632428800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 5,
+      "eigenvalue": "10897286400",
+      "inverse_eigenvalue": "1/10897286400",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 5,
+      "k": 6,
+      "eigenvalue": "29059430400",
+      "inverse_eigenvalue": "1/29059430400",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 0,
+      "eigenvalue": "479001600",
+      "inverse_eigenvalue": "1/479001600",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 1,
+      "eigenvalue": "6227020800",
+      "inverse_eigenvalue": "1/6227020800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 2,
+      "eigenvalue": "43589145600",
+      "inverse_eigenvalue": "1/43589145600",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 3,
+      "eigenvalue": "217945728000",
+      "inverse_eigenvalue": "1/217945728000",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 4,
+      "eigenvalue": "871782912000",
+      "inverse_eigenvalue": "1/871782912000",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 5,
+      "eigenvalue": "2964061900800",
+      "inverse_eigenvalue": "1/2964061900800",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    },
+    {
+      "m": 6,
+      "k": 6,
+      "eigenvalue": "8892185702400",
+      "inverse_eigenvalue": "1/8892185702400",
+      "differential_identity": true,
+      "energy_identity": true,
+      "poisson_beta_identity": true,
+      "riesz_multiplier_identity": true
+    }
+  ]
+}

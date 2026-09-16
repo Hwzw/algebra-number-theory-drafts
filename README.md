@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 46 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 47 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Sharp total variation from spherical rearrangement
+
+[**P47: Sharp total variation bounds from spherical rearrangement**](papers/P47-sobolev-variation/README.md), by **Henry Zweiman**, proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. It also proves the constant identity and coincidence of maximizing sets at the measure endpoint. The [seven-page PDF](papers/P47-sobolev-variation/manuscript.pdf), [full Markdown](papers/P47-sobolev-variation/manuscript.md), and [LaTeX](papers/P47-sobolev-variation/manuscript.tex) give the arguments.
+
+The [assessment](papers/P47-sobolev-variation/ASSESSMENT.md) compares the final survey and close primary sources; the [review](papers/P47-sobolev-variation/REVIEW.md) audits the Jacobi-Poisson representation, spherical equality cases and endpoint moment geometry. This is one internally assessed preprint. The full all-p conjecture and p=1 symmetry remain unresolved; independent expert verification is not claimed.
 
 ## Positive radial series and sharp logarithmic concavity
 

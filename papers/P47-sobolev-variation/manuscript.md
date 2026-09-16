@@ -1,0 +1,309 @@
+# Sharp total variation bounds from spherical rearrangement
+
+Henry Zweiman
+
+September 15, 2026
+
+## Abstract
+
+We study the sharp control of total variation by a higher derivative under homogeneous endpoint conditions. For every integer $n\ge2$, we prove that the norm of $u\mapsto u'$ from $W_0^{n,2}(0,1)$ to $L^1(0,1)$ is twice the norm of point evaluation into $L^\infty(0,1)$. The extremizers of the two embeddings coincide and are symmetric about the midpoint. This proves the Hilbert-space case of a conjecture of Nazarov and Shcheglova. The main step is a rearrangement principle for a clamped Green operator after projection onto the zero-mean subspace. A Jacobi-polynomial representation identifies its quadratic form with a positive mixture of Poisson interactions on a sphere, where rearrangement reduces the optimization to a cap. We also prove the constant identity and coincidence of maximizing sets at the measure endpoint $p=1$, using the geometry of extreme moment measures and unimodal splines. Symmetry at that endpoint and the remaining exponents are left open.
+
+## 1. The sharp inequality
+
+All functions and measures in this paper are real. For $1\le p\le\infty$, we use the homogeneous norm $\|u^{(n)}\|_p$ on $W_0^{n,p}(0,1)$. The endpoint conditions are
+
+$$
+u^{(j)}(0)=u^{(j)}(1)=0,\qquad 0\le j<n.
+\tag{1}
+$$
+
+Let $C_{n,p}$ and $V_{n,p}$ denote the sharp constants in
+
+$$
+\|u\|_\infty\le C_{n,p}\|u^{(n)}\|_p,
+\qquad
+\|u'\|_1\le V_{n,p}\|u^{(n)}\|_p.
+\tag{2}
+$$
+
+The inequality $V_{n,p}\ge2C_{n,p}$ follows from the variation of a function that vanishes at both endpoints. Nazarov and Shcheglova [NS, Conjecture 4.14] conjecture equality for all $n\ge2$ and $1\le p\le\infty$, together with coincidence and midpoint symmetry of the extremizers. Their Remark 4.15 records the previously known case $n=2$.
+
+**Theorem 1.** For every integer $n\ge2$,
+
+$$
+V_{n,2}=2C_{n,2}
+=\frac{1}{2^{2n-2}(n-1)!\sqrt{2n-1}}.
+\tag{3}
+$$
+
+The nonzero extremizers are precisely the scalar multiples of the Riesz representer $R_n(\cdot,1/2)$ of evaluation at $1/2$ in $W_0^{n,2}(0,1)$. In particular, the maximizing sets in (2) coincide, and their elements are even about $1/2$.
+
+The point-evaluation formula used here is prior work. Kalyabin [K, Theorem 2] gives, after affine rescaling,
+
+$$
+\|\operatorname{ev}_a\|^2
+=\frac{[a(1-a)]^{2n-1}}{(2n-1)((n-1)!)^2}.
+\tag{4}
+$$
+
+Our contribution is the upper bound for the variation norm and its equality classification, obtained through the rearrangement principle in Section 3. Best polynomial approximation already occurs in this embedding problem [GS]. The sharp $W_0^{m,2}$ to $L^1$ embedding of the function itself was proved by Hindov, Nitzan, Olsen and Rydhe [HNOR]; their theorem does not include the additional zero-mean constraint on a derivative that appears below.
+
+## 2. A Jacobi representation of the clamped Green form
+
+Fix $m\ge1$, and set
+
+$$
+w(x)=x^m(1-x)^m,\qquad
+M=\int_0^1w(x)\,dx=\frac{(m!)^2}{(2m+1)!},
+\qquad d\pi(x)=M^{-1}w(x)\,dx.
+\tag{5}
+$$
+
+Let $h_k$ be the orthonormal polynomials for $\pi$, with positive leading coefficients. These are normalized shifted Jacobi polynomials with parameters $(m,m)$; in particular $h_0=1$. Put
+
+$$
+v_k=wh_k,\qquad \lambda_k=\frac{(k+2m)!}{k!}.
+\tag{6}
+$$
+
+**Lemma 2.** The functions $v_k/\sqrt{M\lambda_k}$ form an orthonormal basis of $H=W_0^{m,2}(0,1)$ in its energy inner product. Moreover,
+
+$$
+(-1)^m v_k^{(2m)}=\lambda_k h_k.
+\tag{7}
+$$
+
+*Proof.* The left side of (7) has degree $k$. If $q$ is a polynomial of degree less than $k$, integration by parts $2m$ times yields
+
+$$
+\int_0^1 (wh_k)^{(2m)}wq
+=\int_0^1 wh_k(wq)^{(2m)}=0.
+\tag{8}
+$$
+
+Every boundary term vanishes because one of its two factors has fewer than $m$ derivatives and retains an endpoint zero. Orthogonality therefore shows that the left side of (7) is proportional to $h_k$. Comparing leading coefficients proves (7). A further integration by parts gives
+
+$$
+\langle v_k,v_\ell\rangle_H=M\lambda_k\delta_{k\ell}.
+\tag{9}
+$$
+
+If $y\in H$ is orthogonal to every $v_k$, weak integration by parts gives $\int_0^1 yh_k=0$ for every $k$. The $h_k$ span the polynomials, which are dense in $C[0,1]$, so $y=0$. This proves completeness. $\square$
+
+The mean functional $y\mapsto\int_0^1y$ has Riesz representer $v_0/\lambda_0=w/(2m)!$. Therefore
+
+$$
+H_*:=\left\{y\in H:\int_0^1y=0\right\}
+\tag{10}
+$$
+
+is obtained by removing the zeroth basis vector. For a bounded real load $g$, Parseval gives the squared dual norm of $y\mapsto\int gy$ on $H_*$:
+
+$$
+Q_m(g)
+=M\sum_{k\ge1}\frac{\left|\int_0^1gh_k\,d\pi\right|^2}{\lambda_k}.
+\tag{11}
+$$
+
+Equivalently, if $G_m$ is the clamped Green kernel and $w_m=w/(2m)!$, then
+
+$$
+Q_m(g)=\iint g(x)G_m(x,t)g(t)\,dx\,dt
+-\frac{\left(\int gw_m\right)^2}{\int w_m}.
+\tag{12}
+$$
+
+Formula (11) is sufficient for the proof and avoids any pointwise convergence issue for a Green series.
+
+## 3. Spherical rearrangement of the load
+
+Set $d=2m+2$ and let $\sigma$ be normalized surface measure on $S^d$. The coordinate $x=(1+\xi_{d+1})/2$ has law $\pi$. Thus
+
+$$
+F(\xi)=g\!\left(\frac{1+\xi_{d+1}}2\right)
+\tag{13}
+$$
+
+identifies $L^2(\pi)$ with the zonal subspace of $L^2(S^d)$. Under this identification, $h_k$ is the normalized zonal harmonic of degree $k$. This follows from the orthogonal decomposition of polynomials into spherical harmonics: a zonal polynomial of degree $k$ orthogonal to all lower zonal degrees has only its degree-$k$ component.
+
+The spherical Poisson operator $P_r$, $0<r<1$, has eigenvalue $r^k$ on degree-$k$ harmonics and kernel
+
+$$
+K_r(\xi\cdot\eta)
+=\frac{1-r^2}{(1-2r\xi\cdot\eta+r^2)^{(d+1)/2}}.
+\tag{14}
+$$
+
+We use normalized surface measure, as in [ABR, (1.15)]. The eigenvalue follows by harmonic extension of a homogeneous harmonic polynomial. The beta integral gives
+
+$$
+\frac1{\lambda_k}
+=\frac1{(2m-1)!}\int_0^1r^k(1-r)^{2m-1}\,dr.
+\tag{15}
+$$
+
+Tonelli's theorem applied to the nonnegative spectral terms in (11) therefore gives
+
+$$
+Q_m(g)=\frac{M}{(2m-1)!}\int_0^1(1-r)^{2m-1}
+\left(\langle F,P_rF\rangle-\left(\int F\,d\sigma\right)^2\right)dr.
+\tag{16}
+$$
+
+The deletion of the constant harmonic is exactly the mean subtraction needed in (12).
+
+**Theorem 3.** If $A\subset(0,1)$ is measurable and $a\in[0,1]$ satisfies $\pi(A)=\pi([0,a])$, then
+
+$$
+Q_m(\mathbf1_A)\le Q_m(\mathbf1_{[0,a]}).
+\tag{17}
+$$
+
+If $0<\pi(A)<1$, equality holds only when $A$ agrees, up to null sets, with an interval abutting one endpoint and having that $\pi$-measure.
+
+*Proof.* Lift $A$ to the zonal subset $E\subset S^d$ using (13). For fixed $r$, $K_r$ is positive, bounded and strictly decreasing in geodesic distance. Spherical rearrangement [BH, Theorem 2] maximizes the self-interaction of $\mathbf1_E$ at fixed surface measure by a cap. Choose that cap about the negative coordinate axis. It corresponds to $[0,a]$. The mean term in (16) is unchanged, and integration proves (17).
+
+For clarity, the equality hypotheses in [BH] are satisfied with two functions and integrand $(s,t)\mapsto st$. Its mixed finite difference is strictly positive; the kernel is positive and strictly decreasing; and the nontrivial indicators are nonconstant with finite interaction. Hence equality at fixed $r$ forces $E$ to be a cap up to rotation. If equality holds in (17), the nonnegative rearrangement deficit has zero integral in (16), so equality holds for almost every $r$, and in particular for one $r\in(0,1)$. Thus $E$ is a cap.
+
+Its axis must be the original coordinate axis up to reversal. Indeed, zonal invariance makes the centroid of $E$ parallel to that axis. A nontrivial cap has a nonzero centroid parallel to its own axis. Consequently $A$ is an endpoint interval, as claimed. $\square$
+
+The same argument proves a broader load rearrangement statement. For a bounded real $g$, let $g^\downarrow$ be its nonincreasing equimeasurable rearrangement relative to $\pi$. Adding a constant makes $g$ nonnegative without changing $Q_m$. Applying [BH] in (16) gives
+
+$$
+Q_m(g)\le Q_m(g^\downarrow).
+\tag{18}
+$$
+
+This is rearrangement of a load in a Green quadratic form. It does not assert that ordinary rearrangement preserves a higher derivative norm.
+
+## 4. Proof of Theorem 1
+
+Put $m=n-1$. The map $u\mapsto y=u'$ is an isometric bijection from $W_0^{n,2}$ to $H_*$: integrating $y$ recovers $u$, and the zero-mean condition supplies $u(1)=0$.
+
+Duality gives
+
+$$
+V_{n,2}^2=\sup_{|g|\le1}Q_m(g)
+=4\sup_A Q_m(\mathbf1_A).
+\tag{19}
+$$
+
+To justify the second equality, write a bounded $g$ with $|g|\le1$ as the average of $\operatorname{sign}(g-s)$ over uniform $s\in[-1,1]$. Convexity of the squared Hilbert dual norm bounds its value by the supremum over sign functions. Constants are annihilated in (11), giving $Q_m(2\mathbf1_A-1)=4Q_m(\mathbf1_A)$.
+
+For an endpoint interval,
+
+$$
+\int_0^a y(x)\,dx=u(a),
+\qquad Q_m(\mathbf1_{[0,a]})=\|\operatorname{ev}_a\|^2.
+\tag{20}
+$$
+
+Theorem 3, (4), and (19) now prove (3). In particular, the maximizing interval is a half-interval.
+
+Suppose that $u\ne0$ attains equality, and take $g=\operatorname{sign}(u')$, choosing either sign where $u'=0$. Both signs occur on sets of positive measure. Equality in the Hilbert dual bound and in Theorem 3 forces $g$ to be a half-interval sign function, up to its global sign and null sets. Its functional on $H_*$ is $\pm2u(1/2)$. Equality in Cauchy--Schwarz therefore makes $u$ a scalar multiple of $R_n(\cdot,1/2)$.
+
+Conversely, this representer maximizes point evaluation. Its variation is at least twice its maximum and at most the bound just proved, so it also maximizes variation. Formula (4) has its unique maximum at $a=1/2$, and uniqueness of a Hilbert-space Riesz representer gives precisely the same classification for the point-norm extremizers. Finally, reflection preserves the energy inner product and fixes evaluation at $1/2$, so uniqueness makes $R_n(\cdot,1/2)$ reflection invariant. $\square$
+
+## 5. The measure endpoint
+
+Let $\mathcal M_n$ consist of real finite signed measures $\mu$ on $[0,1]$ such that
+
+$$
+\|\mu\|_{\mathrm{TV}}\le1,
+\qquad \int_0^1t^j\,d\mu(t)=0\quad(0\le j<n).
+\tag{21}
+$$
+
+Their compactly supported potentials are
+
+$$
+U_\mu(x)=\int_0^1\frac{(x-t)_+^{n-1}}{(n-1)!}\,d\mu(t).
+\tag{22}
+$$
+
+The moments make $U_\mu$ vanish off $[0,1]$, and $D^nU_\mu=\mu$. For $n\ge2$, $U_\mu$ is continuous and absolutely continuous, with integrable first derivative. Endpoint atoms are allowed in this relaxed formulation.
+
+**Theorem 4.** For every $n\ge2$,
+
+$$
+\sup_{\mu\in\mathcal M_n}\|U_\mu'\|_1
+=2\sup_{\mu\in\mathcal M_n}\|U_\mu\|_\infty.
+\tag{23}
+$$
+
+The maximizing measures for the two quantities coincide. The relaxed constants equal $V_{n,1}$ and $C_{n,1}$, respectively. No symmetry assertion at $p=1$ is included.
+
+*Proof of the constant identity.* Every extreme point of $\mathcal M_n$ has norm one and exactly $n+1$ support points. To prove the support bound, suppose $\mu$ has norm one and at least $n+2$ disjoint Borel sets of positive $|\mu|$-measure. A nonzero function $h$ constant on those sets can satisfy the $n$ equations $\int t^jh\,d\mu=0$ and the extra equation $\int h\,d|\mu|=0$. Then $(1\pm\varepsilon h)\mu$ are distinct norm-one admissible measures for small $\varepsilon$. Such a $\mu$ is not extreme. A nonzero measure of norm less than one is excluded by scalar perturbation. Zero is the midpoint of opposite nonzero moment measures, which exist on any $n+1$ distinct nodes, and is not extreme either. A nonzero measure on at most $n$ points is excluded by the Vandermonde determinant.
+
+On nodes $t_0<\cdots<t_n$, the moment nullspace is one-dimensional, with weights
+
+$$
+b_i=\prod_{j\ne i}(t_i-t_j)^{-1}.
+\tag{24}
+$$
+
+Thus every extreme measure is a normalized signed multiple of $\sum_i b_i\delta_{t_i}$. Its potential is a B-spline, up to scale and sign. More explicitly, the Genocchi--Hermite identity [dB, (52)] identifies
+
+$$
+\rho(x)=n\sum_{i=0}^n b_i(t_i-x)_+^{n-1}
+=(-1)^n n!\,U_{\sum b_i\delta_{t_i}}(x)
+\tag{25}
+$$
+
+with the density of $\sum_i t_iX_i$, where $X$ is uniform on the standard $n$-simplex. After parallel sections of the simplex are identified by translation, their Minkowski interpolation is contained in the section at the interpolated coordinate. The classical Brunn--Minkowski inequality [GHW, (3), $p=1$] therefore makes their volumes to the power $1/(n-1)$ concave. The coarea factor relating section volume to $\rho$ is constant, so $\rho^{1/(n-1)}$ is concave and $\rho$ is unimodal. It is positive between its end knots, continuous, and zero at those knots. Every extreme potential therefore satisfies
+
+$$
+\|U_\mu'\|_1=2\|U_\mu\|_\infty.
+\tag{26}
+$$
+
+Write $C=\sup_{\mathcal M_n}\|U_\mu\|_\infty$. The set $\mathcal M_n$ is weak-star compact. Moreover, $\mu\mapsto\|U_\mu'\|_1$ is weak-star lower semicontinuous: it is the supremum of the continuous linear functionals $\int H_g\,d\mu$, where $|g|\le1$ and
+
+$$
+H_g(t)=\int_t^1\frac{(x-t)^{n-2}}{(n-2)!}g(x)\,dx.
+\tag{27}
+$$
+
+Its sublevel set at $2C$ is closed and convex and contains all extreme points by (26). Krein--Milman therefore gives the upper bound in (23). The elementary variation lower bound gives the reverse inequality. The height supremum is attained: on the bounded measure set, joint continuity of the kernels in (22) makes the potential map weak-star to uniform continuous. Consequently the variation supremum is attained as well.
+
+*Coincidence.* Let $\mu$ maximize variation, choose $g=\operatorname{sign}(U_\mu')$, and let $\mathcal F$ be the compact exposed face on which $\int H_g\,d\nu=2C$. Its extreme points are extreme in $\mathcal M_n$. For each such point $e$,
+
+$$
+2C=\int gU_e'\le\|U_e'\|_1=2\|U_e\|_\infty\le2C.
+\tag{28}
+$$
+
+Thus $g$ agrees with the sign of $U_e'$ wherever the latter is nonzero, and every $U_e$ maximizes height. Its end knots must be $0$ and $1$: a potential supported on a shorter interval of length $L$ can be stretched to $[0,1]$, keeping its derivative-measure norm one and multiplying its height by $L^{1-n}>1$.
+
+All $U_e$ have the same global sign, since opposite signs give opposite nonzero derivatives on a common interval near zero, contradicting their agreement with $g$. Change that common sign to positive. Concavity of $U_e^{1/(n-1)}$ makes its maximum set a closed interval, with strictly positive derivative almost everywhere before it and strictly negative derivative almost everywhere after it. Two disjoint maximum intervals would again force contradictory signs for $g$. The maximum intervals therefore intersect pairwise, and hence have a common point $a_*$. All $U_e(a_*)=C$. Evaluation is weak-star continuous, so Krein--Milman applied to $\mathcal F$ gives $U_\mu(a_*)=C$. Conversely, a height maximizer is a variation maximizer by the already proved constant identity.
+
+*Recovery of the ordinary constants.* For an ordinary admissible $u$, the measure $u^{(n)}dx$ satisfies (21). Conversely, mollify the zero extension of $U_\mu$ with a nonnegative mollifier supported in $[-\varepsilon,\varepsilon]$, obtaining $U_\varepsilon$. With $a=1+2\varepsilon$, set
+
+$$
+u_\varepsilon(x)=a^{1-n}U_\varepsilon(ax-\varepsilon).
+\tag{29}
+$$
+
+It is smooth, supported on $[0,1]$, satisfies all endpoint conditions, and has $\|u_\varepsilon^{(n)}\|_1\le1$. Its maximum and variation converge to those of $U_\mu$, by uniform convergence of the potential mollification and $L^1$ convergence of its first derivative. This proves equality of the relaxed and ordinary sharp constants. The proof classifies coincidence of relaxed maximizers and does not assert attainment in the ordinary $W_0^{n,1}$ class. $\square$
+
+## 6. Remaining questions
+
+Theorems 1 and 4 leave the general exponents in [NS, Conjecture 4.14] unresolved. The Hilbert proof uses a quadratic form whose constant-mode subtraction is preserved by spherical rearrangement. The measure proof uses finite-support extreme points. Neither mechanism supplies the general $1<p<\infty$ argument by replacing its norm formally. Symmetry and an explicit classification of the maximizing knot configurations at $p=1$ also remain open here.
+
+## References
+
+[ABR] S. Axler, P. Bourdon and W. Ramey, *Harmonic Function Theory*, second edition, Springer, 2001 (author PDF revision July 17, 2020). [Author text](https://axler.net/HFT.pdf), formula (1.15), Theorem 1.17 and Chapter 5.
+
+[BH] A. Burchard and H. Hajaiej, *Rearrangement inequalities for functionals with monotone integrands*, Journal of Functional Analysis **233** (2006), 561--582. [DOI](https://doi.org/10.1016/j.jfa.2005.08.010). [Final revised author version](https://arxiv.org/abs/math/0506336).
+
+[dB] C. de Boor, *Divided Differences*, Surveys in Approximation Theory **1** (2005), 46--69. [Author text](https://arxiv.org/abs/math/0502036), formulas (47)--(48) and (52).
+
+[GHW] R. J. Gardner, D. Hug and W. Weil, *The Orlicz-Brunn-Minkowski theory: A general framework, additions, and inequalities*, Journal of Differential Geometry **97** (2014), no. 3. [DOI](https://doi.org/10.4310/jdg/1406033976). [Author text](https://arxiv.org/abs/1301.5267).
+
+[GS] T. A. Garmanova and I. A. Sheipak, *Sharp Estimates of High-Order Derivatives in Sobolev Spaces*, Moscow University Mathematics Bulletin **79** (2024), 1--10. [DOI](https://doi.org/10.3103/S0027132224700013).
+
+[HNOR] R. Hindov, S. Nitzan, J.-F. Olsen and E. Rydhe, *A sharp higher order Sobolev embedding*, Mathematika **71** (2025), e70012. [DOI](https://doi.org/10.1112/mtk.70012). [Author preprint](https://arxiv.org/abs/2411.10201).
+
+[K] G. A. Kalyabin, *Sharp Estimates for Derivatives of Functions in the Sobolev Classes $W_2^r(-1,1)$*, Proceedings of the Steklov Institute of Mathematics **269** (2010), 137--142. [DOI](https://doi.org/10.1134/S0081543810020112).
+
+[NS] A. I. Nazarov and A. P. Shcheglova, *A Survey of Results on 1D Steklov Type Inequalities*, Proceedings of the Steklov Institute of Mathematics **331** (2025), 134--147; published online March 19, 2026. [DOI](https://doi.org/10.1134/S0081543825601509). [Latest author preprint](https://arxiv.org/abs/2101.10752).

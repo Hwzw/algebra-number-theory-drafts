@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q55",
+  "counts_as_paper": true,
+  "target": "Nazarov-Shcheglova final Conjecture 4.14: lambda_3(n,1,p,1)=2 lambda_3(n,0,p,infinity), with coincident symmetric extremizers",
+  "source_files": "source-downloads.json",
+  "checks": [
+    {
+      "source": "survey-v3.pdf; history.html; final.html",
+      "finding": "Latest listed v3 May 19, 2025, Conjecture 2 equation (9) agrees with final Conjecture 4.14. Final Remark 4.15 already settles n=2. PDF actually has 16 pages despite 21-page arXiv comments metadata."
+    },
+    {
+      "source": "garmanova-sheipak-final.pdf; garmanova-sheipak-final.html",
+      "finding": "Final Theorem 3 on printed pages 6-7 is restricted to k=n-1, p=1, q=infinity. The general polynomial-approximation representation is prior work. Full publisher files obtained without institutional access."
+    },
+    {
+      "source": "garmanova-sheipak-2022.pdf",
+      "finding": "Early Theorem 5.1 displays a broader n,k statement than the final theorem; do not import the early scope. Its proof specializes to k=n-1."
+    },
+    {
+      "source": "hindov-et-al-v1.pdf; hindov-et-al-history.html",
+      "finding": "Author v1 November 15, 2024 remains latest. All nine author pages read. Final nine-page publisher PDF was also read through web extraction on September 15, 2026 after web access recovered; Theorem 1 and Lemma 2 retain the function-L1 embedding and Landau extremizers. No zero-mean derivative theorem appears. Direct curl PDF retrieval remains 403; no local final-PDF hash claimed."
+    },
+    {
+      "source": "garmanova-sheipak-2026.pdf; garmanova-sheipak-2021-final.pdf",
+      "finding": "Theorems 4.1 and 5.1 of the 2021 final article (Functional Analysis and Its Applications 55, 34-44; DOI 10.1134/S0016266321010044) already give the corresponding pointwise p=2 maxima and even-order formulas. The June 2026 upload is not evidence of new priority for these conclusions. Neither scope addresses derivative L1."
+    },
+    {
+      "source": "burchard-hajaiej.pdf; burchard-hajaiej-history.html",
+      "finding": "Final revised author v2 April 6, 2006, 21 pages. Theorem 2 p4 explicitly covers spheres and equality for positive strictly decreasing kernels with strict supermodular integrand. Proof/equality pp11,16-17 checked. Applied with F(s,t)=st and bounded strictly monotone Poisson kernels. Final publication JFA 233 (2006) 561-582, DOI 10.1016/j.jfa.2005.08.010 verified in Crossref; publisher API returns metadata only."
+    },
+    {
+      "source": "harmonic-function-theory.pdf",
+      "finding": "Axler-Bourdon-Ramey, second edition, copyright 2001, author PDF dated July 17, 2020, 260 PDF pages. Formula 1.15 and Theorem 1.17 on printed pp12-13 verify normalized Poisson kernel. Chapter 5 polynomial/harmonic decomposition supports degree-k multiplier r^k."
+    },
+    {
+      "source": "kalyabin-2010.pdf",
+      "finding": "All six final publisher pages read. Theorem 2 formula 14, printed p139, gives exact point-evaluation diagonal; affine scaling to [0,1] checked. This sharp point constant is prior work."
+    },
+    {
+      "source": "oneill-withdrawal.html",
+      "finding": "arXiv 1810.06813 v2 October 4, 2024 is withdrawn, reporting an error in the reduction from Prop 2.1 to Theorem 1.2. Excluded as a dependency. No claim of stability based on that preprint."
+    },
+    {
+      "source": "ascione-spherical-stability.pdf",
+      "finding": "Lead only: Giacomo Ascione, arXiv 2105.08012v2, not ONeill. First sections read; not used as a dependency for the new proof."
+    },
+    {
+      "source": "search-screen.json; searches/",
+      "finding": "Eleven arXiv API feeds retained with result/truncation flags, including the final targeted 2025-September 2026 screen (22 results). Follow-up web queries and current primary histories checked after web access recovered. No matching resolution identified. Metadata searches are not exhaustive priority certification."
+    },
+    {
+      "source": "deboor-divided-differences.pdf",
+      "finding": "Genocchi-Hermite formula (52), printed p64, and normalized B-spline formulas (47)-(48), p62, checked. These are classical dependencies, not new claims."
+    },
+    {
+      "source": "gardner-hug-weil.pdf",
+      "finding": "Introductory formula (3) at p=1 is classical Brunn-Minkowski. Used for parallel simplex sections. Journal metadata DOI 10.4310/jdg/1406033976 checked; no claim to reprove the Orlicz theory."
+    }
+  ],
+  "access_limitations": [
+    "The user reports no institutional access for the separate Kishnani-Kulshrestha comparison. That earlier candidate-specific hold is preserved.",
+    "Baernstein-Taylor original download returned an HTML error page, saved as .response.html. The published Burchard-Hajaiej theorem is checked through its final revised author text.",
+    "Burchard-Hajaiej final publisher API returns metadata rather than body.",
+    "Earlier web token_revoked errors ceased in the final audit; direct Wiley curl requests remain 403 but the final PDF body was readable through the web tool.",
+    "Semantic Scholar citation API returned 429; no exhaustive citation-chain search claimed."
+  ],
+  "proof_state": {
+    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures.",
+    "standard_dependencies": [
+      "Genocchi-Hermite divided differences (de Boor, formula 52)",
+      "Brunn-Minkowski",
+      "Krein-Milman",
+      "Spherical harmonic decomposition and Poisson kernel",
+      "Burchard-Hajaiej Theorem 2 including its equality clause",
+      "Kalyabin Theorem 2 point-evaluation norm"
+    ],
+    "unresolved": [
+      "General-p conjecture beyond the proved exponents",
+      "p=1 midpoint symmetry and explicit knot classification",
+      "Independent expert verification and absolute priority; journal suitability remains a judgment"
+    ],
+    "latest_note": "manuscript.md",
+    "draft": "manuscript.md",
+    "combined_internal_audit": "Complete; no gap identified by originating assistant. Not independent review."
+  },
+  "diagnostics": {
+    "file": "Internal research workspace: notes/q55-p2-diagnostic.json (not a proof)",
+    "cases": "n=2 through 8; 12 starts each",
+    "status": "floating-point local search; no counterexample found; not a proof or global certificate",
+    "exact_normalization": "jacobi-exact-check.json: 42 exact rational cases; corroboration only"
+  },
+  "publication_decision": "Internally admitted as one preprint P47. Public-file verification is tracked in the publication receipt; no full all-p solution or independent certification claimed.",
+  "source_archive_note": "Named third-party files are retained in the research workspace, not redistributed. URLs and hashes are in source-downloads.json.",
+  "published_as": "P47"
+}

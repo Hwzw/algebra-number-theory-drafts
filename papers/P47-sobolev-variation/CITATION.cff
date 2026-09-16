@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and note its unreviewed preprint status."
+type: article
+title: "Sharp total variation bounds from spherical rearrangement"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+date-released: 2026-09-15
+version: 1.0.0
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P47-sobolev-variation"
+abstract: "Sharp all-order Hilbert total variation bounds via spherical rearrangement, with a measure-endpoint theorem. AI-assisted preprint, not independently verified."

@@ -1,0 +1,141 @@
+[
+  {
+    "file": "survey-v3.pdf",
+    "url": "https://arxiv.org/pdf/2101.10752v3",
+    "bytes": 400354,
+    "sha256": "367981d029b2b1047d0f72623c7ddea100b7e69c8fda15cccae17535ce471471",
+    "actual_pdf_pages": 16
+  },
+  {
+    "file": "history.html",
+    "url": "https://arxiv.org/abs/2101.10752",
+    "bytes": 39822,
+    "sha256": "cd3fbc697dc0a3c1e972f4e8e4c34114e71908049ed3fde31a4db2555c2d367c"
+  },
+  {
+    "file": "final.html",
+    "url": "https://link.springer.com/article/10.1134/S0081543825601509",
+    "bytes": 473992,
+    "sha256": "404a3dd86df17d844855e27c200293c6ca458a551fd87156781deeee0f74ea46"
+  },
+  {
+    "file": "garmanova-sheipak-2022.pdf",
+    "url": "https://arxiv.org/pdf/2208.12791v1",
+    "bytes": 206904,
+    "sha256": "1dcbe648dc37031f3015e751d8a27b7026ded5b0e00cbfa78f103eba6cfe4b0e",
+    "actual_pdf_pages": 8
+  },
+  {
+    "file": "garmanova-sheipak-2026.pdf",
+    "url": "https://arxiv.org/pdf/2606.22646v1",
+    "bytes": 343129,
+    "sha256": "0aebaf0d145f0d594eff57f31691591e660781dbdaf14b7e8ae5016ad08a85b7",
+    "actual_pdf_pages": 9
+  },
+  {
+    "file": "garmanova-sheipak-final.html",
+    "url": "https://link.springer.com/article/10.3103/S0027132224700013",
+    "bytes": 308388,
+    "sha256": "ba820221155b6d179b8abd057114aba8f021f87fd536face3bae1c2d69275e05"
+  },
+  {
+    "file": "garmanova-sheipak-final.pdf",
+    "url": "https://link.springer.com/content/pdf/10.3103/S0027132224700013.pdf",
+    "bytes": 829082,
+    "sha256": "90fbc41a148648dbe70f9167480cf4f1de672835f2666aece883a2682257b760",
+    "actual_pdf_pages": 10
+  },
+  {
+    "file": "hindov-et-al-history.html",
+    "url": "https://arxiv.org/abs/2411.10201",
+    "bytes": 37968,
+    "sha256": "b63a4cf68b79f0d7ea31aa3e9f78b898e5d38db63ae7ff63fce6bd76cef728f2"
+  },
+  {
+    "file": "hindov-et-al-v1.pdf",
+    "url": "https://arxiv.org/pdf/2411.10201v1",
+    "bytes": 147134,
+    "sha256": "f72fd589363a94e8530e63f6fdd7690f31ee575a7b2b2a80e537994255133aee",
+    "actual_pdf_pages": 9
+  },
+  {
+    "file": "burchard-hajaiej.pdf",
+    "url": "https://arxiv.org/pdf/math/0506336v2",
+    "bytes": 220881,
+    "sha256": "fca498fc4be4fadd825a688fe0067b45232e099390f2148bf52683337e3544ef",
+    "actual_pdf_pages": 21
+  },
+  {
+    "file": "burchard-hajaiej-history.html",
+    "url": "https://arxiv.org/abs/math/0506336",
+    "bytes": 40606,
+    "sha256": "6c934b91d4339ee72d526da444c6ac28d0346ee7117d38f7867f9e9cf89a53d4"
+  },
+  {
+    "file": "burchard-hajaiej-final-metadata.xml",
+    "url": "https://api.elsevier.com/content/article/PII:S0022123605003253?httpAccept=text/xml",
+    "bytes": 1951,
+    "sha256": "c252f026f5e7d0a82cb42b17202385e51b1989ced779803ceb344f22a8b011e1"
+  },
+  {
+    "file": "harmonic-function-theory.pdf",
+    "url": "https://axler.net/HFT.pdf",
+    "bytes": 2258926,
+    "sha256": "4e64124f7e36993ee784e575a024505f99d484ccf959d2d3864eae9232af8bf1",
+    "actual_pdf_pages": 260
+  },
+  {
+    "file": "kalyabin-2010.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1134/S0081543810020112.pdf",
+    "bytes": 1288690,
+    "sha256": "f666a445f11b7d138db65e96779c52f84e742f32954fef59e03ce3c25075afd6",
+    "actual_pdf_pages": 6
+  },
+  {
+    "file": "oneill-withdrawal.html",
+    "url": "https://arxiv.org/abs/1810.06813",
+    "bytes": 38714,
+    "sha256": "d98ace91a659160fd40f84d48d8a723f9987c78159a7d35a58f7daee423b2508"
+  },
+  {
+    "file": "oneill-sphere-v1.pdf",
+    "url": "https://arxiv.org/pdf/1810.06813v1",
+    "bytes": 180300,
+    "sha256": "bc09ac55c43d00b6e7526b25086a209df645b7fa6e0a0ee185981dd9b884f300",
+    "actual_pdf_pages": 13
+  },
+  {
+    "file": "ascione-spherical-stability.pdf",
+    "url": "https://arxiv.org/pdf/2105.08012v2",
+    "bytes": 532053,
+    "sha256": "62211381b8d48db2d0d30ad0bb9cd670fc1c0c009dee7b1204d2a2321d94edc6",
+    "actual_pdf_pages": 51
+  },
+  {
+    "file": "baernstein-taylor-1976.response.html",
+    "url": "https://projecteuclid.org/journalArticle/Download?urlid=10.1215/S0012-7094-76-04322-2",
+    "bytes": 1165,
+    "sha256": "6e18af670bdf3332ec57564a6aabe2d4cc195075f863e1abf15fffb627bf948a"
+  },
+  {
+    "file": "garmanova-sheipak-2021-final.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1134/S0016266321010044.pdf",
+    "bytes": 255965,
+    "sha256": "9e8573db264c423f3346aaf8b93561f25bbc3d14230d5c4e2362eb7bd0bf3035",
+    "actual_pdf_pages": 11
+  },
+  {
+    "file": "deboor-divided-differences.pdf",
+    "url": "https://arxiv.org/pdf/math/0502036v1",
+    "bytes": 218135,
+    "sha256": "29a84b1a1582225757267de2ad8f96151256e8b35a09ba7907f76cee460c126e",
+    "actual_pdf_pages": 24
+  },
+  {
+    "file": "gardner-hug-weil.pdf",
+    "url": "https://arxiv.org/pdf/1301.5267v1",
+    "bytes": 517088,
+    "sha256": "0343b2056b66e2fd92bc729eb3afe4294a2edbc976b1d961d8ad415818a1ab85",
+    "actual_pdf_pages": 43
+  }
+]

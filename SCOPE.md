@@ -51,3 +51,7 @@ The claimed strong limit on fixed embedded C3 curves identifies transverse avera
 ## P46: positive radial series and sharp logarithmic concavity
 
 The claimed representation has strictly positive coefficients and convergence radius equal to the squared ball radius. It implies sharp negative-square-root-log concavity and existence of a positive concavity power for every positive solution, in all dimensions. The amplitude threshold, ball uniqueness and shooting order are credited prior results. General convex domains, explicit sharp positive-power exponents and their radius monotonicity are not settled. See [the assessment](papers/P46-logarithmic-ball-concavity/ASSESSMENT.md) for primary-source comparisons and scope limits.
+
+## P47: sharp total variation from spherical rearrangement
+
+The claimed theorem proves V(n,2)=2C(n,2) for every n>=2, with the exact constant and precisely the midpoint point-evaluation extremizers. The proposed advance is a rearrangement inequality for the zero-mean clamped Green form via a positive spherical Poisson mixture. A complementary moment-measure argument proves the p=1 constant identity and coincidence of relaxed maximizers. These results form one paper. The point diagonal, spherical rearrangement and spline identities are credited prior work. General p, p=1 symmetry, knot classification and ordinary endpoint attainment are outside the claims. See [the assessment](papers/P47-sobolev-variation/ASSESSMENT.md).
