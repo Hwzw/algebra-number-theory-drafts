@@ -1,3 +1,36 @@
+# Internal review of the convex-deformation theorem
+
+Henry Zweiman. September 16, 2026. Originating-assistant review, not independent expert verification.
+
+1. **Exact question.** The published P46 Section 7 asks whether the normalized square-root-log conclusion survives controlled deformations. The theorem constructs arbitrarily small smooth uniformly convex deformations where it fails. It does not rename the weaker small-rescaling concavity property as the question being disproved.
+2. **Cubic obstruction.** Along a line, sqrt(w)=|t|sqrt(a+b t+O(t^2)). Its second derivative has opposite one-sided limits b/sqrt(a) and -b/sqrt(a). Both must be nonnegative for convexity. C4 regularity permits the differentiated remainder.
+3. **Tensor conclusion.** Vanishing of every diagonal cubic value implies vanishing of the symmetric tensor by polarization. A nonzero cubic yields failure arbitrarily close to the maximum.
+4. **Ball input.** The already proved estimate -D2 log U >= A I with A>1 is used, not inferred merely from strict log-concavity. The positive boundary slope and C2,gamma regularity come from the previous boundary argument, which addresses the non-Lipschitz nonlinearity.
+5. **Ground-state eigenvalue.** L U=-2U exactly. The ground-state form identity makes this the simple first eigenvalue, rather than only a negative test quotient.
+6. **Potential domain.** U is comparable to distance. The logarithmic potential is infinitesimally form-bounded by Hardy's inequality, so the form domain remains H01 and the resolvent is compact.
+7. **Poincare constant.** The density is U squared, hence its potential Hessian is at least 2A. The constant is 1/(2A), giving L >= 2A-2 on the perpendicular complement.
+8. **Vanishing boundary density.** The proof first uses smooth weighted Neumann problems on smaller concentric balls. The convex-boundary Bochner term has the correct nonnegative sign. Radius exhaustion and form approximation justify the desired weighted inequality.
+9. **Kernel exclusion.** Testing a zero mode against U makes it perpendicular to U; positivity on that complement gives zero. No eigenvalue-count guess is used.
+10. **Holder-space invertibility.** Division by a defining function loses one derivative. Multiplication by rho log rho is Holder of every exponent below one. The potential term is compact from C2,gamma Dirichlet functions to C0,gamma, so Fredholm index zero and kernel exclusion give an isomorphism.
+11. **Boundary nonlinearity.** The implicit-function theorem is not applied to the scalar function at zero. Writing u=rho b with b uniformly positive makes 2rho b log rho + 2rho b log b an analytic map in the stated Banach spaces.
+12. **Genuine domains.** The explicit radial graph is smooth, converges in every Ck norm, and has positive principal curvatures for small parameter. The radial cutoff gives a diffeomorphism identical near the old maximum.
+13. **Positive branch.** The branch stays in the positive-Hopf cone. It solves the actual equation on the deformed domain, not a formal first-order residual equation.
+14. **Shape derivative.** Its Eulerian boundary value is -Uprime(R)Y3, with the negative outward derivative from the ball. The material and Eulerian derivatives differ by DU dot V; V vanishes near zero.
+15. **Boundary regularity of the derivative.** A nonzero boundary trace times the logarithmic potential can prevent C2 regularity at the boundary. The proof asserts only C1,gamma there and interior smoothness.
+16. **Angular equation.** Degree three gives eigenvalue 3(N+1) on the unit sphere. Harmonic projection commutes with the radial linear operator. Homogeneous Dirichlet uniqueness removes every other mode.
+17. **Nonzero cubic coefficient.** The regular radial equation after factoring r cubed is an integral equation in dimension N+6. Zero initial coefficient forces the zero solution and contradicts the nonzero boundary data. A negative-part test in the angular subspace gives its positive sign.
+18. **Actual maximum.** The strict value gap away from the old center and a negative-definite Hessian nearby yield a unique global maximum. Its first derivative with respect to the shape parameter is zero because the degree-three shape derivative has zero gradient at zero.
+19. **Moving-center correction.** The maximum moves by O(epsilon squared). Therefore the base fourth derivative does not cancel the order-epsilon cubic tensor. The calculation is performed at the moved maximum.
+20. **Logarithmic jet.** At a critical point the third derivative of -log u is exactly -D3u/u. The e1 diagonal value has nonzero leading coefficient -6c/U(0).
+21. **Ordinary log-concavity.** On an interior compact set it follows from the original strict bound and C2 convergence. A common boundary collar follows from uniform Hopf slope, positive curvature and C2,gamma bounds; the Schur complement handles the mixed terms.
+22. **Scope of uniqueness.** Only the branch near the ball solution is classified by the implicit-function theorem. Global uniqueness of all positive solutions on arbitrary deformed domains is not asserted.
+23. **Priority distinction.** GMS's final page-44 question is about balls and was answered by the previous revision. The present theorem answers P46's subsequent deformation question. Ishige-Salani-Takatsu's small-rescaling definition is explicitly distinguished. The weighted Poincare input is classical and credited.
+24. **Evidence boundary.** The argument is a hand proof with no numerical PDE or finite parameter search as a dependency. MathJax, compilation, rendered pages and public byte checks establish artifact consistency, not independent correctness or novelty.
+
+**Internal conclusion:** The proof supports the stated counterexample near every ball in every dimension at least two. Publish as a revision of P46 after final artifact checks. Do not claim an extraordinarily verified broad conjecture solution, a new paper count, or completion of the larger goal.
+
+## Review of the retained ball results
+
 # Internal proof and artifact review
 
 Henry Zweiman. September 15, 2026.
@@ -21,6 +54,6 @@ The externally used PDE results are existence and radial symmetry from Gallo--Mo
 
 The early note 0178 tentatively raised uniqueness as potentially new. The subsequent primary-source check found Ben Chrouda 2022 and corrected that interpretation before publication. The current June 2026 Liu--Sun--Zou v2 and current author version of the parabolic concavity paper were checked. The precise extent of the source inspection and its limits are recorded in ASSESSMENT.md and source-audit.json.
 
-## Material limits
+## Original revision limits (historical)
 
-The proof is for balls, with the stated product corollary. It does not settle stronger concavity on arbitrary convex domains or compute the optimal positive-power exponent. The proof and assessment remain open to expert correction. PDF compilation, MathJax parsing and public hash equality certify artifact consistency, not mathematics or originality.
+The original revision was for balls, with the stated product corollary. It does not settle stronger concavity on arbitrary convex domains or compute the optimal positive-power exponent. The proof and assessment remain open to expert correction. PDF compilation, MathJax parsing and public hash equality certify artifact consistency, not mathematics or originality.

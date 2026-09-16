@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-16",
+  "scope": "Focused comparison for P46 revision 1.1, not exhaustive priority certification",
+  "sources": [
+    {
+      "source": "Gallo, Mosconi, Squassina, Power law convergence and concavity for the logarithmic Schrodinger equation",
+      "url": "https://www.dmf.unicatt.it/~squassin/papers/lavori/GMSlog.pdf",
+      "version": "Final author-hosted 60-page article; Mathematische Annalen 395 (2026), article 21",
+      "read_this_turn": "Final p.44 explicit ball question and surrounding one-dimensional calculation; arXiv v2 introduction on normalized transform and general log-concavity",
+      "finding": "The original named question concerns balls. The new deformation result answers the subsequent question in the published P46 Section 7; it is not falsely attributed as a general-domain conjecture of GMS."
+    },
+    {
+      "source": "Ishige, Salani, Takatsu, New characterizations of log-concavity",
+      "url": "https://arxiv.org/pdf/2004.13381",
+      "read_this_turn": "Definitions and Section 4.2, pp.17-19, including the small-rescaling class and terminology comparison",
+      "finding": "Small-rescaling half-log-concavity is distinct from normalization at the maximum. No preservation theorem is contradicted or used as a PDE proof input."
+    },
+    {
+      "source": "Ishige, Salani, Takatsu, To logconcavity and beyond",
+      "url": "https://arxiv.org/pdf/1809.05648",
+      "read_this_turn": "Definition 2.1 and Lemma 2.1, pp.3-4",
+      "finding": "Older reciprocal-exponent terminology also permits all sufficiently small multiplicative factors. Metadata was not used to conflate it with the cusp normalization."
+    },
+    {
+      "source": "Knezevic and Suli, Spectral Galerkin approximation of Fokker-Planck equations with unbounded drift",
+      "url": "https://www.numdam.org/article/M2AN_2009__43_3_445_0.pdf",
+      "read_this_turn": "Theorem 2.1 and Corollary 2.2 on printed p.450, with reference attribution to Bobkov and Ledoux",
+      "finding": "Classical Brascamp-Lieb weighted variance inequality on convex open sets. The needed smooth-ball exhaustion argument is supplied in the new proof."
+    },
+    {
+      "source": "Gallo, Moraschi, Squassina, Quantitative and exact concavity principles for parabolic and elliptic equations",
+      "url": "https://www.dmf.unicatt.it/~squassin/papers/lavori/parabconc.pdf",
+      "read_this_turn": "Relevant extracted log-concavity and constant-rank passages, including Corollary 5.3; not all 41 pages",
+      "finding": "Ordinary log-concavity and parabolic concavity statements do not supply the normalized-maximum deformation theorem in the inspected passages."
+    }
+  ],
+  "searches": [
+    "square root logarithmic Schrodinger concavity domain",
+    "logarithmic Schrodinger nondegeneracy bounded domain",
+    "logarithmic Schrodinger shape derivative",
+    "2-log-concavity maximum",
+    "log-concavity third derivatives",
+    "normalized logarithm square root concavity",
+    "Ishige Salani Takatsu To logconcavity and beyond"
+  ],
+  "proof_dependencies": [
+    "P46 Theorem 1.1 strong ball logarithmic Hessian bound and earlier nonzero boundary slope",
+    "Classical weighted Poincare or Brascamp-Lieb inequality, with the required ball boundary argument supplied",
+    "Classical Hardy inequality, elliptic Schauder and Fredholm theory, Banach implicit-function theorem, spherical harmonic decomposition"
+  ],
+  "no_numerical_proof_dependency": true,
+  "independent_review": false,
+  "exhaustive_priority_certified": false,
+  "new_result": "Normalized-square-root-log concavity fails along an explicit smooth uniformly convex deformation near every ball in every dimension N>=2, while ordinary strict log-concavity persists",
+  "not_claimed": [
+    "Failure of the weaker sufficiently-small-rescaling half-log-concavity",
+    "Global uniqueness or classification on arbitrary convex domains",
+    "An additional distinct manuscript",
+    "Completion of the broader extraordinary-conjecture goal"
+  ]
+}

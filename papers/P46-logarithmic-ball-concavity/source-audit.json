@@ -64,10 +64,24 @@
     "logarithmic Schrodinger absolute monotonicity"
   ],
   "new_claim": "Global positive radial series, sharp square-root-log concavity, positive power concavity on balls, and coefficientwise normalized-profile comparison",
-  "limits": [
+  "revision_1_1_deformation": {
+    "date": "2026-09-16",
+    "separate_record": "deformation-source-audit.json",
+    "new_result": "Normalized-square-root-log concavity fails along an explicit smooth uniformly convex deformation near every ball in every dimension N>=2, while ordinary strict log-concavity persists",
+    "normalization_distinction": "Fixed factor 1/maximum(u), not sufficiently small multiplicative scaling",
+    "priority_certified": false
+  },
+  "original_revision_limits": [
     "No proof on arbitrary convex domains",
     "No explicit optimal positive-power exponent or radius-monotonicity theorem",
     "No independent correctness or exhaustive priority certificate",
+    "No third-party PDFs redistributed"
+  ],
+  "current_limits": [
+    "No classification of all positive solutions on arbitrary convex domains",
+    "No disproof of the weaker small-rescaling half-log-concavity property",
+    "No explicit optimal positive-power exponent or radius-monotonicity theorem",
+    "No independent correctness or exhaustive priority certification",
     "No third-party PDFs redistributed"
   ]
 }

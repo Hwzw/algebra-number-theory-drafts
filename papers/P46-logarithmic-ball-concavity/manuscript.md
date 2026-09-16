@@ -1,12 +1,12 @@
-# Positive radial series and sharp logarithmic concavity on balls
+# Sharp logarithmic concavity on balls and its instability under convex deformation
 
 Henry Zweiman
 
-September 15, 2026
+September 16, 2026
 
 ## Abstract
 
-We study positive Dirichlet solutions of $-\Delta u=u\log u^2$ on a ball in any dimension. We prove that $-\log(u(r)/u(0))$ has a power series in $r^2$ with strictly positive coefficients and convergence radius equal to the square of the ball radius. The coefficients follow an explicit positive recurrence and are polynomials with nonnegative coefficients in the excess of the central logarithmic height above the Gaussian threshold. This structure proves concavity of $-\sqrt{-\log(u/\|u\|_\infty)}$, answering a question of Gallo, Mosconi and Squassina. The exponent $1/2$ is sharp among positive powers of the negative normalized logarithm. We also obtain a quantitative lower bound for its Hessian before taking the square root, positive power concavity of $u$ on every ball, and a comparison of normalized profiles. The argument gives an alternative proof of the known shooting order and ball uniqueness theorem. The essential step is to pass from a local positive recurrence to a convergent representation throughout the domain.
+We study positive Dirichlet solutions of $-\Delta u=u\log u^2$ on a ball in any dimension. We prove that $-\log(u(r)/u(0))$ has a power series in $r^2$ with strictly positive coefficients and convergence radius equal to the square of the ball radius. The coefficients follow an explicit positive recurrence and are polynomials with nonnegative coefficients in the excess of the central logarithmic height above the Gaussian threshold. This structure proves concavity of $-\sqrt{-\log(u/\|u\|_\infty)}$, answering a question of Gallo, Mosconi and Squassina. The exponent $1/2$ is sharp among positive powers of the negative normalized logarithm. We also obtain a quantitative lower bound for its Hessian before taking the square root, positive power concavity of $u$ on every ball, and a comparison of normalized profiles. The argument gives an alternative proof of the known shooting order and ball uniqueness theorem. The essential step is to pass from a local positive recurrence to a convergent representation throughout the domain. We also show that the normalized square-root-log conclusion is unstable under smooth uniformly convex domain deformations. In every dimension at least two and near every ball, an explicit degree-three boundary deformation produces positive solutions that remain strictly log-concave but fail the stronger transformed concavity arbitrarily close to their unique maximum. A cubic-jet obstruction and an invertible ball linearization give a hand proof, including the boundary nonlinearity in the shape argument.
 
 **Mathematics Subject Classification (2020).** 35B45, 35J61, 34B15, 26A51.
 
@@ -95,13 +95,25 @@ $$
 
 The formula is implicit. We do not assert a positive exponent uniform over all radii, or monotonicity of this optimal exponent as a function of the radius.
 
+**Theorem 1.4 (Instability under convex deformation).** Let $N\geq2$, $R>0$, and let $U$ be the positive Dirichlet solution on $B_R$. Define $Y_3(\theta)=\theta_1^3-3\theta_1\theta_2^2$ and
+
+$$\Omega_\varepsilon=\{r\theta:0\leq r<R+\varepsilon Y_3(\theta),\ \theta\in S^{N-1}\}.$$
+
+For all sufficiently small $|\varepsilon|$, these are smooth uniformly convex domains and there is a smooth branch of positive solutions $u_\varepsilon$, with $u_0=U$. For each sufficiently small nonzero $\varepsilon$, the solution is strictly log-concave and has a unique maximum, but
+
+$$-\sqrt{-\log(u_\varepsilon/\|u_\varepsilon\|_\infty)}$$
+
+is not concave in any neighborhood of that maximum. The domains converge to $B_R$ in every $C^k$ boundary norm.
+
+The normalization in this statement is essential. The scale-invariant notion of $1/2$-log-concavity permits a sufficiently small multiplicative factor in front of $u$; see [IST, Section 4.2]. Theorem 1.4 concerns the specific factor $1/\|u\|_\infty$, where the transform has its cusp at the maximum. It does not disprove the weaker rescaled property. It answers the controlled-deformation question posed in the earlier version of Section 7 and leaves the ball theorem unchanged.
+
 ### 1.1. Prior results and the scope of the contribution
 
 The amplitude threshold, uniqueness in balls, and strict ordering of first zeros are prior results. For $k=1$ and $\beta=0$, Ben Chrouda [BC, Theorem 1.2 and Corollaries 1.3 and 1.5] proves these facts for $-\Delta v=v\log v$. The change $v(y)=u(y/\sqrt2)$ gives the normalization (1.1). The equality case in the amplitude threshold is excluded by the Gaussian solution and uniqueness of the central initial-value problem. We give new proofs of these particular consequences because they fit the recurrence argument, but do not claim their first discovery.
 
 Liu, Sun and Zou [LSZ] prove a broader shooting classification of whole-space nodal solutions; in particular, their argument establishes strict motion of zeros with the initial value. Gallo, Moraschi and Squassina [GMoS] develop parabolic concavity principles whose logarithmic example yields preservation of logarithmic concavity. Neither of these results supplies the positive radial series used here. Our priority claim concerns that structure and the resulting stronger concavity, rather than existence, radial symmetry, Gaussian ground-state classification, or shooting uniqueness. Current versions of these sources were compared on September 15, 2026.
 
-The proof of Theorem 1.1 has three stages. An integrating factor puts the logarithmic radial derivative above its Gaussian value. Its equation then produces positive Taylor coefficients. Finally, positivity and a real-axis singularity argument show that the series represents the solution all the way to its first zero. Convexity of a Hilbert-space norm proves Theorem 1.2. A separate boundary argument, which accommodates the singular derivative of $u\log u^2$ at zero, completes Theorem 1.3.
+The proof of Theorem 1.1 has three stages. An integrating factor puts the logarithmic radial derivative above its Gaussian value. Its equation then produces positive Taylor coefficients. Finally, positivity and a real-axis singularity argument show that the series represents the solution all the way to its first zero. Convexity of a Hilbert-space norm proves Theorem 1.2. A separate boundary argument, which accommodates the singular derivative of $u\log u^2$ at zero, completes Theorem 1.3. For Theorem 1.4, the ball Hessian bound and the classical weighted Poincare inequality make the linearized Dirichlet operator invertible. A degree-three shape derivative then violates a necessary cubic-jet condition at the moving maximum.
 
 ## 2. The radial equation and the Gaussian threshold
 
@@ -407,11 +419,253 @@ solves the same equation on the product domain, and $-\sqrt{-\log(u/\|u\|_\infty
 
 This includes the interval-product construction already treated in [GMS]; the factorization itself is elementary and is not a separate novelty claim.
 
-## 7. Further questions
+## 7. Instability under convex deformation
 
-The argument uses the squared-radius equation and does not extend the square-root-log conclusion to arbitrary convex domains. Whether that conclusion survives controlled deformations of a ball, and what geometric obstructions can prevent it, remain natural questions. The positivity proof also depends on the particular coefficient structure in (3.1); a classification of nonlinearities or radial potentials admitting a comparable positive recurrence would be useful.
+We prove Theorem 1.4. All boundary-distance and function-space statements below refer to a fixed smooth ball before pulling back the domain.
 
-Formula (1.8) does not evaluate the optimal positive concavity exponent. Determining its dependence on the radius in dimensions $N\geq2$, especially its sharp limiting behavior, is a further problem. These questions and the related consequences above belong to the same research direction; no result about them is asserted here.
+### 7.1. A necessary cubic-jet condition
+
+Let $w\in C^4$ near $x_0$, with $w(x_0)=0$, $Dw(x_0)=0$ and positive-definite
+Hessian $H=D^2w(x_0)$. If $\sqrt w$ is convex in a neighborhood of $x_0$,
+then
+
+$$D^3w(x_0)=0. \tag{D1}$$
+
+Indeed, on any unit direction $e$, write
+
+$$w(x_0+te)=a t^2+b t^3+O(t^4),\quad
+ a=\tfrac12H[e,e]>0,\quad b=\tfrac16D^3w(x_0)[e,e,e].$$
+
+For $t>0$, the second derivative of the square root tends to $b/\sqrt a$;
+for $t<0$ it tends to $-b/\sqrt a$. To justify differentiating the remainder,
+write $w(x_0+te)=t^2 h(t)$ with $h$ twice continuously differentiable and
+$h(0)=a$, $h'(0)=b$. Convexity on both half intervals forces $b=0$.
+A symmetric cubic tensor whose diagonal polynomial vanishes is zero.
+Conversely, if the tensor is nonzero, one half of a line has strictly
+negative square-root second derivative at points arbitrarily close to $x_0$.
+The vanishing condition is necessary, not sufficient.
+
+### 7.2. The ball linearization is invertible
+
+Use Theorem 1.1 and its estimate
+
+$$-D^2\log U\succeq A I_N,\qquad A=\frac{2\log U(0)}N>1. \tag{D2}$$
+
+The linearized Dirichlet operator is
+
+$$L=-\Delta-(2\log U+2). \tag{D3}$$
+
+It satisfies $LU=-2U$. Since $U>0$, $-2$ is its simple first eigenvalue.
+For every $\phi\in H_0^1(B_R)$ perpendicular to $U$ in $L^2$,
+
+$$\langle L\phi,\phi\rangle\geq(2A-2)\|\phi\|_2^2. \tag{D4}$$
+
+Here $U$ has a strictly negative outward derivative and $U$ is comparable
+to the boundary distance $d$. Consequently the logarithmic potential is
+form-bounded with relative bound zero on $H_0^1$: use
+$|\log d|\leq\eta d^{-2}+C_\eta$ and Hardy's inequality. The operator has
+compact resolvent and its form domain is $H_0^1$.
+
+For a compactly supported smooth $\phi$, set $h=\phi/U$. Integration by
+parts gives the ground-state identity
+
+$$\langle L\phi,\phi\rangle
+ =\int U^2|Dh|^2-2\int U^2h^2. \tag{D5}$$
+
+The classical strongly log-concave weighted Poincare inequality (see [KS, Theorem 2.1] for the Brascamp-Lieb form on a convex domain), applied
+to the density $U^2$, gives
+
+$$\int U^2|h-\bar h|^2\leq\frac1{2A}\int U^2|Dh|^2,
+\qquad \bar h=\frac{\int U^2h}{\int U^2}. \tag{D6}$$
+
+The relevant boundary version can be obtained without any assumption on a
+positive limiting density at $\partial B_R$. On each smaller concentric
+ball, the density is smooth and positive. For its weighted Neumann operator
+$\mathcal L=\Delta+2D\log U\cdot D$, integration of the Bochner identity
+for an eigenfunction gives
+
+$$\int(\mathcal L h)^2U^2
+=\int\bigl(|D^2h|^2-2D^2\log U[Dh,Dh]\bigr)U^2
+ +\int_{\partial B_r}\mathrm{II}[D_T h,D_T h]U^2. \tag{D7}$$
+
+The outward second fundamental form $\mathrm{II}$ of the sphere is positive.
+Equation (D2) therefore bounds each nonconstant weighted Neumann eigenvalue
+below by $2A$. The spectral expansion yields (D6) on $B_r$; let $r\uparrow R$.
+First apply this to the smooth compactly supported quotient. Ground-state
+identity and form density then extend the result to all $H_0^1$ functions.
+Perpendicularity to $U$ is exactly $\bar h=0$, proving (D4). Thus $L$ has
+no zero eigenvalue and has exactly one negative eigenvalue.
+
+For use in a shape argument, fix $0<\gamma<1$ and set
+$X=\{v\in C^{2,\gamma}(\overline B_R):v|_{\partial B_R}=0\}$,
+$Y=C^{0,\gamma}(\overline B_R)$. Then
+
+$$L:X\longrightarrow Y\text{ is an isomorphism}. \tag{D8}$$
+
+To see the functional-analytic point at the vanishing boundary, choose a
+smooth positive defining function $\rho$ equal to $d$ near the boundary.
+Division by $\rho$ maps $X$ continuously to $C^{1,\gamma}$, and
+$U=\rho a$ with $a>0$ on the closed ball. Hence multiplication by $\log U$
+maps $X$ to $Y$. It is compact: for $\gamma<\beta<1$, a bounded sequence in
+$X$ has a subsequence converging in $C^{1,\beta}$; its quotients by $\rho$
+converge in $C^{0,\beta}$, and multiplication by $\rho\log\rho$ maps that
+convergence to $C^{0,\gamma}$. Thus $L$ is a compact perturbation of the
+Dirichlet Laplacian isomorphism. Its kernel is zero by (D4) and $LU=-2U$;
+the Fredholm alternative proves (D8).
+
+### 7.3. A genuine branch on deformed domains
+
+Let
+
+$$H_3(x)=x_1^3-3x_1x_2^2,\qquad Y_3=H_3|_{S^{N-1}},$$
+
+and define
+
+$$\Omega_\varepsilon
+ =\{r\theta:0\leq r<R+\varepsilon Y_3(\theta),\ \theta\in S^{N-1}\}.
+ \tag{D9}$$
+
+For all sufficiently small $|\varepsilon|$, this is a smooth uniformly convex
+domain. Indeed the radial graph converges to the sphere in $C^2$ and its
+principal curvatures converge uniformly to $1/R>0$; its outward normal
+parametrization, or the usual support-plane criterion, gives convexity.
+It converges in every $C^k$ norm because $Y_3$ is smooth.
+
+Choose a smooth radial cutoff $\chi$ zero on $B_{R/2}$ and one near the
+boundary, and use
+
+$$T_\varepsilon(x)=x+\varepsilon\chi(|x|)Y_3(x/|x|)\frac{x}{|x|},
+ \tag{D10}$$
+
+with the second term zero near the origin. For small parameter this is a
+smooth diffeomorphism from the ball to (D9), equal to the identity near zero.
+The pulled-back Laplacian has coefficients smooth in $x$ and real analytic
+in $\varepsilon$.
+
+Although $s\log s^2$ is not differentiable at $s=0$ as a scalar function,
+the Dirichlet nonlinear map is smooth in the spaces just specified near
+$U$. On the open positive-Hopf cone write $v=\rho b$, $b>0$; then
+
+$$v\log v^2=2\rho b\log\rho+2\rho b\log b. \tag{D11}$$
+
+The first term is a bounded linear map of $b$ into $Y$, and the second is
+real analytic for $b$ bounded away from zero in $C^{1,\gamma}$. Division by
+$\rho$ is bounded on $X$. Thus this is a real-analytic map from that open
+cone in $X$ to $Y$. At parameter zero, its equation has derivative (D8).
+The Banach implicit-function theorem produces a unique nearby branch
+$v_\varepsilon\in X$ with $v_0=U$ satisfying the pulled-back equation.
+It remains in the positive-Hopf cone. Set
+$u_\varepsilon=v_\varepsilon\circ T_\varepsilon^{-1}$ on
+$\Omega_\varepsilon$; these are genuine positive Dirichlet solutions.
+Interior elliptic regularity gives smooth dependence in every local $C^k$
+norm. This does not assert global uniqueness among all positive solutions
+on the deformed domains.
+
+### 7.4. The shape derivative has a nonzero cubic term
+
+Let $V=\partial_\varepsilon T_\varepsilon|_0$ and let $z$ be the Eulerian
+shape derivative, $z=\dot v_0-DU\cdot V$. Differentiation of the equation
+in each fixed compact subset and of the transported zero boundary value
+gives
+
+$$Lz=0\text{ in }B_R,\qquad z|_{\partial B_R}=-U'(R)Y_3. \tag{D12}$$
+
+This is a weak Dirichlet problem with a smooth nonzero boundary trace;
+$z$ need not be $C^2$ up to the boundary, since the potential is logarithmic
+there. It is $C^{1,\gamma}$ up to the boundary and smooth in the interior.
+Uniqueness follows from (D8), or from the form kernel exclusion. Rotation
+invariance and spherical harmonic projection therefore give
+
+$$z(r\theta)=\psi(r)Y_3(\theta),$$
+
+where
+
+$$-\psi''-\frac{N-1}{r}\psi'+\frac{3(N+1)}{r^2}\psi
+ -(2\log U+2)\psi=0,\qquad \psi(R)=-U'(R)>0. \tag{D13}$$
+
+Near zero, the regular solutions of this equation form a one-dimensional
+space and have the expansion
+
+$$\psi(r)=c r^3+O(r^5). \tag{D14}$$
+
+This follows by inserting $\psi=r^3 a(r)$: $a$ satisfies a regular radial
+integral equation in dimension $N+6$, with smooth even potential near zero.
+Its initial value $a(0)=c$ determines the solution uniquely. In particular
+$c\ne0$, since $c=0$ would force $\psi=0$, contradicting its boundary value.
+In fact $c>0$: test the radial equation with its negative part times the
+same degree-three harmonic; (D4) is positive on this angular subspace, so
+that negative part vanishes, and uniqueness excludes a zero leading value.
+Thus
+
+$$z(x)=cH_3(x)+O(|x|^5),\qquad c>0. \tag{D15}$$
+
+### 7.5. Move the maximum before computing its jet
+
+On a small fixed ball at zero, $D^2U$ is negative definite. The nearby
+solutions have the same property there. Outside a smaller neighborhood of
+zero, $U$ has a strict value gap below $U(0)$, which persists under the
+uniform pullback convergence. Hence each nearby $u_\varepsilon$ has a
+unique global maximum $x_\varepsilon$ near zero.
+
+The implicit-function theorem applied to the gradient gives smooth
+$x_\varepsilon$. Since $Dz(0)=0$, differentiation gives
+$x'_0=0$, and therefore $x_\varepsilon=O(\varepsilon^2)$. Because the base
+solution is radial, $D^3U(0)=0$. Interior differentiability and (D15) imply
+
+$$D^3u_\varepsilon(x_\varepsilon)
+ =\varepsilon cD^3H_3+O(\varepsilon^2). \tag{D16}$$
+
+Set
+
+$$w_\varepsilon(x)=-\log\frac{u_\varepsilon(x)}
+                                      {u_\varepsilon(x_\varepsilon)}.$$
+
+At the maximum the logarithmic third derivative has no lower-derivative
+cross terms, since $Du_\varepsilon=0$. In particular,
+
+$$D^3w_\varepsilon(x_\varepsilon)[e_1,e_1,e_1]
+ =-\frac{6c}{U(0)}\varepsilon+O(\varepsilon^2)\ne0 \tag{D17}$$
+
+for every sufficiently small nonzero parameter. Its Hessian at the maximum
+is positive definite. Apply Section 7.1 to conclude that
+$\sqrt{w_\varepsilon}$ is not convex in any neighborhood of the maximum.
+Equivalently, $-\sqrt{w_\varepsilon}$ is not concave.
+
+The expansion centers at the actual maximum, rather than keeping the old
+center fixed; this is essential for the obstruction to apply.
+
+### 7.6. Ordinary strict log-concavity persists
+
+This additional statement keeps the two concavity properties distinct.
+On a fixed interior compact set, (D2) and $C^2$ convergence preserve
+positive definiteness of $-D^2\log u_\varepsilon$. Near the boundary,
+uniform convexity, uniform Hopf bounds and uniform $C^{2,\gamma}$ bounds
+supply a collar on which the same is true, uniformly for small parameter.
+Here is the local estimate.
+
+In normal coordinates $x=y-d\nu(y)$, write $u_\varepsilon=a(y)d+O(d^2)$,
+where $a$ is uniformly positive. At the boundary, for a unit tangent $\tau$,
+$D^2u_\varepsilon[\tau,\tau]=-a\,\mathrm{II}[\tau,\tau]$.
+The $C^{2,\gamma}$ bounds and the positive lower curvature bound therefore
+give, in the tangent/normal splitting at $y$,
+
+$$(-D^2\log u_\varepsilon)_{TT}\succeq \frac{k}{d}I,
+\quad (-D^2\log u_\varepsilon)_{NN}\geq\frac{k}{d^2},
+\quad |(-D^2\log u_\varepsilon)_{TN}|\leq\frac Kd, \tag{D18}$$
+
+for fixed positive constants and a sufficiently small common collar.
+For the first estimate use that the tangential gradient term in
+$-D^2\log u=-D^2u/u+Du\otimes Du/u^2$ is nonnegative. For the mixed estimate
+use $|D_Tu|=O(d)$ and bounded $D^2u$; for the normal estimate use the Hopf
+bound and $u=a d+O(d^2)$. The Schur complement is bounded below by
+$k/d-K^2/k$, hence is positive for smaller $d$. Combining collar and
+interior proves strict log-concavity throughout $\Omega_\varepsilon$.
+
+## 8. Further questions
+
+Theorem 1.4 resolves the earlier question about persistence under arbitrary small smooth uniformly convex deformations: the normalized square-root conclusion fails along the explicit cubic deformation near every ball in dimensions at least two. Classifying the deformations that preserve it remains open. Vanishing of the cubic jet is necessary but is not asserted to be sufficient. We do not classify all positive solutions on the deformed domains.
+
+The positive recurrence still depends on the radial equation and its particular coefficient structure. A classification of nonlinearities or radial potentials admitting a comparable recurrence would be useful. Formula (1.8) does not evaluate the optimal positive concavity exponent. Determining its dependence on the radius in dimensions $N\geq2$, especially its sharp limiting behavior, remains a further problem. All these questions belong to the same paper.
 
 ## References
 
@@ -422,6 +676,10 @@ Formula (1.8) does not evaluate the optimal positive concavity exponent. Determi
 [GMoS] M. Gallo, R. Moraschi and M. Squassina, *Quantitative and exact concavity principles for parabolic and elliptic equations*, [arXiv:2504.09494v2](https://arxiv.org/abs/2504.09494v2). Also compared with the [41-page author manuscript](https://www.dmf.unicatt.it/~squassin/papers/lavori/parabconc.pdf), accessed September 15, 2026.
 
 [LSZ] T. Liu, X. Sun and W. Zou, *Uniqueness of bound states to the logarithmic Schrödinger equation*, [arXiv:2606.19077v2](https://arxiv.org/abs/2606.19077v2), June 22, 2026.
+
+[IST] K. Ishige, P. Salani and A. Takatsu, *New characterizations of log-concavity*, [arXiv:2004.13381](https://arxiv.org/abs/2004.13381), Section 4.2. The distinction between fixed normalization and concavity after small rescaling is used here; no heat-flow theorem is a proof dependency.
+
+[KS] D. J. Knezevic and E. Suli, *Spectral Galerkin approximation of Fokker-Planck equations with unbounded drift*, ESAIM: Mathematical Modelling and Numerical Analysis **43** (2009), 445--485. [Primary journal PDF](https://www.numdam.org/article/M2AN_2009__43_3_445_0.pdf), Theorem 2.1. The classical Brascamp-Lieb inequality is credited; the needed ball boundary version is also proved above.
 
 ## Preparation note
 

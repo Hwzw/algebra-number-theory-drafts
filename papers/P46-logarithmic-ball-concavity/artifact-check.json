@@ -1,20 +1,22 @@
 {
-  "date": "2026-09-15",
-  "pages": 9,
-  "pdf_bytes": 90821,
-  "pdf_sha256": "4e9eed6b204a05907f013886805b046611a46d6e4f372548bafb36d33ad0a8c9",
-  "markdown_sha256": "fb8fe92692d8b7716b47d93b6d5c6ae9aa2a801bb412e4e9875304ca16ed8b96",
-  "tex_sha256": "fe1a82144be2455ec7f5d3a45030a545aa44668a7a2c609569397d7efd00c4d4",
-  "pdf_text_characters": 20433,
+  "date": "2026-09-16",
+  "revision": "1.1",
+  "pages": 14,
+  "pdf_bytes": 121442,
+  "pdf_sha256": "56d7c2a50496601a7a2c502774f2ca41e15484a12a2299f4cbf43139bce0563f",
+  "markdown_sha256": "eb71cc2f86fe38eebf2c464c011044dd5bbe5c8d753b1a996a6e9d7b934547e1",
+  "tex_sha256": "7b0c996b12bdc8a585f38f13c06b720cc781c8715430a02f00778c77f593f357",
+  "pdf_text_characters": 31799,
   "replacement_characters": 0,
   "byline_verified": true,
-  "equation_tags": 37,
-  "unique_tags": 37,
+  "equation_tags": 55,
+  "unique_tags": 55,
   "markdown_tex_tag_order_matches": true,
   "all_equation_tags_in_pdf": true,
-  "math_expressions": 235,
+  "math_expressions": 409,
   "math_errors": 0,
   "tex_overfull_underfull_warnings": 0,
+  "retained_sections_2_to_6_byte_unchanged": true,
   "final_pdf_visual_review": {
     "all_pages_reviewed": true,
     "page_numbers": [
@@ -26,10 +28,21 @@
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
     ],
-    "render_long_dimension_px": 1400,
-    "findings": "No clipping, overlap, missing glyphs or illegible formulas identified. Final edited PDF rerendered and all nine pages inspected."
+    "render_scale": 1.5,
+    "individual_new_proof_pages_reviewed": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "findings": "No clipping, overlap, missing glyphs or illegible formulas identified; all fourteen final pages inspected in contact sheets and the four principal new proof pages inspected individually."
   },
-  "meaning": "Artifact consistency checks and internal visual review; not independent proof or novelty certification."
+  "meaning": "Artifact consistency and internal visual review; not independent proof or priority certification."
 }

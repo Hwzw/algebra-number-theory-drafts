@@ -1,3 +1,17 @@
+# Revision 1.1: contribution and limits
+
+Henry Zweiman. September 16, 2026.
+
+The revised paper answers its own published deformation question negatively. Near every ball in every dimension at least two, a smooth uniformly convex degree-three deformation produces a genuine positive solution whose normalized square-root-log transform is not concave. Failure occurs at arbitrarily small distances from the unique maximum, even though ordinary strict log-concavity persists. The proof combines the existing strong ball Hessian estimate, a classical weighted spectral bound, a boundary-compatible implicit-function theorem and a necessary cubic-jet condition.
+
+This is a substantive extension of the same paper, not another distinct paper. It identifies a geometric instability of the exact normalization used in the ball theorem. The stronger external statement about all-dimensional balls was proved by the preceding revision; the new counterexample is not presented as a disproof of an unasserted general-domain GMS conjecture. The related scale-invariant half-log-concavity definition allows small rescaling, as explicitly explained by Ishige-Salani-Takatsu, Section 4.2. The present theorem does not disprove that weaker property.
+
+The new [source audit](deformation-source-audit.json) records the inspected primary passages and terminology distinction. Standard weighted Poincare, elliptic theory, shape differentiation and the implicit-function theorem are credited tools. No exhaustive priority or independent correctness certification has occurred. This one revised manuscript does not by itself meet the renewed extraordinary-conjecture completion condition; the broader goal remains active.
+
+Global uniqueness on arbitrary convex domains, a classification of deformations preserving the normalized transform, and the explicit optimal positive-power exponent remain unresolved.
+
+## Original ball contribution and source assessment
+
 # Priority and significance assessment
 
 Henry Zweiman. September 15, 2026. P46, developed as Q54.
@@ -30,6 +44,6 @@ Troy's 2016 ground-state uniqueness article was checked at the primary publisher
 
 Searches combined logarithmic Schrodinger, radial, ball, concavity, square-root, power concavity, positive coefficients, absolute monotonicity, and the source authors. Current primary versions of the close matches were followed. These searches found no prior resolution of the targeted square-root question; unsuccessful searches do not establish absolute novelty. No institutional-access dependency remains for the manuscript's claimed results.
 
-## Boundary of the claims
+## Original revision boundary (historical)
 
-There is no theorem for arbitrary convex domains, no sharp explicit value or radius-monotonicity result for the positive power exponent in dimensions at least two, and no new whole-space nodal classification. The product-domain observation is a corollary in this single paper. The method, its sharp transform, boundary lemma and comparison consequences count together as one contribution.
+The original revision had no theorem for arbitrary convex domains, no sharp explicit value or radius-monotonicity result for the positive power exponent in dimensions at least two, and no new whole-space nodal classification. The product-domain observation is a corollary in this single paper. The method, its sharp transform, boundary lemma and comparison consequences count together as one contribution.

@@ -16,7 +16,7 @@ def executable(name):
     raise SystemExit(f'Install {name} and add it to PATH.')
 s=(HERE/'manuscript.md').read_text()
 title,s=s.split('\n',1)
-s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 15, 2026\n','\n',1)
+s=s.replace('\nHenry Zweiman\n','\n',1).replace('\nSeptember 16, 2026\n','\n',1)
 s=re.sub(r'^(#{2,}) ',lambda m:m.group(1)[1:]+' ',s,flags=re.M)
 body=subprocess.check_output([executable('pandoc'),'-f','markdown+tex_math_dollars-smart','-t','latex','--top-level-division=section'],input=s,text=True)
 body=body.replace('∎',r'\(\square\)').replace('Ł',r'\L{}').replace('ł',r'\l{}')
@@ -33,9 +33,9 @@ preamble=r'''\documentclass[11pt]{article}
 \setlength{\parskip}{0.35em}
 \setcounter{secnumdepth}{0}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\title{Positive radial series and sharp logarithmic concavity on balls}
+\title{Sharp logarithmic concavity on balls and its instability under convex deformation}
 \author{Henry Zweiman}
-\date{September 15, 2026}
+\date{September 16, 2026}
 \begin{document}
 \maketitle
 '''
