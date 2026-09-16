@@ -6,6 +6,6 @@ authors:
   - family-names: Zweiman
     given-names: Henry
 date-released: 2026-09-15
-version: 1.0.0
+version: "1.1"
 url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P48-henon-local-minima"
-abstract: "Strict Sobolev local minimality for radial Neumann Hénon minimizers via a compact weighted trace and nonlinear coercivity. AI-assisted preprint, not independently verified."
+abstract: "Strict Sobolev local minimality for radial Neumann Hénon minimizers via a compact weighted trace and nonlinear coercivity, with sharp neighborhood decay above the trace exponent. AI-assisted preprint, not independently verified."

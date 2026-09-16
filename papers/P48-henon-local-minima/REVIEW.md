@@ -15,6 +15,18 @@ This is the originating assistant's audit of its own argument. No subagent, inde
 9. **Ground-state identity.** Differentiating the radial p-equation produces the (n-1) angular potential and radial coefficient p-1. The flux coefficient at the outer boundary gives exactly lambda phi(1)^(p-2)(q_c-1). The inner boundary term vanishes along a sequence by finite angular energy. The limiting energy is first shown finite by lower semicontinuity. Orthogonal decomposition into radial mean and zero angular mean has no cross terms.
 10. **Instability.** The first harmonic times phi' has finite weighted energy even where its unweighted W1p membership might fail. A center cutoff supplies fixed smooth W1p test directions with error O(epsilon^(n-beta)). Only after choosing this cutoff is alpha sent to infinity. This avoids inserting an inadmissible test into the second derivative.
 11. **Parameter interval.** For z=(phi'/phi)^(p-1), differentiating its Riccati equation gives a linear equation for z' with strictly positive forcing. Its positive initial asymptotic yields z'(1)>0, exactly q_c>p. The separate bound lambda<1/n yields the full subcritical interval near p=2 when n>=4. The argument uses continuity of explicit functions of p, not an unproved eigenvalue-continuity assertion.
-12. **Boundaries.** No conclusion at q=q_c, no uniform nonlinear neighborhood as alpha grows, no radial uniqueness theorem, and no general Banach Morse theorem are claimed. The threshold itself and the p=2 result are prior work.
+12. **Boundaries.** No conclusion at q=q_c, no radial uniqueness theorem, and no general Banach Morse theorem are claimed. The threshold itself and the p=2 result are prior work. Revision 1.1 resolves neighborhood uniformity and its sharp decay power.
 
 No mathematical gap was identified in this internal audit. There are no numerical experiments serving as proof. PDF/MathJax integrity checks are recorded separately and do not certify the theorem.
+
+## Revision 1.1: neighborhood-rate audit
+
+1. The radius is measured after unit energy normalization; scalar copies cannot force a zero radius.
+2. Uniform sphere trace bounds and interpolation give alpha times the weighted q integral bounded by alpha^(q theta) times the Sobolev q norm. The critical trace exponent is included.
+3. Varying profiles have a common integrable reciprocal-weight bound and uniform gradient bound. These justify the fixed-smooth-direction derivative expansion in the weighted dual norm.
+4. Compact traces handle the varying quadratic potential. Finite limiting energy and value truncation justify smooth approximation without assuming uniform norm equivalence at the boundary.
+5. The constraint remainder vanishes when alpha^sigma times the perturbation norm tends to zero. Uniform convexity retains concentration energy. The limiting angular inequality provides a positive relative gap for q<q_c.
+6. The scalar retraction has a uniform Sobolev bound.
+7. Boundary competitors have width alpha^(-1) and amplitude alpha^((p-1)/(q-p)); both the energy increment and relative denominator increment have order alpha^(-p sigma). A fixed sufficiently large amplitude factor makes the quotient decrease.
+8. Unit energy normalization changes the competitor only at the smaller order alpha^(-p sigma), preserving the matching distance exponent.
+9. Theorem 7.1 does not settle q=q_c or a leading asymptotic radius coefficient. No numerical calculation substitutes for the proof.

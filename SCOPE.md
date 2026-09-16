@@ -58,7 +58,7 @@ The claimed theorem proves V(n,2)=2C(n,2) for every n>=2, with the exact constan
 
 ## P48: local minimality for the generalized Neumann Hénon problem
 
-The claimed theorem upgrades directional second-variation positivity to strict W1p local minimality modulo scaling below the known limiting Steklov threshold, for large radial-weight exponent. A common weighted space has compact boundary trace; a nonlinear convexity estimate retains concentrated perturbation energy. Above the threshold, the angular test gives instability. The threshold formula, radial convergence and p=2 local-minimum theorem are credited prior work. Equality at the threshold and a nonlinear neighborhood uniform in the weight exponent remain unresolved. See [the assessment](papers/P48-henon-local-minima/ASSESSMENT.md).
+The claimed theorem upgrades directional second-variation positivity to strict W1p local minimality modulo scaling below the known limiting Steklov threshold, for large radial-weight exponent. A common weighted space has compact boundary trace; a nonlinear convexity estimate retains concentrated perturbation energy. Above the threshold, the angular test gives instability. The threshold formula, radial convergence and p=2 local-minimum theorem are credited prior work. Revision 1.1 proves a uniform nonlinear neighborhood through the critical trace exponent and matching power bounds on its decay above that exponent, under unit energy normalization and within the positive Steklov range. Equality at the Steklov threshold and the leading radius constant remain unresolved. See [the assessment](papers/P48-henon-local-minima/ASSESSMENT.md).
 
 ## P49: sharp annular stability for physical torsion
 

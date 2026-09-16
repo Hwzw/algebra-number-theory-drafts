@@ -6,7 +6,7 @@ September 15, 2026
 
 ## Abstract
 
-We prove strict local minimality, modulo scaling, of radial minimizers for the generalized Neumann Hénon quotient when the exponent of the radial weight is large. The parameter range is determined by the first nonlinear Steklov eigenvalue. It contains a right neighborhood of the homogeneity exponent for every $2<p<n$, and the entire subcritical range when $n\ge4$ and $p>2$ is sufficiently close to $2$. This settles the local-minimality question left open after the second-variation analysis of Nazarov and Shcheglova. The proof combines a common weighted space, compact boundary traces, and a nonlinear coercivity lemma that retains the energy of concentrating perturbations. We also give an analytic proof that the admissible interval is nonempty. Above the Steklov threshold, a first angular mode yields instability; the threshold itself is not decided.
+We prove strict local minimality, modulo scaling, of radial minimizers for the generalized Neumann Hénon quotient when the exponent of the radial weight is large. The parameter range is determined by the first nonlinear Steklov eigenvalue. It contains a right neighborhood of the homogeneity exponent for every $2<p<n$, and the entire subcritical range when $n\ge4$ and $p>2$ is sufficiently close to $2$. This settles the local-minimality question left open after the second-variation analysis of Nazarov and Shcheglova. The proof combines a common weighted space, compact boundary traces, and a nonlinear coercivity lemma that retains the energy of concentrating perturbations. We also give an analytic proof that the admissible interval is nonempty. Above the Steklov threshold, a first angular mode yields instability; the threshold itself is not decided. We also determine the size of the local-minimum neighborhood under unit energy normalization: it is uniform up to and including the critical trace exponent, and above that exponent it shrinks at an explicitly determined sharp power of the concentration parameter.
 
 ## 1. Introduction and main result
 
@@ -496,7 +496,7 @@ contradicting (38)--(39). $\square$
 
 Fix $\alpha$ as in Proposition 5.2. By (25), (31), and (37), there is $\kappa_\alpha>0$ such that $Q_\alpha\ge\kappa_\alpha A_\alpha$ on $\ker\ell_\alpha$. Multiply $v_\alpha$ by a positive constant so that $\int_Br^\alpha v_\alpha^q=1$. Both the Hessian energy and its negative potential scale by the same power $p-2$, so the gap persists. The weighted completion is still $H_\omega$, with an equivalent norm. Its embedding into $L^2$ is compact. Equation (22) gives reciprocal-gradient-weight integrability, and (21) supplies strict positivity. Thus Lemma 2.1 applies with $b=r^\alpha$. Its coercivity and the scalar retraction following the lemma prove (6).
 
-The neighborhood and nonlinear coercivity constant may depend on $\alpha$ and on the minimizer. Proposition 5.2 provides a uniform weighted quadratic gap, but we do not claim a uniform $W^{1,p}$ neighborhood.
+This application alone permits the neighborhood and nonlinear coercivity constant to depend on $\alpha$. Section 7 strengthens the argument to determine precisely when a uniform $W^{1,p}$ neighborhood exists and gives its sharp decay power otherwise.
 
 For the negative-range assertion, let $Y$ be a first spherical harmonic and set $g(r,\theta)=\phi'(r)Y(\theta)$. Equality holds in (32). This function has finite $A_\infty$ energy, since its gradient energy near zero is of order
 
@@ -560,11 +560,237 @@ $$
 
 For $n\ge4$, one has $1+n>2n/(n-2)$. Continuity of the explicit functions in (43) and $p^*=np/(n-p)$ shows that $1+n^{1/(p-1)}>p^*$ for $p$ in a right neighborhood of $2$. This proves Corollary 1.2. $\square$
 
-## 7. Scope and further questions
+## 7. The size of the local-minimum neighborhood
 
-The equality case $q=q_c(n,p)$ requires higher-order analysis or more precise dependence on $\alpha$. The present limiting quadratic form has a first-angular-mode zero direction there, so Proposition 5.2 does not decide that case. A uniform nonlinear neighborhood as $\alpha\to\infty$ is also beyond the result: the norm-equivalence constant in (25) can grow with $\alpha$.
+We now determine whether the neighborhood in Theorem 1.1 can be uniform, using the energy normalization $\|v_\alpha\|_{1,p}=1$. Put
 
-Lemma 2.1 is formulated independently of radial geometry. It may be useful when a degenerate variational problem supplies a compact weighted completion and a strictly positive constrained Hessian. Its hypotheses are part of the conclusion's scope: pointwise positivity of second variations alone is not asserted to suffice. The common weight in this application has integrable reciprocal and admits a compact boundary trace; problems with stronger boundary degeneracy require a different argument.
+$$
+p_\partial=\frac{p(n-1)}{n-p},\qquad
+\vartheta=\left(\frac{n-p}{p}-\frac{n-1}{q}\right)_+,
+\qquad \sigma=\frac{q\vartheta}{q-p}.
+\tag{7.1}
+$$
+
+Here $x_+=\max\{x,0\}$. The exponent $p_\partial$ is the critical Sobolev trace exponent. For a positive normalized radial minimizer, define
+
+$$
+R_\alpha(v_\alpha)=\inf\left\{\|u-v_\alpha\|_{1,p}:
+\|u\|_{1,p}=1,\ u\ne v_\alpha,
+\ \mathcal Q_\alpha(u)\le\mathcal Q_\alpha(v_\alpha)\right\}.
+\tag{7.2}
+$$
+
+The competitor set is nonempty since it contains $-v_\alpha$. This radius describes the neighborhood on the unit energy sphere, so the positive scaling degeneracy is removed.
+
+**Theorem 7.1 (uniform neighborhoods and their sharp decay rate).** Fix $n\ge3$, $2<p<n$, and $p<q<\min\{p^*,q_c(n,p)\}$. There are constants $c,C>0$ and $\alpha_0$, depending only on $n,p,q$, such that every positive normalized radial minimizer satisfies
+
+$$
+R_\alpha(v_\alpha)\ge c\alpha^{-\sigma}
+\qquad(\alpha\ge\alpha_0).
+\tag{7.3}
+$$
+
+If $q>p_\partial$, there are positive normalized nonradial competitors of strictly smaller quotient at distance at most $C\alpha^{-\sigma}$. Consequently
+
+$$
+c\alpha^{-\sigma}\le R_\alpha(v_\alpha)
+\le C\alpha^{-\sigma}\qquad(q>p_\partial).
+\tag{7.4}
+$$
+
+In particular a uniform neighborhood exists when $q\le p_\partial$, including equality, and no uniform neighborhood exists when $q>p_\partial$ within the positive Steklov range. The theorem determines the power, not a limiting leading constant. It makes no assertion at $q=q_c$.
+
+### 7.1. A weighted Sobolev estimate at the trace scale
+
+For $p<q<p^*$ and $\alpha\ge1$,
+
+$$
+\alpha\int_Br^\alpha|h|^q\,dx
+\le C\alpha^{q\vartheta}\|h\|_{1,p}^q.
+\tag{7.5}
+$$
+
+Indeed the ordinary Sobolev trace inequality on $B_r$, uniformly under dilation for $1/2\le r\le1$, gives
+$\|h(r,\cdot)\|_{L^{p_\partial}(\Sigma)}\le C\|h\|_{1,p}$ for almost every such $r$. Integration in $r$ gives
+$\int_Br^\alpha|h|^{p_\partial}\le C\alpha^{-1}\|h\|_{1,p}^{p_\partial}$; on the inner half-ball use $r^\alpha\le2^{-\alpha}$ and ordinary Sobolev embedding. The same bound with exponent $q\le p_\partial$ follows by Hölder's inequality for the measure $r^\alpha dx$, whose mass is $S/(\alpha+n)$. For $p_\partial<q<p^*$, interpolate the preceding trace-scale estimate with
+$\int_Br^\alpha|h|^{p^*}\le C\|h\|_{1,p}^{p^*}$.
+The resulting power of $\alpha$ is $q(n-p)/p-(n-1)=q\vartheta$, proving (7.5).
+
+Let
+
+$$
+\widehat D_\alpha(u)=c_\alpha\int_Br^\alpha|u|^q,
+\qquad L_\alpha(h)=c_\alpha\int_Br^\alpha v_\alpha^{q-1}h.
+\tag{7.6}
+$$
+
+Then $\widehat D_\alpha(v_\alpha)=L_\alpha(v_\alpha)=1$. Equations (21) and (7.5) imply
+
+$$
+c_\alpha\int_Br^\alpha|h|^q
+\le C\alpha^{q\vartheta}\|h\|_{1,p}^q,
+\qquad |L_\alpha(h)|\le C\|h\|_{1,p}.
+\tag{7.7}
+$$
+
+The second estimate uses the trace-scale estimate and Hölder, with the uniform bound on $v_\alpha$. Its constant has no power of $\alpha$.
+
+### 7.2. Uniform nonlinear coercivity at the scale in (7.1)
+
+We strengthen the use of Lemma 2.1 by retaining the dependence of its constraint remainder on $\alpha$. There are $c_0,c_1>0$ and $\alpha_0$ such that
+
+$$
+F(v_\alpha+h)-\frac1p\widehat D_\alpha(v_\alpha+h)^{p/q}
+\ge c_1\bigl(A_\alpha(h)+\|h\|_{1,p}^p\bigr)
+\tag{7.8}
+$$
+
+whenever $\alpha\ge\alpha_0$, $L_\alpha(h)=0$, and
+$\|h\|_{1,p}<c_0\alpha^{-\sigma}$. Here $F(u)=\|u\|_{1,p}^p/p$ and $A_\alpha$ is (31).
+
+We prove the sequential assertion that implies these uniform constants. Suppose $\alpha_j\to\infty$ and $h_j\ne0$ are tangent perturbations such that
+
+$$
+\delta_j=\|h_j\|_{1,p},\qquad
+\delta_j\alpha_j^\sigma\longrightarrow0.
+\tag{7.9}
+$$
+
+Set $t_j^2=A_{\alpha_j}(h_j)+\delta_j^p$ and $z_j=h_j/t_j$. Uniform boundedness of $v_\alpha$ and its gradient, from (21)--(22), gives
+$\delta_j^{p/2}\le t_j\le C\delta_j$. Also $A_{\alpha_j}\ge cE$, so $z_j$ is bounded in $H_\omega$. Passing to a subsequence gives weak convergence to $z$ there, strong $L^2(B)$ and trace convergence, and
+
+$$
+A_{\alpha_j}(z_j)\to a_0,\quad
+\delta_j^p/t_j^2\to b_0,\quad a_0+b_0=1,
+\quad A_\infty(z)\le a_0.
+\tag{7.10}
+$$
+
+The last inequality follows from interior coefficient convergence, lower semicontinuity on annuli and exhaustion. Equation (27) and tangency give $\int_\Sigma Tz=0$.
+
+The Bregman argument of Lemma 2.1, now with varying $v_{\alpha_j}$, gives
+
+$$
+\liminf_j\frac{\mathcal B_F(v_{\alpha_j}+h_j,v_{\alpha_j})}{t_j^2}
+\ge\frac12 A_\infty(z)+c_p\bigl(1-A_\infty(z)\bigr).
+\tag{7.11}
+$$
+
+We verify the uniformity needed for this passage. For fixed smooth $w$, use (13) with $v=v_{\alpha_j}$ and $k_j=h_j-t_jw$. We have
+$a_{\alpha_j}^{-1}\le C\omega^{-1}$ and $a_{\alpha_j}\le C$. The square of the gradient difference quotient in the weighted dual norm is therefore dominated by $C_w(1+\omega^{-1})$, an integrable function independent of $j$. At every interior point other than the center, $\nabla v_{\alpha_j}\to\nabla\phi$. Dominated convergence proves the required derivative expansion. Moreover the coefficient convergence gives
+$A_{\alpha_j}(w)\to A_\infty(w)$ and
+$A_{\alpha_j}(w,z_j)\to A_\infty(w,z)$: the coefficient functionals converge in $H_\omega^*$, using the same dominating function. The errors in shifting the quadratic weight and replacing $\|k_j\|_{1,p}^p$ by $\delta_j^p$ are precisely those bounded in (15) and its preceding paragraph, with constants independent of $j$. Uniform convexity (14) thus yields
+
+$$
+\liminf_j\frac{\mathcal B_F(v_{\alpha_j}+h_j,v_{\alpha_j})}{t_j^2}
+\ge A_\infty(w,z)-\tfrac12A_\infty(w)
++c_p\bigl(1-2A_\infty(w,z)+A_\infty(w)\bigr).
+$$
+
+Finally approximate $z$ by smooth $w$ in $A_\infty$. This density does not require uniform equivalence with $E$. Indeed $(\phi')^{p-2}\asymp r^\beta$ near zero and is positive away from zero. First truncate $z$ in value, then remove a ball of radius $\varepsilon$ around zero. For the bounded truncation the cutoff cost is at most $CM^2\varepsilon^{n+\beta-2}\to0$. Away from zero ordinary Sobolev approximation applies up to the smooth boundary. Truncation and the finite energy in (7.10) complete the approximation. This proves (7.11).
+
+For the constraint, Taylor's bound (16), (7.7), and $t_j^2\ge\delta_j^p$ give
+
+$$
+\frac{c_{\alpha_j}\int_Br^{\alpha_j}|h_j|^q}{t_j^2}
+\le C\alpha_j^{q\vartheta}\delta_j^{q-p}
+=C(\alpha_j^\sigma\delta_j)^{q-p}\longrightarrow0.
+\tag{7.12}
+$$
+
+The quadratic term is controlled and converges by Lemma 4.1. Tangency removes the linear term. Hence
+
+$$
+\widehat D_{\alpha_j}(v_{\alpha_j}+h_j)
+=1+\frac{q(q-1)}2c_{\alpha_j}\int_Br^{\alpha_j}v_{\alpha_j}^{q-2}h_j^2
++o(t_j^2).
+\tag{7.13}
+$$
+
+Let $\mu=\lambda\phi(1)^{p-2}$. By Lemma 5.1 and the radial-average decomposition, every finite-energy $z$ with mean-zero trace satisfies
+
+$$
+A_\infty(z)\ge(q_c-1)\mu\int_\Sigma(Tz)^2.
+$$
+
+Consequently, with $\kappa=1-(q-1)/(q_c-1)>0$,
+
+$$
+A_\infty(z)-(q-1)\mu\int_\Sigma(Tz)^2
+\ge\kappa A_\infty(z).
+\tag{7.14}
+$$
+
+Criticality gives $F'(v_{\alpha_j})[h_j]=L_{\alpha_j}(h_j)=0$. Combine (7.11)--(7.14) and (26). The lower limit of the left side of (7.8), divided by $t_j^2$, is at least
+$\min\{\kappa/2,c_p\}>0$.
+If no constants in (7.8) existed, choosing successively $\alpha_j\ge j$ and $\delta_j\alpha_j^\sigma<1/j$ with a ratio below half this fixed positive lower bound would contradict the sequential conclusion. This proves (7.8), uniformly over the normalized radial minimizers.
+
+For $u$ close to $v_\alpha$, set $\widetilde u=u/L_\alpha(u)$. By (7.7) the denominator is positive and
+$\|\widetilde u-v_\alpha\|_{1,p}\le C\|u-v_\alpha\|_{1,p}$ uniformly. The perturbation is tangent, so (7.8) and homogeneity give a strictly larger quotient unless $\widetilde u=v_\alpha$. On the unit energy sphere this exception forces $u=v_\alpha$. Equation (7.3) follows.
+
+### 7.3. Matching competitors above the trace exponent
+
+Suppose $q>p_\partial$, so $\sigma>0$, and put $b=(p-1)/(q-p)$. Choose a nonnegative $\psi\in C_c^\infty(\mathbb R^n)$ that is nonzero on the lower half-space $H=\{y_n<0\}$, with
+
+$$
+N=\int_H|\nabla\psi|^p>0,\qquad
+M=\int_H e^{y_n}\psi^q>0,\qquad d=S\phi(1)^q.
+$$
+
+For a fixed constant $A>0$ and $e=(0,\ldots,0,1)$, define
+
+$$
+w_\alpha(x)=A\alpha^b\psi(\alpha(x-e)).
+\tag{7.15}
+$$
+
+No boundary condition is imposed on competitors for the quotient. Under $y=\alpha(x-e)$ the ball becomes
+$2y_n+|y|^2/\alpha<0$, converging to $H$, and
+$|e+y/\alpha|^\alpha\to e^{y_n}$ uniformly on the fixed support of $\psi$. Dominated convergence and the identities
+$p(b+1)-n=1-n+bq=-p\sigma$ yield
+
+$$
+\begin{aligned}
+\|w_\alpha\|_{1,p}^p
+ &=A^pN\alpha^{-p\sigma}(1+o(1)),\\
+\|v_\alpha+w_\alpha\|_{1,p}^p
+ &=1+A^pN\alpha^{-p\sigma}+o(\alpha^{-p\sigma}),\\
+\widehat D_\alpha(v_\alpha+w_\alpha)
+ &=1+\frac{A^qM}{d}\alpha^{-p\sigma}
+   +o(\alpha^{-p\sigma}).
+\end{aligned}
+\tag{7.16}
+$$
+
+For the second formula, $\nabla v_\alpha$ is uniformly bounded while the bump gradient has scale $\alpha^{b+1}$. After rescaling, its mixed gradient terms vanish by dominated convergence. The bump's value energy has an extra factor $\alpha^{-p}$. For the third formula, $v_\alpha$ is uniformly bounded, the bump amplitude tends to infinity, and $c_\alpha/\alpha\to d^{-1}$ by (21). Subtract the unchanged integrands outside the bump support before taking these limits. These observations justify the remainders uniformly over the radial minimizers.
+
+It follows that
+
+$$
+\frac{\mathcal Q_\alpha(v_\alpha+w_\alpha)}{\mathcal Q_\alpha(v_\alpha)}
+=1+\left(A^pN-\frac{pA^qM}{qd}\right)\alpha^{-p\sigma}
+ +o(\alpha^{-p\sigma}).
+\tag{7.17}
+$$
+
+Choose $A$ large enough that the coefficient is negative. Normalize $u_\alpha=(v_\alpha+w_\alpha)/\|v_\alpha+w_\alpha\|_{1,p}$. It is positive and nonradial, has strictly smaller quotient, and satisfies
+
+$$
+\|u_\alpha-v_\alpha\|_{1,p}
+=A N^{1/p}\alpha^{-\sigma}(1+o(1)),
+\tag{7.18}
+$$
+
+because the normalization changes the function by $O(\alpha^{-p\sigma})=o(\alpha^{-\sigma})$. This proves (7.4) and Theorem 7.1. $\square$
+
+
+## 8. Scope and further questions
+
+The equality case $q=q_c(n,p)$ remains open. The limiting quadratic form has a first-angular-mode zero direction there, so the strict gap used in both Theorems 1.1 and 7.1 is unavailable. More precise dependence on $\alpha$ or higher-order analysis is needed.
+
+Theorem 7.1 resolves the earlier uniform-neighborhood question under unit energy normalization. It gives the exact decay power above the trace exponent but not a limiting leading coefficient for $\alpha^\sigma R_\alpha$. Identifying such a coefficient would require a sharper boundary concentration analysis and an optimal profile, rather than the fixed test bump used here.
+
+Lemma 2.1 applies when a degenerate variational problem supplies its stated compact weighted completion and positive constrained Hessian. Section 7 does not assert that its uniform argument applies without the common weight, reciprocal integrability, coefficient convergence and compact trace verified in this problem. Pointwise positivity of second variations alone is insufficient.
 
 ## References
 

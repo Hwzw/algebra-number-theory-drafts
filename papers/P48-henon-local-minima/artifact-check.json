@@ -1,16 +1,24 @@
 {
   "date": "2026-09-15",
-  "author": "Henry Zweiman",
-  "pdf_pages": 10,
-  "pdf_text_characters": 21217,
+  "revision": "1.1",
+  "pages": 14,
+  "pdf_bytes": 121752,
+  "pdf_sha256": "dc35cd9b33a996ed2b834b1a3e1bec7b61390c0272056bbda95c4b48a5a055eb",
+  "markdown_sha256": "fc03ea6b23d02140d2dfd2c0b9fd3b9acc680fa311967861e520fadb1e9ecb8c",
+  "tex_sha256": "3bc8a1e36797b1888aef465a9e78d13b8c770651abeb6883ff38b8bc3437f334",
+  "pdf_text_characters": 28669,
   "replacement_characters": 0,
-  "equation_tags": 43,
-  "equation_tags_sequential": true,
-  "mathjax_expressions": 336,
-  "mathjax_errors": 0,
-  "tex_warnings": [],
-  "visual_review": {
-    "pages": [
+  "byline_verified": true,
+  "equation_tags": 61,
+  "unique_tags": 61,
+  "markdown_tex_tag_order_matches": true,
+  "all_equation_tags_in_pdf": true,
+  "math_expressions": 470,
+  "math_errors": 0,
+  "tex_warnings": 0,
+  "final_pdf_visual_review": {
+    "all_pages_reviewed": true,
+    "page_numbers": [
       1,
       2,
       3,
@@ -20,15 +28,14 @@
       7,
       8,
       9,
-      10
+      10,
+      11,
+      12,
+      13,
+      14
     ],
-    "resolution_dpi": 105,
-    "outcome": "All final pages inspected after the final manuscript edit; no clipping, overlap, missing glyphs or broken equations identified."
+    "render_scale": 1.5,
+    "findings": "All fourteen exact final PDF pages rendered and inspected in contact sheets. No overlap, clipping or missing glyphs identified."
   },
-  "proof_status": "Artifact integrity only; not mathematical certification",
-  "hashes": {
-    "manuscript.md": "b3adb0aefa3388636294fe1e1cf514bf4c14ff4a5509451bcf214d30bb55ecd7",
-    "manuscript.tex": "864a32eafe7b62e414e2034419a82459f521d06801d080316b1ba550bfca34c4",
-    "manuscript.pdf": "eadcdfa98ab59ac8e29c04b8dcede4438ab1415194f00ed19bd7d7450ff84b18"
-  }
+  "meaning": "Internal artifact checks, not independent mathematical or priority certification."
 }

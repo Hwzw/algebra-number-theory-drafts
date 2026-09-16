@@ -1,9 +1,9 @@
 {
-  "file": "continuation/papers/P48-henon-local-minima/manuscript.md",
+  "file": "manuscript_extensions/P48-henon-local-minima/publish-ready/manuscript.md",
   "mathjax_version": "3.2.2",
-  "markdown_sha256": "b3adb0aefa3388636294fe1e1cf514bf4c14ff4a5509451bcf214d30bb55ecd7",
+  "markdown_sha256": "fc03ea6b23d02140d2dfd2c0b9fd3b9acc680fa311967861e520fadb1e9ecb8c",
   "validator_sha256": "4226a0d257fdbe8d005ad79fb622a042d48482520f6237094f4cc14180e30b54",
-  "expressions": 336,
+  "expressions": 470,
   "errors": [],
   "local_svg_preview_created": false,
   "local_visual_inspection": false,

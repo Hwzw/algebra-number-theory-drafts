@@ -51,10 +51,20 @@
   "search_record": "search-summary.json",
   "scope": [
     "q=q_c undecided",
-    "No alpha-uniform nonlinear neighborhood",
+    "No leading constant for the sharp neighborhood-radius power; uniformity itself is settled by revision 1.1",
     "No general Morse theory or new threshold formula",
     "Nonlinear lemma, compactness argument, Riccati observation and negative-direction test form one paper"
   ],
   "current_status": "Complete internally audited preprint, provisionally admitted as P48; final ten-page PDF inspected. Public transaction is documented separately in the program publication receipt.",
-  "paper": "P48"
+  "paper": "P48",
+  "revision_1_1": {
+    "date": "2026-09-15",
+    "target": "P48 Section 7 uniform-neighborhood question",
+    "new_claim": "Uniform radius through the trace exponent; matching power upper and lower bounds above it within the positive Steklov range",
+    "primary_comparison": "NS 2604.26286v2 introduction and local-positivity statements; GS08 Proposition 3.6 and Theorem 3.8 in final local PDF",
+    "new_dependency": "Classical Sobolev trace inequality and interpolation; remaining analytic ingredients proved in manuscript",
+    "priority_scope": "Focused comparison only, not exhaustive",
+    "independent_expert_review": false,
+    "exceptional_goal_completed": false
+  }
 }
