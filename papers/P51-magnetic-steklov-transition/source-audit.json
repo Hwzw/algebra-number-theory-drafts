@@ -1,0 +1,158 @@
+{
+  "date_local": "2026-09-16",
+  "id": "Q60",
+  "status": "Scoped primary-source audit updated through September 16 2026; full final access limitations retained; priority not certified",
+  "sources": [
+    {
+      "authors": "Helffer–Nicoleau",
+      "url": "https://arxiv.org/html/2503.14008v2",
+      "version": "v2 March 25 2025",
+      "read": "Sections 4.1–4.3, Theorem 5.1, Section 6; final journal abstract and metadata; author-page linked March 25 2025 PDF downloaded and relevant passages compared; final ScienceDirect preview read; full Section 5.2, equations (5.10)–(5.11) and Theorem 5.1 reread for fixed-flux comparison",
+      "comparison": "Explicit weak-field general-domain open statement; disk theorem already known",
+      "limits": "Author PDF is v2, not the final body. Direct final PDF returned HTTP 403. No claim to have read the final complete article."
+    },
+    {
+      "authors": "Bundrock–Girouard–Grebenkov–Levitin–Polterovich",
+      "url": "https://arxiv.org/html/2511.09490v3",
+      "version": "v3 June 23 2026",
+      "read": "Remark 1.6 plus earlier Q59 scoped reads",
+      "comparison": "Expects magnetic convergence and suggests diamagnetic compactness route",
+      "limits": "Not a full paper read"
+    },
+    {
+      "authors": "Christiansen–Datchev",
+      "url": "https://msp.org/paa/2023/5-3/paa-v5-n3-p06-s.pdf",
+      "version": "Final Pure and Applied Analysis 5 (2023), 767–794",
+      "read": "Introduction and full Section 4; final Theorem 4 page rendered and visually inspected (printed 784, PDF 19); arXiv v3 also compared",
+      "comparison": "Scalar shifted-log DtN expansion and capacity coefficient are prior work. Final lowest-eigenvalue Proposition 4.2 is numbered 4.1 in preprint.",
+      "limits": "Full bulk resolvent proof not audited; not required for our proof"
+    },
+    {
+      "authors": "Grebenkov–Chaigneau",
+      "url": "https://arxiv.org/html/2407.09864",
+      "version": "v3 March 23 2025",
+      "read": "Section IV.2 and start of V.1",
+      "comparison": "Prior scalar corrections, capacity and values of eigenfunctions at infinity",
+      "limits": "Final journal PDF not compared in full"
+    },
+    {
+      "authors": "Helffer–Kachmar–Nicoleau",
+      "url": "https://arxiv.org/abs/2501.00947",
+      "version": "v2 January 13 2025",
+      "read": "Final JFA abstract, introduction and theorem summaries; author PDF weak-field Section 7 examined",
+      "comparison": "General-domain strong-field and bounded-domain weak-field results",
+      "limits": "Author manuscript is not certified final; complete final JFA body not read"
+    },
+    {
+      "authors": "Kachmar–Lotoreichik",
+      "url": "https://arxiv.org/html/2602.17416",
+      "version": "v1 February 19 2026",
+      "read": "Introduction and complete exterior Section 3, including the full proof of Theorem 3.6, equations (3.1)–(3.7)",
+      "comparison": "Disk maximization with symmetry and outer-parallel-curve hypotheses in a specified field range",
+      "limits": "Bounded-domain proof not audited; not a dependency. Our field interval is shape-dependent, unlike their specified interval for a restricted class."
+    },
+    {
+      "authors": "Helffer–Kachmar–Nicoleau flux paper",
+      "url": "https://arxiv.org/html/2508.18119",
+      "version": "v2 April 21 2026 displayed on primary HTML",
+      "read": "Abstract, introduction through parameter formulation and theorem roadmap; current author-page journal metadata",
+      "comparison": "Weak-field theorem concerns disk Neumann Laplacian; Steklov refinement strong-field",
+      "limits": "Full proof not audited; author page lists Complex Analysis and Operator Theory 20 (2026), 104"
+    },
+    {
+      "authors": "Liu–Tan",
+      "url": "https://arxiv.org/html/2108.07611v1",
+      "version": "v1 August 17 2021",
+      "read": "Definitions (1.1)–(1.4), full symbol factorization Propositions 3.1–3.2 and equations (3.3)–(3.11)",
+      "comparison": "Classical principal symbol and smooth lower-symbol dependence support bounded-region perturbation lemma. Manuscript separately proves the parameter Lipschitz bound using a finite parametrix and smooth Dirichlet inverse.",
+      "limits": "No heat coefficients used; final JMP 2023 body not read"
+    },
+    {
+      "authors": "Grubb",
+      "url": "https://web.math.ku.dk/~grubb/dist11.pdf",
+      "version": "Author chapter PDF",
+      "read": "Chapter 11, Theorems 11.11, 11.14, 11.16; equations (11.55), (11.65a); relevant pages 19–22 of chapter PDF",
+      "comparison": "Smooth bounded-domain Dirichlet realization, Poisson mappings and elliptic DtN calculus",
+      "limits": "No new microlocal result claimed"
+    },
+    {
+      "title": "Spectral asymptotics for a class of singular Sturm–Liouville operators with applications to magnetic Laplacian and a-zeros of Kummer functions",
+      "url": "https://doi.org/10.1016/j.jde.2026.114450",
+      "version": "Journal of Differential Equations 475, September 15 2026, 114450",
+      "read": "Primary abstract and introductory theorem statements",
+      "comparison": "Strong-field/large-argument regime; inspected statements do not contain the proposed general-obstacle joint weak-field expansion",
+      "limits": "Full proofs not audited or used"
+    },
+    {
+      "authors": "Provenzano–Savo",
+      "url": "https://arxiv.org/html/2310.08203v1",
+      "version": "v1 October 12 2023; only arXiv version in current history",
+      "read": "Sections 2.2–2.5; complete Section 3.1 proof and Theorem 11; Section 4.1 Theorem 17; complete Appendix B proofs of Theorems 16 and 17 (HTML lines 694–755)",
+      "comparison": "Compact zero-field annuli already have explicit coth/tanh spectra and a quadratic small-flux law. The proposed exterior jointly regularized transition must not claim those formulas as new.",
+      "limits": "Final journal body not compared. Institutional record lists Communications in Contemporary Mathematics DOI 10.1142/S0219199725500014. The compact-annulus proof is not an exterior joint-limit theorem."
+    },
+    {
+      "authors": "Cekic–Siffert",
+      "url": "https://pure.mpg.de/rest/items/item_3617428_3/component/file_3670485/content",
+      "version": "Final JFA 289 (2025), 111159; arXiv latest v2 August 14 2025",
+      "read": "Final introduction, Theorems A/B, Examples 2.2–2.3 (pages 12–13) and Remark 2.4",
+      "comparison": "High-frequency spectral expansions on compact surfaces; classical cylinder coth formulas and conjugation symmetry are prior. Not the exterior weak-field/small-flux theorem.",
+      "limits": "Complete proof not audited; no claim of full final-text comparison."
+    },
+    {
+      "authors": "NIST DLMF",
+      "url": "https://dlmf.nist.gov/13.2.E42",
+      "version": "Current primary formula page read September 16 2026",
+      "read": "Equation 13.2.42 and its nonintegral-second-parameter condition",
+      "comparison": "Exact classical Kummer connection identity used in the radial proof; uniform cancellation estimates supplied separately.",
+      "limits": "Connection identity is not claimed new."
+    },
+    {
+      "authors": "Colbois–Provenzano–Savo",
+      "url": "https://link.springer.com/article/10.1007/s12220-022-01001-2",
+      "version": "Final Journal of Geometric Analysis 32 (2022), 285; arXiv latest v2 February 17 2022",
+      "read": "Final Theorem 16 and entire displayed proof; Appendix B.4 Theorem 33 and its proof; complete Appendix C, including Lemma 34, Proposition 35 and Lemma 36",
+      "comparison": "Classical bounded-domain AB Weinstock inequality, circle spectrum, conformal covariance and gauge equivalence are prior. Our novelty claim concerns the exterior joint regularization and uniform geometric transition.",
+      "limits": "Full Neumann and Brock inequality proofs not audited or used; no claim to have read the entire article."
+    },
+    {
+      "authors": "Michetti–Provenzano–Savo",
+      "url": "https://arxiv.org/html/2604.11718v2",
+      "version": "v2 April 29 2026, primary HTML header",
+      "read": "Abstract and introduction through Section 1.3, including the variational definition and Neumann boundary condition",
+      "comparison": "Compact-surface magnetic Laplacian with bulk L2 normalization and zero regular magnetic field. Not the exterior jointly regularized Steklov transition.",
+      "limits": "Screen only; complete theorem proofs not audited and not dependencies."
+    }
+  ],
+  "download_note": "Some primary HTML pages readable with web tools returned HTTP 406 to local downloads. source-downloads.json records failures without claiming local copies exist.",
+  "source_review_note": "notes/0203-q60-boundary-and-priority-audit.md",
+  "absence_of_search_hits_proves_novelty": false,
+  "search_queries_latest": [
+    "\"magnetic\" \"Steklov\" \"weak\" \"capacity\"",
+    "\"magnetic Steklov\" \"weak field\" exterior 2026",
+    "\"exterior\" \"magnetic\" \"Dirichlet-to-Neumann\" \"logarithmic\"",
+    "\"Steklov\" \"weak-field\" \"general\" 2026",
+    "\"Steklov\" \"digamma\" capacity",
+    "\"magnetic Steklov\" \"small\" \"obstacle\"",
+    "\"magnetic Steklov\" \"flux\" 2026",
+    "\"Steklov\" \"flux\" \"coth\"",
+    "\"Steklov\" \"integer flux\" weak magnetic",
+    "\"Steklov\" \"small-flux\" exterior",
+    "\"Steklov\" \"crossover\" magnetic",
+    "Steklov flux capacity exterior",
+    "Steklov weak-field isoperimetric flux",
+    "Steklov harmonic measure magnetic",
+    "site:arxiv.org magnetic Steklov exterior weak field asymptotics 2026",
+    "site:arxiv.org magnetic Dirichlet Neumann small flux logarithmic capacity",
+    "site:arxiv.org exterior magnetic Steklov disk maximizes symmetry"
+  ],
+  "search_result_interpretation": "No matching general-obstacle joint expansion located in inspected primary sources; search engines are incomplete. Secondary/generated summaries not used as proof or novelty evidence.",
+  "flux_review_note": "notes/0205-q60-small-flux-normal-form.md",
+  "arxiv_history_rechecks": {
+    "date": "2026-09-16",
+    "2503.14008": "v2 March 25 2025",
+    "2602.17416": "v1 February 19 2026",
+    "2201.11100": "v2 February 17 2022"
+  },
+  "geometric_review_note": "notes/0207-q60-flux-geometric-gap.md"
+}

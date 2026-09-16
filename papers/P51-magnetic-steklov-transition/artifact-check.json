@@ -1,0 +1,25 @@
+{
+  "date_local": "2026-09-16",
+  "pages": 21,
+  "markdown_sha256": "4b0ac4dada199783e51f10730f3e497e5e886842f4b936af581fc22a5d6d4d00",
+  "pdf_sha256": "bee9b160584a65d827388bf206819b7e61fa995414f70e2bc8e15d919b1aafed",
+  "tex_sha256": "2618a89df659a79354c0dbcb783e7751561c19f2be975a4fb383dc57f66a9409",
+  "math_expressions": 677,
+  "math_errors": 0,
+  "nonempty_text_all_pages": true,
+  "extracted_text_characters": 50285,
+  "author_byline_in_pdf": true,
+  "missing_glyph_or_box_warnings": false,
+  "rendered_pages": 21,
+  "all_final_pages_visually_inspected_in_contact_sheets": true,
+  "full_size_spot_checks": [
+    18,
+    19,
+    20,
+    21
+  ],
+  "visual_findings": "All 21 rendered pages inspected. Final wording-only edit changed page 21 pixels; pages 1\u201320 were verified pixel-identical to inspected renders, and final page 21 was inspected separately. No clipping, overlap or missing formulas observed.",
+  "mathematical_correctness_certified": false,
+  "independent_review": false,
+  "publication_verified_by_this_check": false
+}

@@ -1,0 +1,109 @@
+{
+  "status": "Floating-point consistency diagnostic, not proof",
+  "results": [
+    {
+      "ellipse_parameter": 0.2,
+      "cutoff": 40,
+      "perimeter": 6.3461758357162354,
+      "S_K": 0.0015463947984582528,
+      "cases": [
+        {
+          "flux": 0.02,
+          "eigenvalue": 0.019797599821473146,
+          "scaled_quadratic_coefficient": -0.009713153250514445,
+          "predicted_limit": -0.009619843700383537
+        },
+        {
+          "flux": 0.01,
+          "eigenvalue": 0.00989977593841949,
+          "scaled_quadratic_coefficient": -0.009666029671864113,
+          "predicted_limit": -0.009619843700383537
+        },
+        {
+          "flux": 0.005,
+          "eigenvalue": 0.004950130200147271,
+          "scaled_quadratic_coefficient": -0.009642821842681393,
+          "predicted_limit": -0.009619843700383537
+        }
+      ]
+    },
+    {
+      "ellipse_parameter": 0.2,
+      "cutoff": 80,
+      "perimeter": 6.3461758357162354,
+      "S_K": 0.0015463947984582528,
+      "cases": [
+        {
+          "flux": 0.02,
+          "eigenvalue": 0.019797599821329972,
+          "scaled_quadratic_coefficient": -0.009713153608448613,
+          "predicted_limit": -0.009619843700383537
+        },
+        {
+          "flux": 0.01,
+          "eigenvalue": 0.009899775938378918,
+          "scaled_quadratic_coefficient": -0.009666030077581239,
+          "predicted_limit": -0.009619843700383537
+        },
+        {
+          "flux": 0.005,
+          "eigenvalue": 0.004950130200303169,
+          "scaled_quadratic_coefficient": -0.00964281560676683,
+          "predicted_limit": -0.009619843700383537
+        }
+      ]
+    },
+    {
+      "ellipse_parameter": 0.6,
+      "cutoff": 40,
+      "perimeter": 6.862737420125468,
+      "S_K": 0.01101532483625689,
+      "cases": [
+        {
+          "flux": 0.02,
+          "eigenvalue": 0.018285505193943535,
+          "scaled_quadratic_coefficient": -0.06378118252907058,
+          "predicted_limit": -0.06336649172356781
+        },
+        {
+          "flux": 0.01,
+          "eigenvalue": 0.00914915167010017,
+          "scaled_quadratic_coefficient": -0.06357163377412531,
+          "predicted_limit": -0.06336649172356781
+        },
+        {
+          "flux": 0.005,
+          "eigenvalue": 0.004576167703729749,
+          "scaled_quadratic_coefficient": -0.06346852036168138,
+          "predicted_limit": -0.06336649172356781
+        }
+      ]
+    },
+    {
+      "ellipse_parameter": 0.6,
+      "cutoff": 80,
+      "perimeter": 6.862737420125468,
+      "S_K": 0.01101532483625689,
+      "cases": [
+        {
+          "flux": 0.02,
+          "eigenvalue": 0.018285505193910503,
+          "scaled_quadratic_coefficient": -0.0637811826116521,
+          "predicted_limit": -0.06336649172356781
+        },
+        {
+          "flux": 0.01,
+          "eigenvalue": 0.00914915167023921,
+          "scaled_quadratic_coefficient": -0.06357163238370975,
+          "predicted_limit": -0.06336649172356781
+        },
+        {
+          "flux": 0.005,
+          "eigenvalue": 0.004576167703849148,
+          "scaled_quadratic_coefficient": -0.0634685155857101,
+          "predicted_limit": -0.06336649172356781
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and note its unreviewed preprint status."
+type: article
+title: "Uniform weak-field and small-flux asymptotics for exterior magnetic Steklov operators"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+date-released: 2026-09-16
+version: 1.0.0
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P51-magnetic-steklov-transition"
+abstract: "Uniform exterior magnetic Steklov operator asymptotics across integral flux, with a ground-state crossover, signed-flux asymmetry and an obstacle-dependent uniform disk-maximization theorem. AI-assisted unreviewed preprint."

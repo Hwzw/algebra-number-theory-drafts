@@ -1,0 +1,121 @@
+[
+  {
+    "name": "disk-v2",
+    "url": "https://arxiv.org/html/2503.14008v2",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "name": "disk-history",
+    "url": "https://arxiv.org/abs/2503.14008",
+    "sha256": "d9b4184cd7b69e5f05972f5aa2be8626b714dfeb2ee03d2cfe54178eebd14b04",
+    "bytes": 41031
+  },
+  {
+    "name": "scalar",
+    "url": "https://arxiv.org/html/2407.09864",
+    "sha256": "eacd8e2f356fda8c1873d0dd08601cc5c98f9dd88ae919190f8b2a7a17557f61",
+    "bytes": 900557
+  },
+  {
+    "name": "scalar-history",
+    "url": "https://arxiv.org/abs/2407.09864",
+    "sha256": "e90193b13ffbd9ad99aa23a6e2c1b79ab2509f9cce775c33bd4229cf5ebd1fb1",
+    "bytes": 42385
+  },
+  {
+    "name": "general-history",
+    "url": "https://arxiv.org/abs/2501.00947",
+    "sha256": "5af67e8cf4d4084b1dac593da8c5cde81d4ad649fc3c1a67a3a3ec2bcc64f271",
+    "bytes": 40194
+  },
+  {
+    "name": "general",
+    "url": "https://arxiv.org/html/2501.00947",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "name": "isoperimetric",
+    "url": "https://arxiv.org/html/2602.17416",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "name": "isoperimetric-history",
+    "url": "https://arxiv.org/abs/2602.17416",
+    "sha256": "cb82be05935c17fbcca05fad38adbe07d3afb052d2bffd64fa0fd127064a5f18",
+    "bytes": 39755
+  },
+  {
+    "name": "disk-v2",
+    "url": "https://arxiv.org/html/2503.14008v2",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "name": "scattering-v3",
+    "url": "https://arxiv.org/html/2210.05744v3",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "name": "scattering-history",
+    "url": "https://arxiv.org/abs/2210.05744",
+    "sha256": "d9f87591e35fd7c640d08a2e9994dd26ed6dc88c600051da34126aa06bd53246",
+    "bytes": 41512
+  },
+  {
+    "name": "isoperimetric-v1",
+    "url": "https://arxiv.org/html/2602.17416v1",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "name": "scattering-final",
+    "url": "https://msp.org/paa/2023/5-3/paa-v5-n3-p06-s.pdf",
+    "bytes": 2106462,
+    "sha256": "8ba6cefbf698b27a7ad2b70dc2c2b5e1c0ea372396c87f14b7aec881db414ecd"
+  },
+  {
+    "name": "disk-author-v2",
+    "url": "https://www.math.sciences.univ-nantes.fr/~nicoleau/ArXiv250325v2.pdf",
+    "bytes": 855632,
+    "sha256": "dab2c2a0ae6ed52491dd3d9f03aa7c2359f565e1c476d682c03091e03934ca3f"
+  },
+  {
+    "name": "general-author",
+    "url": "https://www.math.sciences.univ-nantes.fr/~nicoleau/DTNGroundStateSoumis.pdf",
+    "bytes": 572775,
+    "sha256": "823f358e320d67ee7d15759f5c5c43c86420fe5e2bdbea74b044bcd7bf71a076"
+  },
+  {
+    "name": "scalar-final",
+    "url": "https://pmc.polytechnique.fr/pagesperso/dg/publi/2025_04.pdf",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "name": "grubb-boundary",
+    "url": "https://web.math.ku.dk/~grubb/dist11.pdf",
+    "bytes": 251574,
+    "sha256": "2c871818396372d753f74d31be786fe2807179585aaa26c1e05de1710d960686"
+  },
+  {
+    "name": "magnetic-symbol-v1",
+    "url": "https://arxiv.org/pdf/2108.07611",
+    "bytes": 326518,
+    "sha256": "7251de8437d98dec6a32fb9229398776c782bb85b2b568d75e0ab18712d05b12"
+  },
+  {
+    "name": "disk-final-attempt",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0021782425001436/pdfft",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "surfaces-final",
+    "url": "https://pure.mpg.de/rest/items/item_3617428_3/component/file_3670485/content",
+    "bytes": 1582744,
+    "sha256": "b99847e32af963ec493873a39f3508531509b6895b42dc8f322b427e5cade45e"
+  },
+  {
+    "url": "https://libra.unine.ch/bitstreams/ee0b6168-6403-49fc-adb4-28bc9fe6356b/download",
+    "file": "ab-isoperimetry-final.pdf",
+    "bytes": 537291,
+    "sha256": "09597b7671741379f467305adec1daaed395b982894f3285facf3aead687bd42",
+    "status": "downloaded final JGA article; scoped passages read through primary publisher HTML"
+  }
+]

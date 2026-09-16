@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 50 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 51 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Uniform magnetic Steklov transitions and geometric comparison
+
+[**P51: Uniform weak-field and small-flux asymptotics for exterior magnetic Steklov operators**](papers/P51-magnetic-steklov-transition/README.md), by **Henry Zweiman**, gives a proposed uniform operator expansion through integral Aharonov–Bohm flux, a lowest-eigenvalue crossover, a signed-flux asymmetry and a second-order geometric gap. Every fixed smooth simply connected nondisk is strictly below the equal-perimeter disk in an obstacle-dependent small-field, small-mass and small-flux neighborhood. No symmetry or convexity hypothesis is imposed. The [21-page PDF](papers/P51-magnetic-steklov-transition/manuscript.pdf), [complete Markdown](papers/P51-magnetic-steklov-transition/manuscript.md) and [LaTeX](papers/P51-magnetic-steklov-transition/manuscript.tex) contain the hand proofs.
+
+The [assessment](papers/P51-magnetic-steklov-transition/ASSESSMENT.md) credits the scalar capacity mechanism, circle formulas, conformal covariance and classical boundary calculus, and records the incomplete final-text access for two comparison sources. The [review](papers/P51-magnetic-steklov-transition/REVIEW.md) audits uniform radial cancellation, the singular gauge, the operator topology and the geometric coefficients. No shape-uniform threshold, all-field-range theorem or independent expert verification is claimed. This is one provisionally admitted, unreviewed preprint.
 
 ## All-times heat-content maximization on metric graphs
 
