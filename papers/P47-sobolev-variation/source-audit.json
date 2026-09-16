@@ -66,7 +66,7 @@
     "Semantic Scholar citation API returned 429; no exhaustive citation-chain search claimed."
   ],
   "proof_state": {
-    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment. Revision 1.3 completes the all-order measure endpoint by contact motion and B-spline peak monotonicity.",
+    "supporting_result": "Complete proposed p=2 all-order constant/equality/symmetry theorem from Jacobi energy basis, positive spherical Poisson mixture, Burchard-Hajaiej strict rearrangement and Kalyabin point diagonal; p=1 constant and coincident maximizing sets via moment measures. Revision 1.1 gives local continuation near p=2; revision 1.2 gives sharp fourth-order p=1 constants, unique signed measure extremizers and ordinary nonattainment. Revision 1.3 completes the all-order measure endpoint by contact motion and B-spline peak monotonicity. Revisions 1.4 and 1.5 establish finite-exponent height symmetry and full variation continuation above one. Revision 1.6 establishes global finite-exponent maximizer regularity and the necessary switching Hessian.",
     "standard_dependencies": [
       "Genocchi-Hermite divided differences (de Boor, formula 52)",
       "Brunn-Minkowski",
@@ -155,6 +155,19 @@
     "new_computation": "None required; no finite diagnostic is used as universal proof evidence",
     "interval_width_estimated": false,
     "overlap_with_near_two_proved": false,
+    "full_variation_conjecture_solved": false,
+    "independent_review": false,
+    "priority_certified": false
+  },
+  "revision_1_6": {
+    "date": "2026-09-16",
+    "result": "All finite-exponent variation maximizers have finitely many nondegenerate critical points, explicitly normalized nonzero endpoint highest derivatives, and exactly n+r-1 simple residual zeros; count uniformly bounded on compact exponent intervals",
+    "stability": "Exact C2 switching value and necessary weighted Gram matrix inequality",
+    "proof_dependencies": "Internal Section6 duality and compactness; elementary perturbation and Rolle arguments; transverse-root estimates as in Section9",
+    "diagnostic": "Research-only exact n=3,q=2 two-switch Hessian comparison and saddle; not universal proof",
+    "new_external_theorem_dependency": false,
+    "uniform_count_bound_explicit": false,
+    "all_multiple_switches_excluded": false,
     "full_variation_conjecture_solved": false,
     "independent_review": false,
     "priority_certified": false

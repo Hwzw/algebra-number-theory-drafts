@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.5",
-  "pdf_pages": 25,
-  "pdf_text_characters": 64755,
+  "revision": "1.6",
+  "pdf_pages": 28,
+  "pdf_text_characters": 72191,
   "replacement_characters": 0,
-  "equation_tags": 98,
+  "equation_tags": 108,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 871,
+  "mathjax_expressions": 1000,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -37,15 +37,18 @@
       22,
       23,
       24,
-      25
+      25,
+      26,
+      27,
+      28
     ],
     "resolution_dpi": 108,
-    "outcome": "All 25 final pages rendered and inspected in seven contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new theorem, measure limits, endpoint residual argument and order-three curvature bound are legible; references occupy a separate page."
+    "outcome": "All 28 final pages rendered and inspected in seven contact sheets after the final manuscript edit. No clipping, overlap or missing glyphs found. The new regularity theorem, endpoint identities, perturbation argument, uniform count bound and Hessian condition are legible; references occupy a separate page."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "1fdb37ad48c77b1a6f51980ca3075672bfb67d564f69b424c5892ce37c8fb85c",
-    "manuscript.tex": "4e0e9210efac422c9dece1dbd8130decf48f4666068b9dd199816c2b22a2446d",
-    "manuscript.pdf": "e11ed18ef34c59ca31ea261ca87a01d4483d16e4733f9904c72779c2a8c24226"
+    "manuscript.md": "63099a6b7875c436db1daa70c8172131b09ae966128e0104b4b49e776a2587d2",
+    "manuscript.tex": "fe48015088daebf9060f38a6e73038697c6c56e54aca57f92f7c7b65baae82a3",
+    "manuscript.pdf": "a550298ab91b8f350dc82f112092090bc26bb5333700eb14940f00790473ecb8"
   }
 }

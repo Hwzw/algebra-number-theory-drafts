@@ -45,8 +45,11 @@ height extremizers for every finite exponent. This completes the
 function-height case of the broader symmetry conjecture when combined
 with the endpoint results. Finally, compactness of arbitrary variation
 maximizers at the unique measure endpoint proves the full variation
-statement on an order-dependent interval immediately above one. The full
-all-exponent variation conjecture remains open.
+statement on an order-dependent interval immediately above one. We also
+prove that every finite-exponent variation maximizer has finitely many
+nondegenerate critical points and simple dual-residual zeros, and derive
+its switching Hessian. The full all-exponent variation conjecture
+remains open.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -1887,21 +1890,246 @@ maximizer is therefore a height maximizer, and a height maximizer is a
 variation maximizer. Theorem 10 gives the midpoint symmetry and unique
 equality class. This proves Theorem 11. \(\square\)
 
-\Needspace{8\baselineskip}\section{11. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{11. Finite switches and the stability
+matrix}\label{finite-switches-and-the-stability-matrix}
+
+The remaining variation problem can be reduced to finite, regular
+switching configurations without assuming this regularity in advance.
+
+\Needspace{6\baselineskip}\textbf{Theorem 12 (regularity of variation maximizers).} Fix \(n\ge3\)
+and \(1<p<\infty\), and put \(q=p/(p-1)\). Every norm-one variation
+maximizer \(u\) has finitely many interior critical points, all
+nondegenerate. If their number is \(r\), then \(r\ge1\) and its dual
+residual \(R=H_{\operatorname{sign}(u')}-P\) has exactly \(n+r-1\)
+simple interior zeros. Moreover,
+
+\[
+|u^{(n)}(0)|^p=|u^{(n)}(1)|^p=(n-1)q+1.
+\tag{11.1}
+\]
+
+The number \(r\) is uniformly bounded when \(p\) ranges over a compact
+subinterval of \((1,\infty)\), with \(n\) fixed. No explicit bound or
+assertion \(r=1\) is made.
+
+\subsection{11.1. Endpoint identities without a switching
+assumption}\label{endpoint-identities-without-a-switching-assumption}
+
+Write \(m=n-1\), \(V=V_{n,p}\), \(f=u^{(n)}\) and
+\(g=\operatorname{sign}(u')\). By Section 6,
+
+\[
+\|R\|_q=V,\qquad f=\frac{|R|^{q-2}R}{V^{q-1}},\qquad
+\int_0^1Rf=V.
+\tag{11.2}
+\]
+
+In particular \(R\in W^{m,\infty}\), \(f\) is continuous and
+\(u\in C^n\). For some constant \(c\), differentiation of the load gives
+
+\[
+g-c=(-1)^mR^{(m)}\quad\hbox{almost everywhere}.
+\tag{11.3}
+\]
+
+The chain rule for \(|u'|\) is valid regardless of its zero set. It
+gives
+
+\[
+\int_0^1(g-c)u''=0,\qquad
+\int_0^1t(g-c)u''=-V.
+\]
+
+Integrate by parts \(m-1\) times. All boundary terms vanish by the
+clamped conditions. In the second identity use
+\(D^{m-1}(tu'')=tf+(m-1)u^{(m)}\) and \(\int R'u^{(m)}=-\int Rf=-V\).
+The result is
+
+\[
+\int_0^1R'f=0,\qquad \int_0^1tR'f=mV.
+\tag{11.4}
+\]
+
+The absolutely continuous function \(|R|^q\) has derivative
+\(qV^{q-1}fR'\). Therefore
+
+\[
+|R(0)|^q=|R(1)|^q=(mq+1)V^q.
+\tag{11.5}
+\]
+
+Equation (11.1) follows from (11.2), since \((q-1)p=q\). In particular
+\(f\) is bounded away from zero on endpoint neighborhoods. No derivative
+of the sign function \(g\) was taken.
+
+\subsection{11.2. A degenerate critical point is
+unstable}\label{a-degenerate-critical-point-is-unstable}
+
+Suppose \(u'(a)=u''(a)=0\) at an interior point. By (11.1), choose open
+intervals \(E_-\) to its left and \(E_+\) to its right on which \(|f|\)
+has a positive lower bound. There exists
+\(\phi\in C_c^\infty(E_-\cup E_+)\) such that
+
+\[
+\int_0^1t^j\phi(t)\,dt=0\quad(0\le j<n),\qquad
+\int_0^1\frac{(a-t)_+^{n-2}}{(n-2)!}\phi(t)\,dt\ne0.
+\tag{11.6}
+\]
+
+Indeed, if the last functional vanished on the common kernel of the
+moment functionals, finite-dimensional linear algebra would express it
+as their linear combination. Testing smooth functions supported in the
+two intervals would make its kernel a polynomial of degree at most
+\(n-1\) there. That polynomial vanishes on \(E_+\) and hence
+identically, but the kernel is nonzero on \(E_-\), a contradiction.
+
+Let \(h=I^n\phi\). The moment conditions make it a smooth clamped
+function, and \(h'(a)\ne0\). Since \(h^{(n)}\) is supported where
+\(|f|\) is bounded below, the map
+\(\varepsilon\mapsto\|f+\varepsilon\phi\|_p\) is twice continuously
+differentiable near zero, including when \(p<2\). Applying the sharp
+variation inequality to \(u+\varepsilon h\) and \(u-\varepsilon h\) and
+averaging gives
+
+\[
+\frac{\|(u+\varepsilon h)'\|_1+\|(u-\varepsilon h)'\|_1}{2}
+-\|u'\|_1\le C\varepsilon^2.
+\tag{11.7}
+\]
+
+The scalar identity \((|y+z|+|y-z|)/2-|y|=(|z|-|y|)_+\) identifies the
+left side with \(\int(\varepsilon|h'|-|u'|)_+\) for \(\varepsilon>0\).
+But \(u'(t)=o(|t-a|)\) and \(|h'|\) is bounded below near \(a\). For
+every fixed \(M>0\), integration over \(|t-a|<M\varepsilon\) gives a
+lower bound \(c_0M\varepsilon^2\) for all sufficiently small
+\(\varepsilon\), where \(c_0>0\) is independent of \(M\). Choosing \(M\)
+arbitrarily large contradicts (11.7). Thus \(u''(a)\ne0\) at every
+interior zero of \(u'\).
+
+All these zeros are isolated. The clamped Taylor expansions and nonzero
+endpoint values of \(f\) fix a nonzero sign of \(u'\) near each
+endpoint. An infinite set of zeros in the remaining compact interval
+would have an accumulation point, necessarily with \(u'=u''=0\). Hence
+there are finitely many zeros. Each is a sign switch, and at least one
+occurs because \(\int_0^1u'=0\) and \(u\) is nonzero.
+
+\subsection{11.3. The residual zeros are also
+simple}\label{the-residual-zeros-are-also-simple}
+
+Let the critical points be \(\tau_1<\cdots<\tau_r\). The moment
+equations force at least \(n\) sign changes of \(R\). Repeated
+mean-value arguments then force \(R^{(m)}\) to take both positive and
+negative values on sets of positive measure. Equation (11.3), with \(g\)
+taking only the values \(\pm1\) almost everywhere, implies \(-1<c<1\).
+
+Consequently \(R\) has degree exactly \(m\) on each of the \(r+1\) knot
+intervals. Its derivative \(R^{(m-1)}\) is continuous piecewise affine,
+with a nonzero slope on each interval, and has at most \(r+1\) distinct
+zeros. The \(r\) interior zeros of \(u'\), together with its endpoint
+zeros of exact multiplicity \(m\), force at least \(m+r\) distinct zeros
+of \(f\) after \(m\) applications of Rolle\textquotesingle s theorem.
+These are also zeros of \(R\).
+
+Conversely, applying Rolle \(m-1\) times to \(R\) bounds its distinct
+zeros by \(m+r\). A multiple root would add another zero in this count
+and force at least \(r+2\) distinct zeros of \(R^{(m-1)}\), which is
+impossible. This argument uses only a double root and continuity of
+\(R'\), including at a switching knot when \(m=2\). Thus the residual
+has exactly \(n+r-1\) simple interior zeros.
+
+For the uniform bound, suppose \(p_j\) stays in a compact subinterval of
+\((1,\infty)\) and the corresponding maximizing functions have unbounded
+critical-point counts. After a subsequence \(p_j\to p_0\), the
+compactness argument in Section 6.5 gives convergence in \(C^n\) to a
+normalized maximizer at \(p_0\). Its endpoint highest derivatives are
+nonzero and all its interior critical points are nondegenerate. Hence
+the endpoint signs persist, each interior critical point has exactly one
+nearby critical point for large \(j\), and the intervening compact sets
+contain none. The critical-point counts are eventually equal to that of
+the limit, a contradiction. This completes the proof of Theorem 12.
+\(\square\)
+
+\subsection{11.4. A justified second-variation
+condition}\label{a-justified-second-variation-condition}
+
+Let \(\sigma_i\) be the sign of \(u'\) just before \(\tau_i\), so the
+load jumps there by \(-2\sigma_i\). Nearby ordered switching points
+define nearby sign loads. Modulo a polynomial of degree at most \(n-1\),
+their dual load is
+
+\[
+H_{\boldsymbol\tau}=2\sum_{i=1}^r\sigma_iK_{\tau_i}.
+\]
+
+Put \(J(\boldsymbol\tau)=\min_P\int|H_{\boldsymbol\tau}-P|^q\). At the
+maximizing configuration set
+
+\[
+w=|R|^{q-2},\qquad
+L_i(t)=\frac{(\tau_i-t)_+^{n-2}}{(n-2)!},\qquad
+B_i=L_i-\Pi_w L_i,
+\tag{11.8}
+\]
+
+where \(\Pi_w\) is orthogonal projection onto \(\mathcal P_{n-1}\) in
+the weighted inner product \(\langle v,z\rangle_w=\int wvz\). The weight
+is positive almost everywhere and integrable. By Theorem 12 all residual
+roots are simple, so the transverse-root estimates of Section 9 justify
+continuously differentiating the normal equations in the switching
+parameters. Their coefficient Gram matrix is positive definite. The same
+sublevel argument and the envelope formula make \(J\) twice continuously
+differentiable near this configuration.
+
+With the unnormalized potential \(U=I^n(|R|^{q-2}R)\), differentiation
+gives
+
+\[
+\begin{aligned}
+J_i&=2q\sigma_iU'(\tau_i)=0,\\
+J_{ij}&=4q(q-1)\sigma_i\sigma_j\langle B_i,B_j\rangle_w
++2q\sigma_i\delta_{ij}U''(\tau_i).
+\end{aligned}
+\tag{11.9}
+\]
+
+For \(n=3\), the second derivative of a moving kernel is an indicator.
+Its contribution is still justified by dominated convergence against the
+bounded signed residual power; no boundary term is introduced. The
+weighted term is controlled by the integrable transverse-root estimates.
+
+Define \(D_i=-\sigma_iU''(\tau_i)>0\) and
+\(G_{ij}=\sigma_i\sigma_j\langle B_i,B_j\rangle_w\). Every nearby sign
+load has dual norm at most \(V\), so the Hessian in (11.9) must be
+negative semidefinite. Equivalently,
+
+\[
+2(q-1)G\preceq\operatorname{diag}(D_1,\ldots,D_r),
+\tag{11.10}
+\]
+
+where \(\preceq\) denotes comparison of quadratic forms. This is a
+necessary condition for every finite-exponent variation maximizer.
+Theorem 12 justifies its finite, nondegenerate setting; it remains to
+exclude every configuration with \(r\ge2\) satisfying it, or prove that
+such a configuration has a smaller value than the midpoint load. No such
+general exclusion is asserted here.
+
+\Needspace{8\baselineskip}\section{12. Remaining questions}\label{remaining-questions}
 
 The full all-exponent form of {[}NS, Conjecture 4.14{]} remains
-unresolved. Theorem 9 completes its measure endpoint. Theorems 5 and 11
-give order-dependent exponent intervals around two and immediately above
-one, respectively. Their widths are not estimated, and their overlap is
-not established. Theorem 10 settles midpoint symmetry and
-height-extremizer uniqueness for every finite exponent, completing the
-k=0, target-L-infinity slice of Conjecture 4.3 together with endpoint
-results. What remains for Conjecture 4.14 is the variation identity and
-exclusion of competing multiple-peak variation maximizers at the other
-exponents. Compactness of a known branch alone does not exclude
-coexistence with such a maximizer. The stronger centroid and
-knot-reflection inequalities in the research notes remain unproved and
-are not needed for Theorems 9-\/-11.
+unresolved. Theorem 9 completes its measure endpoint, and Theorems 5 and
+11 give exponent intervals around two and immediately above one. Their
+widths and overlap are not established. Theorem 10 proves height
+symmetry and uniqueness at every finite exponent. Theorem 12 now proves
+that every finite-exponent variation maximizer has finitely many
+nondegenerate critical points and simple dual-residual zeros, so the
+stability matrix (11.10) applies without a regularity assumption. The
+remaining finite-exponent task is to exclude a maximizing configuration
+with two or more switches. The endpoint p=infinity also remains to be
+addressed for the full variation statement. A necessary matrix condition
+and finite examples are not a universal exclusion theorem. The stronger
+centroid and knot-reflection inequalities in the research notes remain
+unproved and are not needed for the results above.
 
 \clearpage\raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 

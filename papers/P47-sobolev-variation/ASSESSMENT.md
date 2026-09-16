@@ -1,6 +1,6 @@
 # Priority and significance assessment
 
-Henry Zweiman. September 16, 2026. P47 revision 1.5, developed as Q55.
+Henry Zweiman. September 16, 2026. P47 revision 1.6, developed as Q55.
 
 ## Contribution and internal decision
 
@@ -9,6 +9,18 @@ The manuscript proves the complete Hilbert-space case of Nazarov-Shcheglova Conj
 Provisionally admit this as one substantial research preprint under the revised program standard. The main advance is an all-order rearrangement principle for a clamped Green quadratic form after the zero-mean constraint is imposed. Its Jacobi spectrum becomes a positive mixture of spherical Poisson interactions. This supplies a global optimizer and equality classification, rather than a finite-order calculation or local optimality test. The measure argument gives a complementary mechanism through moment circuits and unimodal splines. These related results form one paper.
 
 The explicit open conjecture, uniformity in derivative order, and reusable load-rearrangement principle support significance. Possible extensions to other constrained Green operators are research directions, not established applications or citation forecasts. The p=2 result is still one exponent of a larger conjecture. An editor may judge the breadth insufficient for Advances in Mathematics or Transactions of the AMS. Admission is an internal, revisable judgment, not journal acceptance or independent certification.
+
+## Revision 1.6: global regularity and a justified stability matrix
+
+Theorem 12 proves, for every n>=3 and 1<p<infinity, that every normalized global variation maximizer has finitely many nondegenerate interior critical points and nonzero highest derivatives at both endpoints with explicit normalization. If r is its critical-point count, the dual residual has exactly n+r-1 simple interior zeros. The count is uniformly bounded for p in each compact subinterval of (1,infinity), with n fixed; the bound is not explicit.
+
+This removes the unproved finite-switch and root-regularity hypotheses from the proposed stability route. Section 11 differentiates the best-polynomial normal equations and obtains the exact switching Hessian and a necessary matrix inequality for every maximizer. It does not prove that every r>=2 configuration violates that inequality. The all-exponent variation conjecture remains open, including the separate p=infinity endpoint issue. No new distinct paper is added, and this reduction does not fulfill the broader conjecture-resolution goal.
+
+The proof is self-contained after the manuscript's duality and compactness results. Endpoint integrations by parts use an absolutely continuous residual power and do not differentiate the sign function. A two-sided perturbation supported where the highest derivative is bounded away from zero excludes a degenerate critical point for every p>1. Repeated Rolle counting then gives residual simplicity, which justifies differentiation even when q<2. Compactness through the highest derivative gives the uniform count bound.
+
+A research-only exact order-three Hilbert diagnostic independently checks every Hessian entry by symbolic differentiation. The symmetric two-switch stationary configuration is a saddle: its translation eigenvalue is strictly positive. This verifies one family's signs and normalizations and does not establish a universal exclusion. A numerical root filter was replaced by the exact stationary quartic and its exact root count; no floating-point root claim is used in the hand proof.
+
+Bounded searches for Sobolev variation extremals, simple zeros and perfect-spline stability found no matching primary regularity or universal switch-exclusion theorem in inspected results. The abstract of Nazarov's arXiv:1308.2259 concerns constant extremizers in other embedding inequalities and supplies no dependency here; its full body was not reviewed in this audit. No exhaustive priority certification or independent expert review is claimed.
 
 ## Revision 1.5: variation continuation immediately above one
 
