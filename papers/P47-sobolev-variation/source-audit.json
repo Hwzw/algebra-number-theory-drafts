@@ -92,5 +92,16 @@
   },
   "publication_decision": "Internally admitted as one preprint P47. Public-file verification is tracked in the publication receipt; no full all-p solution or independent certification claimed.",
   "source_archive_note": "Named third-party files are retained in the research workspace, not redistributed. URLs and hashes are in source-downloads.json.",
-  "published_as": "P47"
+  "published_as": "P47",
+  "revision_1_1": {
+    "date": "2026-09-15",
+    "target": "Local extension of final NS Conjecture 4.14 for each n>=3 and p near 2",
+    "final_statement_read": "Publisher HTML Conjecture 4.14, Remark 4.15 and neighboring Section 4 context",
+    "arxiv_statement_read": "2101.10752v3 Conjecture 2, Remark 10",
+    "Kazimirov_Sheipak": "MathNet primary abstract and metadata only; point L-infinity result; full proof not read and not used",
+    "new_argument": "Dual extremizer compactness through highest derivative; strict single peak; sublevel estimates for best polynomial residuals; IFT and midpoint profile",
+    "priority": "Bounded search, no matching result identified; not exhaustive",
+    "independent_human_review": false,
+    "full_conjecture_solved": false
+  }
 }

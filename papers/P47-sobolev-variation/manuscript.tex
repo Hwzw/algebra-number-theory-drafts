@@ -28,8 +28,13 @@ quadratic form with a positive mixture of Poisson interactions on a
 sphere, where rearrangement reduces the optimization to a cap. We also
 prove the constant identity and coincidence of maximizing sets at the
 measure endpoint \(p=1\), using the geometry of extreme moment measures
-and unimodal splines. Symmetry at that endpoint and the remaining
-exponents are left open.
+and unimodal splines. For each fixed derivative order, we further prove
+the full variation identity and midpoint-symmetric equality
+classification on an open interval of exponents around two. A dual
+optimality equation gives compactness through the highest derivative;
+polynomial sublevel bounds control the point-evaluation profile on both
+sides of the Hilbert exponent. Symmetry at the measure endpoint and the
+full all-exponent conjecture remain open.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -468,15 +473,415 @@ proves equality of the relaxed and ordinary sharp constants. The proof
 classifies coincidence of relaxed maximizers and does not assert
 attainment in the ordinary \(W_0^{n,1}\) class. \(\square\)
 
-\Needspace{8\baselineskip}\section{6. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{6. An open interval of
+exponents}\label{an-open-interval-of-exponents}
 
-Theorems 1 and 4 leave the general exponents in {[}NS, Conjecture
-4.14{]} unresolved. The Hilbert proof uses a quadratic form whose
-constant-mode subtraction is preserved by spherical rearrangement. The
-measure proof uses finite-support extreme points. Neither mechanism
-supplies the general \(1<p<\infty\) argument by replacing its norm
-formally. Symmetry and an explicit classification of the maximizing knot
-configurations at \(p=1\) also remain open here.
+The Hilbert theorem also yields a neighborhood of exponents for each
+fixed derivative order. The interval is not asserted to be uniform in
+the order. In this section write \(X_{n,p}=W_0^{n,p}(0,1)\) for the
+clamped space defined by (1), with norm \(\|u^{(n)}\|_p\).
+
+\Needspace{6\baselineskip}\textbf{Theorem 5 (local continuation in the exponent).} For every fixed
+integer \(n\ge3\), there exists \(0<\varepsilon_n<1\) such that, if
+\(|p-2|<\varepsilon_n\), then
+
+\[
+V_{n,p}=2C_{n,p}.
+\tag{6.1}
+\]
+
+All nonzero extremizers in the two inequalities are the scalar multiples
+of the unique positive norm-one extremizer for evaluation at \(1/2\).
+They are symmetric about the midpoint and, after a choice of global
+sign, have strictly positive derivative on \((0,1/2)\) and strictly
+negative derivative on \((1/2,1)\).
+
+The radius is allowed to depend on \(n\) and is not estimated here. The
+theorem does not reach all \(1<p<\infty\), give an interval uniform in
+\(n\), or settle the remaining endpoint symmetry questions.
+
+\subsection{6.1. Dual representation and compactness of variation
+maximizers}\label{dual-representation-and-compactness-of-variation-maximizers}
+
+Let \(\mathcal P_{n-1}\) denote the polynomials of degree at most
+\(n-1\). Integration from the left endpoint identifies \(X_{n,p}\)
+isometrically with
+
+\[
+Z_{n,p}=\{f\in L^p(0,1):\int_0^1t^jf(t)\,dt=0,\ 0\le j<n\}.
+\tag{6.2}
+\]
+
+Indeed \(u(x)=\int_0^x(x-t)^{n-1}f(t)/(n-1)!\,dt\); the right endpoint
+conditions are equivalent to the displayed moments. For bounded \(g\),
+put
+
+\[
+H_g(t)=\int_t^1\frac{(x-t)^{n-2}}{(n-2)!}g(x)\,dx.
+\tag{6.3}
+\]
+
+Fubini gives \(\int gu'=\int H_gf\). If \(q=p/(p-1)\), the norm of this
+functional on \(Z_{n,p}\) equals
+
+\[
+\min_{P\in\mathcal P_{n-1}}\|H_g-P\|_q.
+\tag{6.4}
+\]
+
+Here is a direct justification without a quotient-duality assumption. A
+minimizing polynomial exists by finite-dimensional coercivity and is
+unique for \(q>1\). Its residual \(R=H_g-P\) satisfies
+
+\[
+\int_0^1 |R|^{q-2}R\,Q=0\qquad(Q\in\mathcal P_{n-1}).
+\tag{6.5}
+\]
+
+If \(R\ne0\), the function \(f=\operatorname{sign}(R)|R/\|R\|_q|^{q-1}\)
+has \(L^p\) norm one and belongs to (6.2). It realizes the bound in
+Hölder\textquotesingle s inequality. The zero-residual case is
+immediate. This proves (6.4).
+
+For every fixed \(p>1\), the variation supremum is attained. A
+norm-bounded sequence is bounded in \(W^{n,p}\) by successive
+integration, and its derivatives through order \(n-1\) are uniformly
+bounded and equicontinuous, using Hölder\textquotesingle s inequality
+for the highest integral. A subsequence converges uniformly through
+order \(n-1\), and the highest derivatives have a weakly convergent
+subsequence in \(L^p\). The limit satisfies all endpoint conditions, has
+norm at most one, and retains the limiting variation. The supremum is
+positive, so a maximizer must have norm exactly one by scaling.
+
+For a norm-one variation maximizer \(u\), choose
+\(g=\operatorname{sign}(u')\), with any value in \([-1,1]\) on the zero
+set. The functional in (6.4) is at most \(V_{n,p}\), since
+\(\int gv'\le\|v'\|_1\). On \(u\) it equals \(V_{n,p}\). Thus its
+residual satisfies \(\|R\|_q=V_{n,p}\), and equality in Hölder gives
+
+\[
+u^{(n)}(t)=\operatorname{sign}R(t)
+\left|\frac{R(t)}{V_{n,p}}\right|^{q-1}.
+\tag{6.6}
+\]
+
+This formula gives more compactness than the original Sobolev bound.
+
+\Needspace{6\baselineskip}\textbf{Lemma 6 (compactness of maximizers).} Suppose \(p_j\to2\) and
+\(u_j\) is any sequence of norm-one variation maximizers in
+\(X_{n,p_j}\). Then, after a subsequence and a choice of global signs,
+\(u_j\) converges in \(C^n[0,1]\) to the positive norm-one Hilbert
+maximizer \(u_*\).
+
+\emph{Proof.} Restrict to \(3/2\le p_j\le5/2\), so \(5/3\le q_j\le3\).
+The functions \(H_{g_j}\), with \(|g_j|\le1\), are uniformly bounded and
+Lipschitz. For \(n=2\), this follows directly from \(H_g'=-g\); for
+\(n\ge3\), differentiate (6.3) once and bound its remaining integral.
+
+The minimizing polynomials satisfy
+\(\|P_j\|_{q_j}\le2\|H_{g_j}\|_{q_j}\). Their coefficients are uniformly
+bounded. To verify the needed uniform norm equivalence, a contrary
+sequence of polynomials can be normalized to have coefficient norm one
+and \(L^{q_j}\) norm tending to zero. A coefficient-convergent
+subsequence would give a nonzero polynomial vanishing almost everywhere,
+a contradiction. Consequently both \(P_j\) and their derivatives are
+uniformly bounded, and the residuals \(R_j\) are uniformly bounded and
+Lipschitz.
+
+The quantities \(V_{n,p_j}\) are bounded above by (6.4) with the zero
+polynomial. They are bounded away from zero by testing the one fixed
+nonzero function \(u_*\), whose highest derivative is bounded. Formula
+(6.6) now makes \(u_j^{(n)}\) uniformly bounded and equicontinuous. For
+example, signed power maps with exponent in \([2/3,2]\) on a fixed
+bounded interval have a common Hölder modulus with exponent \(2/3\),
+after enlarging the constant. Arzelà-\/-Ascoli supplies a uniformly
+convergent subsequence of the highest derivatives. Integration and the
+left endpoint conditions give convergence in \(C^n\) to some \(u\).
+
+Uniform boundedness and \(p_j\to2\) imply
+\(\int |u^{(n)}|^2=\lim_j\int|u_j^{(n)}|^{p_j}=1\). All right endpoint
+conditions pass to the limit. Also \(\|u'\|_1=\lim_jV_{n,p_j}\). Testing
+\(u_*/\|u_*^{(n)}\|_{p_j}\) gives \(\liminf_j V_{n,p_j}\ge V_{n,2}\),
+while the Hilbert inequality applied to the limit gives the reverse
+bound. Thus \(u\) is a Hilbert maximizer. Theorem 1 identifies it with
+\(u_*\) or \(-u_*\), proving the lemma. \(\square\)
+
+\subsection{6.2. Persistence of a single
+peak}\label{persistence-of-a-single-peak}
+
+We give the details that weak or uniform convergence alone would miss.
+The Hilbert midpoint representer, up to a positive factor, can be
+written
+
+\[
+U(x)=F(|1-2x|),\qquad
+F(z)=\int_z^1(t^2-z^2)^{n-1}\,dt,
+\quad 0\le z\le1.
+\tag{6.7}
+\]
+
+To check this representation, expand the integrand. The resulting
+expression for \(F\) is an even polynomial of degree at most \(2n-2\),
+plus a multiple of \(z^{2n-1}\). Thus (6.7) is polynomial of degree at
+most \(2n-1\) on each half-interval and has matching derivatives through
+order \(2n-2\) at the midpoint. Near \(z=1\), writing \(t=z+(1-z)s\)
+shows that \(F(z)\) is a positive constant times \((1-z)^n\), to leading
+order. Therefore all endpoint derivatives below order \(n\) vanish. The
+jump of the derivative of order \(2n-1\) is nonzero. The weak derivative
+\((-1)^nD^{2n}U\) is a scalar multiple of the midpoint delta. Testing
+against \(U\) shows this scalar is positive because
+\(\int|U^{(n)}|^2>0\) and \(U(1/2)>0\). Uniqueness of the Riesz
+representer proves the claim up to positive normalization.
+
+For \(n\ge2\), differentiation gives
+
+\[
+F'(z)=-2(n-1)z\int_z^1(t^2-z^2)^{n-2}\,dt<0
+\qquad(0<z<1).
+\tag{6.8}
+\]
+
+Also \(F''(0)=-2(n-1)/(2n-3)<0\). Hence \(u_*'>0\) on \((0,1/2)\),
+\(u_*'<0\) on \((1/2,1)\), and \(u_*''(1/2)<0\). The endpoint expansion
+gives \(u_*^{(n)}(0)>0\) and \((-1)^nu_*^{(n)}(1)>0\).
+
+These properties imply that every sufficiently close \(C^n\)
+perturbation satisfying the same clamped endpoint conditions has exactly
+one interior critical point, a strict maximum. Indeed, near zero its
+highest derivative remains positive and
+
+\[
+u'(x)=\int_0^x\frac{(x-t)^{n-2}}{(n-2)!}u^{(n)}(t)\,dt>0.
+\tag{6.9}
+\]
+
+The reflected argument gives negativity near one. On compact intervals
+away from the endpoints and midpoint the strict derivative signs
+persist. On a small interval about the midpoint, the second derivative
+stays negative, so there is precisely one zero of the first derivative,
+bracketed by its signs on either side.
+
+Lemma 6 therefore implies that for all \(p\) sufficiently close to two,
+every norm-one variation maximizer is, up to sign, positive and strictly
+unimodal. Such a maximizer has variation exactly twice its height. Since
+every admissible function has variation at least twice its height, this
+proves (6.1). It also proves coincidence of maximizing sets: a variation
+maximizer has height \(C_{n,p}\), and every height maximizer has
+variation between \(2C_{n,p}\) and \(V_{n,p}\).
+
+The only conclusion still needed for the local theorem is midpoint
+symmetry. Single-peak geometry by itself does not supply it.
+
+\subsection{6.3. Smoothness of the point-evaluation profile near
+two}\label{smoothness-of-the-point-evaluation-profile-near-two}
+
+Let \(m=n-1\ge2\), and define
+
+\[
+K_a(t)=\frac{(a-t)_+^m}{m!},\qquad
+J(q,a)=\min_{P\in\mathcal P_m}\int_0^1|K_a-P|^q\,dt.
+\tag{6.10}
+\]
+
+By the same moment argument as (6.4), the evaluation norm is
+\(J(q,a)^{1/q}\). We need uniform continuity on the whole interval in
+\(a\), and twice continuous differentiability in \(a\) near
+\((q,a)=(2,1/2)\).
+
+First, minimizing polynomials have coefficients bounded uniformly for
+\(q\) in a compact subset of \((1,\infty)\) and \(a\in[0,1]\), by the
+argument used above. On this bounded coefficient set the integrands in
+(6.10) vary continuously with \((q,a,P)\), uniformly in \(t\).
+Minimizing over that compact set proves continuity of \(J\), including
+uniform convergence \(J(q,\cdot)\to J(2,\cdot)\) as \(q\to2\). Strict
+convexity gives a unique minimizing polynomial; compactness and
+uniqueness prove continuous dependence of its coefficients.
+
+The following elementary sublevel estimate handles exponents just below
+two. If \(P\) is a polynomial of degree at most \(m\) on an interval
+\(I\) of length bounded above and below, and
+\(\|P\|_{L^\infty(I)}\ge b>0\), then
+
+\[
+|\{t\in I:|P(t)|\le h\}|\le C(m,b,I)h^{1/m}
+\qquad(0<h<1).
+\tag{6.11}
+\]
+
+The constant is uniform for intervals in the stated length range. To
+prove this, let the sublevel set have length \(\ell>0\). Divide its mass
+into sufficiently many equal portions and choose \(m+1\) points from
+alternate portions. They can be chosen in the sublevel set with
+consecutive separations bounded below by a fixed multiple of
+\(\ell/(m+1)\): coordinate separation is at least the measure of the
+intervening portion. Lagrange interpolation at these points gives
+\(\|P\|_\infty\le C_m h\ell^{-m}\), with the interval-length factor
+absorbed into the constant. Rearrangement gives (6.11); approximation of
+the chosen points handles essential rather than attained sublevel
+membership.
+
+Consequently, for \(0<s<1/m\), integration of distribution functions
+gives
+
+\[
+\int_{\{|P|<h\}}|P|^{-s}\,dt\le C h^{1/m-s}.
+\tag{6.12}
+\]
+
+For example, split the region into dyadic bands
+\(2^{-k-1}h\le|P|<2^{-k}h\), apply (6.11) to each, and sum the
+convergent geometric series. The estimates also show uniform
+integrability of these inverse powers.
+
+At \((q,a)=(2,1/2)\), the minimizing residual in (6.10) is a nonzero
+polynomial on each of the two half-intervals. If it were identically
+zero on one half, its orthogonality to constants would fail on the
+other: the remaining residual would be a nonzero constant multiple of
+the nonnegative truncated power. Continuity of the coefficients
+therefore supplies a uniform positive lower bound for the sup norm of
+each polynomial piece on its own interval when \((q,a)\) and the
+polynomial coefficients are sufficiently close to this point. The
+intervals\textquotesingle{} lengths also stay bounded away from zero.
+Thus (6.11)-\/-(6.12) apply uniformly to both pieces.
+
+Write \(P_c(t)=\sum_{j=0}^mc_jt^j\) and \(R=K_a-P_c\). The normal
+equations are
+
+\[
+\mathcal N_j(q,a,c)=\int_0^1|R|^{q-2}R\,t^j\,dt=0,
+\qquad 0\le j\le m.
+\tag{6.13}
+\]
+
+Take a small open neighborhood with \(q>2-1/(2m)\). The equations are
+continuously differentiable in \((q,a,c)\) there. Their derivatives in
+\((a,c)\) are obtained by multiplying the variation of \(R\) by
+\((q-1)|R|^{q-2}\), and the derivative in \(q\) has integrand
+\(|R|^{q-2}R\log|R|\,t^j\), with value zero at \(R=0\). These assertions
+follow first away from a small sublevel set of \(R\), by ordinary
+differentiation. The uniform bound (6.12) makes the omitted derivatives
+uniformly integrable and arbitrarily small as the sublevel threshold
+tends to zero. The logarithmic derivative is bounded by a constant times
+a small positive power of \(|R|\) near zero. This also proves continuity
+of the derivatives by splitting into the same two regions. The moving
+interface \(t=a\) causes no additional term, since \(K_a\) and its first
+\(a\)-derivative are continuous there for \(m\ge2\).
+
+At the base point, the coefficient derivative of (6.13) is the negative
+definite Gram matrix \(-[\int_0^1t^{i+j}\,dt]_{i,j=0}^m\). The
+finite-dimensional implicit function theorem yields a continuously
+differentiable coefficient map \(c(q,a)\). It is the minimizing
+polynomial map by strict convexity and continuity already established.
+
+The envelope derivative and its second derivative are
+
+\[
+\begin{aligned}
+J_a&=q\int |R|^{q-2}R K_a^{[1]},\\
+J_{aa}&=q(q-1)\int |R|^{q-2}
+\bigl(K_a^{[1]}-P_{c_a}\bigr)K_a^{[1]}
++q\int |R|^{q-2}R K_a^{[2]},
+\end{aligned}
+\tag{6.14}
+\]
+
+where \(K_a^{[1]}=(a-t)_+^{m-1}/(m-1)!\) and
+\(K_a^{[2]}=(a-t)_+^{m-2}/(m-2)!\). For \(m=2\), the last expression is
+the indicator of \(t<a\), with its value at \(t=a\) immaterial. The
+coefficient term in the first derivative vanishes by (6.13). The second
+derivative exists and is continuous by (6.12), boundedness of these
+kernels, and dominated convergence away from the moving interface. In
+particular no claim that all residual roots are simple is needed.
+
+At \(q=2\), the credited point-evaluation formula (4) gives
+
+\[
+J(2,a)=\frac{[a(1-a)]^{2n-1}}{(2n-1)((n-1)!)^2}.
+\tag{6.15}
+\]
+
+It has a unique maximum at \(a=1/2\), with strictly negative second
+derivative there. By continuity of (6.14), it follows that
+\(J(q,\cdot)\) is strictly concave on one fixed neighborhood of \(1/2\),
+for all \(q\) close enough to two. Uniform convergence on \([0,1]\)
+forces every global maximum into that neighborhood. Reflection of the
+original evaluation problem gives \(J(q,a)=J(q,1-a)\). Strict concavity
+and this symmetry show that \(1/2\) is the unique global maximizing
+point.
+
+\subsection{6.4. Completion of the proof}\label{completion-of-the-proof}
+
+Shrink \(\varepsilon_n\) so that both the variation-maximizer argument
+and the evaluation-profile argument apply. We have established the
+constant identity and coincidence of maximizing sets. Every height
+maximizer must realize evaluation at its absolute maximum, and Section
+6.3 forces that point to be \(1/2\). The norm-one positive evaluation
+extremizer is unique by equality in Hölder in (6.4), or by strict
+convexity of the unit ball of \(L^p\). Reflection preserves the norm and
+evaluation at \(1/2\), so uniqueness makes this function midpoint
+symmetric. Section 6.2 already gives its strict derivative signs and its
+unique peak. This proves Theorem 5. \(\square\)
+
+\subsection{6.5. The unresolved global
+step}\label{the-unresolved-global-step}
+
+\textbf{Compactness away from the endpoints of the exponent range.} The
+argument in Lemma 6 gives the following more general statement. If
+\(p_j\to p_0\in(1,\infty)\) and \(u_j\) are norm-one variation
+maximizers, a subsequence converges in \(C^n\) to a norm-one variation
+maximizer at \(p_0\), and \(V_{n,p_j}\to V_{n,p_0}\). To see this, keep
+\(p_j\) in any fixed compact subinterval of \((1,\infty)\); the
+exponents \(q_j-1\) then have a positive lower bound, so (6.6) still
+gives a common Hölder modulus. The limit has norm one at \(p_0\). For
+the lower bound on the limiting optimal value, test a maximizer at
+\(p_0\); (6.6) makes its highest derivative bounded, so it is admissible
+at all nearby exponents and its varying norms converge. The upper bound
+follows by applying the \(p_0\) inequality to the limit. This proves the
+statement without assuming uniqueness or symmetry at \(p_0\).
+
+Thus a local continuation criterion at another exponent is available: if
+all its normalized variation maximizers are scalar-sign copies of one
+single-peak function with nonzero endpoint highest derivatives and a
+nondegenerate peak, and its point-evaluation profile has a unique
+midpoint maximum with a continuously persisting negative second
+derivative, the same argument proves the conjecture in a neighborhood of
+that exponent. These hypotheses must be established there; they cannot
+be imported from the case \(p=2\).
+
+The strongest compactness assertion here is \(C^n\) convergence of
+\emph{variation maximizers}, established from their dual optimality
+equation. It is not asserted for arbitrary normalized Sobolev sequences.
+This distinction is necessary to preserve the derivative signs near the
+clamped endpoints.
+
+The point-profile calculation uses finite-dimensional best approximation
+only after proving uniform control of possible multiple zeros in its
+polynomial residual. Omitting (6.11)-\/-(6.12) would leave the two-sided
+neighborhood in \(p\) unjustified, since \(q<2\) creates negative powers
+at residual zeros.
+
+This argument does not prove that the set of valid exponents is closed.
+At a hypothetical first exponent where the result ceases to hold,
+compactness of the old single-peak branch does not exclude a different
+multiple-peak global maximizer with the same value. Nor does local
+strict concavity of the point-evaluation profile exclude a remote
+competing maximum at other exponents. These are substantive global
+obstacles, not consequences of the implicit function theorem.
+
+The remaining task is to exclude such competing branches or to find a
+counterexample. Theorem 5 supplies a local result, not the full
+conjecture. No numerical experiment is used in its proof.
+
+\Needspace{8\baselineskip}\section{7. Remaining questions}\label{remaining-questions}
+
+Theorems 1, 4 and 5 leave the full all-exponent form of {[}NS,
+Conjecture 4.14{]} unresolved. For each order, Theorem 5 proves an open
+interval about two, while Theorem 4 proves the constant identity and
+coincidence at the measure endpoint. Symmetry and an explicit
+classification of the maximizing knot configurations at p=1 remain open
+here. Further continuation requires excluding competing maximizers or
+finding a counterexample; the compactness argument alone does not do
+that.
 
 \raggedright\Needspace{8\baselineskip}\section{References}\label{references}
 

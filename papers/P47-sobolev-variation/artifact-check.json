@@ -1,18 +1,19 @@
 {
   "date": "2026-09-15",
-  "pages": 7,
-  "pdf_bytes": 80826,
-  "pdf_sha256": "9e8fbce0d502bb2ecd4e201e778e265b59aa00daf325b00ee25d6ff7acf00149",
-  "markdown_sha256": "7dd008449129f1070a24863f4d9cb849e86a5d1185524c42fa44b832f4f53c7b",
-  "tex_sha256": "42dbeb6b5ca2a7e1b93ff964331702bd13a275e555a4ad5ca19f31cf596bf652",
-  "pdf_text_characters": 15718,
+  "revision": "1.1",
+  "pages": 12,
+  "pdf_bytes": 114663,
+  "pdf_sha256": "bd566ab57cd7a8934c3ed8e39d27942553fffb637f7789f8a91d114b8798d439",
+  "markdown_sha256": "30b49081c2114e4ed406005b6a893631683b834e93f8f60b8c26d8c0e696e568",
+  "tex_sha256": "8fd6065396ed1eb4038a0d02426339326d01a4f3263dea94a876c0619296b210",
+  "pdf_text_characters": 31550,
   "replacement_characters": 0,
   "byline_verified": true,
-  "equation_tags": 29,
-  "unique_tags": 29,
+  "equation_tags": 44,
+  "unique_tags": 44,
   "markdown_tex_tag_order_matches": true,
   "all_equation_tags_in_pdf": true,
-  "math_expressions": 223,
+  "math_expressions": 412,
   "math_errors": 0,
   "tex_overfull_underfull_warnings": 0,
   "final_pdf_visual_review": {
@@ -24,10 +25,15 @@
       4,
       5,
       6,
-      7
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
-    "render_long_dimension_px": 1400,
-    "findings": "Final post-edit PDF rerendered; all seven pages inspected. No clipping, overlap, missing glyphs or illegible formulas identified."
+    "render_scale": 1.5,
+    "findings": "Exact final post-edit PDF rendered and all twelve pages inspected in contact sheets. No clipping, overlap, missing glyphs or illegible formulas identified."
   },
   "meaning": "Artifact consistency and internal visual review only; not independent proof or novelty certification."
 }

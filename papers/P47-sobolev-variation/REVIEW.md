@@ -16,3 +16,16 @@ This is the originating assistant's audit of its own argument, not independent p
 10. **Recovery.** Mollification of the zero extension and compression with amplitude (1+2 epsilon)^(1-n) preserve the bound on the nth derivative's L1 norm. Smooth endpoint jets vanish, while the height and variation converge. This proves equality of ordinary and relaxed constants, without asserting ordinary attainment.
 
 No mathematical gap was identified in this audit. The 42 exact rational normalization cases are corroborating evidence, not a substitute for any all-order argument. Broader exponents and endpoint symmetry remain open. Artifact checks are recorded separately in artifact-check.json.
+
+
+## Revision 1.1: local continuation audit
+
+1. Moment constraints: n-fold integration identifies the clamped derivative space with the annihilator of polynomials of degree <=n-1. Best Lq approximation supplies the exact dual functional and Holder equality supplies the highest derivative of every variation maximizer.
+2. Existence: compactness through order n-1 preserves variation, and weak Lp compactness supplies the admissible highest derivative. Positive optimal value forces norm one.
+3. Strong compactness: the dual loads and minimizing polynomials are uniformly Lipschitz for p in a compact subset of (1,infinity). The optimal values stay positive. Signed powers therefore make the highest derivatives uniformly equicontinuous. This assertion concerns maximizers, not arbitrary Sobolev sequences.
+4. Hilbert profile: the integral in (6.7) is a clamped piecewise polynomial with the correct single delta load. Its derivative is strictly signed on either side of the midpoint, its peak has negative second derivative, and its endpoint highest derivatives do not vanish. These are derived explicitly rather than inferred from weak unimodality.
+5. Endpoint persistence: n-fold integration of the sign of the highest derivative controls u' near the clamped endpoints. Cn convergence controls the strict signs elsewhere and the simple midpoint critical point. This proves that every nearby-exponent variation maximizer has exactly one peak.
+6. Equality: a single peak yields variation twice height; the universal reverse inequality then yields the sharp constant identity and coincidence of both maximizing sets.
+7. Profile regularity: the residual has nonzero polynomial pieces near the base point. Lagrange interpolation proves a uniform sublevel estimate, which makes negative powers uniformly integrable when q is near two. This justifies differentiating the normal equations and applying the implicit function theorem. Multiple residual zeros are allowed.
+8. Symmetry: the Hilbert diagonal has a unique, nondegenerate midpoint maximum. Uniform convergence excludes distant maxima and continuous negative second derivative excludes competing nearby maxima. Reflection gives the unique maximum at the midpoint; strict convexity gives the unique normalized extremizer and its symmetry.
+9. Scope: no uniform-in-order interval, explicit radius, full all-p result, or measure-endpoint symmetry is claimed. Local continuation is not promoted to a global theorem. No numerical proof substitute or independent review is asserted.
