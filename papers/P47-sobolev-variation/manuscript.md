@@ -10,7 +10,7 @@ We study the sharp control of total variation by a higher derivative under homog
 
 For each fixed order, compactness and persistence of a single peak give the full variation statement on intervals around two and immediately above one. We then prove finite nondegenerate switching and simple residual zeros for every finite-exponent variation maximizer, derive its switching Hessian, and exclude all two-switch and all midpoint-symmetric three-switch maximizers. An exact rational counterexample rules out an unrestricted extension to positive derivative weights.
 
-Finally, we settle derivative order three for every finite exponent $1<p<\infty$: the variation and height extremizers coincide, are symmetric about the midpoint, and have exactly one interior critical point. A conserved residual quantity parametrizes the nodal intervals by their quadratic vertices. A positive action is strictly concave in the vertex depths and strictly convex after optimization in the mean parameter. Comparing its values for different nodal counts constructs a better competitor whenever there are at least four intervals; the earlier two-switch exclusion completes the proof. At the uniform endpoint, a duality and regularity argument extends the positive action and gives the complete equality classification with an explicit extremizer. Thus the order-three conjecture holds at every exponent, with the measure interpretation at one. In every order, an endpoint conserved quantity also proves saturation of the highest derivative, finitely many simple critical points and simple residual zeros. For each fixed order, the critical-point count is uniformly bounded over all exponents above one, including the uniform endpoint. The full all-order variation conjecture remains open for the remaining cases in orders at least four.
+Finally, we settle derivative order three for every finite exponent $1<p<\infty$: the variation and height extremizers coincide, are symmetric about the midpoint, and have exactly one interior critical point. A conserved residual quantity parametrizes the nodal intervals by their quadratic vertices. A positive action is strictly concave in the vertex depths and strictly convex after optimization in the mean parameter. Comparing its values for different nodal counts constructs a better competitor whenever there are at least four intervals; the earlier two-switch exclusion completes the proof. At the uniform endpoint, a duality and regularity argument extends the positive action and gives the complete equality classification with an explicit extremizer. Thus the order-three conjecture holds at every exponent, with the measure interpretation at one. In every order, an endpoint conserved quantity also proves saturation of the highest derivative, finitely many simple critical points and simple residual zeros. For each fixed order, the critical-point count is uniformly bounded over all exponents above one, including the uniform endpoint. The endpoint switching objective has an explicit Hessian supported on the simple residual zeros. A semialgebraic description of the resulting finite splines proves that the uniform-endpoint sharp variation constant is real algebraic in every order, with an algebraic maximizing spline. The full all-order variation conjecture remains open for the remaining cases in orders at least four.
 
 ## 1. The sharp inequality
 
@@ -2440,11 +2440,123 @@ $-R''v'+R'v''-|v|-R^2/2=-1/2$. Again the formal level is $A=1$ while $R(0)=2$. D
 
 These examples disprove only an inference from the local equations and negative conserved level to the residual bound. They do not disprove a bound with global maximizing hypotheses, or the variation conjecture. The remaining problem is to control the additional derivative traces and construct a better admissible competitor for every multiple-peak maximizer.
 
-## 19. Remaining questions
+## 19. Endpoint second variation and algebraic sharp constants
+
+The finite simple residual zeros in Theorem 19 permit a second-variation calculation at the uniform endpoint. The second derivative is a finite weighted sum over those zeros. It does not vanish when the conjugate exponent tends to one.
+
+**Theorem 20 (endpoint switching Hessian).** Let $n\ge3$ and let $u$ be a normalized variation maximizer in $W_0^{n,\infty}(0,1)$. Write $\tau_1<\cdots<\tau_r$ for its critical points and $\sigma_i$ for the sign of $u'$ immediately to the left of $\tau_i$. Let $R$ be its best polynomial residual, with simple zeros $\xi_1<\cdots<\xi_s$, where $s=n+r-1$. Define
+
+$$
+\mu=2\sum_{k=1}^s\frac{\delta_{\xi_k}}{|R'(\xi_k)|},
+\qquad
+L_i(t)=\frac{(\tau_i-t)_+^{n-2}}{(n-2)!},
+\qquad B_i=L_i-\Pi_\mu L_i,
+\tag{19.1}
+$$
+
+where $\Pi_\mu$ is the orthogonal projection onto the restrictions of $\mathcal P_{n-1}$ to the residual zeros. The nearby switching objective
+
+$$
+J(\tau)=\min_{P\in\mathcal P_{n-1}}
+\int_0^1\left|2\sum_{i=1}^r\sigma_iK_{\tau_i}-P\right|,
+\qquad K_a(t)=\frac{(a-t)_+^{n-1}}{(n-1)!},
+\tag{19.2}
+$$
+
+is twice continuously differentiable, and at this configuration
+
+$$
+J_{ij}=4\sigma_i\sigma_j\int B_iB_j\,d\mu
++2\sigma_i\delta_{ij}u''(\tau_i).
+\tag{19.3}
+$$
+
+Consequently, with $D_i=-\sigma_i u''(\tau_i)>0$ and
+$G_{ij}=\sigma_i\sigma_j\int B_iB_j\,d\mu$, one has
+
+$$
+2G\preceq\operatorname{diag}(D_1,\ldots,D_r),
+\qquad \operatorname{rank}G\le r-1.
+\tag{19.4}
+$$
+
+### 19.1. Differentiating the moving residual zeros
+
+The Gram matrix of $\mathcal P_{n-1}$ for $\mu$ is positive definite: there are $s\ge n$ distinct nodes, and a nonzero polynomial of degree at most $n-1$ cannot vanish at all of them. For a perturbation $h$ of a residual with simple zeros, differentiation of the signed moments gives
+
+$$
+D\left(\int_0^1\operatorname{sign}R\,Q\right)[h]
+=2\sum_{k=1}^s\frac{h(\xi_k)Q(\xi_k)}{|R'(\xi_k)|}
+=\int hQ\,d\mu.
+\tag{19.5}
+$$
+
+Indeed, a residual zero moves with velocity $-h(\xi_k)/R'(\xi_k)$, and the sign jump there is $2\operatorname{sign}R'(\xi_k)$. Differentiating the endpoints of the finitely many sign intervals gives (19.5), including its positive sign and factor two. The same formula holds for a continuous test kernel in place of $Q$.
+
+For $n\ge3$, $K_a(t)$ is jointly continuously differentiable in $a,t$. Thus the simple-root implicit function theorem applies even when a residual zero equals a load switch. It provides continuously differentiable root locations as functions of the switch positions and polynomial coefficients. All nearby residuals retain exactly these simple zeros: their derivatives have fixed nonzero signs on small root neighborhoods, and the residual is bounded away from zero on the remaining compact set, including both endpoints.
+
+The normal equations are $\int\operatorname{sign}R\,Q=0$ for $Q\in\mathcal P_{n-1}$. Their derivative in the polynomial coefficients is the negative Gram matrix for $\mu$. The implicit function theorem therefore gives a continuously differentiable polynomial branch satisfying these equations. The zero signed moments and convexity of the $L^1$ objective make it a branch of global best approximants.
+
+Each best polynomial on this branch is unique. If two polynomials were best, equality in convexity would force their residuals to have the same sign almost everywhere. At every simple zero of the first residual, continuity forces the second to vanish too; otherwise their signs disagree on one side. Their difference is a polynomial of degree at most $n-1$ with at least $n$ distinct zeros and hence is zero.
+
+Differentiating the normal equations and the objective now gives
+
+$$
+\frac{\partial R}{\partial\tau_i}=2\sigma_iB_i,
+\qquad J_i=2\sigma_iU'(\tau_i),
+\qquad U=I^n(\operatorname{sign}R).
+\tag{19.6}
+$$
+
+At the maximizing configuration, Theorem 19 gives $U=u$. Differentiate the integral defining $U'(\tau_i)$ using (19.5) and the moving evaluation point. Polynomial orthogonality replaces $L_i$ by $B_i$ in the residual contribution and yields (19.3). These finite-root formulas also show that the gradient is continuously differentiable. When $n=3$, the derivative of the moving $L_i$ kernel is an indicator; integration against the bounded sign control justifies the calculation by dominated convergence. No ordinary derivative of the discontinuous sign function is asserted.
+
+Every nearby sign load in (19.2) has dual norm at most $V_{n,\infty}$, with equality at the given maximizer. Its Hessian is therefore negative semidefinite, giving the first assertion in (19.4). The orthogonal complement of polynomial data in the $s$-dimensional node space has dimension $s-n=r-1$, giving the rank bound. $\square$
+
+The same local differentiation proof applies to any configuration with at least $n$ simple residual zeros and nonzero endpoint residuals, before a maximality assertion. At a maximizer the rank bound supplies a strictly negative Hessian direction; for $r=1$ the Hessian is exactly $-2D_1<0$. A negative direction is compatible with a local maximum. Excluding higher counts still requires a positive direction or a global value comparison. In particular, the finite-exponent exclusion proof cannot be transferred by formally setting $q=1$: the measure in (19.1) replaces the vanishing factor in that formal substitution.
+
+### 19.2. Semialgebraic description at a fixed control count
+
+**Theorem 21 (algebraicity at the uniform endpoint).** For every integer $n\ge2$, the sharp constant $V_{n,\infty}$ is a real algebraic number. There exists a normalized variation maximizer whose control knots and polynomial coefficients are all real algebraic numbers.
+
+*Proof.* Fix an integer $s\ge n$. For ordered knots
+$0=x_0<x_1<\cdots<x_s<x_{s+1}=1$, take the alternating control $f=(-1)^j$ on $(x_j,x_{j+1})$. It satisfies the required polynomial moment conditions precisely when
+
+$$
+\sum_{j=0}^s(-1)^j
+\bigl(x_{j+1}^{k+1}-x_j^{k+1}\bigr)=0,
+\qquad 0\le k<n.
+\tag{19.7}
+$$
+
+Its integrated potential is
+
+$$
+u_x(t)=\frac1{n!}\left[t^n+
+2\sum_{j=1}^s(-1)^j(t-x_j)_+^n\right].
+\tag{19.8}
+$$
+
+The left clamped traces vanish by construction, and (19.7) is equivalent to all right clamped traces. The highest derivative has norm one.
+
+We claim that the graph of the total variation $T_s(x)$ is semialgebraic over $\mathbb Q$, meaning that it is described by a finite Boolean combination of polynomial equalities and inequalities with rational coefficients. On each control interval, (19.8) is a polynomial in $t$ with rational polynomial coefficients in the knots. Its derivative has degree $n-1$ with nonzero leading coefficient. List all its interior critical points in increasing order, using at most $n-1$ variables per interval. Polynomial conditions require that these points are zeros; a universal real quantifier requires that there are no other zeros in the open interval. There are finitely many choices of list lengths.
+
+Adjoin the two interval endpoints to each list. The variation on that interval is the sum of the absolute differences between consecutive polynomial values. Absolute value is expressed by polynomial sign alternatives. Summing these expressions gives a first-order formula over $\mathbb Q$ for $z=T_s(x)$. Quantifier elimination over real closed fields [B, Theorem 2.1] makes this graph semialgebraic over $\mathbb Q$. This argument uses the finite critical-point description, not a claim that arbitrary integrals of semialgebraic functions are semialgebraic.
+
+The set of attained values under (19.7) and the strict knot inequalities is consequently a one-dimensional semialgebraic set over $\mathbb Q$. Any attained finite maximum of such a set is real algebraic: in a quantifier-free description, signs of all nonzero rational polynomials are constant near any transcendental point, so such a point cannot be a finite endpoint of the set.
+
+Theorem 19 supplies a global maximizer with a finite control count $s$. Change its overall sign to make its first control positive. It then has representation (19.8), while every admissible configuration at this same $s$ has variation at most $V_{n,\infty}$. The set of attained values at this $s$ therefore has attained maximum exactly $V_{n,\infty}$, proving algebraicity.
+
+Finally impose $z=V_{n,\infty}$ in the first-order formula. It has a solution over $\mathbb R$. Quantifier elimination transfers this statement, with its real algebraic coefficients, to the real closed field of real algebraic numbers; this field is included in the notation of [B]. The resulting knots and auxiliary critical points are algebraic. Formula (19.8) gives a maximizing spline with algebraic coefficients on all pieces. $\square$
+
+This proof does not assert algebraicity of every maximizing knot configuration, an explicit algebraic degree bound, or an effective stopping count for searching over $s$. The uniform count bound in Section 18 is implicit. Theorem 21 determines the arithmetic nature of the sharp constant without computing it or settling the higher-order variation identity.
+
+## 20. Remaining questions
 
 The order-three case of [NS, Conjecture 4.14] is now complete at every exponent: Theorem 17 gives the finite-exponent identity and equality classification, Theorem 18 gives the complete uniform endpoint, and Theorem 9 supplies the measure endpoint. The full all-order conjecture remains unresolved. In every order, Theorems 5 and 11 establish exponent intervals around two and immediately above one; their widths and overlap are not known. Theorem 10 proves height symmetry and uniqueness at every finite exponent.
 
 For orders $n\ge4$, Theorem 12 supplies finite nondegenerate critical points and simple dual-residual zeros. Theorem 13 excludes every two-switch maximizer, and Theorem 14 excludes midpoint-symmetric three-switch maximizers and restricts every remaining three-switch candidate. Excluding nonsymmetric three-switch configurations and all higher counts remains the finite-exponent task in those orders. At the uniform endpoint, Theorem 19 proves saturation, finite simple critical points and exactly $n+r-1$ simple residual zeros in every order. The critical-point count is uniformly bounded over all $1<p\le\infty$ for each fixed order, but no explicit bound or higher-order single-peak conclusion is proved. The positive action in Sections 16 and 17 uses the quadratic residual pieces specific to order three. Section 18 identifies the additional mixed derivative terms and gives exact local obstructions to reusing the same pointwise argument; no higher-order action comparison is proved here.
+
+Theorem 20 provides the endpoint switching Hessian, including its discrete root weights and polynomial projection. Determining a positive Hessian direction for all multiple-peak candidates remains open. Theorem 21 proves that every uniform-endpoint sharp variation constant is algebraic and admits an algebraic maximizing spline. It gives neither an explicit degree bound nor an effective stopping count for a search over control knots.
 
 Theorem 15 rules out a reduction using the same identity for arbitrary derivative weights. The special weights generated by an actual maximizer remain a possible restricted route in higher orders. The stronger centroid and knot-reflection inequalities in the research notes remain unproved and are not needed for the results above.
 
@@ -2453,6 +2565,8 @@ Theorem 15 rules out a reduction using the same identity for arbitrary derivativ
 [ABR] S. Axler, P. Bourdon and W. Ramey, *Harmonic Function Theory*, second edition, Springer, 2001 (author PDF revision July 17, 2020). [Author text](https://axler.net/HFT.pdf), formula (1.15), Theorem 1.17 and Chapter 5.
 
 [BH] A. Burchard and H. Hajaiej, *Rearrangement inequalities for functionals with monotone integrands*, Journal of Functional Analysis **233** (2006), 561--582. [DOI](https://doi.org/10.1016/j.jfa.2005.08.010). [Final revised author version](https://arxiv.org/abs/math/0506336).
+
+[B] S. Basu, *Algorithms in Real Algebraic Geometry: A Survey*, [author survey](https://www.math.purdue.edu/~sbasu/raag_survey2011_final.pdf), Section 1.1 and Theorem 2.1.
 
 [dB] C. de Boor, *Divided Differences*, Surveys in Approximation Theory **1** (2005), 46--69. [Author text](https://arxiv.org/abs/math/0502036), formulas (47)--(48) and (52).
 

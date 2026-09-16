@@ -267,5 +267,15 @@
     "primary_source_refresh": "NS final Conjecture 4.14, Remark 4.15, Theorem 4.12 and Remark 4.1 on September 16, 2026",
     "uniform_count_bound_all_exponents_above_one": true,
     "count_bound_explicit": false
+  },
+  "revision_1_14": {
+    "date": "2026-09-16",
+    "results": "Revision 1.14 derives the uniform-endpoint switching Hessian from the moving simple residual zeros. The positive atomic weights are 2/|R'(xi)|, and polynomial projection gives an explicit necessary stability matrix of rank at most r-1. Theorem 21 proves V(n,infinity) is real algebraic in every n>=2 and that some maximizing spline has algebraic control knots and piece coefficients. It uses the finite-switch theorem and a first-order semialgebraic description, with classical quantifier elimination credited. These results do not exclude all higher-order multiple-peak configurations or supply an effective stopping count.",
+    "source": "Basu author survey, real-closed-field notation and Theorem 2.1; final Nazarov-Shcheglova Conjecture 4.14 and Remark 4.15 refreshed",
+    "source_scope": "Relevant statements read; not a full audit of the 37-page Basu survey",
+    "research_provenance": "atomic-hessian-audit/source-receipt.json and sources/ in the local research workspace",
+    "proof_status": "Internal originating-assistant proof audit; no independent expert verification",
+    "priority": "Bounded search only; no exhaustive certification",
+    "remaining": "General n>=4 variation conjecture and effective endpoint control-count bound"
   }
 }

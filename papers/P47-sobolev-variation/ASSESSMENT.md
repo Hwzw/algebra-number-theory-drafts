@@ -167,3 +167,12 @@ Eleven arXiv API feeds were screened, with totals and truncation flags retained 
 ## Scope and review limits
 
 All functions and measures are real. No all-p variation theorem or closed-form knot coordinates in every order is claimed. Height symmetry is now proved for all finite p. Measure-endpoint symmetry and ordinary nonattainment are proved in every order. The originating assistant audited its own proof; no independent human referee or mathematical expert has reviewed this manuscript. Exact rational checks support normalization only. Source and artifact checks are separate from mathematical validity.
+
+
+## Revision 1.14: endpoint Hessian and algebraicity
+
+Theorem 20 closes the explicitly listed endpoint-Hessian question. Its root weights and polynomial projection are derived directly, including the case where a residual zero equals a load switch. The exact order-three two-switch profile confirms the factors and both Hessian eigenvalue signs; that calculation is corroboration, not a universal exclusion. The rank bound supplies a negative direction, which does not contradict maximality.
+
+Theorem 21 applies the finite-switch theorem to a rational semialgebraic description of the total variation of a fixed-count control spline. Classical real-closed-field quantifier elimination is credited to Basu, Theorem 2.1. The sharp endpoint constant is algebraic in every order and admits an algebraic maximizing spline. No general closure of semialgebraic functions under integration is asserted; the proof explicitly lists the finitely many polynomial critical points.
+
+These are structural results within P47. They do not settle the remaining n>=4 variation conjecture, compute all sharp constants, prove all maximizing knots algebraic, or give an effective stopping count. The source refresh read the relevant Basu statements and the final survey conjecture; bounded searches are not exhaustive priority certification. Internal review is not independent expert verification.

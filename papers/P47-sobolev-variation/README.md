@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.13.**
+**Henry Zweiman. September 16, 2026. Revision 1.14.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -30,9 +30,11 @@ Revision 1.12 completes the uniform-endpoint equality classification in order th
 
 Revision 1.13 proves that every normalized uniform-endpoint variation maximizer saturates its highest-derivative bound almost everywhere, in every order n>=2. Theorem 19 gives an all-order conserved quantity, endpoint residual normalization, a strict mean-parameter bound, null residual and first-derivative zero sets, and fixed controls near both endpoints. A separate accumulation-point argument proves finite switching, and a spline zero count gives simple critical points and exactly n+r-1 simple residual zeros. For each fixed n>=3, the number of critical points is uniformly bounded over all 1<p<=infinity; the bound is not explicit. Exact local order-four solutions identify why the order-three residual bound does not follow from the higher-order conserved quantity alone. The remaining all-order conjecture is open.
 
+Revision 1.14 derives the uniform-endpoint switching Hessian from the moving simple residual zeros. The positive atomic weights are 2/|R'(xi)|, and polynomial projection gives an explicit necessary stability matrix of rank at most r-1. Theorem 21 proves V(n,infinity) is real algebraic in every n>=2 and that some maximizing spline has algebraic control knots and piece coefficients. It uses the finite-switch theorem and a first-order semialgebraic description, with classical quantifier elimination credited. These results do not exclude all higher-order multiple-peak configurations or supply an effective stopping count.
+
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [53-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [56-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

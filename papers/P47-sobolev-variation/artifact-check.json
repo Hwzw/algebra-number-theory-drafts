@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.13",
-  "pdf_pages": 53,
-  "pdf_text_characters": 131693,
+  "revision": "1.14",
+  "pdf_pages": 56,
+  "pdf_text_characters": 140686,
   "replacement_characters": 0,
-  "equation_tags": 196,
+  "equation_tags": 204,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 1955,
+  "mathjax_expressions": 2032,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -65,15 +65,18 @@
       50,
       51,
       52,
-      53
+      53,
+      54,
+      55,
+      56
     ],
     "resolution_dpi": 108,
-    "outcome": "All final 53 pages were rendered at 108 dpi and inspected in fourteen contact sheets after the strengthened theorem changed the pagination. Pages 50 and 51 containing the accumulation, multiplicity and uniform-count arguments were additionally inspected individually at full rendering size. No clipping, overlap, missing glyphs or orphaned new heading was observed. The conserved quantity, zero-set proof, finite simple switching, compactness corollary and exact local obstructions are legible."
+    "outcome": "All final 56 pages were rendered at 108 dpi and inspected in fourteen contact sheets. The new proof on pages 52, 53 and 54 was additionally inspected at full rendering size. No clipping, overlap or missing glyphs was observed. The Hessian formula, implicit-function argument, algebraicity proof, revised frontier and references are legible."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "37dd8dbde38f7169423c391255b43b258baa006fe0e81d1a642596ec077a38dd",
-    "manuscript.tex": "0b987e2cc134da830f2231686fbbdf5b15007e4cb1034f1fc1222facfcbb5527",
-    "manuscript.pdf": "a8eaa2d1b594294d284bdd3c834f494ac4c80e1b2feb258b5e47fd7d04c624b4"
+    "manuscript.md": "45f47e2282027fbcaf44f7f686801484a10391cdecbca49db3691092658a7f3c",
+    "manuscript.tex": "77bde51a4ff27030d30d56a37e35d6486a85d3f50473e66dca35ddf101b3d1ac",
+    "manuscript.pdf": "d3eea7ab8f68a26463d7d57cd022396e74ed8ad4a5267dc2340ba33c71c89f0a"
   }
 }

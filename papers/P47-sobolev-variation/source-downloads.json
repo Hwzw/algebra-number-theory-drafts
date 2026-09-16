@@ -218,5 +218,23 @@
     "bytes": 473992,
     "sha256": "e457195e37b89c8abc4d9c65f903b7058a8590b55c695ed97a9fff181ba76a22",
     "read_scope": "Conjecture 4.14, Remark 4.15, Theorem 4.12 and endpoint convention Remark 4.1; web full-text lines 189-357"
+  },
+  {
+    "file": "atomic-hessian-audit/sources/basu-survey.pdf",
+    "url": "https://www.math.purdue.edu/~sbasu/raag_survey2011_final.pdf",
+    "bytes": 407557,
+    "sha256": "491268bbba5e7c9948e8050373d7fb69f41269e91d6d05fe7374aad2627f2819",
+    "access_date": "2026-09-16",
+    "read_scope": "Author PDF pages 1 and 4: real closed fields including real algebraic numbers, and Theorem 2.1 quantifier elimination. These passages were read through web extraction; the complete 37-page survey was not audited.",
+    "redistributed_in_package": false
+  },
+  {
+    "file": "atomic-hessian-audit/sources/nazarov-shcheglova-final.html",
+    "url": "https://link.springer.com/article/10.1134/S0081543825601509",
+    "bytes": 473992,
+    "sha256": "162af498b35515708807f2379e76bc075307f2331552e96564444dc9bdde8ed8",
+    "access_date": "2026-09-16",
+    "read_scope": "Conjecture 4.14 and Remark 4.15 refreshed through the publisher text; no new claim of complete literature coverage.",
+    "redistributed_in_package": false
   }
 ]
