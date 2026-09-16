@@ -1,10 +1,10 @@
 {
   "environments": {
-    "theorem": 2,
+    "theorem": 3,
     "corollary": 1,
-    "lemma": 4,
-    "proof": 6,
-    "proposition": 1,
+    "lemma": 7,
+    "proof": 11,
+    "proposition": 2,
     "remark": 1
   },
   "environment_records": [
@@ -70,9 +70,44 @@
       "number": "5.1",
       "id": "theorem-2",
       "source_label": "thm:second"
+    },
+    {
+      "environment": "theorem",
+      "ordinal": 3,
+      "number": "6.1",
+      "id": "theorem-3",
+      "source_label": "thm:uniform"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 5,
+      "number": "6.2",
+      "id": "lemma-5",
+      "source_label": "lem:uniform-bulk"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 6,
+      "number": "6.3",
+      "id": "lemma-6",
+      "source_label": "lem:outside-bulk"
+    },
+    {
+      "environment": "lemma",
+      "ordinal": 7,
+      "number": "6.4",
+      "id": "lemma-7",
+      "source_label": "lem:forbidden-sums"
+    },
+    {
+      "environment": "proposition",
+      "ordinal": 2,
+      "number": "6.5",
+      "id": "proposition-2",
+      "source_label": "prop:poisson"
     }
   ],
-  "references": 60,
+  "references": 83,
   "citations": 6,
   "cited_keys": [
     "BR",
@@ -111,7 +146,15 @@
     "eq:low-sum",
     "eq:high-sum",
     "eq:negative-sum",
-    "eq:signed-approx"
+    "eq:signed-approx",
+    "eq:uniform-limit",
+    "eq:uniform-additive",
+    "eq:uniform-M",
+    "eq:outside-small",
+    "eq:hole-chain-bound",
+    "eq:low-uniform-bound",
+    "eq:avoidance",
+    "eq:K-limit"
   ],
   "label_numbers": {
     "thm:main": "1.1",
@@ -151,19 +194,33 @@
     "eq:low-sum": "26",
     "eq:high-sum": "27",
     "eq:negative-sum": "28",
-    "eq:signed-approx": "29"
+    "eq:signed-approx": "29",
+    "sec:growing": "6",
+    "thm:uniform": "6.1",
+    "eq:uniform-limit": "30",
+    "eq:uniform-additive": "31",
+    "lem:uniform-bulk": "6.2",
+    "eq:uniform-M": "32",
+    "lem:outside-bulk": "6.3",
+    "eq:outside-small": "33",
+    "eq:hole-chain-bound": "34",
+    "eq:low-uniform-bound": "35",
+    "eq:avoidance": "36",
+    "lem:forbidden-sums": "6.4",
+    "eq:K-limit": "37",
+    "prop:poisson": "6.5"
   },
   "bibliography_numbers": {
     "BR": "1",
     "CK": "2"
   },
   "tables": [],
-  "source_tex_sha256": "39047489ea6d68b6601251788abf3eb394b2221f531ad09ff41ac539713810dd",
-  "source_pdf_sha256": "ee33f6addfa40bbbf2fbc70b0b31e225d27d3558d12dc7ddfbb5dccb597fabf9",
-  "markdown_sha256": "242803dbf134d5ed58d18903b3ed501d3b04f6590da82356537dd6779321ecfc",
-  "markdown_bytes": 30343,
-  "source_math_expressions_verified": 349,
-  "markdown_math_expressions": 355,
+  "source_tex_sha256": "8f8b5e0116b31efd25548f1290f93e14627a5539d80848177660e6b7dc8521bc",
+  "source_pdf_sha256": "7d68e28d063887f4fd95dee12c02c8372881b1dedd50e8687adea24d9d2a64ec",
+  "markdown_sha256": "a128a604e863093649bc553674dc45774fc63af4c4e39eb7611ae9bb4a394eb2",
+  "markdown_bytes": 43765,
+  "source_math_expressions_verified": 536,
+  "markdown_math_expressions": 547,
   "custom_macros_expanded": [
     "Z",
     "Q",
@@ -171,10 +228,10 @@
     "relint"
   ],
   "output_name": "manuscript.md",
-  "source_environment_markers_verified": 70,
-  "semantic_roundtrip_sha256": "93a39023071f028a448711897733ce6423c2627a1359f985ff35e221aad5e394",
+  "source_environment_markers_verified": 104,
+  "semantic_roundtrip_sha256": "86f804a151109e077a0d6db68b0531a1d93bccca76cd9600edf557ab628355c8",
   "roundtrip_content_equal": true,
-  "standalone_anchor_targets": 55,
+  "standalone_anchor_targets": 79,
   "warnings": [],
   "github_live_render_inspected": false,
   "math_layout_normalizations": {}

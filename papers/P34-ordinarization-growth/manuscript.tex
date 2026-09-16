@@ -11,15 +11,15 @@
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\relint}{\operatorname{relint}}
-\title{Quasipolynomiality and eventual growth at fixed ordinarization number}
+\title{Quasipolynomiality and collision asymptotics for ordinarization counts}
 \author{Henry Zweiman}
-\date{September 16, 2026; revised version 1.1}
+\date{September 16, 2026; revised version 1.2}
 \begin{document}
 \maketitle
 \begin{abstract}
 Let $n_{g,r}$ count numerical semigroups of genus $g$ and ordinarization number $r$. For every fixed positive integer $r$, we prove that $n_{g,r}$ is a quasipolynomial for all positive integers $g$, answering a question of Cyrusian and Kaplan. Its leading coefficient is
 $1/(2(2r)!)+1/(2\cdot4^r(r!)^2)$.
-We determine the complete next coefficient in closed form, including its constant part and its oscillation: its exact period is two, and its even value is smaller than its odd value by $1/(4^r r!(r-1)!)$. This gives explicit positive leading terms for $n_{g+1,r}-n_{g,r}$ in both parities and proves eventual strict monotonicity for every fixed $r$. The proof separates a binomial-sum bulk from exceptional additive relations. Those relations lie in linear hyperplanes through the origin, which prevents them from introducing periodicity in the next coefficient.
+We determine the complete next coefficient in closed form, including its constant part and its oscillation: its exact period is two, and its even value is smaller than its odd value by $1/(4^r r!(r-1)!)$. This gives explicit positive leading terms for $n_{g+1,r}-n_{g,r}$ in both parities and proves eventual strict monotonicity for every fixed $r$. The proof separates a binomial-sum bulk from exceptional additive relations. Those relations lie in linear hyperplanes through the origin, which prevents them from introducing periodicity in the next coefficient. For growing $r$ with $r^2/g\to0$ and $r^3/g\to\tau$, we prove that $n_{g,r}/(A_rg^{2r})\to e^{-\tau/2}$. This follows from a Poisson law for forbidden holes and bounds on all tuples outside the bulk, using closure under addition by the multiplicity. The full all-genus counting conjectures remain open.
 \end{abstract}
 
 \section{Introduction and main results}
@@ -31,7 +31,7 @@ The ordinarization number equals the number of positive elements of $S$ at most 
 \]
 Cyrusian and Kaplan proved eventual quasipolynomiality of degree $2r$ for fixed $r$ \cite[Theorem 3.4]{CK}. They asked whether the quasipolynomial holds for every positive genus \cite[Remark 3.7]{CK}. They also discuss the conjecture $n_{g+1,r}\ge n_{g,r}$ for every $g,r$ \cite[Conjecture 1.5]{CK}, and prove it for $r=2$. We answer their quasipolynomiality question and prove the eventual strict version of this conjecture for every fixed positive $r$.
 
-Recall that a quasipolynomial on the positive integers is an expression $\sum_{j=0}^d c_j(g)g^j$ with rational-valued periodic functions $c_j$. Equivalently, one polynomial applies in each residue class modulo some positive integer. The degree is the largest $j$ for which $c_j$ is not identically zero. All asymptotic estimates below keep $r$ fixed.
+Recall that a quasipolynomial on the positive integers is an expression $\sum_{j=0}^d c_j(g)g^j$ with rational-valued periodic functions $c_j$. Equivalently, one polynomial applies in each residue class modulo some positive integer. The degree is the largest $j$ for which $c_j$ is not identically zero. Sections 1--5 keep $r$ fixed. Section~\ref{sec:growing} treats sequences with increasing $r$.
 
 \begin{theorem}\label{thm:main}
 For every positive integer $r$, the function $g\mapsto n_{g,r}$ is a quasipolynomial of degree $2r$ on all positive integers. Put
@@ -451,14 +451,297 @@ respectively. Formula \eqref{eq:signed-approx} retains a remainder from
 multiple additive equalities. It must not be used as an exact identity or
 as a uniform estimate with $r$ increasing.
 
+\section{Growing ordinarization and a collision limit}\label{sec:growing}
+
+The preceding coefficients suggest the scale $r^3/g$. We now establish a
+limit in which this parameter need not vanish. The argument counts the
+multiple additive coincidences directly, rather than summing a fixed-$r$
+asymptotic expansion.
+
+\begin{theorem}\label{thm:uniform}
+Let $g,r$ be positive integers varying along a sequence such that
+\[
+r\longrightarrow\infty,\qquad \frac{r^2}{g}\longrightarrow0,
+\qquad \frac{r^3}{g}\longrightarrow\tau\in[0,\infty].
+\]
+With $A_r$ as in \eqref{eq:constants},
+\begin{equation}\label{eq:uniform-limit}
+\frac{n_{g,r}}{A_rg^{2r}}\longrightarrow e^{-\tau/2},
+\end{equation}
+where $e^{-\infty}=0$. If $\tau<\infty$, this is the relative asymptotic
+$n_{g,r}\sim e^{-\tau/2}A_rg^{2r}$. More generally, for every sequence
+with $r\to\infty$ and $r^2/g\to0$,
+\begin{equation}\label{eq:uniform-additive}
+\frac{n_{g,r}}{A_rg^{2r}}-\exp\left(-\frac{r^3}{2g}\right)
+\longrightarrow0.
+\end{equation}
+The error in \eqref{eq:uniform-additive} is additive. When $r^3/g$ tends
+to infinity, no relative estimate with that exponential is asserted.
+\end{theorem}
+
+Let $V_r(g)$ count the valid tuples in the bulk $\mathcal M_r(g)$ and
+let $E_r(g)=n_{g,r}-V_r(g)$ count the valid tuples outside it. We use the
+following three ingredients: a uniform estimate for $M_r(g)$, a bound
+for $E_r(g)$ using addition by the multiplicity, and a collision law
+inside the bulk. Throughout this section, a bound with an absolute
+implicit constant is independent of $g$ and $r$.
+
+\subsection{The bulk measure and its minimum}
+
+\begin{lemma}\label{lem:uniform-bulk}
+If $r\to\infty$ and $r^2/g\to0$, then
+\begin{equation}\label{eq:uniform-M}
+M_r(g)\sim A_rg^{2r}.
+\end{equation}
+For a tuple chosen uniformly from $\mathcal M_r(g)$, its minimum
+$m=\min B$ satisfies $m/g\to1/2$ in probability.
+\end{lemma}
+
+\begin{proof}
+Put $p_r(x)=x^r(1-x)^{r-1}$ and $J_r=\int_{1/2}^1p_r(x)\,dx$.
+The evaluation in Section~4 gives $J_r/(r!(r-1)!)=A_r$. The function
+$p_r$ is unimodal, and
+\[
+\frac{\max_{[1/2,1]}p_r}{J_r}=O(\sqrt r).
+\]
+For completeness, its maximum occurs at $r/(2r-1)$ and is
+$O(4^{-r})$. On an interval $[1/2,1/2+c/\sqrt r]$ with fixed small
+$c>0$, the factor $(x(1-x))^{r-1}$ is bounded below by an absolute
+positive multiple of $4^{-(r-1)}$. Integrating over this interval gives
+$J_r\gg4^{-r}/\sqrt r$.
+The error of a mesh Riemann sum for a unimodal nonnegative function is
+at most an absolute multiple of its maximum. It follows that
+\[
+\sum_{m=\lfloor g/2\rfloor+1}^{g}p_r(m/g)
+=gJ_r\left(1+O\left(\frac{\sqrt r}{g}\right)\right).
+\]
+For each fixed $\varepsilon\in(0,1/2)$, the fraction of this sum on
+$m/g\ge1/2+\varepsilon$ tends to zero: on that interval,
+$x(1-x)\le1/4-\varepsilon^2$, giving an exponentially decreasing
+bound times a polynomial in $r$.
+
+Every summand in \eqref{eq:M} is at most
+$g^{2r-1}p_r(m/g)/(r!(r-1)!)$. On $1/2<m/g\le3/4$, both upper
+binomial indices are at least $g/4$. Their falling-factorial products
+differ from the corresponding powers by a relative $O(r^2/g)$,
+uniformly there. This follows from
+$1-\prod_j(1-u_j)\le\sum_j u_j$ for $0\le u_j\le1$; eventually
+all factors in question are nonnegative. The polynomial weight outside
+this interval is negligible by the preceding exponential bound.
+These upper and lower comparisons prove \eqref{eq:uniform-M} and
+transfer the concentration of $m/g$ to the exact bulk weights.
+\end{proof}
+
+\subsection{Bounding all valid tuples outside the bulk}
+
+We need only the necessary closure conditions coming from addition by
+$m$. The resulting bound includes semigroups with any number of other
+additive equalities.
+
+\begin{lemma}\label{lem:outside-bulk}
+If $r\to\infty$ and $r^2/g\to0$, then
+\begin{equation}\label{eq:outside-small}
+E_r(g)=o(M_r(g)).
+\end{equation}
+This estimate is on the scale of $M_r(g)$, not necessarily on the
+smaller scale of $n_{g,r}$.
+\end{lemma}
+
+\begin{proof}
+For a semigroup with multiplicity $m$, the holes $A$ form initial
+segments of the $m$ arithmetic-progression chains in $[g+1,2g]$ with
+step $m$. Indeed, $a\in A$ and $a-m>g$ imply $a-m\in A$. Ignoring
+the finite chain lengths, the number of choices of $r$ holes is at most
+\begin{equation}\label{eq:hole-chain-bound}
+\binom{m+r-1}{r}.
+\end{equation}
+
+Suppose $2\le m\le g/2$ and put $q=\lfloor g/m\rfloor\ge2$.
+The set $B$ contains the $q$ multiples $m,2m,\ldots,qm$. In each
+other residue class modulo $m$, its elements form a terminal segment
+of the chain in $[m+1,g]$, because adding $m$ preserves membership.
+If $q>r$ there are no such tuples. Otherwise stars and bars bounds
+the choices of $B$ by
+\[
+\binom{m+r-q-2}{r-q}\le\binom{m+r-4}{r-2}.
+\]
+The inequality follows because the number of weak compositions into
+$m-1$ parts is nondecreasing with the sum. There is no positive-genus
+semigroup with multiplicity one. Consequently the entire low-minimum
+contribution is at most
+\begin{equation}\label{eq:low-uniform-bound}
+\begin{split}
+\sum_{m=2}^{\lfloor g/2\rfloor}
+ \binom{m+r-4}{r-2}\binom{m+r-1}{r}
+&\le\frac{(g/2+r+1)^{2r-1}}{(2r-1)(r-2)!r!}.
+\end{split}
+\end{equation}
+For the last inequality, bound the product by
+$(m+r)^{2r-2}/((r-2)!r!)$ and compare the increasing sum with an
+integral extending to $g/2+1$.
+Using $A_r\ge1/(2(2r)!)$ and the central-binomial estimate, the right
+side of \eqref{eq:low-uniform-bound}, divided by $A_rg^{2r}$, is
+\[
+O\left(\frac{\sqrt r}{g}
+ \exp\left(O\left(\frac{r(r+1)}g\right)\right)\right)=o(1).
+\]
+
+For $m>g/2$, the low set has exactly $\binom{g-m}{r-1}$ possible
+choices. Every subset of $[g+1,g+m]$ is an initial-chain hole set;
+there are $\binom mr$ such subsets. Thus the number of possible hole
+sets extending above $g+m$ is at most
+\[
+\binom{m+r-1}{r}-\binom mr.
+\]
+Eventually $r<m/2$, uniformly in this range, and
+\[
+\frac{\binom{m+r-1}{r}}{\binom mr}
+=\prod_{j=0}^{r-1}\frac{m+j}{m-j}
+\le\exp\left(\frac{3r(r-1)}{2m}\right)
+\le\exp\left(\frac{3r^2}{g}\right).
+\]
+Here $\log((1+x)/(1-x))\le3x$ for $0\le x\le1/2$.
+Multiplying by the low-set count and summing over $m$ bounds the high
+contribution by $(\exp(3r^2/g)-1)M_r(g)=o(M_r(g))$. Together with
+\eqref{eq:low-uniform-bound} and Lemma~\ref{lem:uniform-bulk}, this
+proves \eqref{eq:outside-small}.
+\end{proof}
+
+\subsection{Distinct forbidden sums}
+
+In a bulk tuple, write
+\[
+K(B)=\#\bigl((B+B)\cap[g+1,g+m]\bigr).
+\]
+This counts distinct forbidden hole positions, not pairs producing them.
+Conditional on $m$ and $B$, the $r$ holes are a uniform subset of an
+interval of size $m$. Hence the exact conditional validity probability is
+\begin{equation}\label{eq:avoidance}
+\frac{\binom{m-K(B)}r}{\binom mr}.
+\end{equation}
+
+\begin{lemma}\label{lem:forbidden-sums}
+Under the bulk distribution, if $r\to\infty$ and $r^2/g\to0$, then
+\begin{equation}\label{eq:K-limit}
+\frac{K(B)}{r^2}\longrightarrow\frac14
+\quad\hbox{in probability}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:uniform-bulk}, it suffices to work uniformly on
+$g/2<m\le3g/4$. Put $L=g-m\ge g/4$. Conditional on $m$, the
+$r-1$ elements of $B\setminus\{m\}$ are a uniform subset of
+$\{m+1,\ldots,g\}$. Subtract $m$ and label them in random order as
+$Y_1,\ldots,Y_{r-1}$. Their law is that of independent uniform
+variables on $[1,L]$ conditioned to be distinct. The probability of a
+repeat in the independent sample is $O(r^2/L)=o(1)$, so it suffices
+to establish the assertions under the independent law.
+
+Let $H$ count pairs $i<j$ with $Y_i+Y_j\le L$. Their corresponding
+low-element sums are precisely those at most $g+m$. Each indicator
+has expectation $(L-1)/(2L)$. Indicators on disjoint pairs are
+independent, and at most $O(r^3)$ pairs of indicators share an index.
+Thus $\operatorname{Var}(H)=O(r^3)$ and
+$H/r^2\to1/4$ in probability.
+
+Two distinct unordered index pairs have equal sums with probability at
+most $1/L$: condition on all but a variable with coefficient $1$ or
+$-1$ in the equality. There are $O(r^4)$ pairs of such pairs. If
+$K_H$ counts distinct values among the sums counted by $H$, then
+$H-K_H$ is at most the number of equal-sum pairs. Therefore
+\[
+\mathbb E\left[\frac{H-K_H}{r^2}\right]=O(r^2/L)=o(1).
+\]
+The sums involving the minimum and the doubled other elements add at
+most $2r$ distinct positions, so $K_H\le K(B)\le K_H+2r$ under the
+distinct-sample law. Conditioning changes the probability statements
+by $o(1)$. This proves \eqref{eq:K-limit} uniformly in the stipulated
+range of $m$, and hence under the bulk distribution.
+\end{proof}
+
+\subsection{The collision law and the count}
+
+For a uniformly chosen bulk tuple, let
+$Z=\#(A\cap(B+B))$. Thus $Z$ is the number of distinct holes which
+are sums of two low nongaps, and the tuple is valid exactly when $Z=0$.
+
+\begin{proposition}\label{prop:poisson}
+Under the hypotheses of Theorem~\ref{thm:uniform} with finite $\tau$,
+$Z$ converges in distribution to a Poisson variable of mean $\tau/2$.
+In particular, $V_r(g)/M_r(g)\to e^{-\tau/2}$.
+\end{proposition}
+
+\begin{proof}
+Conditionally on $m,B$, $Z$ is hypergeometric. If $(x)_k$ denotes the
+falling factorial, then
+\[
+\mathbb E[(Z)_k\mid m,B]=\frac{(r)_k(K(B))_k}{(m)_k}.
+\]
+Lemmas~\ref{lem:uniform-bulk} and \ref{lem:forbidden-sums} give
+\[
+\frac{rK(B)}m
+=\frac{r^3}{g}\frac{K(B)}{r^2}\frac gm
+\longrightarrow\frac\tau2
+\quad\hbox{in probability}.
+\]
+For fixed $k$, the conditional factorial moments therefore tend to
+$(\tau/2)^k$ in probability. This also holds at $\tau=0$, directly
+by the upper bound below. Since $K(B)\le r(r+1)/2$ and $m>g/2$,
+there is a constant $C_\tau$ independent of $k,g,r$ along this sequence
+(after finitely many terms) such that, for $0\le k\le r$,
+\[
+\frac{(r)_k(K(B))_k}{(m)_k}\le
+\left(\frac{rK(B)}{m-r}\right)^k\le C_\tau^k.
+\]
+For $k>r$ the moment is zero. Bounded convergence gives convergence
+of each unconditional factorial moment. Moreover, for $0\le z\le1$,
+the finite expansion
+\[
+\mathbb E[(1-z)^Z]
+=\sum_{k\ge0}\frac{(-z)^k}{k!}\mathbb E[(Z)_k]
+\longrightarrow\exp(-\tau z/2)
+\]
+is justified by the summable majorant $C_\tau^k/k!$. These are the
+probability generating functions of the asserted Poisson limit.
+Equivalently, tightness follows from the bounded first moments, and
+every subsequential limit has this same generating function. Taking
+$z=1$ proves the stated zero-collision probability directly.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:uniform}]
+For finite $\tau$, combine Proposition~\ref{prop:poisson} with
+\eqref{eq:uniform-M} and \eqref{eq:outside-small}, using
+$n_{g,r}=V_r(g)+E_r(g)$.
+If $r^3/g\to\infty$, \eqref{eq:avoidance} is at most
+$\exp(-rK(B)/m)$, with the ratio interpreted as zero if fewer than
+$r$ allowable hole positions remain. The exponent tends to infinity
+in probability by Lemmas~\ref{lem:uniform-bulk} and
+\ref{lem:forbidden-sums}. The bounded avoidance probability therefore
+has expectation tending to zero. The same decomposition proves
+\eqref{eq:uniform-limit} with $\tau=\infty$.
+Finally, any subsequence of $r^3/g$ has a further subsequence converging
+in $[0,\infty]$. Applying the just-proved limits on every such
+subsequence proves \eqref{eq:uniform-additive}.
+\end{proof}
+
+For finite $\tau$, the valid tuples outside the bulk also form an
+$o(1)$ fraction of all semigroups with these parameters, since the
+normalized count has a positive limit. This relative conclusion is
+not asserted when $\tau=\infty$. The theorem gives no error rate fine
+enough to subtract consecutive genus counts and prove their sign.
+It also does not reach $r$ proportional to $g$. Both distinctions are
+essential when comparing this result with the full Bras-Amor\'os
+counting conjectures.
+
 \section{Consequences, checks, and remaining questions}
 The first three leading coefficients are $A_1=3/8$, $A_2=11/384$, and $A_3=7/7680$. The first two agree with the exact formulas of \cite[Proposition 2.1 and Theorem 3.5]{CK}. These small values illustrate the general coefficient formula; our contribution concerns arbitrary fixed $r$.
 
 The homogeneous description is also effective in principle. For a specified $r$, form the finite arrangement in the proof of Proposition~\ref{prop:quasi}, enumerate its rational cells, and compute their Ehrhart quasipolynomials. A common multiple of the vertex denominators bounds a period. The argument gives no efficient bound for this enumeration. Once the finitely many constituents are obtained, eventual positivity of \eqref{eq:increment} reduces the full monotonicity question for that particular $r$ to finitely many genera.
 
-The accompanying Python script compares literal closure with Lemma~\ref{lem:closure} on all $66\,187$ tuples through genus $9$, checking all $584$ exceptional tuples. Independently generated semigroup trees through genus $16$ contain $11\,770$ semigroups in total; their counts agree with the tuple counts and the known $r=1,2$ formulas on the overlapping ranges. Exact rational interpolation tests the bulk's two leading coefficients for $1\le r\le12$, with $936$ additional evaluations beyond the interpolation data. For the revised second-coefficient formula, a separate script checks all $17\,568$ tuples through genus $8$, verifies that all $223$ nonzero signed residuals satisfy two independent additive equalities, and checks the candidate-sum formulas. Exact rational interpolation of those sums for $1\le r\le8$ has $864$ holdout evaluations; the resulting coefficients also agree with every residue of the cited exact $r=2$ formula. These finite diagnostics do not replace the general proofs.
+The accompanying Python script compares literal closure with Lemma~\ref{lem:closure} on all $66\,187$ tuples through genus $9$, checking all $584$ exceptional tuples. Independently generated semigroup trees through genus $16$ contain $11\,770$ semigroups in total; their counts agree with the tuple counts and the known $r=1,2$ formulas on the overlapping ranges. Exact rational interpolation tests the bulk's two leading coefficients for $1\le r\le12$, with $936$ additional evaluations beyond the interpolation data. For the revised second-coefficient formula, a separate script checks all $17\,568$ tuples through genus $8$, verifies that all $223$ nonzero signed residuals satisfy two independent additive equalities, and checks the candidate-sum formulas. Exact rational interpolation of those sums for $1\le r\le8$ has $864$ holdout evaluations; the resulting coefficients also agree with every residue of the cited exact $r=2$ formula. The growing-ordinarization checks additionally verify the chain conditions for all $11\,753$ nonordinary semigroups through genus $16$, compare $1\,004$ exact bulk fibers with tree counts, and check the outside-bulk bounds on the same range. Literal closure is checked in each bulk fiber through genus $8$. These finite diagnostics do not replace the general proofs.
 
-Several questions remain. Theorem~\ref{thm:second} evaluates the previously undetermined constant $\beta_r$. One can next determine the full period of $n_{g,r}$, evaluate the lower-dimensional multiple-equality contributions, and find bounds for the onset of strict growth. The stronger conjecture asks for monotonicity at every genus and every ordinarization number. The present argument now evaluates the top two coefficients completely for fixed $r$ and leaves those further questions open. The coefficient ratio in \eqref{eq:coefficient-scale} records growth of the correction with $r$; it supplies no uniform remainder bound and does not settle either total monotonicity or the full Bras-Amor\'os Fibonacci inequality.
+Several questions remain. Theorem~\ref{thm:second} evaluates the previously undetermined constant $\beta_r$. One can next determine the full period of $n_{g,r}$, evaluate the lower-dimensional multiple-equality contributions, and find bounds for the onset of strict growth. The stronger conjecture asks for monotonicity at every genus and every ordinarization number. The present argument now evaluates the top two coefficients completely for fixed $r$ and leaves those further questions open. Theorem~\ref{thm:uniform} separately establishes a growing-$r$ limit under $r^2/g\to0$. It gives neither a relative exponential estimate when $r^3/g\to\infty$, nor an error rate that decides consecutive differences. Reaching $r$ proportional to $g$ and controlling the full Bras-Amor\'os Fibonacci sign remain open.
 
 \begin{thebibliography}{9}
 \bibitem{BR}

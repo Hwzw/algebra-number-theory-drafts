@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-16",
+  "all_passed": true,
+  "tree_semigroups_through_genus_16": 11770,
+  "individual_multiplicity_chain_checks": 11753,
+  "exact_bulk_fibers_checked": 1004,
+  "literal_fiber_closure_through_genus": 8,
+  "tree_vs_fiber_counts_through_genus": 16,
+  "outside_count_bounds_through_genus": 16,
+  "rows": [
+    {
+      "g": 1,
+      "all_semigroups": 1,
+      "valid_nonordinary_bulk": 0,
+      "valid_low_minimum": 0,
+      "valid_high_hole": 0
+    },
+    {
+      "g": 2,
+      "all_semigroups": 2,
+      "valid_nonordinary_bulk": 1,
+      "valid_low_minimum": 0,
+      "valid_high_hole": 0
+    },
+    {
+      "g": 3,
+      "all_semigroups": 4,
+      "valid_nonordinary_bulk": 3,
+      "valid_low_minimum": 0,
+      "valid_high_hole": 0
+    },
+    {
+      "g": 4,
+      "all_semigroups": 7,
+      "valid_nonordinary_bulk": 5,
+      "valid_low_minimum": 1,
+      "valid_high_hole": 0
+    },
+    {
+      "g": 5,
+      "all_semigroups": 12,
+      "valid_nonordinary_bulk": 10,
+      "valid_low_minimum": 1,
+      "valid_high_hole": 0
+    },
+    {
+      "g": 6,
+      "all_semigroups": 23,
+      "valid_nonordinary_bulk": 16,
+      "valid_low_minimum": 4,
+      "valid_high_hole": 2
+    },
+    {
+      "g": 7,
+      "all_semigroups": 39,
+      "valid_nonordinary_bulk": 30,
+      "valid_low_minimum": 4,
+      "valid_high_hole": 4
+    },
+    {
+      "g": 8,
+      "all_semigroups": 67,
+      "valid_nonordinary_bulk": 49,
+      "valid_low_minimum": 13,
+      "valid_high_hole": 4
+    },
+    {
+      "g": 9,
+      "all_semigroups": 118,
+      "valid_nonordinary_bulk": 89,
+      "valid_low_minimum": 16,
+      "valid_high_hole": 12
+    },
+    {
+      "g": 10,
+      "all_semigroups": 204,
+      "valid_nonordinary_bulk": 143,
+      "valid_low_minimum": 40,
+      "valid_high_hole": 20
+    },
+    {
+      "g": 11,
+      "all_semigroups": 343,
+      "valid_nonordinary_bulk": 258,
+      "valid_low_minimum": 44,
+      "valid_high_hole": 40
+    },
+    {
+      "g": 12,
+      "all_semigroups": 592,
+      "valid_nonordinary_bulk": 414,
+      "valid_low_minimum": 122,
+      "valid_high_hole": 55
+    },
+    {
+      "g": 13,
+      "all_semigroups": 1001,
+      "valid_nonordinary_bulk": 732,
+      "valid_low_minimum": 146,
+      "valid_high_hole": 122
+    },
+    {
+      "g": 14,
+      "all_semigroups": 1693,
+      "valid_nonordinary_bulk": 1178,
+      "valid_low_minimum": 326,
+      "valid_high_hole": 188
+    },
+    {
+      "g": 15,
+      "all_semigroups": 2857,
+      "valid_nonordinary_bulk": 2078,
+      "valid_low_minimum": 408,
+      "valid_high_hole": 370
+    },
+    {
+      "g": 16,
+      "all_semigroups": 4806,
+      "valid_nonordinary_bulk": 3352,
+      "valid_low_minimum": 938,
+      "valid_high_hole": 515
+    }
+  ],
+  "exact_scale_examples": [
+    {
+      "r": 2,
+      "g": 8,
+      "r_cubed_over_g": 1,
+      "bulk_over_leading": "243/352",
+      "low_bound_over_bulk": "19/81",
+      "high_bound_over_bulk": "34/81",
+      "exact_valid_bulk_over_bulk": "26/81"
+    },
+    {
+      "r": 4,
+      "g": 64,
+      "r_cubed_over_g": 1,
+      "bulk_over_leading": "249657311925/350039834624",
+      "low_bound_over_bulk": "217668/5113309",
+      "high_bound_over_bulk": "302666/881605",
+      "exact_valid_bulk_over_bulk": "13333392/27329755"
+    },
+    {
+      "r": 8,
+      "g": 512,
+      "r_cubed_over_g": 1,
+      "bulk_over_leading": "20672748259525938082408534900395253125/25444201718142605940160130949301927936",
+      "low_bound_over_bulk": "4488744434357287431660184/634831372959776079642551925",
+      "high_bound_over_bulk": "251683858881095398/1251861422541511167"
+    },
+    {
+      "r": 12,
+      "g": 1728,
+      "r_cubed_over_g": 1,
+      "bulk_over_leading": "28230072969344280156316721878843422760780252357128874834066158125/32714810621421978599521478868729717611758323721966449374785437696",
+      "low_bound_over_bulk": "2456548336564225920990211940788806555784590750/1004441468544216091402027495486777422726713886577",
+      "high_bound_over_bulk": "1180485858829628468011569239597/8385554197717417560779089073378"
+    },
+    {
+      "r": 20,
+      "g": 8000,
+      "r_cubed_over_g": 1,
+      "bulk_over_leading": "12695130775972404556282280474384293489281137224624161765170387243578904035608360881518893086530839670794076441849809414573639643574576949/13931414332423973593195479040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "low_bound_over_bulk": "286531707135757337855691586860874676619445764053062650744573386630359706010786459596482215339782906/440509156405839187601744457350751984717671754473465601303071884420456419669268181194984902439818997383",
+      "high_bound_over_bulk": "1679375994178048410191945057312879989729490116532911023013/19057502946897451078378668327061258219805348441854597144230"
+    }
+  ],
+  "scope": "Exact finite diagnostics only. The asymptotic theorem follows from the manuscript proof, not these examples.",
+  "script_sha256": "5b4bd11cf4478ad4b1f07316e5b59d2c26c765bfe777b99a72a433abd0fa4eb5"
+}

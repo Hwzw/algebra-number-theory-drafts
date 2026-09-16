@@ -1,22 +1,22 @@
 {
   "date": "2026-09-16",
-  "revision": "1.1",
-  "pages": 9,
-  "pdf_sha256": "ee33f6addfa40bbbf2fbc70b0b31e225d27d3558d12dc7ddfbb5dccb597fabf9",
-  "tex_sha256": "39047489ea6d68b6601251788abf3eb394b2221f531ad09ff41ac539713810dd",
-  "markdown_sha256": "242803dbf134d5ed58d18903b3ed501d3b04f6590da82356537dd6779321ecfc",
+  "revision": "1.2",
+  "pages": 13,
+  "pdf_sha256": "7d68e28d063887f4fd95dee12c02c8372881b1dedd50e8687adea24d9d2a64ec",
+  "tex_sha256": "8f8b5e0116b31efd25548f1290f93e14627a5539d80848177660e6b7dc8521bc",
+  "markdown_sha256": "a128a604e863093649bc553674dc45774fc63af4c4e39eb7611ae9bb4a394eb2",
   "all_final_pdf_pages_visually_reviewed": true,
   "new_proof_pages_inspected_individually": [
-    6,
-    7,
-    8
+    9,
+    10,
+    11,
+    12
   ],
-  "equation_labels": 29,
+  "equation_labels": 37,
   "missing_equation_numbers": [],
-  "math_expressions": 355,
+  "math_expressions": 547,
   "math_errors": 0,
   "tex_warnings": 0,
-  "text_replacement_characters": 0,
   "semantic_roundtrip_equal": true,
   "github_live_render_inspected": false
 }

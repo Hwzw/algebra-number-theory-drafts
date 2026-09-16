@@ -1,8 +1,12 @@
 # P34: internal proof review
 
+## Revision 1.2
+
+The current proof and artifact review is [uniform-review.md](uniform-review.md). Earlier reviews and their page/math counts below describe their respective revisions.
+
 ## Revision 1.1
 
-The current proof and artifact audit is in [second-coefficient-review.md](second-coefficient-review.md). The original review below is retained as a historical record; its statement that beta_r was not evaluated and its six-page artifact counts refer to version 1.
+The version 1.1 proof and artifact audit is in [second-coefficient-review.md](second-coefficient-review.md). The original review below is retained as a historical record; its statement that beta_r was not evaluated and its six-page artifact counts refer to version 1.
 
 ## Original-version review (historical)
 

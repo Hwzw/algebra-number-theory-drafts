@@ -1,4 +1,12 @@
-# P34: source, novelty, and significance assessment
+# Source, scope, and significance assessment
+
+## Revision 1.2 assessment, September 16, 2026
+
+Theorem 6.1 establishes a growing-ordinarization limit on the scale r^3/g under r^2/g -> 0. It uses necessary multiplicity-chain conditions to bound every valid tuple outside the bulk and a hypergeometric collision argument inside the bulk. This goes beyond a pointwise fixed-r expansion and supplies an explicit transition law. The theorem and its proof, source comparison, and remaining limitations are reviewed in [uniform-review.md](uniform-review.md).
+
+The result still does not settle either all-genus counting conjecture. It does not treat r proportional to g, does not give a relative exponential estimate at infinite r^3/g, and does not control errors at the scale needed to prove consecutive differences positive. The full publicly well-known conjecture remains unresolved, so the thread goal remains active. The publication is an internally audited, AI-assisted preprint revision and carries no independent correctness or exhaustive novelty certification.
+
+The following assessments are retained as records of earlier revisions.
 
 ## Revision 1.1 assessment, September 16, 2026
 
