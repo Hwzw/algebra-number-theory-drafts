@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-15",
+  "author": "Henry Zweiman",
+  "pdf_pages": 10,
+  "pdf_text_characters": 24383,
+  "replacement_characters": 0,
+  "equation_tags": 43,
+  "equation_tags_sequential": true,
+  "mathjax_expressions": 270,
+  "mathjax_errors": 0,
+  "tex_warnings": [],
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "resolution_dpi": 100,
+    "outcome": "All ten final pages inspected after final layout edit. No clipping, overlap or missing glyphs. Section 6 starts on page 9; references and transparency statement are together on page 10."
+  },
+  "proof_status": "Artifact integrity only; not independent mathematical certification",
+  "hashes": {
+    "manuscript.md": "31e9d1a9b23dda99f9008891f20774e11991c10cdb0c18879e0f2fa45c12ab0b",
+    "manuscript.tex": "14e176475b022cb8c95f2996df23e053e1ebccfd0e5755178b670e46ac2b4535",
+    "manuscript.pdf": "53ad90e70e15553e7e26b2351ffd5881e545a514c82c4290a54ed793c61c1512"
+  }
+}

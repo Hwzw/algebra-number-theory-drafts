@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-15",
+  "successful_feeds": [
+    {
+      "query": "all:\"heat content\" AND (all:\"metric graph\" OR all:\"quantum graph\" OR all:\"Faber-Krahn\")",
+      "total": 3,
+      "returned": 3,
+      "truncated": false
+    },
+    {
+      "query": "au:Bifulco AND au:Taufer",
+      "total": 1,
+      "returned": 1,
+      "truncated": false
+    },
+    {
+      "query": "(all:\"metric graph\" OR all:\"quantum graph\") AND (all:rearrangement OR all:symmetrization OR all:\"mass concentration\")",
+      "total": 68,
+      "returned": 68,
+      "truncated": false
+    }
+  ],
+  "unique_returned_entries": 71,
+  "failed_followup_feeds": [
+    {
+      "key": "authors-bifulco",
+      "error": "The read operation timed out"
+    },
+    {
+      "key": "authors-taufer",
+      "error": "HTTP Error 429: Unknown Error"
+    },
+    {
+      "key": "authors-mugnolo-heat",
+      "error": "HTTP Error 429: Unknown Error"
+    },
+    {
+      "key": "graph-diffusion-comparison",
+      "error": "The read operation timed out"
+    }
+  ],
+  "web_comparison_urls": [
+    "https://doi.org/10.1214/25-EJP1414",
+    "https://doi.org/10.1007/s00023-026-01755-3",
+    "https://www.numdam.org/item/10.5802/aif.2095.pdf",
+    "https://verso.mat.uam.es/~juanluis.vazquez/SymmJANS04.pdf",
+    "https://arxiv.org/html/1711.07225v1",
+    "https://arxiv.org/html/2311.00632v1",
+    "https://arxiv.org/abs/2607.14312",
+    "https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/Ilaria/Abstracts/Ankuendigung_Mugnolo.pdf",
+    "https://www.math.uni-augsburg.de/htdocs/VK/docs/2026/01/14_Mi_03_01.html"
+  ],
+  "outcome": "No matching resolution identified in inspected primary sources and successful discovery results. This is a bounded search, with explicit failed follow-up requests; not absolute priority certification."
+}

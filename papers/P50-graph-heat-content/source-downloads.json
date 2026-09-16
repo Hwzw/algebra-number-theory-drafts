@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-15",
+  "files": [
+    {
+      "file": "bifulco-taufer-history.html",
+      "url": "https://arxiv.org/abs/2501.09693",
+      "bytes": 41534,
+      "sha256": "6e87f598e3b759b044d0ecc88419965a04d62760dcca47a4ec5ae5a11f1e4e6c"
+    },
+    {
+      "file": "bifulco-taufer-v1.html",
+      "url": "https://arxiv.org/html/2501.09693v1",
+      "bytes": 497053,
+      "sha256": "4c10e60a367320b6b1f0e0fff4173cb692b21809d9c9517c4563786d2db4fdc4"
+    },
+    {
+      "file": "bifulco-mugnolo-history.html",
+      "url": "https://arxiv.org/abs/2502.09461",
+      "bytes": 39978,
+      "sha256": "28fe9c2ba5771e1a3d313c303cd74278b4ed400237c5365365973a53c23361ab"
+    },
+    {
+      "file": "bifulco-mugnolo-v1.pdf",
+      "url": "https://arxiv.org/pdf/2502.09461",
+      "bytes": 914517,
+      "sha256": "29dd1db526ffe6304a1b581d058301ce3a71d47bac5d59efd8ebeb2a1328f57a"
+    },
+    {
+      "file": "bifulco-mugnolo-final.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00023-026-01755-3.pdf",
+      "bytes": 1484601,
+      "sha256": "6f6610784136889aef5fbe4f018e5445af8a5b7c503e7e80ac809464f4072942"
+    },
+    {
+      "file": "vazquez-symmetrization-2004.pdf",
+      "url": "https://verso.mat.uam.es/~juanluis.vazquez/SymmJANS04.pdf",
+      "bytes": 366087,
+      "sha256": "a7a2d7a0e698a18a0391386181a3ffea0aa1af706188e91bcdee05f84646a3b3"
+    },
+    {
+      "file": "bifulco-thesis-2025.pdf",
+      "url": "https://d-nb.info/1388406829/34",
+      "bytes": 2491011,
+      "sha256": "468fa3abb4502020163501361b494e7ff8dae78dd917719990ceee1649bdd335"
+    },
+    {
+      "file": "bifulco-taufer-final.pdf",
+      "url": "https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F25-EJP1414",
+      "bytes": 467695,
+      "sha256": "0e373d0a1bceaac70e7423921c9bada8edddd20bb47dd26df83eef9965c0cd51"
+    },
+    {
+      "file": "friedlander-2005-final.pdf",
+      "url": "https://www.numdam.org/item/10.5802/aif.2095.pdf",
+      "bytes": 419951,
+      "sha256": "ec269b251e1d9961edf8c9c3c14f3b8b6fbadf801cd8e88c6700a5e27e2f5180"
+    }
+  ]
+}

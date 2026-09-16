@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 49 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 50 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## All-times heat-content maximization on metric graphs
+
+[**P50: Heat-content maximization on compact metric graphs at every time**](papers/P50-graph-heat-content/README.md), by **Henry Zweiman**, proposes a complete answer to the all-times question in Bifulco-Täufer's final EJP article. The equal-length Dirichlet-Neumann interval maximizes heat content at every positive time; equality at one time characterizes that interval. A stronger cumulative-rearrangement theorem covers arbitrary nonnegative L2 initial data. The [ten-page PDF](papers/P50-graph-heat-content/manuscript.pdf), [full Markdown](papers/P50-graph-heat-content/manuscript.md), and [LaTeX](papers/P50-graph-heat-content/manuscript.tex) contain the proofs.
+
+The [assessment](papers/P50-graph-heat-content/ASSESSMENT.md) credits classical graph rearrangement and implicit-time concentration methods and records the bounded source search, including failed follow-up requests. The [review](papers/P50-graph-heat-content/REVIEW.md) checks vertex fluxes, density, the semigroup limit and one-time rigidity. Quantitative stability and general vertex couplings remain outside the claims. This is one internally assessed, unreviewed AI-assisted preprint.
 
 ## Sharp annular stability for physical torsion
 

@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-15",
+  "candidate": "Q58",
+  "status": "Complete proposed proof and internal claim-specific source audit; see ASSESSMENT.md for provisional admission and limitations",
+  "primary": {
+    "title": "Faber-Krahn inequality for the heat content on quantum graphs via random walk expansion",
+    "authors": [
+      "Patrizio Bifulco",
+      "Matthias T\u00e4ufer"
+    ],
+    "arxiv": "2501.09693v1",
+    "latest_version_observed": "v1, 2025-01-16; history refreshed September 15, 2026",
+    "final_doi": "10.1214/25-EJP1414",
+    "journal": "Electronic Journal of Probability 30 (2025), paper 158, 1-19",
+    "final_body_read": true,
+    "read_scope": "Final pages 2-7: introduction, definitions, Theorem 2.6, Remarks 2.7-2.9, Feynman-Kac Proposition 3.2; final references pages 18-19; earlier preprint introduction and Sections 2.1-2.3",
+    "explicit_question": "Remark 2.9 asks whether the equal-length Dirichlet-Neumann interval maximizes heat content at every positive time",
+    "access_result": "Publisher open-access PDF obtained through browser DOWNLOAD PDF link; exact PDF saved locally, 20 PDF pages including publisher end page"
+  },
+  "comparison": [
+    {
+      "title": "On the Heat Content of Compact Quantum Graphs",
+      "authors": [
+        "Patrizio Bifulco",
+        "Delio Mugnolo"
+      ],
+      "doi": "10.1007/s00023-026-01755-3",
+      "published": "2026-09-09",
+      "arxiv": "2502.09461v1",
+      "final_body_read": true,
+      "read_scope": "Introduction, Assumption 2.1, selected Section 2 heat-semigroup facts, Section 6 principal statements 6.1-6.13 with selected proofs; long combinatorial mirroring proof not audited in full",
+      "difference": "Path-sum formulas, short-time asymptotics and surgery principles; the final introduction describes the BT interval comparison only at small times. No matching all-times rearrangement theorem identified in inspected statements."
+    },
+    {
+      "title": "Symmetrization and Mass Comparison for Degenerate Nonlinear Parabolic and Related Elliptic Equations",
+      "author": "Juan Luis V\u00e1zquez",
+      "doi": "10.1515/ans-2005-0107",
+      "read_scope": "Author manuscript dated 2004-11-25: introduction, Section 5.2 Theorem 5.2 and proof, Section 7 Theorems 7.2-7.3 and iteration proof, selected extensions and references",
+      "final_body_read": false,
+      "final_metadata_checked": true,
+      "difference": "Classical Euclidean concentration and implicit-time method; prominently credited. Not a claim of a new general method."
+    },
+    {
+      "title": "Extremal properties of eigenvalues for a metric graph",
+      "author": "Leonid Friedlander",
+      "doi": "10.5802/aif.2095",
+      "final_body_read": true,
+      "read_scope": "Introduction, Lemma 3 and full proof, printed pages 203-205",
+      "difference": "Already contains the energy rearrangement and branch-count rigidity for an eigenfunction. New proposed application extracts energy equality from one-time heat-content equality."
+    },
+    {
+      "title": "Contributions to the Diffusion on Graphs and Networks",
+      "author": "Patrizio Bifulco",
+      "url": "https://d-nb.info/1388406829/34",
+      "read_scope": "Chapter 4.5, printed pages 136-138, including Theorem 4.5.2, Example 4.5.5 and Remark 4.5.6",
+      "difference": "Explicit all-times question, special mirrored-star example, and prior all-times-equality rigidity via torsion. The new claim is equality at one time."
+    },
+    {
+      "title": "Domination of quadratic forms",
+      "authors": [
+        "Daniel Lenz",
+        "Marcel Schmidt",
+        "Melchior Wirth"
+      ],
+      "arxiv": "1711.07225v1",
+      "read_scope": "HTML introduction, Example 1.28, Definitions 3.1 and 3.4, Theorem 3.5 and opening proof",
+      "difference": "Abstract resolvent/semigroup domination equivalence is prior work. Its form-to-semigroup sufficiency has extra self-dual isotone-cone hypotheses; the decreasing cone in Example 1.6 is not self-dual. No graph-to-interval theorem was located. Full final publication comparison not undertaken; not a proof dependency."
+    },
+    {
+      "title": "Symmetrization results for general nonlocal linear elliptic and parabolic problems",
+      "authors": [
+        "Vincenzo Ferone",
+        "Gianpaolo Piscitelli",
+        "Bruno Volzone"
+      ],
+      "arxiv": "2311.00632v1",
+      "doi": "10.1016/j.matpur.2024.103597",
+      "read_scope": "Preprint HTML introduction and Theorems 1.1-1.2",
+      "difference": "Nonlocal integral kernels on Euclidean domains, not Kirchhoff metric graphs. Further confirms classical implicit-time method; final body not read and not a dependency."
+    },
+    {
+      "title": "The role of expanders in the spectral geometry of metric graphs",
+      "author": "Delio Mugnolo",
+      "arxiv": "2607.14312v2",
+      "latest_version_observed": "2026-08-15",
+      "read_scope": "Abstract and version history only",
+      "difference": "Eigenvalue upper-bound and expander topic; no matching claim in abstract; body not audited."
+    }
+  ],
+  "historical_conflicting_lead": {
+    "url": "https://www.math.uni-potsdam.de/en/institut/veranstaltungen/archiv/details-archiv/veranstaltungsdetails/anti-faber-krahn-property-for-the-heat-content-on-metric-graphs-or-building-better-batteries",
+    "date": "2024-05-08",
+    "status": "Preliminary talk abstract describes an anti-Faber-Krahn conclusion with inconsistent minimizer/maximizer terminology. No proof is supplied. The later final BT paper explicitly proves the small/large comparison and leaves all-times open. Retained as a historical conflicting lead, not silently discarded or treated as a proved counterexample."
+  },
+  "search_limits": [
+    "Three initial complete arXiv feeds retained (3, 1, 68 entries; overlap and noisy results).",
+    "Four follow-up feeds failed: Bifulco and graph-diffusion comparison timed out, Taufer and Mugnolo heat feeds returned HTTP 429. Their failures are saved, not counted as searches with zero results.",
+    "Targeted web searches covered exact question, authors, metric/quantum graph rearrangement, Talenti and abstract domination. No matching resolution found, but exhaustive coverage is not certified.",
+    "Current arXiv author-search page for Mugnolo was unavailable via web tool.",
+    "2026 primary seminar abstracts describe heat geometry but do not state the claimed all-times theorem. Unpublished work cannot be ruled out."
+  ],
+  "latest_proof_note": "papers/P50-graph-heat-content/manuscript.md",
+  "screen_note": "../../notes/0195-q58-heat-content-screen.md",
+  "independent_human_review": false
+}
