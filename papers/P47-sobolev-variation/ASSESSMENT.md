@@ -176,3 +176,12 @@ Theorem 20 closes the explicitly listed endpoint-Hessian question. Its root weig
 Theorem 21 applies the finite-switch theorem to a rational semialgebraic description of the total variation of a fixed-count control spline. Classical real-closed-field quantifier elimination is credited to Basu, Theorem 2.1. The sharp endpoint constant is algebraic in every order and admits an algebraic maximizing spline. No general closure of semialgebraic functions under integration is asserted; the proof explicitly lists the finitely many polynomial critical points.
 
 These are structural results within P47. They do not settle the remaining n>=4 variation conjecture, compute all sharp constants, prove all maximizing knots algebraic, or give an effective stopping count. The source refresh read the relevant Basu statements and the final survey conjecture; bounded searches are not exhaustive priority certification. Internal review is not independent expert verification.
+
+
+## Revision 1.15: endpoint switch exclusions
+
+Theorem 22 closes the endpoint two-critical-point and midpoint-symmetric three-critical-point exclusion questions, and proves the full necessary response-location restriction for other three-critical-point candidates. The new argument approximates the atomic linear response by positive-density boundary moment problems and recovers strict second variation using separated zeros. A flat-interval knot count and an order-four boundary sign count handle the degeneracies that prevented direct transfer of the finite-exponent proof.
+
+The clamped separated-zero count is classical, credited to Caminati's Lemma 2.4 and Proposition 2.5, and reproved in the manuscript. The affine response, limiting argument and application to these extremizers are distinguished from that dependency. Only the relevant source sections were audited; bounded searches and the unchanged final survey conjecture do not establish absolute priority.
+
+The result strengthens the same paper and completes these exclusions for every exponent above one. Nonsymmetric three-critical-point maximizers and configurations with at least four critical points remain possible obstructions in higher orders. No full all-order conjecture solution, independent expert verification or new paper count is claimed.

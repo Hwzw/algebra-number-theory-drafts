@@ -236,5 +236,14 @@
     "access_date": "2026-09-16",
     "read_scope": "Conjecture 4.14 and Remark 4.15 refreshed through the publisher text; no new claim of complete literature coverage.",
     "redistributed_in_package": false
+  },
+  {
+    "file": "endpoint-exclusion-audit/sources/caminati.pdf",
+    "url": "https://arxiv.org/pdf/0810.2634",
+    "bytes": 159921,
+    "sha256": "e055d9f609d1d0c89b7add5ca826e7e2d71ff2bbaf51228e7be9a2933e8c2e0d",
+    "access_date": "2026-09-16",
+    "read_scope": "Definitions and strong Rolle Lemma 2.4 and clamped separated-zero Proposition 2.5, PDF pages 1-4. Later applications are not dependencies.",
+    "redistributed_in_package": false
   }
 ]

@@ -1,6 +1,6 @@
 # Sharp total variation bounds from spherical rearrangement
 
-**Henry Zweiman. September 16, 2026. Revision 1.14.**
+**Henry Zweiman. September 16, 2026. Revision 1.15.**
 
 This preprint proves the all-order Hilbert-space case of the Nazarov-Shcheglova variation conjecture, including the exact constant and all extremizers. A Jacobi expansion turns the constrained Green form into a positive mixture of spherical Poisson interactions. A complementary measure argument proves the constant identity and coincidence of maximizing sets at p=1.
 
@@ -32,9 +32,11 @@ Revision 1.13 proves that every normalized uniform-endpoint variation maximizer 
 
 Revision 1.14 derives the uniform-endpoint switching Hessian from the moving simple residual zeros. The positive atomic weights are 2/|R'(xi)|, and polynomial projection gives an explicit necessary stability matrix of rank at most r-1. Theorem 21 proves V(n,infinity) is real algebraic in every n>=2 and that some maximizing spline has algebraic control knots and piece coefficients. It uses the finite-switch theorem and a first-order semialgebraic description, with classical quantifier elimination credited. These results do not exclude all higher-order multiple-peak configurations or supply an effective stopping count.
 
+Revision 1.15 excludes every two-critical-point endpoint variation maximizer and every midpoint-symmetric three-critical-point endpoint maximizer in n>=3. Theorem 22 constructs an atomic affine response, approximates its boundary moment problem by positive densities, and uses a separated-zero count to obtain strict second variation. An elementary knot count treats flat response intervals; barycentric signs at both ends settle the exceptional order-four flat case without assuming symmetry. Every remaining three-point candidate has its dilation-response minimum strictly outside its two outer critical points. Together with the finite-exponent results, these exclusions now hold for every 1<p<=infinity. The general higher-order conjecture remains open.
+
 - [Exact certificate generator](certify_counterexample.py), [certificate](counterexample-certificate.json), [alternate interpolation checker](check_certificate_independent.py), and [check result](alternate-certificate-check.json). Reproduce with `uv run --with sympy python certify_counterexample.py`, followed by `uv run --with sympy python check_certificate_independent.py`.
 - [Full Markdown manuscript](manuscript.md)
-- [56-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
+- [60-page typeset PDF](manuscript.pdf) and [LaTeX source](manuscript.tex)
 - [Priority and significance assessment](ASSESSMENT.md)
 - [Internal proof review](REVIEW.md)
 - [Source audit](source-audit.json) and [download provenance](source-downloads.json)

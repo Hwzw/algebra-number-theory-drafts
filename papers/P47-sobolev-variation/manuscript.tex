@@ -57,9 +57,14 @@ exponents above one, including the uniform endpoint. The endpoint
 switching objective has an explicit Hessian supported on the simple
 residual zeros. A semialgebraic description of the resulting finite
 splines proves that the uniform-endpoint sharp variation constant is
-real algebraic in every order, with an algebraic maximizing spline. The
-full all-order variation conjecture remains open for the remaining cases
-in orders at least four.
+real algebraic in every order, with an algebraic maximizing spline. An
+atomic affine response, positive-weight approximation and separated-zero
+count extend the two-switch and midpoint-symmetric three-switch
+exclusions to the uniform endpoint, including a boundary sign count for
+the flat case in order four. The necessary response-location condition
+for nonsymmetric three-critical-point candidates extends to that
+endpoint as well. The full all-order variation conjecture remains open
+for the remaining cases in orders at least four.
 
 \Needspace{8\baselineskip}\section{1. The sharp inequality}\label{the-sharp-inequality}
 
@@ -4251,7 +4256,358 @@ Section 18 is implicit. Theorem 21 determines the arithmetic nature of
 the sharp constant without computing it or settling the higher-order
 variation identity.
 
-\Needspace{8\baselineskip}\section{20. Remaining questions}\label{remaining-questions}
+\Needspace{8\baselineskip}\section{20. Two-switch and symmetric three-switch exclusion at the
+endpoint}\label{two-switch-and-symmetric-three-switch-exclusion-at-the-endpoint}
+
+The endpoint Hessian now permits the two finite-exponent exclusion
+results to be completed at \(p=\infty\). An approximation of the linear
+response supplies weak unimodality. A separated-zero count then recovers
+the strict second variation, with a separate boundary sign count in
+order four.
+
+\Needspace{6\baselineskip}\textbf{Theorem 22 (endpoint switch exclusions).} Let \(n\ge3\). A
+nonzero variation maximizer in \(W_0^{n,\infty}(0,1)\) cannot have
+exactly two interior critical points. If it is symmetric about the
+midpoint, it cannot have exactly three interior critical points either.
+For a hypothetical maximizer with three critical points \(a<b<c\), the
+affine response defined below for \(h(t)=t-b\) has its unique minimum
+strictly outside \([a,c]\). Thus Theorems 13 and 14, including this
+necessary response-location condition, extend to every \(1<p\le\infty\).
+
+Nonsymmetric three-critical-point configurations with the response
+minimum outside the two outer critical points remain unresolved.
+
+\subsection{20.1. An atomic affine
+response}\label{an-atomic-affine-response}
+
+Suppose that a normalized endpoint maximizer has critical points
+\(\tau_i\) and left signs \(\sigma_i\). Choose its overall sign so that
+\(f=u^{(n)}=+1\) near zero. Let \(R\) and \(\mu\) be as in Theorem 20,
+put \(m=n-1\), and move the switches with the affine velocity
+\(h(t)=A+Bt\). Dots denote derivatives along this motion. The
+truncated-power identity used in Section 13 gives
+
+\[
+T=\dot R+hR'-mBR\in\mathcal P_{n-1}.
+\tag{20.1}
+\]
+
+For the associated clamped potentials \(U=I^n(\operatorname{sign}R)\),
+define at the base point
+
+\[
+W=\dot U+hu'-nBu.
+\tag{20.2}
+\]
+
+These parameter derivatives exist by the finite-root formulas of Theorem
+20. Distributionally, \(Df=\mu R'\) and \(\dot f=\mu\dot R\).
+Differentiating (20.2), the term \(nBf\) from \(D^n(hu')\) cancels
+\(D^n(nBu)\). Also \(R\mu=0\). Therefore
+
+\[
+D^nW=T\mu,
+\qquad
+W^{(j)}(0)=W^{(j)}(1)=0\quad(0\le j\le n-2),
+\tag{20.3}
+\]
+
+and the one-sided endpoint traces on the fixed-control neighborhoods are
+
+\[
+W^{(n-1)}(0)=h(0)f(0),
+\qquad W^{(n-1)}(1)=h(1)f(1).
+\tag{20.4}
+\]
+
+Here \(f(0),f(1)\) mean those constant endpoint controls. The function
+\(W\) is a \(C^{n-2}\) spline of degree at most \(n-1\), with knots only
+at the residual zeros. Integration by parts gives, for every
+\(Q\in\mathcal P_{n-1}\),
+
+\[
+\int QT\,d\mu=h(1)f(1)Q(1)-h(0)f(0)Q(0).
+\tag{20.5}
+\]
+
+This moment system uniquely determines \(T\) because its polynomial Gram
+matrix is positive definite.
+
+Two further identities will be used. First, \(\int R T\,d\mu=0\) since
+\(R\) vanishes on the atomic support. Integrating by parts \(n-1\)
+times, using \((-1)^{n-1}R^{(n-1)}=g-c\) and \(W(0)=W(1)=0\), gives
+
+\[
+2\sum_i\sigma_iW(\tau_i)
+=-[Rhf]_0^1=-nV_{n,\infty}B.
+\tag{20.6}
+\]
+
+All intermediate boundary terms vanish by (20.3). The last equality uses
+\(Rf=|R|=nV_{n,\infty}\) at both endpoints. This calculation is valid
+for the spline and its derivative measure: \(W^{(n-1)}\) has bounded
+variation, while the remaining integrations involve absolutely
+continuous functions.
+
+Second, differentiation of the envelope gradient in Theorem 20 gives,
+with \(\mathbf h=(h(\tau_i))_i\),
+
+\[
+(J''\mathbf h)_i=2\sigma_iW'(\tau_i),\qquad
+\mathbf h^{\mathsf T}J''\mathbf h
+=2\sum_i\sigma_i h(\tau_i)W'(\tau_i).
+\tag{20.7}
+\]
+
+Indeed \(W'=\dot U'+hu''-(n-1)Bu'\), and \(u'(\tau_i)=0\). At a global
+maximizer, the expression in (20.7) must be nonpositive.
+
+\subsection{20.2. Unimodality from positive
+approximations}\label{unimodality-from-positive-approximations}
+
+We need a linear-response fact whose hypotheses are just
+(20.3)-\/-(20.5). Write \(a_0=W^{(n-1)}(0)\) and \(a_1=W^{(n-1)}(1)\).
+If
+
+\[
+a_0>0,\qquad (-1)^{n-2}a_1<0,
+\tag{20.8}
+\]
+
+then \(W\) is weakly increasing up to an interior point and weakly
+decreasing thereafter. Reversing both signs gives weak decrease followed
+by weak increase.
+
+To prove this, approximate the finite positive measure \(\mu\) by
+positive smooth densities \(w_\varepsilon\) on \([0,1]\), for example by
+mollifying the atoms and adding a positive background tending to zero.
+The associated polynomial Gram matrices converge to the positive
+definite matrix for \(\mu\). Let \(T_\varepsilon\in\mathcal P_{n-1}\)
+solve
+
+\[
+\int_0^1 QT_\varepsilon w_\varepsilon
+=a_1Q(1)-a_0Q(0)\quad(Q\in\mathcal P_{n-1}).
+\tag{20.9}
+\]
+
+Its coefficients converge to those of \(T\). Define
+
+\[
+W_\varepsilon(t)=a_0\frac{t^{n-1}}{(n-1)!}
++\int_0^t\frac{(t-x)^{n-1}}{(n-1)!}
+T_\varepsilon(x)w_\varepsilon(x)\,dx.
+\tag{20.10}
+\]
+
+The moments (20.9) give exactly the clamped traces through \(n-2\) at
+both ends and the two highest traces \(a_0,a_1\). The positive-weight
+Rolle argument of Section 12 applies to these functions without needing
+a stationary profile. For completeness, let
+\(z_\varepsilon=W_\varepsilon'\). Its endpoint zeros have multiplicity
+\(n-2\). If selected interior zeros have total multiplicity \(N\),
+counting a tangency twice, Rolle\textquotesingle s theorem through
+\(n-2\) derivatives gives at least \(n-2+N\) distinct zeros of
+\(W_\varepsilon^{(n-1)}\). Between consecutive zeros, the integral of
+\(w_\varepsilon T_\varepsilon\) is zero, forcing a root of
+\(T_\varepsilon\) in that open interval. The polynomial is nonzero,
+since otherwise the boundary conditions would make \(W_\varepsilon\) a
+zero polynomial despite \(a_0\ne0\). Thus \(N\le2\).
+
+The endpoint signs in (20.8) force a crossing of \(z_\varepsilon\) from
+positive to negative. Any additional zero, or an interval of zeros,
+contradicts this count and the endpoint signs. Thus \(W_\varepsilon\) is
+strictly unimodal. Weak convergence of the measures and coefficient
+convergence give uniform convergence of \(W_\varepsilon\) through
+derivative \(n-2\): the integrated kernels of these orders are
+continuous and form uniformly continuous families on the compact square.
+Passing to a subsequence of the peak locations gives the asserted weak
+unimodality of \(W\). Its nonzero endpoint monomials place the limiting
+peak in the interior. Negation handles the reversed signs. This
+approximates the linear boundary-value response; it does not assume
+continuation of the original stationary profile to finite exponents.
+
+\subsection{20.3. Separated zeros and flat
+intervals}\label{separated-zeros-and-flat-intervals}
+
+Two zeros of a continuous function are called separated if the function
+is not identically zero between them. We use the following elementary
+clamped spline count, in the form of {[}C, Lemma 2.4 and Proposition
+2.5{]}: a \(C^{d-1}\) spline of degree at most \(d\ge1\) with at most
+\(k\) interior knots and endpoint zeros of order at least \(d\) has at
+most \(k-d\) separated interior zeros, provided the endpoint zeros are
+separated.
+
+For \(d=1\), the \(k+1\) affine pieces have at most \(k+1\) separated
+zeros altogether, including the endpoints; a flat zero piece contributes
+at most one. For the induction, choose a nonzero extremum between each
+consecutive pair of separated zeros. These are derivative zeros. Any two
+consecutive chosen derivative zeros are separated, since a constant
+derivative there would be zero, contradicting the original
+function\textquotesingle s intervening zero and nonzero extremal value.
+The endpoint derivative zeros are separated from the chosen ones by the
+same reasoning. Thus \(r\) separated interior zeros give at least
+\(r+1\) for the derivative, which remains clamped of order \(d-1\).
+Induction yields \(r+1\le k-(d-1)\). This argument permits zero
+intervals and lower-degree derivative pieces.
+
+One consequence will supply strictness. Suppose that a \(C^1\) function
+\(z\) vanishes at \(0,a,b,c,1\), with \(0<a<b<c<1\), is nonzero
+somewhere between each consecutive pair, and has derivative zero at at
+least two of \(a,b,c\). Choose four nonzero extrema, one in each
+intervening interval. Together with those two tangency points, these
+give six separated interior zeros of \(z'\). Nonzero extremal values and
+the intervening zeros ensure separation of this six-point list by the
+preceding argument.
+
+We also need a flat-interval bound for the response. Put \(z=W'\) and
+\(d=n-2\), and suppose that \(z\) vanishes on an open interval. Choose a
+point in it that is not a residual knot. If \(k_-\) residual knots lie
+to its left, the polynomial identity on that interval is
+
+\[
+a_0t^d+\sum_{\xi_i<t}\alpha_i(t-\xi_i)^d=0,
+\qquad \alpha_i=\mu(\{\xi_i\})T(\xi_i).
+\tag{20.11}
+\]
+
+Since \(a_0\ne0\), this is a nonzero signed measure on \(0\) and the
+left knots annihilating all polynomials of degree at most \(d\).
+Polynomial interpolation requires at least \(d+2\) distinct support
+points, so \(k_-\ge d+1=n-1\). The analogous right-end representation
+and \(a_1\ne0\) require at least \(n-1\) right knots. A flat interval
+therefore requires at least \(2n-2\) residual knots. Zero coefficients
+only strengthen this necessary count.
+
+\subsection{20.4. Two critical points}\label{two-critical-points}
+
+For \(n=3\), Theorem 18 already excludes the configuration. Let
+\(n\ge4\) and suppose that the two critical points are \(a<b\). There
+are \(n+1\) residual knots. Set \(h=1\), so the highest response traces
+are \(1\) and \((-1)^{n+1}\). Section 20.2 makes \(W\) weakly unimodal.
+The flat-interval bound would require \(2n-2>n+1\) knots, so \(W'\) has
+no zero interval. It follows that \(W\) is strictly increasing to its
+unique peak and strictly decreasing thereafter, even though its
+derivative may vanish at isolated points on either side.
+
+Equation (20.6) gives \(W(a)=W(b)\). Thus the peak lies strictly between
+\(a\) and \(b\), and
+
+\[
+\mathbf1^{\mathsf T}J''\mathbf1
+=2\{W'(a)-W'(b)\}\ge0.
+\tag{20.12}
+\]
+
+If equality held, \(z=W'\) would vanish at both \(a\) and \(b\), as well
+as at its central sign-changing zero. The outer two zeros are
+tangencies, so \(z'(a)=z'(b)=0\); here \(z\in C^1\) because \(n\ge4\).
+The six-zero consequence in Section 20.3 would give six separated
+interior zeros of \(z'=W''\). But \(W''\) is a spline of degree \(n-3\),
+with at most \(n+1\) knots and endpoint zeros of order \(n-3\). The
+clamped count allows only
+
+\[
+(n+1)-(n-3)=4
+\tag{20.13}
+\]
+
+separated interior zeros. This contradiction makes (20.12) strictly
+positive, contrary to maximality.
+
+\subsection{20.5. Three critical points and the response
+minimum}\label{three-critical-points-and-the-response-minimum}
+
+Let \(n\ge4\) and suppose that the critical points are \(a<b<c\). Use
+\(h(t)=t-b\). There are \(n+2\) residual knots. The traces in (20.4) are
+\(a_0=-b\) and \(a_1=(1-b)(-1)^n\), giving \(W'<0\) near zero and
+\(W'>0\) near one. Section 20.2 gives weak decrease followed by weak
+increase.
+
+We first rule out every flat interval of \(W\). The knot count does this
+for \(n\ge5\). For \(n=4\), suppose a knot-free open interval has
+\(W'=0\). There must be three residual knots on each side, written
+\(x_1<x_2<x_3\) and \(x_4<x_5<x_6\). The left moment identity (20.11),
+with \(d=2\) and coefficient \(a_0=-b<0\) at zero, gives a measure on
+\(0,x_1,x_2,x_3\) annihilating \(\mathcal P_2\). Its nullspace is
+spanned by the barycentric weights
+
+\[
+\rho_j=\frac1{\prod_{\ell\ne j}(y_j-y_\ell)},
+\qquad y_0<y_1<y_2<y_3,
+\tag{20.14}
+\]
+
+which have signs \(-,+,-,+\), by interpolation of polynomials of degree
+at most two. The negative coefficient at zero fixes a positive multiple.
+Thus the three left atomic coefficients \(\alpha_i\) have signs
+\(+,-,+\).
+
+The analogous right identity is the measure
+
+\[
+a_1\delta_1-\sum_{i=4}^6\alpha_i\delta_{x_i},
+\tag{20.15}
+\]
+
+annihilating \(\mathcal P_2\). One may derive it by subtracting the left
+zero-moment identity from the endpoint moment equations (20.5)
+restricted to \(\mathcal P_2\). Here \(a_1=1-b>0\). Applying (20.14) to
+the ordered nodes \(x_4,x_5,x_6,1\) again gives a positive multiple, so
+the right \(\alpha_i\) also have signs \(+,-,+\). Since \(\mu\) is
+positive, the values of \(T\) on each of the two triples have those
+signs. This forces at least two polynomial roots within each triple,
+hence at least four distinct roots. But \(\deg T\le3\). This
+contradiction excludes a flat interval in order four without a symmetry
+assumption.
+
+Therefore \(W\) is strictly decreasing to a unique minimum \(x\) and
+strictly increasing thereafter. Suppose \(x\in[a,c]\). Formula (20.7)
+gives
+
+\[
+\mathbf h^{\mathsf T}J''\mathbf h
+=2\{(a-b)W'(a)+(c-b)W'(c)\}\ge0.
+\tag{20.16}
+\]
+
+At a maximizer \(J''\) is negative semidefinite. Thus this quadratic
+form is zero, and \(J''\mathbf h=0\). The latter implication follows,
+for example, by diagonalizing the real symmetric Hessian. The component
+identity in (20.7) then forces
+
+\[
+W'(a)=W'(b)=W'(c)=0.
+\tag{20.17}
+\]
+
+Put \(z=W'\). Its three zeros in (20.17) are separated, since there is
+no flat interval of \(W\). At most one can be the sign-changing zero at
+its unique minimum; at least two are tangencies and also zeros of
+\(z'\), because \(z\in C^1\). The six-zero consequence of Section 20.3
+gives six separated interior zeros of \(z'=W''\). Yet this clamped
+spline has degree \(n-3\) and at most \(n+2\) knots, allowing only
+\((n+2)-(n-3)=5\). The contradiction shows that \(x\) lies strictly
+outside \([a,c]\), including exclusion of its boundary points.
+
+If \(u\) is midpoint symmetric, then \(b=1/2\), \(c=1-a\), and
+reflection preserves the load under this dilation. Uniqueness of the
+best polynomial residual gives \(R_s(1-t)=(-1)^nR_s(t)\) for the nearby
+branch, so \(U_s\) and \(W\) are midpoint symmetric. The unique minimum
+of \(W\) must then be \(1/2\), contradicting the proved restriction.
+This excludes every midpoint-symmetric three-critical-point maximizer.
+For \(n=3\), Theorem 18 already excludes every such higher-count
+configuration. Theorem 22 follows. \(\square\)
+
+Combining the endpoint result with Theorems 13 and 14 leaves
+nonsymmetric three-critical-point maximizers, whose dilation-response
+minimum lies outside their outer critical points, and configurations
+with at least four critical points as the remaining higher-order
+possibilities outside the established exponent intervals. Their
+exclusion requires an additional argument; the full all-order conjecture
+is still open.
+
+\Needspace{8\baselineskip}\section{21. Remaining questions}\label{remaining-questions}
 
 The order-three case of {[}NS, Conjecture 4.14{]} is now complete at
 every exponent: Theorem 17 gives the finite-exponent identity and
@@ -4279,12 +4635,17 @@ to reusing the same pointwise argument; no higher-order action
 comparison is proved here.
 
 Theorem 20 provides the endpoint switching Hessian, including its
-discrete root weights and polynomial projection. Determining a positive
-Hessian direction for all multiple-peak candidates remains open. Theorem
-21 proves that every uniform-endpoint sharp variation constant is
-algebraic and admits an algebraic maximizing spline. It gives neither an
-explicit degree bound nor an effective stopping count for a search over
-control knots.
+discrete root weights and polynomial projection. Theorem 22 uses the
+affine response to exclude two-critical-point and midpoint-symmetric
+three-critical-point maximizers at the endpoint in every order,
+completing these exclusions over all exponents above one. A remaining
+nonsymmetric three-critical-point candidate must have its
+dilation-response minimum strictly outside the two outer critical
+points. These and higher-count candidates still require a positive
+direction or another comparison. Theorem 21 proves that every
+uniform-endpoint sharp variation constant is algebraic and admits an
+algebraic maximizing spline. It gives neither an explicit degree bound
+nor an effective stopping count for a search over control knots.
 
 Theorem 15 rules out a reduction using the same identity for arbitrary
 derivative weights. The special weights generated by an actual maximizer
@@ -4308,6 +4669,11 @@ Analysis \textbf{233} (2006), 561-\/-582.
 {[}B{]} S. Basu, \emph{Algorithms in Real Algebraic Geometry: A Survey},
 \href{https://www.math.purdue.edu/~sbasu/raag_survey2011_final.pdf}{author
 survey}, Section 1.1 and Theorem 2.1.
+
+{[}C{]} M. B. Caminati, \emph{An upper bound on the number of zeros of a
+piecewise polinomial function}, arXiv:0810.2634v1 (2008).
+\href{https://arxiv.org/abs/0810.2634}{Author preprint}, Lemma 2.4 and
+Proposition 2.5.
 
 {[}dB{]} C. de Boor, \emph{Divided Differences}, Surveys in
 Approximation Theory \textbf{1} (2005), 46-\/-69.

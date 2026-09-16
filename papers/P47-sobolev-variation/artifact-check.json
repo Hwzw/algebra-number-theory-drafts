@@ -1,14 +1,14 @@
 {
   "date": "2026-09-16",
   "author": "Henry Zweiman",
-  "revision": "1.14",
-  "pdf_pages": 56,
-  "pdf_text_characters": 140686,
+  "revision": "1.15",
+  "pdf_pages": 60,
+  "pdf_text_characters": 154010,
   "replacement_characters": 0,
-  "equation_tags": 204,
+  "equation_tags": 221,
   "equation_tags_expected": true,
   "all_tags_found_in_pdf": true,
-  "mathjax_expressions": 2032,
+  "mathjax_expressions": 2223,
   "mathjax_errors": 0,
   "tex_warnings": [],
   "visual_review": {
@@ -68,15 +68,19 @@
       53,
       54,
       55,
-      56
+      56,
+      57,
+      58,
+      59,
+      60
     ],
     "resolution_dpi": 108,
-    "outcome": "All final 56 pages were rendered at 108 dpi and inspected in fourteen contact sheets. The new proof on pages 52, 53 and 54 was additionally inspected at full rendering size. No clipping, overlap or missing glyphs was observed. The Hessian formula, implicit-function argument, algebraicity proof, revised frontier and references are legible."
+    "outcome": "All final 60 pages were rendered at 108 dpi and inspected in fifteen contact sheets. The new affine-response proof, separated-zero argument, order-four sign count and Hessian-kernel argument on pages 55-58 were additionally inspected at full rendering size. No clipping, overlap or missing glyphs was observed. The new theorem, revised frontier and references are legible."
   },
   "proof_status": "Artifact integrity only; not independent mathematical certification",
   "hashes": {
-    "manuscript.md": "45f47e2282027fbcaf44f7f686801484a10391cdecbca49db3691092658a7f3c",
-    "manuscript.tex": "77bde51a4ff27030d30d56a37e35d6486a85d3f50473e66dca35ddf101b3d1ac",
-    "manuscript.pdf": "d3eea7ab8f68a26463d7d57cd022396e74ed8ad4a5267dc2340ba33c71c89f0a"
+    "manuscript.md": "3e419c3b6115e80b4721a0d8cd87b9ea2619f209108a4a6c1df6fd0f427655e4",
+    "manuscript.tex": "74a843ac839743bd3fb6a89d3655214cf61d6b9dc90cc8b1060724c821287444",
+    "manuscript.pdf": "18fac3a60102497beb976efb648e97c11c502d3a1a6bd6810b5e5d2eaba2ad2f"
   }
 }

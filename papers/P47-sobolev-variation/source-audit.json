@@ -277,5 +277,15 @@
     "proof_status": "Internal originating-assistant proof audit; no independent expert verification",
     "priority": "Bounded search only; no exhaustive certification",
     "remaining": "General n>=4 variation conjecture and effective endpoint control-count bound"
+  },
+  "revision_1_15": {
+    "date": "2026-09-16",
+    "results": "Revision 1.15 excludes every two-critical-point endpoint variation maximizer and every midpoint-symmetric three-critical-point endpoint maximizer in n>=3. Theorem 22 constructs an atomic affine response, approximates its boundary moment problem by positive densities, and uses a separated-zero count to obtain strict second variation. An elementary knot count treats flat response intervals; barycentric signs at both ends settle the exceptional order-four flat case without symmetry. The full nonsymmetric three-point response-location condition extends to the endpoint. Together with the finite-exponent results, these exclusions now hold for every 1<p<=infinity. The general higher-order conjecture remains open.",
+    "dependency": "Caminati arXiv:0810.2634v1, Lemma 2.4 and Proposition 2.5; relevant definitions and proof read on PDF pages 1-4 and the needed induction reproduced",
+    "source_provenance": "endpoint-exclusion-audit/source-receipt.json in the local research workspace",
+    "NS_refresh": "Final Conjecture 4.14 and surrounding scope rechecked September 16, 2026",
+    "priority": "Bounded search only; no exhaustive priority certification",
+    "review": "Originating-assistant 17-point proof audit, not independent expert verification",
+    "remaining": "General higher-order conjecture; nonsymmetric three-critical-point and higher-count configurations"
   }
 }
