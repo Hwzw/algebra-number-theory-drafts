@@ -57,3 +57,7 @@ The original four identities and three classification identities are now checked
 ## Classification extension audit
 
 Lemma 8.1 treats $E_\infty>0$ using bounded spacing and divergent harmonic energy loss; it treats $E_\infty=0$ using $H=r^2E$, with bounded outer-arc durations and a fixed negative-$F$ segment in each lobe. These two cases exhaust the possibilities under infinitely many zeros. Lemma 8.2 uses a coefficient bounded below by a positive constant after negative-energy trapping. The Riccati argument for the final logarithmic derivative uses finite-time blow-up to bound $-u'/u<2$, then barriers at $1\pm\delta$. These additions were checked by the originating assistant; independent review remains absent.
+
+## Post-publication correction
+
+Version 0.2.1 restricts $P_k$ to $N_k$ in Section 7. Without that restriction the displayed partition at $k=0$ included extra central values below or equal to $\beta$. The correction restores the literal set equality used by the interval argument. See the [revision history](CHANGELOG.md). This additional check was performed by the originating assistant.

@@ -1,6 +1,6 @@
 # A planar comparison argument for radial bound states
 
-Research draft prepared for Henry Zweiman · September 17, 2026 · P55 · Version 0.2
+Research draft prepared for Henry Zweiman · September 17, 2026 · P55 · Version 0.2.1
 
 **Unreviewed proof reconstruction. Independent mathematical review pending. No first-proof claim.**
 
@@ -13,7 +13,7 @@ The manuscript gives a candidate shooting proof of uniqueness and classification
 - [Focused expert review brief](expert-review-brief.md)
 - [Primary-source retrieval metadata](source-audit.json)
 - [Artifact checks](checks/artifact-qa.json), [algebra check](checks/check_identities.py), and [file hashes](SHA256SUMS.txt)
-- [Citation metadata](CITATION.cff)
+- [Citation metadata](CITATION.cff) and [revision history](CHANGELOG.md)
 
 Markdown is authoritative. With Pandoc and Tectonic on PATH, run `python3 build.py` in this folder. With Python and SymPy, run `python3 checks/check_identities.py`; it verifies seven algebraic identities, not the comparison theorem.
 

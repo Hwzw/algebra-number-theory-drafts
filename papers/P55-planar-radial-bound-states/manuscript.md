@@ -290,7 +290,7 @@ Now compare $\alpha_1<\alpha_*$ with $\alpha_2=\alpha_*$. If the first shot cont
 
 ## 7. The interval argument and existence
 
-Set $N_0=(\beta,\infty)$ and, for $j\geq1$, let $N_j$ be the set of central values whose shots have at least $j$ nodes. Define $G_k$ to be the set giving a $k$-node bound state and $P_k$ to be the set giving exactly $k$ nodes together with a finite negative-energy witness. Lemma 2.1 gives the disjoint partition
+Set $N_0=(\beta,\infty)$ and, for $j\geq1$, let $N_j$ be the set of central values whose shots have at least $j$ nodes. Define $G_k$ to be the set giving a $k$-node bound state and $P_k$ to be the set of $\alpha\in N_k$ giving exactly $k$ nodes together with a finite negative-energy witness. Lemma 2.1 gives the disjoint partition
 
 $$N_k=N_{k+1}\;\dot\cup\;G_k\;\dot\cup\;P_k. \tag{7.1}$$
 

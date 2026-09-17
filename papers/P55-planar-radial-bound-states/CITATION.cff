@@ -6,6 +6,6 @@ authors:
   - family-names: Zweiman
     given-names: Henry
 date-released: 2026-09-17
-version: 0.2.0
+version: 0.2.1
 url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P55-planar-radial-bound-states"
 abstract: "AI-generated working proof reconstruction prepared for Henry Zweiman. Independent expert review pending. Prior whole-plane and planar-extension claims are explicitly credited."
