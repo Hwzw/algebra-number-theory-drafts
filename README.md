@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 54 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 55 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## A planar comparison argument for radial bound states
+
+[**P55: A planar comparison argument for radial bound states**](papers/P55-planar-radial-bound-states/README.md), prepared for **Henry Zweiman**, presents a candidate proof reconstruction for planar radial bound-state uniqueness and shooting classification for all powers $p>1$ and node counts. The [12-page PDF](papers/P55-planar-radial-bound-states/manuscript.pdf), [complete Markdown](papers/P55-planar-radial-bound-states/manuscript.md), and [LaTeX](papers/P55-planar-radial-bound-states/manuscript.tex) include common-level initialization and an explicit gap at the infinite endpoint.
+
+**Independent PDE review is pending; no first-proof claim is made.** The [assessment](papers/P55-planar-radial-bound-states/ASSESSMENT.md) credits the prior 2011 theorem and Zhang–Zhang's 2026 planar claim. The [self-audit](papers/P55-planar-radial-bound-states/REVIEW.md) and [expert brief](papers/P55-planar-radial-bound-states/expert-review-brief.md) identify the points requiring scrutiny. This archive entry does not certify a new original theorem.
 
 ## A spherical Weinstock inequality at large perimeter
 

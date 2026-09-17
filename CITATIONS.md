@@ -30,3 +30,7 @@ Henry Zweiman. *Endpoint saddles and the local classification of eigenvalue–to
 ## P54
 
 Henry Zweiman. *A spherical Weinstock inequality at large perimeter*. Version 1.0, September 16, 2026. AI-assisted unreviewed preprint. [Manuscript and citation metadata](papers/P54-spherical-steklov-large-perimeter/README.md).
+
+## P55
+
+*A planar comparison argument for radial bound states*. Research draft prepared for Henry Zweiman. Version 0.2, September 17, 2026. AI-generated, unreviewed proof reconstruction; no first-proof claim. [Manuscript and citation metadata](papers/P55-planar-radial-bound-states/README.md).

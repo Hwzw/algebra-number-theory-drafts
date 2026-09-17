@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-17",
+  "source_folder": "research_program/continuation/drafts/Q66-tang-plane",
+  "archive_id": "P55",
+  "version": "0.2.0",
+  "manuscript_copied_without_changes": true,
+  "source_hashes": {
+    "manuscript.md": "72edc57979bba643dd55c30c34e08d6140fe26f3e3143abc6cec54ea14d32b18",
+    "manuscript.tex": "e22721c14b98fc360d408cd6dd489a5064cb2c11fef6d4751b5e7996fc42cbfa",
+    "manuscript.pdf": "059188d13eba170768b320eedc24d78a88e227d1b71430cf18dfbfb53043ec23",
+    "build.py": "442026ec271d3933084f3ad8c5cca8c9c85ebebe909b71c00fa8e2aa22d4998f",
+    "checks/check_identities.py": "94c5031781d395f6bb6e9b0514eb07875815d25983f98ef45366fdbd08a4198c"
+  },
+  "independent_review": false,
+  "first_proof_claim": false,
+  "qualifying_new_theorem_admitted": false
+}

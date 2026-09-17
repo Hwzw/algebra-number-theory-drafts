@@ -1,0 +1,153 @@
+{
+  "retrieved_date": "2026-09-17",
+  "note": "Primary-source research copies; not redistributable manuscript deliverables. Extracted HTML math uses TeX alttext.",
+  "files": [
+    {
+      "file": "cgy-2011-published.pdf",
+      "url": "https://www.numdam.org/article/AIHPC_2011__28_4_599_0.pdf",
+      "sha256": "314a2e559506523f2d137c16955ccbd40263392fe375da9540c6d02e219ab35a",
+      "bytes": 260908,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "cgy-2011-published.txt",
+      "url": "https://www.numdam.org/article/AIHPC_2011__28_4_599_0.pdf",
+      "sha256": "3d8766e090ae2caf74f23fdbe194b62aeaa82a56a94622ac8a1d5259c8f03af6",
+      "bytes": 54822,
+      "kind": "extracted text"
+    },
+    {
+      "file": "cgy-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.anihpc.2011.04.002",
+      "sha256": "ddc9097dced38d360e4361be69db5a49b7f6522723beee735ad9c95ece11bd4d",
+      "bytes": 13944,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "cgy-existence-v2.html",
+      "url": "https://arxiv.org/html/1208.0017v2",
+      "sha256": "af9e6e47ae8cd281c1115b2e2a8a50f690ac22793dbb7bee71b4340026682ad9",
+      "bytes": 665957,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "cgy-existence-v2.txt",
+      "url": "https://arxiv.org/html/1208.0017v2",
+      "sha256": "21406f668a2fcbcb27d6ac3e5184c42fb20bc97bc84ce35cf36984efb46fb9cd",
+      "bytes": 53722,
+      "kind": "extracted text"
+    },
+    {
+      "file": "cgy-preprint.html",
+      "url": "https://arxiv.org/html/1001.4729v1",
+      "sha256": "9e3f5cb90623d12169e11cea4f3def2d1cc8cf684ea88aecb2bbb9686f20b931",
+      "bytes": 805548,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "cgy-preprint.txt",
+      "url": "https://arxiv.org/html/1001.4729v1",
+      "sha256": "faa0372c9f5befc8acaa09b67b5bd0ec7dae0de8400226f4d4a54ae9d03666b1",
+      "bytes": 61878,
+      "kind": "extracted text"
+    },
+    {
+      "file": "cgy-weights-v2.html",
+      "url": "https://arxiv.org/html/1809.07711v2",
+      "sha256": "14a5df3fed22fac5f1c715852fdbd541e946b3c98d333c6e0a7d1a9796849cbe",
+      "bytes": 970220,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "cgy-weights-v2.txt",
+      "url": "https://arxiv.org/html/1809.07711v2",
+      "sha256": "b5df0e64d34dcc7563e249d993803ab664f942687023ddba8a1853590012af09",
+      "bytes": 69107,
+      "kind": "extracted text"
+    },
+    {
+      "file": "logarithmic-v1.html",
+      "url": "https://arxiv.org/html/2606.19077v1",
+      "sha256": "1481ffa6b1012f770df8f74f146ca62b7d176963e1e87a74a35c66ad810bfba8",
+      "bytes": 1376464,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "logarithmic-v1.txt",
+      "url": "https://arxiv.org/html/2606.19077v1",
+      "sha256": "15eb6db0a310551905baa7ea4726474de39581d68b729584d9a32e6b8c19c421",
+      "bytes": 111397,
+      "kind": "extracted text"
+    },
+    {
+      "file": "sublinear-history.html",
+      "url": "https://arxiv.org/abs/2606.17840",
+      "sha256": "e23465db1d1d35b38c6401b1faca8b682bedd844431d008fc98e0fe23a0d29e2",
+      "bytes": 40045,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "sublinear-history.txt",
+      "url": "https://arxiv.org/abs/2606.17840",
+      "sha256": "2581174d374619faf56bcdb34c43a123321f2a648ec96203517c789bc6a15bc4",
+      "bytes": 4286,
+      "kind": "extracted text"
+    },
+    {
+      "file": "sublinear-v1-section6.txt",
+      "url": "https://arxiv.org/html/2606.17840v1#S6",
+      "sha256": "8a637170c7856ab23ca5c6451e4af2e2a266886db207bd238364bdf483fa3d7b",
+      "bytes": 6888,
+      "kind": "extracted text"
+    },
+    {
+      "file": "sublinear-v1.html",
+      "url": "https://arxiv.org/html/2606.17840v1",
+      "sha256": "d9331b917a07007529203623a613daa7d0b7be2bfdbad3d3ffb93a031d6144cf",
+      "bytes": 1513593,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "sublinear-v1.txt",
+      "url": "https://arxiv.org/html/2606.17840v1",
+      "sha256": "17a5896ea057e6f4deeaf95aebc4be444d32bd6db3c73d59f845c0d524894efb",
+      "bytes": 123146,
+      "kind": "extracted text"
+    },
+    {
+      "file": "sublinear-v2-section6.txt",
+      "url": "https://arxiv.org/html/2606.17840v2#S6",
+      "sha256": "8a637170c7856ab23ca5c6451e4af2e2a266886db207bd238364bdf483fa3d7b",
+      "bytes": 6888,
+      "kind": "extracted text"
+    },
+    {
+      "file": "sublinear-v2.html",
+      "url": "https://arxiv.org/html/2606.17840v2",
+      "sha256": "215d4bf164dc6d9028593e586eec3f1781f287a5f3a2d5c1f4e08f78ae36fdd6",
+      "bytes": 1510306,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "sublinear-v2.txt",
+      "url": "https://arxiv.org/html/2606.17840v2",
+      "sha256": "424945f4b0225d01688af37e897675c339fb28303226fe2b7b53277705ffbb8a",
+      "bytes": 129785,
+      "kind": "extracted text"
+    },
+    {
+      "file": "tang-v2.html",
+      "url": "https://arxiv.org/html/2409.06915v2",
+      "sha256": "3fd675a1a9675deb7460a382f6eec759eb7b8a65b9f587785da9985b22794f25",
+      "bytes": 2465617,
+      "kind": "retrieved source"
+    },
+    {
+      "file": "tang-v2.txt",
+      "url": "https://arxiv.org/html/2409.06915v2",
+      "sha256": "d0bf3fc486700e106e629cb0b48bd165544e8e2394f78eb5471cdf5fa583d191",
+      "bytes": 142352,
+      "kind": "extracted text"
+    }
+  ]
+}
