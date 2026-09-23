@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 55 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 56 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Negative real zeros of a rising-factorial transform
+
+[**P56: Negative real zeros of a rising-factorial transform**](papers/P56-karp-rising-factorial-zeros/README.md), by **Henry Zweiman**, proves the coefficient-pairing assertion for rising factorials and the positive-endpoint form of Karp's 2012 Conjecture 3. The [complete proof](papers/P56-karp-rising-factorial-zeros/manuscript.md), [PDF](papers/P56-karp-rising-factorial-zeros/manuscript.pdf), and [LaTeX](papers/P56-karp-rising-factorial-zeros/manuscript.tex) derive the factorial-transform lemma by interlacing and account explicitly for Karp's binomial coefficient. Zero endpoints are treated separately, with a nonpositive-root limit theorem and a boundary example.
+
+The [scope assessment](papers/P56-karp-rising-factorial-zeros/ASSESSMENT.md), [proof audit](papers/P56-karp-rising-factorial-zeros/REVIEW.md), and [exact checks](papers/P56-karp-rising-factorial-zeros/checks/verify.py) document the argument. This is an AI-assisted research preprint, not independently reviewed; no priority determination is claimed.
 
 ## A planar comparison argument for radial bound states
 

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this research preprint using the metadata below."
+type: manuscript
+title: "Negative real zeros of a rising-factorial transform"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+version: "1.0"
+date-released: 2026-09-22
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P56-karp-rising-factorial-zeros"
+repository-code: "https://github.com/Hwzw/algebra-number-theory-drafts"
+abstract: "A reciprocal-pair reduction and an interlacing lemma prove negative real zeros for a rising-factorial transform and the positive-endpoint form of Karp's Conjecture 3. Prepared with OpenAI Codex; not peer reviewed."

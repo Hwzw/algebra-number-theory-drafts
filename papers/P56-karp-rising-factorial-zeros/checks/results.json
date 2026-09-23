@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "arithmetic": "exact symbolic identities and rational real-root isolation",
+  "sympy_version": "1.14.0",
+  "checks": {
+    "difference_identities": 9,
+    "basis_recurrences": 56,
+    "gamma_factorizations": 9,
+    "coefficient_pairing_cases": 16,
+    "karp_cases": 16,
+    "factorial_transform_cases": 6,
+    "boundary_cases": 2
+  },
+  "scope": "Finite supporting checks; the all-degree proof is in manuscript.md."
+}
