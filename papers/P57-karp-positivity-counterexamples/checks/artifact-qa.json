@@ -1,0 +1,13 @@
+{
+  "pdf": "manuscript.pdf",
+  "pages": 9,
+  "author": "Henry Zweiman",
+  "all_pages_visually_reviewed": true,
+  "rendering": "Poppler PNG, final pages 1-9",
+  "clipping_or_overlap_observed": false,
+  "latex_warnings": [],
+  "exact_checks_passed": true,
+  "independent_human_review": false,
+  "historical_priority_established": false,
+  "pdf_sha256": "b1d43992d155432326b0c1ee7a26a5dfe4e79cffa13dec7107446b2db1e189b3"
+}

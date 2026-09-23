@@ -4,9 +4,15 @@
 
 **AI-generated mathematical research drafts. Not peer reviewed or independently verified by human experts. Corrections and prior-art references welcome.**
 
-This public collection contains 56 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
+This public collection contains 57 distinct manuscripts, each with its PDF, LaTeX source, and available supporting checks. These are proposed mathematical results, not certified solutions of open problems. Internal checks by other AI agents do not establish correctness, novelty, significance, or publication readiness.
 
 The material was prepared with OpenAI Codex and collaborating AI agents, including problem selection, proof construction, literature searches, computations, and writing. No human expert verification or journal acceptance is claimed. Hosting these files makes them accessible and citable; it is not an endorsement of their conclusions.
+
+## Positivity and counterexamples for rising-factorial Toeplitz determinants
+
+[**P57: Positivity and counterexamples for rising-factorial Toeplitz determinants**](papers/P57-karp-positivity-counterexamples/README.md), by **Henry Zweiman**, addresses the remaining conjectures in Karp's 2012 paper. It proves Conjecture 1, gives exact counterexamples to Conjectures 2, 5, and 6, and proves a corrected coefficient-positivity theorem with precise nondegeneracy conditions for Conjecture 4. This is a separate paper from P56.
+
+The [complete manuscript](papers/P57-karp-positivity-counterexamples/manuscript.md), [nine-page PDF](papers/P57-karp-positivity-counterexamples/manuscript.pdf), [LaTeX](papers/P57-karp-positivity-counterexamples/manuscript.tex), and [exact verification](papers/P57-karp-positivity-counterexamples/checks/verify.py) include the proofs and integer-arithmetic certificates. The [literature assessment](papers/P57-karp-positivity-counterexamples/LITERATURE.md) distinguishes the arguments from Karp's special-case proof and leaves historical priority unverified. Prepared with OpenAI Codex; not peer reviewed.
 
 ## Negative real zeros of a rising-factorial transform
 

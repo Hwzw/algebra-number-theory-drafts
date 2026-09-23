@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite the manuscript; it is a research preprint, not peer reviewed."
+title: "Positivity and counterexamples for rising-factorial Toeplitz determinants"
+authors:
+  - family-names: Zweiman
+    given-names: Henry
+version: 1.0
+date-released: 2026-09-22
+type: unpublished
+abstract: "A proof of Karp's coefficient-positivity Conjecture 1, a general Toeplitz-minor expansion with exact nondegeneracy conditions, and exact counterexamples to Conjectures 2, 5, and 6."
+url: "https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P57-karp-positivity-counterexamples"

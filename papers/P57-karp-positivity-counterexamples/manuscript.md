@@ -1,0 +1,470 @@
+# Positivity and counterexamples for rising-factorial Toeplitz determinants
+
+Henry Zweiman
+
+September 22, 2026
+
+Research preprint, version 1.0. Prepared with OpenAI Codex; not peer reviewed.
+
+## Abstract
+
+We examine the conjectures other than Conjecture 3 in Karp's 2012 paper on rising-factorial Toeplitz determinants. A positive expansion in two-row Toeplitz minors proves Conjecture 1 for all positive shift parameters. A finite-difference and Cauchy--Binet formula proves coefficient nonnegativity for arbitrary determinant order under the corresponding Polya frequency hypothesis, with exact criteria for nonvanishing, degree, and strict positivity. It also identifies the degeneracies excluded by a corrected form of Conjecture 4. The stability assertions in Conjectures 2 and 5 are false: a positive strictly log-concave sequence of length nineteen gives a negative Hurwitz determinant. Conjecture 6 is false even for the binomial sequence of degree eleven; an order-three determinant has a cubic factor with negative discriminant. All counterexamples have exact algebraic certificates. This is a separate manuscript from the author's paper on Conjecture 3.
+
+## 1. Definitions and results
+
+Write $(x)_0=1$ and $(x)_k=x(x+1)\cdots(x+k-1)$ for $k\ge1$. Let $f=(f_0,f_1,\ldots)$ be a nonnegative sequence, and work with formal power series
+
+$$
+\Phi_f(x,z)=\sum_{k\ge0} f_k(x)_k\frac{z^k}{k!}.
+\tag{1}
+$$
+
+Only $f_0,\ldots,f_n$ affect any coefficient of $z^n$ below. A finite input is extended by zero. Following the explicit multinomial definition in [K12], we use the normalization
+
+$$
+\begin{aligned}
+Q_n^{\alpha,\beta}(x)
+&=n![z^n]\bigl(\Phi_f(x+\alpha,z)\Phi_f(x+\beta,z)\\
+&\hspace{37mm}-\Phi_f(x+\alpha+\beta,z)\Phi_f(x,z)\bigr),\\
+P_n^r(x)&=n![z^n]\det\bigl[\Phi_f(x+j-i,z)\bigr]_{i,j=0}^{r-1}.
+\end{aligned}
+\tag{2}
+$$
+
+Thus $P_n^2(x)=Q_n^{1,1}(x-1)$. Multiplication of either definition by a positive normalization constant has no effect on the assertions about zeros or coefficient signs.
+
+A sequence is $PF_r$ if every minor of order at most $r$ of its Toeplitz matrix $[f_{j-i}]_{i,j\ge0}$ is nonnegative, where $f_k=0$ for $k<0$. The notation $PF_\infty$ requires this in every order. In particular, $PF_2$ is equivalent to log-concavity with no internal zeros. Hurwitz stability means that every zero has strictly negative real part. The zero polynomial is treated separately throughout.
+
+The disposition of the remaining conjectures is as follows.
+
+- **Conjecture 1:** proved for every $\alpha,\beta>0$ in Theorem 1.
+- **Conjecture 2:** disproved by the strictly log-concave positive input (15), with $\alpha=\beta=1$.
+- **Conjecture 4:** the unconditional degree and strict-positivity assertion fails for degenerate inputs. Theorem 2 proves coefficient nonnegativity and gives necessary and sufficient minor conditions for the asserted degree and strict positivity.
+- **Conjecture 5:** disproved already for $r=2$ by the same positive input (15).
+- **Conjecture 6:** disproved for $r=3$, $n=11$, and $f_k=\binom{11}{k}$.
+
+The numbers in this list refer to [K12]. These are dispositions of the stated assertions, not a claim that all of them are true. Section 6 explains the separate scope of Conjecture 3. No historical priority or exhaustive literature determination is asserted.
+
+## 2. Arbitrary positive shifts: proof of Conjecture 1
+
+For $j\ge0$, define the shifted series
+
+$$
+G_j(x,z)=\sum_{a\ge0}f_{a+j}(x)_a\frac{z^a}{a!}.
+$$
+
+**Theorem 1.** Suppose $f_0,\ldots,f_n$ is nonnegative, log-concave, and has no internal zeros, and $\alpha,\beta>0$. Then $Q_n^{\alpha,\beta}$ has nonnegative coefficients and degree at most $n-2$ when nonzero. If $n\ge3$ and
+
+$$
+f_k^2>f_{k-1}f_{k+1}\qquad(1\le k<n),
+\tag{3}
+$$
+
+then its degree is exactly $n-2$, and every coefficient in degrees $0,\ldots,n-2$ is strictly positive.
+
+**Proof.** The rising-factorial Vandermonde identity gives
+
+$$
+\Phi_f(x+\alpha,z)=\sum_{j\ge0}\frac{(\alpha)_jz^j}{j!}G_j(x,z).
+$$
+
+Expanding the first shift in the two products defining $Q$ therefore gives
+
+$$
+\begin{aligned}
+&\Phi_f(x+\alpha,z)\Phi_f(x+\beta,z)
+-\Phi_f(x+\alpha+\beta,z)\Phi_f(x,z)\\
+&\quad=\sum_{j\ge1}\frac{(\alpha)_jz^j}{j!}
+\bigl(G_j(x,z)G_0(x+\beta,z)
+-G_j(x+\beta,z)G_0(x,z)\bigr).
+\end{aligned}
+$$
+
+Pair the summands with indices $(a,b)$ and $(b,a)$ in the last product difference. Set
+
+$$
+\begin{aligned}
+M_{a,b}^{(j)}&=f_{a+j}f_b-f_af_{b+j},\\
+B_{a,b}^{\beta}(x)&=(x)_a(x+\beta)_a
+\bigl((x+a+\beta)_{b-a}-(x+a)_{b-a}\bigr).
+\end{aligned}
+$$
+
+We obtain the exact finite identity
+
+$$
+Q_n^{\alpha,\beta}(x)=
+\sum_{\substack{j\ge1,\ 0\le a<b\\a+b+j=n}}
+\frac{n!(\alpha)_j}{j!a!b!}
+M_{a,b}^{(j)}B_{a,b}^{\beta}(x).
+\tag{4}
+$$
+
+Every $M_{a,b}^{(j)}$ is nonnegative. Indeed, if $f_af_{b+j}=0$, this is immediate. Otherwise all intermediate terms are positive, and the nonincreasing successive ratios of a log-concave sequence give
+
+$$
+\frac{f_{a+j}}{f_a}
+=\prod_{t=1}^j\frac{f_{a+t}}{f_{a+t-1}}
+\ \ge\ \prod_{t=1}^j\frac{f_{b+t}}{f_{b+t-1}}
+=\frac{f_{b+j}}{f_b}.
+$$
+
+Equivalently, $M_{a,b}^{(j)}$ is the Toeplitz minor with row indices $0,j$ and column indices $a+j,b+j$.
+
+The polynomial $B_{a,b}^{\beta}$ has nonnegative coefficients. To see this, put $d=b-a\ge1$. Each factor in $(x+a+\beta)_d$ has a strictly larger nonnegative constant term than the corresponding factor in $(x+a)_d$. Their difference has strictly positive coefficients in every degree $0,\ldots,d-1$, and its leading degree-$d$ coefficient cancels. One may also use the telescoping product identity
+
+$$
+\begin{aligned}
+&\prod_{t=0}^{d-1}(x+a+\beta+t)-\prod_{t=0}^{d-1}(x+a+t)\\
+&\quad=\beta\sum_{u=0}^{d-1}
+\prod_{t=0}^{u-1}(x+a+\beta+t)\prod_{t=u+1}^{d-1}(x+a+t).
+\end{aligned}
+\tag{5}
+$$
+
+Multiplication by $(x)_a(x+\beta)_a$ preserves coefficient nonnegativity. Moreover,
+
+$$
+\deg B_{a,b}^{\beta}=a+b-1=n-j-1\le n-2.
+$$
+
+This proves the first assertion.
+
+Under (3), all interior terms $f_1,\ldots,f_{n-1}$ are positive. If both endpoints are positive, strictly decreasing successive ratios imply $f_1/f_0>f_n/f_{n-1}$. If an endpoint is zero, the same strict inequality after cross multiplication is immediate. Consequently
+
+$$
+M_{0,n-1}^{(1)}=f_1f_{n-1}-f_0f_n>0.
+$$
+
+The corresponding term of (4) is
+
+$$
+n\alpha\bigl(f_1f_{n-1}-f_0f_n\bigr)
+\bigl((x+\beta)_{n-1}-(x)_{n-1}\bigr).
+\tag{6}
+$$
+
+It has a strictly positive coefficient in every degree $0,\ldots,n-2$. Every other term has nonnegative coefficients. The conclusion follows. $\square$
+
+The proof does not infer coefficient positivity from stability. Section 4 shows that the proposed stability implication is false.
+
+## 3. Higher determinants: an expansion in Toeplitz minors
+
+Fix $r\ge2$ and put $R=\binom r2$. For a strictly increasing tuple of nonnegative integers $\ell=(\ell_0,\ldots,\ell_{r-1})$, write
+
+$$
+\begin{aligned}
+V(\ell)&=\prod_{0\le i<j<r}(\ell_j-\ell_i),\\
+M_f(\ell)&=\det[f_{\ell_j+r-1-i}]_{i,j=0}^{r-1},\\
+B_\ell(x)&=\prod_{j=0}^{r-1}(x+j)_{\ell_j-j}.
+\end{aligned}
+\tag{7}
+$$
+
+The last formula is a polynomial because $\ell_j\ge j$. The matrix defining $M_f$ is a Toeplitz submatrix with rows $0,\ldots,r-1$ and columns $\ell_0+r-1,\ldots,\ell_{r-1}+r-1$.
+
+**Theorem 2.** For every input sequence and every $n\ge0$,
+
+$$
+P_n^r(x)=n!\sum_{\substack{0\le\ell_0<\cdots<\ell_{r-1}\\
+\ell_0+\cdots+\ell_{r-1}=n-R}}
+\frac{V(\ell)}{\prod_{j=0}^{r-1}\ell_j!}
+M_f(\ell)B_\ell(x).
+\tag{8}
+$$
+
+An empty sum is zero. In particular, $P_n^r=0$ if $n<r(r-1)$.
+
+Suppose now that $f$ is $PF_r$, let $n\ge r(r-1)$, and put $d=n-r(r-1)$.
+
+1. Every coefficient of $P_n^r$ is nonnegative.
+2. The output is nonzero if and only if some minor $M_f(\ell)$ in (8) is positive. In that case its degree is exactly $d$.
+3. Every coefficient in degrees $0,\ldots,d$ is strictly positive if and only if some contributing tuple with $\ell_0=0$ has $M_f(\ell)>0$.
+4. If the output is nonzero and the condition in part 3 fails, then $d\ge1$, its constant coefficient is zero, and all its coefficients in degrees $1,\ldots,d$ are strictly positive. Its zero at the origin is simple.
+
+**Proof of the identity.** Let $\Delta H(x)=H(x+1)-H(x)$. Applying successive finite differences to the columns and then to the rows of the matrix in (2) uses triangular operations with diagonal entries one. The resulting entry in position $(i,j)$ is
+
+$$
+(-1)^i\Delta^{i+j}\Phi_f(x-i,z)
+=(-1)^iz^{i+j}\sum_{k\ge0}
+f_{k+i+j}(x+j)_k\frac{z^k}{k!}.
+$$
+
+Here we used $\Delta^q(x)_k=k!\,(x+q)_{k-q}/(k-q)!$ for $k\ge q$, and zero otherwise. Taking the row and column factors out of the determinant gives
+
+$$
+\det[\Phi_f(x+j-i,z)]
+=(-1)^Rz^{2R}\det[H_{ij}(x,z)],
+\tag{9}
+$$
+
+where
+
+$$
+H_{ij}(x,z)=\sum_{\ell\ge j}
+f_{i+\ell}(x+j)_{\ell-j}\frac{z^{\ell-j}}{(\ell-j)!}.
+$$
+
+Factor this matrix as $H=AB$, with
+
+$$
+A_{i\ell}=f_{i+\ell},\qquad
+B_{\ell j}=\begin{cases}
+(x+j)_{\ell-j}z^{\ell-j}/(\ell-j)!,&\ell\ge j,\\
+0,&\ell<j.
+\end{cases}
+$$
+
+Cauchy--Binet applies coefficient by coefficient: truncating the intermediate index makes the sum finite, and each fixed coefficient stabilizes. For an increasing tuple $\ell$, reversing the rows of its $A$ minor gives
+
+$$
+\det[f_{i+\ell_j}]_{i,j=0}^{r-1}=(-1)^R M_f(\ell).
+$$
+
+For generic $x$ and nonzero $z$, its $B$ minor can be evaluated by factoring its rows and columns:
+
+$$
+\det[B_{\ell_i,j}]_{i,j=0}^{r-1}
+=z^{\sum_i\ell_i-R}
+\frac{\prod_i(x)_{\ell_i}}{\prod_j(x)_j\prod_i\ell_i!}
+\det[\ell_i^{\underline j}]_{i,j=0}^{r-1}.
+$$
+
+Since the falling-factorial polynomials $u^{\underline j}$ are monic of successive degrees, their determinant is $V(\ell)$. Also
+
+$$
+\frac{\prod_i(x)_{\ell_i}}{\prod_j(x)_j}
+=\prod_{j=0}^{r-1}(x+j)_{\ell_j-j}=B_\ell(x).
+$$
+
+These identities extend polynomially to all $x$. Substitution into (9) cancels the two signs $(-1)^R$ and gives powers $z^{\sum_i\ell_i+R}$. Extracting $n![z^n]$ proves (8).
+
+**Proof of the positivity statements.** Under $PF_r$, all $M_f(\ell)\ge0$. Every other scalar in (8) is positive. Each $B_\ell$ is monic, has nonnegative coefficients, and has degree
+
+$$
+\sum_j(\ell_j-j)=n-2R=d.
+$$
+
+Thus a positive minor gives a strictly positive leading coefficient, while vanishing of all the minors gives the zero polynomial. This proves parts 1 and 2.
+
+If $\ell_0=0$, every linear factor in $B_\ell$ has positive constant term, so all coefficients through its degree are positive. If $\ell_0>0$, exactly one linear factor is $x$, and every other linear factor has positive constant term. Such a summand has zero constant coefficient and strictly positive coefficients in degrees $1,\ldots,d$. The nonnegative weights in (8) now prove parts 3 and 4. $\square$
+
+**Corollary 3 (fixed integer zeros).** If $d=n-r(r-1)>0$, then every $P_n^r$, with no positivity assumption, is divisible by
+
+$$
+(x+r-1)_{\lceil d/r\rceil}.
+\tag{10}
+$$
+
+**Proof.** The integers $q_j=\ell_j-j$ in each summand are nonnegative and nondecreasing, and sum to $d$. Hence $q_{r-1}\ge\lceil d/r\rceil$. The last factor in $B_\ell$ supplies (10). $\square$
+
+### 3.1. The necessary qualification to Conjecture 4
+
+The nonstrict $PF_r$ hypothesis alone does not force the asserted degree or strict coefficient positivity. For example, take $r=2$ and $f_k=1$ for $0\le k\le n$, with zero continuation. This sequence is $PF_2$ and has positive endpoints, but Vandermonde's identity gives
+
+$$
+P_n^2(x)=(2x)_n-(2x)_n=0.
+\tag{11}
+$$
+
+Even nonzero outputs need not have positive constant coefficient. For $n=4$, the $PF_\infty$ sequence $(1,2,1,0,0)$ gives
+
+$$
+P_4^2(x)=12x(x+1).
+\tag{12}
+$$
+
+Thus the literal assertion in Conjecture 4 requires a nondegeneracy qualification. Theorem 2 supplies its exact replacement. In particular, when at least one specified minor with $\ell_0=0$ is positive, the degree and all the coefficient inequalities conjectured there follow in every order $r$.
+
+## 4. A single positive input disproves Conjectures 2 and 5
+
+We give the input and a negative Hurwitz determinant explicitly. Numerical roots are unnecessary for the disproof.
+
+For a degree-eight polynomial
+
+$$
+T(x)=a_0x^8+a_1x^7+\cdots+a_8,\qquad a_0>0,
+$$
+
+define
+
+$$
+\Delta_k(T)=\det[a_{2j-i+1}]_{i,j=0}^{k-1},
+\qquad a_t=0\ \text{for }t\notin\{0,\ldots,8\}.
+\tag{13}
+$$
+
+The Hurwitz criterion [H95] implies that a Hurwitz stable polynomial has $\Delta_k>0$ for all $k$. In fact, a negative Hurwitz determinant forces a zero in the open right half-plane: if all zeros had nonpositive real parts, then $T(x+\varepsilon)$ would be Hurwitz stable for every $\varepsilon>0$, and continuity would force every $\Delta_k(T)\ge0$.
+
+**Theorem 4.** There is a positive strictly log-concave finite sequence for which $Q_{18}^{1,1}$ and $P_{18}^2$ both have zeros in the open right half-plane.
+
+**Proof.** Define
+
+$$
+h_k=k(18-k),\qquad 0\le k\le18,
+\tag{14}
+$$
+
+and take
+
+$$
+f_0=f_{18}=1,\qquad
+f_k=10001+h_k\quad(1\le k\le17).
+\tag{15}
+$$
+
+All terms are positive and the sequence is symmetric. For $2\le k\le16$, put $t=18-2k$. Since $h_{k-1}=h_k-t-1$ and $h_{k+1}=h_k+t-1$,
+
+$$
+f_k^2-f_{k-1}f_{k+1}=2f_k-1+t^2>0.
+\tag{16}
+$$
+
+At $k=1$, the gap is $10018^2-10033>0$, and the case $k=17$ follows by symmetry. This proves strict log-concavity; its zero continuation is $PF_2$.
+
+Direct expansion of (2), or (8), gives
+
+$$
+P_{18}^2(x)=88128\,(x+1)_8\,R(x),
+\tag{17}
+$$
+
+where
+
+$$
+\begin{aligned}
+R(x)={}&4930033x^8+217997860x^7+4622212322x^6\\
+&+66604657560x^5+741214112737x^4\\
+&+6223968331700x^3+35647227456908x^2\\
+&+120787851904080x+180829229981400.
+\end{aligned}
+\tag{18}
+$$
+
+Consequently $Q_{18}^{1,1}(x)=88128\,(x+2)_8\,T(x)$, where $T(x)=R(x+1)$ is
+
+$$
+\begin{aligned}
+T(x)={}&4930033x^8+257438124x^7+6286238266x^6\\
+&+99191968400x^5+1151545612777x^4\\
+&+9955221611636x^3+59506512884844x^2\\
+&+214081390250960x+344300941584600.
+\end{aligned}
+\tag{19}
+$$
+
+Its seventh Hurwitz determinant is negative. A conveniently line-broken exact certificate is
+
+$$
+\Delta_7(T)=-2^{16}3^7 5^5 7^3\,11\,13^3\,N<0,
+\tag{20}
+$$
+
+where the positive integer $N$ is specified without approximation by
+
+$$
+\begin{aligned}
+N={}&378576120131718481193785864\cdot10^{33}\\
+&+480712644384882588463864139\cdot10^6+262343.
+\end{aligned}
+\tag{21}
+$$
+
+Formula (13) and the nine coefficients in (19) suffice to check (20) by integer arithmetic. The supplementary script does so from the original input and also verifies (17) directly.
+
+It follows that $T$ has a zero $\zeta$ with $\operatorname{Re}\zeta>0$. This is a zero of $Q_{18}^{1,1}$, disproving Conjecture 2 with its strict hypotheses. Since $R(\zeta+1)=T(\zeta)=0$, the polynomial $P_{18}^2$ has a zero with real part greater than one. The input is $PF_2$, so this also disproves Conjecture 5. $\square$
+
+For orientation only, the offending conjugate pair of $T$ is approximately
+
+$$
+0.0363149803939\ \mathbin{\pm}\ 10.8821345313105\,i.
+\tag{22}
+$$
+
+The exact determinant, rather than these approximations, is the certificate. The full Hurwitz sign sequence is $(+,+,+,+,+,+,-,-)$; the verification file records the exact integers.
+
+## 5. A binomial input disproves Conjecture 6
+
+**Theorem 5.** For $r=3$, $n=11$, and
+
+$$
+f_k=\binom{11}{k}\qquad(0\le k\le11),
+\tag{23}
+$$
+
+the sequence is $PF_\infty$ with positive endpoints, but $P_{11}^3$ has nonreal zeros.
+
+**Proof.** The generating polynomial of the input is $(1+z)^{11}$. One can verify $PF_\infty$ directly: the Toeplitz matrix of $(1,1)$ is totally nonnegative, and multiplying such matrices corresponds to convolving their sequences. Cauchy--Binet preserves nonnegative minors. Eleven factors give (23). Thus no endpoint or nonstrictness exception is involved.
+
+Evaluation of (8) gives
+
+$$
+\begin{aligned}
+P_{11}^3(x)&=15697281600\,(x+2)(x+3)C(x),\\
+C(x)&=883x^3+5349x^2+9926x+5880.
+\end{aligned}
+\tag{24}
+$$
+
+This identity has a short finite certificate. Here $R=3$, and the increasing tuples of nonnegative integers with sum $11-R=8$ are
+
+$$
+(0,1,7),\ (0,2,6),\ (0,3,5),\ (1,2,5),\ (1,3,4).
+\tag{25}
+$$
+
+For additional transparency, their exact minors and weights $w_\ell=11!V(\ell)M_f(\ell)/\prod_j\ell_j!$ are
+
+$$
+\begin{array}{c|r|r}
+\ell&M_f(\ell)&w_\ell\\\hline
+(0,1,7)&330330&109880971200\\
+(0,2,6)&1698840&2260408550400\\
+(0,3,5)&2548260&4238266032000\\
+(1,2,5)&2076360&4144082342400\\
+(1,3,4)&1868724&3108061756800
+\end{array}
+$$
+
+Thus $P_{11}^3=\sum_\ell w_\ell B_\ell$, with the bases specified in (7), gives (24) by five polynomial multiplications and additions.
+
+For a real cubic $ax^3+bx^2+cx+d$, the discriminant is
+
+$$
+b^2c^2-4ac^3-4b^3d-27a^2d^2+18abcd.
+$$
+
+For $C$ it equals
+
+$$
+\operatorname{disc}(C)=-623476452956<0.
+\tag{26}
+$$
+
+A real cubic with negative discriminant has one real zero and a nonreal conjugate pair. Hence (24) disproves Conjecture 6 with all its input conditions satisfied. $\square$
+
+The nonreal pair is approximately $-1.43674838535\pm0.164358883618\,i$. Its negative real part explains why this counterexample alone would not disprove Hurwitz stability; Theorem 4 gives the separate stability obstruction.
+
+## 6. Relation to Conjecture 3 and scope
+
+Theorem 5 has determinant order three. It does not contradict the order-two real-rootedness result in the separate manuscript [Z26]. That manuscript proves the conclusion of Karp's Conjecture 3 for every $n\ge3$ when the finite $PF_\infty$ input satisfies $f_0f_n>0$. If zero endpoints are admitted, its proved conclusion is that the output is either zero or has only real nonpositive zeros. Example (12) prevents a universal strictly negative conclusion under that wider convention.
+
+Theorem 4 uses a $PF_2$ input; it makes no $PF_\infty$ claim. Its nonreal right-half-plane zeros therefore also do not contradict the positive-endpoint result for Conjecture 3.
+
+The results here settle the remaining numbered assertions as formulated: Conjecture 1 holds; Conjectures 2, 5, and 6 fail; the unqualified Conjecture 4 fails and has the exact replacement in Theorem 2. They do not classify every stronger hypothesis under which the failed zero-location assertions might hold.
+
+## 7. Exact verification and provenance
+
+The supplementary program `checks/verify.py` uses exact integers and rational polynomials. It independently expands the defining order-two expression for (15), verifies its factorization, and evaluates the Hurwitz determinants. It checks the five-term expansion (25), the cubic discriminant, and the order-three example against the original determinant at thirteen distinct integer values of $x$. Both expressions in that last comparison have degree at most eleven, so those evaluations provide an independent polynomial-identity certificate. It also checks symbolic low-degree instances of the arbitrary-shift formula and additional instances of (8).
+
+No numerical root computation is used to certify a counterexample. Optional approximations are labeled as such. Finite checks support the algebraic proofs and do not replace Theorems 1 and 2 for arbitrary $n$ and $r$.
+
+This manuscript was prepared with OpenAI Codex under the author's instructions. The same assistant developed the proofs and performed the computational and mathematical checks. No independent human review, journal acceptance, or priority determination is claimed. This manuscript has its own sources and verification files and is not a revision of [Z26].
+
+## References
+
+[H95] A. Hurwitz. Ueber die Bedingungen, unter welchen eine Gleichung nur Wurzeln mit negativen reellen Theilen besitzt. *Mathematische Annalen* **46** (1895), 273-284. [DOI](https://doi.org/10.1007/BF01446812). [Original article scan](https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0046/LOG_0026.pdf).
+
+[K12] D. Karp. Positivity of Toeplitz determinants formed by rising factorial series and properties of related polynomials. *Zap. Nauchn. Sem. POMI* **404** (2012), 184-198; English translation, *Journal of Mathematical Sciences* **193** (2013), 106-114. [arXiv:1203.1482](https://arxiv.org/abs/1203.1482). [DOI](https://doi.org/10.1007/s10958-013-1438-y).
+
+[Z26] H. Zweiman. Negative real zeros of a rising-factorial transform. Research preprint, version 1.0, September 22, 2026. [Separate manuscript](https://github.com/Hwzw/algebra-number-theory-drafts/tree/main/papers/P56-karp-rising-factorial-zeros). Prepared with OpenAI Codex; not peer reviewed.

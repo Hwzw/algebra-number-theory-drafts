@@ -38,3 +38,7 @@ Henry Zweiman. *A spherical Weinstock inequality at large perimeter*. Version 1.
 ## P56: Negative real zeros of a rising-factorial transform
 
 Henry Zweiman. *Negative real zeros of a rising-factorial transform*. Research preprint, version 1.0, September 22, 2026. [Manuscript](papers/P56-karp-rising-factorial-zeros/manuscript.md), [PDF](papers/P56-karp-rising-factorial-zeros/manuscript.pdf), [CITATION.cff](papers/P56-karp-rising-factorial-zeros/CITATION.cff). Prepared with OpenAI Codex; not peer reviewed.
+
+## P57: Positivity and counterexamples for rising-factorial Toeplitz determinants
+
+Henry Zweiman. *Positivity and counterexamples for rising-factorial Toeplitz determinants*. Research preprint, version 1.0, September 22, 2026. [Manuscript](papers/P57-karp-positivity-counterexamples/manuscript.md), [PDF](papers/P57-karp-positivity-counterexamples/manuscript.pdf), [CITATION.cff](papers/P57-karp-positivity-counterexamples/CITATION.cff). Prepared with OpenAI Codex; not peer reviewed; historical priority unverified.
